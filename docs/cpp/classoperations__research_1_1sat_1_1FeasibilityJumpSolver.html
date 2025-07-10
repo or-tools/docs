@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,13 @@ $(function(){initNavTree('classoperations__research_1_1sat_1_1FeasibilityJumpSol
   <div class="headertitle"><div class="title">operations_research::sat::FeasibilityJumpSolver Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Implements and heuristic similar to the one described in the paper: "Feasibility Jump: an LP-free Lagrangian MIP heuristic", Bjørnar Luteberget, Giorgio Sartor, 2023, Mathematical Programming Computation.</p>
+<p>This is basically a Guided local search (GLS) with a nice algo to know what value an integer variable should move to (its jump value). For binary, it can only be swapped, so the situation is easier.</p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001733">Todo</a></b></dt><dd>(user): If we have more than one of these solver, we might want to share the evaluator memory between them. Right now we basically keep a copy of the model and its transpose for each <a class="el" href="classoperations__research_1_1sat_1_1FeasibilityJumpSolver.html">FeasibilityJumpSolver</a>. </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="feasibility__jump_8h_source.html#l00467">467</a> of file <a class="el" href="feasibility__jump_8h_source.html">feasibility_jump.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="feasibility__jump_8h_source.html">feasibility_jump.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for operations_research::sat::FeasibilityJumpSolver:</div>
@@ -109,7 +116,7 @@ Inheritance diagram for operations_research::sat::FeasibilityJumpSolver:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7356833e0e2e1171ffdcf65a09663923" id="r_a7356833e0e2e1171ffdcf65a09663923"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7356833e0e2e1171ffdcf65a09663923">FeasibilityJumpSolver</a> (const absl::string_view <a class="el" href="classoperations__research_1_1sat_1_1SubSolver.html#a9a69961d4a3133bc666ea9222012098b">name</a>, <a class="el" href="classoperations__research_1_1sat_1_1SubSolver.html#a9966dc2666e1cc9bad0fc4611715117c">SubSolver::SubsolverType</a> <a class="el" href="classoperations__research_1_1sat_1_1SubSolver.html#a681ee26ab8eb3e27143c2275e6449dbc">type</a>, const <a class="el" href="classoperations__research_1_1sat_1_1LinearModel.html">LinearModel</a> *linear_model, SatParameters params, std::shared_ptr&lt; <a class="el" href="classoperations__research_1_1sat_1_1SharedLsStates.html">SharedLsStates</a> &gt; ls_states, <a class="el" href="classoperations__research_1_1sat_1_1ModelSharedTimeLimit.html">ModelSharedTimeLimit</a> *shared_time_limit, <a class="el" href="classoperations__research_1_1sat_1_1SharedResponseManager.html">SharedResponseManager</a> *shared_response, <a class="el" href="classoperations__research_1_1sat_1_1SharedBoundsManager.html">SharedBoundsManager</a> *shared_bounds, <a class="el" href="classoperations__research_1_1sat_1_1SharedLsSolutionRepository.html">SharedLsSolutionRepository</a> *shared_hints, <a class="el" href="classoperations__research_1_1sat_1_1SharedStatistics.html">SharedStatistics</a> *shared_stats, <a class="el" href="classoperations__research_1_1sat_1_1SharedStatTables.html">SharedStatTables</a> *stat_tables)</td></tr>
+<tr class="memitem:a7356833e0e2e1171ffdcf65a09663923" id="r_a7356833e0e2e1171ffdcf65a09663923"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7356833e0e2e1171ffdcf65a09663923">FeasibilityJumpSolver</a> (const absl::string_view <a class="el" href="classoperations__research_1_1sat_1_1SubSolver.html#a9a69961d4a3133bc666ea9222012098b">name</a>, <a class="el" href="classoperations__research_1_1sat_1_1SubSolver.html#a9966dc2666e1cc9bad0fc4611715117c">SubSolver::SubsolverType</a> <a class="el" href="classoperations__research_1_1sat_1_1SubSolver.html#a681ee26ab8eb3e27143c2275e6449dbc">type</a>, const <a class="el" href="classoperations__research_1_1sat_1_1LinearModel.html">LinearModel</a> *linear_model, <a class="el" href="classoperations__research_1_1sat_1_1SatParameters.html">SatParameters</a> params, std::shared_ptr&lt; <a class="el" href="classoperations__research_1_1sat_1_1SharedLsStates.html">SharedLsStates</a> &gt; ls_states, <a class="el" href="classoperations__research_1_1sat_1_1ModelSharedTimeLimit.html">ModelSharedTimeLimit</a> *shared_time_limit, <a class="el" href="classoperations__research_1_1sat_1_1SharedResponseManager.html">SharedResponseManager</a> *shared_response, <a class="el" href="classoperations__research_1_1sat_1_1SharedBoundsManager.html">SharedBoundsManager</a> *shared_bounds, <a class="el" href="classoperations__research_1_1sat_1_1SharedLsSolutionRepository.html">SharedLsSolutionRepository</a> *shared_hints, <a class="el" href="classoperations__research_1_1sat_1_1SharedStatistics.html">SharedStatistics</a> *shared_stats, <a class="el" href="classoperations__research_1_1sat_1_1SharedStatTables.html">SharedStatTables</a> *stat_tables)</td></tr>
 <tr class="memitem:a3e4de496ae14e7fe35a3a8daf4fe4ba9" id="r_a3e4de496ae14e7fe35a3a8daf4fe4ba9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3e4de496ae14e7fe35a3a8daf4fe4ba9">~FeasibilityJumpSolver</a> () override</td></tr>
 <tr class="memdesc:a3e4de496ae14e7fe35a3a8daf4fe4ba9"><td class="mdescLeft">&#160;</td><td class="mdescRight">If VLOG_IS_ON(1), it will export a bunch of statistics.  <br /></td></tr>
 <tr class="memitem:a761ea8a79d15bff03bbe72b89f325b47" id="r_a761ea8a79d15bff03bbe72b89f325b47"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a761ea8a79d15bff03bbe72b89f325b47">Synchronize</a> () final</td></tr>
@@ -142,13 +149,7 @@ Additional Inherited Members</h2></td></tr>
 , <a class="el" href="classoperations__research_1_1sat_1_1SubSolver.html#a9966dc2666e1cc9bad0fc4611715117ca848c2cd04ba7e927c37d1eba0880ca9b">HELPER</a>
  }</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Implements and heuristic similar to the one described in the paper: "Feasibility Jump: an LP-free Lagrangian MIP heuristic", Bjørnar Luteberget, Giorgio Sartor, 2023, Mathematical Programming Computation.</p>
-<p>This is basically a Guided local search (GLS) with a nice algo to know what value an integer variable should move to (its jump value). For binary, it can only be swapped, so the situation is easier.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001735">Todo</a></b></dt><dd>(user): If we have more than one of these solver, we might want to share the evaluator memory between them. Right now we basically keep a copy of the model and its transpose for each <a class="el" href="classoperations__research_1_1sat_1_1FeasibilityJumpSolver.html">FeasibilityJumpSolver</a>. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="feasibility__jump_8h_source.html#l00467">467</a> of file <a class="el" href="feasibility__jump_8h_source.html">feasibility_jump.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a7356833e0e2e1171ffdcf65a09663923" name="a7356833e0e2e1171ffdcf65a09663923"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7356833e0e2e1171ffdcf65a09663923">&#9670;&#160;</a></span>FeasibilityJumpSolver()</h2>
 
@@ -176,7 +177,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">SatParameters</td>          <td class="paramname"><span class="paramname"><em>params</em></span>, </td>
+          <td class="paramtype"><a class="el" href="classoperations__research_1_1sat_1_1SatParameters.html">SatParameters</a></td>          <td class="paramname"><span class="paramname"><em>params</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -278,7 +279,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Returns a task to run. The task_id is just an ever increasing counter that correspond to the number of total calls to <a class="el" href="#adc255845d619b5cf9077d19faecb8762">GenerateTask()</a>.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002463">Todo</a></b></dt><dd>(user): We could use a more complex selection logic and pass in the deterministic time limit this subtask should run for. Unclear at this stage.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002461">Todo</a></b></dt><dd>(user): We could use a more complex selection logic and pass in the deterministic time limit this subtask should run for. Unclear at this stage.</dd></dl>
 <p>This is only called by the main thread. </p>
 <p>We delay initialization to the first task as it might be a bit slow to scan the whole model, so we want to do this part in parallel.</p>
 <p>Load the next state to work on.</p>
@@ -286,7 +287,7 @@ Additional Inherited Members</h2></td></tr>
 <p>This is not used once we have a solution, and setting it to false allow to fix the logs.</p>
 <p>Choose a base solution for this neighborhood.</p>
 <p>Register this solution before we reset the search.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001726">Todo</a></b></dt><dd>(user): Tune the improvement constant, maybe use luby. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001724">Todo</a></b></dt><dd>(user): Tune the improvement constant, maybe use luby. </dd></dl>
 <p>Between chunk, we synchronize bounds.</p>
 <p>Update the variable domains with the last information.</p>
 <p>Checks the current solution is compatible with updated domains.</p>
@@ -296,7 +297,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Checks for infeasibility induced by the non supported constraints.</p>
 <p>If we pushed a new solution, we use it as a new "base" so that we will have a smaller delta on the next solution we find.</p>
 <p>Update dtime. Since we execute only one task at the time, this is safe.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001727">Todo</a></b></dt><dd>(user): Find better names. DeterministicTime() is maintained by this class while <a class="el" href="classoperations__research_1_1sat_1_1SubSolver.html#a91580eddd8de430dc8bd27551d9c814a">deterministic_time()</a> is the one saved in the <a class="el" href="classoperations__research_1_1sat_1_1SubSolver.html">SubSolver</a> base class). </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001725">Todo</a></b></dt><dd>(user): Find better names. DeterministicTime() is maintained by this class while <a class="el" href="classoperations__research_1_1sat_1_1SubSolver.html#a91580eddd8de430dc8bd27551d9c814a">deterministic_time()</a> is the one saved in the <a class="el" href="classoperations__research_1_1sat_1_1SubSolver.html">SubSolver</a> base class). </dd></dl>
 <p>Because <a class="el" href="classoperations__research_1_1sat_1_1SubSolver.html#a91580eddd8de430dc8bd27551d9c814a">deterministic_time()</a> is computed with a sum of difference, it might be slighlty different than DeterministicTime() and we don't want to go backward, even by 1e-18.</p>
 
 <p>Implements <a class="el" href="classoperations__research_1_1sat_1_1SubSolver.html#a68765bc7ed07ce93ffeddbe61ad40d65">operations_research::sat::SubSolver</a>.</p>

@@ -1,4 +1,32 @@
 var namespaceoperations__research_1_1scheduling_1_1rcpsp =
 [
-    [ "RcpspParser", "classoperations__research_1_1scheduling_1_1rcpsp_1_1RcpspParser.html", "classoperations__research_1_1scheduling_1_1rcpsp_1_1RcpspParser" ]
+    [ "PerRecipeDelays", "classoperations__research_1_1scheduling_1_1rcpsp_1_1PerRecipeDelays.html", "classoperations__research_1_1scheduling_1_1rcpsp_1_1PerRecipeDelays" ],
+    [ "PerRecipeDelaysDefaultTypeInternal", "structoperations__research_1_1scheduling_1_1rcpsp_1_1PerRecipeDelaysDefaultTypeInternal.html", "structoperations__research_1_1scheduling_1_1rcpsp_1_1PerRecipeDelaysDefaultTypeInternal" ],
+    [ "PerSuccessorDelays", "classoperations__research_1_1scheduling_1_1rcpsp_1_1PerSuccessorDelays.html", "classoperations__research_1_1scheduling_1_1rcpsp_1_1PerSuccessorDelays" ],
+    [ "PerSuccessorDelaysDefaultTypeInternal", "structoperations__research_1_1scheduling_1_1rcpsp_1_1PerSuccessorDelaysDefaultTypeInternal.html", "structoperations__research_1_1scheduling_1_1rcpsp_1_1PerSuccessorDelaysDefaultTypeInternal" ],
+    [ "RcpspAssignment", "classoperations__research_1_1scheduling_1_1rcpsp_1_1RcpspAssignment.html", "classoperations__research_1_1scheduling_1_1rcpsp_1_1RcpspAssignment" ],
+    [ "RcpspAssignmentDefaultTypeInternal", "structoperations__research_1_1scheduling_1_1rcpsp_1_1RcpspAssignmentDefaultTypeInternal.html", "structoperations__research_1_1scheduling_1_1rcpsp_1_1RcpspAssignmentDefaultTypeInternal" ],
+    [ "RcpspParser", "classoperations__research_1_1scheduling_1_1rcpsp_1_1RcpspParser.html", "classoperations__research_1_1scheduling_1_1rcpsp_1_1RcpspParser" ],
+    [ "RcpspProblem", "classoperations__research_1_1scheduling_1_1rcpsp_1_1RcpspProblem.html", "classoperations__research_1_1scheduling_1_1rcpsp_1_1RcpspProblem" ],
+    [ "RcpspProblemDefaultTypeInternal", "structoperations__research_1_1scheduling_1_1rcpsp_1_1RcpspProblemDefaultTypeInternal.html", "structoperations__research_1_1scheduling_1_1rcpsp_1_1RcpspProblemDefaultTypeInternal" ],
+    [ "Recipe", "classoperations__research_1_1scheduling_1_1rcpsp_1_1Recipe.html", "classoperations__research_1_1scheduling_1_1rcpsp_1_1Recipe" ],
+    [ "RecipeDefaultTypeInternal", "structoperations__research_1_1scheduling_1_1rcpsp_1_1RecipeDefaultTypeInternal.html", "structoperations__research_1_1scheduling_1_1rcpsp_1_1RecipeDefaultTypeInternal" ],
+    [ "Resource", "classoperations__research_1_1scheduling_1_1rcpsp_1_1Resource.html", "classoperations__research_1_1scheduling_1_1rcpsp_1_1Resource" ],
+    [ "ResourceDefaultTypeInternal", "structoperations__research_1_1scheduling_1_1rcpsp_1_1ResourceDefaultTypeInternal.html", "structoperations__research_1_1scheduling_1_1rcpsp_1_1ResourceDefaultTypeInternal" ],
+    [ "Task", "classoperations__research_1_1scheduling_1_1rcpsp_1_1Task.html", "classoperations__research_1_1scheduling_1_1rcpsp_1_1Task" ],
+    [ "TaskDefaultTypeInternal", "structoperations__research_1_1scheduling_1_1rcpsp_1_1TaskDefaultTypeInternal.html", "structoperations__research_1_1scheduling_1_1rcpsp_1_1TaskDefaultTypeInternal" ],
+    [ "_PerRecipeDelays_default_instance_", "namespaceoperations__research_1_1scheduling_1_1rcpsp.html#a3fb27179c376c45aa5a7f46e0c2dc086", null ],
+    [ "_PerSuccessorDelays_default_instance_", "namespaceoperations__research_1_1scheduling_1_1rcpsp.html#a3656d9347f97d2cd6f37f9ad72ee8925", null ],
+    [ "_RcpspAssignment_default_instance_", "namespaceoperations__research_1_1scheduling_1_1rcpsp.html#a64c44f7d633d6c1067622309518ae9e8", null ],
+    [ "_RcpspProblem_default_instance_", "namespaceoperations__research_1_1scheduling_1_1rcpsp.html#a55646647095827ea8389dcd65f9d9f5d", null ],
+    [ "_Recipe_default_instance_", "namespaceoperations__research_1_1scheduling_1_1rcpsp.html#ab176c5d0377adaa6543a0bb2bdf0e8aa", null ],
+    [ "_Resource_default_instance_", "namespaceoperations__research_1_1scheduling_1_1rcpsp.html#a6c80f3fcdd13bbeac6d61d0c4b06ec07", null ],
+    [ "_Task_default_instance_", "namespaceoperations__research_1_1scheduling_1_1rcpsp.html#a3693c64fc79d0f790d79e14a4039b61d", null ],
+    [ "PerRecipeDelays_class_data_", "namespaceoperations__research_1_1scheduling_1_1rcpsp.html#a50e7ed1d1df9cb8946ca3e40d7cd6598", null ],
+    [ "PerSuccessorDelays_class_data_", "namespaceoperations__research_1_1scheduling_1_1rcpsp.html#af07b7c222b625b25cf57e29b82a924b8", null ],
+    [ "RcpspAssignment_class_data_", "namespaceoperations__research_1_1scheduling_1_1rcpsp.html#ade301e5071b4acd9ee40a607b4cf9846", null ],
+    [ "RcpspProblem_class_data_", "namespaceoperations__research_1_1scheduling_1_1rcpsp.html#a03a96ee40bddf86197d400ab6cad535a", null ],
+    [ "Recipe_class_data_", "namespaceoperations__research_1_1scheduling_1_1rcpsp.html#a81a757514bf8cbc266b599cc0a274872", null ],
+    [ "Resource_class_data_", "namespaceoperations__research_1_1scheduling_1_1rcpsp.html#aa496cf79a12303c8ba4d589fff9f41e5", null ],
+    [ "Task_class_data_", "namespaceoperations__research_1_1scheduling_1_1rcpsp.html#af892f6743b6e9232747b6187aa53774c", null ]
 ];

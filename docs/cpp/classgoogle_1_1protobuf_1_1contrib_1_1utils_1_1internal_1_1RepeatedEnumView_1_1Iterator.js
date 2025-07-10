@@ -1,5 +1,7 @@
 var classgoogle_1_1protobuf_1_1contrib_1_1utils_1_1internal_1_1RepeatedEnumView_1_1Iterator =
 [
+    [ "difference_type", "classgoogle_1_1protobuf_1_1contrib_1_1utils_1_1internal_1_1RepeatedEnumView_1_1Iterator.html#a85928eaf9fff79a430e98829a5eef2c6", null ],
+    [ "value_type", "classgoogle_1_1protobuf_1_1contrib_1_1utils_1_1internal_1_1RepeatedEnumView_1_1Iterator.html#a0db451e62ed6427cf41929b9aa2c57bc", null ],
     [ "Iterator", "classgoogle_1_1protobuf_1_1contrib_1_1utils_1_1internal_1_1RepeatedEnumView_1_1Iterator.html#a3eec9e4973aefb651089f975bf0dd2ef", null ],
     [ "operator!=", "classgoogle_1_1protobuf_1_1contrib_1_1utils_1_1internal_1_1RepeatedEnumView_1_1Iterator.html#a8c20fa1fad47fe78a39c7c53af0f0776", null ],
     [ "operator*", "classgoogle_1_1protobuf_1_1contrib_1_1utils_1_1internal_1_1RepeatedEnumView_1_1Iterator.html#a21cde88efc331d9d47ca77d697b0e081", null ],

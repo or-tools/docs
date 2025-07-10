@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,17 @@ $(function(){initNavTree('classStronglyConnectedComponentsFinder.html','','class
   <div class="headertitle"><div class="title">StronglyConnectedComponentsFinder&lt; NodeIndex, Graph, SccOutput &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename NodeIndex, typename Graph, typename SccOutput&gt;<br />
+class StronglyConnectedComponentsFinder&lt; NodeIndex, Graph, SccOutput &gt;</div><p>This implementation is slightly different than a classical iterative version of Tarjan's strongly connected components algorithm. But basically it is still an iterative DFS. We use a class so memory can be reused if one needs to compute many SCC in a row. It also allows more complex behavior in the Graph or SccOutput class that might inspect the current state of the algorithm.</p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000732">Todo</a></b></dt><dd>(user): Possible optimizations:<ul>
+<li>Try to reserve the vectors which sizes are bounded by num_nodes.</li>
+<li>Use an index rather than doing push_back(), pop_back() on them. </li>
+</ul>
+</dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="strongly__connected__components_8h_source.html#l00105">105</a> of file <a class="el" href="strongly__connected__components_8h_source.html">strongly_connected_components.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="strongly__connected__components_8h_source.html">strongly_connected_components.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -103,17 +114,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0a1482e822b9cada82488c42439393d7" id="r_a0a1482e822b9cada82488c42439393d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0a1482e822b9cada82488c42439393d7">FindStronglyConnectedComponents</a> (const NodeIndex num_nodes, const Graph &amp;graph, SccOutput *components)</td></tr>
 <tr class="memitem:a75c24a808461ad79c5a2f4c7655c60c8" id="r_a75c24a808461ad79c5a2f4c7655c60c8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a75c24a808461ad79c5a2f4c7655c60c8">NodeIsInCurrentDfsPath</a> (NodeIndex node) const</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;typename NodeIndex, typename Graph, typename SccOutput&gt;<br />
-class StronglyConnectedComponentsFinder&lt; NodeIndex, Graph, SccOutput &gt;</div><p>This implementation is slightly different than a classical iterative version of Tarjan's strongly connected components algorithm. But basically it is still an iterative DFS. We use a class so memory can be reused if one needs to compute many SCC in a row. It also allows more complex behavior in the Graph or SccOutput class that might inspect the current state of the algorithm.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000733">Todo</a></b></dt><dd>(user): Possible optimizations:<ul>
-<li>Try to reserve the vectors which sizes are bounded by num_nodes.</li>
-<li>Use an index rather than doing push_back(), pop_back() on them. </li>
-</ul>
-</dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="strongly__connected__components_8h_source.html#l00105">105</a> of file <a class="el" href="strongly__connected__components_8h_source.html">strongly_connected_components.h</a>.</p>
-</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="a0a1482e822b9cada82488c42439393d7" name="a0a1482e822b9cada82488c42439393d7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0a1482e822b9cada82488c42439393d7">&#9670;&#160;</a></span>FindStronglyConnectedComponents()</h2>
 

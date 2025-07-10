@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,12 @@ $(function(){initNavTree('classoperations__research_1_1sat_1_1ProductPropagator.
   <div class="headertitle"><div class="title">operations_research::sat::ProductPropagator Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Propagates a * b = p.</p>
+<p>The bounds [min, max] of a and b will be propagated perfectly, but not the bounds on p as this require more complex arithmetics. </p>
 
+<p class="definition">Definition at line <a class="el" href="integer__expr_8h_source.html#l00284">284</a> of file <a class="el" href="integer__expr_8h_source.html">integer_expr.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="integer__expr_8h_source.html">integer_expr.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for operations_research::sat::ProductPropagator:</div>
@@ -120,12 +126,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2050a6e5fb78d733582e3fe1beb7d9ed inherit pub_methods_classoperations__research_1_1sat_1_1PropagatorInterface" id="r_a2050a6e5fb78d733582e3fe1beb7d9ed"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1PropagatorInterface.html#a2050a6e5fb78d733582e3fe1beb7d9ed">~PropagatorInterface</a> ()=default</td></tr>
 <tr class="memitem:a8df009b18974352e71f74929860c2326 inherit pub_methods_classoperations__research_1_1sat_1_1PropagatorInterface" id="r_a8df009b18974352e71f74929860c2326"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1PropagatorInterface.html#a8df009b18974352e71f74929860c2326">IncrementalPropagate</a> (const std::vector&lt; int &gt; &amp;)</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Propagates a * b = p.</p>
-<p>The bounds [min, max] of a and b will be propagated perfectly, but not the bounds on p as this require more complex arithmetics. </p>
-
-<p class="definition">Definition at line <a class="el" href="integer__expr_8h_source.html#l00284">284</a> of file <a class="el" href="integer__expr_8h_source.html">integer_expr.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a3365ac27ececed6e99dddba784ebf856" name="a3365ac27ececed6e99dddba784ebf856"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3365ac27ececed6e99dddba784ebf856">&#9670;&#160;</a></span>ProductPropagator() <span class="overload">[1/2]</span></h2>
 
@@ -238,7 +239,7 @@ Public Member Functions</h2></td></tr>
 <p>In the most common case, we use better reasons even though the code below would propagate the same.</p>
 <p>This was done by CanonicalizeCases().</p>
 <p>Lets propagate on p_ first, the max/min is given by one of: max_a * max_b, max_a * min_b, min_a * max_b, min_a * min_b. This is true, because any product x * y, depending on the sign, is dominated by one of these.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001821">Todo</a></b></dt><dd>(user): In the reasons, including all 4 bounds is always correct, but we might be able to relax some of them. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001819">Todo</a></b></dt><dd>(user): In the reasons, including all 4 bounds is always correct, but we might be able to relax some of them. </dd></dl>
 <p>Lets propagate on a and b.</p>
 <p>We need a bit more propagation to avoid bad cases below.</p>
 <p>p = a * b, what is the min/max of a?</p>

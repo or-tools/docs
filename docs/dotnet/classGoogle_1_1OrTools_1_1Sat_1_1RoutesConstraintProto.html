@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -98,7 +99,21 @@ $(function(){initNavTree('classGoogle_1_1OrTools_1_1Sat_1_1RoutesConstraintProto
 
 <p>The "VRP" (Vehicle Routing Problem) constraint.  
  <a href="#details">More...</a></p>
-<div class="dynheader">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The "VRP" (Vehicle Routing Problem) constraint. </p>
+<p>The direct graph where arc #i (from tails[i] to head[i]) is present iff literals[i] is true must satisfy this set of properties:</p><ul>
+<li>#incoming arcs == 1 except for node 0.</li>
+<li>#outgoing arcs == 1 except for node 0.</li>
+<li>for node zero, #incoming arcs == #outgoing arcs.</li>
+<li>There are no duplicate arcs.</li>
+<li>Self-arcs are allowed except for node 0.</li>
+<li>There is no cycle in this graph, except through node 0. <dl class="section note"><dt>Note</dt><dd>Currently this constraint expects all the nodes in [0, num_nodes) to have at least one incident arc. The model will be considered invalid if it is not the case. You can add self-arc fixed to one to ignore some nodes if needed. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000025">Todo</a></b></dt><dd>(user): It is probably possible to generalize this constraint to a no-cycle in a general graph, or a no-cycle with sum incoming &lt;= 1 and sum outgoing &lt;= 1 (more efficient implementation). On the other hand, having this specific constraint allow us to add specific "cuts" to a VRP problem. </dd></dl>
+</li>
+</ul>
+
+<p class="definition">Definition at line <a class="el" href="CpModel_8pb_8cs_source.html#l03709">3709</a> of file <a class="el" href="CpModel_8pb_8cs_source.html">CpModel.pb.cs</a>.</p>
+</div><div class="dynheader">
 Inheritance diagram for Google.OrTools.Sat.RoutesConstraintProto:</div>
 <div class="dyncontent">
  <div class="center">
@@ -151,21 +166,7 @@ Properties</h2></td></tr>
 <tr class="memitem:afcb4dbf6da95debde4d8e982fb838384" id="r_afcb4dbf6da95debde4d8e982fb838384"><td class="memItemLeft" align="right" valign="top">pbc::RepeatedField&lt; global::Google.OrTools.Sat.RoutesConstraintProto.Types.NodeExpressions &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afcb4dbf6da95debde4d8e982fb838384">Dimensions</a><code> [get]</code></td></tr>
 <tr class="memdesc:afcb4dbf6da95debde4d8e982fb838384"><td class="mdescLeft">&#160;</td><td class="mdescRight">Expressions associated with the nodes of the graph, such as the load of the vehicle arriving at a node, or the time at which a vehicle arrives at a node. Expressions with the same "dimension" (such as "load" or "time") must be listed together. This field is optional. If it is set, the linear constraints of size 1 or 2 between the variables in these expressions will be used to derive cuts for this constraint. If it is not set, the solver will try to automatically derive it, from the linear constraints of size 1 or 2 in the model (this can fail in complex cases).  <br /></td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The "VRP" (Vehicle Routing Problem) constraint. </p>
-<p>The direct graph where arc #i (from tails[i] to head[i]) is present iff literals[i] is true must satisfy this set of properties:</p><ul>
-<li>#incoming arcs == 1 except for node 0.</li>
-<li>#outgoing arcs == 1 except for node 0.</li>
-<li>for node zero, #incoming arcs == #outgoing arcs.</li>
-<li>There are no duplicate arcs.</li>
-<li>Self-arcs are allowed except for node 0.</li>
-<li>There is no cycle in this graph, except through node 0. <dl class="section note"><dt>Note</dt><dd>Currently this constraint expects all the nodes in [0, num_nodes) to have at least one incident arc. The model will be considered invalid if it is not the case. You can add self-arc fixed to one to ignore some nodes if needed. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000025">Todo</a></b></dt><dd>(user): It is probably possible to generalize this constraint to a no-cycle in a general graph, or a no-cycle with sum incoming &lt;= 1 and sum outgoing &lt;= 1 (more efficient implementation). On the other hand, having this specific constraint allow us to add specific "cuts" to a VRP problem. </dd></dl>
-</li>
-</ul>
-
-<p class="definition">Definition at line <a class="el" href="CpModel_8pb_8cs_source.html#l03709">3709</a> of file <a class="el" href="CpModel_8pb_8cs_source.html">CpModel.pb.cs</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af8e7a087a79251b28e66075c95fc5161" name="af8e7a087a79251b28e66075c95fc5161"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af8e7a087a79251b28e66075c95fc5161">&#9670;&#160;</a></span>RoutesConstraintProto() <span class="overload">[1/2]</span></h2>
 

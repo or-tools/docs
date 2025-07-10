@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,13 @@ $(function(){initNavTree('classoperations__research_1_1KnapsackCapacityPropagato
   <div class="headertitle"><div class="title">operations_research::KnapsackCapacityPropagator Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>--&mdash; <a class="el" href="classoperations__research_1_1KnapsackCapacityPropagator.html">KnapsackCapacityPropagator</a> --&mdash; <a class="el" href="classoperations__research_1_1KnapsackCapacityPropagator.html">KnapsackCapacityPropagator</a> is a <a class="el" href="classoperations__research_1_1KnapsackPropagator.html">KnapsackPropagator</a> used to enforce a capacity constraint. As a <a class="el" href="classoperations__research_1_1KnapsackPropagator.html">KnapsackPropagator</a> is supposed to compute profit lower and upper bounds, and get the next item to select, it can be seen as a 0-1 Knapsack solver. The most efficient way to compute the upper bound is to iterate on items in profit-per-unit-weight decreasing order. The break item is commonly defined as the first item for which there is not enough remaining capacity. Selecting this break item as the next-item-to-assign usually gives the best results (see Greenberg &amp; Hegerich).</p>
+<p>This is exactly what is implemented in this class.</p>
+<p>When there is only one propagator, it is possible to compute a better profit lower bound almost for free. During the scan to find the break element all unbound items are added just as if they were part of the current solution. This is used in both ComputeProfitBounds and CopyCurrentSolutionPropagator. For incrementality reasons, the ith item should be accessible in O(1). That's the reason why the item vector has to be duplicated 'sorted_items_'. </p>
 
+<p class="definition">Definition at line <a class="el" href="knapsack__solver_8h_source.html#l00559">559</a> of file <a class="el" href="knapsack__solver_8h_source.html">knapsack_solver.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="knapsack__solver_8h_source.html">knapsack_solver.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for operations_research::KnapsackCapacityPropagator:</div>
@@ -144,13 +151,7 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a603248a62e28580dcf63043e4fbeb2b2 inherit pro_methods_classoperations__research_1_1KnapsackPropagator" id="r_a603248a62e28580dcf63043e4fbeb2b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1KnapsackPropagator.html#a603248a62e28580dcf63043e4fbeb2b2">set_profit_lower_bound</a> (int64_t profit)</td></tr>
 <tr class="memitem:a234a4e67555b3bf7c994e9503b38486f inherit pro_methods_classoperations__research_1_1KnapsackPropagator" id="r_a234a4e67555b3bf7c994e9503b38486f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1KnapsackPropagator.html#a234a4e67555b3bf7c994e9503b38486f">set_profit_upper_bound</a> (int64_t profit)</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>--&mdash; <a class="el" href="classoperations__research_1_1KnapsackCapacityPropagator.html">KnapsackCapacityPropagator</a> --&mdash; <a class="el" href="classoperations__research_1_1KnapsackCapacityPropagator.html">KnapsackCapacityPropagator</a> is a <a class="el" href="classoperations__research_1_1KnapsackPropagator.html">KnapsackPropagator</a> used to enforce a capacity constraint. As a <a class="el" href="classoperations__research_1_1KnapsackPropagator.html">KnapsackPropagator</a> is supposed to compute profit lower and upper bounds, and get the next item to select, it can be seen as a 0-1 Knapsack solver. The most efficient way to compute the upper bound is to iterate on items in profit-per-unit-weight decreasing order. The break item is commonly defined as the first item for which there is not enough remaining capacity. Selecting this break item as the next-item-to-assign usually gives the best results (see Greenberg &amp; Hegerich).</p>
-<p>This is exactly what is implemented in this class.</p>
-<p>When there is only one propagator, it is possible to compute a better profit lower bound almost for free. During the scan to find the break element all unbound items are added just as if they were part of the current solution. This is used in both ComputeProfitBounds and CopyCurrentSolutionPropagator. For incrementality reasons, the ith item should be accessible in O(1). That's the reason why the item vector has to be duplicated 'sorted_items_'. </p>
-
-<p class="definition">Definition at line <a class="el" href="knapsack__solver_8h_source.html#l00559">559</a> of file <a class="el" href="knapsack__solver_8h_source.html">knapsack_solver.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a3ddd186feca51464a4cbda45d627d613" name="a3ddd186feca51464a4cbda45d627d613"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3ddd186feca51464a4cbda45d627d613">&#9670;&#160;</a></span>KnapsackCapacityPropagator() <span class="overload">[1/2]</span></h2>
 
@@ -251,7 +252,7 @@ Protected Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000029">Todo</a></b></dt><dd>(user): Make it more incremental, by saving the break item in a search node for instance. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000028">Todo</a></b></dt><dd>(user): Make it more incremental, by saving the break item in a search node for instance. </dd></dl>
 
 <p>Implements <a class="el" href="classoperations__research_1_1KnapsackPropagator.html#a8133fbb05961e760ed907e1f599966d8">operations_research::KnapsackPropagator</a>.</p>
 

@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,13 @@ $(function(){initNavTree('classutil_1_1UndirectedAdjacencyListsOfDirectedGraph.h
   <div class="headertitle"><div class="title">util::UndirectedAdjacencyListsOfDirectedGraph&lt; Graph &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;class <a class="el" href="namespaceutil.html#ae76339cb2dcd3bc05ad762146f91fdda">Graph</a>&gt;<br />
+class util::UndirectedAdjacencyListsOfDirectedGraph&lt; Graph &gt;</div><p>This can be used to view a directed graph (that supports reverse arcs) from <a class="el" href="graph_8h.html">graph.h</a> as un undirected graph: operator[](node) returns a pseudo-container that iterates over all nodes adjacent to "node" (from outgoing or incoming arcs). CAVEAT: Self-arcs (aka loops) will appear twice.</p>
+<p>Example: ReverseArcsStaticGraph&lt;&gt; dgraph; ... <a class="el" href="classutil_1_1UndirectedAdjacencyListsOfDirectedGraph.html">UndirectedAdjacencyListsOfDirectedGraph</a> ugraph(dgraph); for (int neighbor_of_node_42 : ugraph[42]) { ... } </p>
 
+<p class="definition">Definition at line <a class="el" href="graph_2util_8h_source.html#l00102">102</a> of file <a class="el" href="graph_2util_8h_source.html">util.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="graph_2util_8h_source.html">util.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
@@ -112,13 +119,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af070e0c5307fa6bea7a988b931141825" id="r_af070e0c5307fa6bea7a988b931141825"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classutil_1_1BeginEndWrapper.html">BeginEndWrapper</a>&lt; <a class="el" href="classutil_1_1UndirectedAdjacencyListsOfDirectedGraph_1_1AdjacencyListIterator.html">AdjacencyListIterator</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af070e0c5307fa6bea7a988b931141825">operator[]</a> (int node) const</td></tr>
 <tr class="memdesc:af070e0c5307fa6bea7a988b931141825"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pseudo-container of all the nodes adjacent to "node".  <br /></td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;class <a class="el" href="namespaceutil.html#ae76339cb2dcd3bc05ad762146f91fdda">Graph</a>&gt;<br />
-class util::UndirectedAdjacencyListsOfDirectedGraph&lt; Graph &gt;</div><p>This can be used to view a directed graph (that supports reverse arcs) from <a class="el" href="graph_8h.html">graph.h</a> as un undirected graph: operator[](node) returns a pseudo-container that iterates over all nodes adjacent to "node" (from outgoing or incoming arcs). CAVEAT: Self-arcs (aka loops) will appear twice.</p>
-<p>Example: ReverseArcsStaticGraph&lt;&gt; dgraph; ... <a class="el" href="classutil_1_1UndirectedAdjacencyListsOfDirectedGraph.html">UndirectedAdjacencyListsOfDirectedGraph</a> ugraph(dgraph); for (int neighbor_of_node_42 : ugraph[42]) { ... } </p>
-
-<p class="definition">Definition at line <a class="el" href="graph_2util_8h_source.html#l00103">103</a> of file <a class="el" href="graph_2util_8h_source.html">util.h</a>.</p>
-</div><a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Member Typedef Documentation</h2>
+<a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Member Typedef Documentation</h2>
 <a id="a6402dd9e7851af22b907c0af3e240dce" name="a6402dd9e7851af22b907c0af3e240dce"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6402dd9e7851af22b907c0af3e240dce">&#9670;&#160;</a></span>ArcIterator</h2>
 
@@ -133,7 +134,7 @@ template&lt;class <a class="el" href="namespaceutil.html#ae76339cb2dcd3bc05ad762
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="graph_2util_8h_source.html#l00111">111</a> of file <a class="el" href="graph_2util_8h_source.html">util.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="graph_2util_8h_source.html#l00110">110</a> of file <a class="el" href="graph_2util_8h_source.html">util.h</a>.</p>
 
 </div>
 </div>
@@ -163,7 +164,7 @@ template&lt;class <a class="el" href="namespaceutil.html#ae76339cb2dcd3bc05ad762
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="graph_2util_8h_source.html#l00108">108</a> of file <a class="el" href="graph_2util_8h_source.html">util.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="graph_2util_8h_source.html#l00107">107</a> of file <a class="el" href="graph_2util_8h_source.html">util.h</a>.</p>
 
 </div>
 </div>
@@ -195,7 +196,7 @@ template&lt;class <a class="el" href="namespaceutil.html#ae76339cb2dcd3bc05ad762
 
 <p>Returns a pseudo-container of all the nodes adjacent to "node". </p>
 
-<p class="definition">Definition at line <a class="el" href="graph_2util_8h_source.html#l00126">126</a> of file <a class="el" href="graph_2util_8h_source.html">util.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="graph_2util_8h_source.html#l00125">125</a> of file <a class="el" href="graph_2util_8h_source.html">util.h</a>.</p>
 
 </div>
 </div>

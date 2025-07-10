@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,15 @@ $(function(){initNavTree('classoperations__research_1_1PathEnergyCostChecker.htm
   <div class="headertitle"><div class="title">operations_research::PathEnergyCostChecker Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000307">Todo</a></b></dt><dd>(user): improve this class by:<ul>
+<li>using <a class="el" href="classoperations__research_1_1WeightedWaveletTree.html">WeightedWaveletTree</a> to get the amount of energy above the threshold.</li>
+<li>detect when costs above and below are the same, to avoid correcting for energy above the threshold and get O(1) time per chain. </li>
+</ul>
+</dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="routing__filters_8h_source.html#l00869">869</a> of file <a class="el" href="routing__filters_8h_source.html">routing_filters.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="routing__filters_8h_source.html">routing_filters.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
@@ -110,15 +119,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8753c39246b38dbb2f5808a4f037270e" id="r_a8753c39246b38dbb2f5808a4f037270e"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8753c39246b38dbb2f5808a4f037270e">CommittedCost</a> () const</td></tr>
 <tr class="memitem:a413056be974ea2aa321951d035fdfa8f" id="r_a413056be974ea2aa321951d035fdfa8f"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a413056be974ea2aa321951d035fdfa8f">AcceptedCost</a> () const</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000308">Todo</a></b></dt><dd>(user): improve this class by:<ul>
-<li>using <a class="el" href="classoperations__research_1_1WeightedWaveletTree.html">WeightedWaveletTree</a> to get the amount of energy above the threshold.</li>
-<li>detect when costs above and below are the same, to avoid correcting for energy above the threshold and get O(1) time per chain. </li>
-</ul>
-</dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="routing__filters_8h_source.html#l00869">869</a> of file <a class="el" href="routing__filters_8h_source.html">routing_filters.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a208f91fb0a0206404e0a82c7e6e45e97" name="a208f91fb0a0206404e0a82c7e6e45e97"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a208f91fb0a0206404e0a82c7e6e45e97">&#9670;&#160;</a></span>PathEnergyCostChecker()</h2>
 

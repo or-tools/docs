@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,11 @@ $(function(){initNavTree('classoperations__research_1_1bop_1_1OptimizerSelector.
   <div class="headertitle"><div class="title">operations_research::bop::OptimizerSelector Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This class is providing an adaptative selector for optimizers based on their past successes and deterministic time spent. </p>
 
+<p class="definition">Definition at line <a class="el" href="bop__portfolio_8h_source.html#l00107">107</a> of file <a class="el" href="bop__portfolio_8h_source.html">bop_portfolio.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="bop__portfolio_8h_source.html">bop_portfolio.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -111,11 +116,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad04d04c020ce718f1967ba5a8c31072b" id="r_ad04d04c020ce718f1967ba5a8c31072b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad04d04c020ce718f1967ba5a8c31072b">DebugPrint</a> () const</td></tr>
 <tr class="memdesc:ad04d04c020ce718f1967ba5a8c31072b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints some debug information. Should not be used in production.  <br /></td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This class is providing an adaptative selector for optimizers based on their past successes and deterministic time spent. </p>
-
-<p class="definition">Definition at line <a class="el" href="bop__portfolio_8h_source.html#l00108">108</a> of file <a class="el" href="bop__portfolio_8h_source.html">bop_portfolio.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae5a93e37a3176b4fc982baa3a5c1df80" name="ae5a93e37a3176b4fc982baa3a5c1df80"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae5a93e37a3176b4fc982baa3a5c1df80">&#9670;&#160;</a></span>OptimizerSelector()</h2>
 
@@ -225,7 +226,7 @@ Public Member Functions</h2></td></tr>
 <p>The optimizer is selected using the following algorithm (L being the sorted list of optimizers, and l the position of the last selected optimizer): a- If a new solution has been found by optimizer l, select the first optimizer l' in L, l' &gt;= 0, that can run. b- If optimizer l didn't find a new solution, select the first optimizer l', with l' &gt; l, such that its deterministic time spent since last solution is smaller than the deterministic time spent by any runnable optimizer in 1..l since last solution. If no such optimizer is available, go to option a. </p>
 <p>Select the first possible optimizer.</p>
 <p>Select the next possible optimizer. If none, select the first one. Check that the time is smaller than all previous optimizers which are runnable.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000083">Todo</a></b></dt><dd>(user): Remove this recursive call, even if in practice it's safe because the max depth is the number of optimizers. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000082">Todo</a></b></dt><dd>(user): Remove this recursive call, even if in practice it's safe because the max depth is the number of optimizers. </dd></dl>
 <p>Select the optimizer.</p>
 
 <p class="definition">Definition at line <a class="el" href="bop__portfolio_8cc_source.html#l00370">370</a> of file <a class="el" href="bop__portfolio_8cc_source.html">bop_portfolio.cc</a>.</p>
@@ -251,7 +252,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Sets whether or not an optimizer is "runnable". Like a non-selectable one, a non-runnable optimizer will never be returned by <a class="el" href="#a39afee83d9f173f951fd8bef5668d1cc">SelectOptimizer()</a>.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000084">Todo</a></b></dt><dd>(user): Maybe we should simply have the notion of selectability here and let the client handle the logic to decide what optimizer are selectable or not. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000083">Todo</a></b></dt><dd>(user): Maybe we should simply have the notion of selectability here and let the client handle the logic to decide what optimizer are selectable or not. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="bop__portfolio_8cc_source.html#l00440">440</a> of file <a class="el" href="bop__portfolio_8cc_source.html">bop_portfolio.cc</a>.</p>
 

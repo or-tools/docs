@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,11 @@ $(function(){initNavTree('classoperations__research_1_1scp_1_1FullToCoreModel.ht
   <div class="headertitle"><div class="title">operations_research::scp::FullToCoreModel Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="classoperations__research_1_1scp_1_1CoreModel.html">CoreModel</a> extractor. Stores a pointer to the full model and specilized UpdateCore in such a way to updated the <a class="el" href="namespaceoperations__research_1_1scp.html#a852883de70c332dee1a0b8c5ce38c954">SubModel</a> (stored as base class) and focus the search on a small windows of the full model. </p>
 
+<p class="definition">Definition at line <a class="el" href="set__cover__cft_8h_source.html#l00343">343</a> of file <a class="el" href="set__cover__cft_8h_source.html">set_cover_cft.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="set__cover__cft_8h_source.html">set_cover_cft.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for operations_research::scp::FullToCoreModel:</div>
@@ -166,11 +171,7 @@ Protected Member Functions</h2></td></tr>
 <tr class="memdesc:aabaf172ca6136013f136bb80afe8803c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access the full model with the strongly typed view.  <br /></td></tr>
 <tr class="memitem:a221959decce827e15600e12ad7be8b39" id="r_a221959decce827e15600e12ad7be8b39"><td class="memItemLeft" align="right" valign="top">std::vector&lt; FullSubsetIndex &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a221959decce827e15600e12ad7be8b39">SelectNewCoreColumns</a> (const std::vector&lt; FullSubsetIndex &gt; &amp;forced_columns={})</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="classoperations__research_1_1scp_1_1CoreModel.html">CoreModel</a> extractor. Stores a pointer to the full model and specilized UpdateCore in such a way to updated the <a class="el" href="namespaceoperations__research_1_1scp.html#a852883de70c332dee1a0b8c5ce38c954">SubModel</a> (stored as base class) and focus the search on a small windows of the full model. </p>
-
-<p class="definition">Definition at line <a class="el" href="set__cover__cft_8h_source.html#l00343">343</a> of file <a class="el" href="set__cover__cft_8h_source.html">set_cover_cft.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a1f2a3e8f60488b2be82e0889cf33a18f" name="a1f2a3e8f60488b2be82e0889cf33a18f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1f2a3e8f60488b2be82e0889cf33a18f">&#9670;&#160;</a></span>FullToCoreModel() <span class="overload">[1/2]</span></h2>
 
@@ -469,7 +470,7 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>We could implement and in-place core-model update that removes old fixings, set the new one while also updating the column focus. This solution is much simpler. It just create a new core-model object from scratch and then uses the existing interface.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002559">Todo</a></b></dt><dd>(anyone): Improve this. It's Inefficient but hardly a botleneck and it also avoid storing a full-&gt;core column map. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002557">Todo</a></b></dt><dd>(anyone): Improve this. It's Inefficient but hardly a botleneck and it also avoid storing a full-&gt;core column map. </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classoperations__research_1_1scp_1_1CoreModel.html#a1f7e3723afb846da194e3c70a211757e">operations_research::scp::CoreModel</a>.</p>
 

@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,11 @@ $(function(){initNavTree('classoperations__research_1_1sat_1_1IntervalsRepositor
   <div class="headertitle"><div class="title">operations_research::sat::IntervalsRepository Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This class maintains a set of intervals which correspond to three integer variables (start, end and size). It automatically registers with the <a class="el" href="classoperations__research_1_1sat_1_1PrecedencesPropagator.html">PrecedencesPropagator</a> the relation between the bounds of each interval and provides many helper functions to add precedences relation between intervals. </p>
 
+<p class="definition">Definition at line <a class="el" href="intervals_8h_source.html#l00043">43</a> of file <a class="el" href="intervals_8h_source.html">intervals.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="intervals_8h_source.html">intervals.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
@@ -139,11 +144,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab8c477ca3496838e1c5ede5b02e1e1f5" id="r_ab8c477ca3496838e1c5ede5b02e1e1f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab8c477ca3496838e1c5ede5b02e1e1f5">RegisterCumulative</a> (<a class="el" href="structoperations__research_1_1sat_1_1IntervalsRepository_1_1CumulativeHelper.html">CumulativeHelper</a> helper)</td></tr>
 <tr class="memitem:a5eb2142006cf421d3eedd93a5143c04b" id="r_a5eb2142006cf421d3eedd93a5143c04b"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="structoperations__research_1_1sat_1_1IntervalsRepository_1_1CumulativeHelper.html">CumulativeHelper</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5eb2142006cf421d3eedd93a5143c04b">AllCumulativeHelpers</a> () const</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This class maintains a set of intervals which correspond to three integer variables (start, end and size). It automatically registers with the <a class="el" href="classoperations__research_1_1sat_1_1PrecedencesPropagator.html">PrecedencesPropagator</a> the relation between the bounds of each interval and provides many helper functions to add precedences relation between intervals. </p>
-
-<p class="definition">Definition at line <a class="el" href="intervals_8h_source.html#l00043">43</a> of file <a class="el" href="intervals_8h_source.html">intervals.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aee29b66f9f422384d8e15ef983a8271c" name="aee29b66f9f422384d8e15ef983a8271c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aee29b66f9f422384d8e15ef983a8271c">&#9670;&#160;</a></span>IntervalsRepository() <span class="overload">[1/2]</span></h2>
 
@@ -516,12 +517,12 @@ Public Member Functions</h2></td></tr>
 <p>task_b is before task_a ?</p>
 <p>Abort if the relation is already known.</p>
 <p>Create a new literal.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001877">Todo</a></b></dt><dd>(user): If there are no enforcement and we already have at one of:<ul>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001875">Todo</a></b></dt><dd>(user): If there are no enforcement and we already have at one of:<ul>
 <li>s &lt;=&gt; a.end &lt;= b.start</li>
 <li>t &lt;=&gt; b.end &lt;= a.start We could use (s, not(s)) or (not(t), t) and make sure s = not(t) if both exists.</li>
 </ul>
 </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001878">Todo</a></b></dt><dd>(user): Otherwise, an alternative solution is to create s and t (can be one more Boolean though), and have enforcement =&gt; s + t == 1. The later might not even be needed though, since interval equation should already enforce it. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001876">Todo</a></b></dt><dd>(user): Otherwise, an alternative solution is to create s and t (can be one more Boolean though), and have enforcement =&gt; s + t == 1. The later might not even be needed though, since interval equation should already enforce it. </dd></dl>
 <p>Also insert it in precedences.</p>
 <p>The calls to <a class="el" href="namespaceoperations__research_1_1sat.html#a7e70b48ffc73d9b4346b4415c3b799b6">AddConditionalAffinePrecedence()</a> might have fixed some of the enforcement literals. Remove them if we are at level zero.</p>
 <p>Force the value of boolean_var in case the precedence is not active. This avoids duplicate solutions when enumerating all possible solutions.</p>
@@ -550,7 +551,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns a <a class="el" href="classoperations__research_1_1sat_1_1SchedulingConstraintHelper.html">SchedulingConstraintHelper</a> corresponding to the given variables. </p><dl class="section note"><dt>Note</dt><dd>the order of interval in the helper will be the same.</dd></dl>
 <p>It is possible to indicate that this correspond to a disjunctive constraint by setting the Boolean to true. This is used by our scheduling heuristic based on precedences.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001879">Todo</a></b></dt><dd>(user): Ideally we should sort the vector of variables, but right now we cannot since we often use this with a parallel vector of demands. So this "sorting" should happen in the presolver so we can share as much as possible. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001877">Todo</a></b></dt><dd>(user): Ideally we should sort the vector of variables, but right now we cannot since we often use this with a parallel vector of demands. So this "sorting" should happen in the presolver so we can share as much as possible. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="intervals_8cc_source.html#l00258">258</a> of file <a class="el" href="intervals_8cc_source.html">intervals.cc</a>.</p>
 

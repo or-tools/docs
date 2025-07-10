@@ -30,11 +30,15 @@ var searchData=
   ['nontrivialinfeasibleip_27',['NontrivialInfeasibleIp',['../structoperations__research_1_1math__opt_1_1NontrivialInfeasibleIp.html',1,'operations_research::math_opt']]],
   ['nooverlap2dconstraint_28',['NoOverlap2DConstraint',['../classoperations__research_1_1sat_1_1NoOverlap2DConstraint.html',1,'operations_research::sat']]],
   ['nooverlap2dconstrainthelper_29',['NoOverlap2DConstraintHelper',['../classoperations__research_1_1sat_1_1NoOverlap2DConstraintHelper.html',1,'operations_research::sat']]],
-  ['nosymmetry_30',['NoSymmetry',['../structoperations__research_1_1math__opt_1_1NoSymmetry.html',1,'operations_research::math_opt']]],
-  ['notransform_31',['NoTransform',['../structutil__intops_1_1NoTransform.html',1,'util_intops']]],
-  ['numeric_5flimits_3c_20operations_5fresearch_3a_3astrongindex_3c_20tag_20_3e_20_3e_32',['numeric_limits&lt; operations_research::StrongIndex&lt; Tag &gt; &gt;',['../structstd_1_1numeric__limits_3_01operations__research_1_1StrongIndex_3_01Tag_01_4_01_4.html',1,'std']]],
-  ['numeric_5flimits_3c_20operations_5fresearch_3a_3astrongint64_3c_20tag_20_3e_20_3e_33',['numeric_limits&lt; operations_research::StrongInt64&lt; Tag &gt; &gt;',['../structstd_1_1numeric__limits_3_01operations__research_1_1StrongInt64_3_01Tag_01_4_01_4.html',1,'std']]],
-  ['numericalrev_34',['NumericalRev',['../classoperations__research_1_1NumericalRev.html',1,'operations_research']]],
-  ['numericalrev_3c_20int_20_3e_35',['NumericalRev&lt; int &gt;',['../classoperations__research_1_1NumericalRev.html',1,'operations_research']]],
-  ['numericalrevarray_36',['NumericalRevArray',['../classoperations__research_1_1NumericalRevArray.html',1,'operations_research']]]
+  ['nooverlap2dconstraintproto_30',['NoOverlap2DConstraintProto',['../classoperations__research_1_1sat_1_1NoOverlap2DConstraintProto.html',1,'operations_research::sat']]],
+  ['nooverlap2dconstraintprotodefaulttypeinternal_31',['NoOverlap2DConstraintProtoDefaultTypeInternal',['../structoperations__research_1_1sat_1_1NoOverlap2DConstraintProtoDefaultTypeInternal.html',1,'operations_research::sat']]],
+  ['nooverlapconstraintproto_32',['NoOverlapConstraintProto',['../classoperations__research_1_1sat_1_1NoOverlapConstraintProto.html',1,'operations_research::sat']]],
+  ['nooverlapconstraintprotodefaulttypeinternal_33',['NoOverlapConstraintProtoDefaultTypeInternal',['../structoperations__research_1_1sat_1_1NoOverlapConstraintProtoDefaultTypeInternal.html',1,'operations_research::sat']]],
+  ['nosymmetry_34',['NoSymmetry',['../structoperations__research_1_1math__opt_1_1NoSymmetry.html',1,'operations_research::math_opt']]],
+  ['notransform_35',['NoTransform',['../structutil__intops_1_1NoTransform.html',1,'util_intops']]],
+  ['numeric_5flimits_3c_20operations_5fresearch_3a_3astrongindex_3c_20tag_20_3e_20_3e_36',['numeric_limits&lt; operations_research::StrongIndex&lt; Tag &gt; &gt;',['../structstd_1_1numeric__limits_3_01operations__research_1_1StrongIndex_3_01Tag_01_4_01_4.html',1,'std']]],
+  ['numeric_5flimits_3c_20operations_5fresearch_3a_3astrongint64_3c_20tag_20_3e_20_3e_37',['numeric_limits&lt; operations_research::StrongInt64&lt; Tag &gt; &gt;',['../structstd_1_1numeric__limits_3_01operations__research_1_1StrongInt64_3_01Tag_01_4_01_4.html',1,'std']]],
+  ['numericalrev_38',['NumericalRev',['../classoperations__research_1_1NumericalRev.html',1,'operations_research']]],
+  ['numericalrev_3c_20int_20_3e_39',['NumericalRev&lt; int &gt;',['../classoperations__research_1_1NumericalRev.html',1,'operations_research']]],
+  ['numericalrevarray_40',['NumericalRevArray',['../classoperations__research_1_1NumericalRevArray.html',1,'operations_research']]]
 ];

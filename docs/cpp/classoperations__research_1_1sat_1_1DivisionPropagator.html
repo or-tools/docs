@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,12 @@ $(function(){initNavTree('classoperations__research_1_1sat_1_1DivisionPropagator
   <div class="headertitle"><div class="title">operations_research::sat::DivisionPropagator Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Propagates num / denom = div. Basic version, we don't extract any special cases, and we only propagates the bounds. It expects denom to be &gt; 0.</p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001826">Todo</a></b></dt><dd>(user): Deal with overflow. </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="integer__expr_8h_source.html#l00321">321</a> of file <a class="el" href="integer__expr_8h_source.html">integer_expr.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="integer__expr_8h_source.html">integer_expr.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for operations_research::sat::DivisionPropagator:</div>
@@ -120,12 +126,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2050a6e5fb78d733582e3fe1beb7d9ed inherit pub_methods_classoperations__research_1_1sat_1_1PropagatorInterface" id="r_a2050a6e5fb78d733582e3fe1beb7d9ed"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1PropagatorInterface.html#a2050a6e5fb78d733582e3fe1beb7d9ed">~PropagatorInterface</a> ()=default</td></tr>
 <tr class="memitem:a8df009b18974352e71f74929860c2326 inherit pub_methods_classoperations__research_1_1sat_1_1PropagatorInterface" id="r_a8df009b18974352e71f74929860c2326"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1PropagatorInterface.html#a8df009b18974352e71f74929860c2326">IncrementalPropagate</a> (const std::vector&lt; int &gt; &amp;)</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Propagates num / denom = div. Basic version, we don't extract any special cases, and we only propagates the bounds. It expects denom to be &gt; 0.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001828">Todo</a></b></dt><dd>(user): Deal with overflow. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="integer__expr_8h_source.html#l00321">321</a> of file <a class="el" href="integer__expr_8h_source.html">integer_expr.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a4b951c45cfb8a5565c612123e9b4b052" name="a4b951c45cfb8a5565c612123e9b4b052"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4b951c45cfb8a5565c612123e9b4b052">&#9670;&#160;</a></span>DivisionPropagator() <span class="overload">[1/2]</span></h2>
 
@@ -234,7 +235,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001822">Todo</a></b></dt><dd><p class="startdd">(user): We can propagate more, especially in the case where denom spans across 0. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001820">Todo</a></b></dt><dd><p class="startdd">(user): We can propagate more, especially in the case where denom spans across 0. </p>
 <p class="enddd">(user): We can propagate a bit more if min_div = 0: (min_num &gt; -min_denom). </p>
 </dd></dl>
 

@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,54 @@ $(function(){initNavTree('classortools_1_1math__opt_1_1python_1_1result_1_1Solve
   <div class="headertitle"><div class="title">ortools.math_opt.python.result.SolveResult Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><pre class="fragment">The result of solving an optimization problem defined by a Model.
+
+We attempt to return as much solution information (primal_solutions,
+primal_rays, dual_solutions, dual_rays) as each underlying solver will provide
+given its return status. Differences in the underlying solvers result in a
+weak contract on what fields will be populated for a given termination
+reason. This is discussed in detail in termination_reasons.md, and the most
+important points are summarized below:
+  * When the termination reason is optimal, there will be at least one primal
+    solution provided that will be feasible up to the underlying solver's
+    tolerances.
+  * Dual solutions are only given for convex optimization problems (e.g.
+    linear programs, not integer programs).
+  * A basis is only given for linear programs when solved by the simplex
+    method (e.g., not with PDLP).
+  * Solvers have widely varying support for returning primal and dual rays.
+    E.g. a termination_reason of unbounded does not ensure that a feasible
+    solution or a primal ray is returned, check termination_reasons.md for
+    solver specific guarantees if this is needed. Further, many solvers will
+    provide the ray but not the feasible solution when returning an unbounded
+    status.
+  * When the termination reason is that a limit was reached or that the result
+    is imprecise, a solution may or may not be present. Further, for some
+    solvers (generally, convex optimization solvers, not MIP solvers), the
+    primal or dual solution may not be feasible.
+
+Solver specific output is also returned for some solvers (and only information
+for the solver used will be populated).
+
+Attributes:
+  termination: The reason the solver stopped.
+  solve_stats: Statistics on the solve process, e.g. running time, iterations.
+  solutions: Lexicographically by primal feasibility status, dual feasibility
+    status, (basic dual feasibility for simplex solvers), primal objective
+    value and dual objective value.
+  primal_rays: Directions of unbounded primal improvement, or equivalently,
+    dual infeasibility certificates. Typically provided for terminal reasons
+    UNBOUNDED and DUAL_INFEASIBLE.
+  dual_rays: Directions of unbounded dual improvement, or equivalently, primal
+    infeasibility certificates. Typically provided for termination reason
+    INFEASIBLE.
+  gscip_specific_output: statistics returned by the gSCIP solver, if used.
+  osqp_specific_output: statistics returned by the OSQP solver, if used.
+  pdlp_specific_output: statistics returned by the PDLP solver, if used.
+</pre> 
+<p class="definition">Definition at line <a class="el" href="result_8py_source.html#l00373">373</a> of file <a class="el" href="result_8py_source.html">result.py</a>.</p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ada4bcce9478da82fe69594232f711dcb" id="r_ada4bcce9478da82fe69594232f711dcb"><td class="memItemLeft" align="right" valign="top">datetime.timedelta&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ada4bcce9478da82fe69594232f711dcb">solve_time</a> (self)</td></tr>
@@ -154,54 +202,7 @@ Static Public Attributes</h2></td></tr>
 <tr class="memitem:a9cde4829c47c1791ecdd28e0c08ea413" id="r_a9cde4829c47c1791ecdd28e0c08ea413"><td class="memItemLeft" align="right" valign="top">Optional&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9cde4829c47c1791ecdd28e0c08ea413">osqp_specific_output</a> = None</td></tr>
 <tr class="memitem:a94c0a229c24cd5e1f5d2778f4028d9c8" id="r_a94c0a229c24cd5e1f5d2778f4028d9c8"><td class="memItemLeft" align="right" valign="top">Optional&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a94c0a229c24cd5e1f5d2778f4028d9c8">pdlp_specific_output</a> = None</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><pre class="fragment">The result of solving an optimization problem defined by a Model.
-
-We attempt to return as much solution information (primal_solutions,
-primal_rays, dual_solutions, dual_rays) as each underlying solver will provide
-given its return status. Differences in the underlying solvers result in a
-weak contract on what fields will be populated for a given termination
-reason. This is discussed in detail in termination_reasons.md, and the most
-important points are summarized below:
-  * When the termination reason is optimal, there will be at least one primal
-    solution provided that will be feasible up to the underlying solver's
-    tolerances.
-  * Dual solutions are only given for convex optimization problems (e.g.
-    linear programs, not integer programs).
-  * A basis is only given for linear programs when solved by the simplex
-    method (e.g., not with PDLP).
-  * Solvers have widely varying support for returning primal and dual rays.
-    E.g. a termination_reason of unbounded does not ensure that a feasible
-    solution or a primal ray is returned, check termination_reasons.md for
-    solver specific guarantees if this is needed. Further, many solvers will
-    provide the ray but not the feasible solution when returning an unbounded
-    status.
-  * When the termination reason is that a limit was reached or that the result
-    is imprecise, a solution may or may not be present. Further, for some
-    solvers (generally, convex optimization solvers, not MIP solvers), the
-    primal or dual solution may not be feasible.
-
-Solver specific output is also returned for some solvers (and only information
-for the solver used will be populated).
-
-Attributes:
-  termination: The reason the solver stopped.
-  solve_stats: Statistics on the solve process, e.g. running time, iterations.
-  solutions: Lexicographically by primal feasibility status, dual feasibility
-    status, (basic dual feasibility for simplex solvers), primal objective
-    value and dual objective value.
-  primal_rays: Directions of unbounded primal improvement, or equivalently,
-    dual infeasibility certificates. Typically provided for terminal reasons
-    UNBOUNDED and DUAL_INFEASIBLE.
-  dual_rays: Directions of unbounded dual improvement, or equivalently, primal
-    infeasibility certificates. Typically provided for termination reason
-    INFEASIBLE.
-  gscip_specific_output: statistics returned by the gSCIP solver, if used.
-  osqp_specific_output: statistics returned by the OSQP solver, if used.
-  pdlp_specific_output: statistics returned by the PDLP solver, if used.
-</pre> 
-<p class="definition">Definition at line <a class="el" href="result_8py_source.html#l00373">373</a> of file <a class="el" href="result_8py_source.html">result.py</a>.</p>
-</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="a6f28171985c8138c9f19fbf3a0b0ab4c" name="a6f28171985c8138c9f19fbf3a0b0ab4c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6f28171985c8138c9f19fbf3a0b0ab4c">&#9670;&#160;</a></span>best_objective_bound()</h2>
 

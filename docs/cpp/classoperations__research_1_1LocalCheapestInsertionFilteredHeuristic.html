@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,11 @@ $(function(){initNavTree('classoperations__research_1_1LocalCheapestInsertionFil
   <div class="headertitle"><div class="title">operations_research::LocalCheapestInsertionFilteredHeuristic Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Filter-based decision builder which builds a solution by inserting nodes at their cheapest position. The cost of a position is computed an arc-based cost callback. Node selected for insertion are considered in decreasing order of distance to the start/ends of the routes, i.e. farthest nodes are inserted first. </p>
 
+<p class="definition">Definition at line <a class="el" href="routing__search_8h_source.html#l01134">1134</a> of file <a class="el" href="routing__search_8h_source.html">routing_search.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="routing__search_8h_source.html">routing_search.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for operations_research::LocalCheapestInsertionFilteredHeuristic:</div>
@@ -111,7 +116,7 @@ Inheritance diagram for operations_research::LocalCheapestInsertionFilteredHeuri
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9fcbecded3ce956671e3e598df052891" id="r_a9fcbecded3ce956671e3e598df052891"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9fcbecded3ce956671e3e598df052891">LocalCheapestInsertionFilteredHeuristic</a> (RoutingModel *<a class="el" href="classoperations__research_1_1RoutingFilteredHeuristic.html#a9a7b29c87283e95a9e312748da0c82f8">model</a>, std::function&lt; bool()&gt; stop_search, std::function&lt; int64_t(int64_t, int64_t, int64_t)&gt; evaluator, RoutingSearchParameters::PairInsertionStrategy pair_insertion_strategy, std::vector&lt; RoutingSearchParameters::InsertionSortingProperty &gt; insertion_sorting_properties, <a class="el" href="classoperations__research_1_1LocalSearchFilterManager.html">LocalSearchFilterManager</a> *filter_manager, bool use_first_solution_hint, <a class="el" href="classoperations__research_1_1BinCapacities.html">BinCapacities</a> *bin_capacities=nullptr, std::function&lt; bool(const std::vector&lt; RoutingModel::VariableValuePair &gt; &amp;, std::vector&lt; RoutingModel::VariableValuePair &gt; *)&gt; optimize_on_insertion=nullptr)</td></tr>
+<tr class="memitem:a9fcbecded3ce956671e3e598df052891" id="r_a9fcbecded3ce956671e3e598df052891"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9fcbecded3ce956671e3e598df052891">LocalCheapestInsertionFilteredHeuristic</a> (RoutingModel *<a class="el" href="classoperations__research_1_1RoutingFilteredHeuristic.html#a9a7b29c87283e95a9e312748da0c82f8">model</a>, std::function&lt; bool()&gt; stop_search, std::function&lt; int64_t(int64_t, int64_t, int64_t)&gt; evaluator, <a class="el" href="namespaceoperations__research.html#ac2d376386fffc4bec0ce4f9133c3409e">RoutingSearchParameters::PairInsertionStrategy</a> pair_insertion_strategy, std::vector&lt; <a class="el" href="namespaceoperations__research.html#a239a49ee9830e4c5e3bf844269adfc74">RoutingSearchParameters::InsertionSortingProperty</a> &gt; insertion_sorting_properties, <a class="el" href="classoperations__research_1_1LocalSearchFilterManager.html">LocalSearchFilterManager</a> *filter_manager, bool use_first_solution_hint, <a class="el" href="classoperations__research_1_1BinCapacities.html">BinCapacities</a> *bin_capacities=nullptr, std::function&lt; bool(const std::vector&lt; RoutingModel::VariableValuePair &gt; &amp;, std::vector&lt; RoutingModel::VariableValuePair &gt; *)&gt; optimize_on_insertion=nullptr)</td></tr>
 <tr class="memdesc:a9fcbecded3ce956671e3e598df052891"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes ownership of evaluator.  <br /></td></tr>
 <tr class="memitem:a56a61f6e95b2335030b96d6d4ba4e82e" id="r_a56a61f6e95b2335030b96d6d4ba4e82e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a56a61f6e95b2335030b96d6d4ba4e82e">~LocalCheapestInsertionFilteredHeuristic</a> () override=default</td></tr>
 <tr class="memitem:ac9a7b0c2b33305874f75680274c5188a" id="r_ac9a7b0c2b33305874f75680274c5188a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac9a7b0c2b33305874f75680274c5188a">BuildSolutionInternal</a> () override</td></tr>
@@ -202,11 +207,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_attribs_classoperations__research_1_1IntVarFilteredHeuristic"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_classoperations__research_1_1IntVarFilteredHeuristic')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Protected Attributes inherited from <a class="el" href="classoperations__research_1_1IntVarFilteredHeuristic.html">operations_research::IntVarFilteredHeuristic</a></td></tr>
 <tr class="memitem:a1a48f614cbb0c665f5908c04536742e1 inherit pro_attribs_classoperations__research_1_1IntVarFilteredHeuristic" id="r_a1a48f614cbb0c665f5908c04536742e1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoperations__research_1_1Assignment.html">Assignment</a> *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1IntVarFilteredHeuristic.html#a1a48f614cbb0c665f5908c04536742e1">assignment_</a></td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Filter-based decision builder which builds a solution by inserting nodes at their cheapest position. The cost of a position is computed an arc-based cost callback. Node selected for insertion are considered in decreasing order of distance to the start/ends of the routes, i.e. farthest nodes are inserted first. </p>
-
-<p class="definition">Definition at line <a class="el" href="routing__search_8h_source.html#l01134">1134</a> of file <a class="el" href="routing__search_8h_source.html">routing_search.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a9fcbecded3ce956671e3e598df052891" name="a9fcbecded3ce956671e3e598df052891"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9fcbecded3ce956671e3e598df052891">&#9670;&#160;</a></span>LocalCheapestInsertionFilteredHeuristic()</h2>
 
@@ -231,12 +232,12 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">RoutingSearchParameters::PairInsertionStrategy</td>          <td class="paramname"><span class="paramname"><em>pair_insertion_strategy</em></span>, </td>
+          <td class="paramtype"><a class="el" href="namespaceoperations__research.html#ac2d376386fffc4bec0ce4f9133c3409e">RoutingSearchParameters::PairInsertionStrategy</a></td>          <td class="paramname"><span class="paramname"><em>pair_insertion_strategy</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::vector&lt; RoutingSearchParameters::InsertionSortingProperty &gt;</td>          <td class="paramname"><span class="paramname"><em>insertion_sorting_properties</em></span>, </td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="namespaceoperations__research.html#a239a49ee9830e4c5e3bf844269adfc74">RoutingSearchParameters::InsertionSortingProperty</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>insertion_sorting_properties</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -262,7 +263,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Takes ownership of evaluator. </p>
-<p><a class="el" href="classoperations__research_1_1LocalCheapestInsertionFilteredHeuristic.html">LocalCheapestInsertionFilteredHeuristic</a> </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000372">Todo</a></b></dt><dd>(user): Add support for penalty costs. </dd></dl>
+<p><a class="el" href="classoperations__research_1_1LocalCheapestInsertionFilteredHeuristic.html">LocalCheapestInsertionFilteredHeuristic</a> </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000371">Todo</a></b></dt><dd>(user): Add support for penalty costs. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="routing__search_8cc_source.html#l02510">2510</a> of file <a class="el" href="routing__search_8cc_source.html">routing_search.cc</a>.</p>
 

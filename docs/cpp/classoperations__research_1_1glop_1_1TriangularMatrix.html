@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,12 @@ $(function(){initNavTree('classoperations__research_1_1glop_1_1TriangularMatrix.
   <div class="headertitle"><div class="title">operations_research::glop::TriangularMatrix Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Specialization of a <a class="el" href="classoperations__research_1_1glop_1_1CompactSparseMatrix.html">CompactSparseMatrix</a> used for triangular matrices. To be able to solve triangular systems as efficiently as possible, the diagonal entries are stored in a separate vector and not in the underlying <a class="el" href="classoperations__research_1_1glop_1_1CompactSparseMatrix.html">CompactSparseMatrix</a>.</p>
+<p>Advanced usage: this class also support matrices that can be permuted into a triangular matrix and some functions work directly on such matrices. </p>
 
+<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00600">600</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="sparse_8h_source.html">sparse.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for operations_research::glop::TriangularMatrix:</div>
@@ -159,12 +165,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3b96282a18495971faeb2f7e8a942e0d" id="r_a3b96282a18495971faeb2f7e8a942e0d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceoperations__research_1_1glop.html#a0cac235bd48eb39d15cc101516dc1e90">Fractional</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3b96282a18495971faeb2f7e8a942e0d">ComputeInverseInfinityNormUpperBound</a> () const</td></tr>
 <tr class="memitem:a04cc9a74ee40418a3b80232941c81c0f" id="r_a04cc9a74ee40418a3b80232941c81c0f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceoperations__research_1_1glop.html#a0cac235bd48eb39d15cc101516dc1e90">Fractional</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a04cc9a74ee40418a3b80232941c81c0f">ComputeInverseInfinityNorm</a> () const</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Specialization of a <a class="el" href="classoperations__research_1_1glop_1_1CompactSparseMatrix.html">CompactSparseMatrix</a> used for triangular matrices. To be able to solve triangular systems as efficiently as possible, the diagonal entries are stored in a separate vector and not in the underlying <a class="el" href="classoperations__research_1_1glop_1_1CompactSparseMatrix.html">CompactSparseMatrix</a>.</p>
-<p>Advanced usage: this class also support matrices that can be permuted into a triangular matrix and some functions work directly on such matrices. </p>
-
-<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00601">601</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aaf5be25e26d62b572eb5576929fe114e" name="aaf5be25e26d62b572eb5576929fe114e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aaf5be25e26d62b572eb5576929fe114e">&#9670;&#160;</a></span>TriangularMatrix() <span class="overload">[1/2]</span></h2>
 
@@ -188,7 +189,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00603">603</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00602">602</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
 
 </div>
 </div>
@@ -244,7 +245,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Adds the given sparse column divided by diagonal_coefficient. The diagonal_row is assumed to be present and its value should be the same as the one given in diagonal_coefficient. Note that this function tests for zero coefficients in the input column and removes them. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000879">Todo</a></b></dt><dd>(user): use division by a constant using multiplication. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000878">Todo</a></b></dt><dd>(user): use division by a constant using multiplication. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="sparse_8cc_source.html#l00713">713</a> of file <a class="el" href="sparse_8cc_source.html">sparse.cc</a>.</p>
 
@@ -368,7 +369,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Returns true iff the column contains no non-diagonal entries. </p>
 
-<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00680">680</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00679">679</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
 
 </div>
 </div>
@@ -434,7 +435,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Same as TriangularComputeRowsToConsider() but always returns the non-zeros sorted by rows. It is up to the client to call the direct or reverse hyper-sparse solve function depending if the matrix is upper or lower triangular. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000882">Todo</a></b></dt><dd>(user): Investigate the best thresholds. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000881">Todo</a></b></dt><dd>(user): Investigate the best thresholds. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="sparse_8cc_source.html#l01465">1465</a> of file <a class="el" href="sparse_8cc_source.html">sparse.cc</a>.</p>
 
@@ -457,7 +458,7 @@ Public Member Functions</h2></td></tr>
 <p>Given the positions of the non-zeros of a vector, computes the non-zero positions of the vector after a solve by this triangular matrix. The order of the returned non-zero positions will be in the REVERSE elimination order. If the function detects that there are too many non-zeros, then it aborts early and non_zero_rows is cleared. </p>
 <p>We don't start the DFS if the initial number of non-zeros is under the sparsity_threshold. During the DFS, we abort it if the number of floating points operations get larger than the num_ops_threshold.</p>
 <p>In both cases, we make sure to clear non_zero_rows so that the solving part will use the non-hypersparse version of the code.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000881">Todo</a></b></dt><dd>(user): Investigate the best thresholds. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000880">Todo</a></b></dt><dd>(user): Investigate the best thresholds. </dd></dl>
 <p>Initialize using the non-zero positions of the input.</p>
 <p>Topological sort based on Depth-First-Search. Same remarks as the version implemented in <a class="el" href="#a59c08cd91eb0e857026e41d248bf6fbf">PermutedComputeRowsToConsider()</a>.</p>
 <p>If the depth-first search from the current node is finished, we store the node. This will store the node in reverse topological order.</p>
@@ -543,7 +544,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Returns the diagonal coefficient of the given column. </p>
 
-<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00675">675</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00674">674</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
 
 </div>
 </div>
@@ -571,7 +572,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns the index of the first column which is not an identity column (i.e. a column j with only one entry of value 1 at the j-th row). This is always zero if the matrix is not triangular. </p>
 
-<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00670">670</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00669">669</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
 
 </div>
 </div>
@@ -659,7 +660,7 @@ simplex method", December 1999, MS 99-014. <a href="http://www.maths.ed.ac.uk/ha
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00614">614</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00613">613</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
 
 </div>
 </div>
@@ -771,7 +772,7 @@ simplex method", December 1999, MS 99-014. <a href="http://www.maths.ed.ac.uk/ha
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00616">616</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00615">615</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
 
 </div>
 </div>
@@ -798,7 +799,7 @@ simplex method", December 1999, MS 99-014. <a href="http://www.maths.ed.ac.uk/ha
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00617">617</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00616">616</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
 
 </div>
 </div>
@@ -825,7 +826,7 @@ simplex method", December 1999, MS 99-014. <a href="http://www.maths.ed.ac.uk/ha
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00615">615</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00614">614</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
 
 </div>
 </div>
@@ -854,7 +855,7 @@ simplex method", December 1999, MS 99-014. <a href="http://www.maths.ed.ac.uk/ha
 
 <p>This is used to compute the deterministic time of a matrix factorization. </p>
 
-<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00803">803</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00802">802</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
 
 </div>
 </div>
@@ -1023,7 +1024,7 @@ simplex method", December 1999, MS 99-014. <a href="http://www.maths.ed.ac.uk/ha
 <p>We clear lower_column first in case upper_column and lower_column point to the same underlying <a class="el" href="classoperations__research_1_1glop_1_1SparseColumn.html">SparseColumn</a>.</p>
 <p>rows_to_consider_ contains the row to process in reverse order. Note in particular that each "permuted_row" will never be touched again and so its value is final. We copy the result in (lower_column, upper_column) and clear initially_all_zero_scratchpad_ at the same time.</p>
 <dl class="section note"><dt>Note</dt><dd>permuted_row will not appear in the loop below so we already know the value of the solution at this position.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000880">Todo</a></b></dt><dd>(user): The size of lower is exact, so we could be slighly faster here. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000879">Todo</a></b></dt><dd>(user): The size of lower is exact, so we could be slighly faster here. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="sparse_8cc_source.html#l01193">1193</a> of file <a class="el" href="sparse_8cc_source.html">sparse.cc</a>.</p>
 

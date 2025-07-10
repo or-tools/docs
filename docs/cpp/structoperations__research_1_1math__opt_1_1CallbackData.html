@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,14 +96,19 @@ $(function(){initNavTree('structoperations__research_1_1math__opt_1_1CallbackDat
   <div class="headertitle"><div class="title">operations_research::math_opt::CallbackData Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The input to the <a class="el" href="namespaceoperations__research_1_1math__opt.html#a2ca87a92c4f346d6c3a6cc5453da54fa">Callback</a> function.</p>
+<p>The information available depends on the current event. </p>
 
+<p class="definition">Definition at line <a class="el" href="callback_8h_source.html#l00186">186</a> of file <a class="el" href="callback_8h_source.html">callback.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="callback_8h_source.html">callback.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ace631502697d91916bc6258d9dbf331d" id="r_ace631502697d91916bc6258d9dbf331d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ace631502697d91916bc6258d9dbf331d">CallbackData</a> (<a class="el" href="namespaceoperations__research_1_1math__opt.html#a92b4e3b9a828e96e7b216bc3d9438a0a">CallbackEvent</a> <a class="el" href="#acea803b57c6aa2e92da56e6d59104c1e">event</a>, absl::Duration <a class="el" href="#a555f5746a58b142b7e34141c6bb8cb6a">runtime</a>)</td></tr>
 <tr class="memdesc:ace631502697d91916bc6258d9dbf331d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Users will typically not need this function other than for testing.  <br /></td></tr>
-<tr class="memitem:ae5fe36b6ec1f7cc0e3ae01c14bef4922" id="r_ae5fe36b6ec1f7cc0e3ae01c14bef4922"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae5fe36b6ec1f7cc0e3ae01c14bef4922">CallbackData</a> (<a class="el" href="namespaceoperations__research_1_1math__opt.html#a0d12f0e829e6df24b5dee811bf64b52c">ModelStorageCPtr</a> storage, const CallbackDataProto &amp;proto)</td></tr>
+<tr class="memitem:ae5fe36b6ec1f7cc0e3ae01c14bef4922" id="r_ae5fe36b6ec1f7cc0e3ae01c14bef4922"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae5fe36b6ec1f7cc0e3ae01c14bef4922">CallbackData</a> (<a class="el" href="namespaceoperations__research_1_1math__opt.html#a0d12f0e829e6df24b5dee811bf64b52c">ModelStorageCPtr</a> storage, const <a class="el" href="classoperations__research_1_1math__opt_1_1CallbackDataProto.html">CallbackDataProto</a> &amp;proto)</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -111,20 +117,15 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:aa611cf2f38ba0e4cd634c16fcb912ad5" id="r_aa611cf2f38ba0e4cd634c16fcb912ad5"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="namespaceoperations__research_1_1math__opt.html#a0cfee3f4c5c5a923566b26311c634582">VariableMap</a>&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa611cf2f38ba0e4cd634c16fcb912ad5">solution</a></td></tr>
 <tr class="memitem:a555f5746a58b142b7e34141c6bb8cb6a" id="r_a555f5746a58b142b7e34141c6bb8cb6a"><td class="memItemLeft" align="right" valign="top">absl::Duration&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a555f5746a58b142b7e34141c6bb8cb6a">runtime</a></td></tr>
 <tr class="memdesc:a555f5746a58b142b7e34141c6bb8cb6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Time since <span class="tt"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a44e6832359d18377eaf7e3100d3a7c28">Solve()</a></span> was called. Available for all events.  <br /></td></tr>
-<tr class="memitem:a14785bf6ecdb5d952f18d9039f7a9085" id="r_a14785bf6ecdb5d952f18d9039f7a9085"><td class="memItemLeft" align="right" valign="top">CallbackDataProto::PresolveStats&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a14785bf6ecdb5d952f18d9039f7a9085">presolve_stats</a></td></tr>
+<tr class="memitem:a14785bf6ecdb5d952f18d9039f7a9085" id="r_a14785bf6ecdb5d952f18d9039f7a9085"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoperations__research_1_1math__opt_1_1CallbackDataProto.html#af9067f708c75242c80492800df17871b">CallbackDataProto::PresolveStats</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a14785bf6ecdb5d952f18d9039f7a9085">presolve_stats</a></td></tr>
 <tr class="memdesc:a14785bf6ecdb5d952f18d9039f7a9085"><td class="mdescLeft">&#160;</td><td class="mdescRight">Only available for event == <a class="el" href="namespaceoperations__research_1_1math__opt.html#a92b4e3b9a828e96e7b216bc3d9438a0aaac5d782c5d5407f4f333a40c2cc681ba">CallbackEvent::kPresolve</a>.  <br /></td></tr>
-<tr class="memitem:aa09904e8065bf365540d292498fc2f25" id="r_aa09904e8065bf365540d292498fc2f25"><td class="memItemLeft" align="right" valign="top">CallbackDataProto::SimplexStats&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa09904e8065bf365540d292498fc2f25">simplex_stats</a></td></tr>
+<tr class="memitem:aa09904e8065bf365540d292498fc2f25" id="r_aa09904e8065bf365540d292498fc2f25"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoperations__research_1_1math__opt_1_1CallbackDataProto.html#a8b49fe1332c9d02b38b74a7b038f552b">CallbackDataProto::SimplexStats</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa09904e8065bf365540d292498fc2f25">simplex_stats</a></td></tr>
 <tr class="memdesc:aa09904e8065bf365540d292498fc2f25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Only available for event == <a class="el" href="namespaceoperations__research_1_1math__opt.html#a92b4e3b9a828e96e7b216bc3d9438a0aae97d1190dcdbe357a2cf9498ce213335">CallbackEvent::kSimplex</a>.  <br /></td></tr>
-<tr class="memitem:aa49646eb1d790b667b515f66c57dc8ac" id="r_aa49646eb1d790b667b515f66c57dc8ac"><td class="memItemLeft" align="right" valign="top">CallbackDataProto::BarrierStats&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa49646eb1d790b667b515f66c57dc8ac">barrier_stats</a></td></tr>
+<tr class="memitem:aa49646eb1d790b667b515f66c57dc8ac" id="r_aa49646eb1d790b667b515f66c57dc8ac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoperations__research_1_1math__opt_1_1CallbackDataProto.html#ac435a9749cacabd0a0e3f45752e94374">CallbackDataProto::BarrierStats</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa49646eb1d790b667b515f66c57dc8ac">barrier_stats</a></td></tr>
 <tr class="memdesc:aa49646eb1d790b667b515f66c57dc8ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Only available for event == <a class="el" href="namespaceoperations__research_1_1math__opt.html#a92b4e3b9a828e96e7b216bc3d9438a0aaffa5976cb7170d234d6b69921bf0f085">CallbackEvent::kBarrier</a>.  <br /></td></tr>
-<tr class="memitem:ab6f701b528270b8ba4cc9789cfebe0cf" id="r_ab6f701b528270b8ba4cc9789cfebe0cf"><td class="memItemLeft" align="right" valign="top">CallbackDataProto::MipStats&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab6f701b528270b8ba4cc9789cfebe0cf">mip_stats</a></td></tr>
+<tr class="memitem:ab6f701b528270b8ba4cc9789cfebe0cf" id="r_ab6f701b528270b8ba4cc9789cfebe0cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoperations__research_1_1math__opt_1_1CallbackDataProto.html#aef5211f9c7d9ebd07e5906e8683214ac">CallbackDataProto::MipStats</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab6f701b528270b8ba4cc9789cfebe0cf">mip_stats</a></td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The input to the <a class="el" href="namespaceoperations__research_1_1math__opt.html#a2ca87a92c4f346d6c3a6cc5453da54fa">Callback</a> function.</p>
-<p>The information available depends on the current event. </p>
-
-<p class="definition">Definition at line <a class="el" href="callback_8h_source.html#l00186">186</a> of file <a class="el" href="callback_8h_source.html">callback.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ace631502697d91916bc6258d9dbf331d" name="ace631502697d91916bc6258d9dbf331d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ace631502697d91916bc6258d9dbf331d">&#9670;&#160;</a></span>CallbackData() <span class="overload">[1/2]</span></h2>
 
@@ -164,7 +165,7 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const CallbackDataProto &amp;</td>          <td class="paramname"><span class="paramname"><em>proto</em></span>&#160;)</td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1math__opt_1_1CallbackDataProto.html">CallbackDataProto</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>proto</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -183,7 +184,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">CallbackDataProto::BarrierStats operations_research::math_opt::CallbackData::barrier_stats</td>
+          <td class="memname"><a class="el" href="classoperations__research_1_1math__opt_1_1CallbackDataProto.html#ac435a9749cacabd0a0e3f45752e94374">CallbackDataProto::BarrierStats</a> operations_research::math_opt::CallbackData::barrier_stats</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -219,7 +220,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">CallbackDataProto::MipStats operations_research::math_opt::CallbackData::mip_stats</td>
+          <td class="memname"><a class="el" href="classoperations__research_1_1math__opt_1_1CallbackDataProto.html#aef5211f9c7d9ebd07e5906e8683214ac">CallbackDataProto::MipStats</a> operations_research::math_opt::CallbackData::mip_stats</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -236,7 +237,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">CallbackDataProto::PresolveStats operations_research::math_opt::CallbackData::presolve_stats</td>
+          <td class="memname"><a class="el" href="classoperations__research_1_1math__opt_1_1CallbackDataProto.html#af9067f708c75242c80492800df17871b">CallbackDataProto::PresolveStats</a> operations_research::math_opt::CallbackData::presolve_stats</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -272,7 +273,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">CallbackDataProto::SimplexStats operations_research::math_opt::CallbackData::simplex_stats</td>
+          <td class="memname"><a class="el" href="classoperations__research_1_1math__opt_1_1CallbackDataProto.html#a8b49fe1332c9d02b38b74a7b038f552b">CallbackDataProto::SimplexStats</a> operations_research::math_opt::CallbackData::simplex_stats</td>
         </tr>
       </table>
 </div><div class="memdoc">

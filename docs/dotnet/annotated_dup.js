@@ -227,6 +227,7 @@ var annotated_dup =
         ] ],
         [ "Sat", "namespaceGoogle_1_1OrTools_1_1Sat.html", [
           [ "AllDifferentConstraintProto", "classGoogle_1_1OrTools_1_1Sat_1_1AllDifferentConstraintProto.html", "classGoogle_1_1OrTools_1_1Sat_1_1AllDifferentConstraintProto" ],
+          [ "ArcLpValue", "classGoogle_1_1OrTools_1_1Sat_1_1ArcLpValue.html", "classGoogle_1_1OrTools_1_1Sat_1_1ArcLpValue" ],
           [ "AutomatonConstraint", "classGoogle_1_1OrTools_1_1Sat_1_1AutomatonConstraint.html", "classGoogle_1_1OrTools_1_1Sat_1_1AutomatonConstraint" ],
           [ "AutomatonConstraintProto", "classGoogle_1_1OrTools_1_1Sat_1_1AutomatonConstraintProto.html", "classGoogle_1_1OrTools_1_1Sat_1_1AutomatonConstraintProto" ],
           [ "BestBoundCallback", "classGoogle_1_1OrTools_1_1Sat_1_1BestBoundCallback.html", "classGoogle_1_1OrTools_1_1Sat_1_1BestBoundCallback" ],
@@ -286,6 +287,8 @@ var annotated_dup =
           [ "ReservoirConstraint", "classGoogle_1_1OrTools_1_1Sat_1_1ReservoirConstraint.html", "classGoogle_1_1OrTools_1_1Sat_1_1ReservoirConstraint" ],
           [ "ReservoirConstraintProto", "classGoogle_1_1OrTools_1_1Sat_1_1ReservoirConstraintProto.html", "classGoogle_1_1OrTools_1_1Sat_1_1ReservoirConstraintProto" ],
           [ "RoutesConstraintProto", "classGoogle_1_1OrTools_1_1Sat_1_1RoutesConstraintProto.html", "classGoogle_1_1OrTools_1_1Sat_1_1RoutesConstraintProto" ],
+          [ "RoutesSupportGraphProto", "classGoogle_1_1OrTools_1_1Sat_1_1RoutesSupportGraphProto.html", "classGoogle_1_1OrTools_1_1Sat_1_1RoutesSupportGraphProto" ],
+          [ "RoutesSupportGraphReflection", "classGoogle_1_1OrTools_1_1Sat_1_1RoutesSupportGraphReflection.html", "classGoogle_1_1OrTools_1_1Sat_1_1RoutesSupportGraphReflection" ],
           [ "SatParameters", "classGoogle_1_1OrTools_1_1Sat_1_1SatParameters.html", "classGoogle_1_1OrTools_1_1Sat_1_1SatParameters" ],
           [ "SatParametersReflection", "classGoogle_1_1OrTools_1_1Sat_1_1SatParametersReflection.html", "classGoogle_1_1OrTools_1_1Sat_1_1SatParametersReflection" ],
           [ "SolutionCallback", "classGoogle_1_1OrTools_1_1Sat_1_1SolutionCallback.html", "classGoogle_1_1OrTools_1_1Sat_1_1SolutionCallback" ],
@@ -323,11 +326,6 @@ var annotated_dup =
       ] ]
     ] ],
     [ "OperationsResearch", "namespaceOperationsResearch.html", [
-      [ "Sat", "namespaceOperationsResearch_1_1Sat.html", [
-        [ "ArcLpValue", "classOperationsResearch_1_1Sat_1_1ArcLpValue.html", "classOperationsResearch_1_1Sat_1_1ArcLpValue" ],
-        [ "RoutesSupportGraphProto", "classOperationsResearch_1_1Sat_1_1RoutesSupportGraphProto.html", "classOperationsResearch_1_1Sat_1_1RoutesSupportGraphProto" ],
-        [ "RoutesSupportGraphReflection", "classOperationsResearch_1_1Sat_1_1RoutesSupportGraphReflection.html", "classOperationsResearch_1_1Sat_1_1RoutesSupportGraphReflection" ]
-      ] ],
       [ "LinearSolverReflection", "classOperationsResearch_1_1LinearSolverReflection.html", "classOperationsResearch_1_1LinearSolverReflection" ],
       [ "MPAbsConstraint", "classOperationsResearch_1_1MPAbsConstraint.html", "classOperationsResearch_1_1MPAbsConstraint" ],
       [ "MPArrayConstraint", "classOperationsResearch_1_1MPArrayConstraint.html", "classOperationsResearch_1_1MPArrayConstraint" ],

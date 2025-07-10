@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,21 +96,6 @@ $(function(){initNavTree('classoperations__research_1_1sat_1_1CpModelPresolver.h
   <div class="headertitle"><div class="title">operations_research::sat::CpModelPresolver Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
-<p><code>#include &lt;<a class="el" href="cp__model__presolve_8h_source.html">cp_model_presolve.h</a>&gt;</code></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a09ff637633412bd08b72312dd3fe5542" id="r_a09ff637633412bd08b72312dd3fe5542"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a09ff637633412bd08b72312dd3fe5542">CpModelPresolver</a> (<a class="el" href="classoperations__research_1_1sat_1_1PresolveContext.html">PresolveContext</a> *context, std::vector&lt; int &gt; *postsolve_mapping)</td></tr>
-<tr class="memitem:a4eea655cfbd484263d86d3d89af42bf5" id="r_a4eea655cfbd484263d86d3d89af42bf5"><td class="memItemLeft" align="right" valign="top">CpSolverStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4eea655cfbd484263d86d3d89af42bf5">Presolve</a> ()</td></tr>
-<tr class="memitem:a60527deff64d7e3f0cc510973c8f6da9" id="r_a60527deff64d7e3f0cc510973c8f6da9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a60527deff64d7e3f0cc510973c8f6da9">PresolveOneConstraint</a> (int c)</td></tr>
-<tr class="memdesc:a60527deff64d7e3f0cc510973c8f6da9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes presolve method for the given constraint. Public for testing only.  <br /></td></tr>
-<tr class="memitem:a65bbd0c3b5d951e791fba86a05d9e61d" id="r_a65bbd0c3b5d951e791fba86a05d9e61d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a65bbd0c3b5d951e791fba86a05d9e61d">RemoveEmptyConstraints</a> ()</td></tr>
-<tr class="memdesc:a65bbd0c3b5d951e791fba86a05d9e61d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Visible for testing.  <br /></td></tr>
-<tr class="memitem:a6b247edecbebdff3fadbd7661e484b9a" id="r_a6b247edecbebdff3fadbd7661e484b9a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6b247edecbebdff3fadbd7661e484b9a">DetectDuplicateColumns</a> ()</td></tr>
-<tr class="memitem:a0d7a189b32ff5ccd484556256a04dc83" id="r_a0d7a189b32ff5ccd484556256a04dc83"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0d7a189b32ff5ccd484556256a04dc83">DetectDifferentVariables</a> ()</td></tr>
-<tr class="memdesc:a0d7a189b32ff5ccd484556256a04dc83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detects variable that must take different values.  <br /></td></tr>
-</table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Presolves the initial content of presolved_model.</p>
 <p>This also creates a mapping model that encode the correspondence between the two problems. This works as follow:</p><ul>
@@ -118,10 +104,25 @@ Public Member Functions</h2></td></tr>
 <li>Fixing one of the two sets of variables and solving the model will assign the other set to a feasible solution of the other problem. Moreover, the objective value of these solutions will be the same. Note that solving such problems will take little time in practice because the propagation will basically do all the work.</li>
 </ul>
 <p>Note(user): an optimization model can be transformed into a decision problem, if for instance the objective is fixed, or independent from the rest of the problem.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001477">Todo</a></b></dt><dd>(user): Identify disconnected components and returns a vector of presolved model? If we go this route, it may be nicer to store the indices inside the model. We can add a IntegerVariableProto::initial_index; </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001475">Todo</a></b></dt><dd>(user): Identify disconnected components and returns a vector of presolved model? If we go this route, it may be nicer to store the indices inside the model. We can add a IntegerVariableProto::initial_index; </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="cp__model__presolve_8h_source.html#l00075">75</a> of file <a class="el" href="cp__model__presolve_8h_source.html">cp_model_presolve.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+</div>
+<p><code>#include &lt;<a class="el" href="cp__model__presolve_8h_source.html">cp_model_presolve.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a09ff637633412bd08b72312dd3fe5542" id="r_a09ff637633412bd08b72312dd3fe5542"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a09ff637633412bd08b72312dd3fe5542">CpModelPresolver</a> (<a class="el" href="classoperations__research_1_1sat_1_1PresolveContext.html">PresolveContext</a> *context, std::vector&lt; int &gt; *postsolve_mapping)</td></tr>
+<tr class="memitem:a4eea655cfbd484263d86d3d89af42bf5" id="r_a4eea655cfbd484263d86d3d89af42bf5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceoperations__research_1_1sat.html#ac14a394f629f2cf1070b84bce2e427ce">CpSolverStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4eea655cfbd484263d86d3d89af42bf5">Presolve</a> ()</td></tr>
+<tr class="memitem:a60527deff64d7e3f0cc510973c8f6da9" id="r_a60527deff64d7e3f0cc510973c8f6da9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a60527deff64d7e3f0cc510973c8f6da9">PresolveOneConstraint</a> (int c)</td></tr>
+<tr class="memdesc:a60527deff64d7e3f0cc510973c8f6da9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes presolve method for the given constraint. Public for testing only.  <br /></td></tr>
+<tr class="memitem:a65bbd0c3b5d951e791fba86a05d9e61d" id="r_a65bbd0c3b5d951e791fba86a05d9e61d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a65bbd0c3b5d951e791fba86a05d9e61d">RemoveEmptyConstraints</a> ()</td></tr>
+<tr class="memdesc:a65bbd0c3b5d951e791fba86a05d9e61d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Visible for testing.  <br /></td></tr>
+<tr class="memitem:a6b247edecbebdff3fadbd7661e484b9a" id="r_a6b247edecbebdff3fadbd7661e484b9a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6b247edecbebdff3fadbd7661e484b9a">DetectDuplicateColumns</a> ()</td></tr>
+<tr class="memitem:a0d7a189b32ff5ccd484556256a04dc83" id="r_a0d7a189b32ff5ccd484556256a04dc83"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0d7a189b32ff5ccd484556256a04dc83">DetectDifferentVariables</a> ()</td></tr>
+<tr class="memdesc:a0d7a189b32ff5ccd484556256a04dc83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detects variable that must take different values.  <br /></td></tr>
+</table>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a09ff637633412bd08b72312dd3fe5542" name="a09ff637633412bd08b72312dd3fe5542"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a09ff637633412bd08b72312dd3fe5542">&#9670;&#160;</a></span>CpModelPresolver()</h2>
 
@@ -166,24 +167,24 @@ Public Member Functions</h2></td></tr>
 <p>Process the fact "v1 - v2 \in Domain".</p>
 <p>We have x - y not in exclusion, so x - y &gt; exclusion.Max() --&gt; x &gt; y + exclusion.Max(); OR x - y &lt; exclusion.Min() --&gt; y &gt; x - exclusion.Min();</p>
 <p>Try to find identical linear constraint with incompatible domains. This works really well on neos16.mps.gz where we have a &lt;=&gt; x &lt;= y b &lt;=&gt; x &gt;= y and a =&gt; not(b), Because of this presolve, we detect that not(a) =&gt; b and thus that a and not(b) are equivalent. We can thus simplify the problem to just a =&gt; x &lt; y not(a) =&gt; x &gt; y</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001412">Todo</a></b></dt><dd>(user): On that same problem, we could actually just have x != y and remove the enforcement literal that is just used for that. But then we will just re-create it, since we don't have a native way to handle x != y.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001413">Todo</a></b></dt><dd>(user): Again on neos16.mps, we actually have cliques of x != y so we end up with a bunch of groups of 7 variables in [0, 6] that are all different. If we can detect that, then we close the problem quickly instead of not closing it. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001410">Todo</a></b></dt><dd>(user): On that same problem, we could actually just have x != y and remove the enforcement literal that is just used for that. But then we will just re-create it, since we don't have a native way to handle x != y.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001411">Todo</a></b></dt><dd>(user): Again on neos16.mps, we actually have cliques of x != y so we end up with a bunch of groups of 7 variables in [0, 6] that are all different. If we can detect that, then we close the problem quickly instead of not closing it. </dd></dl>
 <p>Detect direct encoding of x != y. Note that we also see that from x &gt; y and related.</p>
 <p>We assume the constraint was already divided by its gcd.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001414">Todo</a></b></dt><dd>(user): Handle this case? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001412">Todo</a></b></dt><dd>(user): Handle this case? </dd></dl>
 <p>Detect x != y via lit =&gt; x &gt; y &amp;&amp; not(lit) =&gt; x &lt; y.</p>
 <p>We have x - y in domain1 or in domain2, so it must be in the union.</p>
 <p>We assume the constraint was already divided by its gcd.</p>
 <p>Detect all_different cliques. We reuse the max-clique code from sat.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001415">Todo</a></b></dt><dd>(user): To avoid doing that more than once, we only run it if there is no all-diff in the model already. This is not perfect.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001413">Todo</a></b></dt><dd>(user): To avoid doing that more than once, we only run it if there is no all-diff in the model already. This is not perfect.</dd></dl>
 <p>Note(user): The all diff added here will not be expanded since we run this after expansion. This is fragile though. Not even sure this is what we want.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001416">Todo</a></b></dt><dd>(user): Start with the existing all diff and expand them rather than not running this if there are all_diff present.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001417">Todo</a></b></dt><dd>(user): Only add them at the end of the presolve! it hurt our presolve (like probing is slower) and only serve for linear relaxation. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001414">Todo</a></b></dt><dd>(user): Start with the existing all diff and expand them rather than not running this if there are all_diff present.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001415">Todo</a></b></dt><dd>(user): Only add them at the end of the presolve! it hurt our presolve (like probing is slower) and only serve for linear relaxation. </dd></dl>
 <p>All variables at false is always a valid solution of the local model, so this should never return UNSAT.</p>
 <p>We have an all-diff, but inspect the offsets to see if we have a disjunctive ! Note that this is quadratic, but no more complex than the scan of the model we just did above, since we had one linear constraint per entry.</p>
 <p>When this happens, it means this interval can never be before any other. We should probably handle this case better, but for now we abort.</p>
 <p>We have one size greater than 1, lets add a no_overlap!</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001418">Todo</a></b></dt><dd>(user): try to remove all the quadratic boolean and their corresponding linear2 ? Any Boolean not used elsewhere could be removed. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001416">Todo</a></b></dt><dd>(user): try to remove all the quadratic boolean and their corresponding linear2 ? Any Boolean not used elsewhere could be removed. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="cp__model__presolve_8cc_source.html#l10392">10392</a> of file <a class="el" href="cp__model__presolve_8cc_source.html">cp_model_presolve.cc</a>.</p>
 
@@ -209,22 +210,22 @@ Public Member Functions</h2></td></tr>
 <li>objective</li>
 <li>linear (non-enforced part)</li>
 <li><p class="startli">at_most_one/exactly_one/clauses (but with positive variable only).</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001400">Todo</a></b></dt><dd>(user): deal with enforcement_literal, especially bool_and. It is a bit annoying to have to deal with all kind of constraints. Maybe convert bool_and to at_most_one first? We already do that in other places. Note however that an at most one of size 2 means at most 2 columns can be identical. If we have a bool and with many term on the left, all column could be indentical, but we have to linearize the constraint first. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001398">Todo</a></b></dt><dd>(user): deal with enforcement_literal, especially bool_and. It is a bit annoying to have to deal with all kind of constraints. Maybe convert bool_and to at_most_one first? We already do that in other places. Note however that an at most one of size 2 means at most 2 columns can be identical. If we have a bool and with many term on the left, all column could be indentical, but we have to linearize the constraint first. </dd></dl>
 </li>
 </ul>
 <p>It is okay to ignore terms (the columns will not be full).</p>
 <p>Use kObjectiveConstraint (-1) for the objective.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001401">Todo</a></b></dt><dd>(user): deal with equivalent column with different objective value. It might not be easy to presolve, but we can at least have a single variable = sum of var appearing only in objective. And we can transfer the min cost. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001399">Todo</a></b></dt><dd>(user): deal with equivalent column with different objective value. It might not be easy to presolve, but we can at least have a single variable = sum of var appearing only in objective. And we can transfer the min cost. </dd></dl>
 <p>Now construct the graph.</p>
 <p>Find duplicate columns using an hash map. We only consider "full" columns. var -&gt; var_representative using columns hash/comparison.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001402">Todo</a></b></dt><dd>(user): If we have duplicate columns appearing in Boolean constraint we can only easily substitute if the sum of columns is a Boolean (i.e. if it appear in an at most one or exactly one). Otherwise we will need to transform such constraint to linear, do that? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001400">Todo</a></b></dt><dd>(user): If we have duplicate columns appearing in Boolean constraint we can only easily substitute if the sum of columns is a Boolean (i.e. if it appear in an at most one or exactly one). Otherwise we will need to transform such constraint to linear, do that? </dd></dl>
 <p>Process duplicates.</p>
 <p>Since columns are the same, we can introduce a new variable = sum all columns. Note that the linear expression will not overflow, but the overflow check also requires that max_sum &lt; int_max/2, which might happen.</p>
 <p>In the corner case where there is a lot of holes in the domain, and the sum domain is too complex, we skip. Hopefully this should be rare.</p>
 <p>Deal with objective right away.</p>
 <p>Lets rescan the model, and remove all variables, replacing them by the sum. We do that in one O(model size) pass.</p>
-<p>Deal with bool case. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001403">Todo</a></b></dt><dd>(user): maybe converting to linear + single code is better? </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001404">Todo</a></b></dt><dd>(user): clear amo/exo of size 1. </dd></dl>
+<p>Deal with bool case. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001401">Todo</a></b></dt><dd>(user): maybe converting to linear + single code is better? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001402">Todo</a></b></dt><dd>(user): clear amo/exo of size 1. </dd></dl>
 <p>Deal with linear case.</p>
 <p>We removed all occurrence of "var_to_remove" so we can remove them now. </p><dl class="section note"><dt>Note</dt><dd>since we introduce a new variable per equivalence class, we remove one less for each equivalent class.</dd></dl>
 
@@ -239,7 +240,7 @@ Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">CpSolverStatus operations_research::sat::CpModelPresolver::Presolve </td>
+          <td class="memname"><a class="el" href="namespaceoperations__research_1_1sat.html#ac14a394f629f2cf1070b84bce2e427ce">CpSolverStatus</a> operations_research::sat::CpModelPresolver::Presolve </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -263,7 +264,7 @@ Public Member Functions</h2></td></tr>
 <li>Everything will be remapped so that only the variables appearing in some constraints will be kept and their index will be in [0, num_new_variables). </li>
 </ul>
 <p>If the objective is a floating point one, we scale it.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001460">Todo</a></b></dt><dd>(user): We should probably try to delay this even more. For that we just need to isolate more the "dual" reduction that usually need to look at the objective. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001458">Todo</a></b></dt><dd>(user): We should probably try to delay this even more. For that we just need to isolate more the "dual" reduction that usually need to look at the objective. </dd></dl>
 <p>At this point, we didn't create any new variables, so the integer objective is in term of the orinal problem variables. We save it so that we can expose to the user what exact objective we are actually optimizing.</p>
 <p>If there is a large proprotion of fixed variables, lets remap the model before we start the actual presolve. This is useful for LNS in particular.</p>
 <p>fixed_postsolve_mapping[i] will contains the original index of the variable that will be at position i after MaybeRemoveFixedVariables(). If the mapping is left empty, it will be set to the identity mapping later by InitializeMappingModelVariables().</p>
@@ -278,24 +279,24 @@ Public Member Functions</h2></td></tr>
 <p>Try to canonicalize the domain, note that we should have detected all affine relations before, so we don't recreate "canononical" variables if they already exist in the model.</p>
 <p>Main propagation loop.</p>
 <p>Propagate the objective.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001461">Todo</a></b></dt><dd>(user): The presolve transformations we do after this is called might result in even more presolve if we were to call this again! improve the code. See for instance plusexample_6_sat.fzn were represolving the presolved problem reduces it even more. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001459">Todo</a></b></dt><dd>(user): The presolve transformations we do after this is called might result in even more presolve if we were to call this again! improve the code. See for instance plusexample_6_sat.fzn were represolving the presolved problem reduces it even more. </dd></dl>
 <p>Call expansion.</p>
 <p>We need to re-evaluate the degree because some presolve rule only run after expansion.</p>
 <p>We run the symmetry before more complex presolve rules as many of them are heuristic based and might break the symmetry present in the original problems. This happens for example on the flatzinc wordpress problem.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001462">Todo</a></b></dt><dd>(user): Decide where is the best place for this.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001463">Todo</a></b></dt><dd>(user): try not to break symmetry in our clique extension or other more advanced presolve rule? Ideally we could even exploit them. But in this case, it is still good to compute them early. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001460">Todo</a></b></dt><dd>(user): Decide where is the best place for this.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001461">Todo</a></b></dt><dd>(user): try not to break symmetry in our clique extension or other more advanced presolve rule? Ideally we could even exploit them. But in this case, it is still good to compute them early. </dd></dl>
 <p>Both kind of duplications might introduce a lot of symmetries and we want to do that before we even compute them.</p>
 <p>If the presolve always keep symmetry, we compute it once and for all.</p>
 <p>We distinguish an empty symmetry message meaning that symmetry were computed and there is none, and the absence of symmetry message meaning we don't know.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001464">Todo</a></b></dt><dd>(user): Maybe this is a bit brittle. Also move this logic to <a class="el" href="namespaceoperations__research_1_1sat.html#abf0a4ce78ce101ee2ad0140b171cbbf9" title="Detects symmetries and fill the symmetry field.">DetectAndAddSymmetryToProto()</a> ? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001462">Todo</a></b></dt><dd>(user): Maybe this is a bit brittle. Also move this logic to <a class="el" href="namespaceoperations__research_1_1sat.html#abf0a4ce78ce101ee2ad0140b171cbbf9" title="Detects symmetries and fill the symmetry field.">DetectAndAddSymmetryToProto()</a> ? </dd></dl>
 <p>Runs SAT specific presolve on the pure-SAT part of the problem. </p><dl class="section note"><dt>Note</dt><dd>because this can only remove/fix variable not used in the other part of the problem, there is no need to redo more presolve afterwards.</dd></dl>
 <p>Extract redundant at most one constraint from the linear ones.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001465">Todo</a></b></dt><dd>(user): more generally if we do some probing, the same relation will be detected (and more). Also add an option to turn this off?</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001466">Todo</a></b></dt><dd>(user): instead of extracting at most one, extract pairwise conflicts and add them to bool_and clauses? this is some sort of small scale probing, but good for sat presolve and clique later? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001463">Todo</a></b></dt><dd>(user): more generally if we do some probing, the same relation will be detected (and more). Also add an option to turn this off?</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001464">Todo</a></b></dt><dd>(user): instead of extracting at most one, extract pairwise conflicts and add them to bool_and clauses? this is some sort of small scale probing, but good for sat presolve and clique later? </dd></dl>
 <p>Deal with pair of constraints.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001467">Todo</a></b></dt><dd>(user): revisit when different transformation appear. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001468">Todo</a></b></dt><dd></dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001469">Todo</a></b></dt><dd>(user): merge these code instead of doing many passes? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001465">Todo</a></b></dt><dd>(user): revisit when different transformation appear. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001466">Todo</a></b></dt><dd></dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001467">Todo</a></b></dt><dd>(user): merge these code instead of doing many passes? </dd></dl>
 <p>These operations might break symmetry. Or at the very least, the newly created variable must be incorporated in the generators.</p>
 <p>Heuristic: vertical introduce smaller defining constraint and appear in many constraints, so might be more constrained. We might also still make horizontal rectangle with the variable introduced.</p>
 <p>We do that after the duplicate, SAT and SetPPC constraints.</p>
@@ -303,7 +304,7 @@ Public Member Functions</h2></td></tr>
 <p>The TransformIntoMaxCliques() call above transform all bool and into at most one of size 2. This does the reverse and merge them.</p>
 <p>Call the main presolve to remove the fixed variables and do more deductions.</p>
 <p>Exit the loop if no operations were performed.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001470">Todo</a></b></dt><dd>(user): try to be smarter and avoid looping again if little changed. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001468">Todo</a></b></dt><dd>(user): try to be smarter and avoid looping again if little changed. </dd></dl>
 <p>Regroup no-overlaps into max-cliques.</p>
 <p>Tries to spread the objective amongst many variables. We re-do a canonicalization with the final linear expression.</p>
 <p>If we have fixed variables or created new affine relations, there might be more things to presolve.</p>

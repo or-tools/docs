@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,12 @@ $(function(){initNavTree('structoperations__research_1_1sat_1_1SearchHeuristics.
   <div class="headertitle"><div class="title">operations_research::sat::SearchHeuristics Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="classoperations__research_1_1sat_1_1Model.html">Model</a> struct that contains the search heuristics used to find a feasible solution to an integer problem.</p>
+<p>This is reset by <a class="el" href="namespaceoperations__research_1_1sat.html#a08ac4c44a4524b21806a1ae9839bc5bd">ConfigureSearchHeuristics()</a> and used by SolveIntegerProblem(), see below. </p>
 
+<p class="definition">Definition at line <a class="el" href="integer__search_8h_source.html#l00079">79</a> of file <a class="el" href="integer__search_8h_source.html">integer_search.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="integer__search_8h_source.html">integer_search.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
@@ -105,7 +111,7 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:af2807649ac32cfb579f81b06cbfa1ff3" id="r_af2807649ac32cfb579f81b06cbfa1ff3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af2807649ac32cfb579f81b06cbfa1ff3">policy_index</a></td></tr>
 <tr class="memdesc:af2807649ac32cfb579f81b06cbfa1ff3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index in the vectors above that indicate the current configuration.  <br /></td></tr>
 <tr class="memitem:a659cc638117b9413db145d8091f2468b" id="r_a659cc638117b9413db145d8091f2468b"><td class="memItemLeft" align="right" valign="top">std::function&lt; <a class="el" href="structoperations__research_1_1sat_1_1BooleanOrIntegerLiteral.html">BooleanOrIntegerLiteral</a>()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a659cc638117b9413db145d8091f2468b">user_search</a> = nullptr</td></tr>
-<tr class="memdesc:a659cc638117b9413db145d8091f2468b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains the search specified by the user in CpModelProto.  <br /></td></tr>
+<tr class="memdesc:a659cc638117b9413db145d8091f2468b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains the search specified by the user in <a class="el" href="classoperations__research_1_1sat_1_1CpModelProto.html">CpModelProto</a>.  <br /></td></tr>
 <tr class="memitem:a188cd5f150ed62392859eba24c469402" id="r_a188cd5f150ed62392859eba24c469402"><td class="memItemLeft" align="right" valign="top">std::function&lt; <a class="el" href="structoperations__research_1_1sat_1_1BooleanOrIntegerLiteral.html">BooleanOrIntegerLiteral</a>()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a188cd5f150ed62392859eba24c469402">heuristic_search</a> = nullptr</td></tr>
 <tr class="memitem:ad4224a75a6287febdfa2c10885b20c41" id="r_ad4224a75a6287febdfa2c10885b20c41"><td class="memItemLeft" align="right" valign="top">std::function&lt; <a class="el" href="structoperations__research_1_1sat_1_1BooleanOrIntegerLiteral.html">BooleanOrIntegerLiteral</a>()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad4224a75a6287febdfa2c10885b20c41">integer_completion_search</a> = nullptr</td></tr>
 <tr class="memdesc:ad4224a75a6287febdfa2c10885b20c41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default integer heuristic that will fix all integer variables.  <br /></td></tr>
@@ -114,12 +120,7 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a83fe91a66dbf3d11bbabc8fb64e424fe" id="r_a83fe91a66dbf3d11bbabc8fb64e424fe"><td class="memItemLeft" align="right" valign="top">std::function&lt; <a class="el" href="structoperations__research_1_1sat_1_1BooleanOrIntegerLiteral.html">BooleanOrIntegerLiteral</a>()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a83fe91a66dbf3d11bbabc8fb64e424fe">hint_search</a> = nullptr</td></tr>
 <tr class="memitem:a846f3634ef8f2f9d2896a89f6aa7c9e0" id="r_a846f3634ef8f2f9d2896a89f6aa7c9e0"><td class="memItemLeft" align="right" valign="top">std::function&lt; <a class="el" href="structoperations__research_1_1sat_1_1BooleanOrIntegerLiteral.html">BooleanOrIntegerLiteral</a>()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a846f3634ef8f2f9d2896a89f6aa7c9e0">next_decision_override</a> = nullptr</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="classoperations__research_1_1sat_1_1Model.html">Model</a> struct that contains the search heuristics used to find a feasible solution to an integer problem.</p>
-<p>This is reset by <a class="el" href="namespaceoperations__research_1_1sat.html#a08ac4c44a4524b21806a1ae9839bc5bd">ConfigureSearchHeuristics()</a> and used by SolveIntegerProblem(), see below. </p>
-
-<p class="definition">Definition at line <a class="el" href="integer__search_8h_source.html#l00079">79</a> of file <a class="el" href="integer__search_8h_source.html">integer_search.h</a>.</p>
-</div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
 <a id="a81b672d2266b73a409b8b92d1b7a8487" name="a81b672d2266b73a409b8b92d1b7a8487"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a81b672d2266b73a409b8b92d1b7a8487">&#9670;&#160;</a></span>decision_policies</h2>
 
@@ -270,7 +271,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Contains the search specified by the user in CpModelProto. </p>
+<p>Contains the search specified by the user in <a class="el" href="classoperations__research_1_1sat_1_1CpModelProto.html">CpModelProto</a>. </p>
 <p>Special decision functions that are constructed at loading time. These are used by <a class="el" href="namespaceoperations__research_1_1sat.html#a08ac4c44a4524b21806a1ae9839bc5bd">ConfigureSearchHeuristics()</a> to fill the policies above. </p>
 
 <p class="definition">Definition at line <a class="el" href="integer__search_8h_source.html#l00093">93</a> of file <a class="el" href="integer__search_8h_source.html">integer_search.h</a>.</p>

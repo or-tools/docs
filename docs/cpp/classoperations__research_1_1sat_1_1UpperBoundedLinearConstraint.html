@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,16 @@ $(function(){initNavTree('classoperations__research_1_1sat_1_1UpperBoundedLinear
   <div class="headertitle"><div class="title">operations_research::sat::UpperBoundedLinearConstraint Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This class contains half the propagation logic for a constraint of the form</p>
+<p>sum ci * li &lt;= rhs, ci positive coefficients, li literals.</p>
+<p>The other half is implemented by the <a class="el" href="classoperations__research_1_1sat_1_1PbConstraints.html">PbConstraints</a> class below which takes care of updating the 'threshold' value of this constraint:</p><ul>
+<li>'slack' is rhs minus all the ci of the variables xi assigned to true. Note that it is not updated as soon as xi is assigned, but only later when this assignment is "processed" by the <a class="el" href="classoperations__research_1_1sat_1_1PbConstraints.html">PbConstraints</a> class.</li>
+<li>'threshold' is the distance from 'slack' to the largest coefficient ci smaller or equal to slack. By definition, all the literals with even larger coefficients that are yet 'processed' must be false for the constraint to be satisfiable. </li>
+</ul>
 
+<p class="definition">Definition at line <a class="el" href="pb__constraint_8h_source.html#l00385">385</a> of file <a class="el" href="pb__constraint_8h_source.html">pb_constraint.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="pb__constraint_8h_source.html">pb_constraint.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -123,16 +133,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af207a4639d7c53e811d9a544c1b85679" id="r_af207a4639d7c53e811d9a544c1b85679"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af207a4639d7c53e811d9a544c1b85679">hash</a> () const</td></tr>
 <tr class="memitem:a9a9ac840f77095164b01a364c3af0e61" id="r_a9a9ac840f77095164b01a364c3af0e61"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9a9ac840f77095164b01a364c3af0e61">already_propagated_end</a> () const</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This class contains half the propagation logic for a constraint of the form</p>
-<p>sum ci * li &lt;= rhs, ci positive coefficients, li literals.</p>
-<p>The other half is implemented by the <a class="el" href="classoperations__research_1_1sat_1_1PbConstraints.html">PbConstraints</a> class below which takes care of updating the 'threshold' value of this constraint:</p><ul>
-<li>'slack' is rhs minus all the ci of the variables xi assigned to true. Note that it is not updated as soon as xi is assigned, but only later when this assignment is "processed" by the <a class="el" href="classoperations__research_1_1sat_1_1PbConstraints.html">PbConstraints</a> class.</li>
-<li>'threshold' is the distance from 'slack' to the largest coefficient ci smaller or equal to slack. By definition, all the literals with even larger coefficients that are yet 'processed' must be false for the constraint to be satisfiable. </li>
-</ul>
-
-<p class="definition">Definition at line <a class="el" href="pb__constraint_8h_source.html#l00385">385</a> of file <a class="el" href="pb__constraint_8h_source.html">pb_constraint.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a2db0fc4221efe93bb7171fcb7b1dbbde" name="a2db0fc4221efe93bb7171fcb7b1dbbde"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2db0fc4221efe93bb7171fcb7b1dbbde">&#9670;&#160;</a></span>UpperBoundedLinearConstraint()</h2>
 
@@ -207,7 +208,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Adds this pb constraint into the given mutable one.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002128">Todo</a></b></dt><dd>(user): Provides instead an easy to use iterator over an <a class="el" href="classoperations__research_1_1sat_1_1UpperBoundedLinearConstraint.html">UpperBoundedLinearConstraint</a> and move this function to <a class="el" href="classoperations__research_1_1sat_1_1MutableUpperBoundedLinearConstraint.html">MutableUpperBoundedLinearConstraint</a>. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002126">Todo</a></b></dt><dd>(user): Provides instead an easy to use iterator over an <a class="el" href="classoperations__research_1_1sat_1_1UpperBoundedLinearConstraint.html">UpperBoundedLinearConstraint</a> and move this function to <a class="el" href="classoperations__research_1_1sat_1_1MutableUpperBoundedLinearConstraint.html">MutableUpperBoundedLinearConstraint</a>. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="pb__constraint_8cc_source.html#l00444">444</a> of file <a class="el" href="pb__constraint_8cc_source.html">pb_constraint.cc</a>.</p>
 
@@ -304,7 +305,7 @@ Public Member Functions</h2></td></tr>
 <li>Literals of level 0 are removed.</li>
 <li>It will always contain the literal with given source_trail_index (except if it is of level 0).</li>
 <li><p class="startli">We make the reason more compact by greedily removing terms with small coefficients that would not have changed the propagation.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002127">Todo</a></b></dt><dd>(user): Maybe it is possible to derive a better reason by using more information. For instance one could use the mask of literals that are better to use during conflict minimization (namely the one already in the 1-UIP conflict). </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002125">Todo</a></b></dt><dd>(user): Maybe it is possible to derive a better reason by using more information. For instance one could use the mask of literals that are better to use during conflict minimization (namely the one already in the 1-UIP conflict). </dd></dl>
 </li>
 </ul>
 <p>Optimization for an "at most one" constraint. </p><dl class="section note"><dt>Note</dt><dd>the source_trail_index set by <a class="el" href="#ab83a887ed56694501b3e60f573db6d74">InitializeRhs()</a> is ok in this case.</dd></dl>
@@ -407,7 +408,7 @@ Public Member Functions</h2></td></tr>
 <p>Cumulative sum.</p>
 <p>Check the no-propagation at earlier level precondition.</p>
 <p>Initial propagation.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002113">Todo</a></b></dt><dd>(user): The source trail index for the propagation reason (i.e. max_relevant_trail_index) may be higher than necessary (for some of the propagated literals). Currently this works with <a class="el" href="#a7e533d8923312b0d052abae98cab81b8">FillReason()</a>, but it was a source of a really nasty bug (see <a class="el" href="namespaceoperations__research.html#a3a4a63b47b937f8fb32e0ad23a30e792">CL</a> 68906167) because of the (rhs == 1) optim. Find a good way to test the logic. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002111">Todo</a></b></dt><dd>(user): The source trail index for the propagation reason (i.e. max_relevant_trail_index) may be higher than necessary (for some of the propagated literals). Currently this works with <a class="el" href="#a7e533d8923312b0d052abae98cab81b8">FillReason()</a>, but it was a source of a really nasty bug (see <a class="el" href="namespaceoperations__research.html#a3a4a63b47b937f8fb32e0ad23a30e792">CL</a> 68906167) because of the (rhs == 1) optim. Find a good way to test the logic. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="pb__constraint_8cc_source.html#l00472">472</a> of file <a class="el" href="pb__constraint_8cc_source.html">pb_constraint.cc</a>.</p>
 
@@ -599,7 +600,7 @@ Public Member Functions</h2></td></tr>
 <p>The variable must be of the opposite sign in the current conflict.</p>
 <p>Special case.</p>
 <p>This constraint is already a conflict. Use this one instead to start the resolution.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002114">Todo</a></b></dt><dd>(user): Investigate if this is a good idea. It doesn't happen often, but does happened. Maybe we can detect this before in <a class="el" href="#a5e564318bd97d697e420be40ffe53ce0">Propagate()</a>? The setup is:<ul>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002112">Todo</a></b></dt><dd>(user): Investigate if this is a good idea. It doesn't happen often, but does happened. Maybe we can detect this before in <a class="el" href="#a5e564318bd97d697e420be40ffe53ce0">Propagate()</a>? The setup is:<ul>
 <li>At a given trail_index, var is propagated and added on the trail.</li>
 <li>There is some constraint literals assigned to true with a trail index in (trail_index, var.trail_index).</li>
 <li>Their sum is high enough to cause a conflict.</li>
@@ -608,18 +609,18 @@ Public Member Functions</h2></td></tr>
 </dd></dl>
 <p>This is the slack of *this for the trail prefix &lt; limit_trail_index.</p>
 <p>This is the slack of the conflict at the same level.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002115">Todo</a></b></dt><dd>(user): If there is more "cancelation" than the min_coeffs below when we add the two constraints, the resulting slack may be even lower. Taking that into account is probably good. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002113">Todo</a></b></dt><dd>(user): If there is more "cancelation" than the min_coeffs below when we add the two constraints, the resulting slack may be even lower. Taking that into account is probably good. </dd></dl>
 <p>When we add the two constraints together, the slack of the result for the trail &lt; limit_trail_index - 1 must be negative. We know that its value is &lt;= slack1 + slack2 - min(coeffs), so we have nothing to do if this bound is already negative.</p>
 <p>We need to relax one or both of the constraints so the new slack is &lt; 0. Using the relaxation described in ReduceSlackTo(), we can have this new slack bound:</p>
 <p>(slack - diff) + (conflict_slack - conflict_diff)</p>
 <p>For all diff in [0, slack) For all conflict_diff in [0, conflict_slack)</p>
 <p>Is relaxing the constraint with the highest coeff enough?</p>
 <p>Just reduce the slack of both constraints to zero.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002116">Todo</a></b></dt><dd>(user): The best will be to relax as little as possible. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002114">Todo</a></b></dt><dd>(user): The best will be to relax as little as possible. </dd></dl>
 <p>Relax the conflict.</p>
 <p>We apply the same algorithm as the one in ReduceSlackTo() but on the non-mutable representation and add it on the fly into conflict.</p>
 <p>Special case if there if no relaxation is needed.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002117">Todo</a></b></dt><dd>(user): track the cancelation here so we can update *conflict_slack properly. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002115">Todo</a></b></dt><dd>(user): track the cancelation here so we can update *conflict_slack properly. </dd></dl>
 <p>And the rhs.</p>
 
 <p class="definition">Definition at line <a class="el" href="pb__constraint_8cc_source.html#l00677">677</a> of file <a class="el" href="pb__constraint_8cc_source.html">pb_constraint.cc</a>.</p>

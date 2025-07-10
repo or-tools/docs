@@ -1,5 +1,6 @@
 var solve__flow__model_8cc =
 [
+    [ "FlowModelProto", "classFlowModelProto.html", "classFlowModelProto" ],
     [ "TimeDistribution", "classTimeDistribution.html", "classTimeDistribution" ],
     [ "operations_research::Graph", "namespaceoperations__research.html#acf9cb12e488ad2ace33c313f2f2cc220", null ],
     [ "ABSL_FLAG", "solve__flow__model_8cc.html#ac1e56851b23112f9d68698cca88ac45b", null ],

@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,13 @@ $(function(){initNavTree('classoperations__research_1_1sat_1_1SchedulingDemandHe
   <div class="headertitle"><div class="title">operations_research::sat::SchedulingDemandHelper Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Helper class for cumulative constraint to wrap demands and expose concept like energy.</p>
+<p>In a cumulative constraint, an interval always has a size and a demand, but it can also have a set of "selector" literals each associated with a fixed size / fixed demands. This allows more precise energy estimation.</p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002425">Todo</a></b></dt><dd>(user): Cache energy min and reason for the non O(1) cases. </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="scheduling__helpers_8h_source.html#l00487">487</a> of file <a class="el" href="scheduling__helpers_8h_source.html">scheduling_helpers.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="scheduling__helpers_8h_source.html">scheduling_helpers.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -123,13 +130,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a13f1d8d8c111c44c2b38b445dd4a2212" id="r_a13f1d8d8c111c44c2b38b445dd4a2212"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structoperations__research_1_1sat_1_1LiteralValueValue.html">LiteralValueValue</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a13f1d8d8c111c44c2b38b445dd4a2212">FilteredDecomposedEnergy</a> (int index)</td></tr>
 <tr class="memitem:a8aa9f56ef8a1e2f49e7b07e441b9e418" id="r_a8aa9f56ef8a1e2f49e7b07e441b9e418"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8aa9f56ef8a1e2f49e7b07e441b9e418">InitDecomposedEnergies</a> ()</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Helper class for cumulative constraint to wrap demands and expose concept like energy.</p>
-<p>In a cumulative constraint, an interval always has a size and a demand, but it can also have a set of "selector" literals each associated with a fixed size / fixed demands. This allows more precise energy estimation.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002427">Todo</a></b></dt><dd>(user): Cache energy min and reason for the non O(1) cases. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="scheduling__helpers_8h_source.html#l00487">487</a> of file <a class="el" href="scheduling__helpers_8h_source.html">scheduling_helpers.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab6c175f039dfda7d9c6701bd842e73fa" name="ab6c175f039dfda7d9c6701bd842e73fa"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab6c175f039dfda7d9c6701bd842e73fa">&#9670;&#160;</a></span>SchedulingDemandHelper()</h2>
 
@@ -228,7 +229,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Since we usually ask way less often for the reason, we redo the computation here. </p>
 <p>Return simple reason right away if there is no decomposition or the simple energy is enough.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002425">Todo</a></b></dt><dd>(user): only include the one we need? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002423">Todo</a></b></dt><dd>(user): only include the one we need? </dd></dl>
 <p>Should be the same in most cases.</p>
 
 <p class="definition">Definition at line <a class="el" href="scheduling__helpers_8cc_source.html#l00958">958</a> of file <a class="el" href="scheduling__helpers_8cc_source.html">scheduling_helpers.cc</a>.</p>
@@ -295,8 +296,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>The "energy" is usually size * demand, but in some non-conventional usage it might have a more complex formula. In all case, the energy is assumed to be only consumed during the interval duration.</p>
 <p>Returns false if the energy can overflow and was not computed.</p>
-<p>IMPORTANT: One must call <a class="el" href="#a2d1174d156b8b53adca37b7a29e021f4">CacheAllEnergyValues()</a> for the values to be updated. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002432">Todo</a></b></dt><dd>(user): this is error prone, maybe we should revisit. But if there is many alternatives, we don't want to rescan the list more than a linear number of time per propagation.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002433">Todo</a></b></dt><dd>(user): Add more complex EnergyMinBefore(time) once we also support expressing the interval as a set of alternatives.</dd></dl>
+<p>IMPORTANT: One must call <a class="el" href="#a2d1174d156b8b53adca37b7a29e021f4">CacheAllEnergyValues()</a> for the values to be updated. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002430">Todo</a></b></dt><dd>(user): this is error prone, maybe we should revisit. But if there is many alternatives, we don't want to rescan the list more than a linear number of time per propagation.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002431">Todo</a></b></dt><dd>(user): Add more complex EnergyMinBefore(time) once we also support expressing the interval as a set of alternatives.</dd></dl>
 <p>At level 0, it will filter false literals from decomposed energies. </p>
 <p>Try to reduce the size of the decomposed energy vector.</p>
 
@@ -355,7 +356,7 @@ Public Member Functions</h2></td></tr>
 <p><span class="tt">lit</span> encodes that the energy is higher than value. So either lit must be false or the task must be absent.</p>
 <p>Task must be absent.</p>
 <p>Task is present, <span class="tt">lit</span> must be false.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002424">Todo</a></b></dt><dd>(user): Propagate if possible. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002422">Todo</a></b></dt><dd>(user): Propagate if possible. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="scheduling__helpers_8cc_source.html#l00836">836</a> of file <a class="el" href="scheduling__helpers_8cc_source.html">scheduling_helpers.cc</a>.</p>
 

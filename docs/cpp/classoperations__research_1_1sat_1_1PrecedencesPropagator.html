@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,14 @@ $(function(){initNavTree('classoperations__research_1_1sat_1_1PrecedencesPropaga
   <div class="headertitle"><div class="title">operations_research::sat::PrecedencesPropagator Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This class implement a propagator on simple inequalities between integer variables of the form (i1 + offset &lt;= i2). The offset can be constant or given by the value of a third integer variable. Offsets can also be negative.</p>
+<p>The algorithm works by mapping the problem onto a graph where the edges carry the offset and the nodes correspond to one of the two bounds of an integer variable (lower_bound or -upper_bound). It then find the fixed point using an incremental variant of the Bellman-Ford(-Tarjan) algorithm.</p>
+<p>This is also known as an "integer difference logic theory" in the SMT world. Another word is "separation logic".</p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002166">Todo</a></b></dt><dd>(user): We could easily generalize the code to support any relation of the form a*X + b*Y + c*Z &gt;= rhs (or &lt;=). Do that since this class should be a lot faster at propagating small linear inequality than the generic propagator and the overhead of supporting coefficient should not be too bad. </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="precedences_8h_source.html#l00276">276</a> of file <a class="el" href="precedences_8h_source.html">precedences.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="precedences_8h_source.html">precedences.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for operations_research::sat::PrecedencesPropagator:</div>
@@ -152,14 +160,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a6484a3ad51a1f74b403fc21c47055601 inherit pro_attribs_classoperations__research_1_1sat_1_1SatPropagator" id="r_a6484a3ad51a1f74b403fc21c47055601"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1SatPropagator.html#a6484a3ad51a1f74b403fc21c47055601">propagator_id_</a></td></tr>
 <tr class="memitem:a5714ef513aadb9a616a215de533b9eb4 inherit pro_attribs_classoperations__research_1_1sat_1_1SatPropagator" id="r_a5714ef513aadb9a616a215de533b9eb4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1SatPropagator.html#a5714ef513aadb9a616a215de533b9eb4">propagation_trail_index_</a></td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This class implement a propagator on simple inequalities between integer variables of the form (i1 + offset &lt;= i2). The offset can be constant or given by the value of a third integer variable. Offsets can also be negative.</p>
-<p>The algorithm works by mapping the problem onto a graph where the edges carry the offset and the nodes correspond to one of the two bounds of an integer variable (lower_bound or -upper_bound). It then find the fixed point using an incremental variant of the Bellman-Ford(-Tarjan) algorithm.</p>
-<p>This is also known as an "integer difference logic theory" in the SMT world. Another word is "separation logic".</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002168">Todo</a></b></dt><dd>(user): We could easily generalize the code to support any relation of the form a*X + b*Y + c*Z &gt;= rhs (or &lt;=). Do that since this class should be a lot faster at propagating small linear inequality than the generic propagator and the overhead of supporting coefficient should not be too bad. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="precedences_8h_source.html#l00276">276</a> of file <a class="el" href="precedences_8h_source.html">precedences.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a7dcc4d51adc2f15f2b3d7e4997f27cf0" name="a7dcc4d51adc2f15f2b3d7e4997f27cf0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7dcc4d51adc2f15f2b3d7e4997f27cf0">&#9670;&#160;</a></span>PrecedencesPropagator() <span class="overload">[1/2]</span></h2>
 
@@ -464,7 +465,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>This version check current precedence. It is however "slow". </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002150">Todo</a></b></dt><dd>(user): Modify arc in place! </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002148">Todo</a></b></dt><dd>(user): Modify arc in place! </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="precedences_8cc_source.html#l00799">799</a> of file <a class="el" href="precedences_8cc_source.html">precedences.cc</a>.</p>
 
@@ -558,7 +559,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Iterate again to check for a propagation and indirectly update modified_vars_.</p>
 <p>Do the actual propagation of the IntegerVariable bounds.</p>
 <p>We can only test that no propagation is left if we didn't enqueue new literal in the presence of optional variables.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002143">Todo</a></b></dt><dd>(user): Because of our code to deal with InPropagationLoop(), this is not always true. Find a cleaner way to DCHECK() while not failing in this corner case. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002141">Todo</a></b></dt><dd>(user): Because of our code to deal with InPropagationLoop(), this is not always true. Find a cleaner way to DCHECK() while not failing in this corner case. </dd></dl>
 <p>Propagate the presence literals of the arcs that can't be added.</p>
 <p>Clean-up modified_vars_ to do as little as possible on the next call.</p>
 
@@ -646,8 +647,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Reverts the state so that all the literals with a trail index greater or equal to the given one are not processed for propagation. Note that the trail current decision level is already reverted before this is called.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002286">Todo</a></b></dt><dd>(user): Currently this is called at each Backtrack(), but we could bundle the calls in case multiple conflict one after the other are detected even before the <a class="el" href="#a68e6ed997752f220d4571c5faa136ce5">Propagate()</a> call of a <a class="el" href="classoperations__research_1_1sat_1_1SatPropagator.html" title="Base class for all the SAT constraints.">SatPropagator</a> is called.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002287">Todo</a></b></dt><dd>(user): It is not yet 100% the case, but this can be guaranteed to be called with a trail index that will always be the start of a new decision level. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002284">Todo</a></b></dt><dd>(user): Currently this is called at each Backtrack(), but we could bundle the calls in case multiple conflict one after the other are detected even before the <a class="el" href="#a68e6ed997752f220d4571c5faa136ce5">Propagate()</a> call of a <a class="el" href="classoperations__research_1_1sat_1_1SatPropagator.html" title="Base class for all the SAT constraints.">SatPropagator</a> is called.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002285">Todo</a></b></dt><dd>(user): It is not yet 100% the case, but this can be guaranteed to be called with a trail index that will always be the start of a new decision level. </dd></dl>
 <p>This means that we already propagated all there is to propagate at the level trail_index, so we can safely clear modified_vars_ in case it wasn't already done.</p>
 
 <p>Reimplemented from <a class="el" href="classoperations__research_1_1sat_1_1SatPropagator.html#a5f04df27e81298743cf658683344b0a0">operations_research::sat::SatPropagator</a>.</p>

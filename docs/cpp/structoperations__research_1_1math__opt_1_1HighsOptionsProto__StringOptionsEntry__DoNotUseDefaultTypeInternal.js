@@ -1,0 +1,6 @@
+var structoperations__research_1_1math__opt_1_1HighsOptionsProto__StringOptionsEntry__DoNotUseDefaultTypeInternal =
+[
+    [ "HighsOptionsProto_StringOptionsEntry_DoNotUseDefaultTypeInternal", "structoperations__research_1_1math__opt_1_1HighsOptionsProto__StringOptionsEntry__DoNotUseDefaultTypeInternal.html#a29d5a711043019a4b33e0515e9d72442", null ],
+    [ "~HighsOptionsProto_StringOptionsEntry_DoNotUseDefaultTypeInternal", "structoperations__research_1_1math__opt_1_1HighsOptionsProto__StringOptionsEntry__DoNotUseDefaultTypeInternal.html#a8830d5df366928b9dbc0515c8d47525d", null ],
+    [ "_instance", "structoperations__research_1_1math__opt_1_1HighsOptionsProto__StringOptionsEntry__DoNotUseDefaultTypeInternal.html#a371ad22779a1d35d96299399e75ba83d", null ]
+];

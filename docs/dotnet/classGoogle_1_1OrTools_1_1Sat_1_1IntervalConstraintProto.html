@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -98,7 +99,15 @@ $(function(){initNavTree('classGoogle_1_1OrTools_1_1Sat_1_1IntervalConstraintPro
 
 <p>This is not really a constraint. It is there so it can be referred by other constraints using this "interval" concept.  
  <a href="#details">More...</a></p>
-<div class="dynheader">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This is not really a constraint. It is there so it can be referred by other constraints using this "interval" concept. </p>
+<p>IMPORTANT: For now, this constraint do not enforce any relations on the components, and it is up to the client to add in the model:</p><ul>
+<li>enforcement =&gt; start + size == end.</li>
+<li>enforcement =&gt; size &gt;= 0 ///&lt; Only needed if size is not already &gt;= 0. IMPORTANT: For now, we just support affine relation. We could easily create an intermediate variable to support full linear expression, but this isn't done currently. </li>
+</ul>
+
+<p class="definition">Definition at line <a class="el" href="CpModel_8pb_8cs_source.html#l02081">2081</a> of file <a class="el" href="CpModel_8pb_8cs_source.html">CpModel.pb.cs</a>.</p>
+</div><div class="dynheader">
 Inheritance diagram for Google.OrTools.Sat.IntervalConstraintProto:</div>
 <div class="dyncontent">
  <div class="center">
@@ -136,15 +145,7 @@ Properties</h2></td></tr>
 <tr class="memitem:a01de9956b135d288201bb5b381dc12a6" id="r_a01de9956b135d288201bb5b381dc12a6"><td class="memItemLeft" align="right" valign="top">global::Google.OrTools.Sat.LinearExpressionProto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a01de9956b135d288201bb5b381dc12a6">End</a><code> [get, set]</code></td></tr>
 <tr class="memitem:a6c46d671bc56d6d7fb220840c6748d06" id="r_a6c46d671bc56d6d7fb220840c6748d06"><td class="memItemLeft" align="right" valign="top">global::Google.OrTools.Sat.LinearExpressionProto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6c46d671bc56d6d7fb220840c6748d06">Size</a><code> [get, set]</code></td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This is not really a constraint. It is there so it can be referred by other constraints using this "interval" concept. </p>
-<p>IMPORTANT: For now, this constraint do not enforce any relations on the components, and it is up to the client to add in the model:</p><ul>
-<li>enforcement =&gt; start + size == end.</li>
-<li>enforcement =&gt; size &gt;= 0 ///&lt; Only needed if size is not already &gt;= 0. IMPORTANT: For now, we just support affine relation. We could easily create an intermediate variable to support full linear expression, but this isn't done currently. </li>
-</ul>
-
-<p class="definition">Definition at line <a class="el" href="CpModel_8pb_8cs_source.html#l02081">2081</a> of file <a class="el" href="CpModel_8pb_8cs_source.html">CpModel.pb.cs</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a6dbaf0a87b424c29337ff167bd8a9cac" name="a6dbaf0a87b424c29337ff167bd8a9cac"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6dbaf0a87b424c29337ff167bd8a9cac">&#9670;&#160;</a></span>IntervalConstraintProto() <span class="overload">[1/2]</span></h2>
 

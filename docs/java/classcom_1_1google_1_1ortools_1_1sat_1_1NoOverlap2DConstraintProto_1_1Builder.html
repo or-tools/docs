@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,21 @@ $(function(){initNavTree('classcom_1_1google_1_1ortools_1_1sat_1_1NoOverlap2DCon
   <div class="headertitle"><div class="title">com.google.ortools.sat.NoOverlap2DConstraintProto.Builder Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="dynheader">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><pre>
+The boxes defined by [start_x, end_x) * [start_y, end_y) cannot overlap.
+Furthermore, one box is optional if at least one of the x or y interval is
+optional.
+
+Note that the case of boxes of size zero is special. The following cases
+violate the constraint:
+- a point box inside a box with a non zero area
+- a line box overlapping a box with a non zero area
+- one vertical line box crossing an horizontal line box.
+</pre><p>Protobuf type <code class="JavaDocCode">operations_research.sat.NoOverlap2DConstraintProto</code> </p>
+
+<p class="definition">Definition at line <a class="el" href="NoOverlap2DConstraintProto_8java_source.html#l00348">348</a> of file <a class="el" href="NoOverlap2DConstraintProto_8java_source.html">NoOverlap2DConstraintProto.java</a>.</p>
+</div><div class="dynheader">
 Inheritance diagram for com.google.ortools.sat.NoOverlap2DConstraintProto.Builder:</div>
 <div class="dyncontent">
  <div class="center">
@@ -139,21 +154,7 @@ Static Public Member Functions</h2></td></tr>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a6fbc5aee8660c95e86b5a198328df8cc" id="r_a6fbc5aee8660c95e86b5a198328df8cc"><td class="memItemLeft" align="right" valign="top">com.google.protobuf.GeneratedMessage.FieldAccessorTable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6fbc5aee8660c95e86b5a198328df8cc">internalGetFieldAccessorTable</a> ()</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><pre>
-The boxes defined by [start_x, end_x) * [start_y, end_y) cannot overlap.
-Furthermore, one box is optional if at least one of the x or y interval is
-optional.
-
-Note that the case of boxes of size zero is special. The following cases
-violate the constraint:
-- a point box inside a box with a non zero area
-- a line box overlapping a box with a non zero area
-- one vertical line box crossing an horizontal line box.
-</pre><p>Protobuf type <code class="JavaDocCode">operations_research.sat.NoOverlap2DConstraintProto</code> </p>
-
-<p class="definition">Definition at line <a class="el" href="NoOverlap2DConstraintProto_8java_source.html#l00348">348</a> of file <a class="el" href="NoOverlap2DConstraintProto_8java_source.html">NoOverlap2DConstraintProto.java</a>.</p>
-</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="ab718b98f986545fa65ffac4c4bff9116" name="ab718b98f986545fa65ffac4c4bff9116"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab718b98f986545fa65ffac4c4bff9116">&#9670;&#160;</a></span>addAllXIntervals()</h2>
 

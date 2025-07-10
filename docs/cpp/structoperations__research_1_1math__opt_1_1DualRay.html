@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,30 +96,30 @@ $(function(){initNavTree('structoperations__research_1_1math__opt_1_1DualRay.htm
   <div class="headertitle"><div class="title">operations_research::math_opt::DualRay Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
-<p><code>#include &lt;<a class="el" href="solution_8h_source.html">solution.h</a>&gt;</code></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a7a83ac82a35b66ddf34838a62ec18310" id="r_a7a83ac82a35b66ddf34838a62ec18310"><td class="memItemLeft" align="right" valign="top">DualRayProto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7a83ac82a35b66ddf34838a62ec18310">Proto</a> () const</td></tr>
-<tr class="memdesc:a7a83ac82a35b66ddf34838a62ec18310"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the proto equivalent of this.  <br /></td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ac9d75193c8ecc2fab1910cb601d19366" id="r_ac9d75193c8ecc2fab1910cb601d19366"><td class="memItemLeft" align="right" valign="top">static absl::StatusOr&lt; <a class="el" href="structoperations__research_1_1math__opt_1_1DualRay.html">DualRay</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac9d75193c8ecc2fab1910cb601d19366">FromProto</a> (<a class="el" href="namespaceoperations__research_1_1math__opt.html#a0d12f0e829e6df24b5dee811bf64b52c">ModelStorageCPtr</a> model, const DualRayProto &amp;dual_ray_proto)</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:ad77e0d1b5f43339f5e235fcd8a243826" id="r_ad77e0d1b5f43339f5e235fcd8a243826"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a2bf3bb209c08aed390ae19fec019d943">LinearConstraintMap</a>&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad77e0d1b5f43339f5e235fcd8a243826">dual_values</a></td></tr>
-<tr class="memitem:ae2fd587640e7a798b17577e71367726e" id="r_ae2fd587640e7a798b17577e71367726e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a0cfee3f4c5c5a923566b26311c634582">VariableMap</a>&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae2fd587640e7a798b17577e71367726e">reduced_costs</a></td></tr>
-</table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A direction of unbounded improvement to the dual of an optimization problem; equivalently, a certificate of primal infeasibility.</p>
 <p>E.g. consider the primal dual linear program pair: (Primal) (Dual) min c * x max b * y s.t. A * x &gt;= b s.t. y * A + r = c x &gt;= 0 y, r &gt;= 0. The dual ray is the pair (y, r) satisfying: b * y &gt; 0 y * A + r = 0 y, r &gt;= 0 Observe that adding a positive multiple of (y, r) to dual feasible solution maintains dual feasibility and improves the objective (proving the dual is unbounded). The dual ray also proves the primal problem is infeasible.</p>
 <p>In the class <a class="el" href="structoperations__research_1_1math__opt_1_1DualRay.html">DualRay</a>, y is dual_values and r is reduced_costs. </p>
 
 <p class="definition">Definition at line <a class="el" href="solution_8h_source.html#l00175">175</a> of file <a class="el" href="solution_8h_source.html">solution.h</a>.</p>
-</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+</div>
+<p><code>#include &lt;<a class="el" href="solution_8h_source.html">solution.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a7a83ac82a35b66ddf34838a62ec18310" id="r_a7a83ac82a35b66ddf34838a62ec18310"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoperations__research_1_1math__opt_1_1DualRayProto.html">DualRayProto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7a83ac82a35b66ddf34838a62ec18310">Proto</a> () const</td></tr>
+<tr class="memdesc:a7a83ac82a35b66ddf34838a62ec18310"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the proto equivalent of this.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ac9d75193c8ecc2fab1910cb601d19366" id="r_ac9d75193c8ecc2fab1910cb601d19366"><td class="memItemLeft" align="right" valign="top">static absl::StatusOr&lt; <a class="el" href="structoperations__research_1_1math__opt_1_1DualRay.html">DualRay</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac9d75193c8ecc2fab1910cb601d19366">FromProto</a> (<a class="el" href="namespaceoperations__research_1_1math__opt.html#a0d12f0e829e6df24b5dee811bf64b52c">ModelStorageCPtr</a> model, const <a class="el" href="classoperations__research_1_1math__opt_1_1DualRayProto.html">DualRayProto</a> &amp;dual_ray_proto)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:ad77e0d1b5f43339f5e235fcd8a243826" id="r_ad77e0d1b5f43339f5e235fcd8a243826"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a2bf3bb209c08aed390ae19fec019d943">LinearConstraintMap</a>&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad77e0d1b5f43339f5e235fcd8a243826">dual_values</a></td></tr>
+<tr class="memitem:ae2fd587640e7a798b17577e71367726e" id="r_ae2fd587640e7a798b17577e71367726e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a0cfee3f4c5c5a923566b26311c634582">VariableMap</a>&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae2fd587640e7a798b17577e71367726e">reduced_costs</a></td></tr>
+</table>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="ac9d75193c8ecc2fab1910cb601d19366" name="ac9d75193c8ecc2fab1910cb601d19366"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac9d75193c8ecc2fab1910cb601d19366">&#9670;&#160;</a></span>FromProto()</h2>
 
@@ -136,7 +137,7 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const DualRayProto &amp;</td>          <td class="paramname"><span class="paramname"><em>dual_ray_proto</em></span>&#160;)</td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1math__opt_1_1DualRayProto.html">DualRayProto</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>dual_ray_proto</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -162,7 +163,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">DualRayProto operations_research::math_opt::DualRay::Proto </td>
+          <td class="memname"><a class="el" href="classoperations__research_1_1math__opt_1_1DualRayProto.html">DualRayProto</a> operations_research::math_opt::DualRay::Proto </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>

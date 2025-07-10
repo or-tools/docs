@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,15 @@ $(function(){initNavTree('classoperations__research_1_1sat_1_1RelaxationInducedN
   <div class="headertitle"><div class="title">operations_research::sat::RelaxationInducedNeighborhoodGenerator Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Generates a neighborhood by fixing the variables to solutions reported in various repositories. This is inspired from RINS published in "Exploring
+relaxation induced neighborhoods to improve MIP solutions" 2004 by E. Danna et.</p>
+<p>If incomplete_solutions is provided, this generates a neighborhood by fixing the variable values to a solution in the <a class="el" href="classoperations__research_1_1sat_1_1SharedIncompleteSolutionManager.html">SharedIncompleteSolutionManager</a> and ignores the other repositories.</p>
+<p>Otherwise, if response_manager is not provided, this generates a neighborhood using only the linear/general relaxation values. The domain of the variables are reduced to the integer values around their lp solution/relaxation solution values. This was published in "RENS – The Relaxation Enforced
+Neighborhood" 2009 by Timo Berthold. </p>
 
+<p class="definition">Definition at line <a class="el" href="cp__model__lns_8h_source.html#l00868">868</a> of file <a class="el" href="cp__model__lns_8h_source.html">cp_model_lns.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="cp__model__lns_8h_source.html">cp_model_lns.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for operations_research::sat::RelaxationInducedNeighborhoodGenerator:</div>
@@ -110,7 +119,7 @@ Inheritance diagram for operations_research::sat::RelaxationInducedNeighborhoodG
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a6ab128d8bb90a5859f8bfb18fb9b86e2" id="r_a6ab128d8bb90a5859f8bfb18fb9b86e2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6ab128d8bb90a5859f8bfb18fb9b86e2">RelaxationInducedNeighborhoodGenerator</a> (<a class="el" href="classoperations__research_1_1sat_1_1NeighborhoodGeneratorHelper.html">NeighborhoodGeneratorHelper</a> const *helper, const <a class="el" href="classoperations__research_1_1sat_1_1SharedResponseManager.html">SharedResponseManager</a> *response_manager, const <a class="el" href="classoperations__research_1_1sat_1_1SharedLPSolutionRepository.html">SharedLPSolutionRepository</a> *lp_solutions, <a class="el" href="classoperations__research_1_1sat_1_1SharedIncompleteSolutionManager.html">SharedIncompleteSolutionManager</a> *incomplete_solutions, absl::string_view <a class="el" href="classoperations__research_1_1sat_1_1NeighborhoodGenerator.html#a44c29a622542cfd748afd64cdd3bed3b">name</a>)</td></tr>
-<tr class="memitem:a27044402508dfaff5018cda97b8812bb" id="r_a27044402508dfaff5018cda97b8812bb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structoperations__research_1_1sat_1_1Neighborhood.html">Neighborhood</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a27044402508dfaff5018cda97b8812bb">Generate</a> (const CpSolverResponse &amp;initial_solution, <a class="el" href="structoperations__research_1_1sat_1_1NeighborhoodGenerator_1_1SolveData.html">SolveData</a> &amp;data, absl::BitGenRef random) final</td></tr>
+<tr class="memitem:a27044402508dfaff5018cda97b8812bb" id="r_a27044402508dfaff5018cda97b8812bb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structoperations__research_1_1sat_1_1Neighborhood.html">Neighborhood</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a27044402508dfaff5018cda97b8812bb">Generate</a> (const <a class="el" href="classoperations__research_1_1sat_1_1CpSolverResponse.html">CpSolverResponse</a> &amp;initial_solution, <a class="el" href="structoperations__research_1_1sat_1_1NeighborhoodGenerator_1_1SolveData.html">SolveData</a> &amp;data, absl::BitGenRef random) final</td></tr>
 <tr class="memdesc:a27044402508dfaff5018cda97b8812bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Both initial solution and difficulty values are ignored.  <br /></td></tr>
 <tr class="memitem:af93ab0f7fbfcd50c11f2d7b3053672fc" id="r_af93ab0f7fbfcd50c11f2d7b3053672fc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af93ab0f7fbfcd50c11f2d7b3053672fc">ReadyToGenerate</a> () const override</td></tr>
 <tr class="memdesc:af93ab0f7fbfcd50c11f2d7b3053672fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the required solutions are available.  <br /></td></tr>
@@ -144,15 +153,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a5e4b5d1b4d12d3b92f1b91ecc279b8cb inherit pro_attribs_classoperations__research_1_1sat_1_1NeighborhoodGenerator" id="r_a5e4b5d1b4d12d3b92f1b91ecc279b8cb"><td class="memItemLeft" align="right" valign="top">absl::Mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1NeighborhoodGenerator.html#a5e4b5d1b4d12d3b92f1b91ecc279b8cb">generator_mutex_</a></td></tr>
 <tr class="memitem:a3a284dd4da0a49875c9752e14056cdac inherit pro_attribs_classoperations__research_1_1sat_1_1NeighborhoodGenerator" id="r_a3a284dd4da0a49875c9752e14056cdac"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1NeighborhoodGenerator.html#a3a284dd4da0a49875c9752e14056cdac">deterministic_limit_</a> = 0.1</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Generates a neighborhood by fixing the variables to solutions reported in various repositories. This is inspired from RINS published in "Exploring
-relaxation induced neighborhoods to improve MIP solutions" 2004 by E. Danna et.</p>
-<p>If incomplete_solutions is provided, this generates a neighborhood by fixing the variable values to a solution in the <a class="el" href="classoperations__research_1_1sat_1_1SharedIncompleteSolutionManager.html">SharedIncompleteSolutionManager</a> and ignores the other repositories.</p>
-<p>Otherwise, if response_manager is not provided, this generates a neighborhood using only the linear/general relaxation values. The domain of the variables are reduced to the integer values around their lp solution/relaxation solution values. This was published in "RENS – The Relaxation Enforced
-Neighborhood" 2009 by Timo Berthold. </p>
-
-<p class="definition">Definition at line <a class="el" href="cp__model__lns_8h_source.html#l00868">868</a> of file <a class="el" href="cp__model__lns_8h_source.html">cp_model_lns.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a6ab128d8bb90a5859f8bfb18fb9b86e2" name="a6ab128d8bb90a5859f8bfb18fb9b86e2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6ab128d8bb90a5859f8bfb18fb9b86e2">&#9670;&#160;</a></span>RelaxationInducedNeighborhoodGenerator()</h2>
 
@@ -212,7 +213,7 @@ Neighborhood" 2009 by Timo Berthold. </p>
         <tr>
           <td class="memname"><a class="el" href="structoperations__research_1_1sat_1_1Neighborhood.html">Neighborhood</a> operations_research::sat::RelaxationInducedNeighborhoodGenerator::Generate </td>
           <td>(</td>
-          <td class="paramtype">const CpSolverResponse &amp;</td>          <td class="paramname"><span class="paramname"><em>initial_solution</em></span>, </td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1sat_1_1CpSolverResponse.html">CpSolverResponse</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>initial_solution</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -234,7 +235,7 @@ Neighborhood" 2009 by Timo Berthold. </p>
 
 <p>Both initial solution and difficulty values are ignored. </p>
 <p>Fix the variables in the local model.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001240">Todo</a></b></dt><dd>(user): Instead of aborting, pick the closest point in the domain? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001238">Todo</a></b></dt><dd>(user): Instead of aborting, pick the closest point in the domain? </dd></dl>
 
 <p>Implements <a class="el" href="classoperations__research_1_1sat_1_1NeighborhoodGenerator.html#a4946d872c633ca65464ae8bc9aa30aa4">operations_research::sat::NeighborhoodGenerator</a>.</p>
 

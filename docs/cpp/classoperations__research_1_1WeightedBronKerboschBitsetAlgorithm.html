@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,12 @@ $(function(){initNavTree('classoperations__research_1_1WeightedBronKerboschBitse
   <div class="headertitle"><div class="title">operations_research::WeightedBronKerboschBitsetAlgorithm Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>More specialized version used to separate clique-cuts in MIP solver. This finds all maximal clique with a weight greater than a given threshold. It also has computation limit.</p>
+<p>This implementation assumes small graph since we use a dense bitmask representation to encode the graph adjacency. So it shouldn't really be used with more than a few thousands nodes. </p>
 
+<p class="definition">Definition at line <a class="el" href="cliques_8h_source.html#l00369">369</a> of file <a class="el" href="cliques_8h_source.html">cliques.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="cliques_8h_source.html">cliques.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -114,12 +120,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae18108f844309a74870bb1e50fad646b" id="r_ae18108f844309a74870bb1e50fad646b"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae18108f844309a74870bb1e50fad646b">WorkDone</a> () const</td></tr>
 <tr class="memitem:a7be8bcc7c50200fd214e1f592fb04f2a" id="r_a7be8bcc7c50200fd214e1f592fb04f2a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7be8bcc7c50200fd214e1f592fb04f2a">HasEdge</a> (int i, int j) const</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>More specialized version used to separate clique-cuts in MIP solver. This finds all maximal clique with a weight greater than a given threshold. It also has computation limit.</p>
-<p>This implementation assumes small graph since we use a dense bitmask representation to encode the graph adjacency. So it shouldn't really be used with more than a few thousands nodes. </p>
-
-<p class="definition">Definition at line <a class="el" href="cliques_8h_source.html#l00370">370</a> of file <a class="el" href="cliques_8h_source.html">cliques.h</a>.</p>
-</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="a60f22cd04753363e222ae1d5fcc377e7" name="a60f22cd04753363e222ae1d5fcc377e7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a60f22cd04753363e222ae1d5fcc377e7">&#9670;&#160;</a></span>AddEdge()</h2>
 
@@ -149,7 +150,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Add an edge in the graph. </p>
 
-<p class="definition">Definition at line <a class="el" href="cliques_8h_source.html#l00381">381</a> of file <a class="el" href="cliques_8h_source.html">cliques.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cliques_8h_source.html#l00380">380</a> of file <a class="el" href="cliques_8h_source.html">cliques.h</a>.</p>
 
 </div>
 </div>
@@ -177,7 +178,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Specific API where the index refer in the last result of <a class="el" href="#ae007253722829c6e730309c66b6637bd">Run()</a>. This allows to select cliques when they are many. </p>
 
-<p class="definition">Definition at line <a class="el" href="cliques_8h_source.html#l00408">408</a> of file <a class="el" href="cliques_8h_source.html">cliques.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cliques_8h_source.html#l00407">407</a> of file <a class="el" href="cliques_8h_source.html">cliques.h</a>.</p>
 
 </div>
 </div>
@@ -208,7 +209,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cliques_8h_source.html#l00414">414</a> of file <a class="el" href="cliques_8h_source.html">cliques.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cliques_8h_source.html#l00413">413</a> of file <a class="el" href="cliques_8h_source.html">cliques.h</a>.</p>
 
 </div>
 </div>
@@ -287,7 +288,7 @@ Cutting Planes with Conflict Graphs", <a href="https://arxiv.org/pdf/1909.07780"
 
 <p><a class="el" href="classoperations__research_1_1Set.html">Set</a> the minimum weight of the maximal cliques we are looking for. </p>
 
-<p class="definition">Definition at line <a class="el" href="cliques_8h_source.html#l00390">390</a> of file <a class="el" href="cliques_8h_source.html">cliques.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cliques_8h_source.html#l00389">389</a> of file <a class="el" href="cliques_8h_source.html">cliques.h</a>.</p>
 
 </div>
 </div>
@@ -319,7 +320,7 @@ Cutting Planes with Conflict Graphs", <a href="https://arxiv.org/pdf/1909.07780"
 </div><div class="memdoc">
 <p><a class="el" href="classoperations__research_1_1Set.html">Set</a> the weight of a given node, must be in [0, num_nodes). Weights are assumed to be non-negative. </p>
 
-<p class="definition">Definition at line <a class="el" href="cliques_8h_source.html#l00378">378</a> of file <a class="el" href="cliques_8h_source.html">cliques.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cliques_8h_source.html#l00377">377</a> of file <a class="el" href="cliques_8h_source.html">cliques.h</a>.</p>
 
 </div>
 </div>
@@ -348,7 +349,7 @@ Cutting Planes with Conflict Graphs", <a href="https://arxiv.org/pdf/1909.07780"
 
 <p>We count the number of basic operations, and stop when we reach this limit. </p>
 
-<p class="definition">Definition at line <a class="el" href="cliques_8h_source.html#l00387">387</a> of file <a class="el" href="cliques_8h_source.html">cliques.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cliques_8h_source.html#l00386">386</a> of file <a class="el" href="cliques_8h_source.html">cliques.h</a>.</p>
 
 </div>
 </div>
@@ -399,7 +400,7 @@ Cutting Planes with Conflict Graphs", <a href="https://arxiv.org/pdf/1909.07780"
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cliques_8h_source.html#l00412">412</a> of file <a class="el" href="cliques_8h_source.html">cliques.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cliques_8h_source.html#l00411">411</a> of file <a class="el" href="cliques_8h_source.html">cliques.h</a>.</p>
 
 </div>
 </div>

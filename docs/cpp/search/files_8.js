@@ -4,12 +4,14 @@ var searchData=
   ['hash_2ecc_1',['hash.cc',['../hash_8cc.html',1,'']]],
   ['hash_2eh_2',['hash.h',['../hash_8h.html',1,'']]],
   ['helpers_2eh_3',['helpers.h',['../helpers_8h.html',1,'']]],
-  ['highs_2eproto_4',['highs.proto',['../highs_8proto.html',1,'']]],
-  ['highs_5finterface_2ecc_5',['highs_interface.cc',['../highs__interface_8cc.html',1,'']]],
-  ['highs_5fproto_5fsolver_2ecc_6',['highs_proto_solver.cc',['../highs__proto__solver_8cc.html',1,'']]],
-  ['highs_5fproto_5fsolver_2eh_7',['highs_proto_solver.h',['../highs__proto__solver_8h.html',1,'']]],
-  ['highs_5fsolver_2ecc_8',['highs_solver.cc',['../highs__solver_8cc.html',1,'']]],
-  ['highs_5fsolver_2eh_9',['highs_solver.h',['../highs__solver_8h.html',1,'']]],
-  ['hungarian_2ecc_10',['hungarian.cc',['../hungarian_8cc.html',1,'']]],
-  ['hungarian_2eh_11',['hungarian.h',['../hungarian_8h.html',1,'']]]
+  ['highs_2epb_2ecc_4',['highs.pb.cc',['../highs_8pb_8cc.html',1,'']]],
+  ['highs_2epb_2eh_5',['highs.pb.h',['../highs_8pb_8h.html',1,'']]],
+  ['highs_2eproto_6',['highs.proto',['../highs_8proto.html',1,'']]],
+  ['highs_5finterface_2ecc_7',['highs_interface.cc',['../highs__interface_8cc.html',1,'']]],
+  ['highs_5fproto_5fsolver_2ecc_8',['highs_proto_solver.cc',['../highs__proto__solver_8cc.html',1,'']]],
+  ['highs_5fproto_5fsolver_2eh_9',['highs_proto_solver.h',['../highs__proto__solver_8h.html',1,'']]],
+  ['highs_5fsolver_2ecc_10',['highs_solver.cc',['../highs__solver_8cc.html',1,'']]],
+  ['highs_5fsolver_2eh_11',['highs_solver.h',['../highs__solver_8h.html',1,'']]],
+  ['hungarian_2ecc_12',['hungarian.cc',['../hungarian_8cc.html',1,'']]],
+  ['hungarian_2eh_13',['hungarian.h',['../hungarian_8h.html',1,'']]]
 ];

@@ -1,0 +1,28 @@
+var unionoperations__research_1_1sat_1_1ConstraintProto_1_1Impl___1_1ConstraintUnion =
+[
+    [ "ConstraintUnion", "unionoperations__research_1_1sat_1_1ConstraintProto_1_1Impl___1_1ConstraintUnion.html#a2b86cd4cf5f17dc735579b6df7b0c396", null ],
+    [ "_constinit_", "unionoperations__research_1_1sat_1_1ConstraintProto_1_1Impl___1_1ConstraintUnion.html#ae0d6b50164764f57e71448754e77bc66", null ],
+    [ "all_diff_", "unionoperations__research_1_1sat_1_1ConstraintProto_1_1Impl___1_1ConstraintUnion.html#a7f38a659384b7f45f004fd550a8c43f5", null ],
+    [ "at_most_one_", "unionoperations__research_1_1sat_1_1ConstraintProto_1_1Impl___1_1ConstraintUnion.html#af75ec5d1e3648e464a0bde431ed4ddd0", null ],
+    [ "automaton_", "unionoperations__research_1_1sat_1_1ConstraintProto_1_1Impl___1_1ConstraintUnion.html#a2aa44b989152d7ec449934c558fc57ae", null ],
+    [ "bool_and_", "unionoperations__research_1_1sat_1_1ConstraintProto_1_1Impl___1_1ConstraintUnion.html#ab19561bbae80c66b33128e55ac9d7d17", null ],
+    [ "bool_or_", "unionoperations__research_1_1sat_1_1ConstraintProto_1_1Impl___1_1ConstraintUnion.html#a4a40d0065cb0430df992e1ee551186c8", null ],
+    [ "bool_xor_", "unionoperations__research_1_1sat_1_1ConstraintProto_1_1Impl___1_1ConstraintUnion.html#aea190b3eda08a2a2100597731d730859", null ],
+    [ "circuit_", "unionoperations__research_1_1sat_1_1ConstraintProto_1_1Impl___1_1ConstraintUnion.html#a6563b9b5d78beaa80821fa9bce6b66bf", null ],
+    [ "cumulative_", "unionoperations__research_1_1sat_1_1ConstraintProto_1_1Impl___1_1ConstraintUnion.html#af81ff3bc4e49a77d2f94576cd140549a", null ],
+    [ "dummy_constraint_", "unionoperations__research_1_1sat_1_1ConstraintProto_1_1Impl___1_1ConstraintUnion.html#aa8cc9645bcd6c97798830e124b1029f3", null ],
+    [ "element_", "unionoperations__research_1_1sat_1_1ConstraintProto_1_1Impl___1_1ConstraintUnion.html#a591d81867b9dd87acffa1b007902af14", null ],
+    [ "exactly_one_", "unionoperations__research_1_1sat_1_1ConstraintProto_1_1Impl___1_1ConstraintUnion.html#a42ae3b032b14ff03db1a8afbe3a8d52a", null ],
+    [ "int_div_", "unionoperations__research_1_1sat_1_1ConstraintProto_1_1Impl___1_1ConstraintUnion.html#aaa8da475b5926c4bd2481d66d82759f0", null ],
+    [ "int_mod_", "unionoperations__research_1_1sat_1_1ConstraintProto_1_1Impl___1_1ConstraintUnion.html#a09dd0ac2d9a8758d77b335612355a6d5", null ],
+    [ "int_prod_", "unionoperations__research_1_1sat_1_1ConstraintProto_1_1Impl___1_1ConstraintUnion.html#a7a09e60ed2d37c45255593462a649e6f", null ],
+    [ "interval_", "unionoperations__research_1_1sat_1_1ConstraintProto_1_1Impl___1_1ConstraintUnion.html#a48284a475b35106be9b3912a3ae0c59f", null ],
+    [ "inverse_", "unionoperations__research_1_1sat_1_1ConstraintProto_1_1Impl___1_1ConstraintUnion.html#aeda681ebddc524984c728fdac426fd6d", null ],
+    [ "lin_max_", "unionoperations__research_1_1sat_1_1ConstraintProto_1_1Impl___1_1ConstraintUnion.html#a050d3f3d0c5a9877c35fa1e288be6bc5", null ],
+    [ "linear_", "unionoperations__research_1_1sat_1_1ConstraintProto_1_1Impl___1_1ConstraintUnion.html#a83acb172b59f2393429cdaf819c0f36e", null ],
+    [ "no_overlap_", "unionoperations__research_1_1sat_1_1ConstraintProto_1_1Impl___1_1ConstraintUnion.html#a5ccb9b9748cb4f564b082f035a6a58b9", null ],
+    [ "no_overlap_2d_", "unionoperations__research_1_1sat_1_1ConstraintProto_1_1Impl___1_1ConstraintUnion.html#a157d497e951029c976c120c4f1897d06", null ],
+    [ "reservoir_", "unionoperations__research_1_1sat_1_1ConstraintProto_1_1Impl___1_1ConstraintUnion.html#a8a7536cc13c276660f0e4cb707fcb66c", null ],
+    [ "routes_", "unionoperations__research_1_1sat_1_1ConstraintProto_1_1Impl___1_1ConstraintUnion.html#a1b190452b432e5d109181f3ea2f83335", null ],
+    [ "table_", "unionoperations__research_1_1sat_1_1ConstraintProto_1_1Impl___1_1ConstraintUnion.html#a09ea0327453569ae9557c862ea894c63", null ]
+];

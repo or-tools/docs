@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,16 @@ $(function(){initNavTree('classoperations__research_1_1math__opt_1_1ModelStorage
   <div class="headertitle"><div class="title">operations_research::math_opt::ModelStorageElement&lt; element_type, Derived, generate_equality &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;<a class="el" href="namespaceoperations__research_1_1math__opt.html#ad3370d09dba5b26336925eb89634eb4f">ElementType</a> element_type, typename Derived, <a class="el" href="namespaceoperations__research_1_1math__opt.html#aa5dcc51e835b5ba4af871fb6b8da57d4">ModelStorageElementEquality</a> generate_equality = ModelStorageElementEquality::kWithEquality&gt;<br />
+class operations_research::math_opt::ModelStorageElement&lt; element_type, Derived, generate_equality &gt;</div><p>Typed model storage item. All elemental types (Variables, <a class="el" href="classoperations__research_1_1math__opt_1_1LinearConstraint.html">LinearConstraint</a>, ...) in the model derived from this. Some additional concepts are currently not typed (and derive from <span class="tt"><a class="el" href="classoperations__research_1_1math__opt_1_1ModelStorageItem.html">ModelStorageItem</a></span> instead):</p><ul>
+<li>SOS constraints: we'll migrate them to <span class="tt"><a class="el" href="classoperations__research_1_1math__opt_1_1ModelStorageElement.html">ModelStorageElement</a></span> once they are implemented in <a class="el" href="classoperations__research_1_1math__opt_1_1Elemental.html">Elemental</a>.</li>
+<li><span class="tt"><a class="el" href="classoperations__research_1_1math__opt_1_1QuadraticTermKey.html">QuadraticTermKey</a></span> is only used transactionally to build the model, it's not stored in the model.</li>
+<li><span class="tt"><a class="el" href="classoperations__research_1_1math__opt_1_1Objective.html">Objective</a></span> is conceptually typed, but exposes a specific, optional-based API to discriminate between the primary and secondaries objectives. <span class="tt"><a class="el" href="classoperations__research_1_1math__opt_1_1ModelStorageElement.html">ModelStorageElement</a></span> is a value type and implements <a href="https://abseil.io/docs/cpp/guides/hash">https://abseil.io/docs/cpp/guides/hash</a>. </li>
+</ul>
 
+<p class="definition">Definition at line <a class="el" href="model__storage__item_8h_source.html#l00076">76</a> of file <a class="el" href="model__storage__item_8h_source.html">model_storage_item.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="model__storage__item_8h_source.html">model_storage_item.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for operations_research::math_opt::ModelStorageElement&lt; element_type, Derived, generate_equality &gt;:</div>
@@ -145,16 +155,7 @@ Friends</h2></td></tr>
 <tr class="memitem:a14cac3ec955fa88b051fb270c746bea2 template"><td class="memItemLeft" align="right" valign="top">std::enable_if_t&lt; equality==<a class="el" href="namespaceoperations__research_1_1math__opt.html#aa5dcc51e835b5ba4af871fb6b8da57d4aa918861e171c0835125988dc6f8bebfc">ModelStorageElementEquality::kWithEquality</a>, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a14cac3ec955fa88b051fb270c746bea2">operator!=</a> (const Derived &amp;lhs, const Derived &amp;rhs)</td></tr>
 <tr class="memitem:a4b87c7b8fe13c69c16c77af7c6c5332a" id="r_a4b87c7b8fe13c69c16c77af7c6c5332a"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4b87c7b8fe13c69c16c77af7c6c5332a">operator&lt;&lt;</a> (std::ostream &amp;ostr, const Derived &amp;element)</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;<a class="el" href="namespaceoperations__research_1_1math__opt.html#ad3370d09dba5b26336925eb89634eb4f">ElementType</a> element_type, typename Derived, <a class="el" href="namespaceoperations__research_1_1math__opt.html#aa5dcc51e835b5ba4af871fb6b8da57d4">ModelStorageElementEquality</a> generate_equality = ModelStorageElementEquality::kWithEquality&gt;<br />
-class operations_research::math_opt::ModelStorageElement&lt; element_type, Derived, generate_equality &gt;</div><p>Typed model storage item. All elemental types (Variables, <a class="el" href="classoperations__research_1_1math__opt_1_1LinearConstraint.html">LinearConstraint</a>, ...) in the model derived from this. Some additional concepts are currently not typed (and derive from <span class="tt"><a class="el" href="classoperations__research_1_1math__opt_1_1ModelStorageItem.html">ModelStorageItem</a></span> instead):</p><ul>
-<li>SOS constraints: we'll migrate them to <span class="tt"><a class="el" href="classoperations__research_1_1math__opt_1_1ModelStorageElement.html">ModelStorageElement</a></span> once they are implemented in <a class="el" href="classoperations__research_1_1math__opt_1_1Elemental.html">Elemental</a>.</li>
-<li><span class="tt"><a class="el" href="classoperations__research_1_1math__opt_1_1QuadraticTermKey.html">QuadraticTermKey</a></span> is only used transactionally to build the model, it's not stored in the model.</li>
-<li><span class="tt"><a class="el" href="classoperations__research_1_1math__opt_1_1Objective.html">Objective</a></span> is conceptually typed, but exposes a specific, optional-based API to discriminate between the primary and secondaries objectives. <span class="tt"><a class="el" href="classoperations__research_1_1math__opt_1_1ModelStorageElement.html">ModelStorageElement</a></span> is a value type and implements <a href="https://abseil.io/docs/cpp/guides/hash">https://abseil.io/docs/cpp/guides/hash</a>. </li>
-</ul>
-
-<p class="definition">Definition at line <a class="el" href="model__storage__item_8h_source.html#l00076">76</a> of file <a class="el" href="model__storage__item_8h_source.html">model_storage_item.h</a>.</p>
-</div><a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Member Typedef Documentation</h2>
+<a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Member Typedef Documentation</h2>
 <a id="a73076add8d958755f2b23024d4cf8492" name="a73076add8d958755f2b23024d4cf8492"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a73076add8d958755f2b23024d4cf8492">&#9670;&#160;</a></span>IdType</h2>
 
@@ -316,7 +317,7 @@ template&lt;<a class="el" href="namespaceoperations__research_1_1math__opt.html#
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001020">Todo</a></b></dt><dd>(b/395843100): Remove this, use <span class="tt"><a class="el" href="#af376756ab6a626f0fad1846b68923910">typed_id()</a></span> or <span class="tt"><a class="el" href="#af376756ab6a626f0fad1846b68923910">typed_id()</a>.value()</span> instead. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001019">Todo</a></b></dt><dd>(b/395843100): Remove this, use <span class="tt"><a class="el" href="#af376756ab6a626f0fad1846b68923910">typed_id()</a></span> or <span class="tt"><a class="el" href="#af376756ab6a626f0fad1846b68923910">typed_id()</a>.value()</span> instead. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="model__storage__item_8h_source.html#l00086">86</a> of file <a class="el" href="model__storage__item_8h_source.html">model_storage_item.h</a>.</p>
 

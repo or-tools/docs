@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,12 @@ $(function(){initNavTree('structoperations__research_1_1glop_1_1ScatteredVector.
   <div class="headertitle"><div class="title">operations_research::glop::ScatteredVector&lt; Index, Iterator &gt; Struct Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename <a class="el" href="namespaceoperations__research_1_1glop.html#a6ceda22b5fe5815dbdf343665c093e57">Index</a>, typename Iterator = VectorIterator&lt;ScatteredVectorEntry&lt;Index&gt;&gt;&gt;<br />
+struct operations_research::glop::ScatteredVector&lt; Index, Iterator &gt;</div><p>A simple struct that contains a DenseVector and its non-zero indices. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000875">Todo</a></b></dt><dd>(user): This should be changed from struct to class. </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="scattered__vector_8h_source.html#l00054">54</a> of file <a class="el" href="scattered__vector_8h_source.html">scattered_vector.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="scattered__vector_8h_source.html">scattered_vector.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -127,12 +133,7 @@ Public Attributes</h2></td></tr>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:a1863a881c8165a5b4217f58e70dcbc97" id="r_a1863a881c8165a5b4217f58e70dcbc97"><td class="memItemLeft" align="right" valign="top">static constexpr const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1863a881c8165a5b4217f58e70dcbc97">kDefaultRatioForUsingDenseIteration</a> = 0.8</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;typename <a class="el" href="namespaceoperations__research_1_1glop.html#a6ceda22b5fe5815dbdf343665c093e57">Index</a>, typename Iterator = VectorIterator&lt;ScatteredVectorEntry&lt;Index&gt;&gt;&gt;<br />
-struct operations_research::glop::ScatteredVector&lt; Index, Iterator &gt;</div><p>A simple struct that contains a DenseVector and its non-zero indices. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000876">Todo</a></b></dt><dd>(user): This should be changed from struct to class. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="scattered__vector_8h_source.html#l00054">54</a> of file <a class="el" href="scattered__vector_8h_source.html">scattered_vector.h</a>.</p>
-</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="a115eabcc9769d96cdca10b3c326d9d2d" name="a115eabcc9769d96cdca10b3c326d9d2d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a115eabcc9769d96cdca10b3c326d9d2d">&#9670;&#160;</a></span>Add()</h2>
 
@@ -567,7 +568,7 @@ template&lt;typename <a class="el" href="namespaceoperations__research_1_1glop.h
 </table>
 </div><div class="memdoc">
 <p>In many cases there is a choice between treating the <a class="el" href="structoperations__research_1_1glop_1_1ScatteredVector.html">ScatteredVector</a> as dense or as sparse. By default, dense algorithms are used when the proportion of non-zero entries is greater than kDefaultRatioForUsingDenseIteration.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000877">Todo</a></b></dt><dd>(user): The constant should depend on what algorithm is used. Clearing a dense vector is a lot more efficient than doing more complex stuff. Clean this up by extracting all the currently used constants in one place with meaningful names. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000876">Todo</a></b></dt><dd>(user): The constant should depend on what algorithm is used. Clearing a dense vector is a lot more efficient than doing more complex stuff. Clean this up by extracting all the currently used constants in one place with meaningful names. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="scattered__vector_8h_source.html#l00076">76</a> of file <a class="el" href="scattered__vector_8h_source.html">scattered_vector.h</a>.</p>
 

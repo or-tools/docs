@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,12 @@ $(function(){initNavTree('classoperations__research_1_1sat_1_1SchedulingConstrai
   <div class="headertitle"><div class="title">operations_research::sat::SchedulingConstraintHelper Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Helper class shared by the propagators that manage a given list of tasks.</p>
+<p>One of the main advantage of this class is that it allows to share the vectors of tasks sorted by various criteria between propagator for a faster code. It is also helpful to allow in-processing: the intervals that are handled by this class are not necessarily the same as the ones in the model. </p>
 
+<p class="definition">Definition at line <a class="el" href="scheduling__helpers_8h_source.html#l00087">87</a> of file <a class="el" href="scheduling__helpers_8h_source.html">scheduling_helpers.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="scheduling__helpers_8h_source.html">scheduling_helpers.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for operations_research::sat::SchedulingConstraintHelper:</div>
@@ -200,12 +206,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac4586668025c78c5bc7d0f53b6dd8053 inherit pub_methods_classoperations__research_1_1sat_1_1PropagatorInterface" id="r_ac4586668025c78c5bc7d0f53b6dd8053"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1PropagatorInterface.html#ac4586668025c78c5bc7d0f53b6dd8053">PropagatorInterface</a> ()=default</td></tr>
 <tr class="memitem:a2050a6e5fb78d733582e3fe1beb7d9ed inherit pub_methods_classoperations__research_1_1sat_1_1PropagatorInterface" id="r_a2050a6e5fb78d733582e3fe1beb7d9ed"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1PropagatorInterface.html#a2050a6e5fb78d733582e3fe1beb7d9ed">~PropagatorInterface</a> ()=default</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Helper class shared by the propagators that manage a given list of tasks.</p>
-<p>One of the main advantage of this class is that it allows to share the vectors of tasks sorted by various criteria between propagator for a faster code. It is also helpful to allow in-processing: the intervals that are handled by this class are not necessarily the same as the ones in the model. </p>
-
-<p class="definition">Definition at line <a class="el" href="scheduling__helpers_8h_source.html#l00087">87</a> of file <a class="el" href="scheduling__helpers_8h_source.html">scheduling_helpers.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a9bdd04da3355e5f68ff83e8ef53c22bb" name="a9bdd04da3355e5f68ff83e8ef53c22bb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9bdd04da3355e5f68ff83e8ef53c22bb">&#9670;&#160;</a></span>SchedulingConstraintHelper() <span class="overload">[1/2]</span></h2>
 
@@ -264,7 +265,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Temporary constructor. The class will not be usable until <a class="el" href="#a8b2761873769a381fcb948350dc04f77">ResetFromSubset()</a> is called.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002428">Todo</a></b></dt><dd>(user): Remove this. It is a hack because the disjunctive class needs to fetch the maximum possible number of task at construction. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002426">Todo</a></b></dt><dd>(user): Remove this. It is a hack because the disjunctive class needs to fetch the maximum possible number of task at construction. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="scheduling__helpers_8cc_source.html#l00083">83</a> of file <a class="el" href="scheduling__helpers_8cc_source.html">scheduling_helpers.cc</a>.</p>
 
@@ -935,7 +936,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Return a value so that End(a) + dist &lt;= Start(b). Returns kMinInterValue if we don't have any such relation.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002421">Todo</a></b></dt><dd>(user): be more precise when we know a and b are in disjunction. we really just need start_b &gt; start_a, or even &gt;= if duration is non-zero. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002419">Todo</a></b></dt><dd>(user): be more precise when we know a and b are in disjunction. we really just need start_b &gt; start_a, or even &gt;= if duration is non-zero. </dd></dl>
 <p>We take the min of the level zero (end_a - start_b) and the one coming from a conditional precedence at true.</p>
 
 <p class="definition">Definition at line <a class="el" href="scheduling__helpers_8cc_source.html#l00345">345</a> of file <a class="el" href="scheduling__helpers_8cc_source.html">scheduling_helpers.cc</a>.</p>
@@ -956,7 +957,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002423">Todo</a></b></dt><dd>(user): Avoid recomputing it if nothing changed. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002421">Todo</a></b></dt><dd>(user): Avoid recomputing it if nothing changed. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="scheduling__helpers_8cc_source.html#l00475">475</a> of file <a class="el" href="scheduling__helpers_8cc_source.html">scheduling_helpers.cc</a>.</p>
 
@@ -1171,7 +1172,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002430">Todo</a></b></dt><dd>(user): Change the propagation loop code so that we don't stop pushing in the middle of the propagation as more advanced propagator do not handle this correctly. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002428">Todo</a></b></dt><dd>(user): Change the propagation loop code so that we don't stop pushing in the middle of the propagation as more advanced propagator do not handle this correctly. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="scheduling__helpers_8h_source.html#l00357">357</a> of file <a class="el" href="scheduling__helpers_8h_source.html">scheduling_helpers.h</a>.</p>
 
@@ -1612,7 +1613,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>We detected a precedence between two tasks. If we are at level zero, we might want to add the constraint. If we are at positive level, we might want to propagate the associated precedence literal if it exists.</p>
 <dl class="section note"><dt>Note</dt><dd>we could call this at a positive level to propagate any literal associated to task a before task b. However we only call this for task that are in detectable precedence, which means the normal precedence or linear propagator should have already propagated that Boolean too. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002422">Todo</a></b></dt><dd>(user): Adding new constraint during propagation might not be the best idea as it can create some complication. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002420">Todo</a></b></dt><dd>(user): Adding new constraint during propagation might not be the best idea as it can create some complication. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="scheduling__helpers_8cc_source.html#l00371">371</a> of file <a class="el" href="scheduling__helpers_8cc_source.html">scheduling_helpers.cc</a>.</p>
 
@@ -2228,7 +2229,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Sorts and returns the tasks in corresponding order at the time of the call. </p><dl class="section note"><dt>Note</dt><dd>we do not mean strictly-increasing/strictly-decreasing, there will be duplicate time values in these vectors.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002429">Todo</a></b></dt><dd>(user): we could merge the first loop of <a class="el" href="namespaceoperations__research.html#a793092fb9f25552acabb89ee399bbd81">IncrementalSort()</a> with the loop that fill <a class="el" href="structoperations__research_1_1sat_1_1TaskTime.html#ab6740bc64f2e7c1ad55eb4d06ce1c0ba">TaskTime.time</a> at each call. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002427">Todo</a></b></dt><dd>(user): we could merge the first loop of <a class="el" href="namespaceoperations__research.html#a793092fb9f25552acabb89ee399bbd81">IncrementalSort()</a> with the loop that fill <a class="el" href="structoperations__research_1_1sat_1_1TaskTime.html#ab6740bc64f2e7c1ad55eb4d06ce1c0ba">TaskTime.time</a> at each call. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="scheduling__helpers_8cc_source.html#l00412">412</a> of file <a class="el" href="scheduling__helpers_8cc_source.html">scheduling_helpers.cc</a>.</p>
 

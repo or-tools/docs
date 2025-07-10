@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,12 @@ $(function(){initNavTree('classoperations__research_1_1sat_1_1SatCnfReader.html'
   <div class="headertitle"><div class="title">operations_research::sat::SatCnfReader Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This class loads a file in cnf file format into a SatProblem. The format is described here: <a href="http://people.sc.fsu.edu/~jburkardt/data/cnf/cnf.html">http://people.sc.fsu.edu/~jburkardt/data/cnf/cnf.html</a></p>
+<p>It also support the wcnf input format for partial weighted max-sat problems. </p>
 
+<p class="definition">Definition at line <a class="el" href="sat__cnf__reader_8h_source.html#l00145">145</a> of file <a class="el" href="sat__cnf__reader_8h_source.html">sat_cnf_reader.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="sat__cnf__reader_8h_source.html">sat_cnf_reader.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -105,16 +111,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a13a559de772b93226536158efab43cfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">This type is neither copyable nor movable.  <br /></td></tr>
 <tr class="memitem:a7204ae988476e54276f640d163519e66" id="r_a7204ae988476e54276f640d163519e66"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoperations__research_1_1sat_1_1SatCnfReader.html">SatCnfReader</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7204ae988476e54276f640d163519e66">operator=</a> (const <a class="el" href="classoperations__research_1_1sat_1_1SatCnfReader.html">SatCnfReader</a> &amp;)=delete</td></tr>
 <tr class="memitem:a57143b0d113d297cb8483a1928c5d3d4" id="r_a57143b0d113d297cb8483a1928c5d3d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a57143b0d113d297cb8483a1928c5d3d4">InterpretCnfAsMaxSat</a> (bool v)</td></tr>
-<tr class="memitem:a4cc03159305cef33106575d74159b040" id="r_a4cc03159305cef33106575d74159b040"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4cc03159305cef33106575d74159b040">Load</a> (const std::string &amp;filename, LinearBooleanProblem *problem)</td></tr>
+<tr class="memitem:a4cc03159305cef33106575d74159b040" id="r_a4cc03159305cef33106575d74159b040"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4cc03159305cef33106575d74159b040">Load</a> (const std::string &amp;filename, <a class="el" href="classoperations__research_1_1sat_1_1LinearBooleanProblem.html">LinearBooleanProblem</a> *problem)</td></tr>
 <tr class="memdesc:a4cc03159305cef33106575d74159b040"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the given cnf filename into the given proto.  <br /></td></tr>
-<tr class="memitem:a0877acfddf75cb80b647af5a38d33a26" id="r_a0877acfddf75cb80b647af5a38d33a26"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0877acfddf75cb80b647af5a38d33a26">Load</a> (const std::string &amp;filename, CpModelProto *problem)</td></tr>
+<tr class="memitem:a0877acfddf75cb80b647af5a38d33a26" id="r_a0877acfddf75cb80b647af5a38d33a26"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0877acfddf75cb80b647af5a38d33a26">Load</a> (const std::string &amp;filename, <a class="el" href="classoperations__research_1_1sat_1_1CpModelProto.html">CpModelProto</a> *problem)</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This class loads a file in cnf file format into a SatProblem. The format is described here: <a href="http://people.sc.fsu.edu/~jburkardt/data/cnf/cnf.html">http://people.sc.fsu.edu/~jburkardt/data/cnf/cnf.html</a></p>
-<p>It also support the wcnf input format for partial weighted max-sat problems. </p>
-
-<p class="definition">Definition at line <a class="el" href="sat__cnf__reader_8h_source.html#l00145">145</a> of file <a class="el" href="sat__cnf__reader_8h_source.html">sat_cnf_reader.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a83a522df9d9ef05cf7361c049bb8958b" name="a83a522df9d9ef05cf7361c049bb8958b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a83a522df9d9ef05cf7361c049bb8958b">&#9670;&#160;</a></span>SatCnfReader() <span class="overload">[1/2]</span></h2>
 
@@ -215,7 +216,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">CpModelProto *</td>          <td class="paramname"><span class="paramname"><em>problem</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="classoperations__research_1_1sat_1_1CpModelProto.html">CpModelProto</a> *</td>          <td class="paramname"><span class="paramname"><em>problem</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -246,7 +247,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">LinearBooleanProblem *</td>          <td class="paramname"><span class="paramname"><em>problem</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="classoperations__research_1_1sat_1_1LinearBooleanProblem.html">LinearBooleanProblem</a> *</td>          <td class="paramname"><span class="paramname"><em>problem</em></span>&#160;)</td>
         </tr>
       </table>
   </td>

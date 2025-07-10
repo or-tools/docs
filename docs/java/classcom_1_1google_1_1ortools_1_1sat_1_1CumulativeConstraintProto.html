@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,21 @@ $(function(){initNavTree('classcom_1_1google_1_1ortools_1_1sat_1_1CumulativeCons
   <div class="headertitle"><div class="title">com.google.ortools.sat.CumulativeConstraintProto Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="dynheader">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><pre>
+The sum of the demands of the intervals at each interval point cannot exceed
+a capacity. Note that intervals are interpreted as [start, end) and as
+such intervals like [2,3) and [3,4) do not overlap for the point of view of
+this constraint. Moreover, intervals of size zero are ignored.
+
+All demands must not contain any negative value in their domains. This is
+checked at validation. Even if there are no intervals, this constraint
+implicit enforces capacity &gt;= 0. In other words, a negative capacity is
+considered valid but always infeasible.
+</pre><p>Protobuf type <code class="JavaDocCode">operations_research.sat.CumulativeConstraintProto</code> </p>
+
+<p class="definition">Definition at line <a class="el" href="CumulativeConstraintProto_8java_source.html#l00024">24</a> of file <a class="el" href="CumulativeConstraintProto_8java_source.html">CumulativeConstraintProto.java</a>.</p>
+</div><div class="dynheader">
 Inheritance diagram for com.google.ortools.sat.CumulativeConstraintProto:</div>
 <div class="dyncontent">
  <div class="center">
@@ -163,21 +178,7 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a118016313022e0641a0fbc79ab61b87d" id="r_a118016313022e0641a0fbc79ab61b87d"><td class="memItemLeft" align="right" valign="top">com.google.protobuf.GeneratedMessage.FieldAccessorTable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a118016313022e0641a0fbc79ab61b87d">internalGetFieldAccessorTable</a> ()</td></tr>
 <tr class="memitem:af45acf4c5eaa3598c1007fdec8c76376" id="r_af45acf4c5eaa3598c1007fdec8c76376"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcom_1_1google_1_1ortools_1_1sat_1_1CumulativeConstraintProto_1_1Builder.html">Builder</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af45acf4c5eaa3598c1007fdec8c76376">newBuilderForType</a> (com.google.protobuf.GeneratedMessage.BuilderParent parent)</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><pre>
-The sum of the demands of the intervals at each interval point cannot exceed
-a capacity. Note that intervals are interpreted as [start, end) and as
-such intervals like [2,3) and [3,4) do not overlap for the point of view of
-this constraint. Moreover, intervals of size zero are ignored.
-
-All demands must not contain any negative value in their domains. This is
-checked at validation. Even if there are no intervals, this constraint
-implicit enforces capacity &gt;= 0. In other words, a negative capacity is
-considered valid but always infeasible.
-</pre><p>Protobuf type <code class="JavaDocCode">operations_research.sat.CumulativeConstraintProto</code> </p>
-
-<p class="definition">Definition at line <a class="el" href="CumulativeConstraintProto_8java_source.html#l00024">24</a> of file <a class="el" href="CumulativeConstraintProto_8java_source.html">CumulativeConstraintProto.java</a>.</p>
-</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="ae22b8ac98b96c2821330da139001d708" name="ae22b8ac98b96c2821330da139001d708"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae22b8ac98b96c2821330da139001d708">&#9670;&#160;</a></span>equals()</h2>
 

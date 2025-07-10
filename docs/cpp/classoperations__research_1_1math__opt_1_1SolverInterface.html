@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,13 @@ $(function(){initNavTree('classoperations__research_1_1math__opt_1_1SolverInterf
   <div class="headertitle"><div class="title">operations_research::math_opt::SolverInterface Class Reference<span class="mlabels"><span class="mlabel abstract">abstract</span></span></div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Interface implemented by actual solvers.</p>
+<p>This interface is not meant to be used directly. The actual API is the one of the <a class="el" href="classoperations__research_1_1math__opt_1_1Solver.html">Solver</a> class. The <a class="el" href="classoperations__research_1_1math__opt_1_1Solver.html">Solver</a> class validates the models before calling this interface. It makes sure no concurrent calls happen on <a class="el" href="#a901a72259555138e63322b5bf6c3f097">Solve()</a>, CanUpdate() and <a class="el" href="#a6de754c2e507136a902230670f574c85">Update()</a>. It makes sure no other function is called after <a class="el" href="#a901a72259555138e63322b5bf6c3f097">Solve()</a>, <a class="el" href="#a6de754c2e507136a902230670f574c85">Update()</a> or a callback have failed.</p>
+<p>Implementations of this interface should not have public constructors but instead have a static <span class="tt">New</span> function with the signature of <a class="el" href="#adccec86e39cd359b38fe5c2bb747bbdd">Factory</a> function as defined below. They should register this factory using the macro <a class="el" href="solver__interface_8h.html#ad082a79cf1be23f55e3435fad5bf4949">MATH_OPT_REGISTER_SOLVER()</a>. </p>
 
+<p class="definition">Definition at line <a class="el" href="solver__interface_8h_source.html#l00052">52</a> of file <a class="el" href="solver__interface_8h_source.html">solver_interface.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="solver__interface_8h_source.html">solver_interface.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for operations_research::math_opt::SolverInterface:</div>
@@ -131,17 +138,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a25dd4a3815ffdaf3232f4fdaa9305f6c" id="r_a25dd4a3815ffdaf3232f4fdaa9305f6c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a25dd4a3815ffdaf3232f4fdaa9305f6c">SolverInterface</a> (const <a class="el" href="classoperations__research_1_1math__opt_1_1SolverInterface.html">SolverInterface</a> &amp;)=delete</td></tr>
 <tr class="memitem:ac57a8f1b841ac381356a7069cfb5336f" id="r_ac57a8f1b841ac381356a7069cfb5336f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoperations__research_1_1math__opt_1_1SolverInterface.html">SolverInterface</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac57a8f1b841ac381356a7069cfb5336f">operator=</a> (const <a class="el" href="classoperations__research_1_1math__opt_1_1SolverInterface.html">SolverInterface</a> &amp;)=delete</td></tr>
 <tr class="memitem:a9053d6c748ba7ede61b018d2da202417" id="r_a9053d6c748ba7ede61b018d2da202417"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9053d6c748ba7ede61b018d2da202417">~SolverInterface</a> ()=<a class="el" href="namespaceoperations__research_1_1math__opt.html#a31eab0685a86742ac6750e8e2812f0b0">default</a></td></tr>
-<tr class="memitem:a901a72259555138e63322b5bf6c3f097" id="r_a901a72259555138e63322b5bf6c3f097"><td class="memItemLeft" align="right" valign="top">virtual absl::StatusOr&lt; SolveResultProto &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a901a72259555138e63322b5bf6c3f097">Solve</a> (const SolveParametersProto &amp;parameters, const ModelSolveParametersProto &amp;model_parameters, <a class="el" href="#a478a3b5e923888a4d846548c2e42d120">MessageCallback</a> message_cb, const CallbackRegistrationProto &amp;callback_registration, <a class="el" href="#a813c407204cbf36cb14b4e3dbd5332d2">Callback</a> cb, const <a class="el" href="classoperations__research_1_1SolveInterrupter.html">SolveInterrupter</a> *interrupter)=0</td></tr>
-<tr class="memitem:a6de754c2e507136a902230670f574c85" id="r_a6de754c2e507136a902230670f574c85"><td class="memItemLeft" align="right" valign="top">virtual absl::StatusOr&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6de754c2e507136a902230670f574c85">Update</a> (const ModelUpdateProto &amp;model_update)=0</td></tr>
-<tr class="memitem:af7cb6066cb07d63bc4a186bcd4cc802d" id="r_af7cb6066cb07d63bc4a186bcd4cc802d"><td class="memItemLeft" align="right" valign="top">virtual absl::StatusOr&lt; ComputeInfeasibleSubsystemResultProto &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af7cb6066cb07d63bc4a186bcd4cc802d">ComputeInfeasibleSubsystem</a> (const SolveParametersProto &amp;parameters, <a class="el" href="#a478a3b5e923888a4d846548c2e42d120">MessageCallback</a> message_cb, const <a class="el" href="classoperations__research_1_1SolveInterrupter.html">SolveInterrupter</a> *interrupter)=0</td></tr>
+<tr class="memitem:a901a72259555138e63322b5bf6c3f097" id="r_a901a72259555138e63322b5bf6c3f097"><td class="memItemLeft" align="right" valign="top">virtual absl::StatusOr&lt; <a class="el" href="classoperations__research_1_1math__opt_1_1SolveResultProto.html">SolveResultProto</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a901a72259555138e63322b5bf6c3f097">Solve</a> (const <a class="el" href="classoperations__research_1_1math__opt_1_1SolveParametersProto.html">SolveParametersProto</a> &amp;parameters, const <a class="el" href="classoperations__research_1_1math__opt_1_1ModelSolveParametersProto.html">ModelSolveParametersProto</a> &amp;model_parameters, <a class="el" href="#a478a3b5e923888a4d846548c2e42d120">MessageCallback</a> message_cb, const <a class="el" href="classoperations__research_1_1math__opt_1_1CallbackRegistrationProto.html">CallbackRegistrationProto</a> &amp;callback_registration, <a class="el" href="#a813c407204cbf36cb14b4e3dbd5332d2">Callback</a> cb, const <a class="el" href="classoperations__research_1_1SolveInterrupter.html">SolveInterrupter</a> *interrupter)=0</td></tr>
+<tr class="memitem:a6de754c2e507136a902230670f574c85" id="r_a6de754c2e507136a902230670f574c85"><td class="memItemLeft" align="right" valign="top">virtual absl::StatusOr&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6de754c2e507136a902230670f574c85">Update</a> (const <a class="el" href="classoperations__research_1_1math__opt_1_1ModelUpdateProto.html">ModelUpdateProto</a> &amp;model_update)=0</td></tr>
+<tr class="memitem:af7cb6066cb07d63bc4a186bcd4cc802d" id="r_af7cb6066cb07d63bc4a186bcd4cc802d"><td class="memItemLeft" align="right" valign="top">virtual absl::StatusOr&lt; <a class="el" href="classoperations__research_1_1math__opt_1_1ComputeInfeasibleSubsystemResultProto.html">ComputeInfeasibleSubsystemResultProto</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af7cb6066cb07d63bc4a186bcd4cc802d">ComputeInfeasibleSubsystem</a> (const <a class="el" href="classoperations__research_1_1math__opt_1_1SolveParametersProto.html">SolveParametersProto</a> &amp;parameters, <a class="el" href="#a478a3b5e923888a4d846548c2e42d120">MessageCallback</a> message_cb, const <a class="el" href="classoperations__research_1_1SolveInterrupter.html">SolveInterrupter</a> *interrupter)=0</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Interface implemented by actual solvers.</p>
-<p>This interface is not meant to be used directly. The actual API is the one of the <a class="el" href="classoperations__research_1_1math__opt_1_1Solver.html">Solver</a> class. The <a class="el" href="classoperations__research_1_1math__opt_1_1Solver.html">Solver</a> class validates the models before calling this interface. It makes sure no concurrent calls happen on <a class="el" href="#a901a72259555138e63322b5bf6c3f097">Solve()</a>, CanUpdate() and <a class="el" href="#a6de754c2e507136a902230670f574c85">Update()</a>. It makes sure no other function is called after <a class="el" href="#a901a72259555138e63322b5bf6c3f097">Solve()</a>, <a class="el" href="#a6de754c2e507136a902230670f574c85">Update()</a> or a callback have failed.</p>
-<p>Implementations of this interface should not have public constructors but instead have a static <span class="tt">New</span> function with the signature of <a class="el" href="#adccec86e39cd359b38fe5c2bb747bbdd">Factory</a> function as defined below. They should register this factory using the macro <a class="el" href="solver__interface_8h.html#ad082a79cf1be23f55e3435fad5bf4949">MATH_OPT_REGISTER_SOLVER()</a>. </p>
-
-<p class="definition">Definition at line <a class="el" href="solver__interface_8h_source.html#l00052">52</a> of file <a class="el" href="solver__interface_8h_source.html">solver_interface.h</a>.</p>
-</div><a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Member Typedef Documentation</h2>
+<a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Member Typedef Documentation</h2>
 <a id="a813c407204cbf36cb14b4e3dbd5332d2" name="a813c407204cbf36cb14b4e3dbd5332d2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a813c407204cbf36cb14b4e3dbd5332d2">&#9670;&#160;</a></span>Callback</h2>
 
@@ -154,7 +155,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line"> std::function&lt;absl::StatusOr&lt;CallbackResultProto&gt;(</div>
-<div class="line">      <span class="keyword">const</span> CallbackDataProto&amp;)&gt;</div>
+<div class="line">      <span class="keyword">const</span> <a class="code hl_class" href="classoperations__research_1_1math__opt_1_1CallbackDataProto.html">CallbackDataProto</a>&amp;)&gt;</div>
+<div class="ttc" id="aclassoperations__research_1_1math__opt_1_1CallbackDataProto_html"><div class="ttname"><a href="classoperations__research_1_1math__opt_1_1CallbackDataProto.html">operations_research::math_opt::CallbackDataProto</a></div><div class="ttdef"><b>Definition</b> <a href="callback_8pb_8h_source.html#l01654">callback.pb.h:1655</a></div></div>
 </div><!-- fragment --><p>A callback function (if non null) is a function that validates its input and its output, and if fails, return a status. The invariant is that the solver implementation can rely on receiving valid data. The implementation of this interface must provide valid input (which will be validated) and in error, it will return a status (without actually calling the callback function). This is enforced in the solver.cc layer. </p>
 
 <p class="definition">Definition at line <a class="el" href="solver__interface_8h_source.html#l00076">76</a> of file <a class="el" href="solver__interface_8h_source.html">solver_interface.h</a>.</p>
@@ -174,11 +176,12 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line"> </div>
 <div class="line">      std::function&lt;absl::StatusOr&lt;std::unique_ptr&lt;SolverInterface&gt;&gt;(</div>
-<div class="line">          <span class="keyword">const</span> ModelProto&amp; model, <span class="keyword">const</span> <a class="code hl_struct" href="structoperations__research_1_1math__opt_1_1SolverInterface_1_1InitArgs.html">InitArgs</a>&amp; init_args)&gt;</div>
+<div class="line">          <span class="keyword">const</span> <a class="code hl_class" href="classoperations__research_1_1math__opt_1_1ModelProto.html">ModelProto</a>&amp; model, <span class="keyword">const</span> <a class="code hl_struct" href="structoperations__research_1_1math__opt_1_1SolverInterface_1_1InitArgs.html">InitArgs</a>&amp; init_args)&gt;</div>
+<div class="ttc" id="aclassoperations__research_1_1math__opt_1_1ModelProto_html"><div class="ttname"><a href="classoperations__research_1_1math__opt_1_1ModelProto.html">operations_research::math_opt::ModelProto</a></div><div class="ttdef"><b>Definition</b> <a href="model_8pb_8h_source.html#l02177">model.pb.h:2178</a></div></div>
 <div class="ttc" id="astructoperations__research_1_1math__opt_1_1SolverInterface_1_1InitArgs_html"><div class="ttname"><a href="structoperations__research_1_1math__opt_1_1SolverInterface_1_1InitArgs.html">operations_research::math_opt::SolverInterface::InitArgs</a></div><div class="ttdoc">Initialization arguments.</div><div class="ttdef"><b>Definition</b> <a href="solver__interface_8h_source.html#l00055">solver_interface.h:55</a></div></div>
 </div><!-- fragment --><p>A factory builds a solver based on the input model and parameters.</p>
 <p>Implementation should have a static <span class="tt">New()</span> function with this signature and no public constructors.</p>
-<p>The implementation should assume the input ModelProto is valid and is free to CHECK-fail if this is not the case. It should also assume that the input init_args.streamable and init_args.non_streamable are also either not set of set to the arguments of the correct solver. </p>
+<p>The implementation should assume the input <a class="el" href="classoperations__research_1_1math__opt_1_1ModelProto.html">ModelProto</a> is valid and is free to CHECK-fail if this is not the case. It should also assume that the input init_args.streamable and init_args.non_streamable are also either not set of set to the arguments of the correct solver. </p>
 
 <p class="definition">Definition at line <a class="el" href="solver__interface_8h_source.html#l00088">88</a> of file <a class="el" href="solver__interface_8h_source.html">solver_interface.h</a>.</p>
 
@@ -289,9 +292,9 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual absl::StatusOr&lt; ComputeInfeasibleSubsystemResultProto &gt; operations_research::math_opt::SolverInterface::ComputeInfeasibleSubsystem </td>
+          <td class="memname">virtual absl::StatusOr&lt; <a class="el" href="classoperations__research_1_1math__opt_1_1ComputeInfeasibleSubsystemResultProto.html">ComputeInfeasibleSubsystemResultProto</a> &gt; operations_research::math_opt::SolverInterface::ComputeInfeasibleSubsystem </td>
           <td>(</td>
-          <td class="paramtype">const SolveParametersProto &amp;</td>          <td class="paramname"><span class="paramname"><em>parameters</em></span>, </td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1math__opt_1_1SolveParametersProto.html">SolveParametersProto</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>parameters</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -355,14 +358,14 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual absl::StatusOr&lt; SolveResultProto &gt; operations_research::math_opt::SolverInterface::Solve </td>
+          <td class="memname">virtual absl::StatusOr&lt; <a class="el" href="classoperations__research_1_1math__opt_1_1SolveResultProto.html">SolveResultProto</a> &gt; operations_research::math_opt::SolverInterface::Solve </td>
           <td>(</td>
-          <td class="paramtype">const SolveParametersProto &amp;</td>          <td class="paramname"><span class="paramname"><em>parameters</em></span>, </td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1math__opt_1_1SolveParametersProto.html">SolveParametersProto</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>parameters</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const ModelSolveParametersProto &amp;</td>          <td class="paramname"><span class="paramname"><em>model_parameters</em></span>, </td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1math__opt_1_1ModelSolveParametersProto.html">ModelSolveParametersProto</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>model_parameters</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -372,7 +375,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const CallbackRegistrationProto &amp;</td>          <td class="paramname"><span class="paramname"><em>callback_registration</em></span>, </td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1math__opt_1_1CallbackRegistrationProto.html">CallbackRegistrationProto</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callback_registration</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -414,7 +417,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual absl::StatusOr&lt; bool &gt; operations_research::math_opt::SolverInterface::Update </td>
           <td>(</td>
-          <td class="paramtype">const ModelUpdateProto &amp;</td>          <td class="paramname"><span class="paramname"><em>model_update</em></span></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1math__opt_1_1ModelUpdateProto.html">ModelUpdateProto</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>model_update</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>

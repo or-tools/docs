@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,12 @@ $(function(){initNavTree('classoperations__research_1_1sat_1_1SatPostsolver.html
   <div class="headertitle"><div class="title">operations_research::sat::SatPostsolver Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A simple sat postsolver.</p>
+<p>The idea is that any presolve algorithm can just update this class, and at the end, this class will recover a solution of the initial problem from a solution of the presolved problem. </p>
 
+<p class="definition">Definition at line <a class="el" href="simplification_8h_source.html#l00046">46</a> of file <a class="el" href="simplification_8h_source.html">simplification.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="simplification_8h_source.html">simplification.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -113,12 +119,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3336b2762049c2d81e2bd255e9c9ecc8" id="r_a3336b2762049c2d81e2bd255e9c9ecc8"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classoperations__research_1_1sat_1_1Literal.html">Literal</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3336b2762049c2d81e2bd255e9c9ecc8">Clause</a> (int <a class="el" href="namespaceoperations__research_1_1sat.html#ab0c36038a18f65060a8232934b26cb7e">i</a>) const</td></tr>
 <tr class="memitem:a3cc8aa8496956c7ddda818f95003117e" id="r_a3cc8aa8496956c7ddda818f95003117e"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classoperations__research_1_1sat_1_1VariablesAssignment.html">VariablesAssignment</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3cc8aa8496956c7ddda818f95003117e">assignment</a> ()</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A simple sat postsolver.</p>
-<p>The idea is that any presolve algorithm can just update this class, and at the end, this class will recover a solution of the initial problem from a solution of the presolved problem. </p>
-
-<p class="definition">Definition at line <a class="el" href="simplification_8h_source.html#l00046">46</a> of file <a class="el" href="simplification_8h_source.html">simplification.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a82623554eb9b5c176929584f324c02e0" name="a82623554eb9b5c176929584f324c02e0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a82623554eb9b5c176929584f324c02e0">&#9670;&#160;</a></span>SatPostsolver() <span class="overload">[1/2]</span></h2>
 
@@ -270,7 +271,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002458">Todo</a></b></dt><dd>(user): we could avoid the copy here, but because clauses_literals_ is a deque, we do need a special return class and cannot just use absl::Span&lt;Literal&gt; for instance. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002456">Todo</a></b></dt><dd>(user): we could avoid the copy here, but because clauses_literals_ is a deque, we do need a special return class and cannot just use absl::Span&lt;Literal&gt; for instance. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="simplification_8h_source.html#l00087">87</a> of file <a class="el" href="simplification_8h_source.html">simplification.h</a>.</p>
 
@@ -312,7 +313,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Tells the postsolver that the given literal must be true in any solution. We currently check that the variable is not already fixed.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002457">Todo</a></b></dt><dd>(user): this as almost the same effect as adding an unit clause, and we should probably remove this to simplify the code. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002455">Todo</a></b></dt><dd>(user): this as almost the same effect as adding an unit clause, and we should probably remove this to simplify the code. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="simplification_8cc_source.html#l00066">66</a> of file <a class="el" href="simplification_8cc_source.html">simplification.cc</a>.</p>
 

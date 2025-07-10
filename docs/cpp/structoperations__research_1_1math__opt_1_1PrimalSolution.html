@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,18 +96,24 @@ $(function(){initNavTree('structoperations__research_1_1math__opt_1_1PrimalSolut
   <div class="headertitle"><div class="title">operations_research::math_opt::PrimalSolution Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A solution to an optimization problem.</p>
+<p>E.g. consider a simple linear program: min c * x s.t. A * x &gt;= b x &gt;= 0. A primal solution is assignment values to x. It is feasible if it satisfies A * x &gt;= b and x &gt;= 0 from above. In the class <a class="el" href="structoperations__research_1_1math__opt_1_1PrimalSolution.html">PrimalSolution</a>, variable_values is x and objective_value is c * x.</p>
+<p>For the general case of a MathOpt optimization model. </p>
 
+<p class="definition">Definition at line <a class="el" href="solution_8h_source.html#l00063">63</a> of file <a class="el" href="solution_8h_source.html">solution.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="solution_8h_source.html">solution.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a5335ec21e797b2cb899effa9f7d924d4" id="r_a5335ec21e797b2cb899effa9f7d924d4"><td class="memItemLeft" align="right" valign="top">PrimalSolutionProto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5335ec21e797b2cb899effa9f7d924d4">Proto</a> () const</td></tr>
+<tr class="memitem:a5335ec21e797b2cb899effa9f7d924d4" id="r_a5335ec21e797b2cb899effa9f7d924d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoperations__research_1_1math__opt_1_1PrimalSolutionProto.html">PrimalSolutionProto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5335ec21e797b2cb899effa9f7d924d4">Proto</a> () const</td></tr>
 <tr class="memdesc:a5335ec21e797b2cb899effa9f7d924d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the proto equivalent of this.  <br /></td></tr>
 <tr class="memitem:aec75ad3b0f6a61826192da2b3d387c87" id="r_aec75ad3b0f6a61826192da2b3d387c87"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aec75ad3b0f6a61826192da2b3d387c87">get_objective_value</a> (<a class="el" href="classoperations__research_1_1math__opt_1_1Objective.html">Objective</a> objective) const</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a917b249d570b796a99727b8e5295a663" id="r_a917b249d570b796a99727b8e5295a663"><td class="memItemLeft" align="right" valign="top">static absl::StatusOr&lt; <a class="el" href="structoperations__research_1_1math__opt_1_1PrimalSolution.html">PrimalSolution</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a917b249d570b796a99727b8e5295a663">FromProto</a> (<a class="el" href="namespaceoperations__research_1_1math__opt.html#a0d12f0e829e6df24b5dee811bf64b52c">ModelStorageCPtr</a> model, const PrimalSolutionProto &amp;primal_solution_proto)</td></tr>
+<tr class="memitem:a917b249d570b796a99727b8e5295a663" id="r_a917b249d570b796a99727b8e5295a663"><td class="memItemLeft" align="right" valign="top">static absl::StatusOr&lt; <a class="el" href="structoperations__research_1_1math__opt_1_1PrimalSolution.html">PrimalSolution</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a917b249d570b796a99727b8e5295a663">FromProto</a> (<a class="el" href="namespaceoperations__research_1_1math__opt.html#a0d12f0e829e6df24b5dee811bf64b52c">ModelStorageCPtr</a> model, const <a class="el" href="classoperations__research_1_1math__opt_1_1PrimalSolutionProto.html">PrimalSolutionProto</a> &amp;primal_solution_proto)</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -115,13 +122,7 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a09e69ec90607b0c560924e1f72624c37" id="r_a09e69ec90607b0c560924e1f72624c37"><td class="memItemLeft" align="right" valign="top">absl::flat_hash_map&lt; <a class="el" href="classoperations__research_1_1math__opt_1_1Objective.html">Objective</a>, double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a09e69ec90607b0c560924e1f72624c37">auxiliary_objective_values</a></td></tr>
 <tr class="memitem:abc825793b709f01fea415a8634569685" id="r_abc825793b709f01fea415a8634569685"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a637909695d6438261a9c072e9cf5f677">SolutionStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abc825793b709f01fea415a8634569685">feasibility_status</a> = <a class="el" href="namespaceoperations__research_1_1math__opt.html#a637909695d6438261a9c072e9cf5f677a180f453eb66237810dfc39ee46e04c9a">SolutionStatus::kUndetermined</a></td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A solution to an optimization problem.</p>
-<p>E.g. consider a simple linear program: min c * x s.t. A * x &gt;= b x &gt;= 0. A primal solution is assignment values to x. It is feasible if it satisfies A * x &gt;= b and x &gt;= 0 from above. In the class <a class="el" href="structoperations__research_1_1math__opt_1_1PrimalSolution.html">PrimalSolution</a>, variable_values is x and objective_value is c * x.</p>
-<p>For the general case of a MathOpt optimization model. </p>
-
-<p class="definition">Definition at line <a class="el" href="solution_8h_source.html#l00063">63</a> of file <a class="el" href="solution_8h_source.html">solution.h</a>.</p>
-</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="a917b249d570b796a99727b8e5295a663" name="a917b249d570b796a99727b8e5295a663"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a917b249d570b796a99727b8e5295a663">&#9670;&#160;</a></span>FromProto()</h2>
 
@@ -139,7 +140,7 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const PrimalSolutionProto &amp;</td>          <td class="paramname"><span class="paramname"><em>primal_solution_proto</em></span>&#160;)</td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1math__opt_1_1PrimalSolutionProto.html">PrimalSolutionProto</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>primal_solution_proto</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -187,7 +188,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">PrimalSolutionProto operations_research::math_opt::PrimalSolution::Proto </td>
+          <td class="memname"><a class="el" href="classoperations__research_1_1math__opt_1_1PrimalSolutionProto.html">PrimalSolutionProto</a> operations_research::math_opt::PrimalSolution::Proto </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>

@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,16 @@ $(function(){initNavTree('classoperations__research_1_1math__opt_1_1Solver.html'
   <div class="headertitle"><div class="title">operations_research::math_opt::Solver Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A solver for a given model and solver implementation.</p>
+<p>Use the <a class="el" href="#ab2bc7da2bee72ef15b8909970258bc3c">New()</a> function to build a new solver instance; then call <a class="el" href="#a9aa036d5c842854ba6702ee9d55276b6" title="Solves the current model (including all updates).">Solve()</a> to solve the model. You can then update the model using <a class="el" href="#a5b051aa2e5ebc0d09ce40aa3f3aba804">Update()</a> and resolve.</p>
+<p>Thread-safety: methods <a class="el" href="#a9aa036d5c842854ba6702ee9d55276b6" title="Solves the current model (including all updates).">Solve()</a> and <a class="el" href="#a5b051aa2e5ebc0d09ce40aa3f3aba804">Update()</a> must not be called concurrently; they will immediately return with an error status if this happens. Some solvers may add more restriction regarding threading. Please see SOLVER_TYPE_XXX documentation for details.</p>
+<p>Usage: const <a class="el" href="classoperations__research_1_1math__opt_1_1ModelProto.html">ModelProto</a> model = ...; const auto solver = <a class="el" href="#ab2bc7da2bee72ef15b8909970258bc3c">Solver::New</a>(SOLVER_TYPE_GSCIP, model, /*arguments=*&zwj;/{}); CHECK_OK(solver.status()); <a class="el" href="structoperations__research_1_1math__opt_1_1BaseSolver_1_1SolveArgs.html" title="Arguments used when calling Solve() to solve the problem.">Solver::SolveArgs</a> solve_arguments; ...</p>
+<p>///&lt; First solve of the initial <a class="el" href="classoperations__research_1_1math__opt_1_1Model.html">Model</a>. const auto first_solution = (*solver)-&gt;Solve(solve_arguments); CHECK_OK(first_solution.status()); ///&lt; Use the first_solution here.</p>
+<p>///&lt; Update the <a class="el" href="classoperations__research_1_1math__opt_1_1Model.html">Model</a> with a ModelUpdate. const ModelUpdate update = ...; CHECK_OK((*solver)-&gt;Update(update)); const auto second_solution = (*solver)-&gt;Solve(solve_arguments); CHECK_OK(second_solution.status()); ///&lt; Use the second_solution of the updated problem here. </p>
 
+<p class="definition">Definition at line <a class="el" href="solver_8h_source.html#l00066">66</a> of file <a class="el" href="solver_8h_source.html">solver.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="solver_8h_source.html">solver.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for operations_research::math_opt::Solver:</div>
@@ -112,16 +122,16 @@ Public Types</h2></td></tr>
 <tr class="memitem:a3bc588696d4bb5fa3de58ba5504d0a39" id="r_a3bc588696d4bb5fa3de58ba5504d0a39"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3bc588696d4bb5fa3de58ba5504d0a39">InitArgs</a> = <a class="el" href="structoperations__research_1_1math__opt_1_1SolverInterface_1_1InitArgs.html">SolverInterface::InitArgs</a></td></tr>
 <tr class="inherit_header pub_types_classoperations__research_1_1math__opt_1_1BaseSolver"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_types_classoperations__research_1_1math__opt_1_1BaseSolver')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Types inherited from <a class="el" href="classoperations__research_1_1math__opt_1_1BaseSolver.html">operations_research::math_opt::BaseSolver</a></td></tr>
 <tr class="memitem:acd55f169e786f76246d1b2db6434fa60 inherit pub_types_classoperations__research_1_1math__opt_1_1BaseSolver" id="r_acd55f169e786f76246d1b2db6434fa60"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1math__opt_1_1BaseSolver.html#acd55f169e786f76246d1b2db6434fa60">MessageCallback</a> = std::function&lt;void(const std::vector&lt;std::string&gt;&amp;)&gt;</td></tr>
-<tr class="memitem:a96c1cc00526718fbec925feed46e9b4e inherit pub_types_classoperations__research_1_1math__opt_1_1BaseSolver" id="r_a96c1cc00526718fbec925feed46e9b4e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1math__opt_1_1BaseSolver.html#a96c1cc00526718fbec925feed46e9b4e">Callback</a> = std::function&lt;CallbackResultProto(const CallbackDataProto&amp;)&gt;</td></tr>
+<tr class="memitem:a96c1cc00526718fbec925feed46e9b4e inherit pub_types_classoperations__research_1_1math__opt_1_1BaseSolver" id="r_a96c1cc00526718fbec925feed46e9b4e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1math__opt_1_1BaseSolver.html#a96c1cc00526718fbec925feed46e9b4e">Callback</a> = std::function&lt;<a class="el" href="classoperations__research_1_1math__opt_1_1CallbackResultProto.html">CallbackResultProto</a>(const <a class="el" href="classoperations__research_1_1math__opt_1_1CallbackDataProto.html">CallbackDataProto</a>&amp;)&gt;</td></tr>
 <tr class="memdesc:a96c1cc00526718fbec925feed46e9b4e inherit pub_types_classoperations__research_1_1math__opt_1_1BaseSolver"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classoperations__research_1_1math__opt_1_1BaseSolver.html#a96c1cc00526718fbec925feed46e9b4e" title="Callback function type for MIP/LP callbacks.">Callback</a> function type for MIP/LP callbacks.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a2b813295df96435b01175c1cff08eac7" id="r_a2b813295df96435b01175c1cff08eac7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2b813295df96435b01175c1cff08eac7">~Solver</a> () override</td></tr>
-<tr class="memitem:a9aa036d5c842854ba6702ee9d55276b6" id="r_a9aa036d5c842854ba6702ee9d55276b6"><td class="memItemLeft" align="right" valign="top">absl::StatusOr&lt; SolveResultProto &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9aa036d5c842854ba6702ee9d55276b6">Solve</a> (const <a class="el" href="structoperations__research_1_1math__opt_1_1BaseSolver_1_1SolveArgs.html">SolveArgs</a> &amp;arguments) override</td></tr>
+<tr class="memitem:a9aa036d5c842854ba6702ee9d55276b6" id="r_a9aa036d5c842854ba6702ee9d55276b6"><td class="memItemLeft" align="right" valign="top">absl::StatusOr&lt; <a class="el" href="classoperations__research_1_1math__opt_1_1SolveResultProto.html">SolveResultProto</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9aa036d5c842854ba6702ee9d55276b6">Solve</a> (const <a class="el" href="structoperations__research_1_1math__opt_1_1BaseSolver_1_1SolveArgs.html">SolveArgs</a> &amp;arguments) override</td></tr>
 <tr class="memdesc:a9aa036d5c842854ba6702ee9d55276b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solves the current model (including all updates).  <br /></td></tr>
-<tr class="memitem:a5b051aa2e5ebc0d09ce40aa3f3aba804" id="r_a5b051aa2e5ebc0d09ce40aa3f3aba804"><td class="memItemLeft" align="right" valign="top">absl::StatusOr&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5b051aa2e5ebc0d09ce40aa3f3aba804">Update</a> (ModelUpdateProto model_update) override</td></tr>
-<tr class="memitem:a9000d1b13527945eed62b37b98a0e430" id="r_a9000d1b13527945eed62b37b98a0e430"><td class="memItemLeft" align="right" valign="top">absl::StatusOr&lt; ComputeInfeasibleSubsystemResultProto &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9000d1b13527945eed62b37b98a0e430">ComputeInfeasibleSubsystem</a> (const <a class="el" href="structoperations__research_1_1math__opt_1_1BaseSolver_1_1ComputeInfeasibleSubsystemArgs.html">ComputeInfeasibleSubsystemArgs</a> &amp;arguments) override</td></tr>
+<tr class="memitem:a5b051aa2e5ebc0d09ce40aa3f3aba804" id="r_a5b051aa2e5ebc0d09ce40aa3f3aba804"><td class="memItemLeft" align="right" valign="top">absl::StatusOr&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5b051aa2e5ebc0d09ce40aa3f3aba804">Update</a> (<a class="el" href="classoperations__research_1_1math__opt_1_1ModelUpdateProto.html">ModelUpdateProto</a> model_update) override</td></tr>
+<tr class="memitem:a9000d1b13527945eed62b37b98a0e430" id="r_a9000d1b13527945eed62b37b98a0e430"><td class="memItemLeft" align="right" valign="top">absl::StatusOr&lt; <a class="el" href="classoperations__research_1_1math__opt_1_1ComputeInfeasibleSubsystemResultProto.html">ComputeInfeasibleSubsystemResultProto</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9000d1b13527945eed62b37b98a0e430">ComputeInfeasibleSubsystem</a> (const <a class="el" href="structoperations__research_1_1math__opt_1_1BaseSolver_1_1ComputeInfeasibleSubsystemArgs.html">ComputeInfeasibleSubsystemArgs</a> &amp;arguments) override</td></tr>
 <tr class="memdesc:a9000d1b13527945eed62b37b98a0e430"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes an infeasible subsystem of <span class="tt">model</span> (including all updates).  <br /></td></tr>
 <tr class="inherit_header pub_methods_classoperations__research_1_1math__opt_1_1BaseSolver"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classoperations__research_1_1math__opt_1_1BaseSolver')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Member Functions inherited from <a class="el" href="classoperations__research_1_1math__opt_1_1BaseSolver.html">operations_research::math_opt::BaseSolver</a></td></tr>
 <tr class="memitem:a7728a6e308dda765ce3cac41a1de3286 inherit pub_methods_classoperations__research_1_1math__opt_1_1BaseSolver" id="r_a7728a6e308dda765ce3cac41a1de3286"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1math__opt_1_1BaseSolver.html#a7728a6e308dda765ce3cac41a1de3286">BaseSolver</a> ()=<a class="el" href="namespaceoperations__research_1_1math__opt.html#a31eab0685a86742ac6750e8e2812f0b0">default</a></td></tr>
@@ -131,21 +141,12 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a37a1d0653897fe4f5b43719e88a9cc2d" id="r_a37a1d0653897fe4f5b43719e88a9cc2d"><td class="memItemLeft" align="right" valign="top">static absl::StatusOr&lt; SolveResultProto &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a37a1d0653897fe4f5b43719e88a9cc2d">NonIncrementalSolve</a> (const ModelProto &amp;model, SolverTypeProto solver_type, const <a class="el" href="#a3bc588696d4bb5fa3de58ba5504d0a39">InitArgs</a> &amp;init_args, const <a class="el" href="structoperations__research_1_1math__opt_1_1BaseSolver_1_1SolveArgs.html">SolveArgs</a> &amp;solve_args)</td></tr>
+<tr class="memitem:a37a1d0653897fe4f5b43719e88a9cc2d" id="r_a37a1d0653897fe4f5b43719e88a9cc2d"><td class="memItemLeft" align="right" valign="top">static absl::StatusOr&lt; <a class="el" href="classoperations__research_1_1math__opt_1_1SolveResultProto.html">SolveResultProto</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a37a1d0653897fe4f5b43719e88a9cc2d">NonIncrementalSolve</a> (const <a class="el" href="classoperations__research_1_1math__opt_1_1ModelProto.html">ModelProto</a> &amp;model, <a class="el" href="namespaceoperations__research_1_1math__opt.html#a679533aaa51454e793b9a41bab749cfc">SolverTypeProto</a> solver_type, const <a class="el" href="#a3bc588696d4bb5fa3de58ba5504d0a39">InitArgs</a> &amp;init_args, const <a class="el" href="structoperations__research_1_1math__opt_1_1BaseSolver_1_1SolveArgs.html">SolveArgs</a> &amp;solve_args)</td></tr>
 <tr class="memdesc:a37a1d0653897fe4f5b43719e88a9cc2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">A shortcut for calling <a class="el" href="#ab2bc7da2bee72ef15b8909970258bc3c">Solver::New()</a> and then <a class="el" href="#a9aa036d5c842854ba6702ee9d55276b6" title="Solves the current model (including all updates).">Solver::Solve()</a>.  <br /></td></tr>
-<tr class="memitem:ab2925733d64300131a1fbdee8b0122c4" id="r_ab2925733d64300131a1fbdee8b0122c4"><td class="memItemLeft" align="right" valign="top">static absl::StatusOr&lt; ComputeInfeasibleSubsystemResultProto &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab2925733d64300131a1fbdee8b0122c4">NonIncrementalComputeInfeasibleSubsystem</a> (const ModelProto &amp;model, SolverTypeProto solver_type, const <a class="el" href="#a3bc588696d4bb5fa3de58ba5504d0a39">InitArgs</a> &amp;init_args, const <a class="el" href="structoperations__research_1_1math__opt_1_1BaseSolver_1_1ComputeInfeasibleSubsystemArgs.html">ComputeInfeasibleSubsystemArgs</a> &amp;compute_infeasible_subsystem_args)</td></tr>
-<tr class="memitem:ab2bc7da2bee72ef15b8909970258bc3c" id="r_ab2bc7da2bee72ef15b8909970258bc3c"><td class="memItemLeft" align="right" valign="top">static absl::StatusOr&lt; std::unique_ptr&lt; <a class="el" href="classoperations__research_1_1math__opt_1_1Solver.html">Solver</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab2bc7da2bee72ef15b8909970258bc3c">New</a> (SolverTypeProto solver_type, const ModelProto &amp;model, const <a class="el" href="#a3bc588696d4bb5fa3de58ba5504d0a39">InitArgs</a> &amp;arguments)</td></tr>
+<tr class="memitem:ab2925733d64300131a1fbdee8b0122c4" id="r_ab2925733d64300131a1fbdee8b0122c4"><td class="memItemLeft" align="right" valign="top">static absl::StatusOr&lt; <a class="el" href="classoperations__research_1_1math__opt_1_1ComputeInfeasibleSubsystemResultProto.html">ComputeInfeasibleSubsystemResultProto</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab2925733d64300131a1fbdee8b0122c4">NonIncrementalComputeInfeasibleSubsystem</a> (const <a class="el" href="classoperations__research_1_1math__opt_1_1ModelProto.html">ModelProto</a> &amp;model, <a class="el" href="namespaceoperations__research_1_1math__opt.html#a679533aaa51454e793b9a41bab749cfc">SolverTypeProto</a> solver_type, const <a class="el" href="#a3bc588696d4bb5fa3de58ba5504d0a39">InitArgs</a> &amp;init_args, const <a class="el" href="structoperations__research_1_1math__opt_1_1BaseSolver_1_1ComputeInfeasibleSubsystemArgs.html">ComputeInfeasibleSubsystemArgs</a> &amp;compute_infeasible_subsystem_args)</td></tr>
+<tr class="memitem:ab2bc7da2bee72ef15b8909970258bc3c" id="r_ab2bc7da2bee72ef15b8909970258bc3c"><td class="memItemLeft" align="right" valign="top">static absl::StatusOr&lt; std::unique_ptr&lt; <a class="el" href="classoperations__research_1_1math__opt_1_1Solver.html">Solver</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab2bc7da2bee72ef15b8909970258bc3c">New</a> (<a class="el" href="namespaceoperations__research_1_1math__opt.html#a679533aaa51454e793b9a41bab749cfc">SolverTypeProto</a> solver_type, const <a class="el" href="classoperations__research_1_1math__opt_1_1ModelProto.html">ModelProto</a> &amp;model, const <a class="el" href="#a3bc588696d4bb5fa3de58ba5504d0a39">InitArgs</a> &amp;arguments)</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A solver for a given model and solver implementation.</p>
-<p>Use the <a class="el" href="#ab2bc7da2bee72ef15b8909970258bc3c">New()</a> function to build a new solver instance; then call <a class="el" href="#a9aa036d5c842854ba6702ee9d55276b6" title="Solves the current model (including all updates).">Solve()</a> to solve the model. You can then update the model using <a class="el" href="#a5b051aa2e5ebc0d09ce40aa3f3aba804">Update()</a> and resolve.</p>
-<p>Thread-safety: methods <a class="el" href="#a9aa036d5c842854ba6702ee9d55276b6" title="Solves the current model (including all updates).">Solve()</a> and <a class="el" href="#a5b051aa2e5ebc0d09ce40aa3f3aba804">Update()</a> must not be called concurrently; they will immediately return with an error status if this happens. Some solvers may add more restriction regarding threading. Please see SOLVER_TYPE_XXX documentation for details.</p>
-<p>Usage: const ModelProto model = ...; const auto solver = <a class="el" href="#ab2bc7da2bee72ef15b8909970258bc3c">Solver::New</a>(SOLVER_TYPE_GSCIP, model, /*arguments=*&zwj;/{}); CHECK_OK(solver.status()); <a class="el" href="structoperations__research_1_1math__opt_1_1BaseSolver_1_1SolveArgs.html" title="Arguments used when calling Solve() to solve the problem.">Solver::SolveArgs</a> solve_arguments; ...</p>
-<p>///&lt; First solve of the initial <a class="el" href="classoperations__research_1_1math__opt_1_1Model.html">Model</a>. const auto first_solution = (*solver)-&gt;Solve(solve_arguments); CHECK_OK(first_solution.status()); ///&lt; Use the first_solution here.</p>
-<p>///&lt; Update the <a class="el" href="classoperations__research_1_1math__opt_1_1Model.html">Model</a> with a ModelUpdate. const ModelUpdate update = ...; CHECK_OK((*solver)-&gt;Update(update)); const auto second_solution = (*solver)-&gt;Solve(solve_arguments); CHECK_OK(second_solution.status()); ///&lt; Use the second_solution of the updated problem here. </p>
-
-<p class="definition">Definition at line <a class="el" href="solver_8h_source.html#l00066">66</a> of file <a class="el" href="solver_8h_source.html">solver.h</a>.</p>
-</div><a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Member Typedef Documentation</h2>
+<a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Member Typedef Documentation</h2>
 <a id="a3bc588696d4bb5fa3de58ba5504d0a39" name="a3bc588696d4bb5fa3de58ba5504d0a39"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3bc588696d4bb5fa3de58ba5504d0a39">&#9670;&#160;</a></span>InitArgs</h2>
 
@@ -201,7 +202,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">absl::StatusOr&lt; ComputeInfeasibleSubsystemResultProto &gt; operations_research::math_opt::Solver::ComputeInfeasibleSubsystem </td>
+          <td class="memname">absl::StatusOr&lt; <a class="el" href="classoperations__research_1_1math__opt_1_1ComputeInfeasibleSubsystemResultProto.html">ComputeInfeasibleSubsystemResultProto</a> &gt; operations_research::math_opt::Solver::ComputeInfeasibleSubsystem </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="structoperations__research_1_1math__opt_1_1BaseSolver_1_1ComputeInfeasibleSubsystemArgs.html">ComputeInfeasibleSubsystemArgs</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>arguments</em></span></td><td>)</td>
           <td></td>
@@ -236,12 +237,12 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">absl::StatusOr&lt; std::unique_ptr&lt; <a class="el" href="classoperations__research_1_1math__opt_1_1Solver.html">Solver</a> &gt; &gt; operations_research::math_opt::Solver::New </td>
           <td>(</td>
-          <td class="paramtype">SolverTypeProto</td>          <td class="paramname"><span class="paramname"><em>solver_type</em></span>, </td>
+          <td class="paramtype"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a679533aaa51454e793b9a41bab749cfc">SolverTypeProto</a></td>          <td class="paramname"><span class="paramname"><em>solver_type</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const ModelProto &amp;</td>          <td class="paramname"><span class="paramname"><em>model</em></span>, </td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1math__opt_1_1ModelProto.html">ModelProto</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>model</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -271,14 +272,14 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">absl::StatusOr&lt; ComputeInfeasibleSubsystemResultProto &gt; operations_research::math_opt::Solver::NonIncrementalComputeInfeasibleSubsystem </td>
+          <td class="memname">absl::StatusOr&lt; <a class="el" href="classoperations__research_1_1math__opt_1_1ComputeInfeasibleSubsystemResultProto.html">ComputeInfeasibleSubsystemResultProto</a> &gt; operations_research::math_opt::Solver::NonIncrementalComputeInfeasibleSubsystem </td>
           <td>(</td>
-          <td class="paramtype">const ModelProto &amp;</td>          <td class="paramname"><span class="paramname"><em>model</em></span>, </td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1math__opt_1_1ModelProto.html">ModelProto</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>model</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">SolverTypeProto</td>          <td class="paramname"><span class="paramname"><em>solver_type</em></span>, </td>
+          <td class="paramtype"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a679533aaa51454e793b9a41bab749cfc">SolverTypeProto</a></td>          <td class="paramname"><span class="paramname"><em>solver_type</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -313,14 +314,14 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">absl::StatusOr&lt; SolveResultProto &gt; operations_research::math_opt::Solver::NonIncrementalSolve </td>
+          <td class="memname">absl::StatusOr&lt; <a class="el" href="classoperations__research_1_1math__opt_1_1SolveResultProto.html">SolveResultProto</a> &gt; operations_research::math_opt::Solver::NonIncrementalSolve </td>
           <td>(</td>
-          <td class="paramtype">const ModelProto &amp;</td>          <td class="paramname"><span class="paramname"><em>model</em></span>, </td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1math__opt_1_1ModelProto.html">ModelProto</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>model</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">SolverTypeProto</td>          <td class="paramname"><span class="paramname"><em>solver_type</em></span>, </td>
+          <td class="paramtype"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a679533aaa51454e793b9a41bab749cfc">SolverTypeProto</a></td>          <td class="paramname"><span class="paramname"><em>solver_type</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -356,7 +357,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">absl::StatusOr&lt; SolveResultProto &gt; operations_research::math_opt::Solver::Solve </td>
+          <td class="memname">absl::StatusOr&lt; <a class="el" href="classoperations__research_1_1math__opt_1_1SolveResultProto.html">SolveResultProto</a> &gt; operations_research::math_opt::Solver::Solve </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="structoperations__research_1_1math__opt_1_1BaseSolver_1_1SolveArgs.html">SolveArgs</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>arguments</em></span></td><td>)</td>
           <td></td>
@@ -371,8 +372,8 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Solves the current model (including all updates). </p>
 <p>We will reset it in code paths where no error occur.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000909">Todo</a></b></dt><dd>(b/168037341): we should validate the result maths. Since the result can be filtered, this should be included in the solver_interface implementations. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000910">Todo</a></b></dt><dd>(b/290091715): Remove once language specific structs can use new messages. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000908">Todo</a></b></dt><dd>(b/168037341): we should validate the result maths. Since the result can be filtered, this should be included in the solver_interface implementations. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000909">Todo</a></b></dt><dd>(b/290091715): Remove once language specific structs can use new messages. </dd></dl>
 <p>We consider errors in <span class="tt">result</span> to be internal errors, but <span class="tt"><a class="el" href="namespaceoperations__research_1_1math__opt.html#ac51b998f0ab120a1855bd589f2553fad" title="Validates the input result.">ValidateResult()</a></span> will return an InvalidArgumentError. So here we convert the error.</p>
 
 <p>Implements <a class="el" href="classoperations__research_1_1math__opt_1_1BaseSolver.html#a41bad4c3de6accae5154ea202cb392b7">operations_research::math_opt::BaseSolver</a>.</p>
@@ -393,7 +394,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">absl::StatusOr&lt; bool &gt; operations_research::math_opt::Solver::Update </td>
           <td>(</td>
-          <td class="paramtype">ModelUpdateProto</td>          <td class="paramname"><span class="paramname"><em>model_update</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="classoperations__research_1_1math__opt_1_1ModelUpdateProto.html">ModelUpdateProto</a></td>          <td class="paramname"><span class="paramname"><em>model_update</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>

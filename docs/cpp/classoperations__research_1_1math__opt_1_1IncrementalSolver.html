@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,27 @@ $(function(){initNavTree('classoperations__research_1_1math__opt_1_1IncrementalS
   <div class="headertitle"><div class="title">operations_research::math_opt::IncrementalSolver Class Reference<span class="mlabels"><span class="mlabel abstract">abstract</span></span></div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Interface for incrementally solving of a model.</p>
+<p>This is a feature for advance users. Most users should only use the non-incremental <a class="el" href="#a82f10910447377d18d040d3c1a40ead4">Solve()</a>, SubprocessSolve(),... functions.</p>
+<p>Here incremental means that the we try to reuse the existing underlying solver internals between each solve. There is no guarantee though that the solver supports all possible model changes. Hence there is not guarantee that performances will be improved when using this class; this is solver dependent. Typically LPs have more to gain from incremental solve than MIPs. In both cases, even if the solver supports the model changes, incremental solve may actually be slower.</p>
+<p>Implementation of this interface are returned by factories that can be found next to non-incremental solve functions. See <a class="el" href="namespaceoperations__research_1_1math__opt.html#a62a1167e4dca26a88aac67eb7808e4d5">NewIncrementalSolver()</a> in <a class="el" href="solve_8h.html">solve.h</a> and NewSubprocessIncrementalSolver() in subprocess_solve.h for example.</p>
+<p>Those factories function instantiates the solver, setup it from the current state of the <a class="el" href="classoperations__research_1_1math__opt_1_1Model.html">Model</a> and register on it to listen to changes. Calling <a class="el" href="#a82f10910447377d18d040d3c1a40ead4">Solve()</a> will update the underlying solver with latest model changes and solve this model.</p>
+<p>Usage: <a class="el" href="classoperations__research_1_1math__opt_1_1Model.html">Model</a> model = ...; <a class="el" href="base_2status__macros_8h.html#a600de4b8f65fe0a4b1898041634f9011">ASSIGN_OR_RETURN(
+    const std::unique_ptr&lt;IncrementalSolver&gt; incremental_solve,
+    NewIncrementalSolver(&amp;model, SolverType::kXxx))</a>;</p>
+<p>ASSIGN_OR_RETURN(const SolveResult result1, incremental_solve-&gt;<a class="el" href="#a82f10910447377d18d040d3c1a40ead4">Solve()</a>);</p>
+<p>model.AddVariable(...); ...</p>
+<p>ASSIGN_OR_RETURN(const SolveResult result2, incremental_solve-&gt;<a class="el" href="#a82f10910447377d18d040d3c1a40ead4">Solve()</a>);</p>
+<p>...</p>
+<p>Lifecycle: The <a class="el" href="classoperations__research_1_1math__opt_1_1IncrementalSolver.html">IncrementalSolver</a> is only keeping a std::weak_ref on <a class="el" href="classoperations__research_1_1math__opt_1_1Model.html">Model</a>'s internal data and thus it returns an error if <a class="el" href="#a7e3d39e71529fe7568d6ac736d136d64">Update()</a> or <a class="el" href="#a82f10910447377d18d040d3c1a40ead4">Solve()</a> are called after the <a class="el" href="classoperations__research_1_1math__opt_1_1Model.html">Model</a> has been destroyed. It is fine to destroy the <a class="el" href="classoperations__research_1_1math__opt_1_1IncrementalSolver.html">IncrementalSolver</a> after the associated <a class="el" href="classoperations__research_1_1math__opt_1_1Model.html">Model</a> though.</p>
+<p>Thread-safety: The New(), <a class="el" href="#a82f10910447377d18d040d3c1a40ead4">Solve()</a> and <a class="el" href="#a7e3d39e71529fe7568d6ac736d136d64">Update()</a> methods must not be called while modifying the <a class="el" href="classModel.html">Model()</a> (adding variables...). The user is expected to use proper synchronization primitives to serialize changes to the model and the use of this object. Note though that it is safe to call methods from different <a class="el" href="classoperations__research_1_1math__opt_1_1IncrementalSolver.html">IncrementalSolver</a> instances on the same <a class="el" href="classoperations__research_1_1math__opt_1_1Model.html">Model</a> concurrently. Same for calling factories of <a class="el" href="classoperations__research_1_1math__opt_1_1IncrementalSolver.html">IncrementalSolver</a>. The destructor is thread-safe and can be called even during a modification of the <a class="el" href="classoperations__research_1_1math__opt_1_1Model.html">Model</a>.</p>
+<p>There is no problem calling <a class="el" href="#a776d9c8996916371e5603cccce7da874">SolveWithoutUpdate()</a> concurrently on different instances of <a class="el" href="classoperations__research_1_1math__opt_1_1IncrementalSolver.html">IncrementalSolver</a> or while the model is being modified (unless of course the underlying solver itself is not thread-safe and can only be called from a single-thread).</p>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="#a82f10910447377d18d040d3c1a40ead4">Solve()</a>, <a class="el" href="#a7e3d39e71529fe7568d6ac736d136d64">Update()</a> and <a class="el" href="#a776d9c8996916371e5603cccce7da874">SolveWithoutUpdate()</a> are not reentrant so they should not be called concurrently on the same instance of <a class="el" href="classoperations__research_1_1math__opt_1_1IncrementalSolver.html">IncrementalSolver</a>.</dd></dl>
+<p>Some solvers may add more restrictions regarding threading. Please see SolverType::kXxx documentation for details. </p>
 
+<p class="definition">Definition at line <a class="el" href="incremental__solver_8h_source.html#l00092">92</a> of file <a class="el" href="incremental__solver_8h_source.html">incremental_solver.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="incremental__solver_8h_source.html">incremental_solver.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for operations_research::math_opt::IncrementalSolver:</div>
@@ -125,27 +146,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac621ab2c36fcd1dcfb54b92b4f4d7544" id="r_ac621ab2c36fcd1dcfb54b92b4f4d7544"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceoperations__research_1_1math__opt.html#a1a4e2d8708a16ad2817a18f55a516e7d">SolverType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac621ab2c36fcd1dcfb54b92b4f4d7544">solver_type</a> () const =0</td></tr>
 <tr class="memdesc:ac621ab2c36fcd1dcfb54b92b4f4d7544"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the underlying solver used.  <br /></td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Interface for incrementally solving of a model.</p>
-<p>This is a feature for advance users. Most users should only use the non-incremental <a class="el" href="#a82f10910447377d18d040d3c1a40ead4">Solve()</a>, SubprocessSolve(),... functions.</p>
-<p>Here incremental means that the we try to reuse the existing underlying solver internals between each solve. There is no guarantee though that the solver supports all possible model changes. Hence there is not guarantee that performances will be improved when using this class; this is solver dependent. Typically LPs have more to gain from incremental solve than MIPs. In both cases, even if the solver supports the model changes, incremental solve may actually be slower.</p>
-<p>Implementation of this interface are returned by factories that can be found next to non-incremental solve functions. See <a class="el" href="namespaceoperations__research_1_1math__opt.html#a62a1167e4dca26a88aac67eb7808e4d5">NewIncrementalSolver()</a> in <a class="el" href="solve_8h.html">solve.h</a> and NewSubprocessIncrementalSolver() in subprocess_solve.h for example.</p>
-<p>Those factories function instantiates the solver, setup it from the current state of the <a class="el" href="classoperations__research_1_1math__opt_1_1Model.html">Model</a> and register on it to listen to changes. Calling <a class="el" href="#a82f10910447377d18d040d3c1a40ead4">Solve()</a> will update the underlying solver with latest model changes and solve this model.</p>
-<p>Usage: <a class="el" href="classoperations__research_1_1math__opt_1_1Model.html">Model</a> model = ...; <a class="el" href="base_2status__macros_8h.html#a600de4b8f65fe0a4b1898041634f9011">ASSIGN_OR_RETURN(
-    const std::unique_ptr&lt;IncrementalSolver&gt; incremental_solve,
-    NewIncrementalSolver(&amp;model, SolverType::kXxx))</a>;</p>
-<p>ASSIGN_OR_RETURN(const SolveResult result1, incremental_solve-&gt;<a class="el" href="#a82f10910447377d18d040d3c1a40ead4">Solve()</a>);</p>
-<p>model.AddVariable(...); ...</p>
-<p>ASSIGN_OR_RETURN(const SolveResult result2, incremental_solve-&gt;<a class="el" href="#a82f10910447377d18d040d3c1a40ead4">Solve()</a>);</p>
-<p>...</p>
-<p>Lifecycle: The <a class="el" href="classoperations__research_1_1math__opt_1_1IncrementalSolver.html">IncrementalSolver</a> is only keeping a std::weak_ref on <a class="el" href="classoperations__research_1_1math__opt_1_1Model.html">Model</a>'s internal data and thus it returns an error if <a class="el" href="#a7e3d39e71529fe7568d6ac736d136d64">Update()</a> or <a class="el" href="#a82f10910447377d18d040d3c1a40ead4">Solve()</a> are called after the <a class="el" href="classoperations__research_1_1math__opt_1_1Model.html">Model</a> has been destroyed. It is fine to destroy the <a class="el" href="classoperations__research_1_1math__opt_1_1IncrementalSolver.html">IncrementalSolver</a> after the associated <a class="el" href="classoperations__research_1_1math__opt_1_1Model.html">Model</a> though.</p>
-<p>Thread-safety: The New(), <a class="el" href="#a82f10910447377d18d040d3c1a40ead4">Solve()</a> and <a class="el" href="#a7e3d39e71529fe7568d6ac736d136d64">Update()</a> methods must not be called while modifying the <a class="el" href="classModel.html">Model()</a> (adding variables...). The user is expected to use proper synchronization primitives to serialize changes to the model and the use of this object. Note though that it is safe to call methods from different <a class="el" href="classoperations__research_1_1math__opt_1_1IncrementalSolver.html">IncrementalSolver</a> instances on the same <a class="el" href="classoperations__research_1_1math__opt_1_1Model.html">Model</a> concurrently. Same for calling factories of <a class="el" href="classoperations__research_1_1math__opt_1_1IncrementalSolver.html">IncrementalSolver</a>. The destructor is thread-safe and can be called even during a modification of the <a class="el" href="classoperations__research_1_1math__opt_1_1Model.html">Model</a>.</p>
-<p>There is no problem calling <a class="el" href="namespaceoperations__research_1_1math__opt.html#a23972a12b0adf4bd068b93ba6d3145b6">SolveWithoutUpdate()</a> concurrently on different instances of <a class="el" href="classoperations__research_1_1math__opt_1_1IncrementalSolver.html">IncrementalSolver</a> or while the model is being modified (unless of course the underlying solver itself is not thread-safe and can only be called from a single-thread).</p>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="#a82f10910447377d18d040d3c1a40ead4">Solve()</a>, <a class="el" href="#a7e3d39e71529fe7568d6ac736d136d64">Update()</a> and <a class="el" href="namespaceoperations__research_1_1math__opt.html#a23972a12b0adf4bd068b93ba6d3145b6">SolveWithoutUpdate()</a> are not reentrant so they should not be called concurrently on the same instance of <a class="el" href="classoperations__research_1_1math__opt_1_1IncrementalSolver.html">IncrementalSolver</a>.</dd></dl>
-<p>Some solvers may add more restrictions regarding threading. Please see SolverType::kXxx documentation for details. </p>
-
-<p class="definition">Definition at line <a class="el" href="incremental__solver_8h_source.html#l00092">92</a> of file <a class="el" href="incremental__solver_8h_source.html">incremental_solver.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a8d0c18cc15f2a31a95b0509ad41ad15a" name="a8d0c18cc15f2a31a95b0509ad41ad15a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8d0c18cc15f2a31a95b0509ad41ad15a">&#9670;&#160;</a></span>IncrementalSolver() <span class="overload">[1/2]</span></h2>
 
@@ -529,7 +530,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Updates the model to solve.</p>
-<p>This is an advanced API, most users should use <a class="el" href="#a82f10910447377d18d040d3c1a40ead4">Solve()</a> above that does the update and before calling the solver. Calling this function is only useful for users that want to access to update data or users that need to use <a class="el" href="namespaceoperations__research_1_1math__opt.html#a23972a12b0adf4bd068b93ba6d3145b6">SolveWithoutUpdate()</a> (which should not be common).</p>
+<p>This is an advanced API, most users should use <a class="el" href="#a82f10910447377d18d040d3c1a40ead4">Solve()</a> above that does the update and before calling the solver. Calling this function is only useful for users that want to access to update data or users that need to use <a class="el" href="#a776d9c8996916371e5603cccce7da874">SolveWithoutUpdate()</a> (which should not be common).</p>
 <p>The returned value indicates if the update was possible or if the solver had to be recreated from scratch (which may happen when the solver does not support this specific update or any update at all). It also contains the attempted update data.</p>
 <p>A status error will be returned if the underlying solver has an internal error. </p>
 

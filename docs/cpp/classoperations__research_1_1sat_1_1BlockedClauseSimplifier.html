@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,13 @@ $(function(){initNavTree('classoperations__research_1_1sat_1_1BlockedClauseSimpl
   <div class="headertitle"><div class="title">operations_research::sat::BlockedClauseSimplifier Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A clause c is "blocked" by a literal l if all clauses containing the negation of l resolve to trivial clause with c. Blocked clause can be simply removed from the problem. At postsolve, if a blocked clause is not satisfied, then l can simply be set to true without breaking any of the clause containing not(l).</p>
+<p>See the paper "Blocked Clause Elimination", Matti Jarvisalo, Armin Biere, and Marijn Heule.</p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002355">Todo</a></b></dt><dd>(user): This requires that l only appear in clauses and not in the integer part of CP-SAT. </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="sat__inprocessing_8h_source.html#l00274">274</a> of file <a class="el" href="sat__inprocessing_8h_source.html">sat_inprocessing.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="sat__inprocessing_8h_source.html">sat_inprocessing.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -103,13 +110,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a02c01b58d89cab1bd7e5d71aa4c34085" id="r_a02c01b58d89cab1bd7e5d71aa4c34085"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a02c01b58d89cab1bd7e5d71aa4c34085">BlockedClauseSimplifier</a> (<a class="el" href="classoperations__research_1_1sat_1_1Model.html">Model</a> *model)</td></tr>
 <tr class="memitem:abd4e981ce0e372ed7e870deafcfb9553" id="r_abd4e981ce0e372ed7e870deafcfb9553"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abd4e981ce0e372ed7e870deafcfb9553">DoOneRound</a> (bool log_info)</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A clause c is "blocked" by a literal l if all clauses containing the negation of l resolve to trivial clause with c. Blocked clause can be simply removed from the problem. At postsolve, if a blocked clause is not satisfied, then l can simply be set to true without breaking any of the clause containing not(l).</p>
-<p>See the paper "Blocked Clause Elimination", Matti Jarvisalo, Armin Biere, and Marijn Heule.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002357">Todo</a></b></dt><dd>(user): This requires that l only appear in clauses and not in the integer part of CP-SAT. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="sat__inprocessing_8h_source.html#l00274">274</a> of file <a class="el" href="sat__inprocessing_8h_source.html">sat_inprocessing.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a02c01b58d89cab1bd7e5d71aa4c34085" name="a02c01b58d89cab1bd7e5d71aa4c34085"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a02c01b58d89cab1bd7e5d71aa4c34085">&#9670;&#160;</a></span>BlockedClauseSimplifier()</h2>
 

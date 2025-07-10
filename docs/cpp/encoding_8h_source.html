@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -126,7 +127,7 @@ $(function(){initNavTree('encoding_8h_source.html','',''); });
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#include &quot;absl/log/check.h&quot;</span></div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#include &quot;absl/types/span.h&quot;</span></div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#include &quot;<a class="code" href="base_2logging_8h.html">ortools/base/logging.h</a>&quot;</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#include &quot;ortools/sat/boolean_problem.pb.h&quot;</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#include &quot;<a class="code" href="boolean__problem_8pb_8h.html">ortools/sat/boolean_problem.pb.h</a>&quot;</span></div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#include &quot;<a class="code" href="clause_8h.html">ortools/sat/clause.h</a>&quot;</span></div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#include &quot;<a class="code" href="sat_2model_8h.html">ortools/sat/model.h</a>&quot;</span></div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#include &quot;<a class="code" href="pb__constraint_8h.html">ortools/sat/pb_constraint.h</a>&quot;</span></div>
@@ -339,7 +340,7 @@ $(function(){initNavTree('encoding_8h_source.html','',''); });
 <div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span> <span class="keyword">public</span>:</div>
 <div class="foldopen" id="foldopen00234" data-start="{" data-end="}">
 <div class="line"><a id="l00234" name="l00234"></a><span class="lineno"><a class="line" href="classoperations__research_1_1sat_1_1ObjectiveEncoder.html#a594dd682d98e58994d6a47d558c63290">  234</a></span>  <span class="keyword">explicit</span> <a class="code hl_function" href="classoperations__research_1_1sat_1_1ObjectiveEncoder.html#a594dd682d98e58994d6a47d558c63290">ObjectiveEncoder</a>(<a class="code hl_class" href="classoperations__research_1_1sat_1_1Model.html">Model</a>* model)</div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>      : params_(*model-&gt;GetOrCreate&lt;SatParameters&gt;()),</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>      : params_(*model-&gt;GetOrCreate&lt;<a class="code hl_class" href="classoperations__research_1_1sat_1_1SatParameters.html">SatParameters</a>&gt;()),</div>
 <div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>        sat_solver_(model-&gt;GetOrCreate&lt;<a class="code hl_class" href="classoperations__research_1_1sat_1_1SatSolver.html">SatSolver</a>&gt;()),</div>
 <div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>        implications_(model-&gt;GetOrCreate&lt;<a class="code hl_class" href="classoperations__research_1_1sat_1_1BinaryImplicationGraph.html">BinaryImplicationGraph</a>&gt;()),</div>
 <div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>        random_(model-&gt;GetOrCreate&lt;<a class="code hl_class" href="classoperations__research_1_1sat_1_1ModelRandomGenerator.html">ModelRandomGenerator</a>&gt;()) {}</div>
@@ -380,7 +381,7 @@ $(function(){initNavTree('encoding_8h_source.html','',''); });
 <div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>  std::vector&lt;EncodingNode*&gt; nodes_;</div>
 <div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>  std::deque&lt;EncodingNode&gt; repository_;</div>
 <div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span> </div>
-<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>  <span class="keyword">const</span> SatParameters&amp; params_;</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>  <span class="keyword">const</span> <a class="code hl_class" href="classoperations__research_1_1sat_1_1SatParameters.html">SatParameters</a>&amp; params_;</div>
 <div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>  <a class="code hl_class" href="classoperations__research_1_1sat_1_1SatSolver.html">SatSolver</a>* sat_solver_;</div>
 <div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>  <a class="code hl_class" href="classoperations__research_1_1sat_1_1BinaryImplicationGraph.html">BinaryImplicationGraph</a>* implications_;</div>
 <div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>  <a class="code hl_class" href="classoperations__research_1_1sat_1_1ModelRandomGenerator.html">ModelRandomGenerator</a>* random_;</div>
@@ -392,6 +393,7 @@ $(function(){initNavTree('encoding_8h_source.html','',''); });
 <div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span> </div>
 <div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span><span class="preprocessor">#endif  </span><span class="comment">// OR_TOOLS_SAT_ENCODING_H_</span></div>
 <div class="ttc" id="abase_2logging_8h_html"><div class="ttname"><a href="base_2logging_8h.html">logging.h</a></div></div>
+<div class="ttc" id="aboolean__problem_8pb_8h_html"><div class="ttname"><a href="boolean__problem_8pb_8h.html">boolean_problem.pb.h</a></div></div>
 <div class="ttc" id="aclassoperations__research_1_1sat_1_1BinaryImplicationGraph_html"><div class="ttname"><a href="classoperations__research_1_1sat_1_1BinaryImplicationGraph.html">operations_research::sat::BinaryImplicationGraph</a></div><div class="ttdef"><b>Definition</b> <a href="clause_8h_source.html#l00490">clause.h:490</a></div></div>
 <div class="ttc" id="aclassoperations__research_1_1sat_1_1EncodingNode_html"><div class="ttname"><a href="classoperations__research_1_1sat_1_1EncodingNode.html">operations_research::sat::EncodingNode</a></div><div class="ttdef"><b>Definition</b> <a href="#l00061">encoding.h:61</a></div></div>
 <div class="ttc" id="aclassoperations__research_1_1sat_1_1EncodingNode_html_a04c4ee4376fdb48735667a6e31355538"><div class="ttname"><a href="classoperations__research_1_1sat_1_1EncodingNode.html#a04c4ee4376fdb48735667a6e31355538">operations_research::sat::EncodingNode::ub</a></div><div class="ttdeci">int ub() const</div><div class="ttdef"><b>Definition</b> <a href="#l00152">encoding.h:152</a></div></div>
@@ -433,6 +435,7 @@ $(function(){initNavTree('encoding_8h_source.html','',''); });
 <div class="ttc" id="aclassoperations__research_1_1sat_1_1ObjectiveEncoder_html_a8b33d5c9b6fde2e556584121c674a872"><div class="ttname"><a href="classoperations__research_1_1sat_1_1ObjectiveEncoder.html#a8b33d5c9b6fde2e556584121c674a872">operations_research::sat::ObjectiveEncoder::AddBaseNode</a></div><div class="ttdeci">void AddBaseNode(EncodingNode node)</div><div class="ttdef"><b>Definition</b> <a href="#l00245">encoding.h:245</a></div></div>
 <div class="ttc" id="aclassoperations__research_1_1sat_1_1ObjectiveEncoder_html_aba8bf46b2a10fabd82ffd3dbf2f0e174"><div class="ttname"><a href="classoperations__research_1_1sat_1_1ObjectiveEncoder.html#aba8bf46b2a10fabd82ffd3dbf2f0e174">operations_research::sat::ObjectiveEncoder::nodes</a></div><div class="ttdeci">const std::vector&lt; EncodingNode * &gt; &amp; nodes() const</div><div class="ttdef"><b>Definition</b> <a href="#l00251">encoding.h:251</a></div></div>
 <div class="ttc" id="aclassoperations__research_1_1sat_1_1ObjectiveEncoder_html_aea57787b48ca659a4962d5b674a72762"><div class="ttname"><a href="classoperations__research_1_1sat_1_1ObjectiveEncoder.html#aea57787b48ca659a4962d5b674a72762">operations_research::sat::ObjectiveEncoder::ProcessCore</a></div><div class="ttdeci">bool ProcessCore(absl::Span&lt; const Literal &gt; core, Coefficient min_weight, Coefficient gap, std::string *info)</div><div class="ttdef"><b>Definition</b> <a href="encoding_8cc_source.html#l00588">encoding.cc:588</a></div></div>
+<div class="ttc" id="aclassoperations__research_1_1sat_1_1SatParameters_html"><div class="ttname"><a href="classoperations__research_1_1sat_1_1SatParameters.html">operations_research::sat::SatParameters</a></div><div class="ttdef"><b>Definition</b> <a href="sat__parameters_8pb_8h_source.html#l00548">sat_parameters.pb.h:549</a></div></div>
 <div class="ttc" id="aclassoperations__research_1_1sat_1_1SatSolver_html"><div class="ttname"><a href="classoperations__research_1_1sat_1_1SatSolver.html">operations_research::sat::SatSolver</a></div><div class="ttdef"><b>Definition</b> <a href="sat__solver_8h_source.html#l00059">sat_solver.h:59</a></div></div>
 <div class="ttc" id="aclassoperations__research_1_1sat_1_1VariablesAssignment_html"><div class="ttname"><a href="classoperations__research_1_1sat_1_1VariablesAssignment.html">operations_research::sat::VariablesAssignment</a></div><div class="ttdef"><b>Definition</b> <a href="sat__base_8h_source.html#l00156">sat_base.h:156</a></div></div>
 <div class="ttc" id="aclause_8h_html"><div class="ttname"><a href="clause_8h.html">clause.h</a></div></div>

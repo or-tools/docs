@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -98,7 +99,12 @@ $(function(){initNavTree('classGoogle_1_1OrTools_1_1Sat_1_1CumulativeConstraintP
 
 <p>The sum of the demands of the intervals at each interval point cannot exceed a capacity. Note that intervals are interpreted as [start, end) and as such intervals like [2,3) and [3,4) do not overlap for the point of view of this constraint. Moreover, intervals of size zero are ignored.  
  <a href="#details">More...</a></p>
-<div class="dynheader">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The sum of the demands of the intervals at each interval point cannot exceed a capacity. Note that intervals are interpreted as [start, end) and as such intervals like [2,3) and [3,4) do not overlap for the point of view of this constraint. Moreover, intervals of size zero are ignored. </p>
+<p>All demands must not contain any negative value in their domains. This is checked at validation. Even if there are no intervals, this constraint implicit enforces capacity &gt;= 0. In other words, a negative capacity is considered valid but always infeasible. </p>
+
+<p class="definition">Definition at line <a class="el" href="CpModel_8pb_8cs_source.html#l02820">2820</a> of file <a class="el" href="CpModel_8pb_8cs_source.html">CpModel.pb.cs</a>.</p>
+</div><div class="dynheader">
 Inheritance diagram for Google.OrTools.Sat.CumulativeConstraintProto:</div>
 <div class="dyncontent">
  <div class="center">
@@ -137,12 +143,7 @@ Properties</h2></td></tr>
 <tr class="memitem:a01ca1206613ac9e0b82771c41184727f" id="r_a01ca1206613ac9e0b82771c41184727f"><td class="memItemLeft" align="right" valign="top">pbc::RepeatedField&lt; global::Google.OrTools.Sat.LinearExpressionProto &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a01ca1206613ac9e0b82771c41184727f">Demands</a><code> [get]</code></td></tr>
 <tr class="memdesc:a01ca1206613ac9e0b82771c41184727f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same size as intervals.  <br /></td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The sum of the demands of the intervals at each interval point cannot exceed a capacity. Note that intervals are interpreted as [start, end) and as such intervals like [2,3) and [3,4) do not overlap for the point of view of this constraint. Moreover, intervals of size zero are ignored. </p>
-<p>All demands must not contain any negative value in their domains. This is checked at validation. Even if there are no intervals, this constraint implicit enforces capacity &gt;= 0. In other words, a negative capacity is considered valid but always infeasible. </p>
-
-<p class="definition">Definition at line <a class="el" href="CpModel_8pb_8cs_source.html#l02820">2820</a> of file <a class="el" href="CpModel_8pb_8cs_source.html">CpModel.pb.cs</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a03df7893c2aa4811f6d441860100d2f9" name="a03df7893c2aa4811f6d441860100d2f9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a03df7893c2aa4811f6d441860100d2f9">&#9670;&#160;</a></span>CumulativeConstraintProto() <span class="overload">[1/2]</span></h2>
 

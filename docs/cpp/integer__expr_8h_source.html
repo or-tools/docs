@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -129,7 +130,7 @@ $(function(){initNavTree('integer__expr_8h_source.html','',''); });
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#include &quot;<a class="code" href="sat_2model_8h.html">ortools/sat/model.h</a>&quot;</span></div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#include &quot;<a class="code" href="precedences_8h.html">ortools/sat/precedences.h</a>&quot;</span></div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#include &quot;<a class="code" href="sat__base_8h.html">ortools/sat/sat_base.h</a>&quot;</span></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#include &quot;ortools/sat/sat_parameters.pb.h&quot;</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#include &quot;<a class="code" href="sat__parameters_8pb_8h.html">ortools/sat/sat_parameters.pb.h</a>&quot;</span></div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#include &quot;<a class="code" href="sat__solver_8h.html">ortools/sat/sat_solver.h</a>&quot;</span></div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#include &quot;<a class="code" href="strong__integers_8h.html">ortools/util/strong_integers.h</a>&quot;</span></div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#include &quot;<a class="code" href="time__limit_8h.html">ortools/util/time_limit.h</a>&quot;</span></div>
@@ -613,8 +614,8 @@ $(function(){initNavTree('integer__expr_8h_source.html','',''); });
 <div class="line"><a id="l00491" name="l00491"></a><span class="lineno">  491</span>  }</div>
 <div class="line"><a id="l00492" name="l00492"></a><span class="lineno">  492</span> </div>
 <div class="line"><a id="l00493" name="l00493"></a><span class="lineno">  493</span>  <span class="comment">// Detect precedences with 2 and 3 terms.</span></div>
-<div class="line"><a id="l00494" name="l00494"></a><span class="lineno">  494</span>  <span class="keyword">const</span> SatParameters&amp; params = *model-&gt;<a class="code hl_function" href="classoperations__research_1_1sat_1_1Model.html#ad025b208280b29fc3cfe2b7d3d61c8f9">GetOrCreate</a>&lt;SatParameters&gt;();</div>
-<div class="line"><a id="l00495" name="l00495"></a><span class="lineno">  495</span>  <span class="keywordflow">if</span> (!params.new_linear_propagation()) {</div>
+<div class="line"><a id="l00494" name="l00494"></a><span class="lineno">  494</span>  <span class="keyword">const</span> <a class="code hl_class" href="classoperations__research_1_1sat_1_1SatParameters.html">SatParameters</a>&amp; params = *model-&gt;<a class="code hl_function" href="classoperations__research_1_1sat_1_1Model.html#ad025b208280b29fc3cfe2b7d3d61c8f9">GetOrCreate</a>&lt;<a class="code hl_class" href="classoperations__research_1_1sat_1_1SatParameters.html">SatParameters</a>&gt;();</div>
+<div class="line"><a id="l00495" name="l00495"></a><span class="lineno">  495</span>  <span class="keywordflow">if</span> (!params.<a class="code hl_function" href="classoperations__research_1_1sat_1_1SatParameters.html#a282b2c2125cdfd94d96824707d54dd3d">new_linear_propagation</a>()) {</div>
 <div class="line"><a id="l00496" name="l00496"></a><span class="lineno">  496</span>    <span class="keywordflow">if</span> (vars.size() == 2 &amp;&amp; (coefficients[0] == 1 || coefficients[0] == -1) &amp;&amp;</div>
 <div class="line"><a id="l00497" name="l00497"></a><span class="lineno">  497</span>        (coefficients[1] == 1 || coefficients[1] == -1)) {</div>
 <div class="line"><a id="l00498" name="l00498"></a><span class="lineno">  498</span>      <a class="code hl_function" href="namespaceoperations__research_1_1sat.html#af6541cdba8310f4fcbc8d8737cd29afa">AddConditionalSum2LowerOrEqual</a>(</div>
@@ -679,7 +680,7 @@ $(function(){initNavTree('integer__expr_8h_source.html','',''); });
 <div class="line"><a id="l00557" name="l00557"></a><span class="lineno">  557</span>    }</div>
 <div class="line"><a id="l00558" name="l00558"></a><span class="lineno">  558</span>  }</div>
 <div class="line"><a id="l00559" name="l00559"></a><span class="lineno">  559</span> </div>
-<div class="line"><a id="l00560" name="l00560"></a><span class="lineno">  560</span>  <span class="keywordflow">if</span> (params.new_linear_propagation()) {</div>
+<div class="line"><a id="l00560" name="l00560"></a><span class="lineno">  560</span>  <span class="keywordflow">if</span> (params.<a class="code hl_function" href="classoperations__research_1_1sat_1_1SatParameters.html#a282b2c2125cdfd94d96824707d54dd3d">new_linear_propagation</a>()) {</div>
 <div class="line"><a id="l00561" name="l00561"></a><span class="lineno">  561</span>    <span class="keyword">const</span> <span class="keywordtype">bool</span> ok = model-&gt;<a class="code hl_function" href="classoperations__research_1_1sat_1_1Model.html#ad025b208280b29fc3cfe2b7d3d61c8f9">GetOrCreate</a>&lt;<a class="code hl_class" href="classoperations__research_1_1sat_1_1LinearPropagator.html">LinearPropagator</a>&gt;()-&gt;AddConstraint(</div>
 <div class="line"><a id="l00562" name="l00562"></a><span class="lineno">  562</span>        enforcement_literals, vars,</div>
 <div class="line"><a id="l00563" name="l00563"></a><span class="lineno">  563</span>        std::vector&lt;IntegerValue&gt;(coefficients.begin(), coefficients.end()),</div>
@@ -1055,6 +1056,8 @@ $(function(){initNavTree('integer__expr_8h_source.html','',''); });
 <div class="ttc" id="aclassoperations__research_1_1sat_1_1PropagatorInterface_html_ac4586668025c78c5bc7d0f53b6dd8053"><div class="ttname"><a href="classoperations__research_1_1sat_1_1PropagatorInterface.html#ac4586668025c78c5bc7d0f53b6dd8053">operations_research::sat::PropagatorInterface::PropagatorInterface</a></div><div class="ttdeci">PropagatorInterface()=default</div></div>
 <div class="ttc" id="aclassoperations__research_1_1sat_1_1RevIntRepository_html"><div class="ttname"><a href="classoperations__research_1_1sat_1_1RevIntRepository.html">operations_research::sat::RevIntRepository</a></div><div class="ttdef"><b>Definition</b> <a href="integer_8h_source.html#l01087">integer.h:1087</a></div></div>
 <div class="ttc" id="aclassoperations__research_1_1sat_1_1RevIntegerValueRepository_html"><div class="ttname"><a href="classoperations__research_1_1sat_1_1RevIntegerValueRepository.html">operations_research::sat::RevIntegerValueRepository</a></div><div class="ttdef"><b>Definition</b> <a href="integer_8h_source.html#l01093">integer.h:1093</a></div></div>
+<div class="ttc" id="aclassoperations__research_1_1sat_1_1SatParameters_html"><div class="ttname"><a href="classoperations__research_1_1sat_1_1SatParameters.html">operations_research::sat::SatParameters</a></div><div class="ttdef"><b>Definition</b> <a href="sat__parameters_8pb_8h_source.html#l00548">sat_parameters.pb.h:549</a></div></div>
+<div class="ttc" id="aclassoperations__research_1_1sat_1_1SatParameters_html_a282b2c2125cdfd94d96824707d54dd3d"><div class="ttname"><a href="classoperations__research_1_1sat_1_1SatParameters.html#a282b2c2125cdfd94d96824707d54dd3d">operations_research::sat::SatParameters::new_linear_propagation</a></div><div class="ttdeci">bool new_linear_propagation() const</div><div class="ttdef"><b>Definition</b> <a href="sat__parameters_8pb_8h_source.html#l11451">sat_parameters.pb.h:11451</a></div></div>
 <div class="ttc" id="aclassoperations__research_1_1sat_1_1SatSolver_html"><div class="ttname"><a href="classoperations__research_1_1sat_1_1SatSolver.html">operations_research::sat::SatSolver</a></div><div class="ttdef"><b>Definition</b> <a href="sat__solver_8h_source.html#l00059">sat_solver.h:59</a></div></div>
 <div class="ttc" id="aclassoperations__research_1_1sat_1_1SquarePropagator_html"><div class="ttname"><a href="classoperations__research_1_1sat_1_1SquarePropagator.html">operations_research::sat::SquarePropagator</a></div><div class="ttdef"><b>Definition</b> <a href="#l00411">integer_expr.h:411</a></div></div>
 <div class="ttc" id="aclassoperations__research_1_1sat_1_1SquarePropagator_html_a070d4e2c581d1e1d7e20f81817d59eeb"><div class="ttname"><a href="classoperations__research_1_1sat_1_1SquarePropagator.html#a070d4e2c581d1e1d7e20f81817d59eeb">operations_research::sat::SquarePropagator::SquarePropagator</a></div><div class="ttdeci">SquarePropagator(const SquarePropagator &amp;)=delete</div><div class="ttdoc">This type is neither copyable nor movable.</div></div>
@@ -1111,6 +1114,7 @@ $(function(){initNavTree('integer__expr_8h_source.html','',''); });
 <div class="ttc" id="asat_2linear__constraint_8h_html"><div class="ttname"><a href="sat_2linear__constraint_8h.html">linear_constraint.h</a></div></div>
 <div class="ttc" id="asat_2model_8h_html"><div class="ttname"><a href="sat_2model_8h.html">model.h</a></div></div>
 <div class="ttc" id="asat__base_8h_html"><div class="ttname"><a href="sat__base_8h.html">sat_base.h</a></div></div>
+<div class="ttc" id="asat__parameters_8pb_8h_html"><div class="ttname"><a href="sat__parameters_8pb_8h.html">sat_parameters.pb.h</a></div></div>
 <div class="ttc" id="asat__solver_8h_html"><div class="ttname"><a href="sat__solver_8h.html">sat_solver.h</a></div></div>
 <div class="ttc" id="astrong__integers_8h_html"><div class="ttname"><a href="strong__integers_8h.html">strong_integers.h</a></div></div>
 <div class="ttc" id="astructoperations__research_1_1sat_1_1AffineExpression_html"><div class="ttname"><a href="structoperations__research_1_1sat_1_1AffineExpression.html">operations_research::sat::AffineExpression</a></div><div class="ttdef"><b>Definition</b> <a href="integer__base_8h_source.html#l00268">integer_base.h:268</a></div></div>

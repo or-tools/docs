@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,16 @@ $(function(){initNavTree('structoperations__research_1_1pdlp_1_1QuadraticProgram
   <div class="headertitle"><div class="title">operations_research::pdlp::QuadraticProgram Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Represents the quadratic program (QP): min_x (<span class="tt">objective_vector</span>^T x + (1/2) x^T <span class="tt">objective_matrix</span> x) s.t. <span class="tt">constraint_lower_bounds</span> &lt;= <span class="tt">constraint_matrix</span> x &lt;= <span class="tt">constraint_upper_bounds</span> <span class="tt">variable_lower_bounds</span> &lt;= x &lt;= <span class="tt">variable_upper_bounds</span></p>
+<p><span class="tt">constraint_lower_bounds</span> and <span class="tt">variable_lower_bounds</span> may include negative infinities. <span class="tt">constraint_upper_bounds</span> and <span class="tt">variable_upper_bounds</span> may contain positive infinities. Other than that all entries of all fields must be finite. The <span class="tt">objective_matrix</span> must be diagonal and non-negative.</p>
+<p><span class="tt">variable_lower_bounds</span>, <span class="tt">variable_upper_bounds</span>, <span class="tt">objective_vector</span>, <span class="tt">objective_matrix</span> (if it has a value), and <span class="tt">variable_names</span> (if it has a value) must all have the same size as the number of columns in <span class="tt">constraint_matrix</span>. <span class="tt">constraint_lower_bounds</span>, <span class="tt">constraint_upper_bounds</span>, and <span class="tt">constraint_names</span> (if it has a value) must all have the same size as the number of rows in <span class="tt">constraint_matrix</span>. Consistency of these values is checked by <span class="tt"><a class="el" href="namespaceoperations__research_1_1pdlp.html#a29d607529c02f2842bdc5cb9c918bd1b">ValidateQuadraticProgramDimensions()</a></span>.</p>
+<p>For convenience, the struct also stores <span class="tt">scaling_factor</span> and <span class="tt">objective_offset</span>. These factors can be used to transform objective values based on the problem definition above into objective values that are meaningful for the user. See <span class="tt">ApplyObjectiveScalingAndOffset</span>.</p>
+<p>This struct is also intended for use with linear programs (LPs), which are QPs with a zero <span class="tt">objective_matrix</span>.</p>
+<p>The dual is documented at <a href="https://developers.google.com/optimization/lp/pdlp_math">https://developers.google.com/optimization/lp/pdlp_math</a>. </p>
 
+<p class="definition">Definition at line <a class="el" href="quadratic__program_8h_source.html#l00061">61</a> of file <a class="el" href="quadratic__program_8h_source.html">quadratic_program.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="quadratic__program_8h_source.html">quadratic_program.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -124,16 +134,7 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a8b84b9aa48526402da2499d1fac7ef00" id="r_a8b84b9aa48526402da2499d1fac7ef00"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8b84b9aa48526402da2499d1fac7ef00">objective_offset</a></td></tr>
 <tr class="memitem:a09fc6a7134d8b6635e82b5ca973fd06e" id="r_a09fc6a7134d8b6635e82b5ca973fd06e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a09fc6a7134d8b6635e82b5ca973fd06e">objective_scaling_factor</a></td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Represents the quadratic program (QP): min_x (<span class="tt">objective_vector</span>^T x + (1/2) x^T <span class="tt">objective_matrix</span> x) s.t. <span class="tt">constraint_lower_bounds</span> &lt;= <span class="tt">constraint_matrix</span> x &lt;= <span class="tt">constraint_upper_bounds</span> <span class="tt">variable_lower_bounds</span> &lt;= x &lt;= <span class="tt">variable_upper_bounds</span></p>
-<p><span class="tt">constraint_lower_bounds</span> and <span class="tt">variable_lower_bounds</span> may include negative infinities. <span class="tt">constraint_upper_bounds</span> and <span class="tt">variable_upper_bounds</span> may contain positive infinities. Other than that all entries of all fields must be finite. The <span class="tt">objective_matrix</span> must be diagonal and non-negative.</p>
-<p><span class="tt">variable_lower_bounds</span>, <span class="tt">variable_upper_bounds</span>, <span class="tt">objective_vector</span>, <span class="tt">objective_matrix</span> (if it has a value), and <span class="tt">variable_names</span> (if it has a value) must all have the same size as the number of columns in <span class="tt">constraint_matrix</span>. <span class="tt">constraint_lower_bounds</span>, <span class="tt">constraint_upper_bounds</span>, and <span class="tt">constraint_names</span> (if it has a value) must all have the same size as the number of rows in <span class="tt">constraint_matrix</span>. Consistency of these values is checked by <span class="tt"><a class="el" href="namespaceoperations__research_1_1pdlp.html#a29d607529c02f2842bdc5cb9c918bd1b">ValidateQuadraticProgramDimensions()</a></span>.</p>
-<p>For convenience, the struct also stores <span class="tt">scaling_factor</span> and <span class="tt">objective_offset</span>. These factors can be used to transform objective values based on the problem definition above into objective values that are meaningful for the user. See <span class="tt">ApplyObjectiveScalingAndOffset</span>.</p>
-<p>This struct is also intended for use with linear programs (LPs), which are QPs with a zero <span class="tt">objective_matrix</span>.</p>
-<p>The dual is documented at <a href="https://developers.google.com/optimization/lp/pdlp_math">https://developers.google.com/optimization/lp/pdlp_math</a>. </p>
-
-<p class="definition">Definition at line <a class="el" href="quadratic__program_8h_source.html#l00061">61</a> of file <a class="el" href="quadratic__program_8h_source.html">quadratic_program.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab7facb0468300221843cad3e702a50fa" name="ab7facb0468300221843cad3e702a50fa"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab7facb0468300221843cad3e702a50fa">&#9670;&#160;</a></span>QuadraticProgram() <span class="overload">[1/4]</span></h2>
 

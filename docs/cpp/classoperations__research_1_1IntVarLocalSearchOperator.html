@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,11 @@ $(function(){initNavTree('classoperations__research_1_1IntVarLocalSearchOperator
   <div class="headertitle"><div class="title">operations_research::IntVarLocalSearchOperator Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Specialization of <a class="el" href="classoperations__research_1_1LocalSearchOperator.html">LocalSearchOperator</a> built from an array of IntVars which specifies the scope of the operator. This class also takes care of storing current variable values in <a class="el" href="#a4beb156815d992fb35edbd9795d1d5c0">Start()</a>, keeps track of changes done by the operator and builds the delta. The <a class="el" href="#a69c731198d375a846a6dd31af7378800">Deactivate()</a> method can be used to perform Large Neighborhood <a class="el" href="classoperations__research_1_1Search.html" title="---------------— Search class --------------—">Search</a>. </p>
 
+<p class="definition">Definition at line <a class="el" href="constraint__solveri_8h_source.html#l01124">1124</a> of file <a class="el" href="constraint__solveri_8h_source.html">constraint_solveri.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="constraint__solveri_8h_source.html">constraint_solveri.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for operations_research::IntVarLocalSearchOperator:</div>
@@ -190,11 +195,7 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a0a6ad4127b7553425fb028c580cdad69" id="r_a0a6ad4127b7553425fb028c580cdad69"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0a6ad4127b7553425fb028c580cdad69">OldInverseValue</a> (int64_t index) const</td></tr>
 <tr class="memitem:a0c586dba1610383fb0a4c36b7253b830" id="r_a0c586dba1610383fb0a4c36b7253b830"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0c586dba1610383fb0a4c36b7253b830">AddToAssignment</a> (<a class="el" href="classoperations__research_1_1IntVar.html">IntVar</a> *var, int64_t value, bool active, std::vector&lt; int &gt; *assignment_indices, int64_t index, <a class="el" href="classoperations__research_1_1Assignment.html">Assignment</a> *assignment) const</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Specialization of <a class="el" href="classoperations__research_1_1LocalSearchOperator.html">LocalSearchOperator</a> built from an array of IntVars which specifies the scope of the operator. This class also takes care of storing current variable values in <a class="el" href="#a4beb156815d992fb35edbd9795d1d5c0">Start()</a>, keeps track of changes done by the operator and builds the delta. The <a class="el" href="#a69c731198d375a846a6dd31af7378800">Deactivate()</a> method can be used to perform Large Neighborhood <a class="el" href="classoperations__research_1_1Search.html" title="---------------— Search class --------------—">Search</a>. </p>
-
-<p class="definition">Definition at line <a class="el" href="constraint__solveri_8h_source.html#l01124">1124</a> of file <a class="el" href="constraint__solveri_8h_source.html">constraint_solveri.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aaf0d7462f3a511cf0b5cbacedba32b4b" name="aaf0d7462f3a511cf0b5cbacedba32b4b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aaf0d7462f3a511cf0b5cbacedba32b4b">&#9670;&#160;</a></span>IntVarLocalSearchOperator()</h2>
 
@@ -590,8 +591,8 @@ Protected Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Creates a new neighbor. It returns false when the neighborhood is completely explored. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000134">Todo</a></b></dt><dd>(user): make it pure virtual, implies porting all apps overriding <a class="el" href="#a5bc78fdde6b4e5a6ad9c3b00a6d47d65" title="--— Base operator class for operators manipulating IntVars --—">MakeNextNeighbor()</a> in a subclass of <a class="el" href="classoperations__research_1_1IntVarLocalSearchOperator.html">IntVarLocalSearchOperator</a>. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000195">Todo</a></b></dt><dd>(user): Make this a pure virtual. </dd></dl>
+<p>Creates a new neighbor. It returns false when the neighborhood is completely explored. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000133">Todo</a></b></dt><dd>(user): make it pure virtual, implies porting all apps overriding <a class="el" href="#a5bc78fdde6b4e5a6ad9c3b00a6d47d65" title="--— Base operator class for operators manipulating IntVars --—">MakeNextNeighbor()</a> in a subclass of <a class="el" href="classoperations__research_1_1IntVarLocalSearchOperator.html">IntVarLocalSearchOperator</a>. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000194">Todo</a></b></dt><dd>(user): Make this a pure virtual. </dd></dl>
 
 <p>Reimplemented in <a class="el" href="classoperations__research_1_1BaseInactiveNodeToPathOperator.html#aa1851f3bf3d9080c737f104a051e7990">operations_research::BaseInactiveNodeToPathOperator&lt; ignore_path_vars &gt;</a>, <a class="el" href="classoperations__research_1_1BaseLns.html#abbf605907da7a213cfeef822a7290c53">operations_research::BaseLns</a>, <a class="el" href="classoperations__research_1_1ChangeValue.html#a7bcd4a197ade8555b9c1c1dcb731d5c3">operations_research::ChangeValue</a>, <a class="el" href="classoperations__research_1_1MakePairActiveOperator.html#a29fb4fa07468a71d2174c77bb483879b">operations_research::MakePairActiveOperator&lt; ignore_path_vars &gt;</a>, <a class="el" href="classoperations__research_1_1PathOperator.html#af8ec89a016858df6762ec497cec8d0fa">operations_research::PathOperator&lt; ignore_path_vars &gt;</a>, <a class="el" href="classoperations__research_1_1RelocateExpensiveChain.html#a9f5b034a928cb7f6474f7f2fbabc1452">operations_research::RelocateExpensiveChain&lt; ignore_path_vars &gt;</a>, and <a class="el" href="classoperations__research_1_1TSPLns.html#ac158ae7a6c998661c7cb7524e0126646">operations_research::TSPLns&lt; ignore_path_vars &gt;</a>.</p>
 

@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,15 @@ $(function(){initNavTree('classoperations__research_1_1sat_1_1PrecedenceRelation
   <div class="headertitle"><div class="title">operations_research::sat::PrecedenceRelations Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Stores all the precedences relation of the form "a*x + b*y &lt;= ub" that we could extract from the linear constraint of the model. These are stored in a directed graph.</p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002165">Todo</a></b></dt><dd><p class="startdd">(user): Support conditional relation. </p>
+<p class="interdd">(user): Support non-DAG like graph. </p>
+<p class="enddd">(user): Support variable offset that can be updated as search progress. </p>
+</dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="precedences_8h_source.html#l00057">57</a> of file <a class="el" href="precedences_8h_source.html">precedences.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="precedences_8h_source.html">precedences.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for operations_research::sat::PrecedenceRelations:</div>
@@ -131,15 +140,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:adb9aa4096803957a1de5b1ae6145b8dd inherit pub_methods_classoperations__research_1_1ReversibleInterface" id="r_adb9aa4096803957a1de5b1ae6145b8dd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1ReversibleInterface.html#adb9aa4096803957a1de5b1ae6145b8dd">ReversibleInterface</a> ()</td></tr>
 <tr class="memitem:a2efac358c1c295fa65026c8d21f6ab9a inherit pub_methods_classoperations__research_1_1ReversibleInterface" id="r_a2efac358c1c295fa65026c8d21f6ab9a"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1ReversibleInterface.html#a2efac358c1c295fa65026c8d21f6ab9a">~ReversibleInterface</a> ()</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Stores all the precedences relation of the form "a*x + b*y &lt;= ub" that we could extract from the linear constraint of the model. These are stored in a directed graph.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002167">Todo</a></b></dt><dd><p class="startdd">(user): Support conditional relation. </p>
-<p class="interdd">(user): Support non-DAG like graph. </p>
-<p class="enddd">(user): Support variable offset that can be updated as search progress. </p>
-</dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="precedences_8h_source.html#l00057">57</a> of file <a class="el" href="precedences_8h_source.html">precedences.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a067a65bdc3d5d7a3454c2f875ff12391" name="a067a65bdc3d5d7a3454c2f875ff12391"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a067a65bdc3d5d7a3454c2f875ff12391">&#9670;&#160;</a></span>PrecedenceRelations()</h2>
 
@@ -194,8 +195,8 @@ Public Member Functions</h2></td></tr>
 <p>Add a relation lb &lt;= expr &lt;= ub. If expr is not a proper linear2 expression (e.g. 0*x + y, y + y, y - y) it will be ignored. Returns true if it was added and is considered "new". </p>
 <p>This class handles only binary relationships, let something else handle the case where there is actually a single variable.</p>
 <p>Add to root_relations_.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002133">Todo</a></b></dt><dd>(user): AddInternal() only returns true if this is the first relation between head and tail. But we can still avoid an extra lookup. </dd></dl>
-<p>If we are not built, make sure there is enough room in the graph. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002134">Todo</a></b></dt><dd>(user): Alternatively, force caller to do a <a class="el" href="#ae8f364e6ef490fd3a1a70f5a9e447a50">Resize()</a>. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002131">Todo</a></b></dt><dd>(user): AddInternal() only returns true if this is the first relation between head and tail. But we can still avoid an extra lookup. </dd></dl>
+<p>If we are not built, make sure there is enough room in the graph. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002132">Todo</a></b></dt><dd>(user): Alternatively, force caller to do a <a class="el" href="#ae8f364e6ef490fd3a1a70f5a9e447a50">Resize()</a>. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="precedences_8cc_source.html#l00056">56</a> of file <a class="el" href="precedences_8cc_source.html">precedences.cc</a>.</p>
 
@@ -274,16 +275,16 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>The current code requires the internal data to be processed once all relations are loaded.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002178">Todo</a></b></dt><dd>(user): Be more dynamic as we start to add relations during search. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002176">Todo</a></b></dt><dd>(user): Be more dynamic as we start to add relations during search. </dd></dl>
 <p>We will construct a graph with the current relation from all_relations_. And use this to compute the "closure".</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002135">Todo</a></b></dt><dd>(user): Support negative offset?</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002133">Todo</a></b></dt><dd>(user): Support negative offset?</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>if we only have &gt;= 0 ones, if we do have a cycle, we could make sure all variales are the same, and otherwise, we have a DAG or a conflict.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002136">Todo</a></b></dt><dd>(user): Support non-1 coefficients. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002134">Todo</a></b></dt><dd>(user): Support non-1 coefficients. </dd></dl>
 <p>We have two arcs.</p>
 <p>Is it a DAG? Get a topological order of the DAG formed by all the arcs that are present.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002137">Todo</a></b></dt><dd>(user): This can fail if we don't have a DAG. We could just skip Bad edges instead, and have a sub-DAG as an heuristic. Or analyze the arc weight and make sure cycle are not an issue. We can also start with arcs with strictly positive weight.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002138">Todo</a></b></dt><dd>(user): Only explore the sub-graph reachable from "vars". </dd></dl>
-<p>Lets build full precedences if we don't have too many of them. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002139">Todo</a></b></dt><dd>(user): Also do that if we don't have a DAG? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002135">Todo</a></b></dt><dd>(user): This can fail if we don't have a DAG. We could just skip Bad edges instead, and have a sub-DAG as an heuristic. Or analyze the arc weight and make sure cycle are not an issue. We can also start with arcs with strictly positive weight.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002136">Todo</a></b></dt><dd>(user): Only explore the sub-graph reachable from "vars". </dd></dl>
+<p>Lets build full precedences if we don't have too many of them. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002137">Todo</a></b></dt><dd>(user): Also do that if we don't have a DAG? </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="precedences_8cc_source.html#l00246">246</a> of file <a class="el" href="precedences_8cc_source.html">precedences.cc</a>.</p>
 
@@ -338,18 +339,18 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns a set of relations var &gt;= max_i(vars[index[i]] + offsets[i]).</p>
-<p>This currently only works if the precedence relation form a DAG. If not we will just abort. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002174">Todo</a></b></dt><dd>(user): generalize.</dd></dl>
+<p>This currently only works if the precedence relation form a DAG. If not we will just abort. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002172">Todo</a></b></dt><dd>(user): generalize.</dd></dl>
 <p>For more efficiency, this method ignores all linear2 expressions with any coefficient different from 1.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002175">Todo</a></b></dt><dd>(user): Put some work limit in place, as this can be slow. Complexity is in O(vars.size()) * num_arcs.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002176">Todo</a></b></dt><dd>(user): Since we don't need ALL precedences, we could just work on a sub-DAG of the full precedence graph instead of aborting. Or we can just support the general non-DAG cases.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002177">Todo</a></b></dt><dd>(user): Many relations can be redundant. Filter them. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002173">Todo</a></b></dt><dd>(user): Put some work limit in place, as this can be slow. Complexity is in O(vars.size()) * num_arcs.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002174">Todo</a></b></dt><dd>(user): Since we don't need ALL precedences, we could just work on a sub-DAG of the full precedence graph instead of aborting. Or we can just support the general non-DAG cases.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002175">Todo</a></b></dt><dd>(user): Many relations can be redundant. Filter them. </dd></dl>
 <p>Compute all precedences. We loop over the node in topological order, and we maintain for all variable we encounter, the list of "to_consider" variables that are before.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002140">Todo</a></b></dt><dd>(user): use vector of fixed size. </dd></dl>
-<p>We copy the data for tail_var here, because the pointer is not stable. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002141">Todo</a></b></dt><dd>(user): optimize when needed. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002138">Todo</a></b></dt><dd>(user): use vector of fixed size. </dd></dl>
+<p>We copy the data for tail_var here, because the pointer is not stable. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002139">Todo</a></b></dt><dd>(user): optimize when needed. </dd></dl>
 <p>No need to create an empty entry in this case.</p>
 <p>Small filtering heuristic: if we have (before) &lt; tail, and tail &lt; head, we really do not need to list (before, tail) &lt; head. We only need that if the list of variable before head contains some variable that are not already before tail.</p>
 <p>Extract the output for tail_var. Because of the topological ordering, the data for tail_var is already final now.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002142">Todo</a></b></dt><dd>(user): Release the memory right away. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002140">Todo</a></b></dt><dd>(user): Release the memory right away. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="precedences_8cc_source.html#l00360">360</a> of file <a class="el" href="precedences_8cc_source.html">precedences.cc</a>.</p>
 

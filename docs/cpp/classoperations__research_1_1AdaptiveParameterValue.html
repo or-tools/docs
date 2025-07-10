@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,13 @@ $(function(){initNavTree('classoperations__research_1_1AdaptiveParameterValue.ht
   <div class="headertitle"><div class="title">operations_research::AdaptiveParameterValue Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Basic adaptive [0.0, 1.0] parameter that can be increased or decreased with a step that get smaller and smaller with the number of updates.</p>
+<p>After a while, if the probability of getting a <a class="el" href="#a81a806df6fbdd9d528b597d133a7b907">Decrease()</a> vs <a class="el" href="#a252d7fea93cdb62dd0473418e614c504">Increase()</a> when running at a given value is f(value), then this should converge towards a value such that f(value) = 0.5 provided f is a non-decreasing function over [0.0, 1.0].</p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002604">Todo</a></b></dt><dd>(user): The current logic work well in practice, but has no strong theoretical foundation. We should be able to come up with a better understood formula that converge way faster. It will also be nice to generalize the 0.5 above to a target probability p. </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="adaptative__parameter__value_8h_source.html#l00035">35</a> of file <a class="el" href="adaptative__parameter__value_8h_source.html">adaptative_parameter_value.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="adaptative__parameter__value_8h_source.html">adaptative_parameter_value.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -108,13 +115,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5c1816aeb1be327d259fe4c98866360d" id="r_a5c1816aeb1be327d259fe4c98866360d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5c1816aeb1be327d259fe4c98866360d">Update</a> (int num_decreases, int num_increases)</td></tr>
 <tr class="memitem:aba15bbb3cf2eb23a451e3c8bf69796b5" id="r_aba15bbb3cf2eb23a451e3c8bf69796b5"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aba15bbb3cf2eb23a451e3c8bf69796b5">value</a> () const</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Basic adaptive [0.0, 1.0] parameter that can be increased or decreased with a step that get smaller and smaller with the number of updates.</p>
-<p>After a while, if the probability of getting a <a class="el" href="#a81a806df6fbdd9d528b597d133a7b907">Decrease()</a> vs <a class="el" href="#a252d7fea93cdb62dd0473418e614c504">Increase()</a> when running at a given value is f(value), then this should converge towards a value such that f(value) = 0.5 provided f is a non-decreasing function over [0.0, 1.0].</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002606">Todo</a></b></dt><dd>(user): The current logic work well in practice, but has no strong theoretical foundation. We should be able to come up with a better understood formula that converge way faster. It will also be nice to generalize the 0.5 above to a target probability p. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="adaptative__parameter__value_8h_source.html#l00035">35</a> of file <a class="el" href="adaptative__parameter__value_8h_source.html">adaptative_parameter_value.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab1ad4a4f19400ada6e890d10cbc3d988" name="ab1ad4a4f19400ada6e890d10cbc3d988"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab1ad4a4f19400ada6e890d10cbc3d988">&#9670;&#160;</a></span>AdaptiveParameterValue()</h2>
 

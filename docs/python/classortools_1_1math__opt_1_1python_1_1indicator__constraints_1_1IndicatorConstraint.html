@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,38 @@ $(function(){initNavTree('classortools_1_1math__opt_1_1python_1_1indicator__cons
   <div class="headertitle"><div class="title">ortools.math_opt.python.indicator_constraints.IndicatorConstraint Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="dynheader">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><pre class="fragment">An indicator constraint for an optimization model.
+
+An IndicatorConstraint adds the following restriction on feasible solutions to
+an optimization model:
+  if z == 1 then lb &lt;= sum_{i in I} a_i * x_i &lt;= ub
+where z is a binary decision variable (or its negation) and x_i are the
+decision variables of the problem. Equality constraints lb == ub is allowed,
+which models the constraint:
+  if z == 1 then sum_{i in I} a_i * x_i == b
+Setting lb &gt; ub will result in an InvalidArgument error at solve time.
+
+Indicator constraints have limited mutability. You can delete a variable
+that the constraint uses, or you can delete the entire constraint. You
+currently cannot update bounds or coefficients. This may change in future
+versions.
+
+If the indicator variable is deleted or was None at creation time, the
+constraint will lead to an invalid model at solve time, unless the constraint
+is deleted before solving.
+
+The name is optional, read only, and used only for debugging. Non-empty names
+should be distinct.
+
+Do not create an IndicatorConstraint directly, use
+Model.add_indicator_constraint() instead. Two IndicatorConstraint objects can
+represent the same constraint (for the same model). They will have the same
+underlying IndicatorConstraint.elemental for storing the data. The
+IndicatorConstraint class is simply a reference to an Elemental.
+</pre> 
+<p class="definition">Definition at line <a class="el" href="indicator__constraints_8py_source.html#l00024">24</a> of file <a class="el" href="indicator__constraints_8py_source.html">indicator_constraints.py</a>.</p>
+</div><div class="dynheader">
 Inheritance diagram for ortools.math_opt.python.indicator_constraints.IndicatorConstraint:</div>
 <div class="dyncontent">
  <div class="center">
@@ -132,38 +164,7 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a9bdb7bcc9a25f6541c1dc2994716a604" id="r_a9bdb7bcc9a25f6541c1dc2994716a604"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classortools_1_1math__opt_1_1python_1_1elemental_1_1elemental_1_1Elemental.html">elemental.Elemental</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9bdb7bcc9a25f6541c1dc2994716a604">_elemental</a> = elem</td></tr>
 <tr class="memitem:a250d4b2ec53e6498dae637d8d9f2ad06" id="r_a250d4b2ec53e6498dae637d8d9f2ad06"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a250d4b2ec53e6498dae637d8d9f2ad06">_id</a> = cid</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><pre class="fragment">An indicator constraint for an optimization model.
-
-An IndicatorConstraint adds the following restriction on feasible solutions to
-an optimization model:
-  if z == 1 then lb &lt;= sum_{i in I} a_i * x_i &lt;= ub
-where z is a binary decision variable (or its negation) and x_i are the
-decision variables of the problem. Equality constraints lb == ub is allowed,
-which models the constraint:
-  if z == 1 then sum_{i in I} a_i * x_i == b
-Setting lb &gt; ub will result in an InvalidArgument error at solve time.
-
-Indicator constraints have limited mutability. You can delete a variable
-that the constraint uses, or you can delete the entire constraint. You
-currently cannot update bounds or coefficients. This may change in future
-versions.
-
-If the indicator variable is deleted or was None at creation time, the
-constraint will lead to an invalid model at solve time, unless the constraint
-is deleted before solving.
-
-The name is optional, read only, and used only for debugging. Non-empty names
-should be distinct.
-
-Do not create an IndicatorConstraint directly, use
-Model.add_indicator_constraint() instead. Two IndicatorConstraint objects can
-represent the same constraint (for the same model). They will have the same
-underlying IndicatorConstraint.elemental for storing the data. The
-IndicatorConstraint class is simply a reference to an Elemental.
-</pre> 
-<p class="definition">Definition at line <a class="el" href="indicator__constraints_8py_source.html#l00024">24</a> of file <a class="el" href="indicator__constraints_8py_source.html">indicator_constraints.py</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="abf5bc0e6e525059490c55c3ac69b4110" name="abf5bc0e6e525059490c55c3ac69b4110"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abf5bc0e6e525059490c55c3ac69b4110">&#9670;&#160;</a></span>__init__()</h2>
 

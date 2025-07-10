@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -120,7 +121,7 @@ $(function(){initNavTree('capacity__model_8h_source.html','',''); });
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &quot;<a class="code" href="strong__int_8h.html">ortools/base/strong_int.h</a>&quot;</span></div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include &quot;<a class="code" href="strong__vector_8h.html">ortools/base/strong_vector.h</a>&quot;</span></div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &quot;<a class="code" href="base__types_8h.html">ortools/set_cover/base_types.h</a>&quot;</span></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#include &quot;ortools/set_cover/capacity.pb.h&quot;</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#include &quot;<a class="code" href="capacity_8pb_8h.html">ortools/set_cover/capacity.pb.h</a>&quot;</span></div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#include &quot;<a class="code" href="set__cover__model_8h.html">ortools/set_cover/set_cover_model.h</a>&quot;</span></div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">// Representation class for the capacity side-constraint for a weighted</span></div>
@@ -246,10 +247,10 @@ $(function(){initNavTree('capacity__model_8h_source.html','',''); });
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>  <span class="comment">//</span></div>
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>  <span class="comment">// The function is not const because the terms need to be sorted for the</span></div>
 <div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>  <span class="comment">// representation as a protobuf to be canonical.</span></div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>  CapacityConstraintProto <a class="code hl_function" href="classoperations__research_1_1CapacityModel.html#a024ddae589394e2b45fc7b5bb8517186">ExportModelAsProto</a>();</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>  <a class="code hl_class" href="classoperations__research_1_1CapacityConstraintProto.html">CapacityConstraintProto</a> <a class="code hl_function" href="classoperations__research_1_1CapacityModel.html#a024ddae589394e2b45fc7b5bb8517186">ExportModelAsProto</a>();</div>
 <div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
 <div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>  <span class="comment">// Imports the model from a CapacityConstraintProto.</span></div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classoperations__research_1_1CapacityModel.html#a5602a8284360f78bb7bb722eb0d00c15">ImportModelFromProto</a>(<span class="keyword">const</span> CapacityConstraintProto&amp; proto);</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classoperations__research_1_1CapacityModel.html#a5602a8284360f78bb7bb722eb0d00c15">ImportModelFromProto</a>(<span class="keyword">const</span> <a class="code hl_class" href="classoperations__research_1_1CapacityConstraintProto.html">CapacityConstraintProto</a>&amp; proto);</div>
 <div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> </div>
 <div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span> <span class="keyword">private</span>:</div>
 <div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>  <span class="comment">// The terms in the constraint.</span></div>
@@ -271,6 +272,8 @@ $(function(){initNavTree('capacity__model_8h_source.html','',''); });
 <div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span> </div>
 <div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span><span class="preprocessor">#endif  </span><span class="comment">// OR_TOOLS_SET_COVER_CAPACITY_MODEL_H_</span></div>
 <div class="ttc" id="abase__types_8h_html"><div class="ttname"><a href="base__types_8h.html">base_types.h</a></div></div>
+<div class="ttc" id="acapacity_8pb_8h_html"><div class="ttname"><a href="capacity_8pb_8h.html">capacity.pb.h</a></div></div>
+<div class="ttc" id="aclassoperations__research_1_1CapacityConstraintProto_html"><div class="ttname"><a href="classoperations__research_1_1CapacityConstraintProto.html">operations_research::CapacityConstraintProto</a></div><div class="ttdef"><b>Definition</b> <a href="capacity_8pb_8h_source.html#l00499">capacity.pb.h:500</a></div></div>
 <div class="ttc" id="aclassoperations__research_1_1CapacityModel_html_a024ddae589394e2b45fc7b5bb8517186"><div class="ttname"><a href="classoperations__research_1_1CapacityModel.html#a024ddae589394e2b45fc7b5bb8517186">operations_research::CapacityModel::ExportModelAsProto</a></div><div class="ttdeci">CapacityConstraintProto ExportModelAsProto()</div><div class="ttdef"><b>Definition</b> <a href="capacity__model_8cc_source.html#l00085">capacity_model.cc:85</a></div></div>
 <div class="ttc" id="aclassoperations__research_1_1CapacityModel_html_a18ec75656dc91525fa43011b5aed7f19"><div class="ttname"><a href="classoperations__research_1_1CapacityModel.html#a18ec75656dc91525fa43011b5aed7f19">operations_research::CapacityModel::CapacityModel</a></div><div class="ttdeci">CapacityModel(CapacityWeight min, CapacityWeight max)</div><div class="ttdef"><b>Definition</b> <a href="#l00063">capacity_model.h:63</a></div></div>
 <div class="ttc" id="aclassoperations__research_1_1CapacityModel_html_a2d427b932524e64a321aef85321ff4a0"><div class="ttname"><a href="classoperations__research_1_1CapacityModel.html#a2d427b932524e64a321aef85321ff4a0">operations_research::CapacityModel::num_terms</a></div><div class="ttdeci">BaseInt num_terms() const</div><div class="ttdoc">Returns the current number of terms in the constraint.</div><div class="ttdef"><b>Definition</b> <a href="#l00083">capacity_model.h:83</a></div></div>

@@ -1,0 +1,6 @@
+var structoperations__research_1_1GScipParameters__LongParamsEntry__DoNotUseDefaultTypeInternal =
+[
+    [ "GScipParameters_LongParamsEntry_DoNotUseDefaultTypeInternal", "structoperations__research_1_1GScipParameters__LongParamsEntry__DoNotUseDefaultTypeInternal.html#a5030d4d43aa9a07c55742706157a39d6", null ],
+    [ "~GScipParameters_LongParamsEntry_DoNotUseDefaultTypeInternal", "structoperations__research_1_1GScipParameters__LongParamsEntry__DoNotUseDefaultTypeInternal.html#a8442d26bb98de73bf2fed4701feb6e90", null ],
+    [ "_instance", "structoperations__research_1_1GScipParameters__LongParamsEntry__DoNotUseDefaultTypeInternal.html#a09358d5f35785ce7da469f59561c9ecd", null ]
+];

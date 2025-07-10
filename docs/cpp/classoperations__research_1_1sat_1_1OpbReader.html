@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,11 @@ $(function(){initNavTree('classoperations__research_1_1sat_1_1OpbReader.html',''
   <div class="headertitle"><div class="title">operations_research::sat::OpbReader Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This class loads a file in pbo file format into a <a class="el" href="classoperations__research_1_1sat_1_1LinearBooleanProblem.html">LinearBooleanProblem</a>. The format is described here: <a href="http://www.cril.univ-artois.fr/PB24/format.pdf">http://www.cril.univ-artois.fr/PB24/format.pdf</a> </p>
 
+<p class="definition">Definition at line <a class="el" href="opb__reader_8h_source.html#l00045">45</a> of file <a class="el" href="opb__reader_8h_source.html">opb_reader.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="opb__reader_8h_source.html">opb_reader.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -107,13 +112,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2058bb372acc8f98dd7424806f5e9ee1" id="r_a2058bb372acc8f98dd7424806f5e9ee1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2058bb372acc8f98dd7424806f5e9ee1">num_variables</a> () const</td></tr>
 <tr class="memdesc:a2058bb372acc8f98dd7424806f5e9ee1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of variables in the problem.  <br /></td></tr>
 <tr class="memitem:a035a86fae9003da8ae339a086017fa1f" id="r_a035a86fae9003da8ae339a086017fa1f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a035a86fae9003da8ae339a086017fa1f">model_is_supported</a> () const</td></tr>
-<tr class="memitem:aeb3ae10f2fad586434644c689819194d" id="r_aeb3ae10f2fad586434644c689819194d"><td class="memItemLeft" align="right" valign="top">ABSL_MUST_USE_RESULT bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeb3ae10f2fad586434644c689819194d">LoadAndValidate</a> (const std::string &amp;filename, CpModelProto *model)</td></tr>
+<tr class="memitem:aeb3ae10f2fad586434644c689819194d" id="r_aeb3ae10f2fad586434644c689819194d"><td class="memItemLeft" align="right" valign="top">ABSL_MUST_USE_RESULT bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeb3ae10f2fad586434644c689819194d">LoadAndValidate</a> (const std::string &amp;filename, <a class="el" href="classoperations__research_1_1sat_1_1CpModelProto.html">CpModelProto</a> *model)</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This class loads a file in pbo file format into a LinearBooleanProblem. The format is described here: <a href="http://www.cril.univ-artois.fr/PB24/format.pdf">http://www.cril.univ-artois.fr/PB24/format.pdf</a> </p>
-
-<p class="definition">Definition at line <a class="el" href="opb__reader_8h_source.html#l00045">45</a> of file <a class="el" href="opb__reader_8h_source.html">opb_reader.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab8d17b66ce4ac474ef1670282f17ae95" name="ab8d17b66ce4ac474ef1670282f17ae95"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab8d17b66ce4ac474ef1670282f17ae95">&#9670;&#160;</a></span>OpbReader() <span class="overload">[1/2]</span></h2>
 
@@ -184,7 +185,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">CpModelProto *</td>          <td class="paramname"><span class="paramname"><em>model</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="classoperations__research_1_1sat_1_1CpModelProto.html">CpModelProto</a> *</td>          <td class="paramname"><span class="paramname"><em>model</em></span>&#160;)</td>
         </tr>
       </table>
   </td>

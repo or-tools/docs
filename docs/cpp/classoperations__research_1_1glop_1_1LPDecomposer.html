@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,12 @@ $(function(){initNavTree('classoperations__research_1_1glop_1_1LPDecomposer.html
   <div class="headertitle"><div class="title">operations_research::glop::LPDecomposer Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This class is used to decompose an existing <a class="el" href="classoperations__research_1_1glop_1_1LinearProgram.html">LinearProgram</a> into several independent LinearPrograms. Problems are independent when none of their variables are connected, i.e. appear in the same constraints. Consider for instance the following problem: min: x + 2 y + 3 z + 4 t + 5 u c1: 0 &lt;= x + z &lt;= 1; c2: 0 &lt;= y + t &lt;= 1; c3: 0 &lt;= x + u &lt;= 1; int: x, y, z, t, u Variables x, z and u are connected by constraints c1 and c3. Variables y and t are connected by constraints c2. The problem can be decomposed into two independent problems: min: x + 3 z + 5 u c1: 0 &lt;= x + z &lt;= 1; c3: 0 &lt;= x + u &lt;= 1; int: x, z, u and min: 2 y + 4 t c2: 0 &lt;= y + t &lt;= 1; int: y, t</p>
+<dl class="section note"><dt>Note</dt><dd>a solution to those two independent problems is a solution to the original problem. </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="lp__decomposer_8h_source.html#l00052">52</a> of file <a class="el" href="lp__decomposer_8h_source.html">lp_decomposer.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="lp__decomposer_8h_source.html">lp_decomposer.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -113,12 +119,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a51d68a79b7109de09e9d24c249626ce5" id="r_a51d68a79b7109de09e9d24c249626ce5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceoperations__research_1_1glop.html#ada5d5cfd458bdd48f90015baf1f280d4">DenseRow</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a51d68a79b7109de09e9d24c249626ce5">AggregateAssignments</a> (absl::Span&lt; const <a class="el" href="namespaceoperations__research_1_1glop.html#ada5d5cfd458bdd48f90015baf1f280d4">DenseRow</a> &gt; assignments) const ABSL_LOCKS_EXCLUDED(mutex_)</td></tr>
 <tr class="memitem:a45697df161b692f8e31fee44baca6aa3" id="r_a45697df161b692f8e31fee44baca6aa3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceoperations__research_1_1glop.html#ada5d5cfd458bdd48f90015baf1f280d4">DenseRow</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a45697df161b692f8e31fee44baca6aa3">ExtractLocalAssignment</a> (int problem_index, const <a class="el" href="namespaceoperations__research_1_1glop.html#ada5d5cfd458bdd48f90015baf1f280d4">DenseRow</a> &amp;assignment) ABSL_LOCKS_EXCLUDED(mutex_)</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This class is used to decompose an existing <a class="el" href="classoperations__research_1_1glop_1_1LinearProgram.html">LinearProgram</a> into several independent LinearPrograms. Problems are independent when none of their variables are connected, i.e. appear in the same constraints. Consider for instance the following problem: min: x + 2 y + 3 z + 4 t + 5 u c1: 0 &lt;= x + z &lt;= 1; c2: 0 &lt;= y + t &lt;= 1; c3: 0 &lt;= x + u &lt;= 1; int: x, y, z, t, u Variables x, z and u are connected by constraints c1 and c3. Variables y and t are connected by constraints c2. The problem can be decomposed into two independent problems: min: x + 3 z + 5 u c1: 0 &lt;= x + z &lt;= 1; c3: 0 &lt;= x + u &lt;= 1; int: x, z, u and min: 2 y + 4 t c2: 0 &lt;= y + t &lt;= 1; int: y, t</p>
-<dl class="section note"><dt>Note</dt><dd>a solution to those two independent problems is a solution to the original problem. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="lp__decomposer_8h_source.html#l00052">52</a> of file <a class="el" href="lp__decomposer_8h_source.html">lp_decomposer.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a18eba9efb1cd58da47a4fbd3d8f4f4db" name="a18eba9efb1cd58da47a4fbd3d8f4f4db"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a18eba9efb1cd58da47a4fbd3d8f4f4db">&#9670;&#160;</a></span>LPDecomposer() <span class="overload">[1/2]</span></h2>
 

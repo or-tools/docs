@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,19 @@ $(function(){initNavTree('classoperations__research_1_1math__opt_1_1GlpkSparseVe
   <div class="headertitle"><div class="title">operations_research::math_opt::GlpkSparseVector Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Sparse vector in GLPK format.</p>
+<p>GLPK represents a sparse vector of size n with two arrays of size n+1, one for indices and one for values. The first element of each of these arrays is ignored (GLPK uses one-based indices). On top of that, the array of indices contains one-based indices (typically rows or columns indices). The entries are not necessarily sorted.</p>
+<p>For example to store a sparse vector where we have:</p>
+<p>idx | value -&mdash;+---&mdash; GLPK would use two arrays:</p>
+<p>const int indices[] = { /*ignored*&zwj;/-1, 3, 1, 5 }; const double values[] = { /*ignored*&zwj;/NAN, -1.0, 2.5, 0.5 };</p>
+<p>This class also keeps an additional vector which size is the capacity of the sparse vector (i.e. the corresponding size of a dense vector). It associates to each index an optional position of the corresponding entry in the indices and values arrays. This is used to make <a class="el" href="#a3139cdef8e46845c462fdc9ab57024b4">Set()</a> and <a class="el" href="#abeffb9f8121beef44b168cd4d727d61a">Get()</a> O(1) and this makes <a class="el" href="#afd9430e6176ec4dc0635bbed4bba189e">Clear()</a> O(size()) since indices associated to entries need to be cleared.</p>
+<p>This additional vector along with the ones used for indices and values are all pre-allocated to fit the capacity. Hence an instance of this class allocates:</p>
+<p>capacity * (2 * sizeof(int) + sizeof(double))</p>
+<p>It is thus recommended to reuse the same instance multiple times instead of reallocating one for it to be efficient. </p>
 
+<p class="definition">Definition at line <a class="el" href="glpk__sparse__vector_8h_source.html#l00064">64</a> of file <a class="el" href="glpk__sparse__vector_8h_source.html">glpk_sparse_vector.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="glpk__sparse__vector_8h_source.html">glpk_sparse_vector.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -112,19 +125,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3139cdef8e46845c462fdc9ab57024b4" id="r_a3139cdef8e46845c462fdc9ab57024b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3139cdef8e46845c462fdc9ab57024b4">Set</a> (int index, double value)</td></tr>
 <tr class="memitem:a9e6a746e8debd0b8a7f9f6952b49e8f3" id="r_a9e6a746e8debd0b8a7f9f6952b49e8f3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9e6a746e8debd0b8a7f9f6952b49e8f3">Load</a> (std::function&lt; int(int *<a class="el" href="#acdfffd66723cd392a2d1a225ac53dd8f">indices</a>, double *<a class="el" href="#a6cd4a0c744b06a9ac36248dc96c46782">values</a>)&gt; getter)</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Sparse vector in GLPK format.</p>
-<p>GLPK represents a sparse vector of size n with two arrays of size n+1, one for indices and one for values. The first element of each of these arrays is ignored (GLPK uses one-based indices). On top of that, the array of indices contains one-based indices (typically rows or columns indices). The entries are not necessarily sorted.</p>
-<p>For example to store a sparse vector where we have:</p>
-<p>idx | value -&mdash;+---&mdash; GLPK would use two arrays:</p>
-<p>const int indices[] = { /*ignored*&zwj;/-1, 3, 1, 5 }; const double values[] = { /*ignored*&zwj;/NAN, -1.0, 2.5, 0.5 };</p>
-<p>This class also keeps an additional vector which size is the capacity of the sparse vector (i.e. the corresponding size of a dense vector). It associates to each index an optional position of the corresponding entry in the indices and values arrays. This is used to make <a class="el" href="#a3139cdef8e46845c462fdc9ab57024b4">Set()</a> and <a class="el" href="#abeffb9f8121beef44b168cd4d727d61a">Get()</a> O(1) and this makes <a class="el" href="#afd9430e6176ec4dc0635bbed4bba189e">Clear()</a> O(size()) since indices associated to entries need to be cleared.</p>
-<p>This additional vector along with the ones used for indices and values are all pre-allocated to fit the capacity. Hence an instance of this class allocates:</p>
-<p>capacity * (2 * sizeof(int) + sizeof(double))</p>
-<p>It is thus recommended to reuse the same instance multiple times instead of reallocating one for it to be efficient. </p>
-
-<p class="definition">Definition at line <a class="el" href="glpk__sparse__vector_8h_source.html#l00064">64</a> of file <a class="el" href="glpk__sparse__vector_8h_source.html">glpk_sparse_vector.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a994738acdddd2bd9b795f92a7249600c" name="a994738acdddd2bd9b795f92a7249600c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a994738acdddd2bd9b795f92a7249600c">&#9670;&#160;</a></span>GlpkSparseVector()</h2>
 

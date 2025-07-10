@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -98,7 +99,11 @@ $(function(){initNavTree('classoperations__research_1_1sat_1_1CutDataBuilder.htm
 
 <p>Stores temporaries used to build or manipulate a <a class="el" href="structoperations__research_1_1sat_1_1CutData.html" title="Our cut are always of the form linear_expression &lt;= rhs.">CutData</a>.  
  <a href="#details">More...</a></p>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Stores temporaries used to build or manipulate a <a class="el" href="structoperations__research_1_1sat_1_1CutData.html" title="Our cut are always of the form linear_expression &lt;= rhs.">CutData</a>. </p>
 
+<p class="definition">Definition at line <a class="el" href="cuts_8h_source.html#l00160">160</a> of file <a class="el" href="cuts_8h_source.html">cuts.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="cuts_8h_source.html">cuts.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -107,11 +112,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a6c27f24f411983fa4e7333dcadb9fd55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns false if we encounter an integer overflow.  <br /></td></tr>
 <tr class="memitem:a9774f1e81b584ea534b9f46023b7a430" id="r_a9774f1e81b584ea534b9f46023b7a430"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9774f1e81b584ea534b9f46023b7a430">AddOrMergeBooleanTerms</a> (absl::Span&lt; <a class="el" href="structoperations__research_1_1sat_1_1CutTerm.html">CutTerm</a> &gt; terms, IntegerValue t, <a class="el" href="structoperations__research_1_1sat_1_1CutData.html">CutData</a> *cut)</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Stores temporaries used to build or manipulate a <a class="el" href="structoperations__research_1_1sat_1_1CutData.html" title="Our cut are always of the form linear_expression &lt;= rhs.">CutData</a>. </p>
-
-<p class="definition">Definition at line <a class="el" href="cuts_8h_source.html#l00160">160</a> of file <a class="el" href="cuts_8h_source.html">cuts.h</a>.</p>
-</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="a9774f1e81b584ea534b9f46023b7a430" name="a9774f1e81b584ea534b9f46023b7a430"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9774f1e81b584ea534b9f46023b7a430">&#9670;&#160;</a></span>AddOrMergeBooleanTerms()</h2>
 
@@ -138,7 +139,7 @@ Public Member Functions</h2></td></tr>
 <p>These function allow to merges entries corresponding to the same variable and complementation. That is (X - lb) and (ub - X) are NOT merged and kept as separate terms. Note that we currently only merge Booleans since this is the only case we need.</p>
 <p>Return num_merges.</p>
 <p>We only deal with coeff * Bool or coeff * (1 - Bool)</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001618">Todo</a></b></dt><dd>(user): Because of merges, we might have entry with a coefficient of zero than are not useful. Remove them? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001616">Todo</a></b></dt><dd>(user): Because of merges, we might have entry with a coefficient of zero than are not useful. Remove them? </dd></dl>
 <p>Fill the maps.</p>
 <p>Loop over the cut now. Note that we loop with indices as we might add new terms in the middle of the loop.</p>
 <p>We found a match, try to merge the map entry into the cut. </p><dl class="section note"><dt>Note</dt><dd>we don't waste time erasing this entry from the map since we should have no duplicates in the original cut.</dd></dl>
@@ -168,7 +169,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns false if we encounter an integer overflow. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001619">Todo</a></b></dt><dd>(user): Divide by gcd first to avoid possible overflow in the conversion? it is however unlikely given that our coeffs should be small. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001617">Todo</a></b></dt><dd>(user): Divide by gcd first to avoid possible overflow in the conversion? it is however unlikely given that our coeffs should be small. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="cuts_8cc_source.html#l00353">353</a> of file <a class="el" href="cuts_8cc_source.html">cuts.cc</a>.</p>
 

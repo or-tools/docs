@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -98,7 +99,12 @@ $(function(){initNavTree('classoperations__research_1_1SwapActiveChainOperator.h
 
 <p>--&mdash; <a class="el" href="classoperations__research_1_1SwapActiveChainOperator.html" title="--— SwapActiveChainOperator --—">SwapActiveChainOperator</a> --&mdash;  
  <a href="#details">More...</a></p>
-<div class="dynheader">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;bool ignore_path_vars&gt;<br />
+class operations_research::SwapActiveChainOperator&lt; ignore_path_vars &gt;</div><p>--&mdash; <a class="el" href="classoperations__research_1_1SwapActiveChainOperator.html" title="--— SwapActiveChainOperator --—">SwapActiveChainOperator</a> --&mdash; </p>
+
+<p class="definition">Definition at line <a class="el" href="local__search_8cc_source.html#l01169">1169</a> of file <a class="el" href="local__search_8cc_source.html">local_search.cc</a>.</p>
+</div><div class="dynheader">
 Inheritance diagram for operations_research::SwapActiveChainOperator&lt; ignore_path_vars &gt;:</div>
 <div class="dyncontent">
  <div class="center">
@@ -248,12 +254,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_attribs_classoperations__research_1_1PathOperator"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_classoperations__research_1_1PathOperator')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Protected Attributes inherited from <a class="el" href="classoperations__research_1_1PathOperator.html">operations_research::PathOperator&lt; ignore_path_vars &gt;</a></td></tr>
 <tr class="memitem:a630c5775c22ca7744a067ce885b4347a inherit pro_attribs_classoperations__research_1_1PathOperator" id="r_a630c5775c22ca7744a067ce885b4347a"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1PathOperator.html#a630c5775c22ca7744a067ce885b4347a">number_of_nexts_</a></td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;bool ignore_path_vars&gt;<br />
-class operations_research::SwapActiveChainOperator&lt; ignore_path_vars &gt;</div><p>--&mdash; <a class="el" href="classoperations__research_1_1SwapActiveChainOperator.html" title="--— SwapActiveChainOperator --—">SwapActiveChainOperator</a> --&mdash; </p>
-
-<p class="definition">Definition at line <a class="el" href="local__search_8cc_source.html#l01169">1169</a> of file <a class="el" href="local__search_8cc_source.html">local_search.cc</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aac23cfa73a616f398dd2867095ac3849" name="aac23cfa73a616f398dd2867095ac3849"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aac23cfa73a616f398dd2867095ac3849">&#9670;&#160;</a></span>SwapActiveChainOperator()</h2>
 
@@ -349,7 +350,7 @@ template&lt;bool ignore_path_vars&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000213">Todo</a></b></dt><dd>(user): Skip unfeasible chains by forcing the first base node to be before the second one. Ideally this should be done as follows: int64_t <a class="el" href="classoperations__research_1_1PathOperator.html#a687d06d4a94a97c2aa2ec159a85365bf">GetBaseNodeRestartPosition(int base_index)</a> override { return (base_index == 0) ? StartNode(base_index) : BaseNode(base_index - 1); } However due to the fact we are iterating over the chains multiple times (once for each unperformed node), this breaks the ending position of the neighborhood (causing an infinite iteration). </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000212">Todo</a></b></dt><dd>(user): Skip unfeasible chains by forcing the first base node to be before the second one. Ideally this should be done as follows: int64_t <a class="el" href="classoperations__research_1_1PathOperator.html#a687d06d4a94a97c2aa2ec159a85365bf">GetBaseNodeRestartPosition(int base_index)</a> override { return (base_index == 0) ? StartNode(base_index) : BaseNode(base_index - 1); } However due to the fact we are iterating over the chains multiple times (once for each unperformed node), this breaks the ending position of the neighborhood (causing an infinite iteration). </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classoperations__research_1_1BaseObject.html#afb3b013c5063d71566d5273793c1d828">operations_research::BaseObject</a>.</p>
 
@@ -444,7 +445,7 @@ template&lt;bool ignore_path_vars&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns true if a base node has to be on the same path as the "previous" base node (base node of index base_index - 1). Useful to limit neighborhood exploration to nodes on the same path. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000138">Todo</a></b></dt><dd>(user): ideally this should be OnSamePath(int64_t node1, int64_t
+<p>Returns true if a base node has to be on the same path as the "previous" base node (base node of index base_index - 1). Useful to limit neighborhood exploration to nodes on the same path. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000137">Todo</a></b></dt><dd>(user): ideally this should be OnSamePath(int64_t node1, int64_t
 node2); it's currently way more complicated to implement. </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classoperations__research_1_1PathOperator.html#a670776038d80be84dbb818c4a2315d43">operations_research::PathOperator&lt; ignore_path_vars &gt;</a>.</p>

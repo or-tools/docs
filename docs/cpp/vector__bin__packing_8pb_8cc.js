@@ -1,0 +1,28 @@
+var vector__bin__packing_8pb_8cc =
+[
+    [ "operations_research::packing::vbp::VectorBinPackingOneBinInSolutionDefaultTypeInternal", "structoperations__research_1_1packing_1_1vbp_1_1VectorBinPackingOneBinInSolutionDefaultTypeInternal.html", "structoperations__research_1_1packing_1_1vbp_1_1VectorBinPackingOneBinInSolutionDefaultTypeInternal" ],
+    [ "operations_research::packing::vbp::ItemDefaultTypeInternal", "structoperations__research_1_1packing_1_1vbp_1_1ItemDefaultTypeInternal.html", "structoperations__research_1_1packing_1_1vbp_1_1ItemDefaultTypeInternal" ],
+    [ "operations_research::packing::vbp::VectorBinPackingSolutionDefaultTypeInternal", "structoperations__research_1_1packing_1_1vbp_1_1VectorBinPackingSolutionDefaultTypeInternal.html", "structoperations__research_1_1packing_1_1vbp_1_1VectorBinPackingSolutionDefaultTypeInternal" ],
+    [ "operations_research::packing::vbp::VectorBinPackingProblemDefaultTypeInternal", "structoperations__research_1_1packing_1_1vbp_1_1VectorBinPackingProblemDefaultTypeInternal.html", "structoperations__research_1_1packing_1_1vbp_1_1VectorBinPackingProblemDefaultTypeInternal" ],
+    [ "operations_research::packing::vbp::Item::_Internal", "classoperations__research_1_1packing_1_1vbp_1_1Item_1_1__Internal.html", "classoperations__research_1_1packing_1_1vbp_1_1Item_1_1__Internal" ],
+    [ "operations_research::packing::vbp::VectorBinPackingProblem::_Internal", "classoperations__research_1_1packing_1_1vbp_1_1VectorBinPackingProblem_1_1__Internal.html", "classoperations__research_1_1packing_1_1vbp_1_1VectorBinPackingProblem_1_1__Internal" ],
+    [ "operations_research::packing::vbp::VectorBinPackingOneBinInSolution::_Internal", "classoperations__research_1_1packing_1_1vbp_1_1VectorBinPackingOneBinInSolution_1_1__Internal.html", null ],
+    [ "operations_research::packing::vbp::VectorBinPackingSolution::_Internal", "classoperations__research_1_1packing_1_1vbp_1_1VectorBinPackingSolution_1_1__Internal.html", "classoperations__research_1_1packing_1_1vbp_1_1VectorBinPackingSolution_1_1__Internal" ],
+    [ "ABSL_ATTRIBUTE_SECTION_VARIABLE", "vector__bin__packing_8pb_8cc.html#ad4f3d04e1d28b72ea5a254ddd0f25bf4", null ],
+    [ "operations_research::packing::vbp::VectorBinPackingSolveStatus_descriptor", "namespaceoperations__research_1_1packing_1_1vbp.html#a04e742be1128bbc228636cb3181f4182", null ],
+    [ "operations_research::packing::vbp::_Item_default_instance_", "namespaceoperations__research_1_1packing_1_1vbp.html#ad0fe4cc67aff24c316bbcd11b5f7533c", null ],
+    [ "_static_init2_", "vector__bin__packing_8pb_8cc.html#a26f6631ae35f89b61dd25e685175b218", null ],
+    [ "operations_research::packing::vbp::_VectorBinPackingOneBinInSolution_default_instance_", "namespaceoperations__research_1_1packing_1_1vbp.html#af1438b3588a80e2b1dea5ba966c79283", null ],
+    [ "operations_research::packing::vbp::_VectorBinPackingProblem_default_instance_", "namespaceoperations__research_1_1packing_1_1vbp.html#af1ad4686613766aaa0babfe3f112ead1", null ],
+    [ "operations_research::packing::vbp::_VectorBinPackingSolution_default_instance_", "namespaceoperations__research_1_1packing_1_1vbp.html#abdb1f236f1fc70c76aee5502dead48be", null ],
+    [ "descriptor_table_ortools_2fpacking_2fvector_5fbin_5fpacking_2eproto", "vector__bin__packing_8pb_8cc.html#a3ff8c16bcc923d6daf9966ea68144ecc", null ],
+    [ "descriptor_table_ortools_2fpacking_2fvector_5fbin_5fpacking_2eproto_once", "vector__bin__packing_8pb_8cc.html#a535041ffced9ac8d1fd48f412d218ad7", null ],
+    [ "file_default_instances", "vector__bin__packing_8pb_8cc.html#a83abc5480b4ad2d5a1b90d823a1fc00f", null ],
+    [ "file_level_enum_descriptors_ortools_2fpacking_2fvector_5fbin_5fpacking_2eproto", "vector__bin__packing_8pb_8cc.html#a1fb785b8784714669f97962fea2b1574", null ],
+    [ "file_level_service_descriptors_ortools_2fpacking_2fvector_5fbin_5fpacking_2eproto", "vector__bin__packing_8pb_8cc.html#a34e968af76ff42992d4545abd63f0946", null ],
+    [ "operations_research::packing::vbp::Item_class_data_", "namespaceoperations__research_1_1packing_1_1vbp.html#a651daa7fdbebf4f0b9b2884bdeb468f3", null ],
+    [ "operations_research::packing::vbp::VectorBinPackingOneBinInSolution_class_data_", "namespaceoperations__research_1_1packing_1_1vbp.html#ac21bde113d48cb327bbde057beeda6ae", null ],
+    [ "operations_research::packing::vbp::VectorBinPackingProblem_class_data_", "namespaceoperations__research_1_1packing_1_1vbp.html#a8d39366a8394e1a9823fafd8acbeca1f", null ],
+    [ "operations_research::packing::vbp::VectorBinPackingSolution_class_data_", "namespaceoperations__research_1_1packing_1_1vbp.html#a3d44c082935203183962f0846679d204", null ],
+    [ "operations_research::packing::vbp::VectorBinPackingSolveStatus_internal_data_", "namespaceoperations__research_1_1packing_1_1vbp.html#a2670cee8b88c56e3cfd634e5a72699e5", null ]
+];

@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,12 @@ $(function(){initNavTree('classoperations__research_1_1GenericPathContainer.html
   <div class="headertitle"><div class="title">operations_research::GenericPathContainer&lt; GraphType &gt; Class Template Reference<span class="mlabels"><span class="mlabel abstract">abstract</span></span></div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;class GraphType&gt;<br />
+class operations_research::GenericPathContainer&lt; GraphType &gt;</div><p>Container class storing paths and distances along the paths. It is used in shortest path computation functions to store resulting shortest paths. Usage example iterating on the path between nodes <span class="tt">from</span> and <span class="tt">to</span>: GenericPathContainer&lt;StaticGraph&lt;&gt;&gt; container = <a class="el" href="classoperations__research_1_1GenericPathContainer.html">GenericPathContainer</a>&lt; StaticGraph&lt;&gt;&gt;::BuildInMemoryCompactPathContainer(); ///&lt; ... fill up container ... const <a class="el" href="#a11e3a4ddf578bfcb8a0ee2515419dbbd">GenericPathContainer::NodeIndex</a> from =...; <a class="el" href="#a11e3a4ddf578bfcb8a0ee2515419dbbd">GenericPathContainer::NodeIndex</a> to =...; while (to != from) { LOG(INFO) &lt;&lt; to; to = container.GetPenultimateNodeInPath(from, to); } </p>
 
+<p class="definition">Definition at line <a class="el" href="shortest__paths_8h_source.html#l00114">114</a> of file <a class="el" href="shortest__paths_8h_source.html">shortest_paths.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="shortest__paths_8h_source.html">shortest_paths.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-types" class="groupheader"><a id="pub-types" name="pub-types"></a>
@@ -115,12 +121,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a12b56cdbf45dcdd63b761bbcde20cb95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns path nodes from node <span class="tt">from</span> to node <span class="tt">to</span> in a ordered vector.  <br /></td></tr>
 <tr class="memitem:a0febd521212bcaa26eabf633b2ac833a" id="r_a0febd521212bcaa26eabf633b2ac833a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0febd521212bcaa26eabf633b2ac833a">StoreSingleSourcePaths</a> (<a class="el" href="#a11e3a4ddf578bfcb8a0ee2515419dbbd">NodeIndex</a> from, const std::vector&lt; <a class="el" href="#a11e3a4ddf578bfcb8a0ee2515419dbbd">NodeIndex</a> &gt; &amp;predecessor_in_path_tree, const std::vector&lt; <a class="el" href="namespaceoperations__research.html#a9d0b51193192a89d45cca391dfb13d4b">PathDistance</a> &gt; &amp;distance_to_destination)=0</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;class GraphType&gt;<br />
-class operations_research::GenericPathContainer&lt; GraphType &gt;</div><p>Container class storing paths and distances along the paths. It is used in shortest path computation functions to store resulting shortest paths. Usage example iterating on the path between nodes <span class="tt">from</span> and <span class="tt">to</span>: GenericPathContainer&lt;StaticGraph&lt;&gt;&gt; container = <a class="el" href="classoperations__research_1_1GenericPathContainer.html">GenericPathContainer</a>&lt; StaticGraph&lt;&gt;&gt;::BuildInMemoryCompactPathContainer(); ///&lt; ... fill up container ... const <a class="el" href="#a11e3a4ddf578bfcb8a0ee2515419dbbd">GenericPathContainer::NodeIndex</a> from =...; <a class="el" href="#a11e3a4ddf578bfcb8a0ee2515419dbbd">GenericPathContainer::NodeIndex</a> to =...; while (to != from) { LOG(INFO) &lt;&lt; to; to = container.GetPenultimateNodeInPath(from, to); } </p>
-
-<p class="definition">Definition at line <a class="el" href="shortest__paths_8h_source.html#l00114">114</a> of file <a class="el" href="shortest__paths_8h_source.html">shortest_paths.h</a>.</p>
-</div><a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Member Typedef Documentation</h2>
+<a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Member Typedef Documentation</h2>
 <a id="a61e36cbd77cdafb89679947c05ddb01c" name="a61e36cbd77cdafb89679947c05ddb01c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a61e36cbd77cdafb89679947c05ddb01c">&#9670;&#160;</a></span>Impl</h2>
 
@@ -317,7 +318,7 @@ template&lt;class GraphType&gt; </div>
                std::vector&lt;NodeIndex&gt;* path) const</a>;</p>
 <p>/ Builds a path container which only stores distances between path nodes. static <a class="el" href="classoperations__research_1_1GenericPathContainer.html">GenericPathContainer</a> BuildPathDistanceContainer();</p>
 <p>/ Builds a path container which stores explicit paths and distances between / path nodes in a memory-compact representation. / In this case <span class="tt"><a class="el" href="#ad5864394b17d07fee5b5f67750a53155">GetPenultimateNodeInPath()</a></span> is <span class="tt">O(log(path_tree_size))</span>, / <span class="tt">path_tree_size</span> being the size of a tree of paths from a source node (in / practice it is equal to the number of nodes in the graph if all nodes / are strongly connected). / <span class="tt">GetPath</span> is <span class="tt">O(log(path_tree_size) + path_size)</span>, where <span class="tt">path_size</span> is the / size of the resulting path; note this is faster than successive calls / to <span class="tt"><a class="el" href="#ad5864394b17d07fee5b5f67750a53155">GetPenultimateNodeInPath()</a></span> which would result in / <span class="tt">O(log(path_tree_size) * path_size)</span>. static <a class="el" href="classoperations__research_1_1GenericPathContainer.html">GenericPathContainer</a> BuildInMemoryCompactPathContainer();</p>
-<p>/ </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000729">Todo</a></b></dt><dd><p class="startdd">(user): Add save-to-disk container. / </p>
+<p>/ </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000728">Todo</a></b></dt><dd><p class="startdd">(user): Add save-to-disk container. / </p>
 <p class="enddd">(user): Add <span class="tt">BuildInMemoryFastPathContainer()</span>, which does / <span class="tt"><a class="el" href="#ad5864394b17d07fee5b5f67750a53155">GetPenultimateNodeInPath()</a></span> in <span class="tt">O(1)</span>.</p>
 </dd></dl>
 <p>/ For internal use only. Returns the internal container implementation. Impl* GetImplementation() const { return container_.get(); }</p>

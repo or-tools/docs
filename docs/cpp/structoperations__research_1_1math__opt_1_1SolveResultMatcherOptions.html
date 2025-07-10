@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -98,7 +99,11 @@ $(function(){initNavTree('structoperations__research_1_1math__opt_1_1SolveResult
 
 <p>Configures SolveResult matcher <a class="el" href="namespaceoperations__research_1_1math__opt.html#a5bbd7f9bb03a4a2d0e78733f86affc00">IsConsistentWith()</a> below.  
  <a href="#details">More...</a></p>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Configures SolveResult matcher <a class="el" href="namespaceoperations__research_1_1math__opt.html#a5bbd7f9bb03a4a2d0e78733f86affc00">IsConsistentWith()</a> below. </p>
 
+<p class="definition">Definition at line <a class="el" href="matchers_8h_source.html#l00385">385</a> of file <a class="el" href="matchers_8h_source.html">matchers.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="matchers_8h_source.html">matchers.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
@@ -110,11 +115,7 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:ae41b54030c8d6d4345348e188263eb7b" id="r_ae41b54030c8d6d4345348e188263eb7b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae41b54030c8d6d4345348e188263eb7b">check_solutions_if_inf_or_unbounded</a> = <a class="el" href="namespaceoperations__research_1_1math__opt.html#a205a4eeabeae0d2c1701527fce48485d">false</a></td></tr>
 <tr class="memitem:a5f94175cf02178f7dc176635602418a5" id="r_a5f94175cf02178f7dc176635602418a5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5f94175cf02178f7dc176635602418a5">check_basis</a> = <a class="el" href="namespaceoperations__research_1_1math__opt.html#a205a4eeabeae0d2c1701527fce48485d">false</a></td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Configures SolveResult matcher <a class="el" href="namespaceoperations__research_1_1math__opt.html#a5bbd7f9bb03a4a2d0e78733f86affc00">IsConsistentWith()</a> below. </p>
-
-<p class="definition">Definition at line <a class="el" href="matchers_8h_source.html#l00385">385</a> of file <a class="el" href="matchers_8h_source.html">matchers.h</a>.</p>
-</div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
 <a id="a5f94175cf02178f7dc176635602418a5" name="a5f94175cf02178f7dc176635602418a5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5f94175cf02178f7dc176635602418a5">&#9670;&#160;</a></span>check_basis</h2>
 
@@ -175,7 +176,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>If the expected result has termination reason kInfeasible, kUnbounded, or kDualInfeasasible, the primal solution, dual solution, and basis are ignored unless check_solutions_if_inf_or_unbounded is true.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000915">Todo</a></b></dt><dd>(b/201099290): this is perhaps not a good default. <a class="el" href="classoperations__research_1_1math__opt_1_1Gurobi.html">Gurobi</a> as implemented is returning primal solutions for both unbounded and infeasible problems. We need to add unit tests that inspect this value and turn them on one solver at a time with a new parameter on <a class="el" href="structoperations__research_1_1math__opt_1_1SimpleLpTestParameters.html">SimpleLpTestParameters</a>. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000914">Todo</a></b></dt><dd>(b/201099290): this is perhaps not a good default. <a class="el" href="classoperations__research_1_1math__opt_1_1Gurobi.html">Gurobi</a> as implemented is returning primal solutions for both unbounded and infeasible problems. We need to add unit tests that inspect this value and turn them on one solver at a time with a new parameter on <a class="el" href="structoperations__research_1_1math__opt_1_1SimpleLpTestParameters.html">SimpleLpTestParameters</a>. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="matchers_8h_source.html#l00400">400</a> of file <a class="el" href="matchers_8h_source.html">matchers.h</a>.</p>
 

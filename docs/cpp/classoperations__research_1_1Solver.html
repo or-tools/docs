@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -98,7 +99,21 @@ $(function(){initNavTree('classoperations__research_1_1Solver.html','','classope
 
 <p>For the time being, <a class="el" href="classoperations__research_1_1Solver.html" title="For the time being, Solver is neither MT_SAFE nor MT_HOT.">Solver</a> is neither MT_SAFE nor MT_HOT.  
  <a href="#details">More...</a></p>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>For the time being, <a class="el" href="classoperations__research_1_1Solver.html" title="For the time being, Solver is neither MT_SAFE nor MT_HOT.">Solver</a> is neither MT_SAFE nor MT_HOT. </p>
+<p><a class="el" href="classoperations__research_1_1Solver.html" title="For the time being, Solver is neither MT_SAFE nor MT_HOT.">Solver</a> Class A solver represents the main computation engine. It implements the entire range of <a class="el" href="classoperations__research_1_1Constraint.html">Constraint</a> Programming protocols:</p><ul>
+<li>Reversibility</li>
+<li>Propagation</li>
+<li><a class="el" href="classoperations__research_1_1Search.html" title="---------------— Search class --------------—">Search</a> Usually, <a class="el" href="classoperations__research_1_1Constraint.html">Constraint</a> Programming code consists of</li>
+<li>the creation of the <a class="el" href="classoperations__research_1_1Solver.html" title="For the time being, Solver is neither MT_SAFE nor MT_HOT.">Solver</a>,</li>
+<li>the creation of the decision variables of the model,</li>
+<li>the creation of the constraints of the model and their addition to the solver() through the <a class="el" href="#af9a8dcb10115cf35adee15cdd85f684c">AddConstraint()</a> method,</li>
+<li>the creation of the main <a class="el" href="classoperations__research_1_1DecisionBuilder.html">DecisionBuilder</a> class,</li>
+<li>the launch of the solve() method with the decision builder. </li>
+</ul>
 
+<p class="definition">Definition at line <a class="el" href="constraint__solver_8h_source.html#l00271">271</a> of file <a class="el" href="constraint__solver_8h_source.html">constraint_solver.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="constraint__solver_8h_source.html">constraint_solver.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
@@ -298,14 +313,14 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:af4d2c143bd1e769ab96a69a8ab855136" id="r_af4d2c143bd1e769ab96a69a8ab855136"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af4d2c143bd1e769ab96a69a8ab855136">Solver</a> (const std::string &amp;name)</td></tr>
 <tr class="memdesc:af4d2c143bd1e769ab96a69a8ab855136"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classoperations__research_1_1Solver.html" title="For the time being, Solver is neither MT_SAFE nor MT_HOT.">Solver</a> API.  <br /></td></tr>
-<tr class="memitem:a1aceea22f252449e417cc4bf7ec749d8" id="r_a1aceea22f252449e417cc4bf7ec749d8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1aceea22f252449e417cc4bf7ec749d8">Solver</a> (const std::string &amp;name, const ConstraintSolverParameters &amp;<a class="el" href="#adb77a0b4b40ea4e8282cf78b54717cd6">parameters</a>)</td></tr>
+<tr class="memitem:a1aceea22f252449e417cc4bf7ec749d8" id="r_a1aceea22f252449e417cc4bf7ec749d8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1aceea22f252449e417cc4bf7ec749d8">Solver</a> (const std::string &amp;name, const <a class="el" href="classoperations__research_1_1ConstraintSolverParameters.html">ConstraintSolverParameters</a> &amp;<a class="el" href="#adb77a0b4b40ea4e8282cf78b54717cd6">parameters</a>)</td></tr>
 <tr class="memitem:a0a1d88d91bb797580eac2807ec0a422f" id="r_a0a1d88d91bb797580eac2807ec0a422f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0a1d88d91bb797580eac2807ec0a422f">Solver</a> (const <a class="el" href="classoperations__research_1_1Solver.html">Solver</a> &amp;)=delete</td></tr>
 <tr class="memdesc:a0a1d88d91bb797580eac2807ec0a422f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This type is neither copyable nor movable.  <br /></td></tr>
 <tr class="memitem:a3ef7394a8cfc369ee23ed3bb72d22454" id="r_a3ef7394a8cfc369ee23ed3bb72d22454"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoperations__research_1_1Solver.html">Solver</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3ef7394a8cfc369ee23ed3bb72d22454">operator=</a> (const <a class="el" href="classoperations__research_1_1Solver.html">Solver</a> &amp;)=delete</td></tr>
 <tr class="memitem:a663bdb75f27a96e424ad2a7a4ba397ec" id="r_a663bdb75f27a96e424ad2a7a4ba397ec"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a663bdb75f27a96e424ad2a7a4ba397ec">~Solver</a> ()</td></tr>
-<tr class="memitem:adb77a0b4b40ea4e8282cf78b54717cd6" id="r_adb77a0b4b40ea4e8282cf78b54717cd6"><td class="memItemLeft" align="right" valign="top">ConstraintSolverParameters&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adb77a0b4b40ea4e8282cf78b54717cd6">parameters</a> () const</td></tr>
+<tr class="memitem:adb77a0b4b40ea4e8282cf78b54717cd6" id="r_adb77a0b4b40ea4e8282cf78b54717cd6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoperations__research_1_1ConstraintSolverParameters.html">ConstraintSolverParameters</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adb77a0b4b40ea4e8282cf78b54717cd6">parameters</a> () const</td></tr>
 <tr class="memdesc:adb77a0b4b40ea4e8282cf78b54717cd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stored Parameters.  <br /></td></tr>
-<tr class="memitem:a47804adf79bc73bbd86a177196a74632" id="r_a47804adf79bc73bbd86a177196a74632"><td class="memItemLeft" align="right" valign="top">const ConstraintSolverParameters &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a47804adf79bc73bbd86a177196a74632">const_parameters</a> () const</td></tr>
+<tr class="memitem:a47804adf79bc73bbd86a177196a74632" id="r_a47804adf79bc73bbd86a177196a74632"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classoperations__research_1_1ConstraintSolverParameters.html">ConstraintSolverParameters</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a47804adf79bc73bbd86a177196a74632">const_parameters</a> () const</td></tr>
 <tr class="memdesc:a47804adf79bc73bbd86a177196a74632"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read-only.  <br /></td></tr>
 <tr class="memitem:add51e06535f44461347658d8ce59979a" id="r_add51e06535f44461347658d8ce59979a"><td class="memTemplParams" colspan="2">template&lt;class T&gt; </td></tr>
 <tr class="memitem:add51e06535f44461347658d8ce59979a template"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#add51e06535f44461347658d8ce59979a">SaveValue</a> (T *o)</td></tr>
@@ -767,10 +782,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a499505dbbb555cf9007bcee72df0eafb" id="r_a499505dbbb555cf9007bcee72df0eafb"><td class="memItemLeft" align="right" valign="top">ABSL_MUST_USE_RESULT <a class="el" href="classoperations__research_1_1RegularLimit.html">RegularLimit</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a499505dbbb555cf9007bcee72df0eafb">MakeFailuresLimit</a> (int64_t <a class="el" href="#ae85acb6ac04ee41ba912cb66ff09e12f">failures</a>)</td></tr>
 <tr class="memitem:a37c2e533d3bd4b836591c10e09f03187" id="r_a37c2e533d3bd4b836591c10e09f03187"><td class="memItemLeft" align="right" valign="top">ABSL_MUST_USE_RESULT <a class="el" href="classoperations__research_1_1RegularLimit.html">RegularLimit</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a37c2e533d3bd4b836591c10e09f03187">MakeSolutionsLimit</a> (int64_t <a class="el" href="#a314a3bad1ebd0497d5a4d2a732f6f376">solutions</a>)</td></tr>
 <tr class="memitem:ad5d77a3637835eea94d57d5ec0a62003" id="r_ad5d77a3637835eea94d57d5ec0a62003"><td class="memItemLeft" align="right" valign="top">ABSL_MUST_USE_RESULT <a class="el" href="classoperations__research_1_1RegularLimit.html">RegularLimit</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad5d77a3637835eea94d57d5ec0a62003">MakeLimit</a> (absl::Duration time, int64_t <a class="el" href="#a270da3473fd59f8d3371f6772b43d658">branches</a>, int64_t <a class="el" href="#ae85acb6ac04ee41ba912cb66ff09e12f">failures</a>, int64_t <a class="el" href="#a314a3bad1ebd0497d5a4d2a732f6f376">solutions</a>, bool smart_time_check=false, bool cumulative=false)</td></tr>
-<tr class="memitem:a580d41dd7f8555ef6d5bb6525c5c49bd" id="r_a580d41dd7f8555ef6d5bb6525c5c49bd"><td class="memItemLeft" align="right" valign="top">ABSL_MUST_USE_RESULT <a class="el" href="classoperations__research_1_1RegularLimit.html">RegularLimit</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a580d41dd7f8555ef6d5bb6525c5c49bd">MakeLimit</a> (const RegularLimitParameters &amp;proto)</td></tr>
+<tr class="memitem:a580d41dd7f8555ef6d5bb6525c5c49bd" id="r_a580d41dd7f8555ef6d5bb6525c5c49bd"><td class="memItemLeft" align="right" valign="top">ABSL_MUST_USE_RESULT <a class="el" href="classoperations__research_1_1RegularLimit.html">RegularLimit</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a580d41dd7f8555ef6d5bb6525c5c49bd">MakeLimit</a> (const <a class="el" href="classoperations__research_1_1RegularLimitParameters.html">RegularLimitParameters</a> &amp;proto)</td></tr>
 <tr class="memdesc:a580d41dd7f8555ef6d5bb6525c5c49bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a search limit from its protobuf description.  <br /></td></tr>
 <tr class="memitem:ad061f878f23b47805a7266eb506068ac" id="r_ad061f878f23b47805a7266eb506068ac"><td class="memItemLeft" align="right" valign="top">ABSL_MUST_USE_RESULT <a class="el" href="classoperations__research_1_1RegularLimit.html">RegularLimit</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad061f878f23b47805a7266eb506068ac">MakeLimit</a> (int64_t time, int64_t <a class="el" href="#a270da3473fd59f8d3371f6772b43d658">branches</a>, int64_t <a class="el" href="#ae85acb6ac04ee41ba912cb66ff09e12f">failures</a>, int64_t <a class="el" href="#a314a3bad1ebd0497d5a4d2a732f6f376">solutions</a>, bool smart_time_check=false, bool cumulative=false)</td></tr>
-<tr class="memitem:ae91967e7ceb0016a3bc1d177a17c1ef9" id="r_ae91967e7ceb0016a3bc1d177a17c1ef9"><td class="memItemLeft" align="right" valign="top">RegularLimitParameters&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae91967e7ceb0016a3bc1d177a17c1ef9">MakeDefaultRegularLimitParameters</a> () const</td></tr>
+<tr class="memitem:ae91967e7ceb0016a3bc1d177a17c1ef9" id="r_ae91967e7ceb0016a3bc1d177a17c1ef9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoperations__research_1_1RegularLimitParameters.html">RegularLimitParameters</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae91967e7ceb0016a3bc1d177a17c1ef9">MakeDefaultRegularLimitParameters</a> () const</td></tr>
 <tr class="memdesc:ae91967e7ceb0016a3bc1d177a17c1ef9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a regular limit proto containing default values.  <br /></td></tr>
 <tr class="memitem:a440aa7781dcda9c63c20befadf6eaef9" id="r_a440aa7781dcda9c63c20befadf6eaef9"><td class="memItemLeft" align="right" valign="top">ABSL_MUST_USE_RESULT <a class="el" href="classoperations__research_1_1SearchLimit.html">SearchLimit</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a440aa7781dcda9c63c20befadf6eaef9">MakeLimit</a> (<a class="el" href="classoperations__research_1_1SearchLimit.html">SearchLimit</a> *limit_1, <a class="el" href="classoperations__research_1_1SearchLimit.html">SearchLimit</a> *limit_2)</td></tr>
 <tr class="memitem:afc3a7fba3e406404b9c2888fa9db1ea1" id="r_afc3a7fba3e406404b9c2888fa9db1ea1"><td class="memItemLeft" align="right" valign="top">ABSL_MUST_USE_RESULT <a class="el" href="classoperations__research_1_1ImprovementSearchLimit.html">ImprovementSearchLimit</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afc3a7fba3e406404b9c2888fa9db1ea1">MakeImprovementLimit</a> (<a class="el" href="classoperations__research_1_1IntVar.html">IntVar</a> *objective_var, bool maximize, double objective_scaling_factor, double objective_offset, double improvement_rate_coefficient, int improvement_rate_solutions_distance)</td></tr>
@@ -923,9 +938,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ae1c4c6a2867f43ad6154815dea899572"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reseed the solver random generator.  <br /></td></tr>
 <tr class="memitem:a10095177497184eb69d38915b04e2b82" id="r_a10095177497184eb69d38915b04e2b82"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a10095177497184eb69d38915b04e2b82">ExportProfilingOverview</a> (const std::string &amp;filename)</td></tr>
 <tr class="memitem:a64fd8adbc00c3bed16bf4b824dfd3e2b" id="r_a64fd8adbc00c3bed16bf4b824dfd3e2b"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a64fd8adbc00c3bed16bf4b824dfd3e2b">LocalSearchProfile</a> () const</td></tr>
-<tr class="memitem:a751c536088789fc5da1ee3b3360e3f07" id="r_a751c536088789fc5da1ee3b3360e3f07"><td class="memItemLeft" align="right" valign="top">ConstraintSolverStatistics&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a751c536088789fc5da1ee3b3360e3f07">GetConstraintSolverStatistics</a> () const</td></tr>
+<tr class="memitem:a751c536088789fc5da1ee3b3360e3f07" id="r_a751c536088789fc5da1ee3b3360e3f07"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoperations__research_1_1ConstraintSolverStatistics.html">ConstraintSolverStatistics</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a751c536088789fc5da1ee3b3360e3f07">GetConstraintSolverStatistics</a> () const</td></tr>
 <tr class="memdesc:a751c536088789fc5da1ee3b3360e3f07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns detailed cp search statistics.  <br /></td></tr>
-<tr class="memitem:a625b3b11904e3066c9399950289d735f" id="r_a625b3b11904e3066c9399950289d735f"><td class="memItemLeft" align="right" valign="top">LocalSearchStatistics&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a625b3b11904e3066c9399950289d735f">GetLocalSearchStatistics</a> () const</td></tr>
+<tr class="memitem:a625b3b11904e3066c9399950289d735f" id="r_a625b3b11904e3066c9399950289d735f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoperations__research_1_1LocalSearchStatistics.html">LocalSearchStatistics</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a625b3b11904e3066c9399950289d735f">GetLocalSearchStatistics</a> () const</td></tr>
 <tr class="memdesc:a625b3b11904e3066c9399950289d735f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns detailed local search statistics.  <br /></td></tr>
 <tr class="memitem:a06878b72d0eb67da9c177f29468a721c" id="r_a06878b72d0eb67da9c177f29468a721c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a06878b72d0eb67da9c177f29468a721c">CurrentlyInSolve</a> () const</td></tr>
 <tr class="memitem:a0683bc1537d5fbc81ae0a2f0c271cd75" id="r_a0683bc1537d5fbc81ae0a2f0c271cd75"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0683bc1537d5fbc81ae0a2f0c271cd75">constraints</a> () const</td></tr>
@@ -1010,8 +1025,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a00ddb4cf5be5463ec6b494808bc8f192" id="r_a00ddb4cf5be5463ec6b494808bc8f192"><td class="memItemLeft" align="right" valign="top">static ConstraintSolverParameters&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a00ddb4cf5be5463ec6b494808bc8f192">DefaultSolverParameters</a> ()</td></tr>
-<tr class="memdesc:a00ddb4cf5be5463ec6b494808bc8f192"><td class="mdescLeft">&#160;</td><td class="mdescRight">--&mdash; ConstraintSolverParameters --&mdash;  <br /></td></tr>
+<tr class="memitem:a00ddb4cf5be5463ec6b494808bc8f192" id="r_a00ddb4cf5be5463ec6b494808bc8f192"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classoperations__research_1_1ConstraintSolverParameters.html">ConstraintSolverParameters</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a00ddb4cf5be5463ec6b494808bc8f192">DefaultSolverParameters</a> ()</td></tr>
+<tr class="memdesc:a00ddb4cf5be5463ec6b494808bc8f192"><td class="mdescLeft">&#160;</td><td class="mdescRight">--&mdash; <a class="el" href="classoperations__research_1_1ConstraintSolverParameters.html">ConstraintSolverParameters</a> --&mdash;  <br /></td></tr>
 <tr class="memitem:af86275339e0bcb06e3de2ae17b6f1d51" id="r_af86275339e0bcb06e3de2ae17b6f1d51"><td class="memItemLeft" align="right" valign="top">static int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af86275339e0bcb06e3de2ae17b6f1d51">MemoryUsage</a> ()</td></tr>
 <tr class="memdesc:af86275339e0bcb06e3de2ae17b6f1d51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current memory usage in bytes.  <br /></td></tr>
 </table><table class="memberdecls">
@@ -1044,21 +1059,7 @@ Friends</h2></td></tr>
 <tr class="memitem:a523b4c1786dd34b9d1fa2579b91b4c0d template"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a523b4c1786dd34b9d1fa2579b91b4c0d">RevImmutableMultiMap</a></td></tr>
 <tr class="memitem:aded27ed020f7b98fbcf3aaf30bbc141a" id="r_aded27ed020f7b98fbcf3aaf30bbc141a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aded27ed020f7b98fbcf3aaf30bbc141a">InternalSaveBooleanVarValue</a> (<a class="el" href="classoperations__research_1_1Solver.html">Solver</a> *solver, <a class="el" href="classoperations__research_1_1IntVar.html">IntVar</a> *var)</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>For the time being, <a class="el" href="classoperations__research_1_1Solver.html" title="For the time being, Solver is neither MT_SAFE nor MT_HOT.">Solver</a> is neither MT_SAFE nor MT_HOT. </p>
-<p><a class="el" href="classoperations__research_1_1Solver.html" title="For the time being, Solver is neither MT_SAFE nor MT_HOT.">Solver</a> Class A solver represents the main computation engine. It implements the entire range of <a class="el" href="classoperations__research_1_1Constraint.html">Constraint</a> Programming protocols:</p><ul>
-<li>Reversibility</li>
-<li>Propagation</li>
-<li><a class="el" href="classoperations__research_1_1Search.html" title="---------------— Search class --------------—">Search</a> Usually, <a class="el" href="classoperations__research_1_1Constraint.html">Constraint</a> Programming code consists of</li>
-<li>the creation of the <a class="el" href="classoperations__research_1_1Solver.html" title="For the time being, Solver is neither MT_SAFE nor MT_HOT.">Solver</a>,</li>
-<li>the creation of the decision variables of the model,</li>
-<li>the creation of the constraints of the model and their addition to the solver() through the <a class="el" href="#af9a8dcb10115cf35adee15cdd85f684c">AddConstraint()</a> method,</li>
-<li>the creation of the main <a class="el" href="classoperations__research_1_1DecisionBuilder.html">DecisionBuilder</a> class,</li>
-<li>the launch of the solve() method with the decision builder. </li>
-</ul>
-
-<p class="definition">Definition at line <a class="el" href="constraint__solver_8h_source.html#l00271">271</a> of file <a class="el" href="constraint__solver_8h_source.html">constraint_solver.h</a>.</p>
-</div><a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Member Typedef Documentation</h2>
+<a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Member Typedef Documentation</h2>
 <a id="a87ca0b6abf9c8724900387f5aa557c04" name="a87ca0b6abf9c8724900387f5aa557c04"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a87ca0b6abf9c8724900387f5aa557c04">&#9670;&#160;</a></span>Action</h2>
 
@@ -1070,7 +1071,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000110">Todo</a></b></dt><dd>(user): wrap in swig. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000109">Todo</a></b></dt><dd>(user): wrap in swig. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="constraint__solver_8h_source.html#l00820">820</a> of file <a class="el" href="constraint__solver_8h_source.html">constraint_solver.h</a>.</p>
 
@@ -1418,7 +1419,7 @@ EvaluatorStrategy)</a>, the selection is done scanning every pair &lt;variable, 
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000109">Todo</a></b></dt><dd>(user): add HIGHEST_MIN and LOWEST_MAX. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000108">Todo</a></b></dt><dd>(user): add HIGHEST_MIN and LOWEST_MAX. </dd></dl>
 <p>This enum describes the strategy used to select the next variable value to set. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ae63acd77b8c2ee40387795051298f659a3291dae3d9aa520fe52d1ffaa2a2eadc" name="ae63acd77b8c2ee40387795051298f659a3291dae3d9aa520fe52d1ffaa2a2eadc"></a>INT_VALUE_DEFAULT&#160;</td><td class="fielddoc"><p>The default behavior is ASSIGN_MIN_VALUE. </p>
@@ -1802,7 +1803,7 @@ EvaluatorStrategy)</a>, the selection is done scanning every pair &lt;variable, 
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const ConstraintSolverParameters &amp;</td>          <td class="paramname"><span class="paramname"><em>parameters</em></span>&#160;)</td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1ConstraintSolverParameters.html">ConstraintSolverParameters</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>parameters</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2045,7 +2046,7 @@ MyConstraint(...)); </li>
       </table>
 </div><div class="memdoc">
 <p>Adds the propagation monitor to the solver. This is called internally when a propagation monitor is passed to the <a class="el" href="#adcb3dc77715de3735c49c95e91a9770a">Solve()</a> or <a class="el" href="#a4c57adb4aa21bbbb303282a2fb12a546" title="Opens a new top level search.">NewSearch()</a> method. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000106">Todo</a></b></dt><dd>(user): Check solver state? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000105">Todo</a></b></dt><dd>(user): Check solver state? </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="constraint__solver_8cc_source.html#l03154">3154</a> of file <a class="el" href="constraint__solver_8cc_source.html">constraint_solver.cc</a>.</p>
 
@@ -2300,7 +2301,7 @@ MyConstraint(...)); </li>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Manipulate neighbors count; to be used for testing purposes only. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000112">Todo</a></b></dt><dd>(user): Find a workaround to avoid exposing this. </dd></dl>
+<p>Manipulate neighbors count; to be used for testing purposes only. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000111">Todo</a></b></dt><dd>(user): Find a workaround to avoid exposing this. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="constraint__solver_8h_source.html#l01087">1087</a> of file <a class="el" href="constraint__solver_8h_source.html">constraint_solver.h</a>.</p>
 
@@ -2487,7 +2488,7 @@ MyConstraint(...)); </li>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const ConstraintSolverParameters &amp; operations_research::Solver::const_parameters </td>
+          <td class="memname">const <a class="el" href="classoperations__research_1_1ConstraintSolverParameters.html">ConstraintSolverParameters</a> &amp; operations_research::Solver::const_parameters </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
@@ -2615,7 +2616,7 @@ MyConstraint(...)); </li>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">ConstraintSolverParameters operations_research::Solver::DefaultSolverParameters </td>
+          <td class="memname"><a class="el" href="classoperations__research_1_1ConstraintSolverParameters.html">ConstraintSolverParameters</a> operations_research::Solver::DefaultSolverParameters </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -2628,8 +2629,8 @@ MyConstraint(...)); </li>
 </table>
 </div><div class="memdoc">
 
-<p>--&mdash; ConstraintSolverParameters --&mdash; </p>
-<p>Create a ConstraintSolverParameters proto with all the default values. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000111">Todo</a></b></dt><dd>(user): Move to constraint_solver_parameters.h. </dd></dl>
+<p>--&mdash; <a class="el" href="classoperations__research_1_1ConstraintSolverParameters.html">ConstraintSolverParameters</a> --&mdash; </p>
+<p>Create a <a class="el" href="classoperations__research_1_1ConstraintSolverParameters.html">ConstraintSolverParameters</a> proto with all the default values. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000110">Todo</a></b></dt><dd>(user): Move to constraint_solver_parameters.h. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="constraint__solver_8cc_source.html#l00129">129</a> of file <a class="el" href="constraint__solver_8cc_source.html">constraint_solver.cc</a>.</p>
 
@@ -2862,7 +2863,7 @@ MyConstraint(...)); </li>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">ConstraintSolverStatistics operations_research::Solver::GetConstraintSolverStatistics </td>
+          <td class="memname"><a class="el" href="classoperations__research_1_1ConstraintSolverStatistics.html">ConstraintSolverStatistics</a> operations_research::Solver::GetConstraintSolverStatistics </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
@@ -2942,7 +2943,7 @@ MyConstraint(...)); </li>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">LocalSearchStatistics operations_research::Solver::GetLocalSearchStatistics </td>
+          <td class="memname"><a class="el" href="classoperations__research_1_1LocalSearchStatistics.html">LocalSearchStatistics</a> operations_research::Solver::GetLocalSearchStatistics </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
@@ -2970,7 +2971,7 @@ MyConstraint(...)); </li>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns (or creates) an assignment representing the state of local search. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000128">Todo</a></b></dt><dd>(user): Investigate if this should be moved to <a class="el" href="classoperations__research_1_1Search.html" title="---------------— Search class --------------—">Search</a>. </dd></dl>
+<p>Returns (or creates) an assignment representing the state of local search. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000127">Todo</a></b></dt><dd>(user): Investigate if this should be moved to <a class="el" href="classoperations__research_1_1Search.html" title="---------------— Search class --------------—">Search</a>. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="constraint__solver_8cc_source.html#l03255">3255</a> of file <a class="el" href="constraint__solver_8cc_source.html">constraint_solver.cc</a>.</p>
 
@@ -3061,7 +3062,7 @@ MyConstraint(...)); </li>
 </div><div class="memdoc">
 
 <p>Returns whether we are instrumenting demons. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000101">Todo</a></b></dt><dd>(user): remove this complex logic. We need the double test because parameters are set too late when using python in the open source. This is the cheapest work-around. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000100">Todo</a></b></dt><dd>(user): remove this complex logic. We need the double test because parameters are set too late when using python in the open source. This is the cheapest work-around. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="constraint__solver_8cc_source.html#l00180">180</a> of file <a class="el" href="constraint__solver_8cc_source.html">constraint_solver.cc</a>.</p>
 
@@ -3113,7 +3114,7 @@ MyConstraint(...)); </li>
 </div><div class="memdoc">
 <p>Returns true if expr represents either boolean_var or 1 - boolean_var. In that case, it fills inner_var and is_negated to be true if the expression is 1 - boolean_var &ndash; equivalent to not(boolean_var). </p>
 
-<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l07508">7508</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l07505">7505</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
 
 </div>
 </div>
@@ -3163,7 +3164,7 @@ MyConstraint(...)); </li>
 </div><div class="memdoc">
 <p>Returns true if expr represents a product of a expr and a constant. In that case, it fills inner_expr and coefficient with these, and returns true. In the other case, it fills inner_expr with expr, coefficient with 1, and returns false. </p>
 
-<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l07526">7526</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l07523">7523</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
 
 </div>
 </div>
@@ -3202,7 +3203,7 @@ MyConstraint(...)); </li>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns local search profiling information in a human readable format. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000126">Todo</a></b></dt><dd>(user): Merge demon and local search profiles. </dd></dl>
+<p>Returns local search profiling information in a human readable format. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000125">Todo</a></b></dt><dd>(user): Merge demon and local search profiles. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="local__search_8cc_source.html#l03758">3758</a> of file <a class="el" href="local__search_8cc_source.html">local_search.cc</a>.</p>
 
@@ -3225,7 +3226,7 @@ MyConstraint(...)); </li>
 
 <p><span class="tt">expr</span> </p>
 
-<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l07049">7049</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l07046">7046</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
 
 </div>
 </div>
@@ -3250,7 +3251,7 @@ MyConstraint(...)); </li>
 
 <p>Creates the constraint abs(var) == abs_var. </p>
 
-<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l07042">7042</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l07039">7039</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
 
 </div>
 </div>
@@ -3826,7 +3827,7 @@ MyConstraint(...)); </li>
 
 <p>MakeBoolVar will create a variable with a {0, 1} domain. </p>
 
-<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l06444">6444</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l06441">6441</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
 
 </div>
 </div>
@@ -3847,7 +3848,7 @@ MyConstraint(...)); </li>
 
 <p>MakeBoolVar will create a variable with a {0, 1} domain. </p>
 
-<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l06440">6440</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l06437">6437</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
 
 </div>
 </div>
@@ -3872,7 +3873,7 @@ MyConstraint(...)); </li>
 
 <p>Same but allocates an array and returns it. </p>
 
-<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l06581">6581</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l06578">6578</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
 
 </div>
 </div>
@@ -3901,7 +3902,7 @@ MyConstraint(...)); </li>
 </div><div class="memdoc">
 <p>This method will append the vector vars with 'var_count' boolean variables having name "name&lt;i&gt;" where <em> is the index of the variable. </em></p>
 
-<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l06568">6568</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l06565">6565</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
 
 </div>
 </div>
@@ -3925,7 +3926,7 @@ MyConstraint(...)); </li>
 </div><div class="memdoc">
 <p>This method will append the vector vars with 'var_count' boolean variables having no names. </p>
 
-<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l06575">6575</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l06572">6572</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
 
 </div>
 </div>
@@ -3965,7 +3966,7 @@ MyConstraint(...)); </li>
 </div><div class="memdoc">
 
 <p>Force the "nexts" variable to create a complete Hamiltonian path. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000183">Todo</a></b></dt><dd>(user): Merge NoCycle and Circuit. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000182">Todo</a></b></dt><dd>(user): Merge NoCycle and Circuit. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="graph__constraints_8cc_source.html#l00641">641</a> of file <a class="el" href="graph__constraints_8cc_source.html">graph_constraints.cc</a>.</p>
 
@@ -4020,7 +4021,7 @@ MyConstraint(...)); </li>
 <p>Conditional Expr condition ? expr : unperformed_value. </p>
 <p>--&mdash; Conditional Expression --&mdash; </p>
 
-<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l07281">7281</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l07278">7278</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
 
 </div>
 </div>
@@ -4120,7 +4121,7 @@ MyConstraint(...)); </li>
 
 <p>Convex piecewise function. </p>
 
-<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l07194">7194</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l07191">7191</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
 
 </div>
 </div>
@@ -4540,7 +4541,7 @@ MyConstraint(...)); </li>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">RegularLimitParameters operations_research::Solver::MakeDefaultRegularLimitParameters </td>
+          <td class="memname"><a class="el" href="classoperations__research_1_1RegularLimitParameters.html">RegularLimitParameters</a> operations_research::Solver::MakeDefaultRegularLimitParameters </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
@@ -4623,7 +4624,7 @@ MyConstraint(...)); </li>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Delayed version of the same constraint: propagation on the nexts variables is delayed until all constraints have propagated. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000117">Todo</a></b></dt><dd>(user): Merge with other path-cumuls constraints. </dd></dl>
+<p>Delayed version of the same constraint: propagation on the nexts variables is delayed until all constraints have propagated. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000116">Todo</a></b></dt><dd>(user): Merge with other path-cumuls constraints. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="graph__constraints_8cc_source.html#l01329">1329</a> of file <a class="el" href="graph__constraints_8cc_source.html">graph_constraints.cc</a>.</p>
 
@@ -4680,7 +4681,7 @@ MyConstraint(...)); </li>
 <p>value - expr </p>
 <dl class="section warning"><dt>Warning</dt><dd>this is 'value - expr'. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l06739">6739</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l06736">6736</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
 
 </div>
 </div>
@@ -4705,7 +4706,7 @@ MyConstraint(...)); </li>
 
 <p>left - right </p>
 
-<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l06699">6699</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l06696">6696</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
 
 </div>
 </div>
@@ -4916,7 +4917,7 @@ MyConstraint(...)); </li>
 </div><div class="memdoc">
 
 <p>Aggregated version of count: |{i | v[i] == values[j]}| == cards[j]. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000144">Todo</a></b></dt><dd>(user) : we can sort values (and cards) before doing the test. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000143">Todo</a></b></dt><dd>(user) : we can sort values (and cards) before doing the test. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="count__cst_8cc_source.html#l00966">966</a> of file <a class="el" href="count__cst_8cc_source.html">count_cst.cc</a>.</p>
 
@@ -5001,9 +5002,9 @@ MyConstraint(...)); </li>
 </div><div class="memdoc">
 
 <p>expr / value (integer division) </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000164">Todo</a></b></dt><dd>(user) : implement special case. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000163">Todo</a></b></dt><dd>(user) : implement special case. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l07021">7021</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l07018">7018</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
 
 </div>
 </div>
@@ -5028,7 +5029,7 @@ MyConstraint(...)); </li>
 
 <p>numerator / denominator (integer division). Terms need to be positive. </p>
 
-<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l06983">6983</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l06980">6980</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
 
 </div>
 </div>
@@ -6547,7 +6548,7 @@ MyConstraint(...)); </li>
 
 <p>IntConst will create a constant expression. </p>
 
-<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l06523">6523</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l06520">6520</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
 
 </div>
 </div>
@@ -6573,7 +6574,7 @@ MyConstraint(...)); </li>
 <p>IntConst will create a constant expression. </p>
 <p>If IntConst is going to be named after its creation, cp_share_int_consts should be set to false otherwise names can potentially be overwritten.</p>
 
-<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l06512">6512</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l06509">6509</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
 
 </div>
 </div>
@@ -6855,7 +6856,7 @@ MyConstraint(...)); </li>
 
 <p>MakeIntVar will create a variable with the given sparse domain. </p>
 
-<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l06508">6508</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l06505">6505</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
 
 </div>
 </div>
@@ -6880,7 +6881,7 @@ MyConstraint(...)); </li>
 
 <p>MakeIntVar will create a variable with the given sparse domain. </p>
 
-<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l06503">6503</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l06500">6500</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
 
 </div>
 </div>
@@ -6901,7 +6902,7 @@ MyConstraint(...)); </li>
 
 <p>MakeIntVar will create a variable with the given sparse domain. </p>
 
-<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l06499">6499</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l06496">6496</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
 
 </div>
 </div>
@@ -6933,7 +6934,7 @@ MyConstraint(...)); </li>
 <p>If it's 1, though, we can't do anything special, so we immediately return a new DomainIntVar.</p>
 <p>Catch the case where the divided values are a dense set of integers.</p>
 
-<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l06448">6448</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l06445">6445</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
 
 </div>
 </div>
@@ -6958,7 +6959,7 @@ MyConstraint(...)); </li>
 
 <p>MakeIntVar will create the best range based int var for the bounds given. </p>
 
-<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l06436">6436</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l06433">6433</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
 
 </div>
 </div>
@@ -6990,7 +6991,7 @@ MyConstraint(...)); </li>
 <p>--&mdash; API --&mdash;</p>
 <p>All factories (MakeXXX methods) encapsulate creation of objects through <a class="el" href="#a3b1c9562830a5e9154444288d9a1aae7">RevAlloc()</a>. Hence, the <a class="el" href="classoperations__research_1_1Solver.html" title="For the time being, Solver is neither MT_SAFE nor MT_HOT.">Solver</a> used for allocating the returned object will retain ownership of the allocated memory. Destructors are called upon backtrack, or when the <a class="el" href="classoperations__research_1_1Solver.html" title="For the time being, Solver is neither MT_SAFE nor MT_HOT.">Solver</a> is itself destructed. MakeIntVar will create the best range based int var for the bounds given. </p>
 
-<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l06420">6420</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l06417">6417</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
 
 </div>
 </div>
@@ -7025,7 +7026,7 @@ MyConstraint(...)); </li>
 
 <p>Same but allocates an array and returns it. </p>
 
-<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l06559">6559</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l06556">6556</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
 
 </div>
 </div>
@@ -7064,7 +7065,7 @@ MyConstraint(...)); </li>
 </div><div class="memdoc">
 <p>This method will append the vector vars with 'var_count' variables having bounds vmin and vmax and having name "name&lt;i&gt;" where <em> is the index of the variable. </em></p>
 
-<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l06544">6544</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l06541">6541</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
 
 </div>
 </div>
@@ -7098,7 +7099,7 @@ MyConstraint(...)); </li>
 </div><div class="memdoc">
 <p>This method will append the vector vars with 'var_count' variables having bounds vmin and vmax and having no names. </p>
 
-<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l06552">6552</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l06549">6549</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
 
 </div>
 </div>
@@ -7329,7 +7330,7 @@ MyConstraint(...)); </li>
 </div><div class="memdoc">
 
 <p>boolvar == (var == value) </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000159">Todo</a></b></dt><dd>(user) : what happens if the constraint is not posted? The cache becomes tainted. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000158">Todo</a></b></dt><dd>(user) : what happens if the constraint is not posted? The cache becomes tainted. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="expr__cst_8cc_source.html#l00493">493</a> of file <a class="el" href="expr__cst_8cc_source.html">expr_cst.cc</a>.</p>
 
@@ -8203,7 +8204,7 @@ MyConstraint(...)); </li>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000115">Todo</a></b></dt><dd>(user): Add void MakeSortedArray(
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000114">Todo</a></b></dt><dd>(user): Add void MakeSortedArray(
                             const std::vector&lt;IntVar*&gt;&amp; vars,
                             std::vector&lt;IntVar*&gt;* const sorted); </dd></dl>
 <p>Creates a constraint that enforces that left is lexicographically less than right. </p>
@@ -8614,7 +8615,7 @@ template&lt;typename F&gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classoperations__research_1_1RegularLimit.html">RegularLimit</a> * operations_research::Solver::MakeLimit </td>
           <td>(</td>
-          <td class="paramtype">const RegularLimitParameters &amp;</td>          <td class="paramname"><span class="paramname"><em>proto</em></span></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1RegularLimitParameters.html">RegularLimitParameters</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>proto</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -8715,7 +8716,7 @@ template&lt;typename F&gt; </div>
 <li>a local search operator used to explore the neighborhood of the current solution,</li>
 <li>a decision builder to instantiate unbound variables once a neighbor has been defined; in the case of LNS-based operators instantiates fragment variables; search monitors can be added to this sub-search by wrapping the decision builder with MakeSolveOnce.</li>
 <li>a search limit specifying how long local search looks for neighbors before accepting one; the last neighbor is always taken and in the case of a greedy search, this corresponds to the best local neighbor; first-accept (which is the default behavior) can be modeled using a solution found limit of 1,</li>
-<li>a vector of local search filters used to speed up the search by pruning unfeasible neighbors. Metaheuristics can be added by defining specialized search monitors; currently down/up-hill climbing is available through <a class="el" href="classoperations__research_1_1OptimizeVar.html">OptimizeVar</a>, as well as Guided Local <a class="el" href="classoperations__research_1_1Search.html" title="---------------— Search class --------------—">Search</a>, Tabu <a class="el" href="classoperations__research_1_1Search.html" title="---------------— Search class --------------—">Search</a> and Simulated Annealing. <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000125">Todo</a></b></dt><dd>(user): Make a variant which runs a local search after each solution found in a DFS. </dd></dl>
+<li>a vector of local search filters used to speed up the search by pruning unfeasible neighbors. Metaheuristics can be added by defining specialized search monitors; currently down/up-hill climbing is available through <a class="el" href="classoperations__research_1_1OptimizeVar.html">OptimizeVar</a>, as well as Guided Local <a class="el" href="classoperations__research_1_1Search.html" title="---------------— Search class --------------—">Search</a>, Tabu <a class="el" href="classoperations__research_1_1Search.html" title="---------------— Search class --------------—">Search</a> and Simulated Annealing. <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000124">Todo</a></b></dt><dd>(user): Make a variant which runs a local search after each solution found in a DFS. </dd></dl>
 </li>
 </ul>
 
@@ -9115,7 +9116,7 @@ template&lt;typename F&gt; </div>
 
 <p>std::max(expr, value) </p>
 
-<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l07190">7190</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l07187">7187</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
 
 </div>
 </div>
@@ -9140,7 +9141,7 @@ template&lt;typename F&gt; </div>
 
 <p>std::max(expr, value) </p>
 
-<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l07176">7176</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l07173">7173</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
 
 </div>
 </div>
@@ -9165,7 +9166,7 @@ template&lt;typename F&gt; </div>
 
 <p>std::max(left, right) </p>
 
-<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l07158">7158</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l07155">7155</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
 
 </div>
 </div>
@@ -9320,7 +9321,7 @@ template&lt;typename F&gt; </div>
 
 <p>std::min(expr, value) </p>
 
-<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l07154">7154</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l07151">7151</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
 
 </div>
 </div>
@@ -9345,7 +9346,7 @@ template&lt;typename F&gt; </div>
 
 <p>std::min(expr, value) </p>
 
-<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l07140">7140</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l07137">7137</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
 
 </div>
 </div>
@@ -9370,7 +9371,7 @@ template&lt;typename F&gt; </div>
 
 <p>std::min (left, right) </p>
 
-<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l07122">7122</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l07119">7119</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
 
 </div>
 </div>
@@ -9466,7 +9467,7 @@ template&lt;typename F&gt; </div>
 <p>Modulo expression x % mod (with the python convention for modulo). </p>
 <p>--&mdash; Modulo --&mdash; </p>
 
-<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l07305">7305</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l07302">7302</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
 
 </div>
 </div>
@@ -9491,7 +9492,7 @@ template&lt;typename F&gt; </div>
 
 <p>Modulo expression x % mod (with the python convention for modulo). </p>
 
-<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l07316">7316</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l07313">7313</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
 
 </div>
 </div>
@@ -10007,7 +10008,7 @@ template&lt;typename F&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000116">Todo</a></b></dt><dd>(user): Implement MakeAllNullIntersect taking an array of variable vectors. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000115">Todo</a></b></dt><dd>(user): Implement MakeAllNullIntersect taking an array of variable vectors. </dd></dl>
 <p>Prevent cycles. The "nexts" variables represent the next in the chain. "active" variables indicate if the corresponding next variable is active; this could be useful to model unperformed nodes in a routing problem. A callback can be added to specify sink values (by default sink values are values &gt;= vars.size()). <a class="el" href="basictypes_8h.html#a7fc5ad23d8bdbc2ef84b60aa5b90d0e4">Ownership</a> of the callback is passed to the constraint. If assume_paths is either not specified or true, the constraint assumes the "nexts" variables represent paths (and performs a faster propagation); otherwise the constraint assumes they represent a forest. </p>
 
 <p class="definition">Definition at line <a class="el" href="graph__constraints_8cc_source.html#l00634">634</a> of file <a class="el" href="graph__constraints_8cc_source.html">graph_constraints.cc</a>.</p>
@@ -10316,7 +10317,7 @@ template&lt;typename F&gt; </div>
 <p>Catch empty interval.</p>
 <p>Catch the trivial cases first.</p>
 <p>Catch one-sided constraints.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000160">Todo</a></b></dt><dd>(user): Add back simplification code if expr is constant * other_expr. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000159">Todo</a></b></dt><dd>(user): Add back simplification code if expr is constant * other_expr. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="expr__cst_8cc_source.html#l00962">962</a> of file <a class="el" href="expr__cst_8cc_source.html">expr_cst.cc</a>.</p>
 
@@ -10611,7 +10612,7 @@ template&lt;typename F&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000124">Todo</a></b></dt><dd>(user): Make the callback an <a class="el" href="#a90d7c96eb6811bbd7ad6517992795787">IndexEvaluator2</a> when there are no secondary variables. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000123">Todo</a></b></dt><dd>(user): Make the callback an <a class="el" href="#a90d7c96eb6811bbd7ad6517992795787">IndexEvaluator2</a> when there are no secondary variables. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="local__search_8cc_source.html#l02462">2462</a> of file <a class="el" href="local__search_8cc_source.html">local_search.cc</a>.</p>
 
@@ -10667,7 +10668,7 @@ template&lt;typename F&gt; </div>
 
 <p>-expr </p>
 
-<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l06793">6793</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l06790">6790</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
 
 </div>
 </div>
@@ -10753,7 +10754,7 @@ template&lt;typename F&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p><a class="el" href="classoperations__research_1_1Constraint.html">Constraint</a> enforcing that status[i] is true iff there's a path defined on next variables from sources[i] to sinks[i]. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000118">Todo</a></b></dt><dd>(user): Only does checking on WhenBound events on next variables. Check whether more propagation is needed. </dd></dl>
+<p><a class="el" href="classoperations__research_1_1Constraint.html">Constraint</a> enforcing that status[i] is true iff there's a path defined on next variables from sources[i] to sinks[i]. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000117">Todo</a></b></dt><dd>(user): Only does checking on WhenBound events on next variables. Check whether more propagation is needed. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="graph__constraints_8cc_source.html#l01439">1439</a> of file <a class="el" href="graph__constraints_8cc_source.html">graph_constraints.cc</a>.</p>
 
@@ -10903,7 +10904,7 @@ template&lt;typename F&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p><a class="el" href="classoperations__research_1_1Constraint.html">Constraint</a> enforcing, for each pair (i,j) in precedences, i to be before j in paths defined by next variables. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000119">Todo</a></b></dt><dd>(user): This constraint does not make holes in variable domains; the implementation can easily be modified to do that; evaluate the impact on models solved with local search. </dd></dl>
+<p><a class="el" href="classoperations__research_1_1Constraint.html">Constraint</a> enforcing, for each pair (i,j) in precedences, i to be before j in paths defined by next variables. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000118">Todo</a></b></dt><dd>(user): This constraint does not make holes in variable domains; the implementation can easily be modified to do that; evaluate the impact on models solved with local search. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="graph__constraints_8cc_source.html#l01624">1624</a> of file <a class="el" href="graph__constraints_8cc_source.html">graph_constraints.cc</a>.</p>
 
@@ -11144,7 +11145,7 @@ template&lt;typename F&gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Returns a decision builder which assigns values to variables which minimize the values returned by the evaluator. In case of tie breaks, the second callback is used to choose the best index in the array of equivalent pairs with equivalent evaluations. The arguments passed to the evaluator callback are the indices of the variables in vars and the values of these variables. <a class="el" href="basictypes_8h.html#a7fc5ad23d8bdbc2ef84b60aa5b90d0e4">Ownership</a> of the callback is passed to the decision builder. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000402">Todo</a></b></dt><dd>(user): support tie breaker </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000401">Todo</a></b></dt><dd>(user): support tie breaker </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="search_8cc_source.html#l02268">2268</a> of file <a class="el" href="search_8cc_source.html">search.cc</a>.</p>
 
@@ -11234,7 +11235,7 @@ template&lt;typename F&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Phases on <a class="el" href="classoperations__research_1_1IntVar.html">IntVar</a> arrays. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000123">Todo</a></b></dt><dd>(user): name each of them differently, and document them (and do that for all other functions that have several homonyms in this .h). </dd></dl>
+<p>Phases on <a class="el" href="classoperations__research_1_1IntVar.html">IntVar</a> arrays. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000122">Todo</a></b></dt><dd>(user): name each of them differently, and document them (and do that for all other functions that have several homonyms in this .h). </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="search_8cc_source.html#l02142">2142</a> of file <a class="el" href="search_8cc_source.html">search.cc</a>.</p>
 
@@ -11454,9 +11455,9 @@ template&lt;typename F&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>General piecewise-linear function expression, built from f(x) where f is piecewise-linear. The resulting expression is f(expr). </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000113">Todo</a></b></dt><dd>(user): Investigate if we can merge all three piecewise linear expressions. </dd></dl>
+<p>General piecewise-linear function expression, built from f(x) where f is piecewise-linear. The resulting expression is f(expr). </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000112">Todo</a></b></dt><dd>(user): Investigate if we can merge all three piecewise linear expressions. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l07274">7274</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l07271">7271</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
 
 </div>
 </div>
@@ -11481,7 +11482,7 @@ template&lt;typename F&gt; </div>
 
 <p>expr ^ n (n &gt; 0) </p>
 
-<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l07088">7088</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l07085">7085</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
 
 </div>
 </div>
@@ -11527,7 +11528,7 @@ template&lt;typename F&gt; </div>
 
 <p>expr * value </p>
 
-<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l06811">6811</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l06808">6808</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
 
 </div>
 </div>
@@ -11555,7 +11556,7 @@ template&lt;typename F&gt; </div>
 <p>--&mdash; Discover nested products --&mdash;</p>
 <p>--&mdash; Standard build --&mdash;</p>
 
-<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l06901">6901</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l06898">6898</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
 
 </div>
 </div>
@@ -12089,7 +12090,7 @@ template&lt;typename F&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000121">Todo</a></b></dt><dd>(user): DEPRECATE API of MakeSearchLog(.., IntVar* var,..). </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000120">Todo</a></b></dt><dd>(user): DEPRECATE API of MakeSearchLog(.., IntVar* var,..). </dd></dl>
 <p>The SearchMonitors below will display a periodic search log on LOG(INFO) every branch_period branches explored. </p>
 
 <p class="definition">Definition at line <a class="el" href="search_8cc_source.html#l00334">334</a> of file <a class="el" href="search_8cc_source.html">search.cc</a>.</p>
@@ -12319,9 +12320,9 @@ template&lt;typename F&gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Semi continuous Expression (x &lt;= 0 -&gt; f(x) = 0; x &gt; 0 -&gt; f(x) = ax + b) a &gt;= 0 and b &gt;= 0 </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000165">Todo</a></b></dt><dd>(user) : benchmark with virtualization of PosIntDivDown and PosIntDivUp - or function pointers. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000164">Todo</a></b></dt><dd>(user) : benchmark with virtualization of PosIntDivDown and PosIntDivUp - or function pointers. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l07201">7201</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l07198">7198</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
 
 </div>
 </div>
@@ -12353,7 +12354,7 @@ template&lt;typename F&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Creates a Simulated Annealing monitor. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000120">Todo</a></b></dt><dd>(user): document behavior </dd></dl>
+<p>Creates a Simulated Annealing monitor. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000119">Todo</a></b></dt><dd>(user): document behavior </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="search_8cc_source.html#l03778">3778</a> of file <a class="el" href="search_8cc_source.html">search.cc</a>.</p>
 
@@ -12562,7 +12563,7 @@ template&lt;typename F&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000114">Todo</a></b></dt><dd>(user): Do we need a version with an array of escape values. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000113">Todo</a></b></dt><dd>(user): Do we need a version with an array of escape values. </dd></dl>
 <p>Creates a constraint binding the arrays of variables "vars" and "sorted_vars": sorted_vars[0] must be equal to the minimum of all variables in vars, and so on: the value of sorted_vars[i] must be equal to the i-th value of variables invars. This constraint propagates in both directions: from "vars" to "sorted_vars" and vice-versa. Behind the scenes, this constraint maintains that:</p><ul>
 <li>sorted is always increasing.</li>
 <li>whatever the values of vars, there exists a permutation that injects its values into the sorted variables. For more info, please have a look at: <a href="https://mpi-inf.mpg.de/~mehlhorn/ftp/Mehlhorn-Thiel.pdf">https://mpi-inf.mpg.de/~mehlhorn/ftp/Mehlhorn-Thiel.pdf</a> </li>
@@ -12617,7 +12618,7 @@ template&lt;typename F&gt; </div>
 
 <p>expr * expr </p>
 
-<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l07070">7070</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l07067">7067</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
 
 </div>
 </div>
@@ -12749,7 +12750,7 @@ template&lt;typename F&gt; </div>
 
 <p>expr + value. </p>
 
-<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l06628">6628</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l06625">6625</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
 
 </div>
 </div>
@@ -12775,7 +12776,7 @@ template&lt;typename F&gt; </div>
 <p>--&mdash; Integer Expressions --&mdash; </p>
 <p>left + right. </p>
 
-<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l06596">6596</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="expressions_8cc_source.html#l06593">6593</a> of file <a class="el" href="expressions_8cc_source.html">expressions.cc</a>.</p>
 
 </div>
 </div>
@@ -13751,11 +13752,11 @@ template&lt;typename F&gt; </div>
 
 <p>Opens a new top level search. </p>
 <p>Decomposed search. The code for a top level search should look like solver-&gt;NewSearch(db); while (solver-&gt;<a class="el" href="#a11ed2a5d7bb8fb1a8967fee572ab9c47" title="Search for the next solution in the search tree.">NextSolution()</a>) { ///&lt;.. use the current solution } solver()-&gt;<a class="el" href="#ab95c7f997dbe36deb51e7c0213bdf445">EndSearch()</a>; </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000103">Todo</a></b></dt><dd>(user) : reset statistics </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000102">Todo</a></b></dt><dd>(user) : reset statistics </dd></dl>
 <p>--&mdash; jumps to correct state --&mdash;</p>
 <p>Nested searches are created on demand, and deleted afterwards.</p>
-<p>Top level search is persistent. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000104">Todo</a></b></dt><dd>(user): delete top level search after <a class="el" href="#ab95c7f997dbe36deb51e7c0213bdf445">EndSearch()</a>. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000105">Todo</a></b></dt><dd>(user): Check if these two lines are still necessary. </dd></dl>
+<p>Top level search is persistent. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000103">Todo</a></b></dt><dd>(user): delete top level search after <a class="el" href="#ab95c7f997dbe36deb51e7c0213bdf445">EndSearch()</a>. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000104">Todo</a></b></dt><dd>(user): Check if these two lines are still necessary. </dd></dl>
 <p>--&mdash; manages all monitors --&mdash;</p>
 <p>Always install the main propagation and local search monitors.</p>
 <p>Push monitors and enter search.</p>
@@ -13998,7 +13999,7 @@ template&lt;typename F&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">ConstraintSolverParameters operations_research::Solver::parameters </td>
+          <td class="memname"><a class="el" href="classoperations__research_1_1ConstraintSolverParameters.html">ConstraintSolverParameters</a> operations_research::Solver::parameters </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
@@ -14773,7 +14774,7 @@ template&lt;class T&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000127">Todo</a></b></dt><dd>(user): Get rid of the following methods once fast local search is enabled for metaheuristics. Disables/enables fast local search. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000126">Todo</a></b></dt><dd>(user): Get rid of the following methods once fast local search is enabled for metaheuristics. Disables/enables fast local search. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="constraint__solver_8h_source.html#l03158">3158</a> of file <a class="el" href="constraint__solver_8h_source.html">constraint_solver.h</a>.</p>
 
@@ -15279,7 +15280,7 @@ template&lt;class T&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Creates a decision builder which will create a search tree where each decision builder is called from the top of the search tree. For instance the decision builder Try(db1, db2) will entirely explore the search tree of db1 then the one of db2, resulting in the following search tree: Tree root | / \ | db1 tree db2 tree | This is very handy to try a decision builder which partially explores the search space and if it fails to try another decision builder. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000122">Todo</a></b></dt><dd>(user): The search tree can be balanced by using binary "Try"-builders "recursively". For instance, Try(a,b,c,d) will give a tree unbalanced to the right, whereas Try(Try(a,b), Try(b,c)) will give a balanced tree. Investigate if we should only provide the binary version and/or if we should balance automatically. </dd></dl>
+<p>Creates a decision builder which will create a search tree where each decision builder is called from the top of the search tree. For instance the decision builder Try(db1, db2) will entirely explore the search tree of db1 then the one of db2, resulting in the following search tree: Tree root | / \ | db1 tree db2 tree | This is very handy to try a decision builder which partially explores the search space and if it fails to try another decision builder. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000121">Todo</a></b></dt><dd>(user): The search tree can be balanced by using binary "Try"-builders "recursively". For instance, Try(a,b,c,d) will give a tree unbalanced to the right, whereas Try(Try(a,b), Try(b,c)) will give a balanced tree. Investigate if we should only provide the binary version and/or if we should balance automatically. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="search_8cc_source.html#l00783">783</a> of file <a class="el" href="search_8cc_source.html">search.cc</a>.</p>
 

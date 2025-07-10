@@ -3,6 +3,7 @@ var classoperations__research_1_1SparseBitset =
     [ "SparseBitset", "classoperations__research_1_1SparseBitset.html#a6dfc60efbad659dfe0a557115be9cf61", null ],
     [ "SparseBitset", "classoperations__research_1_1SparseBitset.html#a44c2012887f31f311982b93f4270b786", null ],
     [ "SparseBitset", "classoperations__research_1_1SparseBitset.html#ab68ad30399c9981c50d19246f348a11a", null ],
+    [ "BitsetConstView", "classoperations__research_1_1SparseBitset.html#a1864f35654cc9a174e6a7df92b85c97e", null ],
     [ "BitsetView", "classoperations__research_1_1SparseBitset.html#a651ca0a4ae5163c51acfe985d51fee68", null ],
     [ "Clear", "classoperations__research_1_1SparseBitset.html#a2cb3d10a307f8e29c9491e5f26017f89", null ],
     [ "ClearAndResize", "classoperations__research_1_1SparseBitset.html#a19cd6aeb2085dfceb559d1c89616a9f7", null ],

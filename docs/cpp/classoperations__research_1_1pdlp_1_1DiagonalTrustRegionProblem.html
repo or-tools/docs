@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,13 @@ $(function(){initNavTree('classoperations__research_1_1pdlp_1_1DiagonalTrustRegi
   <div class="headertitle"><div class="title">operations_research::pdlp::DiagonalTrustRegionProblem Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A generic trust region problem of the form: min_{x} (1 / 2) * (x - <span class="tt">center_point</span>)^T Q (x - <span class="tt">center_point</span>)</p><ul>
+<li>c^T (x - <span class="tt">center_point</span>) s.t. <span class="tt">lower_bounds</span> &lt;= (x - <span class="tt">center_point</span>) &lt;= <span class="tt">upper_bounds</span> ||x - <span class="tt">center_point</span>||_W &lt;= radius where |<span class="tt">z</span>|_W = sqrt(sum_i w_i z_i^2) is a weighted Euclidean norm. It is assumed that the objective matrix Q is a nonnegative diagonal matrix. </li>
+</ul>
+
+<p class="definition">Definition at line <a class="el" href="trust__region_8cc_source.html#l00480">480</a> of file <a class="el" href="trust__region_8cc_source.html">trust_region.cc</a>.</p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:affd26d08e893c6ebed40a543fa128e09" id="r_affd26d08e893c6ebed40a543fa128e09"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#affd26d08e893c6ebed40a543fa128e09">DiagonalTrustRegionProblem</a> (const VectorXd *objective_vector, const VectorXd *objective_matrix_diagonal, const VectorXd *lower_bounds, const VectorXd *upper_bounds, const VectorXd *center_point, const VectorXd *norm_weights)</td></tr>
@@ -106,13 +113,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad86d34630472956858239441b4c4c2e4" id="r_ad86d34630472956858239441b4c4c2e4"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad86d34630472956858239441b4c4c2e4">Objective</a> (int64_t index) const</td></tr>
 <tr class="memitem:abd4a4ee709fdfdf92a23da0aaa1f0f4b" id="r_abd4a4ee709fdfdf92a23da0aaa1f0f4b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abd4a4ee709fdfdf92a23da0aaa1f0f4b">ObjectiveMatrixDiagonalAt</a> (int64_t index) const</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A generic trust region problem of the form: min_{x} (1 / 2) * (x - <span class="tt">center_point</span>)^T Q (x - <span class="tt">center_point</span>)</p><ul>
-<li>c^T (x - <span class="tt">center_point</span>) s.t. <span class="tt">lower_bounds</span> &lt;= (x - <span class="tt">center_point</span>) &lt;= <span class="tt">upper_bounds</span> ||x - <span class="tt">center_point</span>||_W &lt;= radius where |<span class="tt">z</span>|_W = sqrt(sum_i w_i z_i^2) is a weighted Euclidean norm. It is assumed that the objective matrix Q is a nonnegative diagonal matrix. </li>
-</ul>
-
-<p class="definition">Definition at line <a class="el" href="trust__region_8cc_source.html#l00480">480</a> of file <a class="el" href="trust__region_8cc_source.html">trust_region.cc</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="affd26d08e893c6ebed40a543fa128e09" name="affd26d08e893c6ebed40a543fa128e09"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#affd26d08e893c6ebed40a543fa128e09">&#9670;&#160;</a></span>DiagonalTrustRegionProblem()</h2>
 

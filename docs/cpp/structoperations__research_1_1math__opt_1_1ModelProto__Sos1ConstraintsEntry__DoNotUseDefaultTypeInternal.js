@@ -1,0 +1,6 @@
+var structoperations__research_1_1math__opt_1_1ModelProto__Sos1ConstraintsEntry__DoNotUseDefaultTypeInternal =
+[
+    [ "ModelProto_Sos1ConstraintsEntry_DoNotUseDefaultTypeInternal", "structoperations__research_1_1math__opt_1_1ModelProto__Sos1ConstraintsEntry__DoNotUseDefaultTypeInternal.html#a6b4d624c3ae0e6ea787927a67751c09b", null ],
+    [ "~ModelProto_Sos1ConstraintsEntry_DoNotUseDefaultTypeInternal", "structoperations__research_1_1math__opt_1_1ModelProto__Sos1ConstraintsEntry__DoNotUseDefaultTypeInternal.html#a8fabea4efc1f5e6ee1599fb8f26a6202", null ],
+    [ "_instance", "structoperations__research_1_1math__opt_1_1ModelProto__Sos1ConstraintsEntry__DoNotUseDefaultTypeInternal.html#af43b12d5565e920dedbf04695fc123ce", null ]
+];

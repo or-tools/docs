@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,11 @@ $(function(){initNavTree('classoperations__research_1_1PiecewiseLinearFunction.h
   <div class="headertitle"><div class="title">operations_research::PiecewiseLinearFunction Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>In mathematics, a piecewise linear function is a function composed of straight-line, non overlapping sections. </p>
 
+<p class="definition">Definition at line <a class="el" href="piecewise__linear__function_8h_source.html#l00102">102</a> of file <a class="el" href="piecewise__linear__function_8h_source.html">piecewise_linear_function.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="piecewise__linear__function_8h_source.html">piecewise_linear_function.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -144,11 +149,7 @@ Static Public Attributes</h2></td></tr>
 <tr class="memitem:a5cbd0c9ba769463d4deeeb7023469695" id="r_a5cbd0c9ba769463d4deeeb7023469695"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5cbd0c9ba769463d4deeeb7023469695">kNotFound</a> = -1</td></tr>
 <tr class="memdesc:a5cbd0c9ba769463d4deeeb7023469695"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classoperations__research_1_1PiecewiseLinearFunction.html">PiecewiseLinearFunction</a>.  <br /></td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>In mathematics, a piecewise linear function is a function composed of straight-line, non overlapping sections. </p>
-
-<p class="definition">Definition at line <a class="el" href="piecewise__linear__function_8h_source.html#l00102">102</a> of file <a class="el" href="piecewise__linear__function_8h_source.html">piecewise_linear_function.h</a>.</p>
-</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="a6cbe5bfba69df3dd77aac12aee975188" name="a6cbe5bfba69df3dd77aac12aee975188"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6cbe5bfba69df3dd77aac12aee975188">&#9670;&#160;</a></span>Add()</h2>
 
@@ -474,7 +475,7 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>This API provides a factory for creating different families of Piecewise Linear Functions based on specific properties of each family. The <a class="el" href="classoperations__research_1_1PiecewiseLinearFunction.html">PiecewiseLinearFunction</a> is composed by a set of PiecwiseSegments and upon creation is not modifiable but with the provided function operations. The object returned by any of these builders in the factory is owned by the client code. Builds the most generic form of multiple-segment piecewise linear function supporting domain holes. For a fixed index i the elements in points_x[i] points_y[i], slopes[i], other_points_x[i] represent a segment. The point (points_x[i], points_y[i]) represents one of the endpoints of the segment and the other_points_x[i] represents the x coordinate of the other endpoint which may precede, follow or coincide with points_x[i]. The segments represented by these vectors should not be overlapping. Common endpoints are allowed. </p>
+<p>This API provides a factory for creating different families of Piecewise Linear Functions based on specific properties of each family. The <a class="el" href="classoperations__research_1_1PiecewiseLinearFunction.html">PiecewiseLinearFunction</a> is composed by a set of PiecewiseSegments and upon creation is not modifiable but with the provided function operations. The object returned by any of these builders in the factory is owned by the client code. Builds the most generic form of multiple-segment piecewise linear function supporting domain holes. For a fixed index i the elements in points_x[i] points_y[i], slopes[i], other_points_x[i] represent a segment. The point (points_x[i], points_y[i]) represents one of the endpoints of the segment and the other_points_x[i] represents the x coordinate of the other endpoint which may precede, follow or coincide with points_x[i]. The segments represented by these vectors should not be overlapping. Common endpoints are allowed. </p>
 
 <p class="definition">Definition at line <a class="el" href="piecewise__linear__function_8cc_source.html#l00304">304</a> of file <a class="el" href="piecewise__linear__function_8cc_source.html">piecewise_linear_function.cc</a>.</p>
 
@@ -922,7 +923,7 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the value of the piecewise linear function for x. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002619">Todo</a></b></dt><dd>(user): Allow the user to specify the undefined value and use kint64max as the default. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002617">Todo</a></b></dt><dd>(user): Allow the user to specify the undefined value and use kint64max as the default. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="piecewise__linear__function_8cc_source.html#l00444">444</a> of file <a class="el" href="piecewise__linear__function_8cc_source.html">piecewise_linear_function.cc</a>.</p>
 

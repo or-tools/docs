@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,13 @@ $(function(){initNavTree('classoperations__research_1_1LocalSearchOperator.html'
   <div class="headertitle"><div class="title">operations_research::LocalSearchOperator Class Reference<span class="mlabels"><span class="mlabel abstract">abstract</span></span></div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The base class for all local search operators. A local search operator is an object that defines the neighborhood of a solution. In other words, a neighborhood is the set of solutions which can be reached from a given solution using an operator. The behavior of the <a class="el" href="classoperations__research_1_1LocalSearchOperator.html">LocalSearchOperator</a> class is similar to iterators. The operator is synchronized with an assignment (gives the current values of the variables); this is done in the <a class="el" href="#a832fd07f7355d16895841a4735e544c1">Start()</a> method. Then one can iterate over the neighbors using the MakeNextNeighbor method. This method returns an assignment which represents the incremental changes to the current solution. It also returns a second assignment representing the changes to the last solution defined by the neighborhood operator; this assignment is empty if the neighborhood operator cannot track this information. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000130">Todo</a></b></dt><dd><p class="startdd">(user): rename Start to Synchronize ? </p>
+<p class="enddd">(user): decouple the iterating from the defining of a neighbor. </p>
+</dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="constraint__solveri_8h_source.html#l00987">987</a> of file <a class="el" href="constraint__solveri_8h_source.html">constraint_solveri.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="constraint__solveri_8h_source.html">constraint_solveri.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for operations_research::LocalSearchOperator:</div>
@@ -164,13 +171,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4def224c4c1cd494fa8eede50162a326 inherit pub_methods_classoperations__research_1_1BaseObject" id="r_a4def224c4c1cd494fa8eede50162a326"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1BaseObject.html#a4def224c4c1cd494fa8eede50162a326">~BaseObject</a> ()=default</td></tr>
 <tr class="memitem:afb3b013c5063d71566d5273793c1d828 inherit pub_methods_classoperations__research_1_1BaseObject" id="r_afb3b013c5063d71566d5273793c1d828"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1BaseObject.html#afb3b013c5063d71566d5273793c1d828">DebugString</a> () const</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The base class for all local search operators. A local search operator is an object that defines the neighborhood of a solution. In other words, a neighborhood is the set of solutions which can be reached from a given solution using an operator. The behavior of the <a class="el" href="classoperations__research_1_1LocalSearchOperator.html">LocalSearchOperator</a> class is similar to iterators. The operator is synchronized with an assignment (gives the current values of the variables); this is done in the <a class="el" href="#a832fd07f7355d16895841a4735e544c1">Start()</a> method. Then one can iterate over the neighbors using the MakeNextNeighbor method. This method returns an assignment which represents the incremental changes to the current solution. It also returns a second assignment representing the changes to the last solution defined by the neighborhood operator; this assignment is empty if the neighborhood operator cannot track this information. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000131">Todo</a></b></dt><dd><p class="startdd">(user): rename Start to Synchronize ? </p>
-<p class="enddd">(user): decouple the iterating from the defining of a neighbor. </p>
-</dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="constraint__solveri_8h_source.html#l00987">987</a> of file <a class="el" href="constraint__solveri_8h_source.html">constraint_solveri.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af23505cc80b48f7de0c2e6a8d8424c5e" name="af23505cc80b48f7de0c2e6a8d8424c5e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af23505cc80b48f7de0c2e6a8d8424c5e">&#9670;&#160;</a></span>LocalSearchOperator()</h2>
 

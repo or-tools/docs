@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,11 @@ $(function(){initNavTree('classoperations__research_1_1SparsePermutation.html','
   <div class="headertitle"><div class="title">operations_research::SparsePermutation Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A compact representation for permutations of {0..N-1} that displaces few elements: it needs only O(K) memory for a permutation that displaces K elements. </p>
 
+<p class="definition">Definition at line <a class="el" href="sparse__permutation_8h_source.html#l00028">28</a> of file <a class="el" href="sparse__permutation_8h_source.html">sparse_permutation.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="sparse__permutation_8h_source.html">sparse_permutation.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
@@ -119,11 +124,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0bf46cd010a263588d3402a7709c1dd0" id="r_a0bf46cd010a263588d3402a7709c1dd0"><td class="memTemplParams" colspan="2">template&lt;typename Collection&gt; </td></tr>
 <tr class="memitem:a0bf46cd010a263588d3402a7709c1dd0 template"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0bf46cd010a263588d3402a7709c1dd0">ApplyToDenseCollection</a> (Collection &amp;span) const</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A compact representation for permutations of {0..N-1} that displaces few elements: it needs only O(K) memory for a permutation that displaces K elements. </p>
-
-<p class="definition">Definition at line <a class="el" href="sparse__permutation_8h_source.html#l00028">28</a> of file <a class="el" href="sparse__permutation_8h_source.html">sparse_permutation.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab4ee5c7df12fcaeb042a8c52654569bd" name="ab4ee5c7df12fcaeb042a8c52654569bd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab4ee5c7df12fcaeb042a8c52654569bd">&#9670;&#160;</a></span>SparsePermutation()</h2>
 
@@ -339,7 +340,7 @@ template&lt;typename Collection&gt; </div>
 </div><div class="memdoc">
 <p>This is useful for iterating over the pair {element, image} of a permutation:</p>
 <p>for (int c = 0; c &lt; perm.NumCycles(); ++c) { int element = LastElementInCycle(c); for (int image : perm.Cycle(c)) { ///&lt; The pair is (element, image). ... element = image; } }</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000040">Todo</a></b></dt><dd>(user): Provide a full iterator for this? Note that we have more information with the loop above. Not sure it is needed though. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000039">Todo</a></b></dt><dd>(user): Provide a full iterator for this? Note that we have more information with the loop above. Not sure it is needed though. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="sparse__permutation_8h_source.html#l00133">133</a> of file <a class="el" href="sparse__permutation_8h_source.html">sparse_permutation.h</a>.</p>
 
@@ -387,7 +388,7 @@ template&lt;typename Collection&gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Removes the cycles with given indices from the permutation. This works in O(K) for a permutation displacing K elements. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000038">Todo</a></b></dt><dd>(user): make this a class member to avoid allocation if the complexity becomes an issue. In this case, also optimize the loop below by not copying the first cycles. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000037">Todo</a></b></dt><dd>(user): make this a class member to avoid allocation if the complexity becomes an issue. In this case, also optimize the loop below by not copying the first cycles. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="sparse__permutation_8cc_source.html#l00027">27</a> of file <a class="el" href="sparse__permutation_8cc_source.html">sparse_permutation.cc</a>.</p>
 
@@ -415,7 +416,7 @@ template&lt;typename Collection&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000039">Todo</a></b></dt><dd>(user): complete the reader API. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000038">Todo</a></b></dt><dd>(user): complete the reader API. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="sparse__permutation_8h_source.html#l00033">33</a> of file <a class="el" href="sparse__permutation_8h_source.html">sparse_permutation.h</a>.</p>
 

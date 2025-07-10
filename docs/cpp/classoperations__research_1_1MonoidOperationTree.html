@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,27 @@ $(function(){initNavTree('classoperations__research_1_1MonoidOperationTree.html'
   <div class="headertitle"><div class="title">operations_research::MonoidOperationTree&lt; T &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;class T&gt;<br />
+class operations_research::MonoidOperationTree&lt; T &gt;</div><p>A monoid is an algebraic structure consisting of a set S with an associative binary operation * :S x S -&gt; S that has an identity element. Associative means a*(b*c) = (a*b)*c for all a,b,c in S. An identity element is an element e in S such that for all a in S, e*a = a*e = a. See <a href="http://en.wikipedia.org/wiki/Monoid">http://en.wikipedia.org/wiki/Monoid</a> for more details.</p>
+<p>A <a class="el" href="classoperations__research_1_1MonoidOperationTree.html">MonoidOperationTree</a> is a data structure that maintains a product a_1 * a_2 * ... * a_n for a given (fixed) n, and that supports the following functions:</p><ul>
+<li>Setting the k-th operand to a given value in O(log n) calls to the * operation</li>
+<li>Querying the result in O(1)</li>
+</ul>
+<dl class="section note"><dt>Note</dt><dd>the monoid is not required to be commutative.</dd></dl>
+<p>The parameter class T represents an element of the set S. It must:</p><ul>
+<li>Have a public no-argument constructor producing the identity element.</li>
+<li>Have a = operator method that sets its value to the given one.</li>
+<li>Have a Compute(const T&amp; left, const T&amp; right) method that sets its value to the result of the binary operation for the two given operands.</li>
+<li>Have a string <a class="el" href="#aad52b345dad5b9221a4dc1543a9b8f21">DebugString() const </a>method.</li>
+</ul>
+<p>Possible use cases are:</p><ul>
+<li>Maintain a sum or a product of doubles, with a guarantee that the queried result is independent of the order of past numerical issues</li>
+<li>Maintain a product of identically sized square matrices, which is an example of use with non-commutative operations. </li>
+</ul>
 
+<p class="definition">Definition at line <a class="el" href="monoid__operation__tree_8h_source.html#l00056">56</a> of file <a class="el" href="monoid__operation__tree_8h_source.html">monoid_operation_tree.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="monoid__operation__tree_8h_source.html">monoid_operation_tree.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -120,27 +141,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ab9a4a29b56b71fd6871f91f5746e0d09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dive down a branch of the operation tree, and then come back up.  <br /></td></tr>
 <tr class="memitem:aad52b345dad5b9221a4dc1543a9b8f21" id="r_aad52b345dad5b9221a4dc1543a9b8f21"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aad52b345dad5b9221a4dc1543a9b8f21">DebugString</a> () const</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;class T&gt;<br />
-class operations_research::MonoidOperationTree&lt; T &gt;</div><p>A monoid is an algebraic structure consisting of a set S with an associative binary operation * :S x S -&gt; S that has an identity element. Associative means a*(b*c) = (a*b)*c for all a,b,c in S. An identity element is an element e in S such that for all a in S, e*a = a*e = a. See <a href="http://en.wikipedia.org/wiki/Monoid">http://en.wikipedia.org/wiki/Monoid</a> for more details.</p>
-<p>A <a class="el" href="classoperations__research_1_1MonoidOperationTree.html">MonoidOperationTree</a> is a data structure that maintains a product a_1 * a_2 * ... * a_n for a given (fixed) n, and that supports the following functions:</p><ul>
-<li>Setting the k-th operand to a given value in O(log n) calls to the * operation</li>
-<li>Querying the result in O(1)</li>
-</ul>
-<dl class="section note"><dt>Note</dt><dd>the monoid is not required to be commutative.</dd></dl>
-<p>The parameter class T represents an element of the set S. It must:</p><ul>
-<li>Have a public no-argument constructor producing the identity element.</li>
-<li>Have a = operator method that sets its value to the given one.</li>
-<li>Have a Compute(const T&amp; left, const T&amp; right) method that sets its value to the result of the binary operation for the two given operands.</li>
-<li>Have a string <a class="el" href="#aad52b345dad5b9221a4dc1543a9b8f21">DebugString() const </a>method.</li>
-</ul>
-<p>Possible use cases are:</p><ul>
-<li>Maintain a sum or a product of doubles, with a guarantee that the queried result is independent of the order of past numerical issues</li>
-<li>Maintain a product of identically sized square matrices, which is an example of use with non-commutative operations. </li>
-</ul>
-
-<p class="definition">Definition at line <a class="el" href="monoid__operation__tree_8h_source.html#l00056">56</a> of file <a class="el" href="monoid__operation__tree_8h_source.html">monoid_operation_tree.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab67b9458678eb706c00c7eb63fe667a5" name="ab67b9458678eb706c00c7eb63fe667a5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab67b9458678eb706c00c7eb63fe667a5">&#9670;&#160;</a></span>MonoidOperationTree() <span class="overload">[1/2]</span></h2>
 

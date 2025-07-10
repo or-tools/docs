@@ -232,11 +232,12 @@ var NAVTREEINDEX26 =
 "namespaceortools_1_1sat_1_1python_1_1cp__model__numbers.html#ae622a2a7019a9db5e03909cf4c8b4acf":[1,0,0,11,4,1,0],
 "namespaceortools_1_1sat_1_1python_1_1cp__model__numbers.html#aff2ac5481ae256e8e75220bcf34703ad":[1,0,0,11,4,1,2],
 "namespaceortools_1_1sat_1_1routes__support__graph__pb2.html":[1,0,0,11,5],
-"namespaceortools_1_1sat_1_1routes__support__graph__pb2.html#a27d287911a74768e81edfa2920326f9d":[1,0,0,11,5,3],
+"namespaceortools_1_1sat_1_1routes__support__graph__pb2.html#a27d287911a74768e81edfa2920326f9d":[1,0,0,11,5,4],
 "namespaceortools_1_1sat_1_1routes__support__graph__pb2.html#a5de4e836eb22f6c7494430edcd37b1d7":[1,0,0,11,5,0],
-"namespaceortools_1_1sat_1_1routes__support__graph__pb2.html#a5e50a66bbd619f55a8408e48d24333df":[1,0,0,11,5,4],
+"namespaceortools_1_1sat_1_1routes__support__graph__pb2.html#a5e50a66bbd619f55a8408e48d24333df":[1,0,0,11,5,5],
 "namespaceortools_1_1sat_1_1routes__support__graph__pb2.html#a7170efaf223a3c91961a41e4fb7383eb":[1,0,0,11,5,1],
-"namespaceortools_1_1sat_1_1routes__support__graph__pb2.html#a93772595cde9ba230797c5c537363d78":[1,0,0,11,5,5],
+"namespaceortools_1_1sat_1_1routes__support__graph__pb2.html#a93772595cde9ba230797c5c537363d78":[1,0,0,11,5,6],
+"namespaceortools_1_1sat_1_1routes__support__graph__pb2.html#a9d9a5c5795590825b363a69827ff25e6":[1,0,0,11,5,3],
 "namespaceortools_1_1sat_1_1routes__support__graph__pb2.html#adf35bcfdffc99beb4b3e78e0afdf71aa":[1,0,0,11,5,2],
 "namespaceortools_1_1sat_1_1sat__parameters__pb2.html":[1,0,0,11,6],
 "namespaceortools_1_1sat_1_1sat__parameters__pb2.html#a29901d3308ff346982560f284d1afff1":[1,0,0,11,6,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX26 =
 "namespaceortools_1_1sat_1_1sat__parameters__pb2.html#afb35a302dc3f41750ceb0c8d3aff01b0":[1,0,0,11,6,5],
 "namespaceortools_1_1scheduling.html":[1,0,0,12],
 "namespaceortools_1_1scheduling_1_1course__scheduling__pb2.html":[1,0,0,12,0],
-"namespaceortools_1_1scheduling_1_1course__scheduling__pb2.html#a0ea70bb6f5fcd8b54064bbb12c9a27f0":[1,0,0,12,0,2],
-"namespaceortools_1_1scheduling_1_1course__scheduling__pb2.html#a29d9bb9dc5b8fd3a685469ec5d318694":[1,0,0,12,0,1]
+"namespaceortools_1_1scheduling_1_1course__scheduling__pb2.html#a0ea70bb6f5fcd8b54064bbb12c9a27f0":[1,0,0,12,0,2]
 };

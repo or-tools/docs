@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,14 @@ $(function(){initNavTree('classoperations__research_1_1math__opt_1_1UpdateTracke
   <div class="headertitle"><div class="title">operations_research::math_opt::UpdateTrackers&lt; Data &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename Data&gt;<br />
+class operations_research::math_opt::UpdateTrackers&lt; Data &gt;</div><p>Manager the collection of update trackers for ModelStorage.</p>
+<p>The Data type is the type of data associated with trackers.</p>
+<p>This class makes sure it is possible to iterate on update trackers for ModelStorage modifications without having to hold a mutex. It does that by delaying additions &amp; removals so that they are only applied when we need to iterate. This enables adding or removing trackers concurrently from multiple threads. </p>
 
+<p class="definition">Definition at line <a class="el" href="update__trackers_8h_source.html#l00044">44</a> of file <a class="el" href="update__trackers_8h_source.html">update_trackers.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="update__trackers_8h_source.html">update_trackers.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-types" class="groupheader"><a id="pub-types" name="pub-types"></a>
@@ -114,14 +122,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a237f7160384725c99be4fa1c0392f80c" id="r_a237f7160384725c99be4fa1c0392f80c"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
 <tr class="memitem:a237f7160384725c99be4fa1c0392f80c template"><td class="memItemLeft" align="right" valign="top">UpdateTrackerId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a237f7160384725c99be4fa1c0392f80c">NewUpdateTracker</a> (Args &amp;&amp;... args)</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;typename Data&gt;<br />
-class operations_research::math_opt::UpdateTrackers&lt; Data &gt;</div><p>Manager the collection of update trackers for ModelStorage.</p>
-<p>The Data type is the type of data associated with trackers.</p>
-<p>This class makes sure it is possible to iterate on update trackers for ModelStorage modifications without having to hold a mutex. It does that by delaying additions &amp; removals so that they are only applied when we need to iterate. This enables adding or removing trackers concurrently from multiple threads. </p>
-
-<p class="definition">Definition at line <a class="el" href="update__trackers_8h_source.html#l00044">44</a> of file <a class="el" href="update__trackers_8h_source.html">update_trackers.h</a>.</p>
-</div><a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Member Typedef Documentation</h2>
+<a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Member Typedef Documentation</h2>
 <a id="ae87b280f5a15612e41d85ac7edbf4be6" name="ae87b280f5a15612e41d85ac7edbf4be6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae87b280f5a15612e41d85ac7edbf4be6">&#9670;&#160;</a></span>IdDataPair</h2>
 

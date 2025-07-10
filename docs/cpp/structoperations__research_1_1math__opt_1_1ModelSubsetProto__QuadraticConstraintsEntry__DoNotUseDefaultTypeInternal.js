@@ -1,0 +1,6 @@
+var structoperations__research_1_1math__opt_1_1ModelSubsetProto__QuadraticConstraintsEntry__DoNotUseDefaultTypeInternal =
+[
+    [ "ModelSubsetProto_QuadraticConstraintsEntry_DoNotUseDefaultTypeInternal", "structoperations__research_1_1math__opt_1_1ModelSubsetProto__QuadraticConstraintsEntry__DoNotUseDefaultTypeInternal.html#a8aada09cfd6ea81d347b9b2c4d3915f8", null ],
+    [ "~ModelSubsetProto_QuadraticConstraintsEntry_DoNotUseDefaultTypeInternal", "structoperations__research_1_1math__opt_1_1ModelSubsetProto__QuadraticConstraintsEntry__DoNotUseDefaultTypeInternal.html#aa6913cd2d0ff3265cd1a42d3845d81ab", null ],
+    [ "_instance", "structoperations__research_1_1math__opt_1_1ModelSubsetProto__QuadraticConstraintsEntry__DoNotUseDefaultTypeInternal.html#a0dae60c3fe421c823a81974e520b1e3b", null ]
+];

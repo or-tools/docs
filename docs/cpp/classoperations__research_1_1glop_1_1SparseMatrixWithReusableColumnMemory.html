@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,11 @@ $(function(){initNavTree('classoperations__research_1_1glop_1_1SparseMatrixWithR
   <div class="headertitle"><div class="title">operations_research::glop::SparseMatrixWithReusableColumnMemory Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Contains a set of columns indexed by ColIndex. This is like a <a class="el" href="classoperations__research_1_1glop_1_1SparseMatrix.html">SparseMatrix</a> but this class is optimized for the case where only a small subset of columns is needed at the same time (like it is the case in our LU algorithm). It reuses the memory of the columns that are no longer needed. </p>
 
+<p class="definition">Definition at line <a class="el" href="markowitz_8h_source.html#l00252">252</a> of file <a class="el" href="markowitz_8h_source.html">markowitz.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="markowitz_8h_source.html">markowitz.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -112,11 +117,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8dca20003c5f88a707956631613ed99c" id="r_a8dca20003c5f88a707956631613ed99c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8dca20003c5f88a707956631613ed99c">ClearAndReleaseColumn</a> (ColIndex col)</td></tr>
 <tr class="memitem:a6688843bc29eaccbe0b23af9e75ba446" id="r_a6688843bc29eaccbe0b23af9e75ba446"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6688843bc29eaccbe0b23af9e75ba446">Clear</a> ()</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Contains a set of columns indexed by ColIndex. This is like a <a class="el" href="classoperations__research_1_1glop_1_1SparseMatrix.html">SparseMatrix</a> but this class is optimized for the case where only a small subset of columns is needed at the same time (like it is the case in our LU algorithm). It reuses the memory of the columns that are no longer needed. </p>
-
-<p class="definition">Definition at line <a class="el" href="markowitz_8h_source.html#l00252">252</a> of file <a class="el" href="markowitz_8h_source.html">markowitz.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa07701358ee5ffc3a15a9b52970f2bab" name="aa07701358ee5ffc3a15a9b52970f2bab"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa07701358ee5ffc3a15a9b52970f2bab">&#9670;&#160;</a></span>SparseMatrixWithReusableColumnMemory() <span class="overload">[1/2]</span></h2>
 

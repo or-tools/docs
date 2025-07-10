@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,12 @@ $(function(){initNavTree('classoperations__research_1_1sat_1_1ImpliedBoundsProce
   <div class="headertitle"><div class="title">operations_research::sat::ImpliedBoundsProcessor Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Given an upper-bounded linear relation (sum terms &lt;= ub), this algorithm inspects the integer variable appearing in the sum and try to replace each of them by a tight lower bound (&gt;= coeff * binary + lb) using the implied bound repository. By tight, we mean that it will take the same value under the current LP solution.</p>
+<p>We use a class to reuse memory of the tmp terms. </p>
 
+<p class="definition">Definition at line <a class="el" href="cuts_8h_source.html#l00189">189</a> of file <a class="el" href="cuts_8h_source.html">cuts.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="cuts_8h_source.html">cuts.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
@@ -119,12 +125,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6897e016d6610d35940647ef434f906f" id="r_a6897e016d6610d35940647ef434f906f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structoperations__research_1_1sat_1_1ImpliedBoundsProcessor_1_1BestImpliedBoundInfo.html">BestImpliedBoundInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6897e016d6610d35940647ef434f906f">GetCachedImpliedBoundInfo</a> (IntegerVariable var) const</td></tr>
 <tr class="memitem:a658717a9ed3e6d4389e9b8928c974e48" id="r_a658717a9ed3e6d4389e9b8928c974e48"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoperations__research_1_1sat_1_1TopNCuts.html">TopNCuts</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a658717a9ed3e6d4389e9b8928c974e48">IbCutPool</a> ()</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Given an upper-bounded linear relation (sum terms &lt;= ub), this algorithm inspects the integer variable appearing in the sum and try to replace each of them by a tight lower bound (&gt;= coeff * binary + lb) using the implied bound repository. By tight, we mean that it will take the same value under the current LP solution.</p>
-<p>We use a class to reuse memory of the tmp terms. </p>
-
-<p class="definition">Definition at line <a class="el" href="cuts_8h_source.html#l00189">189</a> of file <a class="el" href="cuts_8h_source.html">cuts.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a5a23b3aca01e279f03460758cb84586e" name="a5a23b3aca01e279f03460758cb84586e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5a23b3aca01e279f03460758cb84586e">&#9670;&#160;</a></span>ImpliedBoundsProcessor()</h2>
 
@@ -279,8 +280,8 @@ Public Member Functions</h2></td></tr>
 <p>Try lower bounded direction for implied bound. This kind should always be beneficial if it exists:</p>
 <p>Because X = bound_diff * B + S We can replace coeff * X by the expression before applying f: = f(coeff * bound_diff) * B + f(coeff) * [X - bound_diff * B] = f(coeff) * X + (f(coeff * bound_diff) - f(coeff) * bound_diff] * B So we can "lift" B into the cut with a non-negative coefficient.</p>
 <dl class="section note"><dt>Note</dt><dd>this lifting is really the same as if we used that implied bound before since in f(coeff * bound_diff) * B + f(coeff) * S, if we replace S by its value [X - bound_diff * B] we get the same result.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001658">Todo</a></b></dt><dd>(user): Ignore if bound_diff == 1 ? But we can still merge B with another entry if it exists, so it can still be good in this case.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001659">Todo</a></b></dt><dd>(user): Only do it if coeff_b &gt; 0 ? But again we could still merge B with an existing Boolean for a better cut even if coeff_b == 0. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001656">Todo</a></b></dt><dd>(user): Ignore if bound_diff == 1 ? But we can still merge B with another entry if it exists, so it can still be good in this case.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001657">Todo</a></b></dt><dd>(user): Only do it if coeff_b &gt; 0 ? But again we could still merge B with an existing Boolean for a better cut even if coeff_b == 0. </dd></dl>
 <p>We have X/-X = info.diff * Boolean + slack.</p>
 <p>Create slack. The expression is term.exp - bound_diff * bool_term The variable shouldn't be the same.</p>
 
@@ -433,8 +434,8 @@ Public Member Functions</h2></td></tr>
 <p>Test if it is better to use this "bad" side.</p>
 <p>Use the implied bound on (-X) if it is beneficial to do so. Like complementing, this is not always good.</p>
 <p>We have comp(X) = diff - X = diff * B + S X = diff * (1 - B) - S. So if we applies f, we will get: f(coeff * diff) * (1 - B) + f(-coeff) * S and substituing S = diff * (1 - B) - X, we get:</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001660">Todo</a></b></dt><dd>(user): Note that while the violation might be higher, if the slack becomes large this will result in a less powerfull cut. Shall we do that? It is a bit the same problematic with complementing.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001661">Todo</a></b></dt><dd>(user): If the slack is close to zero, then this transformation will always increase the violation. So we could potentially do it in Before our divisor selection heuristic. But the norm of the final cut will increase too. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001658">Todo</a></b></dt><dd>(user): Note that while the violation might be higher, if the slack becomes large this will result in a less powerfull cut. Shall we do that? It is a bit the same problematic with complementing.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001659">Todo</a></b></dt><dd>(user): If the slack is close to zero, then this transformation will always increase the violation. So we could potentially do it in Before our divisor selection heuristic. But the norm of the final cut will increase too. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>because the slack is of the opposite sign, we might loose more, so we prefer to be a bit defensive.</dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="cuts_8cc_source.html#l02212">2212</a> of file <a class="el" href="cuts_8cc_source.html">cuts.cc</a>.</p>

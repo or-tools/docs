@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,13 @@ $(function(){initNavTree('structSccCounterOutput.html','','structSccCounterOutpu
   <div class="headertitle"><div class="title">SccCounterOutput&lt; NodeIndex &gt; Struct Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename NodeIndex&gt;<br />
+struct SccCounterOutput&lt; NodeIndex &gt;</div><p>A simple custom output class that just counts the number of SCC. Not allocating many vectors can save both space and speed if your graph is large.</p>
+<dl class="section note"><dt>Note</dt><dd>If this matters, you probably don't want to use vector&lt;vector&lt;int&gt;&gt; as an input either. See StaticGraph in <a class="el" href="graph_8h.html">ortools/graph/graph.h</a> for an efficient graph data structure compatible with this algorithm. </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="strongly__connected__components_8h_source.html#l00083">83</a> of file <a class="el" href="strongly__connected__components_8h_source.html">strongly_connected_components.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="strongly__connected__components_8h_source.html">strongly_connected_components.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -108,13 +115,7 @@ Public Member Functions</h2></td></tr>
 Public Attributes</h2></td></tr>
 <tr class="memitem:aa506bc8bf4c4be4615a22a7d1d1d1662" id="r_aa506bc8bf4c4be4615a22a7d1d1d1662"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa506bc8bf4c4be4615a22a7d1d1d1662">number_of_components</a> = 0</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;typename NodeIndex&gt;<br />
-struct SccCounterOutput&lt; NodeIndex &gt;</div><p>A simple custom output class that just counts the number of SCC. Not allocating many vectors can save both space and speed if your graph is large.</p>
-<dl class="section note"><dt>Note</dt><dd>If this matters, you probably don't want to use vector&lt;vector&lt;int&gt;&gt; as an input either. See StaticGraph in <a class="el" href="graph_8h.html">ortools/graph/graph.h</a> for an efficient graph data structure compatible with this algorithm. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="strongly__connected__components_8h_source.html#l00083">83</a> of file <a class="el" href="strongly__connected__components_8h_source.html">strongly_connected_components.h</a>.</p>
-</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="af58efc45eb1ae703ec368719541ee708" name="af58efc45eb1ae703ec368719541ee708"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af58efc45eb1ae703ec368719541ee708">&#9670;&#160;</a></span>clear()</h2>
 

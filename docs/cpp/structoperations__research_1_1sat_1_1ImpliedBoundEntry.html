@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,12 @@ $(function(){initNavTree('structoperations__research_1_1sat_1_1ImpliedBoundEntry
   <div class="headertitle"><div class="title">operations_research::sat::ImpliedBoundEntry Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>For each IntegerVariable, the ImpliedBound class allows to list all such entries.</p>
+<p>This is meant to be used in the cut generation code when it make sense: if we have <a class="el" href="classoperations__research_1_1sat_1_1BoolVar.html">BoolVar</a> =&gt; X &gt;= bound, we can always lower bound the variable X by (bound - X_lb) * <a class="el" href="classoperations__research_1_1sat_1_1BoolVar.html">BoolVar</a> + X_lb, and that can lead to stronger cuts. </p>
 
+<p class="definition">Definition at line <a class="el" href="implied__bounds_8h_source.html#l00051">51</a> of file <a class="el" href="implied__bounds_8h_source.html">implied_bounds.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="implied__bounds_8h_source.html">implied_bounds.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -109,12 +115,7 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a3b75eeeb5de63e9ed60cbea669c3a4ce" id="r_a3b75eeeb5de63e9ed60cbea669c3a4ce"><td class="memItemLeft" align="right" valign="top">IntegerVariable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3b75eeeb5de63e9ed60cbea669c3a4ce">literal_view</a> = <a class="el" href="namespaceoperations__research_1_1sat.html#a5bd8c44473618b7eafd33ba978db2f06">kNoIntegerVariable</a></td></tr>
 <tr class="memitem:a6d416a6d2cd51b6855aa07da131dec0c" id="r_a6d416a6d2cd51b6855aa07da131dec0c"><td class="memItemLeft" align="right" valign="top">IntegerValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6d416a6d2cd51b6855aa07da131dec0c">lower_bound</a> = IntegerValue(0)</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>For each IntegerVariable, the ImpliedBound class allows to list all such entries.</p>
-<p>This is meant to be used in the cut generation code when it make sense: if we have <a class="el" href="classoperations__research_1_1sat_1_1BoolVar.html">BoolVar</a> =&gt; X &gt;= bound, we can always lower bound the variable X by (bound - X_lb) * <a class="el" href="classoperations__research_1_1sat_1_1BoolVar.html">BoolVar</a> + X_lb, and that can lead to stronger cuts. </p>
-
-<p class="definition">Definition at line <a class="el" href="implied__bounds_8h_source.html#l00051">51</a> of file <a class="el" href="implied__bounds_8h_source.html">implied_bounds.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a54732a08063aa84a9890377e5ca8e38d" name="a54732a08063aa84a9890377e5ca8e38d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a54732a08063aa84a9890377e5ca8e38d">&#9670;&#160;</a></span>ImpliedBoundEntry() <span class="overload">[1/2]</span></h2>
 

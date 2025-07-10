@@ -25,7 +25,7 @@
 var NAVTREE =
 [
   [ "Google OR-Tools", "index.html", [
-    [ "OR-Tools", "index.html", null ],
+    [ "OR-Tools Python Reference", "index.html", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
@@ -80,7 +80,7 @@ var NAVTREEINDEX =
 "graph_2____init_____8py.html",
 "namespaceortools_1_1gscip_1_1gscip__pb2.html#ab305f4a4b40143530e51de204d846b30",
 "namespaceortools_1_1math__opt_1_1python_1_1statistics.html",
-"namespaceortools_1_1scheduling_1_1course__scheduling__pb2.html#a4a69191fcbfff1f230d453fd5bf08826"
+"namespaceortools_1_1scheduling_1_1course__scheduling__pb2.html#a29d9bb9dc5b8fd3a685469ec5d318694"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

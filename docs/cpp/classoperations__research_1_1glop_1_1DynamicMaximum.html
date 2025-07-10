@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,18 @@ $(function(){initNavTree('classoperations__research_1_1glop_1_1DynamicMaximum.ht
   <div class="headertitle"><div class="title">operations_research::glop::DynamicMaximum&lt; Index &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename <a class="el" href="namespaceoperations__research_1_1glop.html#a6ceda22b5fe5815dbdf343665c093e57">Index</a>&gt;<br />
+class operations_research::glop::DynamicMaximum&lt; Index &gt;</div><p>Maintains a set of elements in [0, n), each with an associated value and allows to query the element of maximum value efficiently.</p>
+<p>This is optimized for use in the pricing step of the simplex algorithm. Basically at each simplex iterations, you want to:</p>
+<p>1/ Get the candidate with the maximum value. The number of candidates can be close to n, or really small. You also want some randomization if several elements have an equivalent (maximum) value.</p>
+<p>2/ Update the set of candidate and their values, where the number of update is usually a lot smaller than n. Note that in some corner cases, there are two "updates" phases, so a position can be updated twice.</p>
+<p>The idea is to be faster than O(num_candidates) per <a class="el" href="#a5a1cf0bc9507c1dfcef22b8d89d2d9f0">GetMaximum()</a>, most of the time. All updates should be in O(1) with as little overhead as possible. The algorithm here dynamically maintain the top-k (for k=32) with best effort and use it instead of doing a O(num_candidates) scan when possible.</p>
+<dl class="section note"><dt>Note</dt><dd>when O(num_updates) &lt;&lt; n, this can have a huge effect. A basic O(1) per update, O(num_candidates) per maximum query was taking around 60% of the total time on graph40-80-1rand.pb.gz ! with the top-32 algo coded here, it is around 3%, and the number of "fast" <a class="el" href="#a5a1cf0bc9507c1dfcef22b8d89d2d9f0">GetMaximum()</a> that hit the top-k heap on the first 120s of that problem was 250757 / 255659. Note that n was 282624 in this case, which is not even the biggest size we can tackle.</dd></dl>
+<p>Note(user): This could be moved to util/ as a general class if someone wants to reuse it, it is however tuned for use in Glop pricing step and might becomes even more specific in the future. </p>
 
+<p class="definition">Definition at line <a class="el" href="pricing_8h_source.html#l00061">61</a> of file <a class="el" href="pricing_8h_source.html">pricing.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="pricing_8h_source.html">pricing.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -116,18 +128,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2c8ac403f3cbdea167c1095313305499" id="r_a2c8ac403f3cbdea167c1095313305499"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2c8ac403f3cbdea167c1095313305499">StatString</a> () const</td></tr>
 <tr class="memdesc:a2c8ac403f3cbdea167c1095313305499"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns some stats about this class if they are enabled.  <br /></td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;typename <a class="el" href="namespaceoperations__research_1_1glop.html#a6ceda22b5fe5815dbdf343665c093e57">Index</a>&gt;<br />
-class operations_research::glop::DynamicMaximum&lt; Index &gt;</div><p>Maintains a set of elements in [0, n), each with an associated value and allows to query the element of maximum value efficiently.</p>
-<p>This is optimized for use in the pricing step of the simplex algorithm. Basically at each simplex iterations, you want to:</p>
-<p>1/ Get the candidate with the maximum value. The number of candidates can be close to n, or really small. You also want some randomization if several elements have an equivalent (maximum) value.</p>
-<p>2/ Update the set of candidate and their values, where the number of update is usually a lot smaller than n. Note that in some corner cases, there are two "updates" phases, so a position can be updated twice.</p>
-<p>The idea is to be faster than O(num_candidates) per <a class="el" href="#a5a1cf0bc9507c1dfcef22b8d89d2d9f0">GetMaximum()</a>, most of the time. All updates should be in O(1) with as little overhead as possible. The algorithm here dynamically maintain the top-k (for k=32) with best effort and use it instead of doing a O(num_candidates) scan when possible.</p>
-<dl class="section note"><dt>Note</dt><dd>when O(num_updates) &lt;&lt; n, this can have a huge effect. A basic O(1) per update, O(num_candidates) per maximum query was taking around 60% of the total time on graph40-80-1rand.pb.gz ! with the top-32 algo coded here, it is around 3%, and the number of "fast" <a class="el" href="#a5a1cf0bc9507c1dfcef22b8d89d2d9f0">GetMaximum()</a> that hit the top-k heap on the first 120s of that problem was 250757 / 255659. Note that n was 282624 in this case, which is not even the biggest size we can tackle.</dd></dl>
-<p>Note(user): This could be moved to util/ as a general class if someone wants to reuse it, it is however tuned for use in Glop pricing step and might becomes even more specific in the future. </p>
-
-<p class="definition">Definition at line <a class="el" href="pricing_8h_source.html#l00061">61</a> of file <a class="el" href="pricing_8h_source.html">pricing.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a5e01db19c2d52ecc109825ed8318d0f6" name="a5e01db19c2d52ecc109825ed8318d0f6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5e01db19c2d52ecc109825ed8318d0f6">&#9670;&#160;</a></span>DynamicMaximum()</h2>
 
@@ -317,7 +318,7 @@ template&lt;typename <a class="el" href="namespaceoperations__research_1_1glop.h
 <p>We do two things here: 1/ Filter tops_ to only contain valid entries. This is because we never remove element, so the value of one of the element in tops might have decreased now. Note that we leave threshold_ untouched, so it can actually be lower than the minimum of the element in tops. 2/ Get the maximum of the valid elements.</p>
 <p>The two possible sources of "invalidity".</p>
 <p>We need to iterate over all the candidates.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000535">Todo</a></b></dt><dd>(user): Add a mode when we do not maintain the TopK for small sizes (like n &lt; 1000) ? The gain might not be worth the extra code though. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000534">Todo</a></b></dt><dd>(user): Add a mode when we do not maintain the TopK for small sizes (like n &lt; 1000) ? The gain might not be worth the extra code though. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="pricing_8h_source.html#l00211">211</a> of file <a class="el" href="pricing_8h_source.html">pricing.h</a>.</p>
 

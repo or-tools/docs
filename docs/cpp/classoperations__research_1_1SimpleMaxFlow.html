@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,12 @@ $(function(){initNavTree('classoperations__research_1_1SimpleMaxFlow.html','','c
   <div class="headertitle"><div class="title">operations_research::SimpleMaxFlow Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A simple and efficient max-cost flow interface. This is as fast as <a class="el" href="classoperations__research_1_1GenericMaxFlow.html">GenericMaxFlow&lt;ReverseArcStaticGraph&gt;</a>, which is the fastest, but uses more memory in order to hide the somewhat involved construction of the static graph.</p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000684">Todo</a></b></dt><dd>(user): If the need arises, extend this interface to support warm start. </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="max__flow_8h_source.html#l00033">33</a> of file <a class="el" href="max__flow_8h_source.html">max_flow.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="max__flow_8h_source.html">max_flow.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-types" class="groupheader"><a id="pub-types" name="pub-types"></a>
@@ -128,15 +134,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae83c98d7dcf6a2d76a5d500273255fe6" id="r_ae83c98d7dcf6a2d76a5d500273255fe6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae83c98d7dcf6a2d76a5d500273255fe6">GetSourceSideMinCut</a> (std::vector&lt; <a class="el" href="#a6ac224984c4b5437c6dfcb03841d5adf">NodeIndex</a> &gt; *result)</td></tr>
 <tr class="memitem:a693abc3c55e13dbe2f836e562b5a9c0f" id="r_a693abc3c55e13dbe2f836e562b5a9c0f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a693abc3c55e13dbe2f836e562b5a9c0f">GetSinkSideMinCut</a> (std::vector&lt; <a class="el" href="#a6ac224984c4b5437c6dfcb03841d5adf">NodeIndex</a> &gt; *result)</td></tr>
 <tr class="memitem:a57296b653813abdd8d711048e87d1212" id="r_a57296b653813abdd8d711048e87d1212"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a57296b653813abdd8d711048e87d1212">SetArcCapacity</a> (<a class="el" href="#a9f2ce327910436cfbedf9f3d5a3cee25">ArcIndex</a> arc, <a class="el" href="#abca3fa070c1438b21f6f0b745bc0f205">FlowQuantity</a> capacity)</td></tr>
-<tr class="memitem:a23612105b6ed1c5d5df3313692433f80" id="r_a23612105b6ed1c5d5df3313692433f80"><td class="memItemLeft" align="right" valign="top">FlowModelProto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a23612105b6ed1c5d5df3313692433f80">CreateFlowModelProto</a> (<a class="el" href="#a6ac224984c4b5437c6dfcb03841d5adf">NodeIndex</a> source, <a class="el" href="#a6ac224984c4b5437c6dfcb03841d5adf">NodeIndex</a> sink) const</td></tr>
+<tr class="memitem:a23612105b6ed1c5d5df3313692433f80" id="r_a23612105b6ed1c5d5df3313692433f80"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoperations__research_1_1FlowModelProto.html">FlowModelProto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a23612105b6ed1c5d5df3313692433f80">CreateFlowModelProto</a> (<a class="el" href="#a6ac224984c4b5437c6dfcb03841d5adf">NodeIndex</a> source, <a class="el" href="#a6ac224984c4b5437c6dfcb03841d5adf">NodeIndex</a> sink) const</td></tr>
 <tr class="memdesc:a23612105b6ed1c5d5df3313692433f80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the protocol buffer representation of the current problem.  <br /></td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A simple and efficient max-cost flow interface. This is as fast as <a class="el" href="classoperations__research_1_1GenericMaxFlow.html">GenericMaxFlow&lt;ReverseArcStaticGraph&gt;</a>, which is the fastest, but uses more memory in order to hide the somewhat involved construction of the static graph.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000685">Todo</a></b></dt><dd>(user): If the need arises, extend this interface to support warm start. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="max__flow_8h_source.html#l00033">33</a> of file <a class="el" href="max__flow_8h_source.html">max_flow.h</a>.</p>
-</div><a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Member Typedef Documentation</h2>
+<a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Member Typedef Documentation</h2>
 <a id="a9f2ce327910436cfbedf9f3d5a3cee25" name="a9f2ce327910436cfbedf9f3d5a3cee25"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9f2ce327910436cfbedf9f3d5a3cee25">&#9670;&#160;</a></span>ArcIndex</h2>
 
@@ -202,7 +203,7 @@ Public Member Functions</h2></td></tr>
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a8a7acde49c4d55f2eb42e2b6869cdb3da3b60465215ab4363dec64fd313771658" name="a8a7acde49c4d55f2eb42e2b6869cdb3da3b60465215ab4363dec64fd313771658"></a>OPTIMAL&#160;</td><td class="fielddoc"><p><a class="el" href="#a9ab115ebcfcc1281523de56099bf6bed">Solve()</a> was called and found an optimal solution. Note that <a class="el" href="#a31f4bc6c1a95064d601990d469d81c70">OptimalFlow()</a> may be 0 which means that the sink is not reachable from the source. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a8a7acde49c4d55f2eb42e2b6869cdb3da18a3ff25435f10be68329d4b39de4700" name="a8a7acde49c4d55f2eb42e2b6869cdb3da18a3ff25435f10be68329d4b39de4700"></a>POSSIBLE_OVERFLOW&#160;</td><td class="fielddoc"><p>There is a flow &gt; std::numeric_limits&lt;FlowQuantity&gt;::max(). Note that in this case, the class will contain a solution with a flow reaching that bound.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000687">Todo</a></b></dt><dd>(user): rename POSSIBLE_OVERFLOW to INT_OVERFLOW and modify our clients. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000686">Todo</a></b></dt><dd>(user): rename POSSIBLE_OVERFLOW to INT_OVERFLOW and modify our clients. </dd></dl>
 </td></tr>
 <tr><td class="fieldname"><a id="a8a7acde49c4d55f2eb42e2b6869cdb3da2260e76ea3adc21a9cd21f46f232ebbc" name="a8a7acde49c4d55f2eb42e2b6869cdb3da2260e76ea3adc21a9cd21f46f232ebbc"></a>BAD_INPUT&#160;</td><td class="fielddoc"><p>The input is inconsistent (bad tail/head/capacity values). </p>
 </td></tr>
@@ -322,7 +323,7 @@ Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">FlowModelProto operations_research::SimpleMaxFlow::CreateFlowModelProto </td>
+          <td class="memname"><a class="el" href="classoperations__research_1_1FlowModelProto.html">FlowModelProto</a> operations_research::SimpleMaxFlow::CreateFlowModelProto </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="#a6ac224984c4b5437c6dfcb03841d5adf">NodeIndex</a></td>          <td class="paramname"><span class="paramname"><em>source</em></span>, </td>
         </tr>
@@ -526,7 +527,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Change the capacity of an arc.</p>
 <dl class="section warning"><dt>Warning</dt><dd>This looks like it enables incremental solves, but as of 2018-02, the next <a class="el" href="#a9ab115ebcfcc1281523de56099bf6bed">Solve()</a> will restart from scratch anyway. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000686">Todo</a></b></dt><dd>(user): Support incrementality in the max flow implementation. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000685">Todo</a></b></dt><dd>(user): Support incrementality in the max flow implementation. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="max__flow_8cc_source.html#l00056">56</a> of file <a class="el" href="max__flow_8cc_source.html">max_flow.cc</a>.</p>
 

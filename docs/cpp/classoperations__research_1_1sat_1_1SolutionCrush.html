@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,13 @@ $(function(){initNavTree('classoperations__research_1_1sat_1_1SolutionCrush.html
   <div class="headertitle"><div class="title">operations_research::sat::SolutionCrush Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Transforms (or "crushes") solutions of the initial model into solutions of the presolved model.</p>
+<dl class="section note"><dt>Note</dt><dd>partial solution crushing is not a priority: as of Jan 2025, most methods of this class do nothing if some solution values are missing to perform their work. If one just want to complete a partial solution to a full one for convenience, it should be relatively easy to first solve a feasibility model where all hinted variables are fixed, and use the solution to that problem as a starting hint.</dd></dl>
+<p>Note also that if the initial "solution" is incomplete or infeasible, the crushed "solution" might contain values outside of the domain of their variables. Consider for instance two constraints "b =&gt; v=1" and "!b =&gt; v=2", presolved into "v = b+1", with SetVarToLinearConstraintSolution called to set b's value from v's value. If the initial solution is infeasible, with v=0, this will set b to -1, which is outside of its [0,1] domain. </p>
 
+<p class="definition">Definition at line <a class="el" href="solution__crush_8h_source.html#l00052">52</a> of file <a class="el" href="solution__crush_8h_source.html">solution_crush.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="solution__crush_8h_source.html">solution_crush.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
@@ -128,7 +135,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6e00723c1b2194591601eec43a4c0bf8" id="r_a6e00723c1b2194591601eec43a4c0bf8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6e00723c1b2194591601eec43a4c0bf8">SetLiteralToValueIfLinearConstraintViolated</a> (int literal, bool value, absl::Span&lt; const std::pair&lt; int, int64_t &gt; &gt; linear, const <a class="el" href="classoperations__research_1_1Domain.html">Domain</a> &amp;domain)</td></tr>
 <tr class="memitem:a22b914d5180636ca10783639176d1c3c" id="r_a22b914d5180636ca10783639176d1c3c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a22b914d5180636ca10783639176d1c3c">SetVarToValueIf</a> (int var, int64_t value, int condition_lit)</td></tr>
 <tr class="memdesc:a22b914d5180636ca10783639176d1c3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the value of <span class="tt">var</span> to <span class="tt">value</span> if the value of <span class="tt">condition_lit</span> is true.  <br /></td></tr>
-<tr class="memitem:a8976e65bdd06064e1807fbd823999e30" id="r_a8976e65bdd06064e1807fbd823999e30"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8976e65bdd06064e1807fbd823999e30">SetVarToLinearExpressionIf</a> (int var, const LinearExpressionProto &amp;expr, int condition_lit)</td></tr>
+<tr class="memitem:a8976e65bdd06064e1807fbd823999e30" id="r_a8976e65bdd06064e1807fbd823999e30"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8976e65bdd06064e1807fbd823999e30">SetVarToLinearExpressionIf</a> (int var, const <a class="el" href="classoperations__research_1_1sat_1_1LinearExpressionProto.html">LinearExpressionProto</a> &amp;expr, int condition_lit)</td></tr>
 <tr class="memitem:ac046266936e5851e0bd8f5cd473c042c" id="r_ac046266936e5851e0bd8f5cd473c042c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac046266936e5851e0bd8f5cd473c042c">SetLiteralToValueIf</a> (int literal, bool value, int condition_lit)</td></tr>
 <tr class="memitem:adb76760b1ababf5c8136a0c882db54b7" id="r_adb76760b1ababf5c8136a0c882db54b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adb76760b1ababf5c8136a0c882db54b7">SetVarToConditionalValue</a> (int var, absl::Span&lt; const int &gt; condition_lits, int64_t value_if_true, int64_t value_if_false)</td></tr>
 <tr class="memitem:a608cf28c6e89ce8954991e74bc3e5af8" id="r_a608cf28c6e89ce8954991e74bc3e5af8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a608cf28c6e89ce8954991e74bc3e5af8">MakeLiteralsEqual</a> (int lit1, int lit2)</td></tr>
@@ -138,25 +145,19 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a710d3931bef8c00475324cb65191e858" id="r_a710d3931bef8c00475324cb65191e858"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a710d3931bef8c00475324cb65191e858">UpdateRefsWithDominance</a> (int ref, int64_t min_value, int64_t max_value, absl::Span&lt; const std::pair&lt; int, <a class="el" href="classoperations__research_1_1Domain.html">Domain</a> &gt; &gt; dominating_refs)</td></tr>
 <tr class="memitem:aabc5557d3b16db0eab2a4c4d0f55994a" id="r_aabc5557d3b16db0eab2a4c4d0f55994a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aabc5557d3b16db0eab2a4c4d0f55994a">MaybeUpdateVarWithSymmetriesToValue</a> (int var, bool value, absl::Span&lt; const std::unique_ptr&lt; <a class="el" href="classoperations__research_1_1SparsePermutation.html">SparsePermutation</a> &gt; &gt; generators)</td></tr>
 <tr class="memitem:af508c0aca14eeb86517ac7dc621ac9f7" id="r_af508c0aca14eeb86517ac7dc621ac9f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af508c0aca14eeb86517ac7dc621ac9f7">SetVarToLinearConstraintSolution</a> (std::optional&lt; int &gt; var_index, absl::Span&lt; const int &gt; vars, absl::Span&lt; const int64_t &gt; coeffs, int64_t rhs)</td></tr>
-<tr class="memitem:a0fd08096887c6a8202aa94db007c8359" id="r_a0fd08096887c6a8202aa94db007c8359"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0fd08096887c6a8202aa94db007c8359">SetReservoirCircuitVars</a> (const ReservoirConstraintProto &amp;reservoir, int64_t min_level, int64_t max_level, absl::Span&lt; const int &gt; level_vars, const CircuitConstraintProto &amp;circuit)</td></tr>
-<tr class="memitem:a558342e7b730bee3582d4e0e41430326" id="r_a558342e7b730bee3582d4e0e41430326"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a558342e7b730bee3582d4e0e41430326">SetVarToReifiedPrecedenceLiteral</a> (int var, const LinearExpressionProto &amp;time_i, const LinearExpressionProto &amp;time_j, int active_i, int active_j)</td></tr>
-<tr class="memitem:a01396d8488dd82104b1099268768bd53" id="r_a01396d8488dd82104b1099268768bd53"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a01396d8488dd82104b1099268768bd53">SetIntModExpandedVars</a> (const ConstraintProto &amp;ct, int div_var, int prod_var, int64_t default_div_value, int64_t default_prod_value)</td></tr>
-<tr class="memitem:a78ecdcac0022a4bbea95ed0e3d9e34d7" id="r_a78ecdcac0022a4bbea95ed0e3d9e34d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a78ecdcac0022a4bbea95ed0e3d9e34d7">SetIntProdExpandedVars</a> (const LinearArgumentProto &amp;int_prod, absl::Span&lt; const int &gt; prod_vars)</td></tr>
-<tr class="memitem:a0e060258fbdea30d0955622fc5fad04d" id="r_a0e060258fbdea30d0955622fc5fad04d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0e060258fbdea30d0955622fc5fad04d">SetLinMaxExpandedVars</a> (const LinearArgumentProto &amp;lin_max, absl::Span&lt; const int &gt; enforcement_lits)</td></tr>
-<tr class="memitem:a3b7311bb02df2eb90d027504e176086d" id="r_a3b7311bb02df2eb90d027504e176086d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3b7311bb02df2eb90d027504e176086d">SetAutomatonExpandedVars</a> (const AutomatonConstraintProto &amp;automaton, absl::Span&lt; const <a class="el" href="structoperations__research_1_1sat_1_1SolutionCrush_1_1StateVar.html">StateVar</a> &gt; state_vars, absl::Span&lt; const <a class="el" href="structoperations__research_1_1sat_1_1SolutionCrush_1_1TransitionVar.html">TransitionVar</a> &gt; transition_vars)</td></tr>
+<tr class="memitem:a0fd08096887c6a8202aa94db007c8359" id="r_a0fd08096887c6a8202aa94db007c8359"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0fd08096887c6a8202aa94db007c8359">SetReservoirCircuitVars</a> (const <a class="el" href="classoperations__research_1_1sat_1_1ReservoirConstraintProto.html">ReservoirConstraintProto</a> &amp;reservoir, int64_t min_level, int64_t max_level, absl::Span&lt; const int &gt; level_vars, const <a class="el" href="classoperations__research_1_1sat_1_1CircuitConstraintProto.html">CircuitConstraintProto</a> &amp;circuit)</td></tr>
+<tr class="memitem:a558342e7b730bee3582d4e0e41430326" id="r_a558342e7b730bee3582d4e0e41430326"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a558342e7b730bee3582d4e0e41430326">SetVarToReifiedPrecedenceLiteral</a> (int var, const <a class="el" href="classoperations__research_1_1sat_1_1LinearExpressionProto.html">LinearExpressionProto</a> &amp;time_i, const <a class="el" href="classoperations__research_1_1sat_1_1LinearExpressionProto.html">LinearExpressionProto</a> &amp;time_j, int active_i, int active_j)</td></tr>
+<tr class="memitem:a01396d8488dd82104b1099268768bd53" id="r_a01396d8488dd82104b1099268768bd53"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a01396d8488dd82104b1099268768bd53">SetIntModExpandedVars</a> (const <a class="el" href="classoperations__research_1_1sat_1_1ConstraintProto.html">ConstraintProto</a> &amp;ct, int div_var, int prod_var, int64_t default_div_value, int64_t default_prod_value)</td></tr>
+<tr class="memitem:a78ecdcac0022a4bbea95ed0e3d9e34d7" id="r_a78ecdcac0022a4bbea95ed0e3d9e34d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a78ecdcac0022a4bbea95ed0e3d9e34d7">SetIntProdExpandedVars</a> (const <a class="el" href="classoperations__research_1_1sat_1_1LinearArgumentProto.html">LinearArgumentProto</a> &amp;int_prod, absl::Span&lt; const int &gt; prod_vars)</td></tr>
+<tr class="memitem:a0e060258fbdea30d0955622fc5fad04d" id="r_a0e060258fbdea30d0955622fc5fad04d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0e060258fbdea30d0955622fc5fad04d">SetLinMaxExpandedVars</a> (const <a class="el" href="classoperations__research_1_1sat_1_1LinearArgumentProto.html">LinearArgumentProto</a> &amp;lin_max, absl::Span&lt; const int &gt; enforcement_lits)</td></tr>
+<tr class="memitem:a3b7311bb02df2eb90d027504e176086d" id="r_a3b7311bb02df2eb90d027504e176086d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3b7311bb02df2eb90d027504e176086d">SetAutomatonExpandedVars</a> (const <a class="el" href="classoperations__research_1_1sat_1_1AutomatonConstraintProto.html">AutomatonConstraintProto</a> &amp;automaton, absl::Span&lt; const <a class="el" href="structoperations__research_1_1sat_1_1SolutionCrush_1_1StateVar.html">StateVar</a> &gt; state_vars, absl::Span&lt; const <a class="el" href="structoperations__research_1_1sat_1_1SolutionCrush_1_1TransitionVar.html">TransitionVar</a> &gt; transition_vars)</td></tr>
 <tr class="memitem:ada6853c415f19469c254b1ea58785a3c" id="r_ada6853c415f19469c254b1ea58785a3c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ada6853c415f19469c254b1ea58785a3c">SetTableExpandedVars</a> (absl::Span&lt; const int &gt; column_vars, absl::Span&lt; const int &gt; existing_row_lits, absl::Span&lt; const <a class="el" href="structoperations__research_1_1sat_1_1SolutionCrush_1_1TableRowLiteral.html">TableRowLiteral</a> &gt; new_row_lits)</td></tr>
-<tr class="memitem:a03bb3cb3e4bdbe77255a2915180dc76a" id="r_a03bb3cb3e4bdbe77255a2915180dc76a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a03bb3cb3e4bdbe77255a2915180dc76a">SetLinearWithComplexDomainExpandedVars</a> (const LinearConstraintProto &amp;linear, absl::Span&lt; const int &gt; bucket_lits)</td></tr>
-<tr class="memitem:a06d112d02be062d985c8fe18626b8b0a" id="r_a06d112d02be062d985c8fe18626b8b0a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a06d112d02be062d985c8fe18626b8b0a">StoreSolutionAsHint</a> (CpModelProto &amp;model) const</td></tr>
+<tr class="memitem:a03bb3cb3e4bdbe77255a2915180dc76a" id="r_a03bb3cb3e4bdbe77255a2915180dc76a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a03bb3cb3e4bdbe77255a2915180dc76a">SetLinearWithComplexDomainExpandedVars</a> (const <a class="el" href="classoperations__research_1_1sat_1_1LinearConstraintProto.html">LinearConstraintProto</a> &amp;linear, absl::Span&lt; const int &gt; bucket_lits)</td></tr>
+<tr class="memitem:a06d112d02be062d985c8fe18626b8b0a" id="r_a06d112d02be062d985c8fe18626b8b0a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a06d112d02be062d985c8fe18626b8b0a">StoreSolutionAsHint</a> (<a class="el" href="classoperations__research_1_1sat_1_1CpModelProto.html">CpModelProto</a> &amp;model) const</td></tr>
 <tr class="memdesc:a06d112d02be062d985c8fe18626b8b0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores the solution as a hint in the given model.  <br /></td></tr>
-<tr class="memitem:a30ac1b4640ba0ef5bb5815053f6eb9a8" id="r_a30ac1b4640ba0ef5bb5815053f6eb9a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a30ac1b4640ba0ef5bb5815053f6eb9a8">AssignVariableToPackingArea</a> (const <a class="el" href="classoperations__research_1_1sat_1_1CompactVectorVector.html">CompactVectorVector</a>&lt; int, <a class="el" href="structoperations__research_1_1sat_1_1Rectangle.html">Rectangle</a> &gt; &amp;areas, const CpModelProto &amp;model, absl::Span&lt; const int &gt; x_intervals, absl::Span&lt; const int &gt; y_intervals, absl::Span&lt; const <a class="el" href="structoperations__research_1_1sat_1_1SolutionCrush_1_1BoxInAreaLiteral.html">BoxInAreaLiteral</a> &gt; box_in_area_lits)</td></tr>
+<tr class="memitem:a30ac1b4640ba0ef5bb5815053f6eb9a8" id="r_a30ac1b4640ba0ef5bb5815053f6eb9a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a30ac1b4640ba0ef5bb5815053f6eb9a8">AssignVariableToPackingArea</a> (const <a class="el" href="classoperations__research_1_1sat_1_1CompactVectorVector.html">CompactVectorVector</a>&lt; int, <a class="el" href="structoperations__research_1_1sat_1_1Rectangle.html">Rectangle</a> &gt; &amp;areas, const <a class="el" href="classoperations__research_1_1sat_1_1CpModelProto.html">CpModelProto</a> &amp;model, absl::Span&lt; const int &gt; x_intervals, absl::Span&lt; const int &gt; y_intervals, absl::Span&lt; const <a class="el" href="structoperations__research_1_1sat_1_1SolutionCrush_1_1BoxInAreaLiteral.html">BoxInAreaLiteral</a> &gt; box_in_area_lits)</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Transforms (or "crushes") solutions of the initial model into solutions of the presolved model.</p>
-<dl class="section note"><dt>Note</dt><dd>partial solution crushing is not a priority: as of Jan 2025, most methods of this class do nothing if some solution values are missing to perform their work. If one just want to complete a partial solution to a full one for convenience, it should be relatively easy to first solve a feasibility model where all hinted variables are fixed, and use the solution to that problem as a starting hint.</dd></dl>
-<p>Note also that if the initial "solution" is incomplete or infeasible, the crushed "solution" might contain values outside of the domain of their variables. Consider for instance two constraints "b =&gt; v=1" and "!b =&gt; v=2", presolved into "v = b+1", with SetVarToLinearConstraintSolution called to set b's value from v's value. If the initial solution is infeasible, with v=0, this will set b to -1, which is outside of its [0,1] domain. </p>
-
-<p class="definition">Definition at line <a class="el" href="solution__crush_8h_source.html#l00052">52</a> of file <a class="el" href="solution__crush_8h_source.html">solution_crush.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab75dd083cc13e800eb74cbfd431a8ebe" name="ab75dd083cc13e800eb74cbfd431a8ebe"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab75dd083cc13e800eb74cbfd431a8ebe">&#9670;&#160;</a></span>SolutionCrush() <span class="overload">[1/3]</span></h2>
 
@@ -249,7 +250,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const CpModelProto &amp;</td>          <td class="paramname"><span class="paramname"><em>model</em></span>, </td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1sat_1_1CpModelProto.html">CpModelProto</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>model</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -487,7 +488,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void operations_research::sat::SolutionCrush::SetAutomatonExpandedVars </td>
           <td>(</td>
-          <td class="paramtype">const AutomatonConstraintProto &amp;</td>          <td class="paramname"><span class="paramname"><em>automaton</em></span>, </td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1sat_1_1AutomatonConstraintProto.html">AutomatonConstraintProto</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>automaton</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -516,7 +517,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void operations_research::sat::SolutionCrush::SetIntModExpandedVars </td>
           <td>(</td>
-          <td class="paramtype">const ConstraintProto &amp;</td>          <td class="paramname"><span class="paramname"><em>ct</em></span>, </td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1sat_1_1ConstraintProto.html">ConstraintProto</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>ct</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -556,7 +557,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void operations_research::sat::SolutionCrush::SetIntProdExpandedVars </td>
           <td>(</td>
-          <td class="paramtype">const LinearArgumentProto &amp;</td>          <td class="paramname"><span class="paramname"><em>int_prod</em></span>, </td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1sat_1_1LinearArgumentProto.html">LinearArgumentProto</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>int_prod</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -580,7 +581,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void operations_research::sat::SolutionCrush::SetLinearWithComplexDomainExpandedVars </td>
           <td>(</td>
-          <td class="paramtype">const LinearConstraintProto &amp;</td>          <td class="paramname"><span class="paramname"><em>linear</em></span>, </td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1sat_1_1LinearConstraintProto.html">LinearConstraintProto</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>linear</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -604,7 +605,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void operations_research::sat::SolutionCrush::SetLinMaxExpandedVars </td>
           <td>(</td>
-          <td class="paramtype">const LinearArgumentProto &amp;</td>          <td class="paramname"><span class="paramname"><em>lin_max</em></span>, </td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1sat_1_1LinearArgumentProto.html">LinearArgumentProto</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>lin_max</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -716,7 +717,7 @@ x_1, ..., x_(n-1))" is expanded into "enforcement_lits[i] =&gt; target &lt;= x_i
         <tr>
           <td class="memname">void operations_research::sat::SolutionCrush::SetReservoirCircuitVars </td>
           <td>(</td>
-          <td class="paramtype">const ReservoirConstraintProto &amp;</td>          <td class="paramname"><span class="paramname"><em>reservoir</em></span>, </td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1sat_1_1ReservoirConstraintProto.html">ReservoirConstraintProto</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>reservoir</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -736,7 +737,7 @@ x_1, ..., x_(n-1))" is expanded into "enforcement_lits[i] =&gt; target &lt;= x_i
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const CircuitConstraintProto &amp;</td>          <td class="paramname"><span class="paramname"><em>circuit</em></span>&#160;)</td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1sat_1_1CircuitConstraintProto.html">CircuitConstraintProto</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>circuit</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -978,7 +979,7 @@ x_1, ..., x_(n-1))" is expanded into "enforcement_lits[i] =&gt; target &lt;= x_i
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const LinearExpressionProto &amp;</td>          <td class="paramname"><span class="paramname"><em>expr</em></span>, </td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1sat_1_1LinearExpressionProto.html">LinearExpressionProto</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>expr</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1007,12 +1008,12 @@ x_1, ..., x_(n-1))" is expanded into "enforcement_lits[i] =&gt; target &lt;= x_i
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const LinearExpressionProto &amp;</td>          <td class="paramname"><span class="paramname"><em>time_i</em></span>, </td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1sat_1_1LinearExpressionProto.html">LinearExpressionProto</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>time_i</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const LinearExpressionProto &amp;</td>          <td class="paramname"><span class="paramname"><em>time_j</em></span>, </td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1sat_1_1LinearExpressionProto.html">LinearExpressionProto</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>time_j</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1133,7 +1134,7 @@ x_1, ..., x_(n-1))" is expanded into "enforcement_lits[i] =&gt; target &lt;= x_i
         <tr>
           <td class="memname">void operations_research::sat::SolutionCrush::StoreSolutionAsHint </td>
           <td>(</td>
-          <td class="paramtype">CpModelProto &amp;</td>          <td class="paramname"><span class="paramname"><em>model</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="classoperations__research_1_1sat_1_1CpModelProto.html">CpModelProto</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>model</em></span></td><td>)</td>
           <td> const</td>
         </tr>
       </table>

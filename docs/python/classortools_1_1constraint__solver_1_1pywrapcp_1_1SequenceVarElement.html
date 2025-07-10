@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,23 @@ $(function(){initNavTree('classortools_1_1constraint__solver_1_1pywrapcp_1_1Sequ
   <div class="headertitle"><div class="title">ortools.constraint_solver.pywrapcp.SequenceVarElement Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="dynheader">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><pre class="fragment">The SequenceVarElement stores a partial representation of ranked
+interval variables in the underlying sequence variable.
+This representation consists of three vectors:
+  - the forward sequence. That is the list of interval variables
+    ranked first in the sequence.  The first element of the backward
+    sequence is the first interval in the sequence variable.
+  - the backward sequence. That is the list of interval variables
+    ranked last in the sequence. The first element of the backward
+    sequence is the last interval in the sequence variable.
+  - The list of unperformed interval variables.
+ Furthermore, if all performed variables are ranked, then by
+ convention, the forward_sequence will contain all such variables
+ and the backward_sequence will be empty.
+</pre> 
+<p class="definition">Definition at line <a class="el" href="pywrapcp_8py_source.html#l03585">3585</a> of file <a class="el" href="pywrapcp_8py_source.html">pywrapcp.py</a>.</p>
+</div><div class="dynheader">
 Inheritance diagram for ortools.constraint_solver.pywrapcp.SequenceVarElement:</div>
 <div class="dyncontent">
  <div class="center">
@@ -130,23 +147,7 @@ Properties</h2></td></tr>
 <tr class="inherit_header properties_classortools_1_1constraint__solver_1_1pywrapcp_1_1AssignmentElement"><td colspan="2" onclick="javascript:dynsection.toggleInherit('properties_classortools_1_1constraint__solver_1_1pywrapcp_1_1AssignmentElement')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Properties inherited from <a class="el" href="classortools_1_1constraint__solver_1_1pywrapcp_1_1AssignmentElement.html">ortools.constraint_solver.pywrapcp.AssignmentElement</a></td></tr>
 <tr class="memitem:a28a74dcbddccf5aec249d996d3df28b5 inherit properties_classortools_1_1constraint__solver_1_1pywrapcp_1_1AssignmentElement" id="r_a28a74dcbddccf5aec249d996d3df28b5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classortools_1_1constraint__solver_1_1pywrapcp_1_1AssignmentElement.html#a28a74dcbddccf5aec249d996d3df28b5">thisown</a> = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc=&quot;The membership flag&quot;)</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><pre class="fragment">The SequenceVarElement stores a partial representation of ranked
-interval variables in the underlying sequence variable.
-This representation consists of three vectors:
-  - the forward sequence. That is the list of interval variables
-    ranked first in the sequence.  The first element of the backward
-    sequence is the first interval in the sequence variable.
-  - the backward sequence. That is the list of interval variables
-    ranked last in the sequence. The first element of the backward
-    sequence is the last interval in the sequence variable.
-  - The list of unperformed interval variables.
- Furthermore, if all performed variables are ranked, then by
- convention, the forward_sequence will contain all such variables
- and the backward_sequence will be empty.
-</pre> 
-<p class="definition">Definition at line <a class="el" href="pywrapcp_8py_source.html#l03585">3585</a> of file <a class="el" href="pywrapcp_8py_source.html">pywrapcp.py</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a5fcaac04e4f580200c2692404ca013e2" name="a5fcaac04e4f580200c2692404ca013e2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5fcaac04e4f580200c2692404ca013e2">&#9670;&#160;</a></span>__init__()</h2>
 

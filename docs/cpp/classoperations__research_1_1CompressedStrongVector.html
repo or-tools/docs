@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,19 @@ $(function(){initNavTree('classoperations__research_1_1CompressedStrongVector.ht
   <div class="headertitle"><div class="title">operations_research::CompressedStrongVector&lt; EntryIndex, Index &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename EntryIndex, typename Index&gt;<br />
+class operations_research::CompressedStrongVector&lt; EntryIndex, Index &gt;</div><p>A compressed vector of strong indices (e.g. SubsetIndex, ElementIndex), with EntryIndex indicating the position in the vector (e.g. RowEntryIndex or ColumnEntryIndex). The vector is compressed in a variable-length encoding, where each element is encoded as a delta from the previous element. The vector is stored in a byte stream, which is addressed byte-by-byte, which is necessary to store variable-length integers. The variable-length encoding is little-endian base128 (LEB128) as used by protobufs. Since we only use non-negative integers, there is no need to encode the sign bit (so non-zigzag encoding or similar techniques).</p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002552">Todo</a></b></dt><dd>(user): There is a lot of room for optimization in this class.<ul>
+<li>Use a bit-twiddling approach to encode and decode integers.</li>
+<li>Use another simpler variable encoding (base on vu128) using a single 64-bit word and limited to storing 8 bytes with 7 bits per byte. A 64-bit word would contain 8*7 = 56 bits. This is enough for an index in an array with 2^56 = 7.2e16 elements, and more that the address space of current (2025) machines.</li>
+<li>Access memory by 64-bit words instead of bytes.</li>
+<li>Make Codecs a template parameter of <a class="el" href="classoperations__research_1_1CompressedStrongVector.html">CompressedStrongVector</a> (?) </li>
+</ul>
+</dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="base__types_8h_source.html#l00103">103</a> of file <a class="el" href="base__types_8h_source.html">base_types.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="base__types_8h_source.html">base_types.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-types" class="groupheader"><a id="pub-types" name="pub-types"></a>
@@ -125,19 +138,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a88f93190ad643a9857617462dcd1a121"><td class="mdescLeft">&#160;</td><td class="mdescRight">For const range-for loops.  <br /></td></tr>
 <tr class="memitem:a9c17f5d27a48c118c977578e6b512217" id="r_a9c17f5d27a48c118c977578e6b512217"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a3c7a1da6640c2ad544f602112f058300">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9c17f5d27a48c118c977578e6b512217">end</a> () const</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;typename EntryIndex, typename Index&gt;<br />
-class operations_research::CompressedStrongVector&lt; EntryIndex, Index &gt;</div><p>A compressed vector of strong indices (e.g. SubsetIndex, ElementIndex), with EntryIndex indicating the position in the vector (e.g. RowEntryIndex or ColumnEntryIndex). The vector is compressed in a variable-length encoding, where each element is encoded as a delta from the previous element. The vector is stored in a byte stream, which is addressed byte-by-byte, which is necessary to store variable-length integers. The variable-length encoding is little-endian base128 (LEB128) as used by protobufs. Since we only use non-negative integers, there is no need to encode the sign bit (so non-zigzag encoding or similar techniques).</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002554">Todo</a></b></dt><dd>(user): There is a lot of room for optimization in this class.<ul>
-<li>Use a bit-twiddling approach to encode and decode integers.</li>
-<li>Use another simpler variable encoding (base on vu128) using a single 64-bit word and limited to storing 8 bytes with 7 bits per byte. A 64-bit word would contain 8*7 = 56 bits. This is enough for an index in an array with 2^56 = 7.2e16 elements, and more that the address space of current (2025) machines.</li>
-<li>Access memory by 64-bit words instead of bytes.</li>
-<li>Make Codecs a template parameter of <a class="el" href="classoperations__research_1_1CompressedStrongVector.html">CompressedStrongVector</a> (?) </li>
-</ul>
-</dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="base__types_8h_source.html#l00103">103</a> of file <a class="el" href="base__types_8h_source.html">base_types.h</a>.</p>
-</div><a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Member Typedef Documentation</h2>
+<a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Member Typedef Documentation</h2>
 <a id="a3c7a1da6640c2ad544f602112f058300" name="a3c7a1da6640c2ad544f602112f058300"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3c7a1da6640c2ad544f602112f058300">&#9670;&#160;</a></span>const_iterator</h2>
 
@@ -246,7 +247,7 @@ template&lt;typename EntryIndex, typename Index&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Initializes the compressed vector from a strong vector. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002555">Todo</a></b></dt><dd>(user): try to guess the size of the compressed vector and pre-allocate it. Experience shows it consumes between 1 and 2 bytes per Index on average. </dd></dl>
+<p>Initializes the compressed vector from a strong vector. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002553">Todo</a></b></dt><dd>(user): try to guess the size of the compressed vector and pre-allocate it. Experience shows it consumes between 1 and 2 bytes per Index on average. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="base__types_8h_source.html#l00115">115</a> of file <a class="el" href="base__types_8h_source.html">base_types.h</a>.</p>
 

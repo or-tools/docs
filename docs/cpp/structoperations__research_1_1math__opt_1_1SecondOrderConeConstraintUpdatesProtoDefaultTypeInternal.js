@@ -1,0 +1,6 @@
+var structoperations__research_1_1math__opt_1_1SecondOrderConeConstraintUpdatesProtoDefaultTypeInternal =
+[
+    [ "SecondOrderConeConstraintUpdatesProtoDefaultTypeInternal", "structoperations__research_1_1math__opt_1_1SecondOrderConeConstraintUpdatesProtoDefaultTypeInternal.html#ac830db93e073d920dd35f02973685725", null ],
+    [ "~SecondOrderConeConstraintUpdatesProtoDefaultTypeInternal", "structoperations__research_1_1math__opt_1_1SecondOrderConeConstraintUpdatesProtoDefaultTypeInternal.html#a851d536480169e974e65b6fcb684dd5d", null ],
+    [ "_instance", "structoperations__research_1_1math__opt_1_1SecondOrderConeConstraintUpdatesProtoDefaultTypeInternal.html#aa837b9ecf0a5e4c403e7e7b1e88afb36", null ]
+];

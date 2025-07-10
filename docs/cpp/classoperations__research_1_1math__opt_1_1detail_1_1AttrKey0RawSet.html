@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,12 @@ $(function(){initNavTree('classoperations__research_1_1math__opt_1_1detail_1_1At
   <div class="headertitle"><div class="title">operations_research::math_opt::detail::AttrKey0RawSet&lt; Symmetry, V &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename Symmetry, typename V&gt;<br />
+class operations_research::math_opt::detail::AttrKey0RawSet&lt; Symmetry, V &gt;</div><p>A set of zero or one <span class="tt"><a class="el" href="classoperations__research_1_1math__opt_1_1AttrKey.html">AttrKey</a>&lt;0, Symmetry&gt;, V</span>. This is used to make implementations of <span class="tt"><a class="el" href="classoperations__research_1_1math__opt_1_1AttrDiff.html">AttrDiff</a></span> and <span class="tt"><a class="el" href="classoperations__research_1_1math__opt_1_1AttrStorage.html">AttrStorage</a></span> uniform. <span class="tt">V</span> must by default constructible, trivially destructible and copyable (we'll fail to compile otherwise). After c++26, optional is a sequence container, so this can pretty much become <span class="tt">std::optional&lt;<a class="el" href="classoperations__research_1_1math__opt_1_1AttrKey.html">AttrKey</a>&lt;0, Symmetry&gt;&gt;</span> + <span class="tt"><a class="el" href="#a37d03df0944c82252f4fcb714cacdc59">find()</a></span>. </p>
 
+<p class="definition">Definition at line <a class="el" href="attr__key_8h_source.html#l00240">240</a> of file <a class="el" href="attr__key_8h_source.html">attr_key.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="attr__key_8h_source.html">attr_key.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
@@ -128,12 +134,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4a328a9700a711a627b86ebc15d81488 template"><td class="memItemLeft" align="right" valign="top">std::pair&lt; <a class="el" href="#ae058a31e0a008094860999a74df42f8e">iterator</a>, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4a328a9700a711a627b86ebc15d81488">try_emplace</a> (<a class="el" href="#a18890d3e6d53d5123f66fde7e3be3517">Key</a>, Args &amp;&amp;... args)</td></tr>
 <tr class="memitem:ada2cf734e215b1ca8c8cbba64d8a28bc" id="r_ada2cf734e215b1ca8c8cbba64d8a28bc"><td class="memItemLeft" align="right" valign="top">std::pair&lt; <a class="el" href="#ae058a31e0a008094860999a74df42f8e">iterator</a>, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ada2cf734e215b1ca8c8cbba64d8a28bc">insert</a> (const <a class="el" href="#aa729f6543dd9d389f49fa0eb7c86fa67">value_type</a> &amp;v)</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;typename Symmetry, typename V&gt;<br />
-class operations_research::math_opt::detail::AttrKey0RawSet&lt; Symmetry, V &gt;</div><p>A set of zero or one <span class="tt"><a class="el" href="classoperations__research_1_1math__opt_1_1AttrKey.html">AttrKey</a>&lt;0, Symmetry&gt;, V</span>. This is used to make implementations of <span class="tt"><a class="el" href="classoperations__research_1_1math__opt_1_1AttrDiff.html">AttrDiff</a></span> and <span class="tt"><a class="el" href="classoperations__research_1_1math__opt_1_1AttrStorage.html">AttrStorage</a></span> uniform. <span class="tt">V</span> must by default constructible, trivially destructible and copyable (we'll fail to compile otherwise). After c++26, optional is a sequence container, so this can pretty much become <span class="tt">std::optional&lt;<a class="el" href="classoperations__research_1_1math__opt_1_1AttrKey.html">AttrKey</a>&lt;0, Symmetry&gt;&gt;</span> + <span class="tt"><a class="el" href="#a37d03df0944c82252f4fcb714cacdc59">find()</a></span>. </p>
-
-<p class="definition">Definition at line <a class="el" href="attr__key_8h_source.html#l00240">240</a> of file <a class="el" href="attr__key_8h_source.html">attr_key.h</a>.</p>
-</div><a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Member Typedef Documentation</h2>
+<a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Member Typedef Documentation</h2>
 <a id="a31e3ba7b70e691692fa236f5dfba1cab" name="a31e3ba7b70e691692fa236f5dfba1cab"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a31e3ba7b70e691692fa236f5dfba1cab">&#9670;&#160;</a></span>const_iterator</h2>
 

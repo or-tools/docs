@@ -1,4 +1,37 @@
 var namespaceoperations__research_1_1packing_1_1vbp =
 [
-    [ "VbpParser", "classoperations__research_1_1packing_1_1vbp_1_1VbpParser.html", "classoperations__research_1_1packing_1_1vbp_1_1VbpParser" ]
+    [ "Item", "classoperations__research_1_1packing_1_1vbp_1_1Item.html", "classoperations__research_1_1packing_1_1vbp_1_1Item" ],
+    [ "ItemDefaultTypeInternal", "structoperations__research_1_1packing_1_1vbp_1_1ItemDefaultTypeInternal.html", "structoperations__research_1_1packing_1_1vbp_1_1ItemDefaultTypeInternal" ],
+    [ "VbpParser", "classoperations__research_1_1packing_1_1vbp_1_1VbpParser.html", "classoperations__research_1_1packing_1_1vbp_1_1VbpParser" ],
+    [ "VectorBinPackingOneBinInSolution", "classoperations__research_1_1packing_1_1vbp_1_1VectorBinPackingOneBinInSolution.html", "classoperations__research_1_1packing_1_1vbp_1_1VectorBinPackingOneBinInSolution" ],
+    [ "VectorBinPackingOneBinInSolutionDefaultTypeInternal", "structoperations__research_1_1packing_1_1vbp_1_1VectorBinPackingOneBinInSolutionDefaultTypeInternal.html", "structoperations__research_1_1packing_1_1vbp_1_1VectorBinPackingOneBinInSolutionDefaultTypeInternal" ],
+    [ "VectorBinPackingProblem", "classoperations__research_1_1packing_1_1vbp_1_1VectorBinPackingProblem.html", "classoperations__research_1_1packing_1_1vbp_1_1VectorBinPackingProblem" ],
+    [ "VectorBinPackingProblemDefaultTypeInternal", "structoperations__research_1_1packing_1_1vbp_1_1VectorBinPackingProblemDefaultTypeInternal.html", "structoperations__research_1_1packing_1_1vbp_1_1VectorBinPackingProblemDefaultTypeInternal" ],
+    [ "VectorBinPackingSolution", "classoperations__research_1_1packing_1_1vbp_1_1VectorBinPackingSolution.html", "classoperations__research_1_1packing_1_1vbp_1_1VectorBinPackingSolution" ],
+    [ "VectorBinPackingSolutionDefaultTypeInternal", "structoperations__research_1_1packing_1_1vbp_1_1VectorBinPackingSolutionDefaultTypeInternal.html", "structoperations__research_1_1packing_1_1vbp_1_1VectorBinPackingSolutionDefaultTypeInternal" ],
+    [ "VectorBinPackingSolveStatus", "namespaceoperations__research_1_1packing_1_1vbp.html#a9fe31b075b278337e595fd2e694f6247", [
+      [ "VECTOR_BIN_PACKING_SOLVE_STATUS_UNSPECIFIED", "namespaceoperations__research_1_1packing_1_1vbp.html#a9fe31b075b278337e595fd2e694f6247ae5d065564701d39d4d5cb7a63b73965f", null ],
+      [ "OPTIMAL", "namespaceoperations__research_1_1packing_1_1vbp.html#a9fe31b075b278337e595fd2e694f6247ad9dabea2ea6a945181f2c8ef971cabad", null ],
+      [ "FEASIBLE", "namespaceoperations__research_1_1packing_1_1vbp.html#a9fe31b075b278337e595fd2e694f6247a72f17e6256a0db43887d3c64fba0168e", null ],
+      [ "INFEASIBLE", "namespaceoperations__research_1_1packing_1_1vbp.html#a9fe31b075b278337e595fd2e694f6247a490941052aaf141de2dd4b7da54b4ba2", null ],
+      [ "VectorBinPackingSolveStatus_INT_MIN_SENTINEL_DO_NOT_USE_", "namespaceoperations__research_1_1packing_1_1vbp.html#a9fe31b075b278337e595fd2e694f6247a26c3d9cc8ca809aeae6f9eab3a04c853", null ],
+      [ "VectorBinPackingSolveStatus_INT_MAX_SENTINEL_DO_NOT_USE_", "namespaceoperations__research_1_1packing_1_1vbp.html#a9fe31b075b278337e595fd2e694f6247a7b4ed8c8cb96c2c95019e1846c40e06b", null ]
+    ] ],
+    [ "VectorBinPackingSolveStatus_descriptor", "namespaceoperations__research_1_1packing_1_1vbp.html#a04e742be1128bbc228636cb3181f4182", null ],
+    [ "VectorBinPackingSolveStatus_IsValid", "namespaceoperations__research_1_1packing_1_1vbp.html#a1ac53babfc9ebdba5f235e1e56c1f1e1", null ],
+    [ "VectorBinPackingSolveStatus_Name", "namespaceoperations__research_1_1packing_1_1vbp.html#a18baa3d65dbb1b7352f6296af3dbd2a5", null ],
+    [ "VectorBinPackingSolveStatus_Name", "namespaceoperations__research_1_1packing_1_1vbp.html#adbda963d6b4e7a173ff8f11103f0b9a6", null ],
+    [ "VectorBinPackingSolveStatus_Parse", "namespaceoperations__research_1_1packing_1_1vbp.html#aa0719635034baf44fc86daeb0405e146", null ],
+    [ "_Item_default_instance_", "namespaceoperations__research_1_1packing_1_1vbp.html#ad0fe4cc67aff24c316bbcd11b5f7533c", null ],
+    [ "_VectorBinPackingOneBinInSolution_default_instance_", "namespaceoperations__research_1_1packing_1_1vbp.html#af1438b3588a80e2b1dea5ba966c79283", null ],
+    [ "_VectorBinPackingProblem_default_instance_", "namespaceoperations__research_1_1packing_1_1vbp.html#af1ad4686613766aaa0babfe3f112ead1", null ],
+    [ "_VectorBinPackingSolution_default_instance_", "namespaceoperations__research_1_1packing_1_1vbp.html#abdb1f236f1fc70c76aee5502dead48be", null ],
+    [ "Item_class_data_", "namespaceoperations__research_1_1packing_1_1vbp.html#a651daa7fdbebf4f0b9b2884bdeb468f3", null ],
+    [ "VectorBinPackingOneBinInSolution_class_data_", "namespaceoperations__research_1_1packing_1_1vbp.html#ac21bde113d48cb327bbde057beeda6ae", null ],
+    [ "VectorBinPackingProblem_class_data_", "namespaceoperations__research_1_1packing_1_1vbp.html#a8d39366a8394e1a9823fafd8acbeca1f", null ],
+    [ "VectorBinPackingSolution_class_data_", "namespaceoperations__research_1_1packing_1_1vbp.html#a3d44c082935203183962f0846679d204", null ],
+    [ "VectorBinPackingSolveStatus_ARRAYSIZE", "namespaceoperations__research_1_1packing_1_1vbp.html#aec540635c26a32ecca658b82803ef4a7", null ],
+    [ "VectorBinPackingSolveStatus_internal_data_", "namespaceoperations__research_1_1packing_1_1vbp.html#a2670cee8b88c56e3cfd634e5a72699e5", null ],
+    [ "VectorBinPackingSolveStatus_MAX", "namespaceoperations__research_1_1packing_1_1vbp.html#a0c94b8fc873e2335629ef960317e4cfc", null ],
+    [ "VectorBinPackingSolveStatus_MIN", "namespaceoperations__research_1_1packing_1_1vbp.html#a4bc3660f2b4061817dcafe052c5a0908", null ]
 ];

@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,11 @@ $(function(){initNavTree('classoperations__research_1_1sat_1_1DisjunctiveWithTwo
   <div class="headertitle"><div class="title">operations_research::sat::DisjunctiveWithTwoItems Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This is an optimization for the case when we have a big number of such pairwise constraints. This should be roughtly equivalent to what the general disjunctive case is doing, but it dealt with variable size better and has a lot less overhead. </p>
 
+<p class="definition">Definition at line <a class="el" href="disjunctive_8h_source.html#l00390">390</a> of file <a class="el" href="disjunctive_8h_source.html">disjunctive.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="disjunctive_8h_source.html">disjunctive.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for operations_research::sat::DisjunctiveWithTwoItems:</div>
@@ -117,11 +122,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2050a6e5fb78d733582e3fe1beb7d9ed inherit pub_methods_classoperations__research_1_1sat_1_1PropagatorInterface" id="r_a2050a6e5fb78d733582e3fe1beb7d9ed"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1PropagatorInterface.html#a2050a6e5fb78d733582e3fe1beb7d9ed">~PropagatorInterface</a> ()=default</td></tr>
 <tr class="memitem:a8df009b18974352e71f74929860c2326 inherit pub_methods_classoperations__research_1_1sat_1_1PropagatorInterface" id="r_a8df009b18974352e71f74929860c2326"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1PropagatorInterface.html#a8df009b18974352e71f74929860c2326">IncrementalPropagate</a> (const std::vector&lt; int &gt; &amp;)</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This is an optimization for the case when we have a big number of such pairwise constraints. This should be roughtly equivalent to what the general disjunctive case is doing, but it dealt with variable size better and has a lot less overhead. </p>
-
-<p class="definition">Definition at line <a class="el" href="disjunctive_8h_source.html#l00390">390</a> of file <a class="el" href="disjunctive_8h_source.html">disjunctive.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a2eae535687189e805b31a8df3b7bf79f" name="a2eae535687189e805b31a8df3b7bf79f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2eae535687189e805b31a8df3b7bf79f">&#9670;&#160;</a></span>DisjunctiveWithTwoItems()</h2>
 
@@ -175,7 +176,7 @@ Public Member Functions</h2></td></tr>
 <p>This will be called after one or more literals that are watched by this propagator changed. It will also always be called on the first propagation cycle after registration. </p>
 <p>We can't propagate anything if one of the interval is absent for sure.</p>
 <dl class="section note"><dt>Note</dt><dd>this propagation also take care of the "overload checker" part. It also propagates as much as possible, even in the presence of task with variable sizes.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001691">Todo</a></b></dt><dd>(user): For optional interval whose presence in unknown and without optional variable, the end-min may not be propagated to at least (start_min<ul>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001689">Todo</a></b></dt><dd>(user): For optional interval whose presence in unknown and without optional variable, the end-min may not be propagated to at least (start_min<ul>
 <li>size_min). Consider that into the computation so we may decide the interval forced absence? Same for the start-max. </li>
 </ul>
 </dd></dl>

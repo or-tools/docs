@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,15 @@ $(function(){initNavTree('classutil_1_1IntegerRange.html','','classutil_1_1Integ
   <div class="headertitle"><div class="title">util::IntegerRange&lt; IntegerType &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename IntegerType&gt;<br />
+class util::IntegerRange&lt; IntegerType &gt;</div><p>Allows to easily construct nice functions for range-based for loop. This can be used like this:</p>
+<p>for (const int i : IntegerRange&lt;int&gt;(0, 10)) { ... }</p>
+<p>But it main purpose is to be used as return value for more complex classes:</p>
+<p>for (const ArcIndex arc : graph.AllOutgoingArcs()); for (const NodeIndex node : graph.AllNodes()); </p>
 
+<p class="definition">Definition at line <a class="el" href="graph_2iterators_8h_source.html#l00235">235</a> of file <a class="el" href="graph_2iterators_8h_source.html">iterators.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="graph_2iterators_8h_source.html">iterators.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for util::IntegerRange&lt; IntegerType &gt;:</div>
@@ -126,15 +135,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:abf7521bceef18d54a0a58d3bc73b3ac6 inherit pub_types_classutil_1_1BeginEndWrapper" id="r_abf7521bceef18d54a0a58d3bc73b3ac6"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classutil_1_1BeginEndWrapper.html#abf7521bceef18d54a0a58d3bc73b3ac6">const_iterator</a></td></tr>
 <tr class="memitem:ab81487db969dcf448788a9e6b31bbbf1 inherit pub_types_classutil_1_1BeginEndWrapper" id="r_ab81487db969dcf448788a9e6b31bbbf1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classutil_1_1BeginEndWrapper.html#ab81487db969dcf448788a9e6b31bbbf1">value_type</a></td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;typename IntegerType&gt;<br />
-class util::IntegerRange&lt; IntegerType &gt;</div><p>Allows to easily construct nice functions for range-based for loop. This can be used like this:</p>
-<p>for (const int i : IntegerRange&lt;int&gt;(0, 10)) { ... }</p>
-<p>But it main purpose is to be used as return value for more complex classes:</p>
-<p>for (const ArcIndex arc : graph.AllOutgoingArcs()); for (const NodeIndex node : graph.AllNodes()); </p>
-
-<p class="definition">Definition at line <a class="el" href="graph_2iterators_8h_source.html#l00230">230</a> of file <a class="el" href="graph_2iterators_8h_source.html">iterators.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a69868e9a8e769eda914fc6433177d5f8" name="a69868e9a8e769eda914fc6433177d5f8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a69868e9a8e769eda914fc6433177d5f8">&#9670;&#160;</a></span>IntegerRange()</h2>
 
@@ -166,7 +167,7 @@ template&lt;typename IntegerType&gt; </div>
 
 <p>Requires <span class="tt">begin &lt;= end</span>. </p>
 
-<p class="definition">Definition at line <a class="el" href="graph_2iterators_8h_source.html#l00233">233</a> of file <a class="el" href="graph_2iterators_8h_source.html">iterators.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="graph_2iterators_8h_source.html#l00238">238</a> of file <a class="el" href="graph_2iterators_8h_source.html">iterators.h</a>.</p>
 
 </div>
 </div>

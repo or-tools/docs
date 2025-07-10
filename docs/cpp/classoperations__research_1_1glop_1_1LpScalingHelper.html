@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,11 @@ $(function(){initNavTree('classoperations__research_1_1glop_1_1LpScalingHelper.h
   <div class="headertitle"><div class="title">operations_research::glop::LpScalingHelper Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Class to facilitate the conversion between an original "unscaled" LP problem and its scaled version. It is easy to get the direction wrong, so it make sense to have a single place where all the scaling formulas are kept. </p>
 
+<p class="definition">Definition at line <a class="el" href="lp__data__utils_8h_source.html#l00052">52</a> of file <a class="el" href="lp__data__utils_8h_source.html">lp_data_utils.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="lp__data__utils_8h_source.html">lp_data_utils.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -104,7 +109,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a82145f3334afba2fb972b5f981ab2662"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear all scaling coefficients.  <br /></td></tr>
 <tr class="memitem:abc1b3899a19f2cbe88c1e7ccbc98f88e" id="r_abc1b3899a19f2cbe88c1e7ccbc98f88e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abc1b3899a19f2cbe88c1e7ccbc98f88e">Scale</a> (<a class="el" href="classoperations__research_1_1glop_1_1LinearProgram.html">LinearProgram</a> *lp)</td></tr>
 <tr class="memdesc:abc1b3899a19f2cbe88c1e7ccbc98f88e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scale the given LP.  <br /></td></tr>
-<tr class="memitem:af3519ee1fa36f5b44e32cee31c04c5b0" id="r_af3519ee1fa36f5b44e32cee31c04c5b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af3519ee1fa36f5b44e32cee31c04c5b0">Scale</a> (const GlopParameters &amp;params, <a class="el" href="classoperations__research_1_1glop_1_1LinearProgram.html">LinearProgram</a> *lp)</td></tr>
+<tr class="memitem:af3519ee1fa36f5b44e32cee31c04c5b0" id="r_af3519ee1fa36f5b44e32cee31c04c5b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af3519ee1fa36f5b44e32cee31c04c5b0">Scale</a> (const <a class="el" href="classoperations__research_1_1glop_1_1GlopParameters.html">GlopParameters</a> &amp;params, <a class="el" href="classoperations__research_1_1glop_1_1LinearProgram.html">LinearProgram</a> *lp)</td></tr>
 <tr class="memitem:a133e81a465229f19d36877bee764a5ab" id="r_a133e81a465229f19d36877bee764a5ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a133e81a465229f19d36877bee764a5ab">ConfigureFromFactors</a> (absl::Span&lt; const double &gt; row_factors, absl::Span&lt; const double &gt; col_factors)</td></tr>
 <tr class="memitem:a36ad414316b6432940f947dada9bc3a0" id="r_a36ad414316b6432940f947dada9bc3a0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceoperations__research_1_1glop.html#a0cac235bd48eb39d15cc101516dc1e90">Fractional</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a36ad414316b6432940f947dada9bc3a0">ScaleVariableValue</a> (ColIndex col, <a class="el" href="namespaceoperations__research_1_1glop.html#a0cac235bd48eb39d15cc101516dc1e90">Fractional</a> value) const</td></tr>
 <tr class="memdesc:a36ad414316b6432940f947dada9bc3a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transforms value from unscaled domain to the scaled one.  <br /></td></tr>
@@ -128,11 +133,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab2f88605d5be8a900c067be349a48acc" id="r_ab2f88605d5be8a900c067be349a48acc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceoperations__research_1_1glop.html#a0cac235bd48eb39d15cc101516dc1e90">Fractional</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab2f88605d5be8a900c067be349a48acc">BoundsScalingFactor</a> () const</td></tr>
 <tr class="memitem:a00025a25b70af0d93bc517e1e2ee37b3" id="r_a00025a25b70af0d93bc517e1e2ee37b3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceoperations__research_1_1glop.html#a0cac235bd48eb39d15cc101516dc1e90">Fractional</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a00025a25b70af0d93bc517e1e2ee37b3">ObjectiveScalingFactor</a> () const</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Class to facilitate the conversion between an original "unscaled" LP problem and its scaled version. It is easy to get the direction wrong, so it make sense to have a single place where all the scaling formulas are kept. </p>
-
-<p class="definition">Definition at line <a class="el" href="lp__data__utils_8h_source.html#l00052">52</a> of file <a class="el" href="lp__data__utils_8h_source.html">lp_data_utils.h</a>.</p>
-</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="a0885c554cddf2f612a3b1567f66f6823" name="a0885c554cddf2f612a3b1567f66f6823"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0885c554cddf2f612a3b1567f66f6823">&#9670;&#160;</a></span>AverageCostScaling()</h2>
 
@@ -286,7 +287,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void operations_research::glop::LpScalingHelper::Scale </td>
           <td>(</td>
-          <td class="paramtype">const GlopParameters &amp;</td>          <td class="paramname"><span class="paramname"><em>params</em></span>, </td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1glop_1_1GlopParameters.html">GlopParameters</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>params</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>

@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -123,7 +124,7 @@ $(function(){initNavTree('model__exporter__main_8cc_source.html','',''); });
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#include &quot;<a class="code" href="base_2file_8h.html">ortools/base/file.h</a>&quot;</span></div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#include &quot;<a class="code" href="helpers_8h.html">ortools/base/helpers.h</a>&quot;</span></div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#include &quot;<a class="code" href="init__google_8h.html">ortools/base/init_google.h</a>&quot;</span></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#include &quot;ortools/linear_solver/linear_solver.pb.h&quot;</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#include &quot;<a class="code" href="linear__solver_8pb_8h.html">ortools/linear_solver/linear_solver.pb.h</a>&quot;</span></div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#include &quot;<a class="code" href="model__exporter_8h.html">ortools/linear_solver/model_exporter.h</a>&quot;</span></div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#include &quot;<a class="code" href="file__util_8h.html">ortools/util/file_util.h</a>&quot;</span></div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
@@ -147,12 +148,12 @@ $(function(){initNavTree('model__exporter__main_8cc_source.html','',''); });
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  CHECK(!absl::GetFlag(FLAGS_input).empty() &amp;&amp;</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        !absl::GetFlag(FLAGS_output).empty())</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>      &lt;&lt; <span class="stringliteral">&quot;--input and --output are required.&quot;</span>;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  operations_research::MPModelProto model_proto;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  <a class="code hl_class" href="classoperations__research_1_1MPModelProto.html">operations_research::MPModelProto</a> model_proto;</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  <span class="keywordflow">if</span> (absl::GetFlag(FLAGS_input_is_mp_model_request)) {</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    operations_research::MPModelRequest request_proto;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <a class="code hl_class" href="classoperations__research_1_1MPModelRequest.html">operations_research::MPModelRequest</a> request_proto;</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    CHECK_OK(<a class="code hl_function" href="namespaceoperations__research.html#ae4f80f3675606ea0b092eec19029834e">operations_research::ReadFileToProto</a>(absl::GetFlag(FLAGS_input),</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>                                                  &amp;request_proto));</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    model_proto.Swap(request_proto.mutable_model());</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    model_proto.<a class="code hl_function" href="classoperations__research_1_1MPModelProto.html#ab01d11887ad130ac7cced839359aac71">Swap</a>(request_proto.<a class="code hl_function" href="classoperations__research_1_1MPModelRequest.html#a63349964791017ed521f8dfa3895245e">mutable_model</a>());</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    CHECK_OK(<a class="code hl_function" href="namespaceoperations__research.html#ae4f80f3675606ea0b092eec19029834e">operations_research::ReadFileToProto</a>(absl::GetFlag(FLAGS_input),</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>                                                  &amp;model_proto));</div>
@@ -179,11 +180,16 @@ $(function(){initNavTree('model__exporter__main_8cc_source.html','',''); });
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>}</div>
 </div>
 <div class="ttc" id="abase_2file_8h_html"><div class="ttname"><a href="base_2file_8h.html">file.h</a></div></div>
+<div class="ttc" id="aclassoperations__research_1_1MPModelProto_html"><div class="ttname"><a href="classoperations__research_1_1MPModelProto.html">operations_research::MPModelProto</a></div><div class="ttdef"><b>Definition</b> <a href="linear__solver_8pb_8h_source.html#l05046">linear_solver.pb.h:5047</a></div></div>
+<div class="ttc" id="aclassoperations__research_1_1MPModelProto_html_ab01d11887ad130ac7cced839359aac71"><div class="ttname"><a href="classoperations__research_1_1MPModelProto.html#ab01d11887ad130ac7cced839359aac71">operations_research::MPModelProto::Swap</a></div><div class="ttdeci">void Swap(MPModelProto *PROTOBUF_NONNULL other)</div><div class="ttdef"><b>Definition</b> <a href="linear__solver_8pb_8h_source.html#l05103">linear_solver.pb.h:5103</a></div></div>
+<div class="ttc" id="aclassoperations__research_1_1MPModelRequest_html"><div class="ttname"><a href="classoperations__research_1_1MPModelRequest.html">operations_research::MPModelRequest</a></div><div class="ttdef"><b>Definition</b> <a href="linear__solver_8pb_8h_source.html#l05381">linear_solver.pb.h:5382</a></div></div>
+<div class="ttc" id="aclassoperations__research_1_1MPModelRequest_html_a63349964791017ed521f8dfa3895245e"><div class="ttname"><a href="classoperations__research_1_1MPModelRequest.html#a63349964791017ed521f8dfa3895245e">operations_research::MPModelRequest::mutable_model</a></div><div class="ttdeci">::operations_research::MPModelProto *PROTOBUF_NONNULL mutable_model()</div><div class="ttdef"><b>Definition</b> <a href="linear__solver_8pb_8h_source.html#l09421">linear_solver.pb.h:9421</a></div></div>
 <div class="ttc" id="acommandlineflags_8h_html"><div class="ttname"><a href="commandlineflags_8h.html">commandlineflags.h</a></div></div>
 <div class="ttc" id="afile__util_8h_html"><div class="ttname"><a href="file__util_8h.html">file_util.h</a></div></div>
 <div class="ttc" id="ahelpers_8h_html"><div class="ttname"><a href="helpers_8h.html">helpers.h</a></div></div>
 <div class="ttc" id="ainit__google_8h_html"><div class="ttname"><a href="init__google_8h.html">init_google.h</a></div></div>
 <div class="ttc" id="ainit__google_8h_html_a3b3a8263228da91888a43dc08132f095"><div class="ttname"><a href="init__google_8h.html#a3b3a8263228da91888a43dc08132f095">InitGoogle</a></div><div class="ttdeci">void InitGoogle(absl::string_view usage, int *argc, char ***argv, bool deprecated)</div><div class="ttdef"><b>Definition</b> <a href="init__google_8h_source.html#l00049">init_google.h:49</a></div></div>
+<div class="ttc" id="alinear__solver_8pb_8h_html"><div class="ttname"><a href="linear__solver_8pb_8h.html">linear_solver.pb.h</a></div></div>
 <div class="ttc" id="amodel__exporter_8h_html"><div class="ttname"><a href="model__exporter_8h.html">model_exporter.h</a></div></div>
 <div class="ttc" id="amodel__exporter__main_8cc_html_a3c04138a5bfe5d72780bb7e82a18e627"><div class="ttname"><a href="model__exporter__main_8cc.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a></div><div class="ttdeci">int main(int argc, char **argv)</div><div class="ttdef"><b>Definition</b> <a href="#l00046">model_exporter_main.cc:46</a></div></div>
 <div class="ttc" id="amodel__exporter__main_8cc_html_a68ea1d1edafdb1a3f404852d5186464c"><div class="ttname"><a href="model__exporter__main_8cc.html#a68ea1d1edafdb1a3f404852d5186464c">kUsageStr</a></div><div class="ttdeci">static const char kUsageStr[]</div><div class="ttdef"><b>Definition</b> <a href="#l00040">model_exporter_main.cc:40</a></div></div>

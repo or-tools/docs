@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,31 @@ $(function(){initNavTree('classcom_1_1google_1_1ortools_1_1constraintsolver_1_1R
   <div class="headertitle"><div class="title">com.google.ortools.constraintsolver.RoutingIndexManager Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Manager for any NodeIndex &lt;-&gt; variable index conversion. The routing solver<br  />
+ uses variable indices internally and through its API. These variable indices<br  />
+ are tricky to manage directly because one Node can correspond to a multitude<br  />
+ of variables, depending on the number of times they appear in the model, and<br  />
+ if they're used as start and/or end points. This class aims to simplify<br  />
+ variable index usage, allowing users to use NodeIndex instead.<br  />
+ <br  />
+ Usage:<br  />
+ <code class="JavaDocCode"><br/>
+auto starts_ends = ...;  /// These are NodeIndex.<br/>
+RoutingIndexManager manager(10, 4, starts_ends);  // 10 nodes, 4 vehicles.<br/>
+RoutingModel model(manager);<br/>
+</code><br  />
+ <br  />
+ Then, use 'manager.NodeToIndex(node)' whenever model requires a variable<br  />
+ index.<br  />
+ <br  />
+ Note: the mapping between node indices and variables indices is subject to<br  />
+ change so no assumption should be made on it. The only guarantee is that<br  />
+ indices range between 0 and n-1, where n = number of vehicles * 2 (for start<br  />
+ and end nodes) + number of non-start or end nodes. </p>
+
+<p class="definition">Definition at line <a class="el" href="RoutingIndexManager_8java_source.html#l00034">34</a> of file <a class="el" href="RoutingIndexManager_8java_source.html">RoutingIndexManager.java</a>.</p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ac66340cc431369998410747f45a68024" id="r_ac66340cc431369998410747f45a68024"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac66340cc431369998410747f45a68024">RoutingIndexManager</a> (long cPtr, boolean cMemoryOwn)</td></tr>
@@ -124,31 +149,7 @@ Protected Member Functions</h2></td></tr>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a8dd61986c26e0d6e0e2cf67a2120b8f9" id="r_a8dd61986c26e0d6e0e2cf67a2120b8f9"><td class="memItemLeft" align="right" valign="top">transient boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8dd61986c26e0d6e0e2cf67a2120b8f9">swigCMemOwn</a></td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Manager for any NodeIndex &lt;-&gt; variable index conversion. The routing solver<br  />
- uses variable indices internally and through its API. These variable indices<br  />
- are tricky to manage directly because one Node can correspond to a multitude<br  />
- of variables, depending on the number of times they appear in the model, and<br  />
- if they're used as start and/or end points. This class aims to simplify<br  />
- variable index usage, allowing users to use NodeIndex instead.<br  />
- <br  />
- Usage:<br  />
- <code class="JavaDocCode"><br/>
-auto starts_ends = ...;  /// These are NodeIndex.<br/>
-RoutingIndexManager manager(10, 4, starts_ends);  // 10 nodes, 4 vehicles.<br/>
-RoutingModel model(manager);<br/>
-</code><br  />
- <br  />
- Then, use 'manager.NodeToIndex(node)' whenever model requires a variable<br  />
- index.<br  />
- <br  />
- Note: the mapping between node indices and variables indices is subject to<br  />
- change so no assumption should be made on it. The only guarantee is that<br  />
- indices range between 0 and n-1, where n = number of vehicles * 2 (for start<br  />
- and end nodes) + number of non-start or end nodes. </p>
-
-<p class="definition">Definition at line <a class="el" href="RoutingIndexManager_8java_source.html#l00034">34</a> of file <a class="el" href="RoutingIndexManager_8java_source.html">RoutingIndexManager.java</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ac66340cc431369998410747f45a68024" name="ac66340cc431369998410747f45a68024"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac66340cc431369998410747f45a68024">&#9670;&#160;</a></span>RoutingIndexManager() <span class="overload">[1/3]</span></h2>
 

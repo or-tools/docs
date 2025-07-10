@@ -9,7 +9,11 @@ var searchData=
   ['optimization_2ecc_6',['optimization.cc',['../optimization_8cc.html',1,'']]],
   ['optimization_2eh_7',['optimization.h',['../optimization_8h.html',1,'']]],
   ['optimization_2eproto_8',['optimization.proto',['../optimization_8proto.html',1,'']]],
-  ['optional_5fboolean_2eproto_9',['optional_boolean.proto',['../optional__boolean_8proto.html',1,'']]],
-  ['options_2eh_10',['options.h',['../options_8h.html',1,'']]],
-  ['osqp_2eproto_11',['osqp.proto',['../osqp_8proto.html',1,'']]]
+  ['optional_5fboolean_2epb_2ecc_9',['optional_boolean.pb.cc',['../optional__boolean_8pb_8cc.html',1,'']]],
+  ['optional_5fboolean_2epb_2eh_10',['optional_boolean.pb.h',['../optional__boolean_8pb_8h.html',1,'']]],
+  ['optional_5fboolean_2eproto_11',['optional_boolean.proto',['../optional__boolean_8proto.html',1,'']]],
+  ['options_2eh_12',['options.h',['../options_8h.html',1,'']]],
+  ['osqp_2epb_2ecc_13',['osqp.pb.cc',['../osqp_8pb_8cc.html',1,'']]],
+  ['osqp_2epb_2eh_14',['osqp.pb.h',['../osqp_8pb_8h.html',1,'']]],
+  ['osqp_2eproto_15',['osqp.proto',['../osqp_8proto.html',1,'']]]
 ];

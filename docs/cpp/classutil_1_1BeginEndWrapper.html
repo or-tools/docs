@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,18 @@ $(function(){initNavTree('classutil_1_1BeginEndWrapper.html','','classutil_1_1Be
   <div class="headertitle"><div class="title">util::BeginEndWrapper&lt; Iterator &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename Iterator&gt;<br />
+class util::BeginEndWrapper&lt; Iterator &gt;</div><p>This is useful for wrapping iterators of a class that support many different iterations. For instance, on a <a class="el" href="namespaceutil.html#ae76339cb2dcd3bc05ad762146f91fdda" title="Defining the simplest Graph interface as Graph for convenience.">Graph</a> class, one can write:</p>
+<p>BeginEndWrapper&lt;OutgoingArcIterator&gt; Graph::OutgoingArcs(NodeInde node) const { return <a class="el" href="classutil_1_1BeginEndWrapper.html">BeginEndWrapper</a>( OutgoingArcIterator(<em>this, node, /*at_end=</em>&zwj;/false), OutgoingArcIterator(<em>this, node, /*at_end=</em>&zwj;/true)); }</p>
+<p>And a client will use it like this:</p>
+<p>for (const ArcIndex arc : graph.OutgoingArcs(node)) { ... }</p>
+<dl class="section note"><dt>Note</dt><dd><span class="tt"><a class="el" href="classutil_1_1BeginEndWrapper.html">BeginEndWrapper</a></span> is conceptually a borrowed range as per the C++ standard (<span class="tt">std::ranges::borrowed_range</span>): "The concept borrowed_range defines the requirements of a range such that a
+function can take it by value and return iterators obtained from it without
+danger of dangling". We cannot <span class="tt">static_assert</span> this property though as <span class="tt">std::ranges</span> is prohibited in google3. </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="graph_2iterators_8h_source.html#l00048">48</a> of file <a class="el" href="graph_2iterators_8h_source.html">iterators.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="graph_2iterators_8h_source.html">iterators.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-types" class="groupheader"><a id="pub-types" name="pub-types"></a>
@@ -114,18 +126,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:acb95384d41ae2709b6b1f008fd0f3817"><td class="mdescLeft">&#160;</td><td class="mdescRight">Available only if <span class="tt">Iterator</span> is a random access iterator.  <br /></td></tr>
 <tr class="memitem:a6bf6366a9bd3d535d1606dfe5959a36f" id="r_a6bf6366a9bd3d535d1606dfe5959a36f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6bf6366a9bd3d535d1606dfe5959a36f">empty</a> () const</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;typename Iterator&gt;<br />
-class util::BeginEndWrapper&lt; Iterator &gt;</div><p>This is useful for wrapping iterators of a class that support many different iterations. For instance, on a <a class="el" href="namespaceutil.html#ae76339cb2dcd3bc05ad762146f91fdda" title="Defining the simplest Graph interface as Graph for convenience.">Graph</a> class, one can write:</p>
-<p>BeginEndWrapper&lt;OutgoingArcIterator&gt; Graph::OutgoingArcs(NodeInde node) const { return <a class="el" href="classutil_1_1BeginEndWrapper.html">BeginEndWrapper</a>( OutgoingArcIterator(<em>this, node, /*at_end=</em>&zwj;/false), OutgoingArcIterator(<em>this, node, /*at_end=</em>&zwj;/true)); }</p>
-<p>And a client will use it like this:</p>
-<p>for (const ArcIndex arc : graph.OutgoingArcs(node)) { ... }</p>
-<dl class="section note"><dt>Note</dt><dd><span class="tt"><a class="el" href="classutil_1_1BeginEndWrapper.html">BeginEndWrapper</a></span> is conceptually a borrowed range as per the C++ standard (<span class="tt">std::ranges::borrowed_range</span>): "The concept borrowed_range defines the requirements of a range such that a
-function can take it by value and return iterators obtained from it without
-danger of dangling". We cannot <span class="tt">static_assert</span> this property though as <span class="tt">std::ranges</span> is prohibited in google3. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="graph_2iterators_8h_source.html#l00048">48</a> of file <a class="el" href="graph_2iterators_8h_source.html">iterators.h</a>.</p>
-</div><a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Member Typedef Documentation</h2>
+<a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Member Typedef Documentation</h2>
 <a id="abf7521bceef18d54a0a58d3bc73b3ac6" name="abf7521bceef18d54a0a58d3bc73b3ac6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abf7521bceef18d54a0a58d3bc73b3ac6">&#9670;&#160;</a></span>const_iterator</h2>
 

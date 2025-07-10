@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,14 +96,20 @@ $(function(){initNavTree('classoperations__research_1_1sat_1_1LsEvaluator.html',
   <div class="headertitle"><div class="title">operations_research::sat::LsEvaluator Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Evaluation container for the local search.</p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001163">Todo</a></b></dt><dd>(user): Ideas for constraint generated moves or sequences of moves? </dd></dl>
+<p>Note(user): This class do not handle ALL constraint yet. So it is not because there is no violation here that the solution will be feasible. It is important to check feasibility once this is used. Note that in practice, we can be lucky, and feasible on a subset of hard constraint is enough. </p>
 
+<p class="definition">Definition at line <a class="el" href="constraint__violation_8h_source.html#l00309">309</a> of file <a class="el" href="constraint__violation_8h_source.html">constraint_violation.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="constraint__violation_8h_source.html">constraint_violation.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a814fccd6766548fe394b2469a57e23d8" id="r_a814fccd6766548fe394b2469a57e23d8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a814fccd6766548fe394b2469a57e23d8">LsEvaluator</a> (const CpModelProto &amp;cp_model, const SatParameters &amp;params, <a class="el" href="classoperations__research_1_1TimeLimit.html">TimeLimit</a> *<a class="el" href="linear__solver_2solve_8cc.html#a5924b2104bcf836d8c82d6d5b6bf4b36">time_limit</a>)</td></tr>
+<tr class="memitem:a814fccd6766548fe394b2469a57e23d8" id="r_a814fccd6766548fe394b2469a57e23d8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a814fccd6766548fe394b2469a57e23d8">LsEvaluator</a> (const <a class="el" href="classoperations__research_1_1sat_1_1CpModelProto.html">CpModelProto</a> &amp;cp_model, const <a class="el" href="classoperations__research_1_1sat_1_1SatParameters.html">SatParameters</a> &amp;params, <a class="el" href="classoperations__research_1_1TimeLimit.html">TimeLimit</a> *<a class="el" href="linear__solver_2solve_8cc.html#a5924b2104bcf836d8c82d6d5b6bf4b36">time_limit</a>)</td></tr>
 <tr class="memdesc:a814fccd6766548fe394b2469a57e23d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The cp_model must outlive this class.  <br /></td></tr>
-<tr class="memitem:a7f76d557510962d562c1a12fe41df8e0" id="r_a7f76d557510962d562c1a12fe41df8e0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7f76d557510962d562c1a12fe41df8e0">LsEvaluator</a> (const CpModelProto &amp;cp_model, const SatParameters &amp;params, const std::vector&lt; bool &gt; &amp;ignored_constraints, const std::vector&lt; ConstraintProto &gt; &amp;additional_constraints, <a class="el" href="classoperations__research_1_1TimeLimit.html">TimeLimit</a> *<a class="el" href="linear__solver_2solve_8cc.html#a5924b2104bcf836d8c82d6d5b6bf4b36">time_limit</a>)</td></tr>
+<tr class="memitem:a7f76d557510962d562c1a12fe41df8e0" id="r_a7f76d557510962d562c1a12fe41df8e0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7f76d557510962d562c1a12fe41df8e0">LsEvaluator</a> (const <a class="el" href="classoperations__research_1_1sat_1_1CpModelProto.html">CpModelProto</a> &amp;cp_model, const <a class="el" href="classoperations__research_1_1sat_1_1SatParameters.html">SatParameters</a> &amp;params, const std::vector&lt; bool &gt; &amp;ignored_constraints, const std::vector&lt; <a class="el" href="classoperations__research_1_1sat_1_1ConstraintProto.html">ConstraintProto</a> &gt; &amp;additional_constraints, <a class="el" href="classoperations__research_1_1TimeLimit.html">TimeLimit</a> *<a class="el" href="linear__solver_2solve_8cc.html#a5924b2104bcf836d8c82d6d5b6bf4b36">time_limit</a>)</td></tr>
 <tr class="memitem:a570a2fb87c649eecbb375145317b2544" id="r_a570a2fb87c649eecbb375145317b2544"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a570a2fb87c649eecbb375145317b2544">ReduceObjectiveBounds</a> (int64_t lb, int64_t ub)</td></tr>
 <tr class="memitem:a4c3cfc7f317babfb9843bd0168224f9c" id="r_a4c3cfc7f317babfb9843bd0168224f9c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4c3cfc7f317babfb9843bd0168224f9c">ComputeAllViolations</a> (absl::Span&lt; const int64_t &gt; <a class="el" href="namespaceoperations__research.html#a35a30dc825cd0afa0e095f47118cd3cd">solution</a>)</td></tr>
 <tr class="memdesc:a4c3cfc7f317babfb9843bd0168224f9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recomputes the violations of all constraints (resp only non-linear one).  <br /></td></tr>
@@ -141,13 +148,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac51c5ab221758f1c9c8686faad2be7a7" id="r_ac51c5ab221758f1c9c8686faad2be7a7"><td class="memItemLeft" align="right" valign="top">absl::Span&lt; const int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac51c5ab221758f1c9c8686faad2be7a7">GeneralConstraintToVars</a> (int general_c) const</td></tr>
 <tr class="memitem:a55666b5aee7e751b4bc51f963c2fbaa3" id="r_a55666b5aee7e751b4bc51f963c2fbaa3"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a55666b5aee7e751b4bc51f963c2fbaa3">DeterministicTime</a> () const</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Evaluation container for the local search.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001165">Todo</a></b></dt><dd>(user): Ideas for constraint generated moves or sequences of moves? </dd></dl>
-<p>Note(user): This class do not handle ALL constraint yet. So it is not because there is no violation here that the solution will be feasible. It is important to check feasibility once this is used. Note that in practice, we can be lucky, and feasible on a subset of hard constraint is enough. </p>
-
-<p class="definition">Definition at line <a class="el" href="constraint__violation_8h_source.html#l00309">309</a> of file <a class="el" href="constraint__violation_8h_source.html">constraint_violation.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a814fccd6766548fe394b2469a57e23d8" name="a814fccd6766548fe394b2469a57e23d8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a814fccd6766548fe394b2469a57e23d8">&#9670;&#160;</a></span>LsEvaluator() <span class="overload">[1/2]</span></h2>
 
@@ -157,12 +158,12 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">operations_research::sat::LsEvaluator::LsEvaluator </td>
           <td>(</td>
-          <td class="paramtype">const CpModelProto &amp;</td>          <td class="paramname"><span class="paramname"><em>cp_model</em></span>, </td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1sat_1_1CpModelProto.html">CpModelProto</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>cp_model</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const SatParameters &amp;</td>          <td class="paramname"><span class="paramname"><em>params</em></span>, </td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1sat_1_1SatParameters.html">SatParameters</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>params</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -188,12 +189,12 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">operations_research::sat::LsEvaluator::LsEvaluator </td>
           <td>(</td>
-          <td class="paramtype">const CpModelProto &amp;</td>          <td class="paramname"><span class="paramname"><em>cp_model</em></span>, </td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1sat_1_1CpModelProto.html">CpModelProto</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>cp_model</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const SatParameters &amp;</td>          <td class="paramname"><span class="paramname"><em>params</em></span>, </td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1sat_1_1SatParameters.html">SatParameters</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>params</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -203,7 +204,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; ConstraintProto &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>additional_constraints</em></span>, </td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classoperations__research_1_1sat_1_1ConstraintProto.html">ConstraintProto</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>additional_constraints</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -310,7 +311,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001166">Todo</a></b></dt><dd>(user): Properly account all big time consumers. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001164">Todo</a></b></dt><dd>(user): Properly account all big time consumers. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="constraint__violation_8h_source.html#l00430">430</a> of file <a class="el" href="constraint__violation_8h_source.html">constraint_violation.h</a>.</p>
 
@@ -968,7 +969,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Computes the delta in weighted violation if solution[var] += delta. We need a temporary mutable solution to evaluate the violation of generic constraints. If linear_only is true, only the linear violation will be used. </p>
 <p>We change the mutable solution here, and restore it after the evaluation.</p>
-<p>We assume linear time delta computation in number of variables. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001163">Todo</a></b></dt><dd>(user): refine on a per constraint basis. </dd></dl>
+<p>We assume linear time delta computation in number of variables. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001161">Todo</a></b></dt><dd>(user): refine on a per constraint basis. </dd></dl>
 <p>Restore.</p>
 
 <p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l02014">2014</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>

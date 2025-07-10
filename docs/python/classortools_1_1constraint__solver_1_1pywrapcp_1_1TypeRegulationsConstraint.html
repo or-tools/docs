@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,50 @@ $(function(){initNavTree('classortools_1_1constraint__solver_1_1pywrapcp_1_1Type
   <div class="headertitle"><div class="title">ortools.constraint_solver.pywrapcp.TypeRegulationsConstraint Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="dynheader">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><pre class="fragment">The following constraint ensures that incompatibilities and requirements
+between types are respected.
+
+It verifies both "hard" and "temporal" incompatibilities.
+Two nodes with hard incompatible types cannot be served by the same vehicle
+at all, while with a temporal incompatibility they can't be on the same
+route at the same time.
+The VisitTypePolicy of a node determines how visiting it impacts the type
+count on the route.
+
+For example, for
+- three temporally incompatible types T1 T2 and T3
+- 2 pairs of nodes a1/r1 and a2/r2 of type T1 and T2 respectively, with
+    - a1 and a2 of VisitTypePolicy TYPE_ADDED_TO_VEHICLE
+    - r1 and r2 of policy ADDED_TYPE_REMOVED_FROM_VEHICLE
+- 3 nodes A, UV and AR of type T3, respectively with type policies
+  TYPE_ADDED_TO_VEHICLE, TYPE_ON_VEHICLE_UP_TO_VISIT and
+  TYPE_SIMULTANEOUSLY_ADDED_AND_REMOVED
+the configurations
+UV --&gt; a1 --&gt; r1 --&gt; a2 --&gt; r2,   a1 --&gt; r1 --&gt; a2 --&gt; r2 --&gt; A and
+a1 --&gt; r1 --&gt; AR --&gt; a2 --&gt; r2 are acceptable, whereas the configurations
+a1 --&gt; a2 --&gt; r1 --&gt; ..., or A --&gt; a1 --&gt; r1 --&gt; ..., or
+a1 --&gt; r1 --&gt; UV --&gt; ... are not feasible.
+
+It also verifies same-vehicle and temporal type requirements.
+A node of type T_d with a same-vehicle requirement for type T_r needs to be
+served by the same vehicle as a node of type T_r.
+Temporal requirements, on the other hand, can take effect either when the
+dependent type is being added to the route or when it's removed from it,
+which is determined by the dependent node's VisitTypePolicy.
+In the above example:
+- If T3 is required on the same vehicle as T1, A, AR or UV must be on the
+  same vehicle as a1.
+- If T2 is required when adding T1, a2 must be visited *before* a1, and if
+  r2 is also visited on the route, it must be *after* a1, i.e. T2 must be on
+  the vehicle when a1 is visited:
+  ... --&gt; a2 --&gt; ... --&gt; a1 --&gt; ... --&gt; r2 --&gt; ...
+- If T3 is required when removing T1, T3 needs to be on the vehicle when
+  r1 is visited:
+  ... --&gt; A --&gt; ... --&gt; r1 --&gt; ...   OR   ... --&gt; r1 --&gt; ... --&gt; UV --&gt; ...
+</pre> 
+<p class="definition">Definition at line <a class="el" href="pywrapcp_8py_source.html#l06344">6344</a> of file <a class="el" href="pywrapcp_8py_source.html">pywrapcp.py</a>.</p>
+</div><div class="dynheader">
 Inheritance diagram for ortools.constraint_solver.pywrapcp.TypeRegulationsConstraint:</div>
 <div class="dyncontent">
  <div class="center">
@@ -158,50 +202,7 @@ Properties</h2></td></tr>
 <tr class="inherit_header properties_classortools_1_1constraint__solver_1_1pywrapcp_1_1BaseObject"><td colspan="2" onclick="javascript:dynsection.toggleInherit('properties_classortools_1_1constraint__solver_1_1pywrapcp_1_1BaseObject')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Properties inherited from <a class="el" href="classortools_1_1constraint__solver_1_1pywrapcp_1_1BaseObject.html">ortools.constraint_solver.pywrapcp.BaseObject</a></td></tr>
 <tr class="memitem:aa3e190270c47101b7caf573d717e702f inherit properties_classortools_1_1constraint__solver_1_1pywrapcp_1_1BaseObject" id="r_aa3e190270c47101b7caf573d717e702f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classortools_1_1constraint__solver_1_1pywrapcp_1_1BaseObject.html#aa3e190270c47101b7caf573d717e702f">thisown</a> = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc=&quot;The membership flag&quot;)</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><pre class="fragment">The following constraint ensures that incompatibilities and requirements
-between types are respected.
-
-It verifies both "hard" and "temporal" incompatibilities.
-Two nodes with hard incompatible types cannot be served by the same vehicle
-at all, while with a temporal incompatibility they can't be on the same
-route at the same time.
-The VisitTypePolicy of a node determines how visiting it impacts the type
-count on the route.
-
-For example, for
-- three temporally incompatible types T1 T2 and T3
-- 2 pairs of nodes a1/r1 and a2/r2 of type T1 and T2 respectively, with
-    - a1 and a2 of VisitTypePolicy TYPE_ADDED_TO_VEHICLE
-    - r1 and r2 of policy ADDED_TYPE_REMOVED_FROM_VEHICLE
-- 3 nodes A, UV and AR of type T3, respectively with type policies
-  TYPE_ADDED_TO_VEHICLE, TYPE_ON_VEHICLE_UP_TO_VISIT and
-  TYPE_SIMULTANEOUSLY_ADDED_AND_REMOVED
-the configurations
-UV --&gt; a1 --&gt; r1 --&gt; a2 --&gt; r2,   a1 --&gt; r1 --&gt; a2 --&gt; r2 --&gt; A and
-a1 --&gt; r1 --&gt; AR --&gt; a2 --&gt; r2 are acceptable, whereas the configurations
-a1 --&gt; a2 --&gt; r1 --&gt; ..., or A --&gt; a1 --&gt; r1 --&gt; ..., or
-a1 --&gt; r1 --&gt; UV --&gt; ... are not feasible.
-
-It also verifies same-vehicle and temporal type requirements.
-A node of type T_d with a same-vehicle requirement for type T_r needs to be
-served by the same vehicle as a node of type T_r.
-Temporal requirements, on the other hand, can take effect either when the
-dependent type is being added to the route or when it's removed from it,
-which is determined by the dependent node's VisitTypePolicy.
-In the above example:
-- If T3 is required on the same vehicle as T1, A, AR or UV must be on the
-  same vehicle as a1.
-- If T2 is required when adding T1, a2 must be visited *before* a1, and if
-  r2 is also visited on the route, it must be *after* a1, i.e. T2 must be on
-  the vehicle when a1 is visited:
-  ... --&gt; a2 --&gt; ... --&gt; a1 --&gt; ... --&gt; r2 --&gt; ...
-- If T3 is required when removing T1, T3 needs to be on the vehicle when
-  r1 is visited:
-  ... --&gt; A --&gt; ... --&gt; r1 --&gt; ...   OR   ... --&gt; r1 --&gt; ... --&gt; UV --&gt; ...
-</pre> 
-<p class="definition">Definition at line <a class="el" href="pywrapcp_8py_source.html#l06344">6344</a> of file <a class="el" href="pywrapcp_8py_source.html">pywrapcp.py</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad1b178d77ac0cd937f3610787c63cd40" name="ad1b178d77ac0cd937f3610787c63cd40"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad1b178d77ac0cd937f3610787c63cd40">&#9670;&#160;</a></span>__init__()</h2>
 

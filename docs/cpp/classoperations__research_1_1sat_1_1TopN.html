@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,13 @@ $(function(){initNavTree('classoperations__research_1_1sat_1_1TopN.html','','cla
   <div class="headertitle"><div class="title">operations_research::sat::TopN&lt; Element, Score &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename Element, typename Score&gt;<br />
+class operations_research::sat::TopN&lt; Element, Score &gt;</div><p>Keep the top n elements from a stream of elements.</p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002512">Todo</a></b></dt><dd>(user): We could use <a class="el" href="classoperations__research_1_1gtl_1_1TopN.html">gtl::TopN</a> when/if it gets open sourced. Note that we might be slighlty faster here since we use an indirection and don't move the Element class around as much. </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="sat_2util_8h_source.html#l00681">681</a> of file <a class="el" href="sat_2util_8h_source.html">util.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="sat_2util_8h_source.html">util.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -107,13 +114,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae539131befd07366e18d971aedf9d873" id="r_ae539131befd07366e18d971aedf9d873"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; Element &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae539131befd07366e18d971aedf9d873">UnorderedElements</a> () const</td></tr>
 <tr class="memitem:acfd3b24c149143593a961e0a4dc922ef" id="r_acfd3b24c149143593a961e0a4dc922ef"><td class="memItemLeft" align="right" valign="top">std::vector&lt; Element &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acfd3b24c149143593a961e0a4dc922ef">MutableUnorderedElements</a> ()</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;typename Element, typename Score&gt;<br />
-class operations_research::sat::TopN&lt; Element, Score &gt;</div><p>Keep the top n elements from a stream of elements.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002514">Todo</a></b></dt><dd>(user): We could use <a class="el" href="classoperations__research_1_1gtl_1_1TopN.html">gtl::TopN</a> when/if it gets open sourced. Note that we might be slighlty faster here since we use an indirection and don't move the Element class around as much. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="sat_2util_8h_source.html#l00681">681</a> of file <a class="el" href="sat_2util_8h_source.html">util.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a4a8c6060e0b200fc2230fa51e8002990" name="a4a8c6060e0b200fc2230fa51e8002990"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4a8c6060e0b200fc2230fa51e8002990">&#9670;&#160;</a></span>TopN()</h2>
 
@@ -172,7 +173,7 @@ template&lt;typename Element, typename Score&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002518">Todo</a></b></dt><dd>(user): We could delay that on the n + 1 push. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002516">Todo</a></b></dt><dd>(user): We could delay that on the n + 1 push. </dd></dl>
 <p>If needed, we could be faster here with an update operation.</p>
 
 <p class="definition">Definition at line <a class="el" href="sat_2util_8h_source.html#l00690">690</a> of file <a class="el" href="sat_2util_8h_source.html">util.h</a>.</p>

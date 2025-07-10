@@ -1,0 +1,6 @@
+var structoperations__research_1_1pdlp_1_1PrimalDualHybridGradientParams__PresolveOptionsDefaultTypeInternal =
+[
+    [ "PrimalDualHybridGradientParams_PresolveOptionsDefaultTypeInternal", "structoperations__research_1_1pdlp_1_1PrimalDualHybridGradientParams__PresolveOptionsDefaultTypeInternal.html#ad96d123b97242c2465dae16c3f47d2f8", null ],
+    [ "~PrimalDualHybridGradientParams_PresolveOptionsDefaultTypeInternal", "structoperations__research_1_1pdlp_1_1PrimalDualHybridGradientParams__PresolveOptionsDefaultTypeInternal.html#a29e9f24fe00f05922949942fc68b1f56", null ],
+    [ "_instance", "structoperations__research_1_1pdlp_1_1PrimalDualHybridGradientParams__PresolveOptionsDefaultTypeInternal.html#a46ea0c9386a839ea791ec98a198130be", null ]
+];

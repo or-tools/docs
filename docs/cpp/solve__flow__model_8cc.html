@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -118,7 +119,7 @@ $(function(){initNavTree('solve__flow__model_8cc.html','',''); });
 <code>#include &quot;<a class="el" href="path_8h_source.html">ortools/base/path.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="timer_8h_source.html">ortools/base/timer.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="flow__graph_8h_source.html">ortools/graph/flow_graph.h</a>&quot;</code><br />
-<code>#include &quot;ortools/graph/flow_problem.pb.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="flow__problem_8pb_8h_source.html">ortools/graph/flow_problem.pb.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="generic__max__flow_8h_source.html">ortools/graph/generic_max_flow.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="graph_8h_source.html">ortools/graph/graph.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="min__cost__flow_8h_source.html">ortools/graph/min_cost_flow.h</a>&quot;</code><br />
@@ -130,6 +131,7 @@ $(function(){initNavTree('solve__flow__model_8cc.html','',''); });
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:FlowModelProto" id="r_FlowModelProto"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlowModelProto.html">FlowModelProto</a></td></tr>
 <tr class="memitem:TimeDistribution" id="r_TimeDistribution"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTimeDistribution.html">TimeDistribution</a></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
@@ -150,19 +152,19 @@ Functions</h2></td></tr>
 <tr class="memitem:aa89415b1843d2d3559baa779e6edf595" id="r_aa89415b1843d2d3559baa779e6edf595"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa89415b1843d2d3559baa779e6edf595">ABSL_FLAG</a> (bool, use_flow_graph, true, &quot;Use special kind of graph.&quot;)</td></tr>
 <tr class="memitem:a5ce711b9156add81f9d6f1848ee3928a" id="r_a5ce711b9156add81f9d6f1848ee3928a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5ce711b9156add81f9d6f1848ee3928a">ABSL_FLAG</a> (bool, sort_heads, false, &quot;Sort outgoing arcs by head.&quot;)</td></tr>
 <tr class="memitem:ac1e56851b23112f9d68698cca88ac45b" id="r_ac1e56851b23112f9d68698cca88ac45b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac1e56851b23112f9d68698cca88ac45b">ABSL_FLAG</a> (bool, detect_reverse_arcs, true, &quot;Detect reverse arcs.&quot;)</td></tr>
-<tr class="memitem:a25f46b686d6f253f53dc77ac9f52b4b6" id="r_a25f46b686d6f253f53dc77ac9f52b4b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a25f46b686d6f253f53dc77ac9f52b4b6">operations_research::ConvertFlowModelToDimacs</a> (const FlowModelProto &amp;flow_model, std::string *dimacs)</td></tr>
-<tr class="memitem:a323a0b960e0d67a0a8a24537ddd02491" id="r_a323a0b960e0d67a0a8a24537ddd02491"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a323a0b960e0d67a0a8a24537ddd02491">operations_research::ConvertDimacsToFlowModel</a> (absl::string_view file, FlowModelProto *flow_model)</td></tr>
-<tr class="memitem:a901500434db44a1a7f5e229860a541ad" id="r_a901500434db44a1a7f5e229860a541ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a901500434db44a1a7f5e229860a541ad">operations_research::SolveMinCostFlow</a> (const FlowModelProto &amp;flow_model, double *loading_time, double *solving_time)</td></tr>
-<tr class="memdesc:a901500434db44a1a7f5e229860a541ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a FlowModelProto proto into the <a class="el" href="structoperations__research_1_1MinCostFlow.html">MinCostFlow</a> class and solves it.  <br /></td></tr>
+<tr class="memitem:a25f46b686d6f253f53dc77ac9f52b4b6" id="r_a25f46b686d6f253f53dc77ac9f52b4b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a25f46b686d6f253f53dc77ac9f52b4b6">operations_research::ConvertFlowModelToDimacs</a> (const <a class="el" href="classoperations__research_1_1FlowModelProto.html">FlowModelProto</a> &amp;flow_model, std::string *dimacs)</td></tr>
+<tr class="memitem:a323a0b960e0d67a0a8a24537ddd02491" id="r_a323a0b960e0d67a0a8a24537ddd02491"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a323a0b960e0d67a0a8a24537ddd02491">operations_research::ConvertDimacsToFlowModel</a> (absl::string_view file, <a class="el" href="classoperations__research_1_1FlowModelProto.html">FlowModelProto</a> *flow_model)</td></tr>
+<tr class="memitem:a901500434db44a1a7f5e229860a541ad" id="r_a901500434db44a1a7f5e229860a541ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#a901500434db44a1a7f5e229860a541ad">operations_research::SolveMinCostFlow</a> (const <a class="el" href="classoperations__research_1_1FlowModelProto.html">FlowModelProto</a> &amp;flow_model, double *loading_time, double *solving_time)</td></tr>
+<tr class="memdesc:a901500434db44a1a7f5e229860a541ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a <a class="el" href="classoperations__research_1_1FlowModelProto.html">FlowModelProto</a> proto into the <a class="el" href="structoperations__research_1_1MinCostFlow.html">MinCostFlow</a> class and solves it.  <br /></td></tr>
 <tr class="memitem:ae7cb1728bbe2622175fcd59165d1ef61" id="r_ae7cb1728bbe2622175fcd59165d1ef61"><td class="memTemplParams" colspan="2">template&lt;typename GraphType&gt; </td></tr>
-<tr class="memitem:ae7cb1728bbe2622175fcd59165d1ef61 template"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#ae7cb1728bbe2622175fcd59165d1ef61">operations_research::SolveMaxFlow</a> (const FlowModelProto &amp;flow_model, double *loading_time, double *solving_time, std::function&lt; void(GraphType *graph)&gt; configure_graph_options=nullptr)</td></tr>
-<tr class="memdesc:ae7cb1728bbe2622175fcd59165d1ef61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a FlowModelProto proto into the MaxFlow class and solves it.  <br /></td></tr>
+<tr class="memitem:ae7cb1728bbe2622175fcd59165d1ef61 template"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceoperations__research.html#ae7cb1728bbe2622175fcd59165d1ef61">operations_research::SolveMaxFlow</a> (const <a class="el" href="classoperations__research_1_1FlowModelProto.html">FlowModelProto</a> &amp;flow_model, double *loading_time, double *solving_time, std::function&lt; void(GraphType *graph)&gt; configure_graph_options=nullptr)</td></tr>
+<tr class="memdesc:ae7cb1728bbe2622175fcd59165d1ef61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a <a class="el" href="classoperations__research_1_1FlowModelProto.html">FlowModelProto</a> proto into the MaxFlow class and solves it.  <br /></td></tr>
 <tr class="memitem:a3c04138a5bfe5d72780bb7e82a18e627" id="r_a3c04138a5bfe5d72780bb7e82a18e627"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3c04138a5bfe5d72780bb7e82a18e627">main</a> (int argc, char **argv)</td></tr>
 <tr class="memitem:ae7cb1728bbe2622175fcd59165d1ef61" id="r_ae7cb1728bbe2622175fcd59165d1ef61"><td class="memTemplParams" colspan="2">template&lt;typename GraphType&gt; </td></tr>
-<tr class="memitem:ae7cb1728bbe2622175fcd59165d1ef61 template"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae7cb1728bbe2622175fcd59165d1ef61">SolveMaxFlow</a> (const FlowModelProto &amp;flow_model, double *loading_time, double *solving_time, std::function&lt; void(GraphType *graph)&gt; configure_graph_options=nullptr)</td></tr>
-<tr class="memdesc:ae7cb1728bbe2622175fcd59165d1ef61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a FlowModelProto proto into the MaxFlow class and solves it.  <br /></td></tr>
-<tr class="memitem:a901500434db44a1a7f5e229860a541ad" id="r_a901500434db44a1a7f5e229860a541ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a901500434db44a1a7f5e229860a541ad">SolveMinCostFlow</a> (const FlowModelProto &amp;flow_model, double *loading_time, double *solving_time)</td></tr>
-<tr class="memdesc:a901500434db44a1a7f5e229860a541ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a FlowModelProto proto into the MinCostFlow class and solves it.  <br /></td></tr>
+<tr class="memitem:ae7cb1728bbe2622175fcd59165d1ef61 template"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae7cb1728bbe2622175fcd59165d1ef61">SolveMaxFlow</a> (const <a class="el" href="classoperations__research_1_1FlowModelProto.html">FlowModelProto</a> &amp;flow_model, double *loading_time, double *solving_time, std::function&lt; void(GraphType *graph)&gt; configure_graph_options=nullptr)</td></tr>
+<tr class="memdesc:ae7cb1728bbe2622175fcd59165d1ef61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a <a class="el" href="classFlowModelProto.html">FlowModelProto</a> proto into the MaxFlow class and solves it.  <br /></td></tr>
+<tr class="memitem:a901500434db44a1a7f5e229860a541ad" id="r_a901500434db44a1a7f5e229860a541ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a901500434db44a1a7f5e229860a541ad">SolveMinCostFlow</a> (const <a class="el" href="classoperations__research_1_1FlowModelProto.html">FlowModelProto</a> &amp;flow_model, double *loading_time, double *solving_time)</td></tr>
+<tr class="memdesc:a901500434db44a1a7f5e229860a541ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a <a class="el" href="classFlowModelProto.html">FlowModelProto</a> proto into the MinCostFlow class and solves it.  <br /></td></tr>
 </table>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
 <a id="ac1e56851b23112f9d68698cca88ac45b" name="ac1e56851b23112f9d68698cca88ac45b"></a>
@@ -288,7 +290,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><div class="fragment"><div class="line">http:<span class="comment">//www.apache.org/licenses/LICENSE-2.0</span></div>
 </div><!-- fragment --><p> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. This code loads flow-graph models (as Dimacs file or binary FlowModel proto) and solves them with the OR-tools flow algorithms.</p>
-<p>Note(user): only min-cost flow is supported at this point. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000730">Todo</a></b></dt><dd>(user): move this DIMACS parser to its own class, like the ones in routing/. This change would improve searchability of the parser. </dd></dl>
+<p>Note(user): only min-cost flow is supported at this point. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000729">Todo</a></b></dt><dd>(user): move this DIMACS parser to its own class, like the ones in routing/. This change would improve searchability of the parser. </dd></dl>
 
 </div>
 </div>
@@ -373,9 +375,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Parse the input as a proto.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000731">Todo</a></b></dt><dd>(user): improve code to convert many files. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000730">Todo</a></b></dt><dd>(user): improve code to convert many files. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="solve__flow__model_8cc_source.html#l00300">300</a> of file <a class="el" href="solve__flow__model_8cc_source.html">solve_flow_model.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solve__flow__model_8cc_source.html#l00299">299</a> of file <a class="el" href="solve__flow__model_8cc_source.html">solve_flow_model.cc</a>.</p>
 
 </div>
 </div>
@@ -390,7 +392,7 @@ template&lt;typename GraphType&gt; </div>
         <tr>
           <td class="memname">void operations_research::SolveMaxFlow </td>
           <td>(</td>
-          <td class="paramtype">const FlowModelProto &amp;</td>          <td class="paramname"><span class="paramname"><em>flow_model</em></span>, </td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1FlowModelProto.html">FlowModelProto</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>flow_model</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -410,12 +412,12 @@ template&lt;typename GraphType&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Loads a FlowModelProto proto into the MaxFlow class and solves it. </p>
+<p>Loads a <a class="el" href="classFlowModelProto.html">FlowModelProto</a> proto into the MaxFlow class and solves it. </p>
 <p>Build the graph.</p>
 <p>Find source &amp; sink.</p>
 <p>Create the max flow instance and set the arc capacities.</p>
 
-<p class="definition">Definition at line <a class="el" href="solve__flow__model_8cc_source.html#l00235">235</a> of file <a class="el" href="solve__flow__model_8cc_source.html">solve_flow_model.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solve__flow__model_8cc_source.html#l00234">234</a> of file <a class="el" href="solve__flow__model_8cc_source.html">solve_flow_model.cc</a>.</p>
 
 </div>
 </div>
@@ -428,7 +430,7 @@ template&lt;typename GraphType&gt; </div>
         <tr>
           <td class="memname">void operations_research::SolveMinCostFlow </td>
           <td>(</td>
-          <td class="paramtype">const FlowModelProto &amp;</td>          <td class="paramname"><span class="paramname"><em>flow_model</em></span>, </td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1FlowModelProto.html">FlowModelProto</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>flow_model</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -443,11 +445,11 @@ template&lt;typename GraphType&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Loads a FlowModelProto proto into the MinCostFlow class and solves it. </p>
+<p>Loads a <a class="el" href="classFlowModelProto.html">FlowModelProto</a> proto into the MinCostFlow class and solves it. </p>
 <p>Compute the number of nodes.</p>
 <p>Build the graph.</p>
 
-<p class="definition">Definition at line <a class="el" href="solve__flow__model_8cc_source.html#l00187">187</a> of file <a class="el" href="solve__flow__model_8cc_source.html">solve_flow_model.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solve__flow__model_8cc_source.html#l00186">186</a> of file <a class="el" href="solve__flow__model_8cc_source.html">solve_flow_model.cc</a>.</p>
 
 </div>
 </div>

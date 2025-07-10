@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,22 @@ $(function(){initNavTree('classcom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHyb
   <div class="headertitle"><div class="title">com.google.ortools.pdlp.PrimalDualHybridGradientParams.Builder Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="dynheader">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><pre>
+Parameters for PrimalDualHybridGradient() in primal_dual_hybrid_gradient.h.
+While the defaults are generally good, it is usually worthwhile to perform a
+parameter sweep to find good settings for a particular family of problems.
+The following parameters should be considered for tuning:
+- restart_strategy (jointly with major_iteration_frequency)
+- primal_weight_update_smoothing (jointly with initial_primal_weight)
+- presolve_options.use_glop
+- l_inf_ruiz_iterations
+- l2_norm_rescaling
+In addition, tune num_threads to speed up the solve.
+</pre><p>Protobuf type <code class="JavaDocCode">operations_research.pdlp.PrimalDualHybridGradientParams</code> </p>
+
+<p class="definition">Definition at line <a class="el" href="PrimalDualHybridGradientParams_8java_source.html#l02934">2934</a> of file <a class="el" href="PrimalDualHybridGradientParams_8java_source.html">PrimalDualHybridGradientParams.java</a>.</p>
+</div><div class="dynheader">
 Inheritance diagram for com.google.ortools.pdlp.PrimalDualHybridGradientParams.Builder:</div>
 <div class="dyncontent">
  <div class="center">
@@ -260,22 +276,7 @@ Static Public Member Functions</h2></td></tr>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:acd3d539121d5c900d64ac1b819967f3f" id="r_acd3d539121d5c900d64ac1b819967f3f"><td class="memItemLeft" align="right" valign="top">com.google.protobuf.GeneratedMessage.FieldAccessorTable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acd3d539121d5c900d64ac1b819967f3f">internalGetFieldAccessorTable</a> ()</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><pre>
-Parameters for PrimalDualHybridGradient() in primal_dual_hybrid_gradient.h.
-While the defaults are generally good, it is usually worthwhile to perform a
-parameter sweep to find good settings for a particular family of problems.
-The following parameters should be considered for tuning:
-- restart_strategy (jointly with major_iteration_frequency)
-- primal_weight_update_smoothing (jointly with initial_primal_weight)
-- presolve_options.use_glop
-- l_inf_ruiz_iterations
-- l2_norm_rescaling
-In addition, tune num_threads to speed up the solve.
-</pre><p>Protobuf type <code class="JavaDocCode">operations_research.pdlp.PrimalDualHybridGradientParams</code> </p>
-
-<p class="definition">Definition at line <a class="el" href="PrimalDualHybridGradientParams_8java_source.html#l02934">2934</a> of file <a class="el" href="PrimalDualHybridGradientParams_8java_source.html">PrimalDualHybridGradientParams.java</a>.</p>
-</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="a82e4639d884ae45943f59483ef8ec145" name="a82e4639d884ae45943f59483ef8ec145"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a82e4639d884ae45943f59483ef8ec145">&#9670;&#160;</a></span>addAllRandomProjectionSeeds()</h2>
 

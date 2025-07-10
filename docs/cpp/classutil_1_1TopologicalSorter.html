@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,16 @@ $(function(){initNavTree('classutil_1_1TopologicalSorter.html','','classutil_1_1
   <div class="headertitle"><div class="title">util::TopologicalSorter&lt; T, stable_sort, Hash, KeyEqual &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename T, bool stable_sort = false, typename Hash = typename absl::flat_hash_map&lt;T, int&gt;::hasher, typename KeyEqual = typename absl::flat_hash_map&lt;T, int, Hash&gt;::key_equal&gt;<br />
+class util::TopologicalSorter&lt; T, stable_sort, Hash, KeyEqual &gt;</div><p>A copy of each Node is stored internally. Duplicated edges are allowed, and discarded lazily so that <a class="el" href="#aff8189d7dc4131f357d3d70ebc9b82dc">AddEdge()</a> keeps an amortized constant time, yet the total memory usage remains O(number of different edges + number of nodes).</p>
+<p><a class="el" href="namespaceutil.html#a0e9be35eb706de2777ef8b80262a293a">DenseIntTopologicalSorter</a> implements the core topological sort algorithm. For greater efficiency it can be used directly (<a class="el" href="classTopologicalSorter.html">TopologicalSorter&lt;int&gt;</a> is about 1.5-3x slower).</p>
+<p><a class="el" href="classutil_1_1TopologicalSorter.html">TopologicalSorter</a> requires that all nodes and edges be added before traversing the nodes, otherwise it will die with a fatal error.</p>
+<p>Note(user): since all the real work is done by DenseIntTopologicalSorterTpl, and this class is a template, we inline every function here in the .h.</p>
+<p>If stable_sort is true then the topological sort will preserve the original order of the nodes as much as possible. Note, the order which is preserved is the order in which the nodes are added (if you use AddEdge it will add the first argument and then the second). </p>
 
+<p class="definition">Definition at line <a class="el" href="topologicalsorter_8h_source.html#l00328">328</a> of file <a class="el" href="topologicalsorter_8h_source.html">topologicalsorter.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="topologicalsorter_8h_source.html">topologicalsorter.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for util::TopologicalSorter&lt; T, stable_sort, Hash, KeyEqual &gt;:</div>
@@ -123,17 +133,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aabb454078968dc55d691e05ace39dead" id="r_aabb454078968dc55d691e05ace39dead"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aabb454078968dc55d691e05ace39dead">StartTraversal</a> ()</td></tr>
 <tr class="memitem:ac75639fa421a00d3324acb392b4fb358" id="r_ac75639fa421a00d3324acb392b4fb358"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac75639fa421a00d3324acb392b4fb358">TraversalStarted</a> () const</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;typename T, bool stable_sort = false, typename Hash = typename absl::flat_hash_map&lt;T, int&gt;::hasher, typename KeyEqual = typename absl::flat_hash_map&lt;T, int, Hash&gt;::key_equal&gt;<br />
-class util::TopologicalSorter&lt; T, stable_sort, Hash, KeyEqual &gt;</div><p>A copy of each Node is stored internally. Duplicated edges are allowed, and discarded lazily so that <a class="el" href="#aff8189d7dc4131f357d3d70ebc9b82dc">AddEdge()</a> keeps an amortized constant time, yet the total memory usage remains O(number of different edges + number of nodes).</p>
-<p><a class="el" href="namespaceutil.html#a0e9be35eb706de2777ef8b80262a293a">DenseIntTopologicalSorter</a> implements the core topological sort algorithm. For greater efficiency it can be used directly (<a class="el" href="classTopologicalSorter.html">TopologicalSorter&lt;int&gt;</a> is about 1.5-3x slower).</p>
-<p><a class="el" href="classutil_1_1TopologicalSorter.html">TopologicalSorter</a> requires that all nodes and edges be added before traversing the nodes, otherwise it will die with a fatal error.</p>
-<p><a class="el" href="classutil_1_1TopologicalSorter.html">TopologicalSorter</a> is -compatible</p>
-<p>Note(user): since all the real work is done by DenseIntTopologicalSorterTpl, and this class is a template, we inline every function here in the .h.</p>
-<p>If stable_sort is true then the topological sort will preserve the original order of the nodes as much as possible. Note, the order which is preserved is the order in which the nodes are added (if you use AddEdge it will add the first argument and then the second). </p>
-
-<p class="definition">Definition at line <a class="el" href="topologicalsorter_8h_source.html#l00330">330</a> of file <a class="el" href="topologicalsorter_8h_source.html">topologicalsorter.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a174fefc0d24b4b75055d0d9f7590da0d" name="a174fefc0d24b4b75055d0d9f7590da0d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a174fefc0d24b4b75055d0d9f7590da0d">&#9670;&#160;</a></span>TopologicalSorter() <span class="overload">[1/2]</span></h2>
 
@@ -159,7 +159,7 @@ template&lt;typename T, bool stable_sort = false, typename Hash = typename absl:
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="topologicalsorter_8h_source.html#l00332">332</a> of file <a class="el" href="topologicalsorter_8h_source.html">topologicalsorter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="topologicalsorter_8h_source.html#l00330">330</a> of file <a class="el" href="topologicalsorter_8h_source.html">topologicalsorter.h</a>.</p>
 
 </div>
 </div>
@@ -217,7 +217,7 @@ template&lt;typename T, bool stable_sort = false, typename Hash = typename absl:
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="topologicalsorter_8h_source.html#l00337">337</a> of file <a class="el" href="topologicalsorter_8h_source.html">topologicalsorter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="topologicalsorter_8h_source.html#l00335">335</a> of file <a class="el" href="topologicalsorter_8h_source.html">topologicalsorter.h</a>.</p>
 
 </div>
 </div>
@@ -253,7 +253,7 @@ template&lt;typename T, bool stable_sort = false, typename Hash = typename absl:
 <p>Adds a directed edge with the given endpoints to the graph. There is no requirement (nor is it an error) to call <a class="el" href="#af1a9f56918018035264dd7aaee552b72">AddNode()</a> for the endpoints. Dies with a fatal error if called after a traversal has been started (see <a class="el" href="#ac75639fa421a00d3324acb392b4fb358">TraversalStarted()</a>). </p>
 <p>The lookups are not inlined into AddEdge because we need to ensure that "from" is inserted before "to".</p>
 
-<p class="definition">Definition at line <a class="el" href="topologicalsorter_8h_source.html#l00358">358</a> of file <a class="el" href="topologicalsorter_8h_source.html">topologicalsorter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="topologicalsorter_8h_source.html#l00356">356</a> of file <a class="el" href="topologicalsorter_8h_source.html">topologicalsorter.h</a>.</p>
 
 </div>
 </div>
@@ -284,7 +284,7 @@ template&lt;typename T, bool stable_sort = false, typename Hash = typename absl:
 
 <p>Shortcut to <a class="el" href="#aff8189d7dc4131f357d3d70ebc9b82dc">AddEdge()</a> in bulk. Not optimized. </p>
 
-<p class="definition">Definition at line <a class="el" href="topologicalsorter_8h_source.html#l00350">350</a> of file <a class="el" href="topologicalsorter_8h_source.html">topologicalsorter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="topologicalsorter_8h_source.html#l00348">348</a> of file <a class="el" href="topologicalsorter_8h_source.html">topologicalsorter.h</a>.</p>
 
 </div>
 </div>
@@ -314,7 +314,7 @@ template&lt;typename T, bool stable_sort = false, typename Hash = typename absl:
 </div><div class="memdoc">
 <p>Adds a node to the graph, if it has not already been added via previous calls to <a class="el" href="#af1a9f56918018035264dd7aaee552b72">AddNode()</a>/AddEdge(). If no edges are later added connecting this node, then it remains an isolated node in the graph. <a class="el" href="#af1a9f56918018035264dd7aaee552b72">AddNode()</a> only exists to support isolated nodes. There is no requirement (nor is it an error) to call <a class="el" href="#af1a9f56918018035264dd7aaee552b72">AddNode()</a> for the endpoints used in a call to <a class="el" href="#aff8189d7dc4131f357d3d70ebc9b82dc">AddEdge()</a>. Dies with a fatal error if called after a traversal has been started (see <a class="el" href="#ac75639fa421a00d3324acb392b4fb358">TraversalStarted()</a>), or if more than INT_MAX nodes are being added. </p>
 
-<p class="definition">Definition at line <a class="el" href="topologicalsorter_8h_source.html#l00347">347</a> of file <a class="el" href="topologicalsorter_8h_source.html">topologicalsorter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="topologicalsorter_8h_source.html#l00345">345</a> of file <a class="el" href="topologicalsorter_8h_source.html">topologicalsorter.h</a>.</p>
 
 </div>
 </div>
@@ -344,7 +344,7 @@ template&lt;typename T, bool stable_sort = false, typename Hash = typename absl:
 </div><div class="memdoc">
 <p>Returns the number of nodes that currently have zero indegree. This starts a traversal (if not started already). </p>
 
-<p class="definition">Definition at line <a class="el" href="topologicalsorter_8h_source.html#l00404">404</a> of file <a class="el" href="topologicalsorter_8h_source.html">topologicalsorter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="topologicalsorter_8h_source.html#l00402">402</a> of file <a class="el" href="topologicalsorter_8h_source.html">topologicalsorter.h</a>.</p>
 
 </div>
 </div>
@@ -385,7 +385,7 @@ template&lt;typename T, bool stable_sort = false, typename Hash = typename absl:
 <p>If you set the optional argument "output_cycle_nodes" to non-NULL and a cycle is detected, it will dump an arbitrary cycle of the graph (whose length will be between 1 and #number_of_nodes, inclusive), in the natural order: for example if "output_cycle_nodes" is filled with ["A", "C", "B"], it means that A-&gt;C-&gt;B-&gt;A is a directed cycle of the graph.</p>
 <p>This starts a traversal (if not started already). Note that the graph can only be traversed once. </p>
 
-<p class="definition">Definition at line <a class="el" href="topologicalsorter_8h_source.html#l00383">383</a> of file <a class="el" href="topologicalsorter_8h_source.html">topologicalsorter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="topologicalsorter_8h_source.html#l00381">381</a> of file <a class="el" href="topologicalsorter_8h_source.html">topologicalsorter.h</a>.</p>
 
 </div>
 </div>
@@ -445,7 +445,7 @@ template&lt;typename T, bool stable_sort = false, typename Hash = typename absl:
 </ul>
 <p>We move elements from the absl::flat_hash_map to this vector, without extra copy (if they are movable).</p>
 
-<p class="definition">Definition at line <a class="el" href="topologicalsorter_8h_source.html#l00413">413</a> of file <a class="el" href="topologicalsorter_8h_source.html">topologicalsorter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="topologicalsorter_8h_source.html#l00411">411</a> of file <a class="el" href="topologicalsorter_8h_source.html">topologicalsorter.h</a>.</p>
 
 </div>
 </div>
@@ -475,7 +475,7 @@ template&lt;typename T, bool stable_sort = false, typename Hash = typename absl:
 </div><div class="memdoc">
 <p>Whether a traversal has started. If true, <a class="el" href="#af1a9f56918018035264dd7aaee552b72">AddNode()</a> and <a class="el" href="#aff8189d7dc4131f357d3d70ebc9b82dc">AddEdge()</a> can no longer be called. </p>
 
-<p class="definition">Definition at line <a class="el" href="topologicalsorter_8h_source.html#l00427">427</a> of file <a class="el" href="topologicalsorter_8h_source.html">topologicalsorter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="topologicalsorter_8h_source.html#l00425">425</a> of file <a class="el" href="topologicalsorter_8h_source.html">topologicalsorter.h</a>.</p>
 
 </div>
 </div>

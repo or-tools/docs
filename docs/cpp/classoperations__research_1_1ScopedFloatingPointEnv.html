@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,15 @@ $(function(){initNavTree('classoperations__research_1_1ScopedFloatingPointEnv.ht
   <div class="headertitle"><div class="title">operations_research::ScopedFloatingPointEnv Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="classoperations__research_1_1ScopedFloatingPointEnv.html">ScopedFloatingPointEnv</a> is used to easily enable Floating-point exceptions. The initial state is automatically restored when the object is deleted.</p>
+<p>Note(user): For some reason, this causes an FPE exception to be triggered for unknown reasons when compiled in 32 bits. Because of this, we do not turn on FPE exception if <b>x86_64</b> is not defined.</p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002612">Todo</a></b></dt><dd><p class="startdd">(user): Make it work on 32 bits. </p>
+<p class="enddd">(user): Make it work on msvc, currently calls to _controlfp crash. </p>
+</dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="fp__utils_8h_source.html#l00065">65</a> of file <a class="el" href="fp__utils_8h_source.html">fp_utils.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="fp__utils_8h_source.html">fp_utils.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -104,15 +113,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a43c2b4ee8bebfe58730c58758e479cd5" id="r_a43c2b4ee8bebfe58730c58758e479cd5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a43c2b4ee8bebfe58730c58758e479cd5">~ScopedFloatingPointEnv</a> ()</td></tr>
 <tr class="memitem:a252bfed81616d05d6e926a8b0e23c653" id="r_a252bfed81616d05d6e926a8b0e23c653"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a252bfed81616d05d6e926a8b0e23c653">EnableExceptions</a> (int excepts)</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="classoperations__research_1_1ScopedFloatingPointEnv.html">ScopedFloatingPointEnv</a> is used to easily enable Floating-point exceptions. The initial state is automatically restored when the object is deleted.</p>
-<p>Note(user): For some reason, this causes an FPE exception to be triggered for unknown reasons when compiled in 32 bits. Because of this, we do not turn on FPE exception if <b>x86_64</b> is not defined.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002614">Todo</a></b></dt><dd><p class="startdd">(user): Make it work on 32 bits. </p>
-<p class="enddd">(user): Make it work on msvc, currently calls to _controlfp crash. </p>
-</dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="fp__utils_8h_source.html#l00065">65</a> of file <a class="el" href="fp__utils_8h_source.html">fp_utils.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="add4b2f812d73101942dd167bff0a29df" name="add4b2f812d73101942dd167bff0a29df"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#add4b2f812d73101942dd167bff0a29df">&#9670;&#160;</a></span>ScopedFloatingPointEnv()</h2>
 

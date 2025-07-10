@@ -1,0 +1,6 @@
+var structoperations__research_1_1MPModelDeltaProto__VariableOverridesEntry__DoNotUseDefaultTypeInternal =
+[
+    [ "MPModelDeltaProto_VariableOverridesEntry_DoNotUseDefaultTypeInternal", "structoperations__research_1_1MPModelDeltaProto__VariableOverridesEntry__DoNotUseDefaultTypeInternal.html#a85c6676d89b8bb6128bc35bd877b4acb", null ],
+    [ "~MPModelDeltaProto_VariableOverridesEntry_DoNotUseDefaultTypeInternal", "structoperations__research_1_1MPModelDeltaProto__VariableOverridesEntry__DoNotUseDefaultTypeInternal.html#a412ea04f94ae27b8a2cf71b88f1a6589", null ],
+    [ "_instance", "structoperations__research_1_1MPModelDeltaProto__VariableOverridesEntry__DoNotUseDefaultTypeInternal.html#a330a2348aa9416305969740c8f89fabd", null ]
+];

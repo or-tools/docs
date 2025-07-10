@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,36 @@ $(function(){initNavTree('classcom_1_1google_1_1ortools_1_1constraintsolver_1_1S
   <div class="headertitle"><div class="title">com.google.ortools.constraintsolver.Solver Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="classcom_1_1google_1_1ortools_1_1constraintsolver_1_1Solver.html">Solver</a> Class<br  />
+ <br  />
+ A solver represents the main computation engine. It implements the entire<br  />
+ range of <a class="el" href="classcom_1_1google_1_1ortools_1_1constraintsolver_1_1Constraint.html">Constraint</a> Programming protocols:<br  />
+</p><ul>
+<li>Reversibility<br  />
+</li>
+<li>Propagation<br  />
+</li>
+<li>Search<br  />
+ <br  />
+ Usually, <a class="el" href="classcom_1_1google_1_1ortools_1_1constraintsolver_1_1Constraint.html">Constraint</a> Programming code consists of<br  />
+</li>
+<li>the creation of the <a class="el" href="classcom_1_1google_1_1ortools_1_1constraintsolver_1_1Solver.html">Solver</a>,<br  />
+</li>
+<li>the creation of the decision variables of the model,<br  />
+</li>
+<li>the creation of the constraints of the model and their addition to the<br  />
+ solver() through the AddConstraint() method,<br  />
+</li>
+<li>the creation of the main <a class="el" href="classcom_1_1google_1_1ortools_1_1constraintsolver_1_1DecisionBuilder.html">DecisionBuilder</a> class,<br  />
+</li>
+<li>the launch of the <a class="el" href="#aaf9e4f046bcc0e1b7d7bc80be009859f">solve()</a> method with the decision builder.<br  />
+ <br  />
+ For the time being, <a class="el" href="classcom_1_1google_1_1ortools_1_1constraintsolver_1_1Solver.html">Solver</a> is neither MT_SAFE nor MT_HOT. </li>
+</ul>
+
+<p class="definition">Definition at line <a class="el" href="Solver_8java_source.html#l00076">76</a> of file <a class="el" href="Solver_8java_source.html">Solver.java</a>.</p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:FailException" id="r_FailException"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1google_1_1ortools_1_1constraintsolver_1_1Solver_1_1FailException.html">FailException</a></td></tr>
@@ -698,36 +728,7 @@ Protected Member Functions</h2></td></tr>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:ab752402b9f75a727a4641b3fc3ebace6" id="r_ab752402b9f75a727a4641b3fc3ebace6"><td class="memItemLeft" align="right" valign="top">transient boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab752402b9f75a727a4641b3fc3ebace6">swigCMemOwn</a></td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="classcom_1_1google_1_1ortools_1_1constraintsolver_1_1Solver.html">Solver</a> Class<br  />
- <br  />
- A solver represents the main computation engine. It implements the entire<br  />
- range of <a class="el" href="classcom_1_1google_1_1ortools_1_1constraintsolver_1_1Constraint.html">Constraint</a> Programming protocols:<br  />
-</p><ul>
-<li>Reversibility<br  />
-</li>
-<li>Propagation<br  />
-</li>
-<li>Search<br  />
- <br  />
- Usually, <a class="el" href="classcom_1_1google_1_1ortools_1_1constraintsolver_1_1Constraint.html">Constraint</a> Programming code consists of<br  />
-</li>
-<li>the creation of the <a class="el" href="classcom_1_1google_1_1ortools_1_1constraintsolver_1_1Solver.html">Solver</a>,<br  />
-</li>
-<li>the creation of the decision variables of the model,<br  />
-</li>
-<li>the creation of the constraints of the model and their addition to the<br  />
- solver() through the AddConstraint() method,<br  />
-</li>
-<li>the creation of the main <a class="el" href="classcom_1_1google_1_1ortools_1_1constraintsolver_1_1DecisionBuilder.html">DecisionBuilder</a> class,<br  />
-</li>
-<li>the launch of the <a class="el" href="#aaf9e4f046bcc0e1b7d7bc80be009859f">solve()</a> method with the decision builder.<br  />
- <br  />
- For the time being, <a class="el" href="classcom_1_1google_1_1ortools_1_1constraintsolver_1_1Solver.html">Solver</a> is neither MT_SAFE nor MT_HOT. </li>
-</ul>
-
-<p class="definition">Definition at line <a class="el" href="Solver_8java_source.html#l00076">76</a> of file <a class="el" href="Solver_8java_source.html">Solver.java</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a39e6d4c1bef15b6e715a5c9fac70e92f" name="a39e6d4c1bef15b6e715a5c9fac70e92f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a39e6d4c1bef15b6e715a5c9fac70e92f">&#9670;&#160;</a></span>Solver() <span class="overload">[1/3]</span></h2>
 

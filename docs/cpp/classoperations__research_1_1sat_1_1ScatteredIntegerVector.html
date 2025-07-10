@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,11 @@ $(function(){initNavTree('classoperations__research_1_1sat_1_1ScatteredIntegerVe
   <div class="headertitle"><div class="title">operations_research::sat::ScatteredIntegerVector Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Simple class to combine linear expression efficiently. First in a sparse way that switch to dense when the number of non-zeros grows. </p>
 
+<p class="definition">Definition at line <a class="el" href="linear__programming__constraint_8h_source.html#l00060">60</a> of file <a class="el" href="linear__programming__constraint_8h_source.html">linear_programming_constraint.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="linear__programming__constraint_8h_source.html">linear_programming_constraint.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -114,11 +119,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ad063072e0fe0d56457ff5bdb2f9051cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">We only provide the const [].  <br /></td></tr>
 <tr class="memitem:a5b0c4e97b40d918ce5215b92651b39d0" id="r_a5b0c4e97b40d918ce5215b92651b39d0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5b0c4e97b40d918ce5215b92651b39d0">IsSparse</a> () const</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Simple class to combine linear expression efficiently. First in a sparse way that switch to dense when the number of non-zeros grows. </p>
-
-<p class="definition">Definition at line <a class="el" href="linear__programming__constraint_8h_source.html#l00060">60</a> of file <a class="el" href="linear__programming__constraint_8h_source.html">linear_programming_constraint.h</a>.</p>
-</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="a57cd5a9cb4155be237671c19743942ca" name="a57cd5a9cb4155be237671c19743942ca"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a57cd5a9cb4155be237671c19743942ca">&#9670;&#160;</a></span>Add()</h2>
 
@@ -266,7 +267,7 @@ template&lt;bool check_overflow&gt; </div>
       </table>
 </div><div class="memdoc">
 <p>This is not const only because non_zeros is sorted. Note that sorting the non-zeros make the result deterministic whether or not we were in sparse mode.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001989">Todo</a></b></dt><dd>(user): Ideally we should convert to IntegerVariable as late as possible. Prefer to use <a class="el" href="#a8a394ae921bc450785db0c4fcbfd1b1e" title="Similar to ConvertToLinearConstraint().">GetTerms()</a>. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001987">Todo</a></b></dt><dd>(user): Ideally we should convert to IntegerVariable as late as possible. Prefer to use <a class="el" href="#a8a394ae921bc450785db0c4fcbfd1b1e" title="Similar to ConvertToLinearConstraint().">GetTerms()</a>. </dd></dl>
 <p>We first do one pass to compute the exact size and not overallocate.</p>
 <p>Allocate once.</p>
 <p>Copy terms.</p>

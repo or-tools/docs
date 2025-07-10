@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,12 @@ $(function(){initNavTree('classoperations__research_1_1sat_1_1Percentile.html','
   <div class="headertitle"><div class="title">operations_research::sat::Percentile Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Utility to calculate percentile (First variant) for limited number of records. Reference: <a href="https://en.wikipedia.org/wiki/Percentile">https://en.wikipedia.org/wiki/Percentile</a></p>
+<p>After the vector is sorted, we assume that the element with index i correspond to the percentile 100*(i+0.5)/size. For percentiles before the first element (resp. after the last one) we return the first element (resp. the last). And otherwise we do a linear interpolation between the two element around the asked percentile. </p>
 
+<p class="definition">Definition at line <a class="el" href="sat_2util_8h_source.html#l00658">658</a> of file <a class="el" href="sat_2util_8h_source.html">util.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="sat_2util_8h_source.html">util.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -106,12 +112,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:aa331d15afb6088d1824880153838fa88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns number of stored records.  <br /></td></tr>
 <tr class="memitem:ae3caddbfffd6ee7761084b31b6df31e0" id="r_ae3caddbfffd6ee7761084b31b6df31e0"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae3caddbfffd6ee7761084b31b6df31e0">GetPercentile</a> (double percent)</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Utility to calculate percentile (First variant) for limited number of records. Reference: <a href="https://en.wikipedia.org/wiki/Percentile">https://en.wikipedia.org/wiki/Percentile</a></p>
-<p>After the vector is sorted, we assume that the element with index i correspond to the percentile 100*(i+0.5)/size. For percentiles before the first element (resp. after the last one) we return the first element (resp. the last). And otherwise we do a linear interpolation between the two element around the asked percentile. </p>
-
-<p class="definition">Definition at line <a class="el" href="sat_2util_8h_source.html#l00658">658</a> of file <a class="el" href="sat_2util_8h_source.html">util.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aea49c8b99fa25b27a9400abad3b58230" name="aea49c8b99fa25b27a9400abad3b58230"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aea49c8b99fa25b27a9400abad3b58230">&#9670;&#160;</a></span>Percentile()</h2>
 

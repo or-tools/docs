@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,20 @@ $(function(){initNavTree('enumcom_1_1google_1_1ortools_1_1util_1_1OptionalBoolea
   <div class="headertitle"><div class="title">com.google.ortools.util.OptionalBoolean Enum Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="dynheader">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><pre>
+A "three-way" boolean: unspecified, false or true.
+
+We don't use the value of 1 to increase the chance to catch bugs: eg. in
+python, a user may set a proto field of this type enum to a boolean value
+without type checks, if they set it to True, the proto validity code will
+catch it (because it'll be cast to 1, which is an invalid enum value).
+Note that if the user sets if to False (i.e. 0), it will be caught by the
+routing library's parameter validity check too.
+</pre><p>Protobuf enum <code class="JavaDocCode">operations_research.OptionalBoolean</code> </p>
+
+<p class="definition">Definition at line <a class="el" href="OptionalBoolean_8java_source.html#l00023">23</a> of file <a class="el" href="OptionalBoolean_8java_source.html">OptionalBoolean.java</a>.</p>
+</div><div class="dynheader">
 Inheritance diagram for com.google.ortools.util.OptionalBoolean:</div>
 <div class="dyncontent">
  <div class="center">
@@ -130,20 +144,7 @@ Static Public Attributes</h2></td></tr>
 <tr class="memitem:aa09bf0dd0c0f86d0062e790908990b9b" id="r_aa09bf0dd0c0f86d0062e790908990b9b"><td class="memItemLeft" align="right" valign="top">static final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa09bf0dd0c0f86d0062e790908990b9b">BOOL_FALSE_VALUE</a> = 2</td></tr>
 <tr class="memitem:a689e48c23f37ccde91413523110be45c" id="r_a689e48c23f37ccde91413523110be45c"><td class="memItemLeft" align="right" valign="top">static final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a689e48c23f37ccde91413523110be45c">BOOL_TRUE_VALUE</a> = 3</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><pre>
-A "three-way" boolean: unspecified, false or true.
-
-We don't use the value of 1 to increase the chance to catch bugs: eg. in
-python, a user may set a proto field of this type enum to a boolean value
-without type checks, if they set it to True, the proto validity code will
-catch it (because it'll be cast to 1, which is an invalid enum value).
-Note that if the user sets if to False (i.e. 0), it will be caught by the
-routing library's parameter validity check too.
-</pre><p>Protobuf enum <code class="JavaDocCode">operations_research.OptionalBoolean</code> </p>
-
-<p class="definition">Definition at line <a class="el" href="OptionalBoolean_8java_source.html#l00023">23</a> of file <a class="el" href="OptionalBoolean_8java_source.html">OptionalBoolean.java</a>.</p>
-</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="ab914bc674a6eb38e5e76e47c007727c7" name="ab914bc674a6eb38e5e76e47c007727c7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab914bc674a6eb38e5e76e47c007727c7">&#9670;&#160;</a></span>[static initializer]()</h2>
 

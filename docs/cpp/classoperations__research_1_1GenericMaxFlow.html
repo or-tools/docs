@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,21 @@ $(function(){initNavTree('classoperations__research_1_1GenericMaxFlow.html','','
   <div class="headertitle"><div class="title">operations_research::GenericMaxFlow&lt; Graph, ArcFlowT, FlowSumT &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename <a class="el" href="namespaceoperations__research.html#acf9cb12e488ad2ace33c313f2f2cc220">Graph</a>, typename ArcFlowT = int64_t, typename FlowSumT = int64_t&gt;<br />
+class operations_research::GenericMaxFlow&lt; Graph, ArcFlowT, FlowSumT &gt;</div><p>Generic MaxFlow that works on graphs with the notion of "reverse" arcs. That is, the graph is directed, and each arc 'tail -&gt; head' must be associated to an unique reverse arc going in the opposite direction 'head -&gt; tail'. We must also have reverse[reverse[arc]] = arc.</p>
+<p>This works with all the reverse arc graphs from 'util/graph/graph.h' and uses the API defined there.</p>
+<p>We actually support two kind of graphs with "reverse" arcs depending on the value of <a class="el" href="classutil_1_1BaseGraph.html#a5009627d6e391dafd0fa687e1a45340c">Graph::kHasNegativeReverseArcs</a>:</p><ul>
+<li>If it is true, the arcs from the "user graph" are called "direct" arcs and are assumed to be indexed in [0, num_arcs). These are the only ones that can have a positive capacity. All the "reverse/opposite" of these arcs will always have negative indices in [-num_arcs, 0) and a capacity of zero.</li>
+<li>If it is false, then we only have "direct" arcs in [0, num_arcs), the reverse of each arc must lives in the same space, and both an arc and its reverse can have a positive initial capacity. This can lead to twice fewer arcs and a faster algo if the "user graph" as a lot of reverse arcs already.</li>
+</ul>
+<p>Flow types and overflow: To optimize memory usage and speed we have two integer types representing flow quantities.</p><ul>
+<li><a class="el" href="#a30b2eeb52c034a7da262e3083849a7e6">ArcFlowType</a> (can be unsigned) is used to represent the flow per arc. The type should be big enough to hold the initial capacity of an arc + its reverse. So if all your initial capacity &lt;= std::numeric_limit&lt;ArcFlowType&gt;::max() / 2, you are safe.</li>
+<li><a class="el" href="#a0023958c1932d87c5e90a5e08b0c58b2">FlowSumType</a> (must be signed) is used to hold the sum of a flow going through a node or through the full network. Ideally, the sum of all the capacity of the arcs leaving the source should fit in a <a class="el" href="#a0023958c1932d87c5e90a5e08b0c58b2">FlowSumType</a>. If this is the case, you will get the better performance, and always an OPTIMAL result. Otherwise, the code might be slower, and you will get OPTIMAL only if the max_flow that can be sent through the network fit a <a class="el" href="#a0023958c1932d87c5e90a5e08b0c58b2">FlowSumType</a>, you will get the INT_OVERFLOW status if more flow than that can be sent. </li>
+</ul>
 
+<p class="definition">Definition at line <a class="el" href="generic__max__flow_8h_source.html#l00249">249</a> of file <a class="el" href="generic__max__flow_8h_source.html">generic_max_flow.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="generic__max__flow_8h_source.html">generic_max_flow.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for operations_research::GenericMaxFlow&lt; Graph, ArcFlowT, FlowSumT &gt;:</div>
@@ -149,7 +164,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a39bfdfe442019a8063214ff0382e2fc5" id="r_a39bfdfe442019a8063214ff0382e2fc5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a39bfdfe442019a8063214ff0382e2fc5">GetSourceSideMinCut</a> (std::vector&lt; <a class="el" href="#a9f580da3d5d711108de9db19fe2a1d07">NodeIndex</a> &gt; *result)</td></tr>
 <tr class="memitem:a9f5af7b1fe783ff9485a368543a9cae9" id="r_a9f5af7b1fe783ff9485a368543a9cae9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9f5af7b1fe783ff9485a368543a9cae9">GetSinkSideMinCut</a> (std::vector&lt; <a class="el" href="#a9f580da3d5d711108de9db19fe2a1d07">NodeIndex</a> &gt; *result)</td></tr>
 <tr class="memitem:a77aa92d96b5009177349df78ae180b68" id="r_a77aa92d96b5009177349df78ae180b68"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a77aa92d96b5009177349df78ae180b68">AugmentingPathExists</a> () const</td></tr>
-<tr class="memitem:a7d1cf09333e56ed9ea3dacb2546d5b0a" id="r_a7d1cf09333e56ed9ea3dacb2546d5b0a"><td class="memItemLeft" align="right" valign="top">FlowModelProto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7d1cf09333e56ed9ea3dacb2546d5b0a">CreateFlowModel</a> ()</td></tr>
+<tr class="memitem:a7d1cf09333e56ed9ea3dacb2546d5b0a" id="r_a7d1cf09333e56ed9ea3dacb2546d5b0a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoperations__research_1_1FlowModelProto.html">FlowModelProto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7d1cf09333e56ed9ea3dacb2546d5b0a">CreateFlowModel</a> ()</td></tr>
 <tr class="memdesc:a7d1cf09333e56ed9ea3dacb2546d5b0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the protocol buffer representation of the current problem.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pro-methods" class="groupheader"><a id="pro-methods" name="pro-methods"></a>
@@ -216,21 +231,7 @@ Static Protected Attributes</h2></td></tr>
 <tr class="memitem:accda76332f657254bc7634b1fba77b71" id="r_accda76332f657254bc7634b1fba77b71"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="#a0023958c1932d87c5e90a5e08b0c58b2">FlowSumType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#accda76332f657254bc7634b1fba77b71">kMaxFlowSum</a></td></tr>
 <tr class="memdesc:accda76332f657254bc7634b1fba77b71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum manageable flow.  <br /></td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;typename <a class="el" href="namespaceoperations__research.html#acf9cb12e488ad2ace33c313f2f2cc220">Graph</a>, typename ArcFlowT = int64_t, typename FlowSumT = int64_t&gt;<br />
-class operations_research::GenericMaxFlow&lt; Graph, ArcFlowT, FlowSumT &gt;</div><p>Generic MaxFlow that works on graphs with the notion of "reverse" arcs. That is, the graph is directed, and each arc 'tail -&gt; head' must be associated to an unique reverse arc going in the opposite direction 'head -&gt; tail'. We must also have reverse[reverse[arc]] = arc.</p>
-<p>This works with all the reverse arc graphs from 'util/graph/graph.h' and uses the API defined there.</p>
-<p>We actually support two kind of graphs with "reverse" arcs depending on the value of <a class="el" href="classutil_1_1BaseGraph.html#a5009627d6e391dafd0fa687e1a45340c">Graph::kHasNegativeReverseArcs</a>:</p><ul>
-<li>If it is true, the arcs from the "user graph" are called "direct" arcs and are assumed to be indexed in [0, num_arcs). These are the only ones that can have a positive capacity. All the "reverse/opposite" of these arcs will always have negative indices in [-num_arcs, 0) and a capacity of zero.</li>
-<li>If it is false, then we only have "direct" arcs in [0, num_arcs), the reverse of each arc must lives in the same space, and both an arc and its reverse can have a positive initial capacity. This can lead to twice fewer arcs and a faster algo if the "user graph" as a lot of reverse arcs already.</li>
-</ul>
-<p>Flow types and overflow: To optimize memory usage and speed we have two integer types representing flow quantities.</p><ul>
-<li><a class="el" href="#a30b2eeb52c034a7da262e3083849a7e6">ArcFlowType</a> (can be unsigned) is used to represent the flow per arc. The type should be big enough to hold the initial capacity of an arc + its reverse. So if all your initial capacity &lt;= std::numeric_limit&lt;ArcFlowType&gt;::max() / 2, you are safe.</li>
-<li><a class="el" href="#a0023958c1932d87c5e90a5e08b0c58b2">FlowSumType</a> (must be signed) is used to hold the sum of a flow going through a node or through the full network. Ideally, the sum of all the capacity of the arcs leaving the source should fit in a <a class="el" href="#a0023958c1932d87c5e90a5e08b0c58b2">FlowSumType</a>. If this is the case, you will get the better performance, and always an OPTIMAL result. Otherwise, the code might be slower, and you will get OPTIMAL only if the max_flow that can be sent through the network fit a <a class="el" href="#a0023958c1932d87c5e90a5e08b0c58b2">FlowSumType</a>, you will get the INT_OVERFLOW status if more flow than that can be sent. </li>
-</ul>
-
-<p class="definition">Definition at line <a class="el" href="generic__max__flow_8h_source.html#l00249">249</a> of file <a class="el" href="generic__max__flow_8h_source.html">generic_max_flow.h</a>.</p>
-</div><a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Member Typedef Documentation</h2>
+<a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Member Typedef Documentation</h2>
 <a id="a30b2eeb52c034a7da262e3083849a7e6" name="a30b2eeb52c034a7da262e3083849a7e6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a30b2eeb52c034a7da262e3083849a7e6">&#9670;&#160;</a></span>ArcFlowType</h2>
 
@@ -350,7 +351,7 @@ template&lt;typename <a class="el" href="namespaceoperations__research.html#acf9
 </div><div class="memdoc">
 <p>Initialize a MaxFlow instance on the given graph. The graph does not need to be fully built yet, but its capacity reservation are used to initialize the memory of this class. source and sink must also be valid node of graph. </p>
 <p>We will initialize them in <a class="el" href="#a01ceb6e57fe26b851115a2facdaf6569" title="Initializes the preflow to a state that enables to run Refine.">InitializePreflow()</a>, so no need for memset.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000642">Todo</a></b></dt><dd>(user): Unfortunately std/absl::make_unique_for_overwrite is not yet available in open-source. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000641">Todo</a></b></dt><dd>(user): Unfortunately std/absl::make_unique_for_overwrite is not yet available in open-source. </dd></dl>
 <p>We will need to store the initial capacity in this case.</p>
 
 <p class="definition">Definition at line <a class="el" href="generic__max__flow_8h_source.html#l00592">592</a> of file <a class="el" href="generic__max__flow_8h_source.html">generic_max_flow.h</a>.</p>
@@ -548,7 +549,7 @@ template&lt;bool reverse&gt; </div>
 template&lt;typename <a class="el" href="namespaceoperations__research.html#acf9cb12e488ad2ace33c313f2f2cc220">Graph</a>, typename ArcFlowT, typename FlowSumT&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">FlowModelProto <a class="el" href="classoperations__research_1_1GenericMaxFlow.html">operations_research::GenericMaxFlow</a>&lt; <a class="el" href="namespaceoperations__research.html#acf9cb12e488ad2ace33c313f2f2cc220">Graph</a>, ArcFlowT, FlowSumT &gt;::CreateFlowModel </td>
+          <td class="memname"><a class="el" href="classoperations__research_1_1FlowModelProto.html">FlowModelProto</a> <a class="el" href="classoperations__research_1_1GenericMaxFlow.html">operations_research::GenericMaxFlow</a>&lt; <a class="el" href="namespaceoperations__research.html#acf9cb12e488ad2ace33c313f2f2cc220">Graph</a>, ArcFlowT, FlowSumT &gt;::CreateFlowModel </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -655,7 +656,7 @@ template&lt;typename <a class="el" href="namespaceoperations__research.html#acf9
 </div><div class="memdoc">
 <p>Returns the current flow on the given arc.</p>
 <dl class="section note"><dt>Note</dt><dd>on a couple (arc, opposite_arc) the flow only goes in one direction (where it is positive) and the other direction will have the negation of that flow.</dd></dl>
-<p>Tricky: This returns a <a class="el" href="#a0023958c1932d87c5e90a5e08b0c58b2">FlowSumType</a> in order to be able to distinguish negative flow from positive flow when <a class="el" href="#a30b2eeb52c034a7da262e3083849a7e6">ArcFlowType</a> is unsigned. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000650">Todo</a></b></dt><dd>(user): We could change the API to avoid that if needed. </dd></dl>
+<p>Tricky: This returns a <a class="el" href="#a0023958c1932d87c5e90a5e08b0c58b2">FlowSumType</a> in order to be able to distinguish negative flow from positive flow when <a class="el" href="#a30b2eeb52c034a7da262e3083849a7e6">ArcFlowType</a> is unsigned. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000649">Todo</a></b></dt><dd>(user): We could change the API to avoid that if needed. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="generic__max__flow_8h_source.html#l00309">309</a> of file <a class="el" href="generic__max__flow_8h_source.html">generic_max_flow.h</a>.</p>
 
@@ -771,7 +772,7 @@ template&lt;typename <a class="el" href="namespaceoperations__research.html#acf9
       </table>
 </div><div class="memdoc">
 <p>Returns the nodes that can reach the sink in the residual graph, the outgoing arcs of this set form a minimum cut. Note that if this is the complement of GetNodeReachableFromSource(), then the min-cut is unique.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000651">Todo</a></b></dt><dd>(user): In the two-phases algorithm, we can get this minimum cut without doing the second phase. Add an option for this if there is a need to, note that the second phase is pretty fast so the gain will be small. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000650">Todo</a></b></dt><dd>(user): In the two-phases algorithm, we can get this minimum cut without doing the second phase. Add an option for this if there is a need to, note that the second phase is pretty fast so the gain will be small. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="generic__max__flow_8h_source.html#l00659">659</a> of file <a class="el" href="generic__max__flow_8h_source.html">generic_max_flow.h</a>.</p>
 
@@ -859,19 +860,19 @@ implementing push-relabel methods for the maximum flow problem", Algorithmica, 1
 <p>We cache this as this is a hot-loop and we don't want bound checking.</p>
 <p>We do a BFS in the reverse residual graph, starting from the sink. Because all the arcs from the source are saturated (except in presence of integer overflow), the source cannot reach the sink in the residual graph. If there is possible overflow and the source is reachable, we still do not want to relabel it, so we start with the source marked.</p>
 <p>Skip the arc if the height of head was already set to the correct value (Remember we are doing reverse BFS).</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000645">Todo</a></b></dt><dd>(user): By using more memory we can speed this up quite a bit by avoiding to take the opposite arc here, too options:<ul>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000644">Todo</a></b></dt><dd>(user): By using more memory we can speed this up quite a bit by avoiding to take the opposite arc here, too options:<ul>
 <li>if (residual_arc_capacity_[arc] != arc_capacity_[arc])</li>
 <li>if (opposite_arc_is_admissible_[arc]) ///&lt; need updates. Experiment with the first option shows more than 10% gain on this function running time, which is the bottleneck on many instances. </li>
 </ul>
 </dd></dl>
 <p>Note(user): We used to have a DCHECK_GE(candidate_distance,
 node_potential_[head]); which is always true except in the case where we can push more than kMaxFlowSum out of the source. The problem comes from the fact that in this case, we call <a class="el" href="#a95ebcc71d8144de003c974422f421292">PushFlowExcessBackToSource()</a> in the middle of the algorithm. The later call will break the properties of the node potential. Note however, that this function will recompute a good node potential for all the nodes and thus fix the issue.</p>
-<p>If head is active, we can steal some or all of its excess. This brings a huge gain on some problems. Note(user): I haven't seen this anywhere in the literature. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000646">Todo</a></b></dt><dd>(user): Investigate more and maybe write a publication :) </dd></dl>
+<p>If head is active, we can steal some or all of its excess. This brings a huge gain on some problems. Note(user): I haven't seen this anywhere in the literature. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000645">Todo</a></b></dt><dd>(user): Investigate more and maybe write a publication :) </dd></dl>
 <p>If the arc became saturated, it is no longer in the residual graph, so we do not need to consider head at this time.</p>
 <dl class="section note"><dt>Note</dt><dd>there is no need to touch first_admissible_arc_[node] because of the relaxed <a class="el" href="#a9d47b83086ab8f847067a7723af32bec">Relabel()</a> we use.</dd></dl>
 <p>At the end of the search, some nodes may not be in the bfs_queue_. Such nodes cannot reach the sink_ or source_ in the residual graph, so there is no point trying to push flow toward them. We obtain this effect by setting their height to something unreachable.</p>
 <dl class="section note"><dt>Note</dt><dd>this also prevents cycling due to our anti-overflow procedure. For instance, suppose there is an edge s -&gt; n outgoing from the source. If node n has no other connection and some excess, we will push the flow back to the source, but if we don't update the height of n <a class="el" href="#a5e5d84153cce67c65a9ec484934ad9ee">SaturateOutgoingArcsFromSource()</a> will push the flow to n again. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000647">Todo</a></b></dt><dd>(user): This is another argument for another anti-overflow algorithm. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000646">Todo</a></b></dt><dd>(user): This is another argument for another anti-overflow algorithm. </dd></dl>
 <p>Reset the active nodes. Doing it like this pushes the nodes in increasing order of height. Note that bfs_queue_[0] is the sink_ so we skip it.</p>
 
 <p class="definition">Definition at line <a class="el" href="generic__max__flow_8h_source.html#l01000">1000</a> of file <a class="el" href="generic__max__flow_8h_source.html">generic_max_flow.h</a>.</p>
@@ -998,9 +999,9 @@ template&lt;typename <a class="el" href="namespaceoperations__research.html#acf9
 </div><div class="memdoc">
 
 <p>Initializes the preflow to a state that enables to run Refine. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000643">Todo</a></b></dt><dd>(user): Ebert graph has an issue with nodes with no arcs, so we use max_num_nodes here to resize vectors. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000642">Todo</a></b></dt><dd>(user): Ebert graph has an issue with nodes with no arcs, so we use max_num_nodes here to resize vectors. </dd></dl>
 <p><a class="el" href="#a01ceb6e57fe26b851115a2facdaf6569" title="Initializes the preflow to a state that enables to run Refine.">InitializePreflow()</a> clears the whole flow that could have been computed by a previous <a class="el" href="#a993eddb6a07ab39b436e9619cc90afce" title="Returns true if a maximum flow was solved.">Solve()</a>. This is not optimal in terms of complexity.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000644">Todo</a></b></dt><dd>(user): find a way to make the re-solving incremental (not an obvious task, and there has not been a lot of literature on the subject.) </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000643">Todo</a></b></dt><dd>(user): find a way to make the re-solving incremental (not an obvious task, and there has not been a lot of literature on the subject.) </dd></dl>
 <p>Restart from a clear state with no flow, and an initial arc capacity.</p>
 <p>All the initial heights are zero except for the source whose height is equal to the number of nodes and will never change during the algorithm.</p>
 <p>Initially we set first_admissible_arc_ to the first arc in the iteration.</p>
@@ -1447,7 +1448,7 @@ template&lt;typename <a class="el" href="namespaceoperations__research.html#acf9
 <p>Usually <a class="el" href="#a5e5d84153cce67c65a9ec484934ad9ee">SaturateOutgoingArcsFromSource()</a> will saturate all the arcs from the source in one go, and we will loop just once. But in case we can push more than kMaxFlowSum out of the source the loop is as follow:</p><ul>
 <li>Push up to kMaxFlowSum out of the source on the admissible outgoing arcs. Stop if no flow was pushed.</li>
 <li><p class="startli">Compute the current max-flow. This will push some flow back to the source and render more outgoing arcs from the source not admissible.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000648">Todo</a></b></dt><dd>(user): This may not be the most efficient algorithm if we need to loop many times. An alternative may be to handle the source like the other nodes in the algorithm, initially putting an excess of kMaxFlowSum on it, and making the source active like any other node with positive excess. To investigate. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000647">Todo</a></b></dt><dd>(user): This may not be the most efficient algorithm if we need to loop many times. An alternative may be to handle the source like the other nodes in the algorithm, initially putting an excess of kMaxFlowSum on it, and making the source active like any other node with positive excess. To investigate. </dd></dl>
 </li>
 </ul>
 <p>The idea behind this is that if a node height augments by more than one, then it is likely to push flow back the way it came. This can lead to very costly loops. A bad case is: source -&gt; n1 -&gt; n2 and n2 just recently isolated from the sink. Then n2 will push flow back to n1, and n1 to n2 and so on. The height of each node will increase by steps of two until the height of the source is reached, which can take a long time. If the chain is longer, the situation is even worse. The behavior of this heuristic is related to the Gap heuristic.</p>
@@ -1830,7 +1831,7 @@ template&lt;typename <a class="el" href="namespaceoperations__research.html#acf9
   </tr>
 </table>
 </div><div class="memdoc">
-<p>An array representing the excess for each node in graph_. With the current algorithm this is always positive except at the source. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000652">Todo</a></b></dt><dd>(user): If needed we could tweak that to allow unsigned <a class="el" href="#a0023958c1932d87c5e90a5e08b0c58b2">FlowSumType</a>. </dd></dl>
+<p>An array representing the excess for each node in graph_. With the current algorithm this is always positive except at the source. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000651">Todo</a></b></dt><dd>(user): If needed we could tweak that to allow unsigned <a class="el" href="#a0023958c1932d87c5e90a5e08b0c58b2">FlowSumType</a>. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="generic__max__flow_8h_source.html#l00473">473</a> of file <a class="el" href="generic__max__flow_8h_source.html">generic_max_flow.h</a>.</p>
 

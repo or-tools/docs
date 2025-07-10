@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,19 @@ $(function(){initNavTree('classoperations__research_1_1sat_1_1EncodingNode.html'
   <div class="headertitle"><div class="title">operations_research::sat::EncodingNode Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This class represents a number in [0, ub]. The encoding uses ub binary variables x_i with i in [0, ub) where x_i means that the number is &gt; i. It is called an <a class="el" href="classoperations__research_1_1sat_1_1EncodingNode.html">EncodingNode</a>, because it represents one node of the tree used to encode a cardinality constraint.</p>
+<p>In practice, not all literals are explicitly created:</p><ul>
+<li>Only the literals in [lb, current_ub) are "active" at a given time.</li>
+<li>The represented number is known to be &gt;= lb.</li>
+<li>It may be greater than current_ub, but the extra literals will be only created lazily. In all our solves, the literal current_ub - 1, will always be assumed to false (i.e. the number will be &lt;= current_ub - 1).</li>
+<li>Note that lb may increase and ub decrease as more information is learned about this node by the sat solver.</li>
+</ul>
+<p>This is roughly based on the cardinality constraint encoding described in: Bailleux and Yacine Boufkhad, "Efficient CNF Encoding of Boolean Cardinality
+Constraints", In Proc. of CP 2003, pages 108-122, 2003. </p>
 
+<p class="definition">Definition at line <a class="el" href="encoding_8h_source.html#l00061">61</a> of file <a class="el" href="encoding_8h_source.html">encoding.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="encoding_8h_source.html">encoding.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -139,19 +152,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a76852e6aaea1eaf3fe29f2f4eeb902c0" id="r_a76852e6aaea1eaf3fe29f2f4eeb902c0"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classoperations__research_1_1sat_1_1EncodingNode.html">EncodingNode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a76852e6aaea1eaf3fe29f2f4eeb902c0">LiteralNode</a> (<a class="el" href="classoperations__research_1_1sat_1_1Literal.html">Literal</a> l, Coefficient <a class="el" href="#a7c1b191e315ff1590a94ebe2f1090336">weight</a>)</td></tr>
 <tr class="memitem:a4db8bdd99cd1c21623273512082cd8a6" id="r_a4db8bdd99cd1c21623273512082cd8a6"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classoperations__research_1_1sat_1_1EncodingNode.html">EncodingNode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4db8bdd99cd1c21623273512082cd8a6">GenericNode</a> (int <a class="el" href="#ad76043cd0ee35c3572743e9bbdfe413d">lb</a>, int <a class="el" href="#a04c4ee4376fdb48735667a6e31355538">ub</a>, std::function&lt; <a class="el" href="classoperations__research_1_1sat_1_1Literal.html">Literal</a>(int x)&gt; create_lit, Coefficient <a class="el" href="#a7c1b191e315ff1590a94ebe2f1090336">weight</a>)</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This class represents a number in [0, ub]. The encoding uses ub binary variables x_i with i in [0, ub) where x_i means that the number is &gt; i. It is called an <a class="el" href="classoperations__research_1_1sat_1_1EncodingNode.html">EncodingNode</a>, because it represents one node of the tree used to encode a cardinality constraint.</p>
-<p>In practice, not all literals are explicitly created:</p><ul>
-<li>Only the literals in [lb, current_ub) are "active" at a given time.</li>
-<li>The represented number is known to be &gt;= lb.</li>
-<li>It may be greater than current_ub, but the extra literals will be only created lazily. In all our solves, the literal current_ub - 1, will always be assumed to false (i.e. the number will be &lt;= current_ub - 1).</li>
-<li>Note that lb may increase and ub decrease as more information is learned about this node by the sat solver.</li>
-</ul>
-<p>This is roughly based on the cardinality constraint encoding described in: Bailleux and Yacine Boufkhad, "Efficient CNF Encoding of Boolean Cardinality
-Constraints", In Proc. of CP 2003, pages 108-122, 2003. </p>
-
-<p class="definition">Definition at line <a class="el" href="encoding_8h_source.html#l00061">61</a> of file <a class="el" href="encoding_8h_source.html">encoding.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af79e3f043350489262e74865fe9217cf" name="af79e3f043350489262e74865fe9217cf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af79e3f043350489262e74865fe9217cf">&#9670;&#160;</a></span>EncodingNode()</h2>
 
@@ -417,7 +418,7 @@ Constraints", In Proc. of CP 2003, pages 108-122, 2003. </p>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001716">Todo</a></b></dt><dd>(user): Not ideal, we should probably just provide index in the original objective for sorting purpose. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001714">Todo</a></b></dt><dd>(user): Not ideal, we should probably just provide index in the original objective for sorting purpose. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="encoding_8cc_source.html#l00063">63</a> of file <a class="el" href="encoding_8cc_source.html">encoding.cc</a>.</p>
 
@@ -881,7 +882,7 @@ Constraints", In Proc. of CP 2003, pages 108-122, 2003. </p>
 </div><div class="memdoc">
 
 <p>Indicate that the node cannot grow further than its current assumption. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001717">Todo</a></b></dt><dd>(user): Avoid creating a Boolean just to fix it! </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001715">Todo</a></b></dt><dd>(user): Avoid creating a Boolean just to fix it! </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="encoding_8cc_source.html#l00211">211</a> of file <a class="el" href="encoding_8cc_source.html">encoding.cc</a>.</p>
 

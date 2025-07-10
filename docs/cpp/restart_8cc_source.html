@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -118,7 +119,7 @@ $(function(){initNavTree('restart_8cc_source.html','',''); });
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &quot;<a class="code" href="base_2logging_8h.html">ortools/base/logging.h</a>&quot;</span></div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &quot;<a class="code" href="port_2proto__utils_8h.html">ortools/port/proto_utils.h</a>&quot;</span></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &quot;<a class="code" href="sat__decision_8h.html">ortools/sat/sat_decision.h</a>&quot;</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include &quot;ortools/sat/sat_parameters.pb.h&quot;</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include &quot;<a class="code" href="sat__parameters_8pb_8h.html">ortools/sat/sat_parameters.pb.h</a>&quot;</span></div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &quot;<a class="code" href="running__stat_8h.html">ortools/util/running_stat.h</a>&quot;</span></div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceoperations__research.html">operations_research</a> {</div>
@@ -151,25 +152,25 @@ $(function(){initNavTree('restart_8cc_source.html','',''); });
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keyword">const</span> std::vector&lt;std::string&gt; string_values = absl::StrSplit(</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        parameters_.default_restart_algorithms(), <span class="charliteral">&#39;,&#39;</span>, absl::SkipEmpty());</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> std::string&amp; string_value : string_values) {</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>      SatParameters::RestartAlgorithm tmp;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>      <a class="code hl_typedef" href="classoperations__research_1_1sat_1_1SatParameters.html#a02e3d09c28a6800432571b2edd7c9da4">SatParameters::RestartAlgorithm</a> tmp;</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="preprocessor">#if defined(__PORTABLE_PLATFORM__)</span></div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>      <span class="keywordflow">if</span> (string_value == <span class="stringliteral">&quot;NO_RESTART&quot;</span>) {</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        tmp = SatParameters::NO_RESTART;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        tmp = <a class="code hl_variable" href="classoperations__research_1_1sat_1_1SatParameters.html#ada783388ee445131473f52990e0d29e1">SatParameters::NO_RESTART</a>;</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>      } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (string_value == <span class="stringliteral">&quot;LUBY_RESTART&quot;</span>) {</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        tmp = SatParameters::LUBY_RESTART;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        tmp = <a class="code hl_variable" href="classoperations__research_1_1sat_1_1SatParameters.html#ae7ab3368898d3e0a77ccd09102e645c5">SatParameters::LUBY_RESTART</a>;</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>      } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (string_value == <span class="stringliteral">&quot;DL_MOVING_AVERAGE_RESTART&quot;</span>) {</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        tmp = SatParameters::DL_MOVING_AVERAGE_RESTART;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        tmp = <a class="code hl_variable" href="classoperations__research_1_1sat_1_1SatParameters.html#a65730fb52dcf4ce5d66419c7179df542">SatParameters::DL_MOVING_AVERAGE_RESTART</a>;</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>      } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (string_value == <span class="stringliteral">&quot;LBD_MOVING_AVERAGE_RESTART&quot;</span>) {</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        tmp = SatParameters::LBD_MOVING_AVERAGE_RESTART;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        tmp = <a class="code hl_variable" href="classoperations__research_1_1sat_1_1SatParameters.html#ac24828a61e9a4ee5f343dfae89d33843">SatParameters::LBD_MOVING_AVERAGE_RESTART</a>;</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>      } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (string_value == <span class="stringliteral">&quot;FIXED_RESTART&quot;</span>) {</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        tmp = SatParameters::FIXED_RESTART;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        tmp = <a class="code hl_variable" href="classoperations__research_1_1sat_1_1SatParameters.html#a2672c445112fcc4f5570a37d59783bd5">SatParameters::FIXED_RESTART</a>;</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>      } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        LOG(WARNING) &lt;&lt; <span class="stringliteral">&quot;Couldn&#39;t parse the RestartAlgorithm name: &#39;&quot;</span></div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                     &lt;&lt; string_value &lt;&lt; <span class="stringliteral">&quot;&#39;.&quot;</span>;</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        <span class="keywordflow">continue</span>;</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>      }</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="preprocessor">#else   </span><span class="comment">// __PORTABLE_PLATFORM__</span></div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>      <span class="keywordflow">if</span> (!SatParameters::RestartAlgorithm_Parse(string_value, &amp;tmp)) {</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>      <span class="keywordflow">if</span> (!<a class="code hl_function" href="classoperations__research_1_1sat_1_1SatParameters.html#a3b224bf75c59673b29816bcf34d0a8e1">SatParameters::RestartAlgorithm_Parse</a>(string_value, &amp;tmp)) {</div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        LOG(WARNING) &lt;&lt; <span class="stringliteral">&quot;Couldn&#39;t parse the RestartAlgorithm name: &#39;&quot;</span></div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>                     &lt;&lt; string_value &lt;&lt; <span class="stringliteral">&quot;&#39;.&quot;</span>;</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        <span class="keywordflow">continue</span>;</div>
@@ -179,7 +180,7 @@ $(function(){initNavTree('restart_8cc_source.html','',''); });
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    }</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  }</div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  <span class="keywordflow">if</span> (strategies_.empty()) {</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    strategies_.push_back(SatParameters::NO_RESTART);</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    strategies_.push_back(<a class="code hl_variable" href="classoperations__research_1_1sat_1_1SatParameters.html#ada783388ee445131473f52990e0d29e1">SatParameters::NO_RESTART</a>);</div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>  }</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>}</div>
 </div>
@@ -188,15 +189,15 @@ $(function(){initNavTree('restart_8cc_source.html','',''); });
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="classoperations__research_1_1sat_1_1RestartPolicy.html#a0090a2c7c054156ae77a3a165ee54546">   88</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="classoperations__research_1_1sat_1_1RestartPolicy.html#a0090a2c7c054156ae77a3a165ee54546">RestartPolicy::ShouldRestart</a>() {</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>  <span class="keywordtype">bool</span> should_restart = <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>  <span class="keywordflow">switch</span> (strategies_[strategy_counter_ % strategies_.size()]) {</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="keywordflow">case</span> SatParameters::NO_RESTART:</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="keywordflow">case</span> <a class="code hl_variable" href="classoperations__research_1_1sat_1_1SatParameters.html#ada783388ee445131473f52990e0d29e1">SatParameters::NO_RESTART</a>:</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>      <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <span class="keywordflow">case</span> SatParameters::LUBY_RESTART:</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <span class="keywordflow">case</span> <a class="code hl_variable" href="classoperations__research_1_1sat_1_1SatParameters.html#ae7ab3368898d3e0a77ccd09102e645c5">SatParameters::LUBY_RESTART</a>:</div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>      <span class="keywordflow">if</span> (conflicts_until_next_restart_ == 0) {</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        luby_count_++;</div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        should_restart = <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>      }</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>      <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <span class="keywordflow">case</span> SatParameters::DL_MOVING_AVERAGE_RESTART:</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <span class="keywordflow">case</span> <a class="code hl_variable" href="classoperations__research_1_1sat_1_1SatParameters.html#a65730fb52dcf4ce5d66419c7179df542">SatParameters::DL_MOVING_AVERAGE_RESTART</a>:</div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>      <span class="keywordflow">if</span> (dl_running_average_.IsWindowFull() &amp;&amp;</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>          dl_running_average_.GlobalAverage() &lt;</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>              parameters_.restart_dl_average_ratio() *</div>
@@ -204,7 +205,7 @@ $(function(){initNavTree('restart_8cc_source.html','',''); });
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        should_restart = <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>      }</div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>      <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    <span class="keywordflow">case</span> SatParameters::LBD_MOVING_AVERAGE_RESTART:</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    <span class="keywordflow">case</span> <a class="code hl_variable" href="classoperations__research_1_1sat_1_1SatParameters.html#ac24828a61e9a4ee5f343dfae89d33843">SatParameters::LBD_MOVING_AVERAGE_RESTART</a>:</div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>      <span class="keywordflow">if</span> (lbd_running_average_.IsWindowFull() &amp;&amp;</div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>          lbd_running_average_.GlobalAverage() &lt;</div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>              parameters_.restart_lbd_average_ratio() *</div>
@@ -212,7 +213,7 @@ $(function(){initNavTree('restart_8cc_source.html','',''); });
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        should_restart = <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>      }</div>
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>      <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    <span class="keywordflow">case</span> SatParameters::FIXED_RESTART:</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    <span class="keywordflow">case</span> <a class="code hl_variable" href="classoperations__research_1_1sat_1_1SatParameters.html#a2672c445112fcc4f5570a37d59783bd5">SatParameters::FIXED_RESTART</a>:</div>
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>      <span class="keywordflow">if</span> (conflicts_until_next_restart_ == 0) {</div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>        should_restart = <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>      }</div>
@@ -233,7 +234,7 @@ $(function(){initNavTree('restart_8cc_source.html','',''); });
 <div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>      <span class="comment">// the polariy heuristic while under it.</span></div>
 <div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>      decision_policy_-&gt;SetStablePhase(</div>
 <div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>          strategies_[strategy_counter_ % strategies_.size()] ==</div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>          SatParameters::LUBY_RESTART);</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>          <a class="code hl_variable" href="classoperations__research_1_1sat_1_1SatParameters.html#ae7ab3368898d3e0a77ccd09102e645c5">SatParameters::LUBY_RESTART</a>);</div>
 <div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    }</div>
 <div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span> </div>
 <div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>    <span class="comment">// Reset the various restart strategies.</span></div>
@@ -241,7 +242,7 @@ $(function(){initNavTree('restart_8cc_source.html','',''); });
 <div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>    lbd_running_average_.ClearWindow();</div>
 <div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>    conflicts_until_next_restart_ = parameters_.restart_period();</div>
 <div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    <span class="keywordflow">if</span> (strategies_[strategy_counter_ % strategies_.size()] ==</div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>        SatParameters::LUBY_RESTART) {</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>        <a class="code hl_variable" href="classoperations__research_1_1sat_1_1SatParameters.html#ae7ab3368898d3e0a77ccd09102e645c5">SatParameters::LUBY_RESTART</a>) {</div>
 <div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>      conflicts_until_next_restart_ *= <a class="code hl_function" href="namespaceoperations__research_1_1sat.html#ab89c95fd9e5fe8176a7807d92872972e">SUniv</a>(luby_count_ + 1);</div>
 <div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    }</div>
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>  }</div>
@@ -308,6 +309,13 @@ $(function(){initNavTree('restart_8cc_source.html','',''); });
 <div class="ttc" id="aclassoperations__research_1_1sat_1_1RestartPolicy_html_a52594750ea119a9ac928e3f09b77f140"><div class="ttname"><a href="classoperations__research_1_1sat_1_1RestartPolicy.html#a52594750ea119a9ac928e3f09b77f140">operations_research::sat::RestartPolicy::Reset</a></div><div class="ttdeci">void Reset()</div><div class="ttdoc">Resets the policy using the current model parameters.</div><div class="ttdef"><b>Definition</b> <a href="#l00030">restart.cc:30</a></div></div>
 <div class="ttc" id="aclassoperations__research_1_1sat_1_1RestartPolicy_html_a638328a35cebd0655114185d2ebef323"><div class="ttname"><a href="classoperations__research_1_1sat_1_1RestartPolicy.html#a638328a35cebd0655114185d2ebef323">operations_research::sat::RestartPolicy::InfoString</a></div><div class="ttdeci">std::string InfoString() const</div><div class="ttdoc">Returns a string with the current restart statistics.</div><div class="ttdef"><b>Definition</b> <a href="#l00180">restart.cc:180</a></div></div>
 <div class="ttc" id="aclassoperations__research_1_1sat_1_1RestartPolicy_html_a9d1b5f7685075b91fd016d86fb4a378e"><div class="ttname"><a href="classoperations__research_1_1sat_1_1RestartPolicy.html#a9d1b5f7685075b91fd016d86fb4a378e">operations_research::sat::RestartPolicy::OnConflict</a></div><div class="ttdeci">void OnConflict(int conflict_trail_index, int conflict_decision_level, int conflict_lbd)</div><div class="ttdef"><b>Definition</b> <a href="#l00151">restart.cc:151</a></div></div>
+<div class="ttc" id="aclassoperations__research_1_1sat_1_1SatParameters_html_a02e3d09c28a6800432571b2edd7c9da4"><div class="ttname"><a href="classoperations__research_1_1sat_1_1SatParameters.html#a02e3d09c28a6800432571b2edd7c9da4">operations_research::sat::SatParameters::RestartAlgorithm</a></div><div class="ttdeci">SatParameters_RestartAlgorithm RestartAlgorithm</div><div class="ttdef"><b>Definition</b> <a href="sat__parameters_8pb_8h_source.html#l00816">sat_parameters.pb.h:816</a></div></div>
+<div class="ttc" id="aclassoperations__research_1_1sat_1_1SatParameters_html_a2672c445112fcc4f5570a37d59783bd5"><div class="ttname"><a href="classoperations__research_1_1sat_1_1SatParameters.html#a2672c445112fcc4f5570a37d59783bd5">operations_research::sat::SatParameters::FIXED_RESTART</a></div><div class="ttdeci">static constexpr RestartAlgorithm FIXED_RESTART</div><div class="ttdef"><b>Definition</b> <a href="sat__parameters_8pb_8h_source.html#l00821">sat_parameters.pb.h:821</a></div></div>
+<div class="ttc" id="aclassoperations__research_1_1sat_1_1SatParameters_html_a3b224bf75c59673b29816bcf34d0a8e1"><div class="ttname"><a href="classoperations__research_1_1sat_1_1SatParameters.html#a3b224bf75c59673b29816bcf34d0a8e1">operations_research::sat::SatParameters::RestartAlgorithm_Parse</a></div><div class="ttdeci">static bool RestartAlgorithm_Parse(::absl::string_view name, RestartAlgorithm *PROTOBUF_NONNULL value)</div><div class="ttdef"><b>Definition</b> <a href="sat__parameters_8pb_8h_source.html#l00835">sat_parameters.pb.h:835</a></div></div>
+<div class="ttc" id="aclassoperations__research_1_1sat_1_1SatParameters_html_a65730fb52dcf4ce5d66419c7179df542"><div class="ttname"><a href="classoperations__research_1_1sat_1_1SatParameters.html#a65730fb52dcf4ce5d66419c7179df542">operations_research::sat::SatParameters::DL_MOVING_AVERAGE_RESTART</a></div><div class="ttdeci">static constexpr RestartAlgorithm DL_MOVING_AVERAGE_RESTART</div><div class="ttdef"><b>Definition</b> <a href="sat__parameters_8pb_8h_source.html#l00819">sat_parameters.pb.h:819</a></div></div>
+<div class="ttc" id="aclassoperations__research_1_1sat_1_1SatParameters_html_ac24828a61e9a4ee5f343dfae89d33843"><div class="ttname"><a href="classoperations__research_1_1sat_1_1SatParameters.html#ac24828a61e9a4ee5f343dfae89d33843">operations_research::sat::SatParameters::LBD_MOVING_AVERAGE_RESTART</a></div><div class="ttdeci">static constexpr RestartAlgorithm LBD_MOVING_AVERAGE_RESTART</div><div class="ttdef"><b>Definition</b> <a href="sat__parameters_8pb_8h_source.html#l00820">sat_parameters.pb.h:820</a></div></div>
+<div class="ttc" id="aclassoperations__research_1_1sat_1_1SatParameters_html_ada783388ee445131473f52990e0d29e1"><div class="ttname"><a href="classoperations__research_1_1sat_1_1SatParameters.html#ada783388ee445131473f52990e0d29e1">operations_research::sat::SatParameters::NO_RESTART</a></div><div class="ttdeci">static constexpr RestartAlgorithm NO_RESTART</div><div class="ttdef"><b>Definition</b> <a href="sat__parameters_8pb_8h_source.html#l00817">sat_parameters.pb.h:817</a></div></div>
+<div class="ttc" id="aclassoperations__research_1_1sat_1_1SatParameters_html_ae7ab3368898d3e0a77ccd09102e645c5"><div class="ttname"><a href="classoperations__research_1_1sat_1_1SatParameters.html#ae7ab3368898d3e0a77ccd09102e645c5">operations_research::sat::SatParameters::LUBY_RESTART</a></div><div class="ttdeci">static constexpr RestartAlgorithm LUBY_RESTART</div><div class="ttdef"><b>Definition</b> <a href="sat__parameters_8pb_8h_source.html#l00818">sat_parameters.pb.h:818</a></div></div>
 <div class="ttc" id="anamespaceoperations__research_1_1sat_html"><div class="ttname"><a href="namespaceoperations__research_1_1sat.html">operations_research::sat</a></div><div class="ttdef"><b>Definition</b> <a href="routing__sat_8cc_source.html#l00045">routing_sat.cc:45</a></div></div>
 <div class="ttc" id="anamespaceoperations__research_1_1sat_html_ab0c36038a18f65060a8232934b26cb7e"><div class="ttname"><a href="namespaceoperations__research_1_1sat.html#ab0c36038a18f65060a8232934b26cb7e">operations_research::sat::i</a></div><div class="ttdeci">for i</div><div class="ttdef"><b>Definition</b> <a href="diophantine_8h_source.html#l00100">diophantine.h:100</a></div></div>
 <div class="ttc" id="anamespaceoperations__research_1_1sat_html_ab89c95fd9e5fe8176a7807d92872972e"><div class="ttname"><a href="namespaceoperations__research_1_1sat.html#ab89c95fd9e5fe8176a7807d92872972e">operations_research::sat::SUniv</a></div><div class="ttdeci">int SUniv(int i)</div><div class="ttdef"><b>Definition</b> <a href="restart_8h_source.html#l00092">restart.h:92</a></div></div>
@@ -317,6 +325,7 @@ $(function(){initNavTree('restart_8cc_source.html','',''); });
 <div class="ttc" id="arestart_8h_html"><div class="ttname"><a href="restart_8h.html">restart.h</a></div></div>
 <div class="ttc" id="arunning__stat_8h_html"><div class="ttname"><a href="running__stat_8h.html">running_stat.h</a></div></div>
 <div class="ttc" id="asat__decision_8h_html"><div class="ttname"><a href="sat__decision_8h.html">sat_decision.h</a></div></div>
+<div class="ttc" id="asat__parameters_8pb_8h_html"><div class="ttname"><a href="sat__parameters_8pb_8h.html">sat_parameters.pb.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

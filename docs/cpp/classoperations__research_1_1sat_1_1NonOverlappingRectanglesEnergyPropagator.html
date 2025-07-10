@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -98,7 +99,11 @@ $(function(){initNavTree('classoperations__research_1_1sat_1_1NonOverlappingRect
 
 <p>Propagates using a box energy reasoning.  
  <a href="#details">More...</a></p>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Propagates using a box energy reasoning. </p>
 
+<p class="definition">Definition at line <a class="el" href="diffn_8h_source.html#l00041">41</a> of file <a class="el" href="diffn_8h_source.html">diffn.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="diffn_8h_source.html">diffn.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for operations_research::sat::NonOverlappingRectanglesEnergyPropagator:</div>
@@ -121,11 +126,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2050a6e5fb78d733582e3fe1beb7d9ed inherit pub_methods_classoperations__research_1_1sat_1_1PropagatorInterface" id="r_a2050a6e5fb78d733582e3fe1beb7d9ed"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1PropagatorInterface.html#a2050a6e5fb78d733582e3fe1beb7d9ed">~PropagatorInterface</a> ()=default</td></tr>
 <tr class="memitem:a8df009b18974352e71f74929860c2326 inherit pub_methods_classoperations__research_1_1sat_1_1PropagatorInterface" id="r_a8df009b18974352e71f74929860c2326"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1PropagatorInterface.html#a8df009b18974352e71f74929860c2326">IncrementalPropagate</a> (const std::vector&lt; int &gt; &amp;)</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Propagates using a box energy reasoning. </p>
-
-<p class="definition">Definition at line <a class="el" href="diffn_8h_source.html#l00041">41</a> of file <a class="el" href="diffn_8h_source.html">diffn.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab61819a8477d39b577251665f29136c3" name="ab61819a8477d39b577251665f29136c3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab61819a8477d39b577251665f29136c3">&#9670;&#160;</a></span>NonOverlappingRectanglesEnergyPropagator()</h2>
 
@@ -208,7 +209,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>This will be called after one or more literals that are watched by this propagator changed. It will also always be called on the first propagation cycle after registration. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001672">Todo</a></b></dt><dd>(user): double-check/revisit the algo for box of variable sizes. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001670">Todo</a></b></dt><dd>(user): double-check/revisit the algo for box of variable sizes. </dd></dl>
 <p>Our algo is quadratic, so we don't want to run it on really large problems.</p>
 <p>Avoid integer overflows if the area of the boxes get comparable with INT64_MAX.</p>
 <p>We found a conflict, so we can afford to run the propagator again to search for a best explanation. This is specially the case since we only want to re-run it over the items that participate in the conflict, so it is a much smaller problem.</p>

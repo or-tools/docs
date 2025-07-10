@@ -1,0 +1,6 @@
+var structoperations__research_1_1math__opt_1_1ModelSubsetProto__VariableBoundsEntry__DoNotUseDefaultTypeInternal =
+[
+    [ "ModelSubsetProto_VariableBoundsEntry_DoNotUseDefaultTypeInternal", "structoperations__research_1_1math__opt_1_1ModelSubsetProto__VariableBoundsEntry__DoNotUseDefaultTypeInternal.html#a73e2bcbe6e3fcd64ee5aabb355807e69", null ],
+    [ "~ModelSubsetProto_VariableBoundsEntry_DoNotUseDefaultTypeInternal", "structoperations__research_1_1math__opt_1_1ModelSubsetProto__VariableBoundsEntry__DoNotUseDefaultTypeInternal.html#a60fb2302701243a6126243b5fc63e4b8", null ],
+    [ "_instance", "structoperations__research_1_1math__opt_1_1ModelSubsetProto__VariableBoundsEntry__DoNotUseDefaultTypeInternal.html#a275e1eabeb16dc3fdf57e07756ffe1cc", null ]
+];

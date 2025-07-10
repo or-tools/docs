@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,14 @@ $(function(){initNavTree('classoperations__research_1_1sat_1_1CompactVectorVecto
   <div class="headertitle"><div class="title">operations_research::sat::CompactVectorVector&lt; K, V &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename K = int, typename V = int&gt;<br />
+class operations_research::sat::CompactVectorVector&lt; K, V &gt;</div><p>Small utility class to store a vector&lt;vector&lt;&gt;&gt; where one can only append new vector and never change previously added ones. This allows to store a static key -&gt; value(s) mapping.</p>
+<p>This is a lot more compact memorywise and thus faster than vector&lt;vector&lt;&gt;&gt;. </p><dl class="section note"><dt>Note</dt><dd>we implement a really small subset of the vector&lt;vector&lt;&gt;&gt; API.</dd></dl>
+<p>We support int and StrongType for key K and any copyable type for value V. </p>
 
+<p class="definition">Definition at line <a class="el" href="sat_2util_8h_source.html#l00069">69</a> of file <a class="el" href="sat_2util_8h_source.html">util.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="sat_2util_8h_source.html">util.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-types" class="groupheader"><a id="pub-types" name="pub-types"></a>
@@ -131,14 +139,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6251316ca762e96668f876d7012d63c1" id="r_a6251316ca762e96668f876d7012d63c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6251316ca762e96668f876d7012d63c1">ReplaceValuesBySmallerSet</a> (K key, absl::Span&lt; const V &gt; values)</td></tr>
 <tr class="memitem:a4250c7d53624f0eb012af04dce59aad4" id="r_a4250c7d53624f0eb012af04dce59aad4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4250c7d53624f0eb012af04dce59aad4">emplace_back</a> (V const *<a class="el" href="namespaceoperations__research.html#ae0325e0eab2ec682359371be88f44eb2">begin</a>, V const *<a class="el" href="namespaceoperations__research.html#a6efb4cbc3b3e11fbbec032e676860f21">end</a>)</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;typename K = int, typename V = int&gt;<br />
-class operations_research::sat::CompactVectorVector&lt; K, V &gt;</div><p>Small utility class to store a vector&lt;vector&lt;&gt;&gt; where one can only append new vector and never change previously added ones. This allows to store a static key -&gt; value(s) mapping.</p>
-<p>This is a lot more compact memorywise and thus faster than vector&lt;vector&lt;&gt;&gt;. </p><dl class="section note"><dt>Note</dt><dd>we implement a really small subset of the vector&lt;vector&lt;&gt;&gt; API.</dd></dl>
-<p>We support int and StrongType for key K and any copyable type for value V. </p>
-
-<p class="definition">Definition at line <a class="el" href="sat_2util_8h_source.html#l00069">69</a> of file <a class="el" href="sat_2util_8h_source.html">util.h</a>.</p>
-</div><a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Member Typedef Documentation</h2>
+<a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Member Typedef Documentation</h2>
 <a id="a42a4bcd5a3d4c4d22111f0b0fe85dea6" name="a42a4bcd5a3d4c4d22111f0b0fe85dea6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a42a4bcd5a3d4c4d22111f0b0fe85dea6">&#9670;&#160;</a></span>value_type</h2>
 

@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,18 @@ $(function(){initNavTree('classoperations__research_1_1math__opt_1_1ModelStorage
   <div class="headertitle"><div class="title">operations_research::math_opt::ModelStorageV2 Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>An index based C++ API for building &amp; storing optimization problems.</p>
+<dl class="section note"><dt>Note</dt><dd>this API should usually not be used by C++ users that should prefer the <a class="el" href="math__opt_2cpp_2model_8h.html">math_opt/cpp/model.h</a> API.</dd></dl>
+<p>It supports the efficient creation and modification of an optimization model, and the export of <a class="el" href="classoperations__research_1_1math__opt_1_1ModelProto.html">ModelProto</a> and <a class="el" href="classoperations__research_1_1math__opt_1_1ModelUpdateProto.html">ModelUpdateProto</a> protos.</p>
+<p>All methods run in amortized O(1) (as amortized over calls to that exact function) unless otherwise specified.</p>
+<p>Incrementalism, the ModelUpdate proto, and Checkpoints:</p>
+<p>To update an existing model as specified by a <a class="el" href="classoperations__research_1_1math__opt_1_1Model.html">Model</a> proto, solvers consume a ModelUpdate proto, which describes the changes to a model (e.g. new variables or a change in a variable bound). ModelStorage::NewUpdateTracker() tracks the changes made and produces a ModelUpdate proto describing these changes with the method ModelStorage::ExportModelUpdate(). The changes returned will be the modifications since the previous call to ModelStorage::AdvanceCheckpoint(). Note that, for newly initialized models, before the first checkpoint, there is no additional memory overhead from tracking changes. See g3doc/ortools/math_opt/g3doc/model_building_complexity.md for details.</p>
+<p>On bad input:</p>
+<p>Using a bad variable id or constraint id (an id not in the current model, which includes ids that have been deleted) on any method will result in an immediate failure (either a CHECK failure or an exception, which is an implementation detail you should not rely on). We make no attempt to say if a model is invalid (e.g. a variable lower bound is infinite, exceeds an upper bound, or is NaN). The exported models are validated instead, see model_validator.h. </p>
 
+<p class="definition">Definition at line <a class="el" href="model__storage__v2_8h_source.html#l00084">84</a> of file <a class="el" href="model__storage__v2_8h_source.html">model_storage_v2.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="model__storage__v2_8h_source.html">model_storage_v2.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -216,31 +228,20 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a18dce65673ede598592566c791c2278b" id="r_a18dce65673ede598592566c791c2278b"><td class="memTemplParams" colspan="2">template&lt;typename IdType&gt; </td></tr>
 <tr class="memitem:a18dce65673ede598592566c791c2278b template"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespaceoperations__research_1_1math__opt.html#a65891782521d4a9c7b5c8dd80bb3f771">VariableId</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a18dce65673ede598592566c791c2278b">VariablesInConstraint</a> (IdType id) const</td></tr>
 <tr class="memdesc:a18dce65673ede598592566c791c2278b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the variables appearing in the constraint. Order is not defined.  <br /></td></tr>
-<tr class="memitem:a9b6549f5071cacf7f52fcd9908d729d2" id="r_a9b6549f5071cacf7f52fcd9908d729d2"><td class="memItemLeft" align="right" valign="top">absl::StatusOr&lt; ModelProto &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9b6549f5071cacf7f52fcd9908d729d2">ExportModelV2</a> (bool remove_names=<a class="el" href="namespaceoperations__research_1_1math__opt.html#a205a4eeabeae0d2c1701527fce48485d">false</a>) const</td></tr>
-<tr class="memitem:ac301567ac38d52517e851e13b9778406" id="r_ac301567ac38d52517e851e13b9778406"><td class="memItemLeft" align="right" valign="top">ModelProto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac301567ac38d52517e851e13b9778406">ExportModel</a> (const bool remove_names=<a class="el" href="namespaceoperations__research_1_1math__opt.html#a205a4eeabeae0d2c1701527fce48485d">false</a>) const</td></tr>
+<tr class="memitem:a9b6549f5071cacf7f52fcd9908d729d2" id="r_a9b6549f5071cacf7f52fcd9908d729d2"><td class="memItemLeft" align="right" valign="top">absl::StatusOr&lt; <a class="el" href="classoperations__research_1_1math__opt_1_1ModelProto.html">ModelProto</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9b6549f5071cacf7f52fcd9908d729d2">ExportModelV2</a> (bool remove_names=<a class="el" href="namespaceoperations__research_1_1math__opt.html#a205a4eeabeae0d2c1701527fce48485d">false</a>) const</td></tr>
+<tr class="memitem:ac301567ac38d52517e851e13b9778406" id="r_ac301567ac38d52517e851e13b9778406"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoperations__research_1_1math__opt_1_1ModelProto.html">ModelProto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac301567ac38d52517e851e13b9778406">ExportModel</a> (const bool remove_names=<a class="el" href="namespaceoperations__research_1_1math__opt.html#a205a4eeabeae0d2c1701527fce48485d">false</a>) const</td></tr>
 <tr class="memitem:a575c33cf6807adf1e1cb3e5857f92bd2" id="r_a575c33cf6807adf1e1cb3e5857f92bd2"><td class="memItemLeft" align="right" valign="top">UpdateTrackerId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a575c33cf6807adf1e1cb3e5857f92bd2">NewUpdateTracker</a> ()</td></tr>
 <tr class="memitem:a236943dcdc05b31272ee3a54e0a41e16" id="r_a236943dcdc05b31272ee3a54e0a41e16"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a236943dcdc05b31272ee3a54e0a41e16">DeleteUpdateTracker</a> (UpdateTrackerId update_tracker)</td></tr>
-<tr class="memitem:af39a9820c3b0d65b801a2797ebd001db" id="r_af39a9820c3b0d65b801a2797ebd001db"><td class="memItemLeft" align="right" valign="top">absl::StatusOr&lt; std::optional&lt; ModelUpdateProto &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af39a9820c3b0d65b801a2797ebd001db">ExportModelUpdateV2</a> (UpdateTrackerId update_tracker, bool remove_names=<a class="el" href="namespaceoperations__research_1_1math__opt.html#a205a4eeabeae0d2c1701527fce48485d">false</a>) const</td></tr>
-<tr class="memitem:aac53d5cf2b0b863a4aeb135c554110bf" id="r_aac53d5cf2b0b863a4aeb135c554110bf"><td class="memItemLeft" align="right" valign="top">std::optional&lt; ModelUpdateProto &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aac53d5cf2b0b863a4aeb135c554110bf">ExportModelUpdate</a> (const UpdateTrackerId update_tracker, const bool remove_names=<a class="el" href="namespaceoperations__research_1_1math__opt.html#a205a4eeabeae0d2c1701527fce48485d">false</a>) const</td></tr>
+<tr class="memitem:af39a9820c3b0d65b801a2797ebd001db" id="r_af39a9820c3b0d65b801a2797ebd001db"><td class="memItemLeft" align="right" valign="top">absl::StatusOr&lt; std::optional&lt; <a class="el" href="classoperations__research_1_1math__opt_1_1ModelUpdateProto.html">ModelUpdateProto</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af39a9820c3b0d65b801a2797ebd001db">ExportModelUpdateV2</a> (UpdateTrackerId update_tracker, bool remove_names=<a class="el" href="namespaceoperations__research_1_1math__opt.html#a205a4eeabeae0d2c1701527fce48485d">false</a>) const</td></tr>
+<tr class="memitem:aac53d5cf2b0b863a4aeb135c554110bf" id="r_aac53d5cf2b0b863a4aeb135c554110bf"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="classoperations__research_1_1math__opt_1_1ModelUpdateProto.html">ModelUpdateProto</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aac53d5cf2b0b863a4aeb135c554110bf">ExportModelUpdate</a> (const UpdateTrackerId update_tracker, const bool remove_names=<a class="el" href="namespaceoperations__research_1_1math__opt.html#a205a4eeabeae0d2c1701527fce48485d">false</a>) const</td></tr>
 <tr class="memitem:a98a676f1aa7b4088c90124cef3b110c8" id="r_a98a676f1aa7b4088c90124cef3b110c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a98a676f1aa7b4088c90124cef3b110c8">AdvanceCheckpoint</a> (UpdateTrackerId update_tracker)</td></tr>
-<tr class="memitem:a1d5d515979ca1138c1df2f7c9ba7b40f" id="r_a1d5d515979ca1138c1df2f7c9ba7b40f"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1d5d515979ca1138c1df2f7c9ba7b40f">ApplyUpdateProto</a> (const ModelUpdateProto &amp;update_proto)</td></tr>
+<tr class="memitem:a1d5d515979ca1138c1df2f7c9ba7b40f" id="r_a1d5d515979ca1138c1df2f7c9ba7b40f"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1d5d515979ca1138c1df2f7c9ba7b40f">ApplyUpdateProto</a> (const <a class="el" href="classoperations__research_1_1math__opt_1_1ModelUpdateProto.html">ModelUpdateProto</a> &amp;update_proto)</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a38fe172305305aaecf8e5dbfe01680a2" id="r_a38fe172305305aaecf8e5dbfe01680a2"><td class="memItemLeft" align="right" valign="top">static absl::StatusOr&lt; absl::Nonnull&lt; std::unique_ptr&lt; <a class="el" href="classoperations__research_1_1math__opt_1_1ModelStorageV2.html">ModelStorageV2</a> &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a38fe172305305aaecf8e5dbfe01680a2">FromModelProto</a> (const ModelProto &amp;model_proto)</td></tr>
+<tr class="memitem:a38fe172305305aaecf8e5dbfe01680a2" id="r_a38fe172305305aaecf8e5dbfe01680a2"><td class="memItemLeft" align="right" valign="top">static absl::StatusOr&lt; absl::Nonnull&lt; std::unique_ptr&lt; <a class="el" href="classoperations__research_1_1math__opt_1_1ModelStorageV2.html">ModelStorageV2</a> &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a38fe172305305aaecf8e5dbfe01680a2">FromModelProto</a> (const <a class="el" href="classoperations__research_1_1math__opt_1_1ModelProto.html">ModelProto</a> &amp;model_proto)</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>An index based C++ API for building &amp; storing optimization problems.</p>
-<dl class="section note"><dt>Note</dt><dd>this API should usually not be used by C++ users that should prefer the <a class="el" href="math__opt_2cpp_2model_8h.html">math_opt/cpp/model.h</a> API.</dd></dl>
-<p>It supports the efficient creation and modification of an optimization model, and the export of ModelProto and ModelUpdateProto protos.</p>
-<p>All methods run in amortized O(1) (as amortized over calls to that exact function) unless otherwise specified.</p>
-<p>Incrementalism, the ModelUpdate proto, and Checkpoints:</p>
-<p>To update an existing model as specified by a <a class="el" href="classoperations__research_1_1math__opt_1_1Model.html">Model</a> proto, solvers consume a ModelUpdate proto, which describes the changes to a model (e.g. new variables or a change in a variable bound). ModelStorage::NewUpdateTracker() tracks the changes made and produces a ModelUpdate proto describing these changes with the method ModelStorage::ExportModelUpdate(). The changes returned will be the modifications since the previous call to ModelStorage::AdvanceCheckpoint(). Note that, for newly initialized models, before the first checkpoint, there is no additional memory overhead from tracking changes. See g3doc/ortools/math_opt/g3doc/model_building_complexity.md for details.</p>
-<p>On bad input:</p>
-<p>Using a bad variable id or constraint id (an id not in the current model, which includes ids that have been deleted) on any method will result in an immediate failure (either a CHECK failure or an exception, which is an implementation detail you should not rely on). We make no attempt to say if a model is invalid (e.g. a variable lower bound is infinite, exceeds an upper bound, or is NaN). The exported models are validated instead, see model_validator.h. </p>
-
-<p class="definition">Definition at line <a class="el" href="model__storage__v2_8h_source.html#l00084">84</a> of file <a class="el" href="model__storage__v2_8h_source.html">model_storage_v2.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a6dcc68feca2c58926f7f761203f28d02" name="a6dcc68feca2c58926f7f761203f28d02"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6dcc68feca2c58926f7f761203f28d02">&#9670;&#160;</a></span>ModelStorageV2() <span class="overload">[1/2]</span></h2>
 
@@ -524,7 +525,7 @@ template&lt;typename ConstraintData&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Uses the current model state as the starting point to calculate the ModelUpdateProto next time <a class="el" href="#aac53d5cf2b0b863a4aeb135c554110bf">ExportModelUpdate()</a> is called.</p>
+<p>Uses the current model state as the starting point to calculate the <a class="el" href="classoperations__research_1_1math__opt_1_1ModelUpdateProto.html">ModelUpdateProto</a> next time <a class="el" href="#aac53d5cf2b0b863a4aeb135c554110bf">ExportModelUpdate()</a> is called.</p>
 <p>Thread-safety: this method must not be used while modifying the ModelStorage or after calling <a class="el" href="#a236943dcdc05b31272ee3a54e0a41e16">DeleteUpdateTracker()</a>. The user is expected to use proper synchronization primitive to serialize changes to the model and the use of this method.</p>
 <p>It can be called concurrently for different update trackers though. </p>
 
@@ -541,7 +542,7 @@ template&lt;typename ConstraintData&gt; </div>
         <tr>
           <td class="memname">absl::Status operations_research::math_opt::ModelStorageV2::ApplyUpdateProto </td>
           <td>(</td>
-          <td class="paramtype">const ModelUpdateProto &amp;</td>          <td class="paramname"><span class="paramname"><em>update_proto</em></span></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1math__opt_1_1ModelUpdateProto.html">ModelUpdateProto</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>update_proto</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -607,8 +608,8 @@ template&lt;typename ConstraintData&gt; </div>
 </div><div class="memdoc">
 <p>Equivalent to calling set_linear_objective_coefficient(v, 0.0) for every variable with nonzero objective coefficient, and setting the offset and quadratic terms to zero as well. Does not effect priority or direction.</p>
 <p>Runs in O(# nonzero linear/quadratic objective terms). </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001021">Todo</a></b></dt><dd>(b/372645273): Consider adding a <span class="tt">ResetAttr()</span> method. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001022">Todo</a></b></dt><dd>(b/372645273): Consider adding a <span class="tt">ClearSlice()</span> method. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001020">Todo</a></b></dt><dd>(b/372645273): Consider adding a <span class="tt">ResetAttr()</span> method. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001021">Todo</a></b></dt><dd>(b/372645273): Consider adding a <span class="tt">ClearSlice()</span> method. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="model__storage__v2_8h_source.html#l00941">941</a> of file <a class="el" href="model__storage__v2_8h_source.html">model_storage_v2.h</a>.</p>
 
@@ -970,7 +971,7 @@ template&lt;typename IdType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">ModelProto operations_research::math_opt::ModelStorageV2::ExportModel </td>
+          <td class="memname"><a class="el" href="classoperations__research_1_1math__opt_1_1ModelProto.html">ModelProto</a> operations_research::math_opt::ModelStorageV2::ExportModel </td>
           <td>(</td>
           <td class="paramtype">const bool</td>          <td class="paramname"><span class="paramname"><em>remove_names</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a205a4eeabeae0d2c1701527fce48485d">false</a></span></td><td>)</td>
           <td> const</td>
@@ -997,7 +998,7 @@ template&lt;typename IdType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::optional&lt; ModelUpdateProto &gt; operations_research::math_opt::ModelStorageV2::ExportModelUpdate </td>
+          <td class="memname">std::optional&lt; <a class="el" href="classoperations__research_1_1math__opt_1_1ModelUpdateProto.html">ModelUpdateProto</a> &gt; operations_research::math_opt::ModelStorageV2::ExportModelUpdate </td>
           <td>(</td>
           <td class="paramtype">const UpdateTrackerId</td>          <td class="paramname"><span class="paramname"><em>update_tracker</em></span>, </td>
         </tr>
@@ -1025,7 +1026,7 @@ template&lt;typename IdType&gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">absl::StatusOr&lt; std::optional&lt; ModelUpdateProto &gt; &gt; operations_research::math_opt::ModelStorageV2::ExportModelUpdateV2 </td>
+          <td class="memname">absl::StatusOr&lt; std::optional&lt; <a class="el" href="classoperations__research_1_1math__opt_1_1ModelUpdateProto.html">ModelUpdateProto</a> &gt; &gt; operations_research::math_opt::ModelStorageV2::ExportModelUpdateV2 </td>
           <td>(</td>
           <td class="paramtype">UpdateTrackerId</td>          <td class="paramname"><span class="paramname"><em>update_tracker</em></span>, </td>
         </tr>
@@ -1051,7 +1052,7 @@ template&lt;typename IdType&gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">absl::StatusOr&lt; ModelProto &gt; operations_research::math_opt::ModelStorageV2::ExportModelV2 </td>
+          <td class="memname">absl::StatusOr&lt; <a class="el" href="classoperations__research_1_1math__opt_1_1ModelProto.html">ModelProto</a> &gt; operations_research::math_opt::ModelStorageV2::ExportModelV2 </td>
           <td>(</td>
           <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>remove_names</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a205a4eeabeae0d2c1701527fce48485d">false</a></span></td><td>)</td>
           <td> const</td>
@@ -1078,7 +1079,7 @@ template&lt;typename IdType&gt; </div>
         <tr>
           <td class="memname">absl::StatusOr&lt; absl::Nonnull&lt; std::unique_ptr&lt; <a class="el" href="classoperations__research_1_1math__opt_1_1ModelStorageV2.html">ModelStorageV2</a> &gt; &gt; &gt; operations_research::math_opt::ModelStorageV2::FromModelProto </td>
           <td>(</td>
-          <td class="paramtype">const ModelProto &amp;</td>          <td class="paramname"><span class="paramname"><em>model_proto</em></span></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1math__opt_1_1ModelProto.html">ModelProto</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>model_proto</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1717,9 +1718,9 @@ template&lt;typename IdType&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Creates a tracker that can be used to generate a ModelUpdateProto with the updates that happened since the last checkpoint. The tracker initial checkpoint corresponds to the current state of the model.</p>
+<p>Creates a tracker that can be used to generate a <a class="el" href="classoperations__research_1_1math__opt_1_1ModelUpdateProto.html">ModelUpdateProto</a> with the updates that happened since the last checkpoint. The tracker initial checkpoint corresponds to the current state of the model.</p>
 <p>Thread-safety: this method must not be used while modifying the ModelStorage. The user is expected to use proper synchronization primitive to serialize changes to the model and trackers creations. That said multiple trackers can be created concurrently.</p>
-<p>For each update tracker we define a checkpoint that is the starting point used to compute the ModelUpdateProto. </p>
+<p>For each update tracker we define a checkpoint that is the starting point used to compute the <a class="el" href="classoperations__research_1_1math__opt_1_1ModelUpdateProto.html">ModelUpdateProto</a>. </p>
 
 <p class="definition">Definition at line <a class="el" href="model__storage__v2_8cc_source.html#l00125">125</a> of file <a class="el" href="model__storage__v2_8cc_source.html">model_storage_v2.cc</a>.</p>
 
@@ -2181,7 +2182,7 @@ template&lt;typename IdType&gt; </div>
 </table>
 </div><div class="memdoc">
 <p>The variable pairs with nonzero quadratic objective coefficients. The keys are ordered such that .first &lt;= .second. All values are nonempty.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001023">Todo</a></b></dt><dd>(b/233630053) do no allocate the result, expose an iterator API. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001022">Todo</a></b></dt><dd>(b/233630053) do no allocate the result, expose an iterator API. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="model__storage__v2_8h_source.html#l00981">981</a> of file <a class="el" href="model__storage__v2_8h_source.html">model_storage_v2.h</a>.</p>
 

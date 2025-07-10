@@ -1,5 +1,13 @@
 var NAVTREEINDEX80 =
 {
+"classcom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParams_1_1Builder.html#ae92ca52a2d926c767ecae494778b45e1":[3,0,0,0,0,8,17,0,11],
+"classcom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParams_1_1Builder.html#ae9504989dcafb4eac3c43c82290accbe":[2,0,0,0,0,8,17,0,32],
+"classcom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParams_1_1Builder.html#ae9504989dcafb4eac3c43c82290accbe":[3,0,0,0,0,8,17,0,32],
+"classcom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParams_1_1Builder.html#aeb9a2fe8759f8b0eacb306fb86a1fd22":[2,0,0,0,0,8,17,0,67],
+"classcom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParams_1_1Builder.html#aeb9a2fe8759f8b0eacb306fb86a1fd22":[3,0,0,0,0,8,17,0,67],
+"classcom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParams_1_1Builder.html#aee79858e7f02068ad97b1d14f186c168":[2,0,0,0,0,8,17,0,60],
+"classcom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParams_1_1Builder.html#aee79858e7f02068ad97b1d14f186c168":[3,0,0,0,0,8,17,0,60],
+"classcom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParams_1_1Builder.html#af00d18143dd6f491e333804fc38f59e2":[2,0,0,0,0,8,17,0,5],
 "classcom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParams_1_1Builder.html#af00d18143dd6f491e333804fc38f59e2":[3,0,0,0,0,8,17,0,5],
 "classcom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParams_1_1Builder.html#af0b815591a0c27cc4805670ad59b0d05":[2,0,0,0,0,8,17,0,135],
 "classcom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParams_1_1Builder.html#af0b815591a0c27cc4805670ad59b0d05":[3,0,0,0,0,8,17,0,135],
@@ -241,13 +249,5 @@ var NAVTREEINDEX80 =
 "classcom_1_1google_1_1ortools_1_1pdlp_1_1QuadraticProgramStats.html#a49af85b297e3eeadd5c7595db355ae1a":[3,0,0,0,0,8,19,77],
 "classcom_1_1google_1_1ortools_1_1pdlp_1_1QuadraticProgramStats.html#a4f19ee9ef080e66f8bb1b1c964f73188":[2,0,0,0,0,8,19,34],
 "classcom_1_1google_1_1ortools_1_1pdlp_1_1QuadraticProgramStats.html#a4f19ee9ef080e66f8bb1b1c964f73188":[3,0,0,0,0,8,19,34],
-"classcom_1_1google_1_1ortools_1_1pdlp_1_1QuadraticProgramStats.html#a5060a2e0789d2140168c7bc7b89e4462":[2,0,0,0,0,8,19,20],
-"classcom_1_1google_1_1ortools_1_1pdlp_1_1QuadraticProgramStats.html#a5060a2e0789d2140168c7bc7b89e4462":[3,0,0,0,0,8,19,20],
-"classcom_1_1google_1_1ortools_1_1pdlp_1_1QuadraticProgramStats.html#a5497454a5bd25207ec67ac74d5ecab91":[2,0,0,0,0,8,19,22],
-"classcom_1_1google_1_1ortools_1_1pdlp_1_1QuadraticProgramStats.html#a5497454a5bd25207ec67ac74d5ecab91":[3,0,0,0,0,8,19,22],
-"classcom_1_1google_1_1ortools_1_1pdlp_1_1QuadraticProgramStats.html#a584f6de5374d9f9550394c24aea3a0c6":[2,0,0,0,0,8,19,54],
-"classcom_1_1google_1_1ortools_1_1pdlp_1_1QuadraticProgramStats.html#a584f6de5374d9f9550394c24aea3a0c6":[3,0,0,0,0,8,19,54],
-"classcom_1_1google_1_1ortools_1_1pdlp_1_1QuadraticProgramStats.html#a5cc31fd30a0b7cd19c9ea0859a50a832":[2,0,0,0,0,8,19,81],
-"classcom_1_1google_1_1ortools_1_1pdlp_1_1QuadraticProgramStats.html#a5cc31fd30a0b7cd19c9ea0859a50a832":[3,0,0,0,0,8,19,81],
-"classcom_1_1google_1_1ortools_1_1pdlp_1_1QuadraticProgramStats.html#a5df9be3bf1cebdd27c2f2592f707f918":[2,0,0,0,0,8,19,117]
+"classcom_1_1google_1_1ortools_1_1pdlp_1_1QuadraticProgramStats.html#a5060a2e0789d2140168c7bc7b89e4462":[2,0,0,0,0,8,19,20]
 };

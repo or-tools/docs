@@ -1,0 +1,6 @@
+var structoperations__research_1_1packing_1_1vbp_1_1VectorBinPackingOneBinInSolutionDefaultTypeInternal =
+[
+    [ "VectorBinPackingOneBinInSolutionDefaultTypeInternal", "structoperations__research_1_1packing_1_1vbp_1_1VectorBinPackingOneBinInSolutionDefaultTypeInternal.html#ab62d3089ce381c39d01261264a8ca23e", null ],
+    [ "~VectorBinPackingOneBinInSolutionDefaultTypeInternal", "structoperations__research_1_1packing_1_1vbp_1_1VectorBinPackingOneBinInSolutionDefaultTypeInternal.html#abda3acbf1a3f0bd89b495ee7d88b8f23", null ],
+    [ "_instance", "structoperations__research_1_1packing_1_1vbp_1_1VectorBinPackingOneBinInSolutionDefaultTypeInternal.html#a1fb3dba1c575cde51932c938212b940d", null ]
+];

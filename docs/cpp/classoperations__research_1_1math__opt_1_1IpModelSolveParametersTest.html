@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,15 @@ $(function(){initNavTree('classoperations__research_1_1math__opt_1_1IpModelSolve
   <div class="headertitle"><div class="title">operations_research::math_opt::IpModelSolveParametersTest Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Parameterized test suite that validates that an implementation of <a class="el" href="classoperations__research_1_1math__opt_1_1SolverInterface.html#a901a72259555138e63322b5bf6c3f097">SolverInterface::Solve()</a> for an Integer Programming solver takes into account correctly the input <a class="el" href="classoperations__research_1_1math__opt_1_1ModelSolveParametersProto.html">ModelSolveParametersProto</a>.</p>
+<p>Usage:</p>
+<p>INSTANTIATE_TEST_SUITE_P(&lt;Solver&gt;IpModelSolveParametersTest,
+                           IpModelSolveParametersTest,
+                           testing::Values(SolverType::k&lt;Solver&gt;)); </p>
 
+<p class="definition">Definition at line <a class="el" href="ip__model__solve__parameters__tests_8h_source.html#l00039">39</a> of file <a class="el" href="ip__model__solve__parameters__tests_8h_source.html">ip_model_solve_parameters_tests.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="ip__model__solve__parameters__tests_8h_source.html">ip_model_solve_parameters_tests.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for operations_research::math_opt::IpModelSolveParametersTest:</div>
@@ -112,15 +121,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_methods_classoperations__research_1_1math__opt_1_1BaseSolverTest"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_classoperations__research_1_1math__opt_1_1BaseSolverTest')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Protected Member Functions inherited from <a class="el" href="classoperations__research_1_1math__opt_1_1BaseSolverTest.html">operations_research::math_opt::BaseSolverTest</a></td></tr>
 <tr class="memitem:a810c1c03035d4f5d8c4a7cb07c018227 inherit pro_methods_classoperations__research_1_1math__opt_1_1BaseSolverTest" id="r_a810c1c03035d4f5d8c4a7cb07c018227"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a1a4e2d8708a16ad2817a18f55a516e7d">SolverType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1math__opt_1_1BaseSolverTest.html#a810c1c03035d4f5d8c4a7cb07c018227">TestedSolver</a> () const</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Parameterized test suite that validates that an implementation of <a class="el" href="classoperations__research_1_1math__opt_1_1SolverInterface.html#a901a72259555138e63322b5bf6c3f097">SolverInterface::Solve()</a> for an Integer Programming solver takes into account correctly the input ModelSolveParametersProto.</p>
-<p>Usage:</p>
-<p>INSTANTIATE_TEST_SUITE_P(&lt;Solver&gt;IpModelSolveParametersTest,
-                           IpModelSolveParametersTest,
-                           testing::Values(SolverType::k&lt;Solver&gt;)); </p>
-
-<p class="definition">Definition at line <a class="el" href="ip__model__solve__parameters__tests_8h_source.html#l00039">39</a> of file <a class="el" href="ip__model__solve__parameters__tests_8h_source.html">ip_model_solve_parameters_tests.h</a>.</p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>ortools/math_opt/solver_tests/<a class="el" href="ip__model__solve__parameters__tests_8h_source.html">ip_model_solve_parameters_tests.h</a></li>
 </ul>
 </div><!-- contents -->

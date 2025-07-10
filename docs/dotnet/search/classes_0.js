@@ -5,7 +5,7 @@ var searchData=
   ['alldifferentconstraintproto_2',['AllDifferentConstraintProto',['../classGoogle_1_1OrTools_1_1Sat_1_1AllDifferentConstraintProto.html',1,'Google::OrTools::Sat']]],
   ['alternativenodeiterator_3',['AlternativeNodeIterator',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1AlternativeNodeIterator.html',1,'Google::OrTools::ConstraintSolver']]],
   ['annotation_4',['Annotation',['../classOperationsResearch_1_1MPModelProto_1_1Types_1_1Annotation.html',1,'OperationsResearch::MPModelProto::Types']]],
-  ['arclpvalue_5',['ArcLpValue',['../classOperationsResearch_1_1Sat_1_1ArcLpValue.html',1,'OperationsResearch::Sat']]],
+  ['arclpvalue_5',['ArcLpValue',['../classGoogle_1_1OrTools_1_1Sat_1_1ArcLpValue.html',1,'Google::OrTools::Sat']]],
   ['assignment_6',['Assignment',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1Assignment.html',1,'Google::OrTools::ConstraintSolver']]],
   ['assignmentelement_7',['AssignmentElement',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1AssignmentElement.html',1,'Google::OrTools::ConstraintSolver']]],
   ['assignmentintcontainer_8',['AssignmentIntContainer',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1AssignmentIntContainer.html',1,'Google::OrTools::ConstraintSolver']]],

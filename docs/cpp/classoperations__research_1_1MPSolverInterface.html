@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,19 @@ $(function(){initNavTree('classoperations__research_1_1MPSolverInterface.html','
   <div class="headertitle"><div class="title">operations_research::MPSolverInterface Class Reference<span class="mlabels"><span class="mlabel abstract">abstract</span></span></div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This class wraps the actual mathematical programming solvers. Each solver (GLOP, CLP, CBC, GLPK, SCIP) has its own interface class that derives from this abstract class. This class is never directly accessed by the user. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="glop__interface_8cc.html">glop_interface.cc</a> </dd>
+<dd>
+<a class="el" href="cbc__interface_8cc.html">cbc_interface.cc</a> </dd>
+<dd>
+<a class="el" href="clp__interface_8cc.html">clp_interface.cc</a> </dd>
+<dd>
+<a class="el" href="glpk__interface_8cc.html">glpk_interface.cc</a> </dd>
+<dd>
+<a class="el" href="scip__interface_8cc.html">scip_interface.cc</a> </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="linear__solver_8h_source.html#l01635">1635</a> of file <a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for operations_research::MPSolverInterface:</div>
@@ -132,7 +145,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abba9200b7bd7df46cf9429f150d9bcf3" id="r_abba9200b7bd7df46cf9429f150d9bcf3"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abba9200b7bd7df46cf9429f150d9bcf3">~MPSolverInterface</a> ()</td></tr>
 <tr class="memitem:a99d3df0f2e02937e56473d9f3df68965" id="r_a99d3df0f2e02937e56473d9f3df68965"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classoperations__research_1_1MPSolver.html#a16bca30fdb1b048d987631b757c63192">MPSolver::ResultStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a99d3df0f2e02937e56473d9f3df68965">Solve</a> (const <a class="el" href="classoperations__research_1_1MPSolverParameters.html">MPSolverParameters</a> &amp;param)=0</td></tr>
 <tr class="memitem:a8b65cfaad687468c7729dd4d20282ba4" id="r_a8b65cfaad687468c7729dd4d20282ba4"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8b65cfaad687468c7729dd4d20282ba4">SupportsDirectlySolveProto</a> (std::atomic&lt; bool &gt; *) const</td></tr>
-<tr class="memitem:ab00972e23f79731d272395b85103955c" id="r_ab00972e23f79731d272395b85103955c"><td class="memItemLeft" align="right" valign="top">virtual MPSolutionResponse&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab00972e23f79731d272395b85103955c">DirectlySolveProto</a> (<a class="el" href="classoperations__research_1_1LazyMutableCopy.html">LazyMutableCopy</a>&lt; MPModelRequest &gt;, std::atomic&lt; bool &gt; *)</td></tr>
+<tr class="memitem:ab00972e23f79731d272395b85103955c" id="r_ab00972e23f79731d272395b85103955c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classoperations__research_1_1MPSolutionResponse.html">MPSolutionResponse</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab00972e23f79731d272395b85103955c">DirectlySolveProto</a> (<a class="el" href="classoperations__research_1_1LazyMutableCopy.html">LazyMutableCopy</a>&lt; <a class="el" href="classoperations__research_1_1MPModelRequest.html">MPModelRequest</a> &gt;, std::atomic&lt; bool &gt; *)</td></tr>
 <tr class="memitem:ab3bff53e637de40ce4dce407d595a2e6" id="r_ab3bff53e637de40ce4dce407d595a2e6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab3bff53e637de40ce4dce407d595a2e6">Write</a> (const std::string &amp;filename)</td></tr>
 <tr class="memitem:ad4ce4ee159f4c2db5a02923c886c136b" id="r_ad4ce4ee159f4c2db5a02923c886c136b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad4ce4ee159f4c2db5a02923c886c136b">Reset</a> ()=0</td></tr>
 <tr class="memitem:ac35b40e98fabb8bcd5e62cdd57678ff3" id="r_ac35b40e98fabb8bcd5e62cdd57678ff3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac35b40e98fabb8bcd5e62cdd57678ff3">SetOptimizationDirection</a> (bool maximize)=0</td></tr>
@@ -279,19 +292,7 @@ Friends</h2></td></tr>
 <tr class="memdesc:a24102af97b3c7e803861e1d6983b1fea"><td class="mdescLeft">&#160;</td><td class="mdescRight">To access the maximize_ bool and the <a class="el" href="classoperations__research_1_1MPSolver.html">MPSolver</a>.  <br /></td></tr>
 <tr class="memitem:a77dbe3a653f9c5d30e818000d92d8b17" id="r_a77dbe3a653f9c5d30e818000d92d8b17"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a77dbe3a653f9c5d30e818000d92d8b17">MPObjective</a></td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This class wraps the actual mathematical programming solvers. Each solver (GLOP, CLP, CBC, GLPK, SCIP) has its own interface class that derives from this abstract class. This class is never directly accessed by the user. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="glop__interface_8cc.html">glop_interface.cc</a> </dd>
-<dd>
-<a class="el" href="cbc__interface_8cc.html">cbc_interface.cc</a> </dd>
-<dd>
-<a class="el" href="clp__interface_8cc.html">clp_interface.cc</a> </dd>
-<dd>
-<a class="el" href="glpk__interface_8cc.html">glpk_interface.cc</a> </dd>
-<dd>
-<a class="el" href="scip__interface_8cc.html">scip_interface.cc</a> </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="linear__solver_8h_source.html#l01635">1635</a> of file <a class="el" href="linear__solver_8h_source.html">linear_solver.h</a>.</p>
-</div><a name="doc-enum-members" id="doc-enum-members"></a><h2 id="header-doc-enum-members" class="groupheader">Member Enumeration Documentation</h2>
+<a name="doc-enum-members" id="doc-enum-members"></a><h2 id="header-doc-enum-members" class="groupheader">Member Enumeration Documentation</h2>
 <a id="a912394f09fe0aee694df2e9c962853a0" name="a912394f09fe0aee694df2e9c962853a0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a912394f09fe0aee694df2e9c962853a0">&#9670;&#160;</a></span>SynchronizationStatus</h2>
 
@@ -340,7 +341,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Constructor. The user will access the <a class="el" href="classoperations__research_1_1MPSolverInterface.html">MPSolverInterface</a> through the <a class="el" href="classoperations__research_1_1MPSolver.html">MPSolver</a> passed as argument.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000791">Todo</a></b></dt><dd>(user): Initialize objective value and bound to +/- inf (depending on optimization direction). </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000790">Todo</a></b></dt><dd>(user): Initialize objective value and bound to +/- inf (depending on optimization direction). </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l01958">1958</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
 
@@ -675,7 +676,7 @@ Friends</h2></td></tr>
 
 <p>Returns the basis status of a constraint. </p>
 
-<p>Implemented in <a class="el" href="classoperations__research_1_1BopInterface.html#ad665c19fdea9030093be96f88964343d">operations_research::BopInterface</a>, <a class="el" href="classoperations__research_1_1CBCInterface.html#a78679f5a04562bbfc9aee751ee387abd">operations_research::CBCInterface</a>, <a class="el" href="classoperations__research_1_1CLPInterface.html#a6224d38cdda07c1ee14d107ff061b7fc">operations_research::CLPInterface</a>, <a class="el" href="classoperations__research_1_1CplexInterface.html#a1a327be64f64e71dfe61f3455b81a775">operations_research::CplexInterface</a>, <a class="el" href="classoperations__research_1_1GLOPInterface.html#a87277a46d0881e163665f1a7700cdb5f">operations_research::GLOPInterface</a>, <a class="el" href="classoperations__research_1_1GLPKInterface.html#ae56790bc9e1e20f542fd6d950381c8c6">operations_research::GLPKInterface</a>, <a class="el" href="classoperations__research_1_1GurobiInterface.html#aa0a6339405747d266425225bde1b022f">operations_research::GurobiInterface</a>, <a class="el" href="classoperations__research_1_1HighsInterface.html#aa0445eec4920c34b74fb03b837ff15b0">operations_research::HighsInterface</a>, <a class="el" href="classoperations__research_1_1KnapsackInterface.html#ac5b423c249b7d295b22cd367d60a915a">operations_research::KnapsackInterface</a>, <a class="el" href="classoperations__research_1_1PdlpInterface.html#aeba91f0ed5437b1264431fc6562ff094">operations_research::PdlpInterface</a>, <a class="el" href="classoperations__research_1_1SatInterface.html#add356aa4b248dc0a195f9bda8e16813f">operations_research::SatInterface</a>, <a class="el" href="classoperations__research_1_1SCIPInterface.html#a33d04229730c80420b6e18d021df4f60">operations_research::SCIPInterface</a>, and <a class="el" href="classoperations__research_1_1XpressInterface.html#a07829d084d2e790b5786c57418a562fc">operations_research::XpressInterface</a>.</p>
+<p>Implemented in <a class="el" href="classoperations__research_1_1BopInterface.html#ad665c19fdea9030093be96f88964343d">operations_research::BopInterface</a>, <a class="el" href="classoperations__research_1_1CBCInterface.html#a78679f5a04562bbfc9aee751ee387abd">operations_research::CBCInterface</a>, <a class="el" href="classoperations__research_1_1CLPInterface.html#a6224d38cdda07c1ee14d107ff061b7fc">operations_research::CLPInterface</a>, <a class="el" href="classoperations__research_1_1CplexInterface.html#a1a327be64f64e71dfe61f3455b81a775">operations_research::CplexInterface</a>, <a class="el" href="classoperations__research_1_1GLOPInterface.html#a87277a46d0881e163665f1a7700cdb5f">operations_research::GLOPInterface</a>, <a class="el" href="classoperations__research_1_1GLPKInterface.html#ae56790bc9e1e20f542fd6d950381c8c6">operations_research::GLPKInterface</a>, <a class="el" href="classoperations__research_1_1GurobiInterface.html#aa0a6339405747d266425225bde1b022f">operations_research::GurobiInterface</a>, <a class="el" href="classoperations__research_1_1HighsInterface.html#aa0445eec4920c34b74fb03b837ff15b0">operations_research::HighsInterface</a>, <a class="el" href="classoperations__research_1_1KnapsackInterface.html#ac5b423c249b7d295b22cd367d60a915a">operations_research::KnapsackInterface</a>, <a class="el" href="classoperations__research_1_1PdlpInterface.html#aeba91f0ed5437b1264431fc6562ff094">operations_research::PdlpInterface</a>, <a class="el" href="classoperations__research_1_1SatInterface.html#add356aa4b248dc0a195f9bda8e16813f">operations_research::SatInterface</a>, <a class="el" href="classoperations__research_1_1SCIPInterface.html#afafc79a5b82c7ceac0c42f3f7a978cd5">operations_research::SCIPInterface</a>, and <a class="el" href="classoperations__research_1_1XpressInterface.html#a07829d084d2e790b5786c57418a562fc">operations_research::XpressInterface</a>.</p>
 
 </div>
 </div>
@@ -747,9 +748,9 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual MPSolutionResponse operations_research::MPSolverInterface::DirectlySolveProto </td>
+          <td class="memname">virtual <a class="el" href="classoperations__research_1_1MPSolutionResponse.html">MPSolutionResponse</a> operations_research::MPSolverInterface::DirectlySolveProto </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classoperations__research_1_1LazyMutableCopy.html">LazyMutableCopy</a>&lt; MPModelRequest &gt;</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+          <td class="paramtype"><a class="el" href="classoperations__research_1_1LazyMutableCopy.html">LazyMutableCopy</a>&lt; <a class="el" href="classoperations__research_1_1MPModelRequest.html">MPModelRequest</a> &gt;</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1278,7 +1279,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Resets the extraction information. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000792">Todo</a></b></dt><dd>(user): remove this method. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000791">Todo</a></b></dt><dd>(user): remove this method. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l02003">2003</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
 
@@ -1338,7 +1339,7 @@ Friends</h2></td></tr>
 
 <p>Returns the basis status of a row. </p>
 
-<p>Implemented in <a class="el" href="classoperations__research_1_1BopInterface.html#a3bcb07ec063b6f5fe5509f99ab46e387">operations_research::BopInterface</a>, <a class="el" href="classoperations__research_1_1CBCInterface.html#a0ccf16372d9dd56fe19c7cb15491d172">operations_research::CBCInterface</a>, <a class="el" href="classoperations__research_1_1CLPInterface.html#a250b1eb351367902735c23afa647f011">operations_research::CLPInterface</a>, <a class="el" href="classoperations__research_1_1CplexInterface.html#a06edd53b0b8fddb3510ad8e5822e6677">operations_research::CplexInterface</a>, <a class="el" href="classoperations__research_1_1GLOPInterface.html#a808b010ff6419753944c949fada880da">operations_research::GLOPInterface</a>, <a class="el" href="classoperations__research_1_1GLPKInterface.html#ad2b711c8c29951e21e905e851a4647b3">operations_research::GLPKInterface</a>, <a class="el" href="classoperations__research_1_1GurobiInterface.html#acb30531cccb959fc41f51001262a90b7">operations_research::GurobiInterface</a>, <a class="el" href="classoperations__research_1_1HighsInterface.html#a0b4fdd0d963276c0deca473d6b4b36a5">operations_research::HighsInterface</a>, <a class="el" href="classoperations__research_1_1KnapsackInterface.html#a91cb6e2a4e0c037e5ce12887e13d5a11">operations_research::KnapsackInterface</a>, <a class="el" href="classoperations__research_1_1PdlpInterface.html#aecba606519ca8ae9dfb6493a4653cbfc">operations_research::PdlpInterface</a>, <a class="el" href="classoperations__research_1_1SatInterface.html#ae258a41709ca2be3b39240ac6635f34d">operations_research::SatInterface</a>, <a class="el" href="classoperations__research_1_1SCIPInterface.html#a071c94731fcfe0c82f488422307aec18">operations_research::SCIPInterface</a>, and <a class="el" href="classoperations__research_1_1XpressInterface.html#a002226c28f3b380dd81144bb694082ac">operations_research::XpressInterface</a>.</p>
+<p>Implemented in <a class="el" href="classoperations__research_1_1BopInterface.html#a3bcb07ec063b6f5fe5509f99ab46e387">operations_research::BopInterface</a>, <a class="el" href="classoperations__research_1_1CBCInterface.html#a0ccf16372d9dd56fe19c7cb15491d172">operations_research::CBCInterface</a>, <a class="el" href="classoperations__research_1_1CLPInterface.html#a250b1eb351367902735c23afa647f011">operations_research::CLPInterface</a>, <a class="el" href="classoperations__research_1_1CplexInterface.html#a06edd53b0b8fddb3510ad8e5822e6677">operations_research::CplexInterface</a>, <a class="el" href="classoperations__research_1_1GLOPInterface.html#a808b010ff6419753944c949fada880da">operations_research::GLOPInterface</a>, <a class="el" href="classoperations__research_1_1GLPKInterface.html#ad2b711c8c29951e21e905e851a4647b3">operations_research::GLPKInterface</a>, <a class="el" href="classoperations__research_1_1GurobiInterface.html#acb30531cccb959fc41f51001262a90b7">operations_research::GurobiInterface</a>, <a class="el" href="classoperations__research_1_1HighsInterface.html#a0b4fdd0d963276c0deca473d6b4b36a5">operations_research::HighsInterface</a>, <a class="el" href="classoperations__research_1_1KnapsackInterface.html#a91cb6e2a4e0c037e5ce12887e13d5a11">operations_research::KnapsackInterface</a>, <a class="el" href="classoperations__research_1_1PdlpInterface.html#aecba606519ca8ae9dfb6493a4653cbfc">operations_research::PdlpInterface</a>, <a class="el" href="classoperations__research_1_1SatInterface.html#ae258a41709ca2be3b39240ac6635f34d">operations_research::SatInterface</a>, <a class="el" href="classoperations__research_1_1SCIPInterface.html#adca70c6e18b9927f205ed10ca6556fec">operations_research::SCIPInterface</a>, and <a class="el" href="classoperations__research_1_1XpressInterface.html#a002226c28f3b380dd81144bb694082ac">operations_research::XpressInterface</a>.</p>
 
 </div>
 </div>
@@ -1531,8 +1532,8 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Sets parameters common to LP and MIP in the underlying solver. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000793">Todo</a></b></dt><dd>(user): Overhaul the code that sets parameters to enable changing GLOP parameters without issuing warnings. By default, we let GLOP keep its own default tolerance, much more accurate than for the rest of the solvers. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000794">Todo</a></b></dt><dd>(user): In the future, we could distinguish between the algorithm to solve the root LP and the algorithm to solve node LPs. Not sure if underlying solvers support it. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000792">Todo</a></b></dt><dd>(user): Overhaul the code that sets parameters to enable changing GLOP parameters without issuing warnings. By default, we let GLOP keep its own default tolerance, much more accurate than for the rest of the solvers. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000793">Todo</a></b></dt><dd>(user): In the future, we could distinguish between the algorithm to solve the root LP and the algorithm to solve node LPs. Not sure if underlying solvers support it. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="linear__solver_8cc_source.html#l02071">2071</a> of file <a class="el" href="linear__solver_8cc_source.html">linear_solver.cc</a>.</p>
 
@@ -2292,7 +2293,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p><a class="el" href="#ab00972e23f79731d272395b85103955c">DirectlySolveProto()</a> shall only be used if <a class="el" href="#a8b65cfaad687468c7729dd4d20282ba4">SupportsDirectlySolveProto()</a> is true.</p>
-<p><a class="el" href="#ab00972e23f79731d272395b85103955c">DirectlySolveProto()</a> solves a MPModelRequest, bypassing the <a class="el" href="classoperations__research_1_1MPSolver.html">MPSolver</a> data structures entirely. Like <a class="el" href="classoperations__research_1_1MPSolver.html#aeb2254bd729ca1e7a66dfc0bfbfa48d2" title="static">MPSolver::SolveWithProto()</a>, optionally takes in an 'interrupt' boolean. </p>
+<p><a class="el" href="#ab00972e23f79731d272395b85103955c">DirectlySolveProto()</a> solves a <a class="el" href="classoperations__research_1_1MPModelRequest.html">MPModelRequest</a>, bypassing the <a class="el" href="classoperations__research_1_1MPSolver.html">MPSolver</a> data structures entirely. Like <a class="el" href="classoperations__research_1_1MPSolver.html#aeb2254bd729ca1e7a66dfc0bfbfa48d2" title="static">MPSolver::SolveWithProto()</a>, optionally takes in an 'interrupt' boolean. </p>
 
 <p>Reimplemented in <a class="el" href="classoperations__research_1_1GLOPInterface.html#aff259dcb075d7135e3c0659cbc8d60c5">operations_research::GLOPInterface</a>, <a class="el" href="classoperations__research_1_1GurobiInterface.html#a4fee43f30013ec9e8c611e14db31b4cf">operations_research::GurobiInterface</a>, <a class="el" href="classoperations__research_1_1HighsInterface.html#a3b5187fcf8ffb4b01e201602d367a757">operations_research::HighsInterface</a>, <a class="el" href="classoperations__research_1_1PdlpInterface.html#aab47eae27182fb3934687bdf6d8d426e">operations_research::PdlpInterface</a>, <a class="el" href="classoperations__research_1_1SatInterface.html#a422051b8367623d53c3378cd00ddfcef">operations_research::SatInterface</a>, and <a class="el" href="classoperations__research_1_1SCIPInterface.html#ae71ef7f8ccfc1b8caa907eb84be8349d">operations_research::SCIPInterface</a>.</p>
 

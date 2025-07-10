@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,27 +96,27 @@ $(function(){initNavTree('classoperations__research_1_1sat_1_1LinearModel.html',
   <div class="headertitle"><div class="title">operations_research::sat::LinearModel Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This class is meant to be a view on the full <a class="el" href="classoperations__research_1_1sat_1_1CpModelProto.html">CpModelProto</a>, with hidden and additional constraints. Currently, this class is meant to be used by the feasibility jump subsolver. It could also contains the linear relaxation at level 1 or 2 of the model and could be computed once for all workers of a given linearization level. </p>
 
+<p class="definition">Definition at line <a class="el" href="linear__model_8h_source.html#l00029">29</a> of file <a class="el" href="linear__model_8h_source.html">linear_model.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="linear__model_8h_source.html">linear_model.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a8c594ce81043440f547bf1320674a829" id="r_a8c594ce81043440f547bf1320674a829"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8c594ce81043440f547bf1320674a829">LinearModel</a> (const CpModelProto &amp;<a class="el" href="#a360d7e39a267c5d0442f912df6a248dd">model_proto</a>)</td></tr>
-<tr class="memitem:a360d7e39a267c5d0442f912df6a248dd" id="r_a360d7e39a267c5d0442f912df6a248dd"><td class="memItemLeft" align="right" valign="top">const CpModelProto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a360d7e39a267c5d0442f912df6a248dd">model_proto</a> () const</td></tr>
+<tr class="memitem:a8c594ce81043440f547bf1320674a829" id="r_a8c594ce81043440f547bf1320674a829"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8c594ce81043440f547bf1320674a829">LinearModel</a> (const <a class="el" href="classoperations__research_1_1sat_1_1CpModelProto.html">CpModelProto</a> &amp;<a class="el" href="#a360d7e39a267c5d0442f912df6a248dd">model_proto</a>)</td></tr>
+<tr class="memitem:a360d7e39a267c5d0442f912df6a248dd" id="r_a360d7e39a267c5d0442f912df6a248dd"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classoperations__research_1_1sat_1_1CpModelProto.html">CpModelProto</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a360d7e39a267c5d0442f912df6a248dd">model_proto</a> () const</td></tr>
 <tr class="memitem:aba0625ed2a8977579381e81af5ac47cc" id="r_aba0625ed2a8977579381e81af5ac47cc"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; bool &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aba0625ed2a8977579381e81af5ac47cc">ignored_constraints</a> () const</td></tr>
 <tr class="memdesc:aba0625ed2a8977579381e81af5ac47cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mask on the constraints of the model passed to the ctor.  <br /></td></tr>
-<tr class="memitem:abd290cb798bd63ec6c2ccb1f55d89585" id="r_abd290cb798bd63ec6c2ccb1f55d89585"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; ConstraintProto &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abd290cb798bd63ec6c2ccb1f55d89585">additional_constraints</a> () const</td></tr>
+<tr class="memitem:abd290cb798bd63ec6c2ccb1f55d89585" id="r_abd290cb798bd63ec6c2ccb1f55d89585"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="classoperations__research_1_1sat_1_1ConstraintProto.html">ConstraintProto</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abd290cb798bd63ec6c2ccb1f55d89585">additional_constraints</a> () const</td></tr>
 <tr class="memdesc:abd290cb798bd63ec6c2ccb1f55d89585"><td class="mdescLeft">&#160;</td><td class="mdescRight">Additional constraints created during the initialization.  <br /></td></tr>
 <tr class="memitem:ac579d549d9bab353890cb176bac15d48" id="r_ac579d549d9bab353890cb176bac15d48"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac579d549d9bab353890cb176bac15d48">num_ignored_constraints</a> () const</td></tr>
 <tr class="memitem:aa71f538a8c95df8263c369b92dca1967" id="r_aa71f538a8c95df8263c369b92dca1967"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa71f538a8c95df8263c369b92dca1967">num_exactly_ones</a> () const</td></tr>
 <tr class="memitem:ab7145397a6741fc219f16c3c52603fbf" id="r_ab7145397a6741fc219f16c3c52603fbf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab7145397a6741fc219f16c3c52603fbf">num_full_encodings</a> () const</td></tr>
 <tr class="memitem:a43fd55bcac737c73e9cd184aab06e355" id="r_a43fd55bcac737c73e9cd184aab06e355"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a43fd55bcac737c73e9cd184aab06e355">num_element_encodings</a> () const</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This class is meant to be a view on the full CpModelProto, with hidden and additional constraints. Currently, this class is meant to be used by the feasibility jump subsolver. It could also contains the linear relaxation at level 1 or 2 of the model and could be computed once for all workers of a given linearization level. </p>
-
-<p class="definition">Definition at line <a class="el" href="linear__model_8h_source.html#l00029">29</a> of file <a class="el" href="linear__model_8h_source.html">linear_model.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a8c594ce81043440f547bf1320674a829" name="a8c594ce81043440f547bf1320674a829"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8c594ce81043440f547bf1320674a829">&#9670;&#160;</a></span>LinearModel()</h2>
 
@@ -128,7 +129,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">operations_research::sat::LinearModel::LinearModel </td>
           <td>(</td>
-          <td class="paramtype">const CpModelProto &amp;</td>          <td class="paramname"><span class="paramname"><em>model_proto</em></span></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1sat_1_1CpModelProto.html">CpModelProto</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>model_proto</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -138,14 +139,14 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001931">Todo</a></b></dt><dd>(user): Do we use the loader code to detect full encodings and element encodings. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001929">Todo</a></b></dt><dd>(user): Do we use the loader code to detect full encodings and element encodings. </dd></dl>
 <p>Loop over all constraints and fill var_to_equalities.</p>
 <p>Sort literals to get a canonical constraint.</p>
 <p>ct is a linear constraint with one term and one enforcement literal.</p>
 <p>Detect enforcement_literal =&gt; (var == value or var != value).</p>
 <dl class="section note"><dt>Note</dt><dd>for domain with 2 values like [0, 1], we will detect both == 0 and != 1. Similarly, for a domain in [min, max], we should both detect (== min) and (&lt;= min), and both detect (== max) and (&gt;= max).</dd></dl>
 <p>Detect <a class="el" href="classoperations__research_1_1sat_1_1Literal.html">Literal</a> &lt;=&gt; X == value and rebuild full encodings.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001932">Todo</a></b></dt><dd>(user): Deal with/Check double insertion. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001930">Todo</a></b></dt><dd>(user): Deal with/Check double insertion. </dd></dl>
 <p>We sort to have a canonical representation with increasing values and sorted literals.</p>
 <p>Fill exactly one.</p>
 <p>Fill linear encoding.</p>
@@ -167,7 +168,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const std::vector&lt; ConstraintProto &gt; &amp; operations_research::sat::LinearModel::additional_constraints </td>
+          <td class="memname">const std::vector&lt; <a class="el" href="classoperations__research_1_1sat_1_1ConstraintProto.html">ConstraintProto</a> &gt; &amp; operations_research::sat::LinearModel::additional_constraints </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
@@ -225,7 +226,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const CpModelProto &amp; operations_research::sat::LinearModel::model_proto </td>
+          <td class="memname">const <a class="el" href="classoperations__research_1_1sat_1_1CpModelProto.html">CpModelProto</a> &amp; operations_research::sat::LinearModel::model_proto </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>

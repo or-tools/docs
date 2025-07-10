@@ -1,5 +1,13 @@
 var NAVTREEINDEX77 =
 {
+"classcom_1_1google_1_1ortools_1_1pdlp_1_1MalitskyPockParams.html#ab7fc43bcfdaed5ec868c65b206d3eae1":[3,0,0,0,0,8,10,2],
+"classcom_1_1google_1_1ortools_1_1pdlp_1_1MalitskyPockParams.html#ae2ce23f76aeb35f2f276fdac9c6bfd2b":[2,0,0,0,0,8,10,25],
+"classcom_1_1google_1_1ortools_1_1pdlp_1_1MalitskyPockParams.html#ae2ce23f76aeb35f2f276fdac9c6bfd2b":[3,0,0,0,0,8,10,25],
+"classcom_1_1google_1_1ortools_1_1pdlp_1_1MalitskyPockParams.html#aeb50e6faa6aca7f39961dcd0b0acaaf9":[2,0,0,0,0,8,10,30],
+"classcom_1_1google_1_1ortools_1_1pdlp_1_1MalitskyPockParams.html#aeb50e6faa6aca7f39961dcd0b0acaaf9":[3,0,0,0,0,8,10,30],
+"classcom_1_1google_1_1ortools_1_1pdlp_1_1MalitskyPockParams.html#af4e1a3e19fbe821fb3ee71061a5fd30b":[2,0,0,0,0,8,10,24],
+"classcom_1_1google_1_1ortools_1_1pdlp_1_1MalitskyPockParams.html#af4e1a3e19fbe821fb3ee71061a5fd30b":[3,0,0,0,0,8,10,24],
+"classcom_1_1google_1_1ortools_1_1pdlp_1_1MalitskyPockParams.html#af6503db1c3aeb51f6087384a77fff7a4":[2,0,0,0,0,8,10,35],
 "classcom_1_1google_1_1ortools_1_1pdlp_1_1MalitskyPockParams.html#af6503db1c3aeb51f6087384a77fff7a4":[3,0,0,0,0,8,10,35],
 "classcom_1_1google_1_1ortools_1_1pdlp_1_1MalitskyPockParams_1_1Builder.html":[2,0,0,0,0,8,10,0],
 "classcom_1_1google_1_1ortools_1_1pdlp_1_1MalitskyPockParams_1_1Builder.html":[3,0,0,0,0,8,10,0],
@@ -241,13 +249,5 @@ var NAVTREEINDEX77 =
 "classcom_1_1google_1_1ortools_1_1pdlp_1_1PointMetadata_1_1Builder.html#adef582de924062e8ae601f635f16d6b8":[3,0,0,0,0,8,13,0,15],
 "classcom_1_1google_1_1ortools_1_1pdlp_1_1PointMetadata_1_1Builder.html#ae889e305407f98f2a50c92186a6c3b3c":[2,0,0,0,0,8,13,0,22],
 "classcom_1_1google_1_1ortools_1_1pdlp_1_1PointMetadata_1_1Builder.html#ae889e305407f98f2a50c92186a6c3b3c":[3,0,0,0,0,8,13,0,22],
-"classcom_1_1google_1_1ortools_1_1pdlp_1_1PointMetadata_1_1Builder.html#aed262f3978deea63af57524a902fff85":[2,0,0,0,0,8,13,0,39],
-"classcom_1_1google_1_1ortools_1_1pdlp_1_1PointMetadata_1_1Builder.html#aed262f3978deea63af57524a902fff85":[3,0,0,0,0,8,13,0,39],
-"classcom_1_1google_1_1ortools_1_1pdlp_1_1PointMetadata_1_1Builder.html#af1a15d051872e0dd1cfd5a82d972429a":[2,0,0,0,0,8,13,0,23],
-"classcom_1_1google_1_1ortools_1_1pdlp_1_1PointMetadata_1_1Builder.html#af1a15d051872e0dd1cfd5a82d972429a":[3,0,0,0,0,8,13,0,23],
-"classcom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParams.html":[2,0,0,0,0,8,17],
-"classcom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParams.html":[3,0,0,0,0,8,17],
-"classcom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParams.html#a0050ea1606f1e024df8a898d8f280c33":[2,0,0,0,0,8,17,51],
-"classcom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParams.html#a0050ea1606f1e024df8a898d8f280c33":[3,0,0,0,0,8,17,51],
-"classcom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParams.html#a00e047406db65d14902f16146e8ee637":[2,0,0,0,0,8,17,55]
+"classcom_1_1google_1_1ortools_1_1pdlp_1_1PointMetadata_1_1Builder.html#aed262f3978deea63af57524a902fff85":[2,0,0,0,0,8,13,0,39]
 };

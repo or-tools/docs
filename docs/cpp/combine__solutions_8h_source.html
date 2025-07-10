@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -118,7 +119,7 @@ $(function(){initNavTree('combine__solutions_8h_source.html','',''); });
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &quot;absl/types/span.h&quot;</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include &quot;ortools/sat/cp_model.pb.h&quot;</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include &quot;<a class="code" href="cp__model_8pb_8h.html">ortools/sat/cp_model.pb.h</a>&quot;</span></div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &quot;<a class="code" href="sat_2model_8h.html">ortools/sat/model.h</a>&quot;</span></div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#include &quot;<a class="code" href="synchronization_8h.html">ortools/sat/synchronization.h</a>&quot;</span></div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
@@ -129,7 +130,7 @@ $(function(){initNavTree('combine__solutions_8h_source.html','',''); });
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">// try to apply the same changes to the other solutions stored in the</span></div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">// `response_manager` and return any such generated solution that is valid.</span></div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>std::optional&lt;std::vector&lt;int64_t&gt;&gt; <a class="code hl_function" href="namespaceoperations__research_1_1sat.html#a84f3aff918cf9fa95f5922cbb93d125e">FindCombinedSolution</a>(</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keyword">const</span> CpModelProto&amp; model, absl::Span&lt;const int64_t&gt; new_solution,</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keyword">const</span> <a class="code hl_class" href="classoperations__research_1_1sat_1_1CpModelProto.html">CpModelProto</a>&amp; model, absl::Span&lt;const int64_t&gt; new_solution,</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    absl::Span&lt;const int64_t&gt; base_solution,</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keyword">const</span> <a class="code hl_class" href="classoperations__research_1_1sat_1_1SharedResponseManager.html">SharedResponseManager</a>* response_manager, std::string* solution_info);</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
@@ -146,7 +147,7 @@ $(function(){initNavTree('combine__solutions_8h_source.html','',''); });
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>};</div>
 </div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><a class="code hl_struct" href="structoperations__research_1_1sat_1_1PushedSolutionPointers.html">PushedSolutionPointers</a> <a class="code hl_function" href="namespaceoperations__research_1_1sat.html#ad4192af14f7971beec13bcd9dc390487">PushAndMaybeCombineSolution</a>(</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <a class="code hl_class" href="classoperations__research_1_1sat_1_1SharedResponseManager.html">SharedResponseManager</a>* response_manager, <span class="keyword">const</span> CpModelProto&amp; model_proto,</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <a class="code hl_class" href="classoperations__research_1_1sat_1_1SharedResponseManager.html">SharedResponseManager</a>* response_manager, <span class="keyword">const</span> <a class="code hl_class" href="classoperations__research_1_1sat_1_1CpModelProto.html">CpModelProto</a>&amp; model_proto,</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    absl::Span&lt;const int64_t&gt; new_solution, <span class="keyword">const</span> std::string&amp; solution_info,</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    absl::Span&lt;const int64_t&gt; base_solution = {}, <a class="code hl_class" href="classModel.html">Model</a>* model = <span class="keyword">nullptr</span>);</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
@@ -155,7 +156,9 @@ $(function(){initNavTree('combine__solutions_8h_source.html','',''); });
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="preprocessor">#endif  </span><span class="comment">// OR_TOOLS_SAT_COMBINE_SOLUTIONS_H_</span></div>
 <div class="ttc" id="aclassModel_html"><div class="ttname"><a href="classModel.html">Model</a></div><div class="ttdef"><b>Definition</b> <a href="flatzinc_2model_8h_source.html#l00341">model.h:341</a></div></div>
+<div class="ttc" id="aclassoperations__research_1_1sat_1_1CpModelProto_html"><div class="ttname"><a href="classoperations__research_1_1sat_1_1CpModelProto.html">operations_research::sat::CpModelProto</a></div><div class="ttdef"><b>Definition</b> <a href="cp__model_8pb_8h_source.html#l08001">cp_model.pb.h:8002</a></div></div>
 <div class="ttc" id="aclassoperations__research_1_1sat_1_1SharedResponseManager_html"><div class="ttname"><a href="classoperations__research_1_1sat_1_1SharedResponseManager.html">operations_research::sat::SharedResponseManager</a></div><div class="ttdef"><b>Definition</b> <a href="synchronization_8h_source.html#l00227">synchronization.h:227</a></div></div>
+<div class="ttc" id="acp__model_8pb_8h_html"><div class="ttname"><a href="cp__model_8pb_8h.html">cp_model.pb.h</a></div></div>
 <div class="ttc" id="anamespaceoperations__research_1_1sat_html"><div class="ttname"><a href="namespaceoperations__research_1_1sat.html">operations_research::sat</a></div><div class="ttdef"><b>Definition</b> <a href="routing__sat_8cc_source.html#l00045">routing_sat.cc:45</a></div></div>
 <div class="ttc" id="anamespaceoperations__research_1_1sat_html_a84f3aff918cf9fa95f5922cbb93d125e"><div class="ttname"><a href="namespaceoperations__research_1_1sat.html#a84f3aff918cf9fa95f5922cbb93d125e">operations_research::sat::FindCombinedSolution</a></div><div class="ttdeci">std::optional&lt; std::vector&lt; int64_t &gt; &gt; FindCombinedSolution(const CpModelProto &amp;model, absl::Span&lt; const int64_t &gt; new_solution, absl::Span&lt; const int64_t &gt; base_solution, const SharedResponseManager *response_manager, std::string *solution_info)</div><div class="ttdef"><b>Definition</b> <a href="combine__solutions_8cc_source.html#l00049">combine_solutions.cc:49</a></div></div>
 <div class="ttc" id="anamespaceoperations__research_1_1sat_html_ad4192af14f7971beec13bcd9dc390487"><div class="ttname"><a href="namespaceoperations__research_1_1sat.html#ad4192af14f7971beec13bcd9dc390487">operations_research::sat::PushAndMaybeCombineSolution</a></div><div class="ttdeci">PushedSolutionPointers PushAndMaybeCombineSolution(SharedResponseManager *response_manager, const CpModelProto &amp;model_proto, absl::Span&lt; const int64_t &gt; new_solution, const std::string &amp;solution_info, absl::Span&lt; const int64_t &gt; base_solution, Model *model)</div><div class="ttdef"><b>Definition</b> <a href="combine__solutions_8cc_source.html#l00079">combine_solutions.cc:79</a></div></div>

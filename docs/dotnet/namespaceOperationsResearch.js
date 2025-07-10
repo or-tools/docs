@@ -1,6 +1,5 @@
 var namespaceOperationsResearch =
 [
-    [ "Sat", "namespaceOperationsResearch_1_1Sat.html", "namespaceOperationsResearch_1_1Sat" ],
     [ "LinearSolverReflection", "classOperationsResearch_1_1LinearSolverReflection.html", "classOperationsResearch_1_1LinearSolverReflection" ],
     [ "MPAbsConstraint", "classOperationsResearch_1_1MPAbsConstraint.html", "classOperationsResearch_1_1MPAbsConstraint" ],
     [ "MPArrayConstraint", "classOperationsResearch_1_1MPArrayConstraint.html", "classOperationsResearch_1_1MPArrayConstraint" ],

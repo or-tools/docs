@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,15 @@ $(function(){initNavTree('classoperations__research_1_1math__opt_1_1LpIncomplete
   <div class="headertitle"><div class="title">operations_research::math_opt::LpIncompleteSolveTest Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A suite of unit tests to show that an LP solver handles incomplete solves correctly.</p>
+<p>To use these tests, in file &lt;solver&gt;_test.cc write: INSTANTIATE_TEST_SUITE_P(&lt;Solver&gt;LpIncompleteSolveTest,
+  LpIncompleteSolveTest,
+    testing::Values(lp_incomplete_solve_test_params));</p>
+<dl class="section note"><dt>Note</dt><dd>If supports_presolve == True, presolve will be turned off in all tests. </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="lp__incomplete__solve__tests_8h_source.html#l00083">83</a> of file <a class="el" href="lp__incomplete__solve__tests_8h_source.html">lp_incomplete_solve_tests.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="lp__incomplete__solve__tests_8h_source.html">lp_incomplete_solve_tests.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for operations_research::math_opt::LpIncompleteSolveTest:</div>
@@ -108,15 +117,7 @@ Inheritance diagram for operations_research::math_opt::LpIncompleteSolveTest:</d
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:af7ee6b9a1a0654e9194973394975e9fc" id="r_af7ee6b9a1a0654e9194973394975e9fc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a1a4e2d8708a16ad2817a18f55a516e7d">SolverType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af7ee6b9a1a0654e9194973394975e9fc">TestedSolver</a> () const</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A suite of unit tests to show that an LP solver handles incomplete solves correctly.</p>
-<p>To use these tests, in file &lt;solver&gt;_test.cc write: INSTANTIATE_TEST_SUITE_P(&lt;Solver&gt;LpIncompleteSolveTest,
-  LpIncompleteSolveTest,
-    testing::Values(lp_incomplete_solve_test_params));</p>
-<dl class="section note"><dt>Note</dt><dd>If supports_presolve == True, presolve will be turned off in all tests. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="lp__incomplete__solve__tests_8h_source.html#l00083">83</a> of file <a class="el" href="lp__incomplete__solve__tests_8h_source.html">lp_incomplete_solve_tests.h</a>.</p>
-</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="af7ee6b9a1a0654e9194973394975e9fc" name="af7ee6b9a1a0654e9194973394975e9fc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af7ee6b9a1a0654e9194973394975e9fc">&#9670;&#160;</a></span>TestedSolver()</h2>
 

@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,16 @@ $(function(){initNavTree('classoperations__research_1_1glop_1_1BasisFactorizatio
   <div class="headertitle"><div class="title">operations_research::glop::BasisFactorization Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A basis factorization is the product of an eta factorization and a L.U decomposition, i.e. B = L.U.E_0.E_1. ... .E_{k-1} It is used to solve two systems:</p><ul>
+<li>B.d = a where a is the entering column.</li>
+<li>y.B = c where c is the objective row.</li>
+</ul>
+<p>To speed-up and improve stability the factorization is refactorized at least every 'refactorization_period' updates.</p>
+<p>This class does not take ownership of the underlying matrix and basis, and thus they must outlive this class (and keep the same address in memory). </p>
 
+<p class="definition">Definition at line <a class="el" href="basis__representation_8h_source.html#l00160">160</a> of file <a class="el" href="basis__representation_8h_source.html">basis_representation.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="basis__representation_8h_source.html">basis_representation.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -105,7 +115,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a8d62821baf38cc58eeb8181901de1315"><td class="mdescLeft">&#160;</td><td class="mdescRight">This type is neither copyable nor movable.  <br /></td></tr>
 <tr class="memitem:a99c3f146a62ba96496dcee7047f587dc" id="r_a99c3f146a62ba96496dcee7047f587dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoperations__research_1_1glop_1_1BasisFactorization.html">BasisFactorization</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a99c3f146a62ba96496dcee7047f587dc">operator=</a> (const <a class="el" href="classoperations__research_1_1glop_1_1BasisFactorization.html">BasisFactorization</a> &amp;)=delete</td></tr>
 <tr class="memitem:ada9b0cc0d21f4296c8b9a1e8e7056315" id="r_ada9b0cc0d21f4296c8b9a1e8e7056315"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ada9b0cc0d21f4296c8b9a1e8e7056315">~BasisFactorization</a> ()</td></tr>
-<tr class="memitem:a302f316e6a76ea48aaa68d559ddf2014" id="r_a302f316e6a76ea48aaa68d559ddf2014"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a302f316e6a76ea48aaa68d559ddf2014">SetParameters</a> (const GlopParameters &amp;parameters)</td></tr>
+<tr class="memitem:a302f316e6a76ea48aaa68d559ddf2014" id="r_a302f316e6a76ea48aaa68d559ddf2014"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a302f316e6a76ea48aaa68d559ddf2014">SetParameters</a> (const <a class="el" href="classoperations__research_1_1glop_1_1GlopParameters.html">GlopParameters</a> &amp;parameters)</td></tr>
 <tr class="memdesc:a302f316e6a76ea48aaa68d559ddf2014"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the parameters for this component.  <br /></td></tr>
 <tr class="memitem:a31df2ab87ff896caa3cc88ebb5ea6be6" id="r_a31df2ab87ff896caa3cc88ebb5ea6be6"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespaceoperations__research_1_1glop.html#a36234394df434c523865e56a738050d4">ColumnPermutation</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a31df2ab87ff896caa3cc88ebb5ea6be6">GetColumnPermutation</a> () const</td></tr>
 <tr class="memitem:ada6bdbeded34b3f3e8d7670a0955e83b" id="r_ada6bdbeded34b3f3e8d7670a0955e83b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ada6bdbeded34b3f3e8d7670a0955e83b">SetColumnPermutationToIdentity</a> ()</td></tr>
@@ -145,16 +155,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a3414407e34d02446d293801e4159a0ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of updates since last refactorization.  <br /></td></tr>
 <tr class="memitem:a752efff1d8ead2ba186994a036bbc0d9" id="r_a752efff1d8ead2ba186994a036bbc0d9"><td class="memItemLeft" align="right" valign="top">EntryIndex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a752efff1d8ead2ba186994a036bbc0d9">NumberOfEntriesInLU</a> () const</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A basis factorization is the product of an eta factorization and a L.U decomposition, i.e. B = L.U.E_0.E_1. ... .E_{k-1} It is used to solve two systems:</p><ul>
-<li>B.d = a where a is the entering column.</li>
-<li>y.B = c where c is the objective row.</li>
-</ul>
-<p>To speed-up and improve stability the factorization is refactorized at least every 'refactorization_period' updates.</p>
-<p>This class does not take ownership of the underlying matrix and basis, and thus they must outlive this class (and keep the same address in memory). </p>
-
-<p class="definition">Definition at line <a class="el" href="basis__representation_8h_source.html#l00160">160</a> of file <a class="el" href="basis__representation_8h_source.html">basis_representation.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a5129f6df13a76bd60e8d3deec7ccc9bf" name="a5129f6df13a76bd60e8d3deec7ccc9bf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5129f6df13a76bd60e8d3deec7ccc9bf">&#9670;&#160;</a></span>BasisFactorization() <span class="overload">[1/2]</span></h2>
 
@@ -326,7 +327,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>This mainly forward the call to <a class="el" href="classoperations__research_1_1glop_1_1LuFactorization.html#a869bfef729c9d233c4e876020d7fdbbc">LuFactorization::ComputeInitialBasis()</a>.</p>
 <dl class="section note"><dt>Note</dt><dd>once this is called, one would need to call <a class="el" href="#a4ab74b538acd117a3c4296956d4d1fa2">Initialize()</a> to actually create the factorization. The only side effect of this is to update the deterministic time.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000443">Todo</a></b></dt><dd>(user): This "double" factorization is a bit inefficient, and we should probably <a class="el" href="#a4ab74b538acd117a3c4296956d4d1fa2">Initialize()</a> right away the factorization with the new basis, but more code is needed for that. It is also not that easy also because we want to permute all the added slack first. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000442">Todo</a></b></dt><dd>(user): This "double" factorization is a bit inefficient, and we should probably <a class="el" href="#a4ab74b538acd117a3c4296956d4d1fa2">Initialize()</a> right away the factorization with the new basis, but more code is needed for that. It is also not that easy also because we want to permute all the added slack first. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="basis__representation_8cc_source.html#l00223">223</a> of file <a class="el" href="basis__representation_8cc_source.html">basis_representation.cc</a>.</p>
 
@@ -371,7 +372,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Computes the 1-norm of the inverse of B. For this we iteratively solve B.x = e_j, where e_j is the jth unit vector. The result of this computation is the jth column of B^-1.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000441">Todo</a></b></dt><dd>(user): try to merge the computation of the norm of inverses with that of <a class="el" href="classoperations__research_1_1glop_1_1MatrixView.html">MatrixView</a>. Maybe use a wrapper class for InverseMatrix. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000440">Todo</a></b></dt><dd>(user): try to merge the computation of the norm of inverses with that of <a class="el" href="classoperations__research_1_1glop_1_1MatrixView.html">MatrixView</a>. Maybe use a wrapper class for InverseMatrix. </dd></dl>
 <p>Get a column of the matrix inverse.</p>
 <p>Compute sum_i <span class="tt">inverse_ij</span>.</p>
 <p>Compute max_j sum_i <span class="tt">inverse_ij</span></p>
@@ -793,7 +794,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Same as <a class="el" href="#a350dbf8381cf2189835d14e607ec49f3" title="Right solves the system B.d = a where the input is the initial value of d.">RightSolve()</a> for matrix.column(col). This also exploits its sparsity. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000440">Todo</a></b></dt><dd>(user): if right_pool_mapping_[col] != kInvalidCol, we can reuse it and just apply the last rank one update since it was computed. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000439">Todo</a></b></dt><dd>(user): if right_pool_mapping_[col] != kInvalidCol, we can reuse it and just apply the last rank one update since it was computed. </dd></dl>
 <p>The sort is needed if we want to have the same behavior for the sparse or hyper-sparse version.</p>
 
 <p class="definition">Definition at line <a class="el" href="basis__representation_8cc_source.html#l00474">474</a> of file <a class="el" href="basis__representation_8cc_source.html">basis_representation.cc</a>.</p>
@@ -881,7 +882,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void operations_research::glop::BasisFactorization::SetParameters </td>
           <td>(</td>
-          <td class="paramtype">const GlopParameters &amp;</td>          <td class="paramname"><span class="paramname"><em>parameters</em></span></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1glop_1_1GlopParameters.html">GlopParameters</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>parameters</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>

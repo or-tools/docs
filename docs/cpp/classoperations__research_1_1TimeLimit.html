@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,21 @@ $(function(){initNavTree('classoperations__research_1_1TimeLimit.html','','class
   <div class="headertitle"><div class="title">operations_research::TimeLimit Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A simple class to enforce both an elapsed time limit and a deterministic time limit in the same thread as a program. The idea is to call <a class="el" href="#a1d5b045221dffc755ccd2d66496c7833">LimitReached()</a> as often as possible, until it returns false. The program should then abort as fast as possible.</p>
+<p>The deterministic limit is used to ensure reproductibility. As a consequence the deterministic time has to be advanced manually using the method <a class="el" href="#a76854f3d5f80132a1ad54f38790740ee">AdvanceDeterministicTime()</a>.</p>
+<p>The call itself is as fast as CycleClock::Now() + a few trivial instructions.</p>
+<p>The limit is very conservative: it returns true (i.e. the limit is reached) when current_time + max(T, ε) &gt;= limit_time, where ε is a small constant (see <a class="el" href="#ac8e821394d808a30b3830b9e65b69a1f" title="static constants.">TimeLimit::kSafetyBufferSeconds</a>), and T is the maximum measured time interval between two consecutive calls to <a class="el" href="#a1d5b045221dffc755ccd2d66496c7833">LimitReached()</a> over the last kHistorySize calls (so that we only consider "recent" history). This is made so that the probability of actually exceeding the time limit is small, without aborting too early.</p>
+<p>The deterministic time limit can be logged at a more granular level: the method <a class="el" href="#a76854f3d5f80132a1ad54f38790740ee">TimeLimit::AdvanceDeterministicTime</a> takes an optional string argument: the name of a counter. In debug mode, the time limit object computes also the elapsed time for each named counter separately, and these values can be used to determine the coefficients for computing the deterministic duration from the number of operations. The values of the counters can be printed using <a class="el" href="#afd67966883ae424b26fedd137e95a528">TimeLimit::DebugString()</a>. There is no API to access the values of the counters directly, because they do not exist in optimized mode.</p>
+<p>The basic steps for determining coefficients for the deterministic time are:</p><ol type="1">
+<li>Run the code in debug mode to collect the values of the deterministic time counters. Unless the algorithm is different in optimized mode, the values of the deterministic counters in debug mode will be the same as in optimized mode.</li>
+<li>Run the code in optimized mode to measure the real (CPU) time of the whole benchmark.</li>
+<li>Determine the coefficients for deterministic time from the real time and the values of the deterministic counters, e. g. by solving the equations C_1*c_1 + C_2*c_2 + ... + C_N*c_N + Err = T where C_1 is the unknown coefficient for counter c_1, Err is the random measurement error and T is the measured real time. The equation can be solved e.g. using the least squares method.</li>
+</ol>
+<p>Note that in optimized mode, the counters are disabled for performance reasons, and calling AdvanceDeterministicTime(duration, counter_name) is equivalent to calling AdvanceDeterministicTime(duration). </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002640">Todo</a></b></dt><dd>(user): The expression "deterministic time" should be replaced with "number of operations" to avoid confusion with "real" time. </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="time__limit_8h_source.html#l00095">95</a> of file <a class="el" href="time__limit_8h_source.html">time_limit.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="time__limit_8h_source.html">time_limit.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -140,21 +155,7 @@ Friends</h2></td></tr>
 <tr class="memitem:a80c2662c13e3bbf165ffe1603fe87433" id="r_a80c2662c13e3bbf165ffe1603fe87433"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a80c2662c13e3bbf165ffe1603fe87433">NestedTimeLimit</a></td></tr>
 <tr class="memitem:a4c1bbdcb2a449b42a788178d2c3d2477" id="r_a4c1bbdcb2a449b42a788178d2c3d2477"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4c1bbdcb2a449b42a788178d2c3d2477">ParallelTimeLimit</a></td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A simple class to enforce both an elapsed time limit and a deterministic time limit in the same thread as a program. The idea is to call <a class="el" href="#a1d5b045221dffc755ccd2d66496c7833">LimitReached()</a> as often as possible, until it returns false. The program should then abort as fast as possible.</p>
-<p>The deterministic limit is used to ensure reproductibility. As a consequence the deterministic time has to be advanced manually using the method <a class="el" href="#a76854f3d5f80132a1ad54f38790740ee">AdvanceDeterministicTime()</a>.</p>
-<p>The call itself is as fast as CycleClock::Now() + a few trivial instructions.</p>
-<p>The limit is very conservative: it returns true (i.e. the limit is reached) when current_time + max(T, ε) &gt;= limit_time, where ε is a small constant (see <a class="el" href="#ac8e821394d808a30b3830b9e65b69a1f" title="static constants.">TimeLimit::kSafetyBufferSeconds</a>), and T is the maximum measured time interval between two consecutive calls to <a class="el" href="#a1d5b045221dffc755ccd2d66496c7833">LimitReached()</a> over the last kHistorySize calls (so that we only consider "recent" history). This is made so that the probability of actually exceeding the time limit is small, without aborting too early.</p>
-<p>The deterministic time limit can be logged at a more granular level: the method <a class="el" href="#a76854f3d5f80132a1ad54f38790740ee">TimeLimit::AdvanceDeterministicTime</a> takes an optional string argument: the name of a counter. In debug mode, the time limit object computes also the elapsed time for each named counter separately, and these values can be used to determine the coefficients for computing the deterministic duration from the number of operations. The values of the counters can be printed using <a class="el" href="#afd67966883ae424b26fedd137e95a528">TimeLimit::DebugString()</a>. There is no API to access the values of the counters directly, because they do not exist in optimized mode.</p>
-<p>The basic steps for determining coefficients for the deterministic time are:</p><ol type="1">
-<li>Run the code in debug mode to collect the values of the deterministic time counters. Unless the algorithm is different in optimized mode, the values of the deterministic counters in debug mode will be the same as in optimized mode.</li>
-<li>Run the code in optimized mode to measure the real (CPU) time of the whole benchmark.</li>
-<li>Determine the coefficients for deterministic time from the real time and the values of the deterministic counters, e. g. by solving the equations C_1*c_1 + C_2*c_2 + ... + C_N*c_N + Err = T where C_1 is the unknown coefficient for counter c_1, Err is the random measurement error and T is the measured real time. The equation can be solved e.g. using the least squares method.</li>
-</ol>
-<p>Note that in optimized mode, the counters are disabled for performance reasons, and calling AdvanceDeterministicTime(duration, counter_name) is equivalent to calling AdvanceDeterministicTime(duration). </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002642">Todo</a></b></dt><dd>(user): The expression "deterministic time" should be replaced with "number of operations" to avoid confusion with "real" time. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="time__limit_8h_source.html#l00095">95</a> of file <a class="el" href="time__limit_8h_source.html">time_limit.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a3858f841eec9afce2915f597ceb5393f" name="a3858f841eec9afce2915f597ceb5393f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3858f841eec9afce2915f597ceb5393f">&#9670;&#160;</a></span>TimeLimit() <span class="overload">[1/3]</span></h2>
 

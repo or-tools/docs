@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,11 @@ $(function(){initNavTree('classoperations__research_1_1sat_1_1BinaryRelationsMap
   <div class="headertitle"><div class="title">operations_research::sat::BinaryRelationsMaps Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002168">Todo</a></b></dt><dd>(user): Merge with <a class="el" href="classoperations__research_1_1sat_1_1BinaryRelationRepository.html">BinaryRelationRepository</a>. Note that this one provides different indexing though, so it could be kept separate. The <a class="el" href="structoperations__research_1_1sat_1_1LinearExpression2.html">LinearExpression2</a> data structure is also slightly more efficient. </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="precedences_8h_source.html#l00591">591</a> of file <a class="el" href="precedences_8h_source.html">precedences.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="precedences_8h_source.html">precedences.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -116,11 +121,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3a7eda1717a6d661ab8d6176c0092f24" id="r_a3a7eda1717a6d661ab8d6176c0092f24"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3a7eda1717a6d661ab8d6176c0092f24">NumExpressionsWithAffineBounds</a> () const</td></tr>
 <tr class="memitem:a4197ed700ec0d8e28bf803823ebb5cff" id="r_a4197ed700ec0d8e28bf803823ebb5cff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4197ed700ec0d8e28bf803823ebb5cff">WatchAllLinearExpressions2</a> (int id)</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002170">Todo</a></b></dt><dd>(user): Merge with <a class="el" href="classoperations__research_1_1sat_1_1BinaryRelationRepository.html">BinaryRelationRepository</a>. Note that this one provides different indexing though, so it could be kept separate. The <a class="el" href="structoperations__research_1_1sat_1_1LinearExpression2.html">LinearExpression2</a> data structure is also slightly more efficient. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="precedences_8h_source.html#l00591">591</a> of file <a class="el" href="precedences_8h_source.html">precedences.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a9351347f48d863a1cdc14cfdd060cb39" name="a9351347f48d863a1cdc14cfdd060cb39"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9351347f48d863a1cdc14cfdd060cb39">&#9670;&#160;</a></span>BinaryRelationsMaps()</h2>
 
@@ -227,7 +228,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002166">Todo</a></b></dt><dd>(user): If the trivial bound is better, its explanation is different... </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002164">Todo</a></b></dt><dd>(user): If the trivial bound is better, its explanation is different... </dd></dl>
 <p>Starts by simple bounds.</p>
 <p>Add explanation if it is a trivial bound.</p>
 <p>None of the bound above are enough, try the affine one. Note that gcd * expr &lt;= ub, is the same as asking why expr &lt;= FloorRatio(ub, gcd).</p>
@@ -294,7 +295,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>This mainly wraps <a class="el" href="classoperations__research_1_1sat_1_1BestBinaryRelationBounds.html">BestBinaryRelationBounds</a>, but in addition it checks the current LevelZero variable bounds to detect trivially true or false relation. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002165">Todo</a></b></dt><dd>(user): Also push them to a global shared repository after remapping IntegerVariable to proto indices. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002163">Todo</a></b></dt><dd>(user): Also push them to a global shared repository after remapping IntegerVariable to proto indices. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="precedences_8cc_source.html#l01614">1614</a> of file <a class="el" href="precedences_8cc_source.html">precedences.cc</a>.</p>
 

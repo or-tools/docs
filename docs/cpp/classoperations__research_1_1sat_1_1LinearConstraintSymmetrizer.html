@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,16 @@ $(function(){initNavTree('classoperations__research_1_1sat_1_1LinearConstraintSy
   <div class="headertitle"><div class="title">operations_research::sat::LinearConstraintSymmetrizer Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Knowing the symmetry of the IP problem should allow us to solve the LP faster via "folding" techniques.</p>
+<p>You can read this for the LP part: "Dimension Reduction via Colour
+Refinement", Martin Grohe, Kristian Kersting, Martin Mladenov, Erkal Selman, <a href="https://arxiv.org/abs/1307.5697">https://arxiv.org/abs/1307.5697</a></p>
+<p>In the presence of symmetry, by considering all symmetric version of a constraint and summing them, we can derive a new constraint using the sum of the variable on each orbit instead of the individual variables.</p>
+<p>For the integration in a MIP solver, I couldn't find many reference. The way I did it here is to introduce for each orbit a variable representing the sum of the orbit variable. This allows to represent the folded LP in terms of these variables (that are connected to the rest of the solver) and just reuse the full machinery.</p>
+<p>There are related info in "Orbital Shrinking", Matteo Fischetti &amp; Leo Liberti, <a href="https://link.springer.com/chapter/10.1007/978-3-642-32147-4_6">https://link.springer.com/chapter/10.1007/978-3-642-32147-4_6</a> </p>
 
+<p class="definition">Definition at line <a class="el" href="linear__constraint__manager_8h_source.html#l00085">85</a> of file <a class="el" href="linear__constraint__manager_8h_source.html">linear_constraint_manager.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="linear__constraint__manager_8h_source.html">linear_constraint_manager.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -114,16 +124,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae4e5c1367e36382528e9b579b1c8c75e" id="r_ae4e5c1367e36382528e9b579b1c8c75e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae4e5c1367e36382528e9b579b1c8c75e">AppearInFoldedProblem</a> (IntegerVariable var) const</td></tr>
 <tr class="memitem:a729e59f6b4ff81696c80dc501daf4ab1" id="r_a729e59f6b4ff81696c80dc501daf4ab1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a729e59f6b4ff81696c80dc501daf4ab1">FoldLinearConstraint</a> (<a class="el" href="structoperations__research_1_1sat_1_1LinearConstraint.html">LinearConstraint</a> *ct, bool *folded=nullptr)</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Knowing the symmetry of the IP problem should allow us to solve the LP faster via "folding" techniques.</p>
-<p>You can read this for the LP part: "Dimension Reduction via Colour
-Refinement", Martin Grohe, Kristian Kersting, Martin Mladenov, Erkal Selman, <a href="https://arxiv.org/abs/1307.5697">https://arxiv.org/abs/1307.5697</a></p>
-<p>In the presence of symmetry, by considering all symmetric version of a constraint and summing them, we can derive a new constraint using the sum of the variable on each orbit instead of the individual variables.</p>
-<p>For the integration in a MIP solver, I couldn't find many reference. The way I did it here is to introduce for each orbit a variable representing the sum of the orbit variable. This allows to represent the folded LP in terms of these variables (that are connected to the rest of the solver) and just reuse the full machinery.</p>
-<p>There are related info in "Orbital Shrinking", Matteo Fischetti &amp; Leo Liberti, <a href="https://link.springer.com/chapter/10.1007/978-3-642-32147-4_6">https://link.springer.com/chapter/10.1007/978-3-642-32147-4_6</a> </p>
-
-<p class="definition">Definition at line <a class="el" href="linear__constraint__manager_8h_source.html#l00085">85</a> of file <a class="el" href="linear__constraint__manager_8h_source.html">linear_constraint_manager.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a24a20fc028580d40dc92c69496c5e83c" name="a24a20fc028580d40dc92c69496c5e83c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a24a20fc028580d40dc92c69496c5e83c">&#9670;&#160;</a></span>LinearConstraintSymmetrizer()</h2>
 
@@ -238,7 +239,7 @@ Refinement", Martin Grohe, Kristian Kersting, Martin Mladenov, Erkal Selman, <a 
 </div><div class="memdoc">
 <p>Given a constraint on the "original" model variables, try to construct a symmetric version of it using the orbit sum variables. This might fail if we encounter integer overflow. Returns true on success. On failure, the original constraints will not be usable.</p>
 <p>Preconditions: All IntegerVariable must be positive. And the constraint lb/ub must be tight and not +/- int64_t max.</p>
-<p>What we do here is basically equivalent to adding all the possible permutations (under the problem symmetry group) of the constraint together. When we do that all variables in the same orbit will have the same coefficient ( </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001911">Todo</a></b></dt><dd>(user): think how to prove this properly and especially that the scaling is in 1/orbit_size) and will each appear once. We then substitute each sum by the sum over the orbit, and divide coefficient by their gcd.</dd></dl>
+<p>What we do here is basically equivalent to adding all the possible permutations (under the problem symmetry group) of the constraint together. When we do that all variables in the same orbit will have the same coefficient ( </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001909">Todo</a></b></dt><dd>(user): think how to prove this properly and especially that the scaling is in 1/orbit_size) and will each appear once. We then substitute each sum by the sum over the orbit, and divide coefficient by their gcd.</dd></dl>
 <p>Any solution of the original LP can be transformed to a solution of the folded LP with the same objective. So the folded LP will give us a tight and valid objective lower bound but with a lot less variables! This is an adaptation of "LP folding" to use in a MIP context. Introducing the orbit sum allow to propagates and add cuts as these sum are still integer for us.</p>
 <p>The only issue is regarding scaling of the constraints. Basically each orbit sum variable will appear with a factor 1/orbit_size in the original constraint.</p>
 <p>We will remap &amp; scale the constraint. If not possible, we will drop it for now. </p>
@@ -247,9 +248,9 @@ Refinement", Martin Grohe, Kristian Kersting, Martin Mladenov, Erkal Selman, <a 
 <p>Update the scaling factor.</p>
 <p>No symmetric variables.</p>
 <p>We need to multiply each term by scaling_factor / orbit_size.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001912">Todo</a></b></dt><dd>(user): Now that we know the actual coefficient we could scale less. Maybe the coefficient of an orbit_var is already divisible by orbit_size. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001910">Todo</a></b></dt><dd>(user): Now that we know the actual coefficient we could scale less. Maybe the coefficient of an orbit_var is already divisible by orbit_size. </dd></dl>
 <p>Dividing by gcd can help.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001913">Todo</a></b></dt><dd>(user): In some cases, this constraint will propagate/fix directly the orbit sum variables, we might want to propagate this in the cp world? This migth also remove bad scaling. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001911">Todo</a></b></dt><dd>(user): In some cases, this constraint will propagate/fix directly the orbit sum variables, we might want to propagate this in the cp world? This migth also remove bad scaling. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="linear__constraint__manager_8cc_source.html#l00106">106</a> of file <a class="el" href="linear__constraint__manager_8cc_source.html">linear_constraint_manager.cc</a>.</p>
 

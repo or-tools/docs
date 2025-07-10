@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,19 @@ $(function(){initNavTree('classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPInd
   <div class="headertitle"><div class="title">com.google.ortools.linearsolver.MPIndicatorConstraint.Builder Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="dynheader">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><pre>
+Indicator constraints encode the activation or deactivation of linear
+constraints given the value of one Boolean variable in the model. For
+example:
+y = 0 =&gt; 2 * x1 + 3 * x2 &gt;= 42
+The 2 * x1 + 3 * x2 &gt;= 42 constraint is only active if the variable y is
+equal to 0.
+As of 2019/04, only SCIP, CP-SAT and Gurobi support this constraint type.
+</pre><p>Protobuf type <code class="JavaDocCode">operations_research.MPIndicatorConstraint</code> </p>
+
+<p class="definition">Definition at line <a class="el" href="MPIndicatorConstraint_8java_source.html#l00358">358</a> of file <a class="el" href="MPIndicatorConstraint_8java_source.html">MPIndicatorConstraint.java</a>.</p>
+</div><div class="dynheader">
 Inheritance diagram for com.google.ortools.linearsolver.MPIndicatorConstraint.Builder:</div>
 <div class="dyncontent">
  <div class="center">
@@ -141,19 +154,7 @@ Static Public Member Functions</h2></td></tr>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:ab4850f5ceffb39c9a8208ae5f74d23dc" id="r_ab4850f5ceffb39c9a8208ae5f74d23dc"><td class="memItemLeft" align="right" valign="top">com.google.protobuf.GeneratedMessage.FieldAccessorTable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab4850f5ceffb39c9a8208ae5f74d23dc">internalGetFieldAccessorTable</a> ()</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><pre>
-Indicator constraints encode the activation or deactivation of linear
-constraints given the value of one Boolean variable in the model. For
-example:
-y = 0 =&gt; 2 * x1 + 3 * x2 &gt;= 42
-The 2 * x1 + 3 * x2 &gt;= 42 constraint is only active if the variable y is
-equal to 0.
-As of 2019/04, only SCIP, CP-SAT and Gurobi support this constraint type.
-</pre><p>Protobuf type <code class="JavaDocCode">operations_research.MPIndicatorConstraint</code> </p>
-
-<p class="definition">Definition at line <a class="el" href="MPIndicatorConstraint_8java_source.html#l00358">358</a> of file <a class="el" href="MPIndicatorConstraint_8java_source.html">MPIndicatorConstraint.java</a>.</p>
-</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="af09c26386159a18cc508f5e9198f14ca" name="af09c26386159a18cc508f5e9198f14ca"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af09c26386159a18cc508f5e9198f14ca">&#9670;&#160;</a></span>build()</h2>
 

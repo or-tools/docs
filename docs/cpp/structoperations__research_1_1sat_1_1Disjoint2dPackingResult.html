@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,17 +96,6 @@ $(function(){initNavTree('structoperations__research_1_1sat_1_1Disjoint2dPacking
   <div class="headertitle"><div class="title">operations_research::sat::Disjoint2dPackingResult Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
-<p><code>#include &lt;<a class="el" href="2d__rectangle__presolve_8h_source.html">2d_rectangle_presolve.h</a>&gt;</code></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:Bin" id="r_Bin"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1sat_1_1Disjoint2dPackingResult_1_1Bin.html">Bin</a></td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:abd23efc853a8edb57b9031d3b534ebd3" id="r_abd23efc853a8edb57b9031d3b534ebd3"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structoperations__research_1_1sat_1_1Disjoint2dPackingResult_1_1Bin.html">Bin</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abd23efc853a8edb57b9031d3b534ebd3">bins</a></td></tr>
-</table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Detect whether the fixed boxes of a no_overlap_2d constraint are splitting the space into separate components and thus can be replaced by one no_overlap_2d constraint per component. If this is not possible, return an empty result. Otherwise, return a struct containing what boxes (fixed and non-fixed) are needed in each new constraint.</p>
 <dl class="section note"><dt>Note</dt><dd>for this to be correct, we need to introduce new boxes to "fill" the space occupied by the other components. For example, if we have a no_overlap_2d constraint with the fixed boxes and the bounding box of the non-fixed boxes as follows: +------------------&mdash;+ <table class="markdownTable">
@@ -147,7 +137,18 @@ Public Attributes</h2></td></tr>
 +------------------&mdash;+ This ensures that the new no_overlap_2d constraint will impose the box to be in that component as it should. Note that in the example above, the number of boxes won't really increase after a presolve pass, since the presolve for fixed boxes will simplify it to two fixed boxes again. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="2d__rectangle__presolve_8h_source.html#l00089">89</a> of file <a class="el" href="2d__rectangle__presolve_8h_source.html">2d_rectangle_presolve.h</a>.</p>
-</div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
+</div>
+<p><code>#include &lt;<a class="el" href="2d__rectangle__presolve_8h_source.html">2d_rectangle_presolve.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:Bin" id="r_Bin"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1sat_1_1Disjoint2dPackingResult_1_1Bin.html">Bin</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:abd23efc853a8edb57b9031d3b534ebd3" id="r_abd23efc853a8edb57b9031d3b534ebd3"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structoperations__research_1_1sat_1_1Disjoint2dPackingResult_1_1Bin.html">Bin</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abd23efc853a8edb57b9031d3b534ebd3">bins</a></td></tr>
+</table>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
 <a id="abd23efc853a8edb57b9031d3b534ebd3" name="abd23efc853a8edb57b9031d3b534ebd3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abd23efc853a8edb57b9031d3b534ebd3">&#9670;&#160;</a></span>bins</h2>
 

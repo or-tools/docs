@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -98,7 +99,11 @@ $(function(){initNavTree('classoperations__research_1_1sat_1_1NoCyclePropagator.
 
 <p>Enforce the fact that there is no cycle in the given directed graph.  
  <a href="#details">More...</a></p>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Enforce the fact that there is no cycle in the given directed graph. </p>
 
+<p class="definition">Definition at line <a class="el" href="circuit_8h_source.html#l00120">120</a> of file <a class="el" href="circuit_8h_source.html">circuit.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="circuit_8h_source.html">circuit.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for operations_research::sat::NoCyclePropagator:</div>
@@ -118,11 +123,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0751bd29114a60910d7626a21eb88b94" id="r_a0751bd29114a60910d7626a21eb88b94"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0751bd29114a60910d7626a21eb88b94">Propagate</a> () final</td></tr>
 <tr class="memitem:ace715bb16f085796e71dcc817debdb52" id="r_ace715bb16f085796e71dcc817debdb52"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ace715bb16f085796e71dcc817debdb52">IncrementalPropagate</a> (const std::vector&lt; int &gt; &amp;watch_indices) final</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Enforce the fact that there is no cycle in the given directed graph. </p>
-
-<p class="definition">Definition at line <a class="el" href="circuit_8h_source.html#l00120">120</a> of file <a class="el" href="circuit_8h_source.html">circuit.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="acf6adfa6b3e9dae69d547428a884d51e" name="acf6adfa6b3e9dae69d547428a884d51e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acf6adfa6b3e9dae69d547428a884d51e">&#9670;&#160;</a></span>NoCyclePropagator()</h2>
 
@@ -159,7 +160,7 @@ Public Member Functions</h2></td></tr>
 <p>Fixed arc. It will never be removed.</p>
 <p>We have to deal with the same literal controlling more than one arc.</p>
 <p>We register at construction.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001098">Todo</a></b></dt><dd>(user): Uniformize this across propagator. Sometimes it is nice not to register them, but most of them can be registered right away. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001096">Todo</a></b></dt><dd>(user): Uniformize this across propagator. Sometimes it is nice not to register them, but most of them can be registered right away. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="circuit_8cc_source.html#l00362">362</a> of file <a class="el" href="circuit_8cc_source.html">circuit.cc</a>.</p>
 
@@ -222,11 +223,11 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001099">Todo</a></b></dt><dd>(user): only explore node with newly added arcs.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001100">Todo</a></b></dt><dd>(user): We could easily re-index the graph so that only nodes with arcs are used. Because right now we are in O(num_nodes) even if the graph is empty. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001097">Todo</a></b></dt><dd>(user): only explore node with newly added arcs.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001098">Todo</a></b></dt><dd>(user): We could easily re-index the graph so that only nodes with arcs are used. Because right now we are in O(num_nodes) even if the graph is empty. </dd></dl>
 <p>The graph should be up to date when this is called thanks to <a class="el" href="#ace715bb16f085796e71dcc817debdb52">IncrementalPropagate()</a>. We just do a SCC on the graph.</p>
 <p>We collect all arc from this compo.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001101">Todo</a></b></dt><dd>(user): We could be more efficient here, but this is only executed on conflicts. We should at least make sure we return a single cycle even though if this is called often enough, we shouldn't have a lot more than this. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001099">Todo</a></b></dt><dd>(user): We could be more efficient here, but this is only executed on conflicts. We should at least make sure we return a single cycle even though if this is called often enough, we shouldn't have a lot more than this. </dd></dl>
 
 <p>Implements <a class="el" href="classoperations__research_1_1sat_1_1PropagatorInterface.html#a92be510851b26838f85adeec4a92a1b1">operations_research::sat::PropagatorInterface</a>.</p>
 

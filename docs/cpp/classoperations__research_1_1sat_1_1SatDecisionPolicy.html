@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,11 @@ $(function(){initNavTree('classoperations__research_1_1sat_1_1SatDecisionPolicy.
   <div class="headertitle"><div class="title">operations_research::sat::SatDecisionPolicy Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Implement the SAT branching policy responsible for deciding the next Boolean variable to branch on, and its polarity (true or false). </p>
 
+<p class="definition">Definition at line <a class="el" href="sat__decision_8h_source.html#l00037">37</a> of file <a class="el" href="sat__decision_8h_source.html">sat_decision.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="sat__decision_8h_source.html">sat_decision.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -122,11 +127,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9120711c93f256dfd029eb60d556b5fa" id="r_a9120711c93f256dfd029eb60d556b5fa"><td class="memItemLeft" align="right" valign="top">absl::Span&lt; const <a class="el" href="classoperations__research_1_1sat_1_1Literal.html">Literal</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9120711c93f256dfd029eb60d556b5fa">GetBestPartialAssignment</a> () const</td></tr>
 <tr class="memitem:a6d5bcc05246d68121908dbb2e8b7a713" id="r_a6d5bcc05246d68121908dbb2e8b7a713"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6d5bcc05246d68121908dbb2e8b7a713">ClearBestPartialAssignment</a> ()</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Implement the SAT branching policy responsible for deciding the next Boolean variable to branch on, and its polarity (true or false). </p>
-
-<p class="definition">Definition at line <a class="el" href="sat__decision_8h_source.html#l00037">37</a> of file <a class="el" href="sat__decision_8h_source.html">sat_decision.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae3637846ba8fa0048b9924d7510a503e" name="ae3637846ba8fa0048b9924d7510a503e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae3637846ba8fa0048b9924d7510a503e">&#9670;&#160;</a></span>SatDecisionPolicy()</h2>
 
@@ -200,7 +201,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the vector of the current assignment preferences. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002290">Todo</a></b></dt><dd>(user): we currently assume that if the tie_breaker is zero then no preference was set (which is not 100% correct). Fix that. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002288">Todo</a></b></dt><dd>(user): we currently assume that if the tie_breaker is zero then no preference was set (which is not 100% correct). Fix that. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="sat__decision_8cc_source.html#l00287">287</a> of file <a class="el" href="sat__decision_8cc_source.html">sat_decision.cc</a>.</p>
 
@@ -394,7 +395,7 @@ Public Member Functions</h2></td></tr>
 <p>Returns next decision to branch upon. This shouldn't be called if all the variables are assigned. </p>
 <p>Lazily initialize var_ordering_ if needed.</p>
 <p>Choose the variable.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002291">Todo</a></b></dt><dd>(user): This may not be super efficient if almost all the variables are assigned. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002289">Todo</a></b></dt><dd>(user): This may not be super efficient if almost all the variables are assigned. </dd></dl>
 <p>The loop is done this way in order to leave the final choice in the heap.</p>
 <p>Choose its polarity (i.e. True of False).</p>
 
@@ -522,10 +523,10 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Called on <a class="el" href="#a9f05bb03afa86725c194d50e613f2593" title="Called on Untrail() so that we can update the set of possible decisions.">Untrail()</a> so that we can update the set of possible decisions. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002292">Todo</a></b></dt><dd>(user): avoid looping twice over the trail? </dd></dl>
-<p>The ERWA parameter between the new estimation of the learning rate and the old one. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002293">Todo</a></b></dt><dd>(user): Expose parameters for these values. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002290">Todo</a></b></dt><dd>(user): avoid looping twice over the trail? </dd></dl>
+<p>The ERWA parameter between the new estimation of the learning rate and the old one. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002291">Todo</a></b></dt><dd>(user): Expose parameters for these values. </dd></dl>
 <p>This counts the number of conflicts since the assignment of the variable at the current trail_index that we are about to untrail.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002294">Todo</a></b></dt><dd>(user): This heuristic can make this code quite slow because all the untrailed variable will cause a priority queue update. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002292">Todo</a></b></dt><dd>(user): This heuristic can make this code quite slow because all the untrailed variable will cause a priority queue update. </dd></dl>
 <p><a class="el" href="classoperations__research_1_1sat_1_1Trail.html">Trail</a> index of the next variable that will need a priority queue update.</p>
 <p>Invariant.</p>
 

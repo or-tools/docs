@@ -1,5 +1,13 @@
 var NAVTREEINDEX82 =
 {
+"classcom_1_1google_1_1ortools_1_1pdlp_1_1QuadraticProgramStats_1_1Builder.html#a4f411df9cb0ba1303fac6198254b0d9a":[3,0,0,0,0,8,19,0,36],
+"classcom_1_1google_1_1ortools_1_1pdlp_1_1QuadraticProgramStats_1_1Builder.html#a4f848f6755dcfb56f93dcdf61dc732eb":[2,0,0,0,0,8,19,0,1],
+"classcom_1_1google_1_1ortools_1_1pdlp_1_1QuadraticProgramStats_1_1Builder.html#a4f848f6755dcfb56f93dcdf61dc732eb":[3,0,0,0,0,8,19,0,1],
+"classcom_1_1google_1_1ortools_1_1pdlp_1_1QuadraticProgramStats_1_1Builder.html#a50c2a99aba47e91cb0d8efad8def42f1":[2,0,0,0,0,8,19,0,77],
+"classcom_1_1google_1_1ortools_1_1pdlp_1_1QuadraticProgramStats_1_1Builder.html#a50c2a99aba47e91cb0d8efad8def42f1":[3,0,0,0,0,8,19,0,77],
+"classcom_1_1google_1_1ortools_1_1pdlp_1_1QuadraticProgramStats_1_1Builder.html#a532022a6e6d2fc8f3c7830598fc6802c":[2,0,0,0,0,8,19,0,68],
+"classcom_1_1google_1_1ortools_1_1pdlp_1_1QuadraticProgramStats_1_1Builder.html#a532022a6e6d2fc8f3c7830598fc6802c":[3,0,0,0,0,8,19,0,68],
+"classcom_1_1google_1_1ortools_1_1pdlp_1_1QuadraticProgramStats_1_1Builder.html#a53606fa2d9a9cb1ba6d45db7081bb505":[2,0,0,0,0,8,19,0,113],
 "classcom_1_1google_1_1ortools_1_1pdlp_1_1QuadraticProgramStats_1_1Builder.html#a53606fa2d9a9cb1ba6d45db7081bb505":[3,0,0,0,0,8,19,0,113],
 "classcom_1_1google_1_1ortools_1_1pdlp_1_1QuadraticProgramStats_1_1Builder.html#a5ab26eb0ff79955b7bf2f3f347c81f12":[2,0,0,0,0,8,19,0,7],
 "classcom_1_1google_1_1ortools_1_1pdlp_1_1QuadraticProgramStats_1_1Builder.html#a5ab26eb0ff79955b7bf2f3f347c81f12":[3,0,0,0,0,8,19,0,7],
@@ -241,13 +249,5 @@ var NAVTREEINDEX82 =
 "classcom_1_1google_1_1ortools_1_1pdlp_1_1SolveLog.html#a6d07e45bb538efccc37a5a8eba90756d":[3,0,0,0,0,8,23,26],
 "classcom_1_1google_1_1ortools_1_1pdlp_1_1SolveLog.html#a76a6c892459493c285211138991299df":[2,0,0,0,0,8,23,40],
 "classcom_1_1google_1_1ortools_1_1pdlp_1_1SolveLog.html#a76a6c892459493c285211138991299df":[3,0,0,0,0,8,23,40],
-"classcom_1_1google_1_1ortools_1_1pdlp_1_1SolveLog.html#a76adf78f67d91d77ea0e4ddbc88a72f0":[2,0,0,0,0,8,23,76],
-"classcom_1_1google_1_1ortools_1_1pdlp_1_1SolveLog.html#a76adf78f67d91d77ea0e4ddbc88a72f0":[3,0,0,0,0,8,23,76],
-"classcom_1_1google_1_1ortools_1_1pdlp_1_1SolveLog.html#a7874ad5d7beaa53f8399454770d74df3":[2,0,0,0,0,8,23,63],
-"classcom_1_1google_1_1ortools_1_1pdlp_1_1SolveLog.html#a7874ad5d7beaa53f8399454770d74df3":[3,0,0,0,0,8,23,63],
-"classcom_1_1google_1_1ortools_1_1pdlp_1_1SolveLog.html#a78c91f9787d0c01ca84878dbe4c2cd22":[2,0,0,0,0,8,23,5],
-"classcom_1_1google_1_1ortools_1_1pdlp_1_1SolveLog.html#a78c91f9787d0c01ca84878dbe4c2cd22":[3,0,0,0,0,8,23,5],
-"classcom_1_1google_1_1ortools_1_1pdlp_1_1SolveLog.html#a7c47bc3aed56327661572c90306cfb73":[2,0,0,0,0,8,23,74],
-"classcom_1_1google_1_1ortools_1_1pdlp_1_1SolveLog.html#a7c47bc3aed56327661572c90306cfb73":[3,0,0,0,0,8,23,74],
-"classcom_1_1google_1_1ortools_1_1pdlp_1_1SolveLog.html#a7e1b4909eb8c88f8a16f7200a7d9d1a3":[2,0,0,0,0,8,23,27]
+"classcom_1_1google_1_1ortools_1_1pdlp_1_1SolveLog.html#a76adf78f67d91d77ea0e4ddbc88a72f0":[2,0,0,0,0,8,23,76]
 };

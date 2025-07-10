@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -113,7 +114,7 @@ $(function(){initNavTree('model__reader_8cc_source.html','',''); });
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &quot;absl/log/log.h&quot;</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &quot;ortools/linear_solver/linear_solver.pb.h&quot;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &quot;<a class="code" href="linear__solver_8pb_8h.html">ortools/linear_solver/linear_solver.pb.h</a>&quot;</span></div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &quot;<a class="code" href="lp__data_8h.html">ortools/lp_data/lp_data.h</a>&quot;</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &quot;<a class="code" href="lp__data_2proto__utils_8h.html">ortools/lp_data/proto_utils.h</a>&quot;</span></div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &quot;<a class="code" href="file__util_8h.html">ortools/util/file_util.h</a>&quot;</span></div>
@@ -123,16 +124,16 @@ $(function(){initNavTree('model__reader_8cc_source.html','',''); });
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
 <div class="foldopen" id="foldopen00027" data-start="{" data-end="}">
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="namespaceoperations__research_1_1glop.html#abf1216373b28d2945c26112b4362ea3f">   27</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="namespaceoperations__research_1_1glop.html#abf1216373b28d2945c26112b4362ea3f">LoadMPModelProtoFromModelOrRequest</a>(<span class="keyword">const</span> std::string&amp; input_file_path,</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>                                        MPModelProto* model) {</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  MPModelProto model_proto;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  MPModelRequest request_proto;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>                                        <a class="code hl_class" href="classoperations__research_1_1MPModelProto.html">MPModelProto</a>* model) {</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  <a class="code hl_class" href="classoperations__research_1_1MPModelProto.html">MPModelProto</a> model_proto;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  <a class="code hl_class" href="classoperations__research_1_1MPModelRequest.html">MPModelRequest</a> request_proto;</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  <a class="code hl_function" href="namespaceoperations__research.html#ae4f80f3675606ea0b092eec19029834e">ReadFileToProto</a>(input_file_path, &amp;model_proto).IgnoreError();</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  <a class="code hl_function" href="namespaceoperations__research.html#ae4f80f3675606ea0b092eec19029834e">ReadFileToProto</a>(input_file_path, &amp;request_proto).IgnoreError();</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  <span class="comment">// If the input proto is in binary format, both ReadFileToProto could return</span></div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  <span class="comment">// true. Instead use the actual number of variables found to test the</span></div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  <span class="comment">// correct format of the input.</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  <span class="keyword">const</span> <span class="keywordtype">bool</span> is_model_proto = model_proto.variable_size() &gt; 0;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  <span class="keyword">const</span> <span class="keywordtype">bool</span> is_request_proto = request_proto.model().variable_size() &gt; 0;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  <span class="keyword">const</span> <span class="keywordtype">bool</span> is_model_proto = model_proto.<a class="code hl_function" href="classoperations__research_1_1MPModelProto.html#a14fd1215ea6e13b461b3b64829a2d35c">variable_size</a>() &gt; 0;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  <span class="keyword">const</span> <span class="keywordtype">bool</span> is_request_proto = request_proto.<a class="code hl_function" href="classoperations__research_1_1MPModelRequest.html#ad5b9d9b76a92ccc4ff110efc6f1f9c72">model</a>().<a class="code hl_function" href="classoperations__research_1_1MPModelProto.html#a14fd1215ea6e13b461b3b64829a2d35c">variable_size</a>() &gt; 0;</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  <span class="keywordflow">if</span> (!is_model_proto &amp;&amp; !is_request_proto) {</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    LOG(ERROR) &lt;&lt; <span class="stringliteral">&quot;Failed to parse &#39;&quot;</span> &lt;&lt; input_file_path</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>               &lt;&lt; <span class="stringliteral">&quot;&#39; as an MPModelProto or an MPModelRequest.&quot;</span>;</div>
@@ -145,12 +146,12 @@ $(function(){initNavTree('model__reader_8cc_source.html','',''); });
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    }</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keywordflow">if</span> (is_request_proto) {</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>      VLOG(1) &lt;&lt; <span class="stringliteral">&quot;Read input proto as an MPModelRequest.&quot;</span>;</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>      model_proto.Swap(request_proto.mutable_model());</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>      model_proto.<a class="code hl_function" href="classoperations__research_1_1MPModelProto.html#ab01d11887ad130ac7cced839359aac71">Swap</a>(request_proto.<a class="code hl_function" href="classoperations__research_1_1MPModelRequest.html#a63349964791017ed521f8dfa3895245e">mutable_model</a>());</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>      VLOG(1) &lt;&lt; <span class="stringliteral">&quot;Read input proto as an MPModelProto.&quot;</span>;</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    }</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  }</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  model-&gt;Swap(&amp;model_proto);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  model-&gt;<a class="code hl_function" href="classoperations__research_1_1MPModelProto.html#ab01d11887ad130ac7cced839359aac71">Swap</a>(&amp;model_proto);</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>}</div>
 </div>
@@ -158,7 +159,7 @@ $(function(){initNavTree('model__reader_8cc_source.html','',''); });
 <div class="foldopen" id="foldopen00059" data-start="{" data-end="}">
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="namespaceoperations__research_1_1glop.html#adac5a3f5e342032488bd600c97cb0ee5">   59</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="namespaceoperations__research_1_1glop.html#adac5a3f5e342032488bd600c97cb0ee5">LoadLinearProgramFromModelOrRequest</a>(<span class="keyword">const</span> std::string&amp; input_file_path,</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>                                         <a class="code hl_class" href="classoperations__research_1_1glop_1_1LinearProgram.html">LinearProgram</a>* linear_program) {</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  MPModelProto model_proto;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  <a class="code hl_class" href="classoperations__research_1_1MPModelProto.html">MPModelProto</a> model_proto;</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  <span class="keywordflow">if</span> (<a class="code hl_function" href="namespaceoperations__research_1_1glop.html#abf1216373b28d2945c26112b4362ea3f">LoadMPModelProtoFromModelOrRequest</a>(input_file_path, &amp;model_proto)) {</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <a class="code hl_function" href="namespaceoperations__research_1_1glop.html#af8a64136c69a6dfc1b38c22c754cbe65">MPModelProtoToLinearProgram</a>(model_proto, linear_program);</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
@@ -169,8 +170,15 @@ $(function(){initNavTree('model__reader_8cc_source.html','',''); });
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>}  <span class="comment">// namespace glop</span></div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>}  <span class="comment">// namespace operations_research</span></div>
-<div class="ttc" id="aclassoperations__research_1_1glop_1_1LinearProgram_html"><div class="ttname"><a href="classoperations__research_1_1glop_1_1LinearProgram.html">operations_research::glop::LinearProgram</a></div><div class="ttdef"><b>Definition</b> <a href="lp__data_8h_source.html#l00059">lp_data.h:59</a></div></div>
+<div class="ttc" id="aclassoperations__research_1_1MPModelProto_html"><div class="ttname"><a href="classoperations__research_1_1MPModelProto.html">operations_research::MPModelProto</a></div><div class="ttdef"><b>Definition</b> <a href="linear__solver_8pb_8h_source.html#l05046">linear_solver.pb.h:5047</a></div></div>
+<div class="ttc" id="aclassoperations__research_1_1MPModelProto_html_a14fd1215ea6e13b461b3b64829a2d35c"><div class="ttname"><a href="classoperations__research_1_1MPModelProto.html#a14fd1215ea6e13b461b3b64829a2d35c">operations_research::MPModelProto::variable_size</a></div><div class="ttdeci">int variable_size() const</div><div class="ttdoc">repeated .operations_research.MPVariableProto variable = 3;</div><div class="ttdef"><b>Definition</b> <a href="linear__solver_8pb_8h_source.html#l08266">linear_solver.pb.h:8266</a></div></div>
+<div class="ttc" id="aclassoperations__research_1_1MPModelProto_html_ab01d11887ad130ac7cced839359aac71"><div class="ttname"><a href="classoperations__research_1_1MPModelProto.html#ab01d11887ad130ac7cced839359aac71">operations_research::MPModelProto::Swap</a></div><div class="ttdeci">void Swap(MPModelProto *PROTOBUF_NONNULL other)</div><div class="ttdef"><b>Definition</b> <a href="linear__solver_8pb_8h_source.html#l05103">linear_solver.pb.h:5103</a></div></div>
+<div class="ttc" id="aclassoperations__research_1_1MPModelRequest_html"><div class="ttname"><a href="classoperations__research_1_1MPModelRequest.html">operations_research::MPModelRequest</a></div><div class="ttdef"><b>Definition</b> <a href="linear__solver_8pb_8h_source.html#l05381">linear_solver.pb.h:5382</a></div></div>
+<div class="ttc" id="aclassoperations__research_1_1MPModelRequest_html_a63349964791017ed521f8dfa3895245e"><div class="ttname"><a href="classoperations__research_1_1MPModelRequest.html#a63349964791017ed521f8dfa3895245e">operations_research::MPModelRequest::mutable_model</a></div><div class="ttdeci">::operations_research::MPModelProto *PROTOBUF_NONNULL mutable_model()</div><div class="ttdef"><b>Definition</b> <a href="linear__solver_8pb_8h_source.html#l09421">linear_solver.pb.h:9421</a></div></div>
+<div class="ttc" id="aclassoperations__research_1_1MPModelRequest_html_ad5b9d9b76a92ccc4ff110efc6f1f9c72"><div class="ttname"><a href="classoperations__research_1_1MPModelRequest.html#ad5b9d9b76a92ccc4ff110efc6f1f9c72">operations_research::MPModelRequest::model</a></div><div class="ttdeci">const ::operations_research::MPModelProto &amp; model() const</div><div class="ttdef"><b>Definition</b> <a href="linear__solver_8pb_8h_source.html#l09367">linear_solver.pb.h:9367</a></div></div>
+<div class="ttc" id="aclassoperations__research_1_1glop_1_1LinearProgram_html"><div class="ttname"><a href="classoperations__research_1_1glop_1_1LinearProgram.html">operations_research::glop::LinearProgram</a></div><div class="ttdef"><b>Definition</b> <a href="lp__data_8h_source.html#l00058">lp_data.h:58</a></div></div>
 <div class="ttc" id="afile__util_8h_html"><div class="ttname"><a href="file__util_8h.html">file_util.h</a></div></div>
+<div class="ttc" id="alinear__solver_8pb_8h_html"><div class="ttname"><a href="linear__solver_8pb_8h.html">linear_solver.pb.h</a></div></div>
 <div class="ttc" id="alp__data_2proto__utils_8h_html"><div class="ttname"><a href="lp__data_2proto__utils_8h.html">proto_utils.h</a></div></div>
 <div class="ttc" id="alp__data_8h_html"><div class="ttname"><a href="lp__data_8h.html">lp_data.h</a></div></div>
 <div class="ttc" id="amodel__reader_8h_html"><div class="ttname"><a href="model__reader_8h.html">model_reader.h</a></div></div>

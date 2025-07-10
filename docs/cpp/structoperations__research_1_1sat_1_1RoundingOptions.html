@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,19 @@ $(function(){initNavTree('structoperations__research_1_1sat_1_1RoundingOptions.h
   <div class="headertitle"><div class="title">operations_research::sat::RoundingOptions Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Given an upper bounded linear constraint, this function tries to transform it to a valid cut that violate the given LP solution using integer rounding. </p><dl class="section note"><dt>Note</dt><dd>the returned cut might not always violate the LP solution, in which case it can be discarded.</dd></dl>
+<p>What this does is basically take the integer division of the constraint by an integer. If the coefficients where doubles, this would be the same as scaling the constraint and then rounding. We choose the coefficient of the most fractional variable (rescaled by its coefficient) as the divisor, but there are other possible alternatives.</p>
+<dl class="section note"><dt>Note</dt><dd>if the constraint is tight under the given lp solution, and if there is a unique variable not at one of its bounds and fractional, then we are guaranteed to generate a cut that violate the current LP solution. This should be the case for Chvatal-Gomory base constraints modulo our loss of precision while doing exact integer computations.</dd></dl>
+<p>Precondition:</p><ul>
+<li>We assumes that the given initial constraint is tight using the given lp values. This could be relaxed, but for now it should always be the case, so we log a message and abort if not, to ease debugging.</li>
+<li><p class="startli">The IntegerVariable of the cuts are not used here. We assumes that the first three vectors are in one to one correspondence with the initial order of the variable in the cut.</p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001664">Todo</a></b></dt><dd>(user): There is a bunch of heuristic involved here, and we could spend more effort tuning them. In particular, one can try many heuristics and keep the best looking cut (or more than one). This is not on the critical code path, so we can spend more effort in finding good cuts. </dd></dl>
+</li>
+</ul>
 
+<p class="definition">Definition at line <a class="el" href="cuts_8h_source.html#l00414">414</a> of file <a class="el" href="cuts_8h_source.html">cuts.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="cuts_8h_source.html">cuts.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
@@ -104,19 +117,7 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a017568a7c56c1330c2ed7d7d23b69fb8" id="r_a017568a7c56c1330c2ed7d7d23b69fb8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a017568a7c56c1330c2ed7d7d23b69fb8">use_ib_before_heuristic</a> = true</td></tr>
 <tr class="memitem:a880988803feaafc09f594d480f3f02b1" id="r_a880988803feaafc09f594d480f3f02b1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a880988803feaafc09f594d480f3f02b1">prefer_positive_ib</a> = true</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Given an upper bounded linear constraint, this function tries to transform it to a valid cut that violate the given LP solution using integer rounding. </p><dl class="section note"><dt>Note</dt><dd>the returned cut might not always violate the LP solution, in which case it can be discarded.</dd></dl>
-<p>What this does is basically take the integer division of the constraint by an integer. If the coefficients where doubles, this would be the same as scaling the constraint and then rounding. We choose the coefficient of the most fractional variable (rescaled by its coefficient) as the divisor, but there are other possible alternatives.</p>
-<dl class="section note"><dt>Note</dt><dd>if the constraint is tight under the given lp solution, and if there is a unique variable not at one of its bounds and fractional, then we are guaranteed to generate a cut that violate the current LP solution. This should be the case for Chvatal-Gomory base constraints modulo our loss of precision while doing exact integer computations.</dd></dl>
-<p>Precondition:</p><ul>
-<li>We assumes that the given initial constraint is tight using the given lp values. This could be relaxed, but for now it should always be the case, so we log a message and abort if not, to ease debugging.</li>
-<li><p class="startli">The IntegerVariable of the cuts are not used here. We assumes that the first three vectors are in one to one correspondence with the initial order of the variable in the cut.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001666">Todo</a></b></dt><dd>(user): There is a bunch of heuristic involved here, and we could spend more effort tuning them. In particular, one can try many heuristics and keep the best looking cut (or more than one). This is not on the critical code path, so we can spend more effort in finding good cuts. </dd></dl>
-</li>
-</ul>
-
-<p class="definition">Definition at line <a class="el" href="cuts_8h_source.html#l00414">414</a> of file <a class="el" href="cuts_8h_source.html">cuts.h</a>.</p>
-</div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
 <a id="ac21352d2d80dc2365319cd81ecde0742" name="ac21352d2d80dc2365319cd81ecde0742"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac21352d2d80dc2365319cd81ecde0742">&#9670;&#160;</a></span>max_scaling</h2>
 

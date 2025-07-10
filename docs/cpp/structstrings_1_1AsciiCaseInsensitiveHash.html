@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,13 @@ $(function(){initNavTree('structstrings_1_1AsciiCaseInsensitiveHash.html','','st
   <div class="headertitle"><div class="title">strings::AsciiCaseInsensitiveHash Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="structstrings_1_1AsciiCaseInsensitiveHash.html">AsciiCaseInsensitiveHash</a> and <a class="el" href="structstrings_1_1AsciiCaseInsensitiveEq.html">AsciiCaseInsensitiveEq</a></p>
+<p>Performs a case-insensitive hash/eq absl::string_view operations. This function objects are useful as a template parameter for hash set/map of absl::string_view-compatible types, if uniqueness of keys is case-insensitive. Can be used for heterogeneous lookups in absl associative containers. Example:</p>
+<p>absl::flat_hash_map&lt;std::string, std::string, <a class="el" href="structstrings_1_1AsciiCaseInsensitiveHash.html">AsciiCaseInsensitiveHash</a>, <a class="el" href="structstrings_1_1AsciiCaseInsensitiveEq.html">AsciiCaseInsensitiveEq</a>&gt; map; absl::string_view key = ...; auto it = map.find(key); </p>
 
+<p class="definition">Definition at line <a class="el" href="case_8h_source.html#l00106">106</a> of file <a class="el" href="case_8h_source.html">case.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="case_8h_source.html">case.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-types" class="groupheader"><a id="pub-types" name="pub-types"></a>
@@ -106,13 +113,7 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a958c9bab9e433b42219201e00bc38647" id="r_a958c9bab9e433b42219201e00bc38647"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a958c9bab9e433b42219201e00bc38647">operator()</a> (absl::string_view s) const</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="structstrings_1_1AsciiCaseInsensitiveHash.html">AsciiCaseInsensitiveHash</a> and <a class="el" href="structstrings_1_1AsciiCaseInsensitiveEq.html">AsciiCaseInsensitiveEq</a></p>
-<p>Performs a case-insensitive hash/eq absl::string_view operations. This function objects are useful as a template parameter for hash set/map of absl::string_view-compatible types, if uniqueness of keys is case-insensitive. Can be used for heterogeneous lookups in absl associative containers. Example:</p>
-<p>absl::flat_hash_map&lt;std::string, std::string, <a class="el" href="structstrings_1_1AsciiCaseInsensitiveHash.html">AsciiCaseInsensitiveHash</a>, <a class="el" href="structstrings_1_1AsciiCaseInsensitiveEq.html">AsciiCaseInsensitiveEq</a>&gt; map; absl::string_view key = ...; auto it = map.find(key); </p>
-
-<p class="definition">Definition at line <a class="el" href="case_8h_source.html#l00106">106</a> of file <a class="el" href="case_8h_source.html">case.h</a>.</p>
-</div><a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Member Typedef Documentation</h2>
+<a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Member Typedef Documentation</h2>
 <a id="a7fad0f547865a642cfa51090fa304d02" name="a7fad0f547865a642cfa51090fa304d02"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7fad0f547865a642cfa51090fa304d02">&#9670;&#160;</a></span>is_transparent</h2>
 

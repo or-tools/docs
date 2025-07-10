@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,11 @@ $(function(){initNavTree('classoperations__research_1_1bop_1_1LocalSearchOptimiz
   <div class="headertitle"><div class="title">operations_research::bop::LocalSearchOptimizer Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This class defines a Local <a class="el" href="classoperations__research_1_1Search.html" title="---------------— Search class --------------—">Search</a> optimizer. The goal is to find a new solution with a better cost than the given solution by iterating on all assignments that can be reached in max_num_decisions decisions or less. The bop parameter max_number_of_explored_assignments_per_try_in_ls can be used to specify the number of new assignments to iterate on each time the method Optimize() is called. Limiting that parameter allows to reduce the time spent in the Optimize() method at once, and still explore all the reachable assignments (if Optimize() is called enough times). </p><dl class="section note"><dt>Note</dt><dd>due to propagation, the number of variables with a different value in the new solution can be greater than max_num_decisions. </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="bop__ls_8h_source.html#l00129">129</a> of file <a class="el" href="bop__ls_8h_source.html">bop_ls.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="bop__ls_8h_source.html">bop_ls.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for operations_research::bop::LocalSearchOptimizer:</div>
@@ -138,11 +143,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:ae475ce351666afe2ad29ea9b38d14b61 inherit pro_attribs_classoperations__research_1_1bop_1_1BopOptimizerBase" id="r_ae475ce351666afe2ad29ea9b38d14b61"><td class="memItemLeft" align="right" valign="top">const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1bop_1_1BopOptimizerBase.html#ae475ce351666afe2ad29ea9b38d14b61">name_</a></td></tr>
 <tr class="memitem:a2525e54b69557ddaab4035c4a70f3c94 inherit pro_attribs_classoperations__research_1_1bop_1_1BopOptimizerBase" id="r_a2525e54b69557ddaab4035c4a70f3c94"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoperations__research_1_1StatsGroup.html">StatsGroup</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1bop_1_1BopOptimizerBase.html#a2525e54b69557ddaab4035c4a70f3c94">stats_</a></td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This class defines a Local <a class="el" href="classoperations__research_1_1Search.html" title="---------------— Search class --------------—">Search</a> optimizer. The goal is to find a new solution with a better cost than the given solution by iterating on all assignments that can be reached in max_num_decisions decisions or less. The bop parameter max_number_of_explored_assignments_per_try_in_ls can be used to specify the number of new assignments to iterate on each time the method Optimize() is called. Limiting that parameter allows to reduce the time spent in the Optimize() method at once, and still explore all the reachable assignments (if Optimize() is called enough times). </p><dl class="section note"><dt>Note</dt><dd>due to propagation, the number of variables with a different value in the new solution can be greater than max_num_decisions. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="bop__ls_8h_source.html#l00129">129</a> of file <a class="el" href="bop__ls_8h_source.html">bop_ls.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a7236d6b4916a9e4f6f35b4ad614c03e2" name="a7236d6b4916a9e4f6f35b4ad614c03e2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7236d6b4916a9e4f6f35b4ad614c03e2">&#9670;&#160;</a></span>LocalSearchOptimizer()</h2>
 

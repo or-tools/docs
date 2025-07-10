@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,13 @@ $(function(){initNavTree('classoperations__research_1_1math__opt_1_1AttrStorage.
   <div class="headertitle"><div class="title">operations_research::math_opt::AttrStorage&lt; V, n, Symmetry &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename V, int n, typename Symmetry&gt;<br />
+class operations_research::math_opt::AttrStorage&lt; V, n, Symmetry &gt;</div><p>Stores the value of an attribute keyed on n elements (e.g. linear_constraint_coefficient is a double valued attribute keyed first on <a class="el" href="classoperations__research_1_1math__opt_1_1LinearConstraint.html">LinearConstraint</a> and then on <a class="el" href="classoperations__research_1_1math__opt_1_1Variable.html">Variable</a>).</p>
+<p>Memory usage: Storing <span class="tt">k</span> elements with non-default values in a <span class="tt"><a class="el" href="classoperations__research_1_1math__opt_1_1AttrStorage.html">AttrStorage</a>&lt;V, n&gt;</span> uses <span class="tt">sizeof(V) * (n^2 + 1) * k / load_factor</span> (where load_factor is the absl hash map load factor, typically 0.8), plus a small allocation overhead of <span class="tt">O(k)</span>. </p>
 
+<p class="definition">Definition at line <a class="el" href="attr__storage_8h_source.html#l00299">299</a> of file <a class="el" href="attr__storage_8h_source.html">attr_storage.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="attr__storage_8h_source.html">attr_storage.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-types" class="groupheader"><a id="pub-types" name="pub-types"></a>
@@ -127,13 +134,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af1fe5e59f1a25a9ed264c9976383e137" id="r_af1fe5e59f1a25a9ed264c9976383e137"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af1fe5e59f1a25a9ed264c9976383e137">Clear</a> ()</td></tr>
 <tr class="memdesc:af1fe5e59f1a25a9ed264c9976383e137"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restore all elements to their default value for this attribute.  <br /></td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;typename V, int n, typename Symmetry&gt;<br />
-class operations_research::math_opt::AttrStorage&lt; V, n, Symmetry &gt;</div><p>Stores the value of an attribute keyed on n elements (e.g. linear_constraint_coefficient is a double valued attribute keyed first on <a class="el" href="classoperations__research_1_1math__opt_1_1LinearConstraint.html">LinearConstraint</a> and then on <a class="el" href="classoperations__research_1_1math__opt_1_1Variable.html">Variable</a>).</p>
-<p>Memory usage: Storing <span class="tt">k</span> elements with non-default values in a <span class="tt"><a class="el" href="classoperations__research_1_1math__opt_1_1AttrStorage.html">AttrStorage</a>&lt;V, n&gt;</span> uses <span class="tt">sizeof(V) * (n^2 + 1) * k / load_factor</span> (where load_factor is the absl hash map load factor, typically 0.8), plus a small allocation overhead of <span class="tt">O(k)</span>. </p>
-
-<p class="definition">Definition at line <a class="el" href="attr__storage_8h_source.html#l00299">299</a> of file <a class="el" href="attr__storage_8h_source.html">attr_storage.h</a>.</p>
-</div><a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Member Typedef Documentation</h2>
+<a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Member Typedef Documentation</h2>
 <a id="a5783d2e84ac24af847f6a74cf26a58a6" name="a5783d2e84ac24af847f6a74cf26a58a6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5783d2e84ac24af847f6a74cf26a58a6">&#9670;&#160;</a></span>Key</h2>
 

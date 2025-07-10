@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,30 @@ $(function(){initNavTree('classortools_1_1math__opt_1_1python_1_1variables_1_1Va
   <div class="headertitle"><div class="title">ortools.math_opt.python.variables.Variable Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="dynheader">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><pre class="fragment">A decision variable for an optimization model.
+
+A decision variable takes a value from a domain, either the real numbers or
+the integers, and restricted to be in some interval [lb, ub] (where lb and ub
+can be infinite). The case of lb == ub is allowed, this means the variable
+must take a single value. The case of lb &gt; ub is also allowed, this implies
+that the problem is infeasible.
+
+A Variable is configured as follows:
+  * lower_bound: a float property, lb above. Should not be NaN nor +inf.
+  * upper_bound: a float property, ub above. Should not be NaN nor -inf.
+  * integer: a bool property, if the domain is integer or continuous.
+
+The name is optional, read only, and used only for debugging. Non-empty names
+should be distinct.
+
+Every Variable is associated with a Model (defined below). Note that data
+describing the variable (e.g. lower_bound) is owned by Model.storage, this
+class is simply a reference to that data. Do not create a Variable directly,
+use Model.add_variable() instead.
+</pre> 
+<p class="definition">Definition at line <a class="el" href="variables_8py_source.html#l00608">608</a> of file <a class="el" href="variables_8py_source.html">variables.py</a>.</p>
+</div><div class="dynheader">
 Inheritance diagram for ortools.math_opt.python.variables.Variable:</div>
 <div class="dyncontent">
  <div class="center">
@@ -165,30 +189,7 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:afb6e4931430fea5bcd5d0a03b2da734e" id="r_afb6e4931430fea5bcd5d0a03b2da734e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classortools_1_1math__opt_1_1python_1_1elemental_1_1elemental_1_1Elemental.html">elemental.Elemental</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afb6e4931430fea5bcd5d0a03b2da734e">_elemental</a> = elem</td></tr>
 <tr class="memitem:a6e11868737b6fe184b0ac19d94aee988" id="r_a6e11868737b6fe184b0ac19d94aee988"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6e11868737b6fe184b0ac19d94aee988">_id</a> = vid</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><pre class="fragment">A decision variable for an optimization model.
-
-A decision variable takes a value from a domain, either the real numbers or
-the integers, and restricted to be in some interval [lb, ub] (where lb and ub
-can be infinite). The case of lb == ub is allowed, this means the variable
-must take a single value. The case of lb &gt; ub is also allowed, this implies
-that the problem is infeasible.
-
-A Variable is configured as follows:
-  * lower_bound: a float property, lb above. Should not be NaN nor +inf.
-  * upper_bound: a float property, ub above. Should not be NaN nor -inf.
-  * integer: a bool property, if the domain is integer or continuous.
-
-The name is optional, read only, and used only for debugging. Non-empty names
-should be distinct.
-
-Every Variable is associated with a Model (defined below). Note that data
-describing the variable (e.g. lower_bound) is owned by Model.storage, this
-class is simply a reference to that data. Do not create a Variable directly,
-use Model.add_variable() instead.
-</pre> 
-<p class="definition">Definition at line <a class="el" href="variables_8py_source.html#l00608">608</a> of file <a class="el" href="variables_8py_source.html">variables.py</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa93a3245ce0a33be4f9e14383d4cc0fd" name="aa93a3245ce0a33be4f9e14383d4cc0fd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa93a3245ce0a33be4f9e14383d4cc0fd">&#9670;&#160;</a></span>__init__()</h2>
 

@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,13 @@ $(function(){initNavTree('classoperations__research_1_1PriorityQueueWithRestrict
   <div class="headertitle"><div class="title">operations_research::PriorityQueueWithRestrictedPush&lt; Element, IntegerPriority &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename Element, typename IntegerPriority&gt;<br />
+class operations_research::PriorityQueueWithRestrictedPush&lt; Element, IntegerPriority &gt;</div><p>Specific but efficient priority queue implementation. The priority type must be an integer. The queue allows to retrieve the element with highest priority but only allows pushes with a priority greater or equal to the highest priority in the queue minus one. All operations are in O(1) and the memory is in O(num elements in the queue). Elements with the same priority are retrieved with LIFO order.</p>
+<p>Note(user): As far as I know, this is an original idea and is the only code that use this in the Maximum Flow context. Papers usually refer to an height-indexed array of simple linked lists of active node with the same height. Even worse, sometimes they use double-linked list to allow arbitrary height update in order to detect missing height (used for the Gap heuristic). But this can actually be implemented a lot more efficiently by just maintaining the height distribution of all the node in the graph. </p>
 
+<p class="definition">Definition at line <a class="el" href="generic__max__flow_8h_source.html#l00157">157</a> of file <a class="el" href="generic__max__flow_8h_source.html">generic_max_flow.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="generic__max__flow_8h_source.html">generic_max_flow.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -111,13 +118,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2662f061f688af21e19f3ac53027ed4b" id="r_a2662f061f688af21e19f3ac53027ed4b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2662f061f688af21e19f3ac53027ed4b">Push</a> (Element element, IntegerPriority priority)</td></tr>
 <tr class="memitem:a9597013d76010425ffc592a32ff4f259" id="r_a9597013d76010425ffc592a32ff4f259"><td class="memItemLeft" align="right" valign="top">Element&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9597013d76010425ffc592a32ff4f259">Pop</a> ()</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;typename Element, typename IntegerPriority&gt;<br />
-class operations_research::PriorityQueueWithRestrictedPush&lt; Element, IntegerPriority &gt;</div><p>Specific but efficient priority queue implementation. The priority type must be an integer. The queue allows to retrieve the element with highest priority but only allows pushes with a priority greater or equal to the highest priority in the queue minus one. All operations are in O(1) and the memory is in O(num elements in the queue). Elements with the same priority are retrieved with LIFO order.</p>
-<p>Note(user): As far as I know, this is an original idea and is the only code that use this in the Maximum Flow context. Papers usually refer to an height-indexed array of simple linked lists of active node with the same height. Even worse, sometimes they use double-linked list to allow arbitrary height update in order to detect missing height (used for the Gap heuristic). But this can actually be implemented a lot more efficiently by just maintaining the height distribution of all the node in the graph. </p>
-
-<p class="definition">Definition at line <a class="el" href="generic__max__flow_8h_source.html#l00157">157</a> of file <a class="el" href="generic__max__flow_8h_source.html">generic_max_flow.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab5a37cc35af8067c734810424d4f395d" name="ab5a37cc35af8067c734810424d4f395d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab5a37cc35af8067c734810424d4f395d">&#9670;&#160;</a></span>PriorityQueueWithRestrictedPush() <span class="overload">[1/2]</span></h2>
 

@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,16 @@ $(function(){initNavTree('classoperations__research_1_1PathOperator.html','','cl
   <div class="headertitle"><div class="title">operations_research::PathOperator&lt; ignore_path_vars &gt; Class Template Reference<span class="mlabels"><span class="mlabel abstract">abstract</span></span></div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;bool ignore_path_vars&gt;<br />
+class operations_research::PathOperator&lt; ignore_path_vars &gt;</div><p>Base class of the local search operators dedicated to path modifications (a path is a set of nodes linked together by arcs). This family of neighborhoods supposes they are handling next variables representing the arcs (var[i] represents the node immediately after i on a path). Several services are provided:</p><ul>
+<li>arc manipulators (<a class="el" href="#a5ce3b4a4db63af2dcb76f05527809214" title="Sets &#39;to&#39; to be the node after &#39;from&#39; on the given path.">SetNext()</a>, <a class="el" href="#ad08fa7c543b7aa89718b8d4cf81b42bc">ReverseChain()</a>, <a class="el" href="#a96bfeac5b78dff5785e998ab243ddc97">MoveChain()</a>)</li>
+<li>path inspectors (<a class="el" href="one__tree__lower__bound_8h.html#a3947d19ac087ef2cd68c2409920339c4">Next()</a>, <a class="el" href="#a3c3e123badbfbaa4cfcb654a5d593dd8" title="Returns the node before node in the current delta.">Prev()</a>, <a class="el" href="#a9a34bd5c4615bc563c8f545b541b8eb5">IsPathEnd()</a>)</li>
+<li>path iterators: operators need a given number of nodes to define a neighbor; this class provides the iteration on a given number of (base) nodes which can be used to define a neighbor (through the BaseNode method) Subclasses only need to override MakeNeighbor to create neighbors using the services above (no direct manipulation of assignments). </li>
+</ul>
 
+<p class="definition">Definition at line <a class="el" href="constraint__solveri_8h_source.html#l01531">1531</a> of file <a class="el" href="constraint__solveri_8h_source.html">constraint_solveri.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="constraint__solveri_8h_source.html">constraint_solveri.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for operations_research::PathOperator&lt; ignore_path_vars &gt;:</div>
@@ -274,16 +284,7 @@ Friends</h2></td></tr>
 <tr class="memitem:a41361630d9a46b0af248dad388e722b2" id="r_a41361630d9a46b0af248dad388e722b2"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a41361630d9a46b0af248dad388e722b2">AlternativeNodeIterator</a></td></tr>
 <tr class="memitem:a3a14b6c52eccad32d74c5cdcf85e8be6" id="r_a3a14b6c52eccad32d74c5cdcf85e8be6"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3a14b6c52eccad32d74c5cdcf85e8be6">NodeNeighborIterator</a></td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;bool ignore_path_vars&gt;<br />
-class operations_research::PathOperator&lt; ignore_path_vars &gt;</div><p>Base class of the local search operators dedicated to path modifications (a path is a set of nodes linked together by arcs). This family of neighborhoods supposes they are handling next variables representing the arcs (var[i] represents the node immediately after i on a path). Several services are provided:</p><ul>
-<li>arc manipulators (<a class="el" href="#a5ce3b4a4db63af2dcb76f05527809214" title="Sets &#39;to&#39; to be the node after &#39;from&#39; on the given path.">SetNext()</a>, <a class="el" href="#ad08fa7c543b7aa89718b8d4cf81b42bc">ReverseChain()</a>, <a class="el" href="#a96bfeac5b78dff5785e998ab243ddc97">MoveChain()</a>)</li>
-<li>path inspectors (<a class="el" href="one__tree__lower__bound_8h.html#a3947d19ac087ef2cd68c2409920339c4">Next()</a>, <a class="el" href="#a3c3e123badbfbaa4cfcb654a5d593dd8" title="Returns the node before node in the current delta.">Prev()</a>, <a class="el" href="#a9a34bd5c4615bc563c8f545b541b8eb5">IsPathEnd()</a>)</li>
-<li>path iterators: operators need a given number of nodes to define a neighbor; this class provides the iteration on a given number of (base) nodes which can be used to define a neighbor (through the BaseNode method) Subclasses only need to override MakeNeighbor to create neighbors using the services above (no direct manipulation of assignments). </li>
-</ul>
-
-<p class="definition">Definition at line <a class="el" href="constraint__solveri_8h_source.html#l01531">1531</a> of file <a class="el" href="constraint__solveri_8h_source.html">constraint_solveri.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab88fd5de96f82d3d232c08d7abe03539" name="ab88fd5de96f82d3d232c08d7abe03539"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab88fd5de96f82d3d232c08d7abe03539">&#9670;&#160;</a></span>PathOperator() <span class="overload">[1/2]</span></h2>
 
@@ -1505,7 +1506,7 @@ template&lt;bool ignore_path_vars&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns true if a base node has to be on the same path as the "previous" base node (base node of index base_index - 1). Useful to limit neighborhood exploration to nodes on the same path. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000138">Todo</a></b></dt><dd>(user): ideally this should be OnSamePath(int64_t node1, int64_t
+<p>Returns true if a base node has to be on the same path as the "previous" base node (base node of index base_index - 1). Useful to limit neighborhood exploration to nodes on the same path. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000137">Todo</a></b></dt><dd>(user): ideally this should be OnSamePath(int64_t node1, int64_t
 node2); it's currently way more complicated to implement. </dd></dl>
 
 <p>Reimplemented in <a class="el" href="classoperations__research_1_1ExchangeAndMakeActiveOperator.html#a9313ce010ae35655a021d24c98c19c47">operations_research::ExchangeAndMakeActiveOperator&lt; ignore_path_vars &gt;</a>, <a class="el" href="classoperations__research_1_1MakeChainInactiveOperator.html#a02f9b990510895583a84dae3d0f59f70">operations_research::MakeChainInactiveOperator&lt; ignore_path_vars &gt;</a>, <a class="el" href="classoperations__research_1_1MakePairActiveOperator.html#a2e6ae497966360f269cb1d63edd14d8b">operations_research::MakePairActiveOperator&lt; ignore_path_vars &gt;</a>, <a class="el" href="classoperations__research_1_1PairExchangeRelocateOperator.html#a9ef358e8905d1bc2aaa0a476ca3234ec">operations_research::PairExchangeRelocateOperator&lt; ignore_path_vars &gt;</a>, <a class="el" href="classoperations__research_1_1PairNodeSwapActiveOperator.html#ae5c6e1a67f5fa7e806f574fef4eb0f5e">operations_research::PairNodeSwapActiveOperator&lt; swap_first, ignore_path_vars &gt;</a>, <a class="el" href="classoperations__research_1_1PairRelocateOperator.html#a1844aeee11d260640288fc180f940876">operations_research::PairRelocateOperator&lt; ignore_path_vars &gt;</a>, <a class="el" href="classoperations__research_1_1Relocate.html#a4b92cc2961696a7f361b2dc1dce25ccf">operations_research::Relocate&lt; ignore_path_vars &gt;</a>, <a class="el" href="classoperations__research_1_1SwapActiveChainOperator.html#adbd1cd24cd88eba8722bdaead6de4458">operations_research::SwapActiveChainOperator&lt; ignore_path_vars &gt;</a>, <a class="el" href="classoperations__research_1_1TwoOpt.html#a0dbaf4421e3ced5107c318da66b6adca">operations_research::TwoOpt&lt; ignore_path_vars &gt;</a>, and <a class="el" href="classoperations__research_1_1TwoOptWithShortestPathOperator.html#a3d4af5568d57d629a5683b891b28ac6d">operations_research::TwoOptWithShortestPathOperator&lt; ignore_path_vars &gt;</a>.</p>
@@ -1812,7 +1813,7 @@ template&lt;bool ignore_path_vars&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>When the operator is being synchronized with a new solution (when <a class="el" href="classoperations__research_1_1IntVarLocalSearchOperator.html#a4beb156815d992fb35edbd9795d1d5c0">Start()</a> is called), returns true to restart the exploration of the neighborhood from the start of the last paths explored; returns false to restart the exploration at the last nodes visited. This is used to avoid restarting on base nodes which have changed paths, leading to potentially skipping neighbors. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000137">Todo</a></b></dt><dd>(user): remove this when automatic detection of such cases in done. </dd></dl>
+<p>When the operator is being synchronized with a new solution (when <a class="el" href="classoperations__research_1_1IntVarLocalSearchOperator.html#a4beb156815d992fb35edbd9795d1d5c0">Start()</a> is called), returns true to restart the exploration of the neighborhood from the start of the last paths explored; returns false to restart the exploration at the last nodes visited. This is used to avoid restarting on base nodes which have changed paths, leading to potentially skipping neighbors. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000136">Todo</a></b></dt><dd>(user): remove this when automatic detection of such cases in done. </dd></dl>
 
 <p>Reimplemented in <a class="el" href="classoperations__research_1_1MakePairActiveOperator.html#acd96a1978a1fb241014893900fc7adf5">operations_research::MakePairActiveOperator&lt; ignore_path_vars &gt;</a>, <a class="el" href="classoperations__research_1_1PairNodeSwapActiveOperator.html#a41e917eda168b99f64b426da0c7454d6">operations_research::PairNodeSwapActiveOperator&lt; swap_first, ignore_path_vars &gt;</a>, and <a class="el" href="classoperations__research_1_1TwoOptWithShortestPathOperator.html#a2ea25fe4fe9e995ac8ce58008f1e25c5">operations_research::TwoOptWithShortestPathOperator&lt; ignore_path_vars &gt;</a>.</p>
 
@@ -1953,7 +1954,7 @@ template&lt;bool ignore_path_vars&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000136">Todo</a></b></dt><dd>(user): Make the following methods protected. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000135">Todo</a></b></dt><dd>(user): Make the following methods protected. </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classoperations__research_1_1IntVarLocalSearchOperator.html#a1098504a1de97ab45c9b63740fb998f5">operations_research::IntVarLocalSearchOperator</a>.</p>
 

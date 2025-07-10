@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,12 @@ $(function(){initNavTree('classoperations__research_1_1sat_1_1ActivityBoundHelpe
   <div class="headertitle"><div class="title">operations_research::sat::ActivityBoundHelper Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Try to get more precise min/max activity of a linear constraints using at most ones from the model. This is heuristic based but should be relatively fast.</p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002212">Todo</a></b></dt><dd>(user): Use better algorithm. The problem is the same as finding upper bound to the classic problem: maximum-independent set in a graph. We also only use at most ones, but we could use the more general binary implication graph. </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="presolve__util_8h_source.html#l00220">220</a> of file <a class="el" href="presolve__util_8h_source.html">presolve_util.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="presolve__util_8h_source.html">presolve_util.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -103,11 +109,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac397a50c41675b3e5b4ca938e167e1b9" id="r_ac397a50c41675b3e5b4ca938e167e1b9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac397a50c41675b3e5b4ca938e167e1b9">ActivityBoundHelper</a> ()=default</td></tr>
 <tr class="memitem:a0479a3ccd9b93609871b72a28f0b0496" id="r_a0479a3ccd9b93609871b72a28f0b0496"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0479a3ccd9b93609871b72a28f0b0496">ClearAtMostOnes</a> ()</td></tr>
 <tr class="memitem:a90b3f1fb6f3eb25238908072ce9018a6" id="r_a90b3f1fb6f3eb25238908072ce9018a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a90b3f1fb6f3eb25238908072ce9018a6">AddAtMostOne</a> (absl::Span&lt; const int &gt; amo)</td></tr>
-<tr class="memitem:a0597d8e2ff729931de6b9e1e7df34298" id="r_a0597d8e2ff729931de6b9e1e7df34298"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0597d8e2ff729931de6b9e1e7df34298">AddAllAtMostOnes</a> (const CpModelProto &amp;proto)</td></tr>
+<tr class="memitem:a0597d8e2ff729931de6b9e1e7df34298" id="r_a0597d8e2ff729931de6b9e1e7df34298"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0597d8e2ff729931de6b9e1e7df34298">AddAllAtMostOnes</a> (const <a class="el" href="classoperations__research_1_1sat_1_1CpModelProto.html">CpModelProto</a> &amp;proto)</td></tr>
 <tr class="memitem:a7569741972c7325665407db889dc36af" id="r_a7569741972c7325665407db889dc36af"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7569741972c7325665407db889dc36af">ComputeMaxActivity</a> (absl::Span&lt; const std::pair&lt; int, int64_t &gt; &gt; terms, std::vector&lt; std::array&lt; int64_t, 2 &gt; &gt; *conditional=nullptr)</td></tr>
 <tr class="memitem:abf2d755f2c9cb18279897688370f7a7f" id="r_abf2d755f2c9cb18279897688370f7a7f"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abf2d755f2c9cb18279897688370f7a7f">ComputeMinActivity</a> (absl::Span&lt; const std::pair&lt; int, int64_t &gt; &gt; terms, std::vector&lt; std::array&lt; int64_t, 2 &gt; &gt; *conditional=nullptr)</td></tr>
-<tr class="memitem:ad71179e60a9659f4899d68ad8472b679" id="r_ad71179e60a9659f4899d68ad8472b679"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad71179e60a9659f4899d68ad8472b679">PresolveEnforcement</a> (absl::Span&lt; const int &gt; refs, ConstraintProto *ct, absl::flat_hash_set&lt; int &gt; *literals_at_true)</td></tr>
-<tr class="memitem:a981ddaa8e6b0fba03b9aab2b491cde43" id="r_a981ddaa8e6b0fba03b9aab2b491cde43"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a981ddaa8e6b0fba03b9aab2b491cde43">RemoveEnforcementThatMakesConstraintTrivial</a> (absl::Span&lt; const std::pair&lt; int, int64_t &gt; &gt; boolean_terms, const <a class="el" href="classoperations__research_1_1Domain.html">Domain</a> &amp;other_terms, const <a class="el" href="classoperations__research_1_1Domain.html">Domain</a> &amp;rhs, ConstraintProto *ct)</td></tr>
+<tr class="memitem:ad71179e60a9659f4899d68ad8472b679" id="r_ad71179e60a9659f4899d68ad8472b679"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad71179e60a9659f4899d68ad8472b679">PresolveEnforcement</a> (absl::Span&lt; const int &gt; refs, <a class="el" href="classoperations__research_1_1sat_1_1ConstraintProto.html">ConstraintProto</a> *ct, absl::flat_hash_set&lt; int &gt; *literals_at_true)</td></tr>
+<tr class="memitem:a981ddaa8e6b0fba03b9aab2b491cde43" id="r_a981ddaa8e6b0fba03b9aab2b491cde43"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a981ddaa8e6b0fba03b9aab2b491cde43">RemoveEnforcementThatMakesConstraintTrivial</a> (absl::Span&lt; const std::pair&lt; int, int64_t &gt; &gt; boolean_terms, const <a class="el" href="classoperations__research_1_1Domain.html">Domain</a> &amp;other_terms, const <a class="el" href="classoperations__research_1_1Domain.html">Domain</a> &amp;rhs, <a class="el" href="classoperations__research_1_1sat_1_1ConstraintProto.html">ConstraintProto</a> *ct)</td></tr>
 <tr class="memitem:accfcc79dedf0f11235975e95d8e9a263" id="r_accfcc79dedf0f11235975e95d8e9a263"><td class="memItemLeft" align="right" valign="top">std::vector&lt; absl::Span&lt; const int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#accfcc79dedf0f11235975e95d8e9a263">PartitionLiteralsIntoAmo</a> (absl::Span&lt; const int &gt; literals)</td></tr>
 <tr class="memdesc:accfcc79dedf0f11235975e95d8e9a263"><td class="mdescLeft">&#160;</td><td class="mdescRight">Similar algo as above for this simpler case.  <br /></td></tr>
 <tr class="memitem:aea0301f31120bf9d9b5ce799c2ef4983" id="r_aea0301f31120bf9d9b5ce799c2ef4983"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aea0301f31120bf9d9b5ce799c2ef4983">IsAmo</a> (absl::Span&lt; const int &gt; literals)</td></tr>
@@ -115,12 +121,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afb2ab68ef37bce5ef7b4669909ae29c3" id="r_afb2ab68ef37bce5ef7b4669909ae29c3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afb2ab68ef37bce5ef7b4669909ae29c3">NumAmoForVariable</a> (int var) const</td></tr>
 <tr class="memdesc:afb2ab68ef37bce5ef7b4669909ae29c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns in how many amo var or Not(var) are part of.  <br /></td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Try to get more precise min/max activity of a linear constraints using at most ones from the model. This is heuristic based but should be relatively fast.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002214">Todo</a></b></dt><dd>(user): Use better algorithm. The problem is the same as finding upper bound to the classic problem: maximum-independent set in a graph. We also only use at most ones, but we could use the more general binary implication graph. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="presolve__util_8h_source.html#l00220">220</a> of file <a class="el" href="presolve__util_8h_source.html">presolve_util.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ac397a50c41675b3e5b4ca938e167e1b9" name="ac397a50c41675b3e5b4ca938e167e1b9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac397a50c41675b3e5b4ca938e167e1b9">&#9670;&#160;</a></span>ActivityBoundHelper()</h2>
 
@@ -156,12 +157,12 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void operations_research::sat::ActivityBoundHelper::AddAllAtMostOnes </td>
           <td>(</td>
-          <td class="paramtype">const CpModelProto &amp;</td>          <td class="paramname"><span class="paramname"><em>proto</em></span></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1sat_1_1CpModelProto.html">CpModelProto</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>proto</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002208">Todo</a></b></dt><dd>(user): Add long ones first, or at least the ones of size 2 after. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002206">Todo</a></b></dt><dd>(user): Add long ones first, or at least the ones of size 2 after. </dd></dl>
 <p>a =&gt; b same as amo(a, not(b)).</p>
 
 <p class="definition">Definition at line <a class="el" href="presolve__util_8cc_source.html#l00283">283</a> of file <a class="el" href="presolve__util_8cc_source.html">presolve_util.cc</a>.</p>
@@ -235,11 +236,11 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Computes the max/min activity of a linear expression involving only Booleans.</p>
-<p>Accepts a list of (literal, coefficient). Note that all literal will be interpreted as referring to [0, 1] variables. We use the CpModelProto convention for negated literal index.</p>
+<p>Accepts a list of (literal, coefficient). Note that all literal will be interpreted as referring to [0, 1] variables. We use the <a class="el" href="classoperations__research_1_1sat_1_1CpModelProto.html">CpModelProto</a> convention for negated literal index.</p>
 <p>If conditional is not nullptr, then conditional[i][0/1] will give the max activity if the literal at position i is false/true. This can be used to fix variables or extract enforcement literal.</p>
 <p>Important: We shouldn't have duplicates or a lit and NegatedRef(lit) appearing both.</p>
 <dl class="section note"><dt>Note</dt><dd>the result of this function is not exact (it uses an heuristic to detect AMOs), but it does not depend on the order of the input terms, so passing an input in non-deterministic order is fine.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002217">Todo</a></b></dt><dd>(user): Indicate when the bounds are trivial (i.e. not intersection with any amo) so that we don't waste more time processing the result? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002215">Todo</a></b></dt><dd>(user): Indicate when the bounds are trivial (i.e. not intersection with any amo) so that we don't waste more time processing the result? </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="presolve__util_8h_source.html#l00251">251</a> of file <a class="el" href="presolve__util_8h_source.html">presolve_util.h</a>.</p>
 
@@ -365,7 +366,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">ConstraintProto *</td>          <td class="paramname"><span class="paramname"><em>ct</em></span>, </td>
+          <td class="paramtype"><a class="el" href="classoperations__research_1_1sat_1_1ConstraintProto.html">ConstraintProto</a> *</td>          <td class="paramname"><span class="paramname"><em>ct</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -377,7 +378,7 @@ Public Member Functions</h2></td></tr>
 <p>Computes relevant info to presolve a constraint with enforcement using at most one information.</p>
 <p>This returns false iff the enforcement list cannot be satisfied. It filters the enforcement list if some are consequences of other. It fills the given set with the literal that must be true due to the enforcement. Note that only literals or negated literal appearing in ref are filled. </p>
 <p>If a previous enforcement literal implies this one, we can skip it.</p>
-<p>Tricky: We need to do that before appending the amo containing ref in case an amo contains both ref and not(ref). </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002210">Todo</a></b></dt><dd>(user): Ideally these amo should not be added to this class. </dd></dl>
+<p>Tricky: We need to do that before appending the amo containing ref in case an amo contains both ref and not(ref). </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002208">Todo</a></b></dt><dd>(user): Ideally these amo should not be added to this class. </dd></dl>
 <p>If some other literal is at one in this amo, literal must be false, and so the constraint cannot be enforced.</p>
 <p>Keep this enforcement.</p>
 <p>Skip already fixed.</p>
@@ -411,7 +412,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">ConstraintProto *</td>          <td class="paramname"><span class="paramname"><em>ct</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="classoperations__research_1_1sat_1_1ConstraintProto.html">ConstraintProto</a> *</td>          <td class="paramname"><span class="paramname"><em>ct</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">

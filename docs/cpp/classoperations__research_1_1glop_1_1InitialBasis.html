@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,14 @@ $(function(){initNavTree('classoperations__research_1_1glop_1_1InitialBasis.html
   <div class="headertitle"><div class="title">operations_research::glop::InitialBasis Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This class implements two initial basis algorithms. The idea is to replace as much as possible the columns of B that correspond to fixed slack variables with some column of A in order to have more freedom in the values the basic variables can take.</p>
+<p>The first algorithm is Bixby's initial basis algorithm, described in the paper below. It considers the columns of A in a particular order (the ones with more freedom first) and adds the current column to the basis if it keeps B almost triangular and with coefficients close to 1.0 on the diagonal for good numerical stability.</p>
+<p>Robert E. Bixby, "Implementing the Simplex Method: The Initial Basis" ORSA Jounal on Computing, Vol. 4, No. 3, Summer 1992. <a href="http://joc.journal.informs.org/content/4/3/267.abstract">http://joc.journal.informs.org/content/4/3/267.abstract</a></p>
+<p>The second algorithm is is similar to the "advanced initial basis" that GLPK uses by default. It adds columns one by one to the basis B while keeping it triangular (not almost triangular as in Bixby's algorithm). The next column to add is chosen amongst the set of possible candidates using a heuristic similar to the one used by Bixby. </p>
 
+<p class="definition">Definition at line <a class="el" href="initial__basis_8h_source.html#l00046">46</a> of file <a class="el" href="initial__basis_8h_source.html">initial_basis.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="initial__basis_8h_source.html">initial_basis.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -112,14 +120,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab988e50b29549a062eb6eab9cbc9ad21" id="r_ab988e50b29549a062eb6eab9cbc9ad21"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab988e50b29549a062eb6eab9cbc9ad21">GetDualMarosBasis</a> (ColIndex num_cols, <a class="el" href="namespaceoperations__research_1_1glop.html#a0e49ecefcdcb381bc968c7c9941028b3">RowToColMapping</a> *basis)</td></tr>
 <tr class="memitem:ab36657014150c52290b09608ff3b18f6" id="r_ab36657014150c52290b09608ff3b18f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab36657014150c52290b09608ff3b18f6">ComputeCandidates</a> (ColIndex num_cols, std::vector&lt; ColIndex &gt; *candidates)</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This class implements two initial basis algorithms. The idea is to replace as much as possible the columns of B that correspond to fixed slack variables with some column of A in order to have more freedom in the values the basic variables can take.</p>
-<p>The first algorithm is Bixby's initial basis algorithm, described in the paper below. It considers the columns of A in a particular order (the ones with more freedom first) and adds the current column to the basis if it keeps B almost triangular and with coefficients close to 1.0 on the diagonal for good numerical stability.</p>
-<p>Robert E. Bixby, "Implementing the Simplex Method: The Initial Basis" ORSA Jounal on Computing, Vol. 4, No. 3, Summer 1992. <a href="http://joc.journal.informs.org/content/4/3/267.abstract">http://joc.journal.informs.org/content/4/3/267.abstract</a></p>
-<p>The second algorithm is is similar to the "advanced initial basis" that GLPK uses by default. It adds columns one by one to the basis B while keeping it triangular (not almost triangular as in Bixby's algorithm). The next column to add is chosen amongst the set of possible candidates using a heuristic similar to the one used by Bixby. </p>
-
-<p class="definition">Definition at line <a class="el" href="initial__basis_8h_source.html#l00046">46</a> of file <a class="el" href="initial__basis_8h_source.html">initial_basis.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a14bfce5e4abf5a2d736ad005d8be0892" name="a14bfce5e4abf5a2d736ad005d8be0892"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a14bfce5e4abf5a2d736ad005d8be0892">&#9670;&#160;</a></span>InitialBasis() <span class="overload">[1/2]</span></h2>
 

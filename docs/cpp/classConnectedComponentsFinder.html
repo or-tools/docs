@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,16 @@ $(function(){initNavTree('classConnectedComponentsFinder.html','','classConnecte
   <div class="headertitle"><div class="title">ConnectedComponentsFinder&lt; T, CompareOrHashT, Eq &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename T, typename CompareOrHashT = std::less&lt;T&gt;, typename Eq = void&gt;<br />
+class ConnectedComponentsFinder&lt; T, CompareOrHashT, Eq &gt;</div><p>Usage: <a class="el" href="classConnectedComponentsFinder.html">ConnectedComponentsFinder&lt;MyNodeType&gt;</a> cc; cc.AddNode(node1); cc.AddNode(node2); cc.AddEdge(node1, node2); ... repeating, adding nodes and edges as needed. Adding an edge will automatically also add the two nodes at its ends, if they haven't already been added. vector&lt;set&lt;MyNodeType&gt; &gt; components; cc.FindConnectedComponents(&amp;components); Each entry in components now contains all the nodes in a single connected component.</p>
+<p>Protocol buffers can be used as the node type. Equality and hash functions for protocol buffers can be found in ortools/base/message_hasher.h.</p>
+<p>Usage with flat_hash_set: using ConnectedComponentType = flat_hash_set&lt;MyNodeType&gt;; <a class="el" href="classConnectedComponentsFinder.html">ConnectedComponentsFinder</a>&lt;ConnectedComponentType::key_type, ConnectedComponentType::hasher, ConnectedComponentType::key_equal&gt; cc; ... vector&lt;ConnectedComponentType&gt; components; cc.FindConnectedComponents(&amp;components);</p>
+<p>If you want to, you can continue adding nodes and edges after calling FindConnectedComponents, then call it again later.</p>
+<p>If your node type isn't STL-friendly, then you can use pointers to it instead: <a class="el" href="classConnectedComponentsFinder.html">ConnectedComponentsFinder&lt;MySTLUnfriendlyNodeType*&gt;</a> cc; cc.AddNode(&amp;node1); ... and so on... Of course, in this usage, the connected components finder retains these pointers through its lifetime (though it doesn't dereference them). </p>
 
+<p class="definition">Definition at line <a class="el" href="connected__components_8h_source.html#l00229">229</a> of file <a class="el" href="connected__components_8h_source.html">connected_components.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="connected__components_8h_source.html">connected_components.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-types" class="groupheader"><a id="pub-types" name="pub-types"></a>
@@ -117,16 +127,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4e4f01caf756feee13f6e3a9417e65f9" id="r_a4e4f01caf756feee13f6e3a9417e65f9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4e4f01caf756feee13f6e3a9417e65f9">GetNumberOfComponents</a> () const</td></tr>
 <tr class="memitem:a774e9aac184e881558692130f447b4d7" id="r_a774e9aac184e881558692130f447b4d7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a774e9aac184e881558692130f447b4d7">GetNumberOfNodes</a> () const</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;typename T, typename CompareOrHashT = std::less&lt;T&gt;, typename Eq = void&gt;<br />
-class ConnectedComponentsFinder&lt; T, CompareOrHashT, Eq &gt;</div><p>Usage: <a class="el" href="classConnectedComponentsFinder.html">ConnectedComponentsFinder&lt;MyNodeType&gt;</a> cc; cc.AddNode(node1); cc.AddNode(node2); cc.AddEdge(node1, node2); ... repeating, adding nodes and edges as needed. Adding an edge will automatically also add the two nodes at its ends, if they haven't already been added. vector&lt;set&lt;MyNodeType&gt; &gt; components; cc.FindConnectedComponents(&amp;components); Each entry in components now contains all the nodes in a single connected component.</p>
-<p>Protocol buffers can be used as the node type. Equality and hash functions for protocol buffers can be found in ortools/base/message_hasher.h.</p>
-<p>Usage with flat_hash_set: using ConnectedComponentType = flat_hash_set&lt;MyNodeType&gt;; <a class="el" href="classConnectedComponentsFinder.html">ConnectedComponentsFinder</a>&lt;ConnectedComponentType::key_type, ConnectedComponentType::hasher, ConnectedComponentType::key_equal&gt; cc; ... vector&lt;ConnectedComponentType&gt; components; cc.FindConnectedComponents(&amp;components);</p>
-<p>If you want to, you can continue adding nodes and edges after calling FindConnectedComponents, then call it again later.</p>
-<p>If your node type isn't STL-friendly, then you can use pointers to it instead: <a class="el" href="classConnectedComponentsFinder.html">ConnectedComponentsFinder&lt;MySTLUnfriendlyNodeType*&gt;</a> cc; cc.AddNode(&amp;node1); ... and so on... Of course, in this usage, the connected components finder retains these pointers through its lifetime (though it doesn't dereference them). </p>
-
-<p class="definition">Definition at line <a class="el" href="connected__components_8h_source.html#l00229">229</a> of file <a class="el" href="connected__components_8h_source.html">connected_components.h</a>.</p>
-</div><a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Member Typedef Documentation</h2>
+<a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Member Typedef Documentation</h2>
 <a id="a6cd32b6504f24cd6d026665a339178d8" name="a6cd32b6504f24cd6d026665a339178d8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6cd32b6504f24cd6d026665a339178d8">&#9670;&#160;</a></span>Set</h2>
 

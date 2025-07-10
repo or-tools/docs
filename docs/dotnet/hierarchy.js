@@ -70,6 +70,7 @@ var hierarchy =
       [ "Google.OrTools.PDLP.TerminationCriteria.Types.DetailedOptimalityCriteria", "classGoogle_1_1OrTools_1_1PDLP_1_1TerminationCriteria_1_1Types_1_1DetailedOptimalityCriteria.html", null ],
       [ "Google.OrTools.PDLP.TerminationCriteria.Types.SimpleOptimalityCriteria", "classGoogle_1_1OrTools_1_1PDLP_1_1TerminationCriteria_1_1Types_1_1SimpleOptimalityCriteria.html", null ],
       [ "Google.OrTools.Sat.AllDifferentConstraintProto", "classGoogle_1_1OrTools_1_1Sat_1_1AllDifferentConstraintProto.html", null ],
+      [ "Google.OrTools.Sat.ArcLpValue", "classGoogle_1_1OrTools_1_1Sat_1_1ArcLpValue.html", null ],
       [ "Google.OrTools.Sat.AutomatonConstraintProto", "classGoogle_1_1OrTools_1_1Sat_1_1AutomatonConstraintProto.html", null ],
       [ "Google.OrTools.Sat.BoolArgumentProto", "classGoogle_1_1OrTools_1_1Sat_1_1BoolArgumentProto.html", null ],
       [ "Google.OrTools.Sat.BooleanAssignment", "classGoogle_1_1OrTools_1_1Sat_1_1BooleanAssignment.html", null ],
@@ -101,6 +102,7 @@ var hierarchy =
       [ "Google.OrTools.Sat.ReservoirConstraintProto", "classGoogle_1_1OrTools_1_1Sat_1_1ReservoirConstraintProto.html", null ],
       [ "Google.OrTools.Sat.RoutesConstraintProto", "classGoogle_1_1OrTools_1_1Sat_1_1RoutesConstraintProto.html", null ],
       [ "Google.OrTools.Sat.RoutesConstraintProto.Types.NodeExpressions", "classGoogle_1_1OrTools_1_1Sat_1_1RoutesConstraintProto_1_1Types_1_1NodeExpressions.html", null ],
+      [ "Google.OrTools.Sat.RoutesSupportGraphProto", "classGoogle_1_1OrTools_1_1Sat_1_1RoutesSupportGraphProto.html", null ],
       [ "Google.OrTools.Sat.SatParameters", "classGoogle_1_1OrTools_1_1Sat_1_1SatParameters.html", null ],
       [ "Google.OrTools.Sat.SparsePermutationProto", "classGoogle_1_1OrTools_1_1Sat_1_1SparsePermutationProto.html", null ],
       [ "Google.OrTools.Sat.SymmetryProto", "classGoogle_1_1OrTools_1_1Sat_1_1SymmetryProto.html", null ],
@@ -125,9 +127,7 @@ var hierarchy =
       [ "OperationsResearch.MPSosConstraint", "classOperationsResearch_1_1MPSosConstraint.html", null ],
       [ "OperationsResearch.MPVariableProto", "classOperationsResearch_1_1MPVariableProto.html", null ],
       [ "OperationsResearch.OptionalDouble", "classOperationsResearch_1_1OptionalDouble.html", null ],
-      [ "OperationsResearch.PartialVariableAssignment", "classOperationsResearch_1_1PartialVariableAssignment.html", null ],
-      [ "OperationsResearch.Sat.ArcLpValue", "classOperationsResearch_1_1Sat_1_1ArcLpValue.html", null ],
-      [ "OperationsResearch.Sat.RoutesSupportGraphProto", "classOperationsResearch_1_1Sat_1_1RoutesSupportGraphProto.html", null ]
+      [ "OperationsResearch.PartialVariableAssignment", "classOperationsResearch_1_1PartialVariableAssignment.html", null ]
     ] ],
     [ "Google.OrTools.ConstraintSolver.IConstraintWithStatus", "interfaceGoogle_1_1OrTools_1_1ConstraintSolver_1_1IConstraintWithStatus.html", [
       [ "Google.OrTools.ConstraintSolver.BaseEquality", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1BaseEquality.html", [
@@ -335,6 +335,7 @@ var hierarchy =
       [ "Google.OrTools.PDLP.TerminationCriteria.Types.DetailedOptimalityCriteria", "classGoogle_1_1OrTools_1_1PDLP_1_1TerminationCriteria_1_1Types_1_1DetailedOptimalityCriteria.html", null ],
       [ "Google.OrTools.PDLP.TerminationCriteria.Types.SimpleOptimalityCriteria", "classGoogle_1_1OrTools_1_1PDLP_1_1TerminationCriteria_1_1Types_1_1SimpleOptimalityCriteria.html", null ],
       [ "Google.OrTools.Sat.AllDifferentConstraintProto", "classGoogle_1_1OrTools_1_1Sat_1_1AllDifferentConstraintProto.html", null ],
+      [ "Google.OrTools.Sat.ArcLpValue", "classGoogle_1_1OrTools_1_1Sat_1_1ArcLpValue.html", null ],
       [ "Google.OrTools.Sat.AutomatonConstraintProto", "classGoogle_1_1OrTools_1_1Sat_1_1AutomatonConstraintProto.html", null ],
       [ "Google.OrTools.Sat.BoolArgumentProto", "classGoogle_1_1OrTools_1_1Sat_1_1BoolArgumentProto.html", null ],
       [ "Google.OrTools.Sat.BooleanAssignment", "classGoogle_1_1OrTools_1_1Sat_1_1BooleanAssignment.html", null ],
@@ -366,6 +367,7 @@ var hierarchy =
       [ "Google.OrTools.Sat.ReservoirConstraintProto", "classGoogle_1_1OrTools_1_1Sat_1_1ReservoirConstraintProto.html", null ],
       [ "Google.OrTools.Sat.RoutesConstraintProto", "classGoogle_1_1OrTools_1_1Sat_1_1RoutesConstraintProto.html", null ],
       [ "Google.OrTools.Sat.RoutesConstraintProto.Types.NodeExpressions", "classGoogle_1_1OrTools_1_1Sat_1_1RoutesConstraintProto_1_1Types_1_1NodeExpressions.html", null ],
+      [ "Google.OrTools.Sat.RoutesSupportGraphProto", "classGoogle_1_1OrTools_1_1Sat_1_1RoutesSupportGraphProto.html", null ],
       [ "Google.OrTools.Sat.SatParameters", "classGoogle_1_1OrTools_1_1Sat_1_1SatParameters.html", null ],
       [ "Google.OrTools.Sat.SparsePermutationProto", "classGoogle_1_1OrTools_1_1Sat_1_1SparsePermutationProto.html", null ],
       [ "Google.OrTools.Sat.SymmetryProto", "classGoogle_1_1OrTools_1_1Sat_1_1SymmetryProto.html", null ],
@@ -390,9 +392,7 @@ var hierarchy =
       [ "OperationsResearch.MPSosConstraint", "classOperationsResearch_1_1MPSosConstraint.html", null ],
       [ "OperationsResearch.MPVariableProto", "classOperationsResearch_1_1MPVariableProto.html", null ],
       [ "OperationsResearch.OptionalDouble", "classOperationsResearch_1_1OptionalDouble.html", null ],
-      [ "OperationsResearch.PartialVariableAssignment", "classOperationsResearch_1_1PartialVariableAssignment.html", null ],
-      [ "OperationsResearch.Sat.ArcLpValue", "classOperationsResearch_1_1Sat_1_1ArcLpValue.html", null ],
-      [ "OperationsResearch.Sat.RoutesSupportGraphProto", "classOperationsResearch_1_1Sat_1_1RoutesSupportGraphProto.html", null ]
+      [ "OperationsResearch.PartialVariableAssignment", "classOperationsResearch_1_1PartialVariableAssignment.html", null ]
     ] ],
     [ "Google.OrTools.Tests.InitTest", "classGoogle_1_1OrTools_1_1Tests_1_1InitTest.html", null ],
     [ "Google.OrTools.Util.Int128Reflection", "classGoogle_1_1OrTools_1_1Util_1_1Int128Reflection.html", null ],
@@ -452,7 +452,7 @@ var hierarchy =
     [ "Google.OrTools.Glop.ParametersReflection", "classGoogle_1_1OrTools_1_1Glop_1_1ParametersReflection.html", null ],
     [ "CreateSigningKey.Program", "classCreateSigningKey_1_1Program.html", null ],
     [ "Google.OrTools.ProtoHelper", "classGoogle_1_1OrTools_1_1ProtoHelper.html", null ],
-    [ "OperationsResearch.Sat.RoutesSupportGraphReflection", "classOperationsResearch_1_1Sat_1_1RoutesSupportGraphReflection.html", null ],
+    [ "Google.OrTools.Sat.RoutesSupportGraphReflection", "classGoogle_1_1OrTools_1_1Sat_1_1RoutesSupportGraphReflection.html", null ],
     [ "Google.OrTools.Tests.RoutingDimensionTest", "classGoogle_1_1OrTools_1_1Tests_1_1RoutingDimensionTest.html", null ],
     [ "Google.OrTools.ConstraintSolver.RoutingEnumsReflection", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingEnumsReflection.html", null ],
     [ "Google.OrTools.ConstraintSolver.RoutingIlsReflection", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingIlsReflection.html", null ],

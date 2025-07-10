@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,15 @@ $(function(){initNavTree('classoperations__research_1_1sat_1_1CpModelBuilder.htm
   <div class="headertitle"><div class="title">operations_research::sat::CpModelBuilder Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Wrapper class around the cp_model proto.</p>
+<p>This class provides two types of methods:</p><ul>
+<li>NewXXX to create integer, boolean, or interval variables.</li>
+<li>AddXXX to create new constraints and add them to the model. </li>
+</ul>
 
+<p class="definition">Definition at line <a class="el" href="cp__model_8h_source.html#l00735">735</a> of file <a class="el" href="cp__model_8h_source.html">cp_model.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="cp__model_8h_source.html">cp_model.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -214,13 +223,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:abae76add224e6dcdce78e0e4892a51d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the objective from the model.  <br /></td></tr>
 <tr class="memitem:a04980239b59aee70be7c7d8e5208a672" id="r_a04980239b59aee70be7c7d8e5208a672"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a04980239b59aee70be7c7d8e5208a672">HasObjective</a> () const</td></tr>
 <tr class="memdesc:a04980239b59aee70be7c7d8e5208a672"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the model contains an objective.  <br /></td></tr>
-<tr class="memitem:a4d0cfb231f4bed2420d0aff928f3a980" id="r_a4d0cfb231f4bed2420d0aff928f3a980"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4d0cfb231f4bed2420d0aff928f3a980">AddDecisionStrategy</a> (absl::Span&lt; const <a class="el" href="classoperations__research_1_1sat_1_1IntVar.html">IntVar</a> &gt; variables, DecisionStrategyProto::VariableSelectionStrategy var_strategy, DecisionStrategyProto::DomainReductionStrategy domain_strategy)</td></tr>
+<tr class="memitem:a4d0cfb231f4bed2420d0aff928f3a980" id="r_a4d0cfb231f4bed2420d0aff928f3a980"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4d0cfb231f4bed2420d0aff928f3a980">AddDecisionStrategy</a> (absl::Span&lt; const <a class="el" href="classoperations__research_1_1sat_1_1IntVar.html">IntVar</a> &gt; variables, <a class="el" href="namespaceoperations__research_1_1sat.html#ac0ca8810a97bcc1b3d45269a33fd4f0c">DecisionStrategyProto::VariableSelectionStrategy</a> var_strategy, <a class="el" href="namespaceoperations__research_1_1sat.html#a20ead57ac0739497ea66f0c21b23b529">DecisionStrategyProto::DomainReductionStrategy</a> domain_strategy)</td></tr>
 <tr class="memdesc:a4d0cfb231f4bed2420d0aff928f3a980"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a decision strategy on a list of integer variables.  <br /></td></tr>
-<tr class="memitem:a81d8ef14e29732b81f56778090bfa547" id="r_a81d8ef14e29732b81f56778090bfa547"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a81d8ef14e29732b81f56778090bfa547">AddDecisionStrategy</a> (absl::Span&lt; const <a class="el" href="classoperations__research_1_1sat_1_1BoolVar.html">BoolVar</a> &gt; variables, DecisionStrategyProto::VariableSelectionStrategy var_strategy, DecisionStrategyProto::DomainReductionStrategy domain_strategy)</td></tr>
+<tr class="memitem:a81d8ef14e29732b81f56778090bfa547" id="r_a81d8ef14e29732b81f56778090bfa547"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a81d8ef14e29732b81f56778090bfa547">AddDecisionStrategy</a> (absl::Span&lt; const <a class="el" href="classoperations__research_1_1sat_1_1BoolVar.html">BoolVar</a> &gt; variables, <a class="el" href="namespaceoperations__research_1_1sat.html#ac0ca8810a97bcc1b3d45269a33fd4f0c">DecisionStrategyProto::VariableSelectionStrategy</a> var_strategy, <a class="el" href="namespaceoperations__research_1_1sat.html#a20ead57ac0739497ea66f0c21b23b529">DecisionStrategyProto::DomainReductionStrategy</a> domain_strategy)</td></tr>
 <tr class="memdesc:a81d8ef14e29732b81f56778090bfa547"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a decision strategy on a list of integer variables.  <br /></td></tr>
-<tr class="memitem:a334c8ed9172455673a121ba8cdeba241" id="r_a334c8ed9172455673a121ba8cdeba241"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a334c8ed9172455673a121ba8cdeba241">AddDecisionStrategy</a> (absl::Span&lt; const <a class="el" href="classoperations__research_1_1sat_1_1LinearExpr.html">LinearExpr</a> &gt; expressions, DecisionStrategyProto::VariableSelectionStrategy var_strategy, DecisionStrategyProto::DomainReductionStrategy domain_strategy)</td></tr>
+<tr class="memitem:a334c8ed9172455673a121ba8cdeba241" id="r_a334c8ed9172455673a121ba8cdeba241"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a334c8ed9172455673a121ba8cdeba241">AddDecisionStrategy</a> (absl::Span&lt; const <a class="el" href="classoperations__research_1_1sat_1_1LinearExpr.html">LinearExpr</a> &gt; expressions, <a class="el" href="namespaceoperations__research_1_1sat.html#ac0ca8810a97bcc1b3d45269a33fd4f0c">DecisionStrategyProto::VariableSelectionStrategy</a> var_strategy, <a class="el" href="namespaceoperations__research_1_1sat.html#a20ead57ac0739497ea66f0c21b23b529">DecisionStrategyProto::DomainReductionStrategy</a> domain_strategy)</td></tr>
 <tr class="memdesc:a334c8ed9172455673a121ba8cdeba241"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a decision strategy on a list of affine expressions.  <br /></td></tr>
-<tr class="memitem:a3f58f75c5f4fa4ce51201905d32f3755" id="r_a3f58f75c5f4fa4ce51201905d32f3755"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3f58f75c5f4fa4ce51201905d32f3755">AddDecisionStrategy</a> (std::initializer_list&lt; <a class="el" href="classoperations__research_1_1sat_1_1LinearExpr.html">LinearExpr</a> &gt; expressions, DecisionStrategyProto::VariableSelectionStrategy var_strategy, DecisionStrategyProto::DomainReductionStrategy domain_strategy)</td></tr>
+<tr class="memitem:a3f58f75c5f4fa4ce51201905d32f3755" id="r_a3f58f75c5f4fa4ce51201905d32f3755"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3f58f75c5f4fa4ce51201905d32f3755">AddDecisionStrategy</a> (std::initializer_list&lt; <a class="el" href="classoperations__research_1_1sat_1_1LinearExpr.html">LinearExpr</a> &gt; expressions, <a class="el" href="namespaceoperations__research_1_1sat.html#ac0ca8810a97bcc1b3d45269a33fd4f0c">DecisionStrategyProto::VariableSelectionStrategy</a> var_strategy, <a class="el" href="namespaceoperations__research_1_1sat.html#a20ead57ac0739497ea66f0c21b23b529">DecisionStrategyProto::DomainReductionStrategy</a> domain_strategy)</td></tr>
 <tr class="memdesc:a3f58f75c5f4fa4ce51201905d32f3755"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a decision strategy on a list of affine expressions.  <br /></td></tr>
 <tr class="memitem:a5fd70c766cbe3e7108d078b026458254" id="r_a5fd70c766cbe3e7108d078b026458254"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5fd70c766cbe3e7108d078b026458254">AddHint</a> (<a class="el" href="classoperations__research_1_1sat_1_1IntVar.html">IntVar</a> var, int64_t value)</td></tr>
 <tr class="memdesc:a5fd70c766cbe3e7108d078b026458254"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds hinting to a variable.  <br /></td></tr>
@@ -234,9 +243,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ace58dcc6ff97332b755d5bcd8a2ae470"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds multiple literals to the model as assumptions.  <br /></td></tr>
 <tr class="memitem:a54fb435de25d2a0fb60e7e888e6d8236" id="r_a54fb435de25d2a0fb60e7e888e6d8236"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a54fb435de25d2a0fb60e7e888e6d8236">ClearAssumptions</a> ()</td></tr>
 <tr class="memdesc:a54fb435de25d2a0fb60e7e888e6d8236"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove all assumptions from the model.  <br /></td></tr>
-<tr class="memitem:a04e92dc3e485792085795d50069043b3" id="r_a04e92dc3e485792085795d50069043b3"><td class="memItemLeft" align="right" valign="top">const CpModelProto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a04e92dc3e485792085795d50069043b3">Build</a> () const</td></tr>
-<tr class="memitem:a8cfb5db92b6f50d36bac529d8784cfda" id="r_a8cfb5db92b6f50d36bac529d8784cfda"><td class="memItemLeft" align="right" valign="top">const CpModelProto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8cfb5db92b6f50d36bac529d8784cfda">Proto</a> () const</td></tr>
-<tr class="memitem:aa296a6c7a87617b290c79deea2554912" id="r_aa296a6c7a87617b290c79deea2554912"><td class="memItemLeft" align="right" valign="top">CpModelProto *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa296a6c7a87617b290c79deea2554912">MutableProto</a> ()</td></tr>
+<tr class="memitem:a04e92dc3e485792085795d50069043b3" id="r_a04e92dc3e485792085795d50069043b3"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classoperations__research_1_1sat_1_1CpModelProto.html">CpModelProto</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a04e92dc3e485792085795d50069043b3">Build</a> () const</td></tr>
+<tr class="memitem:a8cfb5db92b6f50d36bac529d8784cfda" id="r_a8cfb5db92b6f50d36bac529d8784cfda"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classoperations__research_1_1sat_1_1CpModelProto.html">CpModelProto</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8cfb5db92b6f50d36bac529d8784cfda">Proto</a> () const</td></tr>
+<tr class="memitem:aa296a6c7a87617b290c79deea2554912" id="r_aa296a6c7a87617b290c79deea2554912"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoperations__research_1_1sat_1_1CpModelProto.html">CpModelProto</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa296a6c7a87617b290c79deea2554912">MutableProto</a> ()</td></tr>
 <tr class="memitem:a6f5d12cc03f66e74893aa9ee8d558ed8" id="r_a6f5d12cc03f66e74893aa9ee8d558ed8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6f5d12cc03f66e74893aa9ee8d558ed8">ExportToFile</a> (absl::string_view filename) const</td></tr>
 <tr class="memdesc:a6f5d12cc03f66e74893aa9ee8d558ed8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Export the model to file.  <br /></td></tr>
 <tr class="memitem:a2752832df06c04468be9b3b45bedec83" id="r_a2752832df06c04468be9b3b45bedec83"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoperations__research_1_1sat_1_1CpModelBuilder.html">CpModelBuilder</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2752832df06c04468be9b3b45bedec83">Clone</a> () const</td></tr>
@@ -255,15 +264,7 @@ Friends</h2></td></tr>
 <tr class="memitem:afc7f9983234a41167299a74f07ec6622" id="r_afc7f9983234a41167299a74f07ec6622"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afc7f9983234a41167299a74f07ec6622">IntervalVar</a></td></tr>
 <tr class="memitem:a34419e55556ff4e92b447fe895bdb9c3" id="r_a34419e55556ff4e92b447fe895bdb9c3"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a34419e55556ff4e92b447fe895bdb9c3">IntVar</a></td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Wrapper class around the cp_model proto.</p>
-<p>This class provides two types of methods:</p><ul>
-<li>NewXXX to create integer, boolean, or interval variables.</li>
-<li>AddXXX to create new constraints and add them to the model. </li>
-</ul>
-
-<p class="definition">Definition at line <a class="el" href="cp__model_8h_source.html#l00735">735</a> of file <a class="el" href="cp__model_8h_source.html">cp_model.h</a>.</p>
-</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="ae08b68c98c92d1adb6e93b9d17211155" name="ae08b68c98c92d1adb6e93b9d17211155"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae08b68c98c92d1adb6e93b9d17211155">&#9670;&#160;</a></span>AddAbsEquality()</h2>
 
@@ -710,12 +711,12 @@ Friends</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">DecisionStrategyProto::VariableSelectionStrategy</td>          <td class="paramname"><span class="paramname"><em>var_strategy</em></span>, </td>
+          <td class="paramtype"><a class="el" href="namespaceoperations__research_1_1sat.html#ac0ca8810a97bcc1b3d45269a33fd4f0c">DecisionStrategyProto::VariableSelectionStrategy</a></td>          <td class="paramname"><span class="paramname"><em>var_strategy</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">DecisionStrategyProto::DomainReductionStrategy</td>          <td class="paramname"><span class="paramname"><em>domain_strategy</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="namespaceoperations__research_1_1sat.html#a20ead57ac0739497ea66f0c21b23b529">DecisionStrategyProto::DomainReductionStrategy</a></td>          <td class="paramname"><span class="paramname"><em>domain_strategy</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -740,12 +741,12 @@ Friends</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">DecisionStrategyProto::VariableSelectionStrategy</td>          <td class="paramname"><span class="paramname"><em>var_strategy</em></span>, </td>
+          <td class="paramtype"><a class="el" href="namespaceoperations__research_1_1sat.html#ac0ca8810a97bcc1b3d45269a33fd4f0c">DecisionStrategyProto::VariableSelectionStrategy</a></td>          <td class="paramname"><span class="paramname"><em>var_strategy</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">DecisionStrategyProto::DomainReductionStrategy</td>          <td class="paramname"><span class="paramname"><em>domain_strategy</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="namespaceoperations__research_1_1sat.html#a20ead57ac0739497ea66f0c21b23b529">DecisionStrategyProto::DomainReductionStrategy</a></td>          <td class="paramname"><span class="paramname"><em>domain_strategy</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -770,12 +771,12 @@ Friends</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">DecisionStrategyProto::VariableSelectionStrategy</td>          <td class="paramname"><span class="paramname"><em>var_strategy</em></span>, </td>
+          <td class="paramtype"><a class="el" href="namespaceoperations__research_1_1sat.html#ac0ca8810a97bcc1b3d45269a33fd4f0c">DecisionStrategyProto::VariableSelectionStrategy</a></td>          <td class="paramname"><span class="paramname"><em>var_strategy</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">DecisionStrategyProto::DomainReductionStrategy</td>          <td class="paramname"><span class="paramname"><em>domain_strategy</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="namespaceoperations__research_1_1sat.html#a20ead57ac0739497ea66f0c21b23b529">DecisionStrategyProto::DomainReductionStrategy</a></td>          <td class="paramname"><span class="paramname"><em>domain_strategy</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -800,12 +801,12 @@ Friends</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">DecisionStrategyProto::VariableSelectionStrategy</td>          <td class="paramname"><span class="paramname"><em>var_strategy</em></span>, </td>
+          <td class="paramtype"><a class="el" href="namespaceoperations__research_1_1sat.html#ac0ca8810a97bcc1b3d45269a33fd4f0c">DecisionStrategyProto::VariableSelectionStrategy</a></td>          <td class="paramname"><span class="paramname"><em>var_strategy</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">DecisionStrategyProto::DomainReductionStrategy</td>          <td class="paramname"><span class="paramname"><em>domain_strategy</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="namespaceoperations__research_1_1sat.html#a20ead57ac0739497ea66f0c21b23b529">DecisionStrategyProto::DomainReductionStrategy</a></td>          <td class="paramname"><span class="paramname"><em>domain_strategy</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1757,7 +1758,7 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const CpModelProto &amp; operations_research::sat::CpModelBuilder::Build </td>
+          <td class="memname">const <a class="el" href="classoperations__research_1_1sat_1_1CpModelProto.html">CpModelProto</a> &amp; operations_research::sat::CpModelBuilder::Build </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
@@ -2123,7 +2124,7 @@ value) which add a constraint, these functions modify directly the underlying va
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">CpModelProto * operations_research::sat::CpModelBuilder::MutableProto </td>
+          <td class="memname"><a class="el" href="classoperations__research_1_1sat_1_1CpModelProto.html">CpModelProto</a> * operations_research::sat::CpModelBuilder::MutableProto </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -2331,7 +2332,7 @@ value) which add a constraint, these functions modify directly the underlying va
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const CpModelProto &amp; operations_research::sat::CpModelBuilder::Proto </td>
+          <td class="memname">const <a class="el" href="classoperations__research_1_1sat_1_1CpModelProto.html">CpModelProto</a> &amp; operations_research::sat::CpModelBuilder::Proto </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>

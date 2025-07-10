@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,17 @@ $(function(){initNavTree('classoperations__research_1_1DenseIntDuplicateRemover.
   <div class="headertitle"><div class="title">operations_research::DenseIntDuplicateRemover Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This class offers an alternative to gtl::linked_hash_set&lt;&gt; which is:</p><ul>
+<li>stateless: it works directly on a vector&lt;int&gt; or any similar container, without storing extra data anywhere;</li>
+<li>faster when the number of unique values is 5K or above.</li>
+</ul>
+<p>The memory usage can be O(num_distinct_values) at any time if you use <a class="el" href="#a9f29a9570519df1b289448973c13abe7">AppendAndLazilyRemoveDuplicates()</a>. In fact, unit tests verify that the average number of elements kept is ≤ 1.5 * num_distinct_values, making it comparable to a flat_hash_set&lt;int&gt; (whose overhead factor is ~1.68).</p>
+<p>Usage pattern:</p>
+<p>///&lt; One instance of this can handle many sets on the same [0, n) domain. int N = 100'000; <a class="el" href="classoperations__research_1_1DenseIntDuplicateRemover.html">DenseIntDuplicateRemover</a> deduper(N); ///&lt; Uses N/8 bytes of memory. std::vector&lt;int&gt; values; ///&lt; Your container. Could be RepeatedField&lt;int&gt;. for (int x : ...) { deduper.AppendAndLazilyRemoveDuplicates(x, &amp;values); ///&lt; O(1) amortized. } deduper.RemoveDuplicates(&amp;values); ///&lt; O(values.size()) </p>
 
+<p class="definition">Definition at line <a class="el" href="duplicate__remover_8h_source.html#l00051">51</a> of file <a class="el" href="duplicate__remover_8h_source.html">duplicate_remover.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="duplicate__remover_8h_source.html">duplicate_remover.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -114,17 +125,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6045477b31e8d05d2df95b0c71c4adb0" id="r_a6045477b31e8d05d2df95b0c71c4adb0"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
 <tr class="memitem:a6045477b31e8d05d2df95b0c71c4adb0 template"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6045477b31e8d05d2df95b0c71c4adb0">Truncate</a> (size_t new_size, google::protobuf::RepeatedField&lt; int &gt; *container)</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This class offers an alternative to gtl::linked_hash_set&lt;&gt; which is:</p><ul>
-<li>stateless: it works directly on a vector&lt;int&gt; or any similar container, without storing extra data anywhere;</li>
-<li>faster when the number of unique values is 5K or above.</li>
-</ul>
-<p>The memory usage can be O(num_distinct_values) at any time if you use <a class="el" href="#a9f29a9570519df1b289448973c13abe7">AppendAndLazilyRemoveDuplicates()</a>. In fact, unit tests verify that the average number of elements kept is ≤ 1.5 * num_distinct_values, making it comparable to a flat_hash_set&lt;int&gt; (whose overhead factor is ~1.68).</p>
-<p>Usage pattern:</p>
-<p>///&lt; One instance of this can handle many sets on the same [0, n) domain. int N = 100'000; <a class="el" href="classoperations__research_1_1DenseIntDuplicateRemover.html">DenseIntDuplicateRemover</a> deduper(N); ///&lt; Uses N/8 bytes of memory. std::vector&lt;int&gt; values; ///&lt; Your container. Could be RepeatedField&lt;int&gt;. for (int x : ...) { deduper.AppendAndLazilyRemoveDuplicates(x, &amp;values); ///&lt; O(1) amortized. } deduper.RemoveDuplicates(&amp;values); ///&lt; O(values.size()) </p>
-
-<p class="definition">Definition at line <a class="el" href="duplicate__remover_8h_source.html#l00051">51</a> of file <a class="el" href="duplicate__remover_8h_source.html">duplicate_remover.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a45fcd2dfe605e8b13fa24008262214c9" name="a45fcd2dfe605e8b13fa24008262214c9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a45fcd2dfe605e8b13fa24008262214c9">&#9670;&#160;</a></span>DenseIntDuplicateRemover()</h2>
 

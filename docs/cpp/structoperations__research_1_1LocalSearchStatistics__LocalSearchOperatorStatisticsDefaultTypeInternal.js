@@ -1,0 +1,6 @@
+var structoperations__research_1_1LocalSearchStatistics__LocalSearchOperatorStatisticsDefaultTypeInternal =
+[
+    [ "LocalSearchStatistics_LocalSearchOperatorStatisticsDefaultTypeInternal", "structoperations__research_1_1LocalSearchStatistics__LocalSearchOperatorStatisticsDefaultTypeInternal.html#a25cc3e972bf655750f8863d7b2908b8b", null ],
+    [ "~LocalSearchStatistics_LocalSearchOperatorStatisticsDefaultTypeInternal", "structoperations__research_1_1LocalSearchStatistics__LocalSearchOperatorStatisticsDefaultTypeInternal.html#acb3cca96880ee1d9cd953321547489e1", null ],
+    [ "_instance", "structoperations__research_1_1LocalSearchStatistics__LocalSearchOperatorStatisticsDefaultTypeInternal.html#aa0c7101b6021ca90bca222704024428c", null ]
+];

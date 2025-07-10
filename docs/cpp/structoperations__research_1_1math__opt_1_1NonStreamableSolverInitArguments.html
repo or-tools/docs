@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,15 @@ $(function(){initNavTree('structoperations__research_1_1math__opt_1_1NonStreamab
   <div class="headertitle"><div class="title">operations_research::math_opt::NonStreamableSolverInitArguments Struct Reference<span class="mlabels"><span class="mlabel abstract">abstract</span></span></div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Interface for solver specific parameters used at the solver instantiation that can't be streamed (for example instances of C/C++ types that only exist in the process memory).</p>
+<p>Since implementations of this interface usually depend on solver specific C/C++ types, they are in a dedicated header in the solver library.</p>
+<p>This class is the interface shared by the parameters of each solver, users should instantiate the solver specific class below.</p>
+<p>To enable safe cast of a pointer to this interface, there is an ToNonStreamableXxxInitArguments() function for each solver. Only one of these function will return a non-null value, depending on the type of the implementation class.</p>
+<p>Implementation should use <a class="el" href="structoperations__research_1_1math__opt_1_1NonStreamableSolverInitArgumentsHelper.html">NonStreamableSolverInitArgumentsHelper</a> to automatically implements some methods. </p>
 
+<p class="definition">Definition at line <a class="el" href="non__streamable__solver__init__arguments_8h_source.html#l00048">48</a> of file <a class="el" href="non__streamable__solver__init__arguments_8h_source.html">non_streamable_solver_init_arguments.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="non__streamable__solver__init__arguments_8h_source.html">non_streamable_solver_init_arguments.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for operations_research::math_opt::NonStreamableSolverInitArguments:</div>
@@ -112,7 +121,7 @@ Inheritance diagram for operations_research::math_opt::NonStreamableSolverInitAr
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aafc92df6ac9eda26d5f64ddb9479ecdd" id="r_aafc92df6ac9eda26d5f64ddb9479ecdd"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aafc92df6ac9eda26d5f64ddb9479ecdd">~NonStreamableSolverInitArguments</a> ()=<a class="el" href="namespaceoperations__research_1_1math__opt.html#a31eab0685a86742ac6750e8e2812f0b0">default</a></td></tr>
-<tr class="memitem:aea446362d422a22d9343b8a28ddfa686" id="r_aea446362d422a22d9343b8a28ddfa686"><td class="memItemLeft" align="right" valign="top">virtual SolverTypeProto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aea446362d422a22d9343b8a28ddfa686">solver_type</a> () const =0</td></tr>
+<tr class="memitem:aea446362d422a22d9343b8a28ddfa686" id="r_aea446362d422a22d9343b8a28ddfa686"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceoperations__research_1_1math__opt.html#a679533aaa51454e793b9a41bab749cfc">SolverTypeProto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aea446362d422a22d9343b8a28ddfa686">solver_type</a> () const =0</td></tr>
 <tr class="memdesc:aea446362d422a22d9343b8a28ddfa686"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the type of solver that the implementation is for.  <br /></td></tr>
 <tr class="memitem:ad53ebfa898726060e0bc71d31e0b14e9" id="r_ad53ebfa898726060e0bc71d31e0b14e9"><td class="memItemLeft" align="right" valign="top">virtual const NonStreamableCpSatInitArguments *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad53ebfa898726060e0bc71d31e0b14e9">ToNonStreamableCpSatInitArguments</a> () const</td></tr>
 <tr class="memitem:af0c5dc73ee4033d20e8580e57cd0f937" id="r_af0c5dc73ee4033d20e8580e57cd0f937"><td class="memItemLeft" align="right" valign="top">virtual const NonStreamableGScipInitArguments *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af0c5dc73ee4033d20e8580e57cd0f937">ToNonStreamableGScipInitArguments</a> () const</td></tr>
@@ -122,15 +131,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac3964f338778e9d171d9257d9f766825" id="r_ac3964f338778e9d171d9257d9f766825"><td class="memItemLeft" align="right" valign="top">virtual const NonStreamablePdlpInitArguments *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac3964f338778e9d171d9257d9f766825">ToNonStreamablePdlpInitArguments</a> () const</td></tr>
 <tr class="memitem:aced325618d96f55a1d7f1ddbe3a8dba4" id="r_aced325618d96f55a1d7f1ddbe3a8dba4"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; const <a class="el" href="structoperations__research_1_1math__opt_1_1NonStreamableSolverInitArguments.html">NonStreamableSolverInitArguments</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aced325618d96f55a1d7f1ddbe3a8dba4">Clone</a> () const =0</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Interface for solver specific parameters used at the solver instantiation that can't be streamed (for example instances of C/C++ types that only exist in the process memory).</p>
-<p>Since implementations of this interface usually depend on solver specific C/C++ types, they are in a dedicated header in the solver library.</p>
-<p>This class is the interface shared by the parameters of each solver, users should instantiate the solver specific class below.</p>
-<p>To enable safe cast of a pointer to this interface, there is an ToNonStreamableXxxInitArguments() function for each solver. Only one of these function will return a non-null value, depending on the type of the implementation class.</p>
-<p>Implementation should use <a class="el" href="structoperations__research_1_1math__opt_1_1NonStreamableSolverInitArgumentsHelper.html">NonStreamableSolverInitArgumentsHelper</a> to automatically implements some methods. </p>
-
-<p class="definition">Definition at line <a class="el" href="non__streamable__solver__init__arguments_8h_source.html#l00048">48</a> of file <a class="el" href="non__streamable__solver__init__arguments_8h_source.html">non_streamable_solver_init_arguments.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aafc92df6ac9eda26d5f64ddb9479ecdd" name="aafc92df6ac9eda26d5f64ddb9479ecdd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aafc92df6ac9eda26d5f64ddb9479ecdd">&#9670;&#160;</a></span>~NonStreamableSolverInitArguments()</h2>
 
@@ -196,7 +197,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual SolverTypeProto operations_research::math_opt::NonStreamableSolverInitArguments::solver_type </td>
+          <td class="memname">virtual <a class="el" href="namespaceoperations__research_1_1math__opt.html#a679533aaa51454e793b9a41bab749cfc">SolverTypeProto</a> operations_research::math_opt::NonStreamableSolverInitArguments::solver_type </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>

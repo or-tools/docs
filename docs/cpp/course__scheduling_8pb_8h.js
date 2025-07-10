@@ -1,0 +1,36 @@
+var course__scheduling_8pb_8h =
+[
+    [ "TableStruct_ortools_2fscheduling_2fcourse_5fscheduling_2eproto", "structTableStruct__ortools__2fscheduling__2fcourse__5fscheduling__2eproto.html", "structTableStruct__ortools__2fscheduling__2fcourse__5fscheduling__2eproto" ],
+    [ "operations_research::Teacher", "classoperations__research_1_1Teacher.html", "classoperations__research_1_1Teacher" ],
+    [ "operations_research::StudentAssignment", "classoperations__research_1_1StudentAssignment.html", "classoperations__research_1_1StudentAssignment" ],
+    [ "operations_research::Student", "classoperations__research_1_1Student.html", "classoperations__research_1_1Student" ],
+    [ "operations_research::Room", "classoperations__research_1_1Room.html", "classoperations__research_1_1Room" ],
+    [ "operations_research::Course", "classoperations__research_1_1Course.html", "classoperations__research_1_1Course" ],
+    [ "operations_research::ClassAssignment", "classoperations__research_1_1ClassAssignment.html", "classoperations__research_1_1ClassAssignment" ],
+    [ "operations_research::CourseSchedulingResult", "classoperations__research_1_1CourseSchedulingResult.html", "classoperations__research_1_1CourseSchedulingResult" ],
+    [ "operations_research::CourseSchedulingModel", "classoperations__research_1_1CourseSchedulingModel.html", "classoperations__research_1_1CourseSchedulingModel" ],
+    [ "google::protobuf::is_proto_enum<::operations_research::CourseSchedulingResultStatus >", "structgoogle_1_1protobuf_1_1is__proto__enum_3_1_1operations__research_1_1CourseSchedulingResultStatus_01_4.html", null ],
+    [ "PROTOBUF_INTERNAL_EXPORT_ortools_2fscheduling_2fcourse_5fscheduling_2eproto", "course__scheduling_8pb_8h.html#a6138bdc0da16e32f4bfd376da93ffb9f", null ],
+    [ "operations_research::CourseSchedulingResultStatus", "namespaceoperations__research.html#af875c5f94469b32490172da94bd8ce15", [
+      [ "operations_research::COURSE_SCHEDULING_RESULT_STATUS_UNSPECIFIED", "namespaceoperations__research.html#af875c5f94469b32490172da94bd8ce15aed82f45e43c5ab32351cd7636dbd89a1", null ],
+      [ "operations_research::SOLVER_FEASIBLE", "namespaceoperations__research.html#af875c5f94469b32490172da94bd8ce15a05bb488cadab961a3c84dedbeb9c8830", null ],
+      [ "operations_research::SOLVER_OPTIMAL", "namespaceoperations__research.html#af875c5f94469b32490172da94bd8ce15a72ee480f5eedb81162d4b46076824feb", null ],
+      [ "operations_research::SOLVER_INFEASIBLE", "namespaceoperations__research.html#af875c5f94469b32490172da94bd8ce15abd72945b33ab16bcf480114683bc5230", null ],
+      [ "operations_research::SOLVER_MODEL_INVALID", "namespaceoperations__research.html#af875c5f94469b32490172da94bd8ce15a975295cd33881f013de8c420b1bbff64", null ],
+      [ "operations_research::SOLVER_NOT_SOLVED", "namespaceoperations__research.html#af875c5f94469b32490172da94bd8ce15a87f431bb41648deea20db67a953cc909", null ],
+      [ "operations_research::ABNORMAL", "namespaceoperations__research.html#af875c5f94469b32490172da94bd8ce15af90ab1bbe4e549adc67bbbe9265d94ac", null ],
+      [ "operations_research::CourseSchedulingResultStatus_INT_MIN_SENTINEL_DO_NOT_USE_", "namespaceoperations__research.html#af875c5f94469b32490172da94bd8ce15a6d6d997c1ca0a23805aedafae7daf136", null ],
+      [ "operations_research::CourseSchedulingResultStatus_INT_MAX_SENTINEL_DO_NOT_USE_", "namespaceoperations__research.html#af875c5f94469b32490172da94bd8ce15a6ee2b670aa7b541e21d0d641abcbb09d", null ]
+    ] ],
+    [ "operations_research::CourseSchedulingResultStatus_descriptor", "namespaceoperations__research.html#a1fe09a87dd9fba80a27a537bae1b55d4", null ],
+    [ "operations_research::CourseSchedulingResultStatus_IsValid", "namespaceoperations__research.html#af375fec5e1c99862c504ab31d638761a", null ],
+    [ "operations_research::CourseSchedulingResultStatus_Name", "namespaceoperations__research.html#a1ce3d00604ed43c8f46edfba0c900ec1", null ],
+    [ "operations_research::CourseSchedulingResultStatus_Name", "namespaceoperations__research.html#a70c0657bedea5cc09950182a30052d0d", null ],
+    [ "operations_research::CourseSchedulingResultStatus_Parse", "namespaceoperations__research.html#a51147415af3fc17faa95b1896d6cdc37", null ],
+    [ "google::protobuf::internal::GetAnyMessageName", "namespacegoogle_1_1protobuf_1_1internal.html#ab1898cde939b307936ee3e763f9558bd", null ],
+    [ "google::protobuf::GetEnumDescriptor<::operations_research::CourseSchedulingResultStatus >", "namespacegoogle_1_1protobuf.html#a2038bdf2b4942821179386623c9233ee", null ],
+    [ "operations_research::CourseSchedulingResultStatus_ARRAYSIZE", "namespaceoperations__research.html#a11872b850b7078d8f243163034d0952e", null ],
+    [ "operations_research::CourseSchedulingResultStatus_MAX", "namespaceoperations__research.html#ac5b803c4124fc3953357ac6c716b39e3", null ],
+    [ "operations_research::CourseSchedulingResultStatus_MIN", "namespaceoperations__research.html#a82ab615783926aab3804d17f55fd35bd", null ],
+    [ "descriptor_table_ortools_2fscheduling_2fcourse_5fscheduling_2eproto", "course__scheduling_8pb_8h.html#adfdcc6390f02430cc98e7699a9a0213c", null ]
+];

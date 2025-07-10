@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,11 @@ $(function(){initNavTree('classoperations__research_1_1sat_1_1ProtoTrail.html','
   <div class="headertitle"><div class="title">operations_research::sat::ProtoTrail Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="classoperations__research_1_1sat_1_1ProtoTrail.html">ProtoTrail</a> acts as an intermediate datastructure that can be synced with the shared tree and the local <a class="el" href="classoperations__research_1_1sat_1_1Trail.html">Trail</a> as appropriate. It's intended that you sync a <a class="el" href="classoperations__research_1_1sat_1_1ProtoTrail.html">ProtoTrail</a> with the tree on restart or when a subtree is closed, and with the local trail after propagation. Specifically it stores objective lower bounds, and literals that have been branched on and later proven to be implied by the prior decisions (i.e. they can be enqueued at this level). </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002545">Todo</a></b></dt><dd>(user): It'd be good to store an earlier level at which implications may be propagated. </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="work__assignment_8h_source.html#l00104">104</a> of file <a class="el" href="work__assignment_8h_source.html">work_assignment.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="work__assignment_8h_source.html">work_assignment.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -125,11 +130,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a609add6dedef7a4a5c5e2cc804df4ea4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Appends a literal to the target phase, returns false if the phase is full.  <br /></td></tr>
 <tr class="memitem:a5dd4351a03b6ae6e7e7977bd469c9268" id="r_a5dd4351a03b6ae6e7e7977bd469c9268"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5dd4351a03b6ae6e7e7977bd469c9268">SetTargetPhase</a> (absl::Span&lt; const <a class="el" href="classoperations__research_1_1sat_1_1ProtoLiteral.html">ProtoLiteral</a> &gt; phase)</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="classoperations__research_1_1sat_1_1ProtoTrail.html">ProtoTrail</a> acts as an intermediate datastructure that can be synced with the shared tree and the local <a class="el" href="classoperations__research_1_1sat_1_1Trail.html">Trail</a> as appropriate. It's intended that you sync a <a class="el" href="classoperations__research_1_1sat_1_1ProtoTrail.html">ProtoTrail</a> with the tree on restart or when a subtree is closed, and with the local trail after propagation. Specifically it stores objective lower bounds, and literals that have been branched on and later proven to be implied by the prior decisions (i.e. they can be enqueued at this level). </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002547">Todo</a></b></dt><dd>(user): It'd be good to store an earlier level at which implications may be propagated. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="work__assignment_8h_source.html#l00104">104</a> of file <a class="el" href="work__assignment_8h_source.html">work_assignment.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a200da6bcf802d65ab9eb2420d40e82eb" name="a200da6bcf802d65ab9eb2420d40e82eb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a200da6bcf802d65ab9eb2420d40e82eb">&#9670;&#160;</a></span>ProtoTrail()</h2>
 

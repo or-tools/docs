@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,14 @@ $(function(){initNavTree('classoperations__research_1_1math__opt_1_1QuadraticExp
   <div class="headertitle"><div class="title">operations_research::math_opt::QuadraticExpression Class Reference<span class="mlabels"><span class="mlabel final">final</span></span></div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This class represents a sum of quadratic terms, linear terms, and constant offset. For example: "3*x*y + 2*x + 1".</p>
+<p>Mixing terms involving variables from different ModelStorage objects will lead to CHECK fails, including from the constructors.</p>
+<p>The type owns the associated data representing the terms, and so should usually be passed by (const) reference to avoid unnecessary copies.</p>
+<p>Note for implementers: Care must be taken to ensure that linear_terms_.storage() and quadratic_terms_.storage() do not disagree. That is, it is forbidden that both are non-null and not equal. Use CheckModelsAgree() and the initializer_list constructor to enforce this invariant in any class or friend method. </p>
 
+<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l00714">714</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for operations_research::math_opt::QuadraticExpression:</div>
@@ -173,14 +181,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a34bacb9c0bb9e02c2bc0034ae74d0636 inherit pro_methods_classoperations__research_1_1math__opt_1_1ModelStorageItemContainer" id="r_a34bacb9c0bb9e02c2bc0034ae74d0636"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1math__opt_1_1ModelStorageItemContainer.html#a34bacb9c0bb9e02c2bc0034ae74d0636">SetOrCheckStorage</a> (const <a class="el" href="classoperations__research_1_1math__opt_1_1ModelStorageItem.html">ModelStorageItem</a> &amp;item)</td></tr>
 <tr class="memitem:a93d4e9f9342bd341a4e7011bcfd74959 inherit pro_methods_classoperations__research_1_1math__opt_1_1ModelStorageItemContainer" id="r_a93d4e9f9342bd341a4e7011bcfd74959"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1math__opt_1_1ModelStorageItemContainer.html#a93d4e9f9342bd341a4e7011bcfd74959">SetOrCheckStorage</a> (const <a class="el" href="classoperations__research_1_1math__opt_1_1ModelStorageItemContainer.html">ModelStorageItemContainer</a> &amp;container)</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This class represents a sum of quadratic terms, linear terms, and constant offset. For example: "3*x*y + 2*x + 1".</p>
-<p>Mixing terms involving variables from different ModelStorage objects will lead to CHECK fails, including from the constructors.</p>
-<p>The type owns the associated data representing the terms, and so should usually be passed by (const) reference to avoid unnecessary copies.</p>
-<p>Note for implementers: Care must be taken to ensure that linear_terms_.storage() and quadratic_terms_.storage() do not disagree. That is, it is forbidden that both are non-null and not equal. Use CheckModelsAgree() and the initializer_list constructor to enforce this invariant in any class or friend method. </p>
-
-<p class="definition">Definition at line <a class="el" href="variable__and__expressions_8h_source.html#l00714">714</a> of file <a class="el" href="variable__and__expressions_8h_source.html">variable_and_expressions.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="acae749801d18a1f283466a30e7c3e167" name="acae749801d18a1f283466a30e7c3e167"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acae749801d18a1f283466a30e7c3e167">&#9670;&#160;</a></span>QuadraticExpression() <span class="overload">[1/9]</span></h2>
 
@@ -1189,7 +1190,7 @@ template&lt;typename Iterable&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000931">Todo</a></b></dt><dd>(b/169415597): improve quadratic expression formatting. See b/170991498 for desired improvements for <a class="el" href="classoperations__research_1_1math__opt_1_1LinearExpression.html">LinearExpression</a> streaming which are also applicable here. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000930">Todo</a></b></dt><dd>(b/169415597): improve quadratic expression formatting. See b/170991498 for desired improvements for <a class="el" href="classoperations__research_1_1math__opt_1_1LinearExpression.html">LinearExpression</a> streaming which are also applicable here. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="variable__and__expressions_8cc_source.html#l00160">160</a> of file <a class="el" href="variable__and__expressions_8cc_source.html">variable_and_expressions.cc</a>.</p>
 

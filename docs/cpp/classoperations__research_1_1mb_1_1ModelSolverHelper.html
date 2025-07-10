@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,12 @@ $(function(){initNavTree('classoperations__research_1_1mb_1_1ModelSolverHelper.h
   <div class="headertitle"><div class="title">operations_research::mb::ModelSolverHelper Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Class used to solve a request. This class is not meant to be exposed to the public. Its responsibility is to bridge the <a class="el" href="classoperations__research_1_1MPModelProto.html">MPModelProto</a> in the non-C++ languages with the C++ Solve method.</p>
+<p>It contains 2 helper objects: a logger, and an atomic bool to interrupt search. </p>
 
+<p class="definition">Definition at line <a class="el" href="model__builder__helper_8h_source.html#l00441">441</a> of file <a class="el" href="model__builder__helper_8h_source.html">model_builder_helper.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="model__builder__helper_8h_source.html">model_builder_helper.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -103,7 +109,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5a70520dd4cd40c5106683f2b0458721" id="r_a5a70520dd4cd40c5106683f2b0458721"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5a70520dd4cd40c5106683f2b0458721">ModelSolverHelper</a> (const std::string &amp;solver_name)</td></tr>
 <tr class="memitem:a84e21dbc5409e714f795ef55cd811bcb" id="r_a84e21dbc5409e714f795ef55cd811bcb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a84e21dbc5409e714f795ef55cd811bcb">SolverIsSupported</a> () const</td></tr>
 <tr class="memitem:a1e93e0e8368250e4f20767b9692188ca" id="r_a1e93e0e8368250e4f20767b9692188ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1e93e0e8368250e4f20767b9692188ca">Solve</a> (const <a class="el" href="classoperations__research_1_1mb_1_1ModelBuilderHelper.html">ModelBuilderHelper</a> &amp;model)</td></tr>
-<tr class="memitem:a7b60bbee7b2af5d88a2471052810718b" id="r_a7b60bbee7b2af5d88a2471052810718b"><td class="memItemLeft" align="right" valign="top">std::optional&lt; MPSolutionResponse &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7b60bbee7b2af5d88a2471052810718b">SolveRequest</a> (const MPModelRequest &amp;request)</td></tr>
+<tr class="memitem:a7b60bbee7b2af5d88a2471052810718b" id="r_a7b60bbee7b2af5d88a2471052810718b"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="classoperations__research_1_1MPSolutionResponse.html">MPSolutionResponse</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7b60bbee7b2af5d88a2471052810718b">SolveRequest</a> (const <a class="el" href="classoperations__research_1_1MPModelRequest.html">MPModelRequest</a> &amp;request)</td></tr>
 <tr class="memdesc:a7b60bbee7b2af5d88a2471052810718b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Only used by the CVXPY interface. Does not store the response internally.  <br /></td></tr>
 <tr class="memitem:ac3b5283a3da6d3900f47c4aa12e6bccd" id="r_ac3b5283a3da6d3900f47c4aa12e6bccd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac3b5283a3da6d3900f47c4aa12e6bccd">InterruptSolve</a> ()</td></tr>
 <tr class="memitem:ad485e582cc1ff25d44fdd78fa79a9517" id="r_ad485e582cc1ff25d44fdd78fa79a9517"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad485e582cc1ff25d44fdd78fa79a9517">SetLogCallback</a> (std::function&lt; void(const std::string &amp;)&gt; log_callback)</td></tr>
@@ -111,7 +117,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae09e12de332107221b1e1a78205ab4b0" id="r_ae09e12de332107221b1e1a78205ab4b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae09e12de332107221b1e1a78205ab4b0">ClearLogCallback</a> ()</td></tr>
 <tr class="memitem:a6e6b8a3b2ae65126a0366e2fcfac3744" id="r_a6e6b8a3b2ae65126a0366e2fcfac3744"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6e6b8a3b2ae65126a0366e2fcfac3744">has_response</a> () const</td></tr>
 <tr class="memitem:a95c07023d58f63d6ad982a2a38d22f82" id="r_a95c07023d58f63d6ad982a2a38d22f82"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a95c07023d58f63d6ad982a2a38d22f82">has_solution</a> () const</td></tr>
-<tr class="memitem:a93796e7b8fcff4c484ea2b561217f443" id="r_a93796e7b8fcff4c484ea2b561217f443"><td class="memItemLeft" align="right" valign="top">const MPSolutionResponse &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a93796e7b8fcff4c484ea2b561217f443">response</a> () const</td></tr>
+<tr class="memitem:a93796e7b8fcff4c484ea2b561217f443" id="r_a93796e7b8fcff4c484ea2b561217f443"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classoperations__research_1_1MPSolutionResponse.html">MPSolutionResponse</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a93796e7b8fcff4c484ea2b561217f443">response</a> () const</td></tr>
 <tr class="memitem:ad9541f60ec403f4c0e64f99df33a6f52" id="r_ad9541f60ec403f4c0e64f99df33a6f52"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceoperations__research_1_1mb.html#a2b7111e55f315cfb7bc2696f2f92a4b9">SolveStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad9541f60ec403f4c0e64f99df33a6f52">status</a> () const</td></tr>
 <tr class="memitem:a7d177839aaf9f2af286001e5b68e2da0" id="r_a7d177839aaf9f2af286001e5b68e2da0"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7d177839aaf9f2af286001e5b68e2da0">objective_value</a> () const</td></tr>
 <tr class="memdesc:a7d177839aaf9f2af286001e5b68e2da0"><td class="mdescLeft">&#160;</td><td class="mdescRight">If not defined, or no solution, they will silently return 0.  <br /></td></tr>
@@ -129,12 +135,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2344b509726f31c5e8221af53ab8353f" id="r_a2344b509726f31c5e8221af53ab8353f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2344b509726f31c5e8221af53ab8353f">SetSolverSpecificParameters</a> (const std::string &amp;solver_specific_parameters)</td></tr>
 <tr class="memitem:aa103e70e2a343238e2bad2a02fa59d90" id="r_aa103e70e2a343238e2bad2a02fa59d90"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa103e70e2a343238e2bad2a02fa59d90">EnableOutput</a> (bool enabled)</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Class used to solve a request. This class is not meant to be exposed to the public. Its responsibility is to bridge the MPModelProto in the non-C++ languages with the C++ Solve method.</p>
-<p>It contains 2 helper objects: a logger, and an atomic bool to interrupt search. </p>
-
-<p class="definition">Definition at line <a class="el" href="model__builder__helper_8h_source.html#l00441">441</a> of file <a class="el" href="model__builder__helper_8h_source.html">model_builder_helper.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a5a70520dd4cd40c5106683f2b0458721" name="a5a70520dd4cd40c5106683f2b0458721"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5a70520dd4cd40c5106683f2b0458721">&#9670;&#160;</a></span>ModelSolverHelper()</h2>
 
@@ -382,7 +383,7 @@ Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const MPSolutionResponse &amp; operations_research::mb::ModelSolverHelper::response </td>
+          <td class="memname">const <a class="el" href="classoperations__research_1_1MPSolutionResponse.html">MPSolutionResponse</a> &amp; operations_research::mb::ModelSolverHelper::response </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
@@ -486,12 +487,12 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000828">Todo</a></b></dt><dd>(user): Enable log_callback support. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000829">Todo</a></b></dt><dd></dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000830">Todo</a></b></dt><dd>(user): Enable interrupt_solve. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000831">Todo</a></b></dt><dd>(user): Enable log_callback support. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000832">Todo</a></b></dt><dd></dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000833">Todo</a></b></dt><dd>(user): Enable interrupt_solve. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000827">Todo</a></b></dt><dd>(user): Enable log_callback support. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000828">Todo</a></b></dt><dd></dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000829">Todo</a></b></dt><dd>(user): Enable interrupt_solve. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000830">Todo</a></b></dt><dd>(user): Enable log_callback support. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000831">Todo</a></b></dt><dd></dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000832">Todo</a></b></dt><dd>(user): Enable interrupt_solve. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="model__builder__helper_8cc_source.html#l00568">568</a> of file <a class="el" href="model__builder__helper_8cc_source.html">model_builder_helper.cc</a>.</p>
 
@@ -504,9 +505,9 @@ Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::optional&lt; MPSolutionResponse &gt; operations_research::mb::ModelSolverHelper::SolveRequest </td>
+          <td class="memname">std::optional&lt; <a class="el" href="classoperations__research_1_1MPSolutionResponse.html">MPSolutionResponse</a> &gt; operations_research::mb::ModelSolverHelper::SolveRequest </td>
           <td>(</td>
-          <td class="paramtype">const MPModelRequest &amp;</td>          <td class="paramname"><span class="paramname"><em>request</em></span></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1MPModelRequest.html">MPModelRequest</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>request</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>

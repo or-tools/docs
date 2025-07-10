@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,13 @@ $(function(){initNavTree('classoperations__research_1_1math__opt_1_1TimeLimitTes
   <div class="headertitle"><div class="title">operations_research::math_opt::TimeLimitTest Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A suite of unit tests to show that time limits are handled correctly.</p>
+<p>These tests require that the underlying solver supports a callback. The tests will create either a small LP or IP, depending on the bool integer_variables below.</p>
+<p>To use these tests, in file &lt;solver&gt;<em>test.cc write: INSTANTIATE_TEST_SUITE_P(&lt;Solver&gt;<a class="el" href="classoperations__research_1_1math__opt_1_1TimeLimitTest.html">TimeLimitTest</a>, <a class="el" href="classoperations__research_1_1math__opt_1_1TimeLimitTest.html">TimeLimitTest</a>, testing::Values(<a class="el" href="structoperations__research_1_1math__opt_1_1TimeLimitTestParameters.html">TimeLimitTestParameters</a>( SolverType::k&lt;Solver&gt;, &lt;integer_variables&gt;, CALLBACK_EVENT</em>&lt;EVENT&gt;))); </p>
 
+<p class="definition">Definition at line <a class="el" href="generic__tests_8h_source.html#l00104">104</a> of file <a class="el" href="generic__tests_8h_source.html">generic_tests.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="generic__tests_8h_source.html">generic_tests.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for operations_research::math_opt::TimeLimitTest:</div>
@@ -108,13 +115,7 @@ Inheritance diagram for operations_research::math_opt::TimeLimitTest:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a6730abb562faeb5aaf7dbb8ae8f99178" id="r_a6730abb562faeb5aaf7dbb8ae8f99178"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a1a4e2d8708a16ad2817a18f55a516e7d">SolverType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6730abb562faeb5aaf7dbb8ae8f99178">TestedSolver</a> () const</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A suite of unit tests to show that time limits are handled correctly.</p>
-<p>These tests require that the underlying solver supports a callback. The tests will create either a small LP or IP, depending on the bool integer_variables below.</p>
-<p>To use these tests, in file &lt;solver&gt;<em>test.cc write: INSTANTIATE_TEST_SUITE_P(&lt;Solver&gt;<a class="el" href="classoperations__research_1_1math__opt_1_1TimeLimitTest.html">TimeLimitTest</a>, <a class="el" href="classoperations__research_1_1math__opt_1_1TimeLimitTest.html">TimeLimitTest</a>, testing::Values(<a class="el" href="structoperations__research_1_1math__opt_1_1TimeLimitTestParameters.html">TimeLimitTestParameters</a>( SolverType::k&lt;Solver&gt;, &lt;integer_variables&gt;, CALLBACK_EVENT</em>&lt;EVENT&gt;))); </p>
-
-<p class="definition">Definition at line <a class="el" href="generic__tests_8h_source.html#l00104">104</a> of file <a class="el" href="generic__tests_8h_source.html">generic_tests.h</a>.</p>
-</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="a6730abb562faeb5aaf7dbb8ae8f99178" name="a6730abb562faeb5aaf7dbb8ae8f99178"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6730abb562faeb5aaf7dbb8ae8f99178">&#9670;&#160;</a></span>TestedSolver()</h2>
 

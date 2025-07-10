@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,11 @@ $(function(){initNavTree('classoperations__research_1_1pdlp_1_1ShardedWeightedAv
   <div class="headertitle"><div class="title">operations_research::pdlp::ShardedWeightedAverage Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This computes weighted averages of vectors. It satisfies the following: if all the averaged vectors have component i equal to x then the average has component i exactly equal to x, without any floating-point roundoff. In practice the above is probably still true with "equal to x" replaced with "at least x" or "at most x". However unrealistic counter examples probably exist involving a new item with weight 10^15 times greater than the total weight so far. </p>
 
+<p class="definition">Definition at line <a class="el" href="sharded__optimization__utils_8h_source.html#l00039">39</a> of file <a class="el" href="sharded__optimization__utils_8h_source.html">sharded_optimization_utils.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="sharded__optimization__utils_8h_source.html">sharded_optimization_utils.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -112,11 +117,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a832ecd48fecace426aeb1c32f0322fbb" id="r_a832ecd48fecace426aeb1c32f0322fbb"><td class="memItemLeft" align="right" valign="top">Eigen::VectorXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a832ecd48fecace426aeb1c32f0322fbb">ComputeAverage</a> () const</td></tr>
 <tr class="memitem:a03839bb1c9d3c5181767a97df11fc173" id="r_a03839bb1c9d3c5181767a97df11fc173"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a03839bb1c9d3c5181767a97df11fc173">NumTerms</a> () const</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This computes weighted averages of vectors. It satisfies the following: if all the averaged vectors have component i equal to x then the average has component i exactly equal to x, without any floating-point roundoff. In practice the above is probably still true with "equal to x" replaced with "at least x" or "at most x". However unrealistic counter examples probably exist involving a new item with weight 10^15 times greater than the total weight so far. </p>
-
-<p class="definition">Definition at line <a class="el" href="sharded__optimization__utils_8h_source.html#l00039">39</a> of file <a class="el" href="sharded__optimization__utils_8h_source.html">sharded_optimization_utils.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a7f436820b9b8cf3404d9605723e05121" name="a7f436820b9b8cf3404d9605723e05121"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7f436820b9b8cf3404d9605723e05121">&#9670;&#160;</a></span>ShardedWeightedAverage() <span class="overload">[1/2]</span></h2>
 
@@ -233,7 +234,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Computes the weighted average of the datapoints added so far, i.e., sum_i weight[i] * datapoint[i] / sum_i weight[i]. The results are set to zero if <span class="tt"><a class="el" href="#a268392bde7c1a954ac7462cb42cf8e51">HasNonzeroWeight()</a></span> is false. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001064">Todo</a></b></dt><dd>(user): consider returning a reference to avoid this copy. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001062">Todo</a></b></dt><dd>(user): consider returning a reference to avoid this copy. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="sharded__optimization__utils_8cc_source.html#l00074">74</a> of file <a class="el" href="sharded__optimization__utils_8cc_source.html">sharded_optimization_utils.cc</a>.</p>
 

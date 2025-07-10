@@ -1,0 +1,6 @@
+var structoperations__research_1_1math__opt_1_1CallbackResultProto__GeneratedLinearConstraintDefaultTypeInternal =
+[
+    [ "CallbackResultProto_GeneratedLinearConstraintDefaultTypeInternal", "structoperations__research_1_1math__opt_1_1CallbackResultProto__GeneratedLinearConstraintDefaultTypeInternal.html#a7c7fd8ec488cfc021a5b3bfc7c1a3931", null ],
+    [ "~CallbackResultProto_GeneratedLinearConstraintDefaultTypeInternal", "structoperations__research_1_1math__opt_1_1CallbackResultProto__GeneratedLinearConstraintDefaultTypeInternal.html#ac39307fbde374263358603c5194eb121", null ],
+    [ "_instance", "structoperations__research_1_1math__opt_1_1CallbackResultProto__GeneratedLinearConstraintDefaultTypeInternal.html#ac8dfcc08efee81e6ad96c84e29e0df41", null ]
+];

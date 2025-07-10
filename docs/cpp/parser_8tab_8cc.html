@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -2042,7 +2043,7 @@ template&lt;class T&gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Array in flatzinc are 1 based. We use this trivial wrapper for all flatzinc arrays. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000437">Todo</a></b></dt><dd>(user): replace this by a macro for better logging. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000436">Todo</a></b></dt><dd>(user): replace this by a macro for better logging. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="parser__util_8cc_source.html#l00078">78</a> of file <a class="el" href="parser__util_8cc_source.html">parser_util.cc</a>.</p>
 
@@ -2217,15 +2218,15 @@ template&lt;class T&gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Declaration of a (named) constant: we simply register it in the parser's context, and don't store it in the model.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000433">Todo</a></b></dt><dd>(user): Check that the assignment is included in the domain. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000432">Todo</a></b></dt><dd>(user): Check that the assignment is included in the domain. </dd></dl>
+<p>Declaration of a (named) constant array. See rule right above.</p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000433">Todo</a></b></dt><dd>(user): CHECK all values within domain. </dd></dl>
+<p>Declaration of a (named) constant array. See rule right above.</p>
 <p>Declaration of a (named) constant array. See rule right above.</p>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000434">Todo</a></b></dt><dd>(user): CHECK all values within domain. </dd></dl>
 <p>Declaration of a (named) constant array. See rule right above.</p>
-<p>Declaration of a (named) constant array. See rule right above.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000435">Todo</a></b></dt><dd>(user): CHECK all values within domain. </dd></dl>
-<p>Declaration of a (named) constant array. See rule right above.</p>
 <p>Declaration of a (named) constant array: See rule above.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000436">Todo</a></b></dt><dd>(user): check that all assignments are included in the domain. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000435">Todo</a></b></dt><dd>(user): check that all assignments are included in the domain. </dd></dl>
 <p>Declaration of a variable. If it's unassigned or assigned to a constant, we'll create a new var stored in the model. If it's assigned to another variable x then we simply adjust that existing variable x according to the current (re-)declaration.</p>
 <p>We also register the variable in the parser's context, and add some output to the model if needed.</p>
 <p>Declaration of a "variable array": these is exactly like N simple variable declarations, where the identifier for declaration #i is IDENTIFIER[i] (1-based index).</p>

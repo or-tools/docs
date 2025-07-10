@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -98,7 +99,11 @@ $(function(){initNavTree('classoperations__research_1_1sat_1_1AllDifferentConstr
 
 <p>Implementation of <a class="el" href="namespaceoperations__research_1_1sat.html#adac2a1cac1b45c80f43ebd78490468a8">AllDifferentAC()</a>.  
  <a href="#details">More...</a></p>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Implementation of <a class="el" href="namespaceoperations__research_1_1sat.html#adac2a1cac1b45c80f43ebd78490468a8">AllDifferentAC()</a>. </p>
 
+<p class="definition">Definition at line <a class="el" href="all__different_8h_source.html#l00068">68</a> of file <a class="el" href="all__different_8h_source.html">all_different.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="all__different_8h_source.html">all_different.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for operations_research::sat::AllDifferentConstraint:</div>
@@ -117,11 +122,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1adb3a2f02ebc277b22879cd01e994b2" id="r_a1adb3a2f02ebc277b22879cd01e994b2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1adb3a2f02ebc277b22879cd01e994b2">Propagate</a> () final</td></tr>
 <tr class="memitem:ad1d6202d01c9bf1590c20996d2fbca03" id="r_ad1d6202d01c9bf1590c20996d2fbca03"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad1d6202d01c9bf1590c20996d2fbca03">RegisterWith</a> (<a class="el" href="classoperations__research_1_1sat_1_1GenericLiteralWatcher.html">GenericLiteralWatcher</a> *watcher)</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Implementation of <a class="el" href="namespaceoperations__research_1_1sat.html#adac2a1cac1b45c80f43ebd78490468a8">AllDifferentAC()</a>. </p>
-
-<p class="definition">Definition at line <a class="el" href="all__different_8h_source.html#l00068">68</a> of file <a class="el" href="all__different_8h_source.html">all_different.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aab6b1df5d9e513a4880255df19169bd6" name="aab6b1df5d9e513a4880255df19169bd6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aab6b1df5d9e513a4880255df19169bd6">&#9670;&#160;</a></span>AllDifferentConstraint() <span class="overload">[1/2]</span></h2>
 
@@ -141,7 +142,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Initialize literals cache. </p><dl class="section note"><dt>Note</dt><dd>remap all values appearing here with a dense_index.</dd></dl>
-<p>FullyEncode does not like 1-value domains, handle this case first. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001082">Todo</a></b></dt><dd>(user): Prune now, ignore these variables during solving. </dd></dl>
+<p>FullyEncode does not like 1-value domains, handle this case first. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001080">Todo</a></b></dt><dd>(user): Prune now, ignore these variables during solving. </dd></dl>
 <p>Force full encoding if not already done.</p>
 <p>Fill cache with literals, default value is kFalseLiteralIndex.</p>
 <p>Not sure it is needed, but lets sort.</p>
@@ -214,7 +215,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>The algorithm copies the solver state to successor_, which is used to compute a matching. If all variables can be matched, it generates the residual graph in separate vectors, computes its SCCs, and filters variable -&gt; value if variable is not in the same SCC as value. Explanations for failure and filtering are fine-grained: failure is explained by a Hall set, i.e. dom(variables) \subseteq {values}, with <span class="tt">variables</span> &lt; <span class="tt">values</span>; filtering is explained by the Hall set that would happen if the variable was assigned to the value.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001083">Todo</a></b></dt><dd>(user): If needed, there are several ways performance could be improved. If copying the variable state is too costly, it could be maintained instead. If the propagator has too many fruitless calls (without failing/pruning), we can remember the O(n) arcs used in the matching and the SCC decomposition, and guard calls to <a class="el" href="#a1adb3a2f02ebc277b22879cd01e994b2">Propagate()</a> if these arcs are still valid. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001081">Todo</a></b></dt><dd>(user): If needed, there are several ways performance could be improved. If copying the variable state is too costly, it could be maintained instead. If the propagator has too many fruitless calls (without failing/pruning), we can remember the O(n) arcs used in the matching and the SCC decomposition, and guard calls to <a class="el" href="#a1adb3a2f02ebc277b22879cd01e994b2">Propagate()</a> if these arcs are still valid. </dd></dl>
 <p>Copy variable state to graph state.</p>
 <p>Forward-checking should propagate x != value.</p>
 <p>Seed with previous matching.</p>

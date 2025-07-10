@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,16 @@ $(function(){initNavTree('classoperations__research_1_1EnabledScopedTimeDistribu
   <div class="headertitle"><div class="title">operations_research::EnabledScopedTimeDistributionUpdater Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Helper classes to time a block of code and add the result to a <a class="el" href="classoperations__research_1_1TimeDistribution.html">TimeDistribution</a>. Calls StartTimer() on creation and StopTimerAndAddElapsedTime() on destruction.</p>
+<p>There are three classes with the same interface:</p><ul>
+<li><a class="el" href="classoperations__research_1_1EnabledScopedTimeDistributionUpdater.html">EnabledScopedTimeDistributionUpdater</a> always collects the time stats of the scope in which it is defined. This class is used for stats that are always collected.</li>
+<li><a class="el" href="namespaceoperations__research.html#a604faacec78f42e2d0c987af642c536f">ScopedTimeDistributionUpdater</a> collects the time stats only when OR_STATS is defined. This symbol should be used for collecting stats in places where the overhead of collecting the stats may hurt the performance of the algorithm.</li>
+<li><a class="el" href="classoperations__research_1_1DisabledScopedTimeDistributionUpdater.html">DisabledScopedTimeDistributionUpdater</a> is used to implement <a class="el" href="namespaceoperations__research.html#a604faacec78f42e2d0c987af642c536f">ScopedTimeDistributionUpdater</a> when OR_STATS is not defined. </li>
+</ul>
 
+<p class="definition">Definition at line <a class="el" href="stats_8h_source.html#l00317">317</a> of file <a class="el" href="stats_8h_source.html">stats.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="stats_8h_source.html">stats.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -107,16 +117,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a717f028f2a47f7955198280d483a7f18" id="r_a717f028f2a47f7955198280d483a7f18"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a717f028f2a47f7955198280d483a7f18">~EnabledScopedTimeDistributionUpdater</a> ()</td></tr>
 <tr class="memitem:a410ba9d48eda99a45dd8f93c1bc767a6" id="r_a410ba9d48eda99a45dd8f93c1bc767a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a410ba9d48eda99a45dd8f93c1bc767a6">AlsoUpdate</a> (<a class="el" href="classoperations__research_1_1TimeDistribution.html">TimeDistribution</a> *also_update)</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Helper classes to time a block of code and add the result to a <a class="el" href="classoperations__research_1_1TimeDistribution.html">TimeDistribution</a>. Calls StartTimer() on creation and StopTimerAndAddElapsedTime() on destruction.</p>
-<p>There are three classes with the same interface:</p><ul>
-<li><a class="el" href="classoperations__research_1_1EnabledScopedTimeDistributionUpdater.html">EnabledScopedTimeDistributionUpdater</a> always collects the time stats of the scope in which it is defined. This class is used for stats that are always collected.</li>
-<li><a class="el" href="namespaceoperations__research.html#a604faacec78f42e2d0c987af642c536f">ScopedTimeDistributionUpdater</a> collects the time stats only when OR_STATS is defined. This symbol should be used for collecting stats in places where the overhead of collecting the stats may hurt the performance of the algorithm.</li>
-<li><a class="el" href="classoperations__research_1_1DisabledScopedTimeDistributionUpdater.html">DisabledScopedTimeDistributionUpdater</a> is used to implement <a class="el" href="namespaceoperations__research.html#a604faacec78f42e2d0c987af642c536f">ScopedTimeDistributionUpdater</a> when OR_STATS is not defined. </li>
-</ul>
-
-<p class="definition">Definition at line <a class="el" href="stats_8h_source.html#l00317">317</a> of file <a class="el" href="stats_8h_source.html">stats.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a328fd6a4bb31ef2e6ad25affa4914aaa" name="a328fd6a4bb31ef2e6ad25affa4914aaa"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a328fd6a4bb31ef2e6ad25affa4914aaa">&#9670;&#160;</a></span>EnabledScopedTimeDistributionUpdater() <span class="overload">[1/2]</span></h2>
 

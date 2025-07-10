@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,23 +96,23 @@ $(function(){initNavTree('classoperations__research_1_1sat_1_1HittingSetOptimize
   <div class="headertitle"><div class="title">operations_research::sat::HittingSetOptimizer Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
-<p><code>#include &lt;<a class="el" href="max__hs_8h_source.html">max_hs.h</a>&gt;</code></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a1679838513aaf44b817281d79e02da58" id="r_a1679838513aaf44b817281d79e02da58"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1679838513aaf44b817281d79e02da58">HittingSetOptimizer</a> (const CpModelProto &amp;model_proto, const <a class="el" href="structoperations__research_1_1sat_1_1ObjectiveDefinition.html">ObjectiveDefinition</a> &amp;objective_definition, const std::function&lt; void()&gt; &amp;feasible_solution_observer, <a class="el" href="classoperations__research_1_1sat_1_1Model.html">Model</a> *model)</td></tr>
-<tr class="memitem:a82f11613372a6a2909c2dc75bcd6216b" id="r_a82f11613372a6a2909c2dc75bcd6216b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoperations__research_1_1sat_1_1SatSolver.html#a8022922b9cf102d6697157b3f2ccc352">SatSolver::Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a82f11613372a6a2909c2dc75bcd6216b">Optimize</a> ()</td></tr>
-</table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Generalization of the max-HS algorithm (HS stands for Hitting <a class="el" href="classoperations__research_1_1Set.html">Set</a>). This is similar to MinimizeWithCoreAndLazyEncoding() but it uses a hybrid approach with a MIP solver to handle the discovered infeasibility cores.</p>
 <p>See, Jessica Davies and Fahiem Bacchus, "Solving MAXSAT by Solving a
 Sequence of Simpler SAT Instances", <a href="http://www.cs.toronto.edu/~jdavies/daviesCP11.pdf">http://www.cs.toronto.edu/~jdavies/daviesCP11.pdf</a>"</p>
 <dl class="section note"><dt>Note</dt><dd>an implementation of this approach won the 2016 max-SAT competition on the industrial category, see <a href="http://maxsat.ia.udl.cat/results/#wpms-industrial">http://maxsat.ia.udl.cat/results/#wpms-industrial</a></dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002070">Todo</a></b></dt><dd>(user): This class requires linking with the SCIP MIP solver which is quite big, maybe we should find a way not to do that. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002068">Todo</a></b></dt><dd>(user): This class requires linking with the SCIP MIP solver which is quite big, maybe we should find a way not to do that. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="max__hs_8h_source.html#l00059">59</a> of file <a class="el" href="max__hs_8h_source.html">max_hs.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+</div>
+<p><code>#include &lt;<a class="el" href="max__hs_8h_source.html">max_hs.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a1679838513aaf44b817281d79e02da58" id="r_a1679838513aaf44b817281d79e02da58"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1679838513aaf44b817281d79e02da58">HittingSetOptimizer</a> (const <a class="el" href="classoperations__research_1_1sat_1_1CpModelProto.html">CpModelProto</a> &amp;model_proto, const <a class="el" href="structoperations__research_1_1sat_1_1ObjectiveDefinition.html">ObjectiveDefinition</a> &amp;objective_definition, const std::function&lt; void()&gt; &amp;feasible_solution_observer, <a class="el" href="classoperations__research_1_1sat_1_1Model.html">Model</a> *model)</td></tr>
+<tr class="memitem:a82f11613372a6a2909c2dc75bcd6216b" id="r_a82f11613372a6a2909c2dc75bcd6216b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoperations__research_1_1sat_1_1SatSolver.html#a8022922b9cf102d6697157b3f2ccc352">SatSolver::Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a82f11613372a6a2909c2dc75bcd6216b">Optimize</a> ()</td></tr>
+</table>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a1679838513aaf44b817281d79e02da58" name="a1679838513aaf44b817281d79e02da58"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1679838513aaf44b817281d79e02da58">&#9670;&#160;</a></span>HittingSetOptimizer()</h2>
 
@@ -121,7 +122,7 @@ Sequence of Simpler SAT Instances", <a href="http://www.cs.toronto.edu/~jdavies/
         <tr>
           <td class="memname">operations_research::sat::HittingSetOptimizer::HittingSetOptimizer </td>
           <td>(</td>
-          <td class="paramtype">const CpModelProto &amp;</td>          <td class="paramname"><span class="paramname"><em>model_proto</em></span>, </td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1sat_1_1CpModelProto.html">CpModelProto</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>model_proto</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -161,21 +162,21 @@ Sequence of Simpler SAT Instances", <a href="http://www.cs.toronto.edu/~jdavies/
       </table>
 </div><div class="memdoc">
 <p>This is the "generalized" hitting set problem we will solve. Each time we find a core, a new constraint will be added to this problem.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002062">Todo</a></b></dt><dd>(user): remove code duplication with MinimizeWithCoreAndLazyEncoding(); </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002060">Todo</a></b></dt><dd>(user): remove code duplication with MinimizeWithCoreAndLazyEncoding(); </dd></dl>
 <p>This is used by the "stratified" approach. We will only consider terms with a weight not lower than this threshold. The threshold will decrease as the algorithm progress.</p>
 <p>Start the algorithm.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002063">Todo</a></b></dt><dd>(user): Even though we keep the same solver, currently the solve is not really done incrementally. It might be hard to improve though.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002064">Todo</a></b></dt><dd>(user): deal with time limit. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002061">Todo</a></b></dt><dd>(user): Even though we keep the same solver, currently the solve is not really done incrementally. It might be hard to improve though.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002062">Todo</a></b></dt><dd>(user): deal with time limit. </dd></dl>
 <p>Get the best external bound and constraint the objective of the MPModel.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002065">Todo</a></b></dt><dd>(user): C^c is broken when using SCIP. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002063">Todo</a></b></dt><dd>(user): C^c is broken when using SCIP. </dd></dl>
 <p>We currently abort if we have a non-optimal result. This is correct if we had a limit reached, but not in the other cases.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002066">Todo</a></b></dt><dd>(user): It is actually easy to use a FEASIBLE result. If when passing it to SAT it is no feasbile, we can still create cores. If it is feasible, we have a solution, but we cannot increase the lower bound. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002064">Todo</a></b></dt><dd>(user): It is actually easy to use a FEASIBLE result. If when passing it to SAT it is no feasbile, we can still create cores. If it is feasible, we have a solution, but we cannot increase the lower bound. </dd></dl>
 <p>Update the objective lower bound with our current bound.</p>
 <p>Note(user): This is not needed for correctness, but it might cause more propagation and is nice to have for reporting/logging purpose.</p>
 <p>No assumptions with the current stratified_threshold? use the new one.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002067">Todo</a></b></dt><dd>(user): Use the real weights and exploit the extra cores. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002068">Todo</a></b></dt><dd></dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002069">Todo</a></b></dt><dd>(user): If we extract more than the objective variables, we could use the solution values from the MPModel as hints to the SAT model. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002065">Todo</a></b></dt><dd>(user): Use the real weights and exploit the extra cores. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002066">Todo</a></b></dt><dd></dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002067">Todo</a></b></dt><dd>(user): If we extract more than the objective variables, we could use the solution values from the MPModel as hints to the SAT model. </dd></dl>
 <p>If not all assumptions were taken, continue with a lower stratified bound. Otherwise we have an optimal solution.</p>
 <p>Hack: we use a local limit internally that we restore at the end. However we still return LIMIT_REACHED in this case...</p>
 

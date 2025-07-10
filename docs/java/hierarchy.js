@@ -141,6 +141,7 @@ var hierarchy =
       [ "com.google.ortools.pdlp.TerminationCriteria.DetailedOptimalityCriteria.Builder", "classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1DetailedOptimalityCriteria_1_1Builder.html", null ],
       [ "com.google.ortools.pdlp.TerminationCriteria.SimpleOptimalityCriteria.Builder", "classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1SimpleOptimalityCriteria_1_1Builder.html", null ],
       [ "com.google.ortools.sat.AllDifferentConstraintProto.Builder", "classcom_1_1google_1_1ortools_1_1sat_1_1AllDifferentConstraintProto_1_1Builder.html", null ],
+      [ "com.google.ortools.sat.ArcLpValue.Builder", "classcom_1_1google_1_1ortools_1_1sat_1_1ArcLpValue_1_1Builder.html", null ],
       [ "com.google.ortools.sat.AutomatonConstraintProto.Builder", "classcom_1_1google_1_1ortools_1_1sat_1_1AutomatonConstraintProto_1_1Builder.html", null ],
       [ "com.google.ortools.sat.BoolArgumentProto.Builder", "classcom_1_1google_1_1ortools_1_1sat_1_1BoolArgumentProto_1_1Builder.html", null ],
       [ "com.google.ortools.sat.BooleanAssignment.Builder", "classcom_1_1google_1_1ortools_1_1sat_1_1BooleanAssignment_1_1Builder.html", null ],
@@ -171,14 +172,13 @@ var hierarchy =
       [ "com.google.ortools.sat.ReservoirConstraintProto.Builder", "classcom_1_1google_1_1ortools_1_1sat_1_1ReservoirConstraintProto_1_1Builder.html", null ],
       [ "com.google.ortools.sat.RoutesConstraintProto.Builder", "classcom_1_1google_1_1ortools_1_1sat_1_1RoutesConstraintProto_1_1Builder.html", null ],
       [ "com.google.ortools.sat.RoutesConstraintProto.NodeExpressions.Builder", "classcom_1_1google_1_1ortools_1_1sat_1_1RoutesConstraintProto_1_1NodeExpressions_1_1Builder.html", null ],
+      [ "com.google.ortools.sat.RoutesSupportGraphProto.Builder", "classcom_1_1google_1_1ortools_1_1sat_1_1RoutesSupportGraphProto_1_1Builder.html", null ],
       [ "com.google.ortools.sat.SatParameters.Builder", "classcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1Builder.html", null ],
       [ "com.google.ortools.sat.SparsePermutationProto.Builder", "classcom_1_1google_1_1ortools_1_1sat_1_1SparsePermutationProto_1_1Builder.html", null ],
       [ "com.google.ortools.sat.SymmetryProto.Builder", "classcom_1_1google_1_1ortools_1_1sat_1_1SymmetryProto_1_1Builder.html", null ],
       [ "com.google.ortools.sat.TableConstraintProto.Builder", "classcom_1_1google_1_1ortools_1_1sat_1_1TableConstraintProto_1_1Builder.html", null ],
       [ "com.google.ortools.sat.v1.CpSolverRequest.Builder", "classcom_1_1google_1_1ortools_1_1sat_1_1v1_1_1CpSolverRequest_1_1Builder.html", null ],
-      [ "com.google.ortools.util.Int128.Builder", "classcom_1_1google_1_1ortools_1_1util_1_1Int128_1_1Builder.html", null ],
-      [ "operations_research.sat.RoutesSupportGraph.ArcLpValue.Builder", "classoperations__research_1_1sat_1_1RoutesSupportGraph_1_1ArcLpValue_1_1Builder.html", null ],
-      [ "operations_research.sat.RoutesSupportGraph.RoutesSupportGraphProto.Builder", "classoperations__research_1_1sat_1_1RoutesSupportGraph_1_1RoutesSupportGraphProto_1_1Builder.html", null ]
+      [ "com.google.ortools.util.Int128.Builder", "classcom_1_1google_1_1ortools_1_1util_1_1Int128_1_1Builder.html", null ]
     ] ],
     [ "com.google.ortools.sat.Constraint", "classcom_1_1google_1_1ortools_1_1sat_1_1Constraint.html", [
       [ "com.google.ortools.sat.AutomatonConstraint", "classcom_1_1google_1_1ortools_1_1sat_1_1AutomatonConstraint.html", null ],
@@ -288,6 +288,7 @@ var hierarchy =
       [ "com.google.ortools.pdlp.TerminationCriteria.DetailedOptimalityCriteria", "classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1DetailedOptimalityCriteria.html", null ],
       [ "com.google.ortools.pdlp.TerminationCriteria.SimpleOptimalityCriteria", "classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1SimpleOptimalityCriteria.html", null ],
       [ "com.google.ortools.sat.AllDifferentConstraintProto", "classcom_1_1google_1_1ortools_1_1sat_1_1AllDifferentConstraintProto.html", null ],
+      [ "com.google.ortools.sat.ArcLpValue", "classcom_1_1google_1_1ortools_1_1sat_1_1ArcLpValue.html", null ],
       [ "com.google.ortools.sat.AutomatonConstraintProto", "classcom_1_1google_1_1ortools_1_1sat_1_1AutomatonConstraintProto.html", null ],
       [ "com.google.ortools.sat.BoolArgumentProto", "classcom_1_1google_1_1ortools_1_1sat_1_1BoolArgumentProto.html", null ],
       [ "com.google.ortools.sat.BooleanAssignment", "classcom_1_1google_1_1ortools_1_1sat_1_1BooleanAssignment.html", null ],
@@ -318,14 +319,13 @@ var hierarchy =
       [ "com.google.ortools.sat.ReservoirConstraintProto", "classcom_1_1google_1_1ortools_1_1sat_1_1ReservoirConstraintProto.html", null ],
       [ "com.google.ortools.sat.RoutesConstraintProto", "classcom_1_1google_1_1ortools_1_1sat_1_1RoutesConstraintProto.html", null ],
       [ "com.google.ortools.sat.RoutesConstraintProto.NodeExpressions", "classcom_1_1google_1_1ortools_1_1sat_1_1RoutesConstraintProto_1_1NodeExpressions.html", null ],
+      [ "com.google.ortools.sat.RoutesSupportGraphProto", "classcom_1_1google_1_1ortools_1_1sat_1_1RoutesSupportGraphProto.html", null ],
       [ "com.google.ortools.sat.SatParameters", "classcom_1_1google_1_1ortools_1_1sat_1_1SatParameters.html", null ],
       [ "com.google.ortools.sat.SparsePermutationProto", "classcom_1_1google_1_1ortools_1_1sat_1_1SparsePermutationProto.html", null ],
       [ "com.google.ortools.sat.SymmetryProto", "classcom_1_1google_1_1ortools_1_1sat_1_1SymmetryProto.html", null ],
       [ "com.google.ortools.sat.TableConstraintProto", "classcom_1_1google_1_1ortools_1_1sat_1_1TableConstraintProto.html", null ],
       [ "com.google.ortools.sat.v1.CpSolverRequest", "classcom_1_1google_1_1ortools_1_1sat_1_1v1_1_1CpSolverRequest.html", null ],
-      [ "com.google.ortools.util.Int128", "classcom_1_1google_1_1ortools_1_1util_1_1Int128.html", null ],
-      [ "operations_research.sat.RoutesSupportGraph.ArcLpValue", "classoperations__research_1_1sat_1_1RoutesSupportGraph_1_1ArcLpValue.html", null ],
-      [ "operations_research.sat.RoutesSupportGraph.RoutesSupportGraphProto", "classoperations__research_1_1sat_1_1RoutesSupportGraph_1_1RoutesSupportGraphProto.html", null ]
+      [ "com.google.ortools.util.Int128", "classcom_1_1google_1_1ortools_1_1util_1_1Int128.html", null ]
     ] ],
     [ "com.google.ortools.linearsolver.MPSolverParameters.IncrementalityValues", "enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolverParameters_1_1IncrementalityValues.html", null ],
     [ "com.google.ortools.util.Int128OuterClass", "classcom_1_1google_1_1ortools_1_1util_1_1Int128OuterClass.html", null ],
@@ -675,6 +675,10 @@ var hierarchy =
         [ "com.google.ortools.sat.AllDifferentConstraintProto", "classcom_1_1google_1_1ortools_1_1sat_1_1AllDifferentConstraintProto.html", null ],
         [ "com.google.ortools.sat.AllDifferentConstraintProto.Builder", "classcom_1_1google_1_1ortools_1_1sat_1_1AllDifferentConstraintProto_1_1Builder.html", null ]
       ] ],
+      [ "com.google.ortools.sat.ArcLpValueOrBuilder", "interfacecom_1_1google_1_1ortools_1_1sat_1_1ArcLpValueOrBuilder.html", [
+        [ "com.google.ortools.sat.ArcLpValue", "classcom_1_1google_1_1ortools_1_1sat_1_1ArcLpValue.html", null ],
+        [ "com.google.ortools.sat.ArcLpValue.Builder", "classcom_1_1google_1_1ortools_1_1sat_1_1ArcLpValue_1_1Builder.html", null ]
+      ] ],
       [ "com.google.ortools.sat.AutomatonConstraintProtoOrBuilder", "interfacecom_1_1google_1_1ortools_1_1sat_1_1AutomatonConstraintProtoOrBuilder.html", [
         [ "com.google.ortools.sat.AutomatonConstraintProto", "classcom_1_1google_1_1ortools_1_1sat_1_1AutomatonConstraintProto.html", null ],
         [ "com.google.ortools.sat.AutomatonConstraintProto.Builder", "classcom_1_1google_1_1ortools_1_1sat_1_1AutomatonConstraintProto_1_1Builder.html", null ]
@@ -795,6 +799,10 @@ var hierarchy =
         [ "com.google.ortools.sat.RoutesConstraintProto", "classcom_1_1google_1_1ortools_1_1sat_1_1RoutesConstraintProto.html", null ],
         [ "com.google.ortools.sat.RoutesConstraintProto.Builder", "classcom_1_1google_1_1ortools_1_1sat_1_1RoutesConstraintProto_1_1Builder.html", null ]
       ] ],
+      [ "com.google.ortools.sat.RoutesSupportGraphProtoOrBuilder", "interfacecom_1_1google_1_1ortools_1_1sat_1_1RoutesSupportGraphProtoOrBuilder.html", [
+        [ "com.google.ortools.sat.RoutesSupportGraphProto", "classcom_1_1google_1_1ortools_1_1sat_1_1RoutesSupportGraphProto.html", null ],
+        [ "com.google.ortools.sat.RoutesSupportGraphProto.Builder", "classcom_1_1google_1_1ortools_1_1sat_1_1RoutesSupportGraphProto_1_1Builder.html", null ]
+      ] ],
       [ "com.google.ortools.sat.SatParametersOrBuilder", "interfacecom_1_1google_1_1ortools_1_1sat_1_1SatParametersOrBuilder.html", [
         [ "com.google.ortools.sat.SatParameters", "classcom_1_1google_1_1ortools_1_1sat_1_1SatParameters.html", null ],
         [ "com.google.ortools.sat.SatParameters.Builder", "classcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1Builder.html", null ]
@@ -818,14 +826,6 @@ var hierarchy =
       [ "com.google.ortools.util.Int128OrBuilder", "interfacecom_1_1google_1_1ortools_1_1util_1_1Int128OrBuilder.html", [
         [ "com.google.ortools.util.Int128", "classcom_1_1google_1_1ortools_1_1util_1_1Int128.html", null ],
         [ "com.google.ortools.util.Int128.Builder", "classcom_1_1google_1_1ortools_1_1util_1_1Int128_1_1Builder.html", null ]
-      ] ],
-      [ "operations_research.sat.RoutesSupportGraph.ArcLpValueOrBuilder", "interfaceoperations__research_1_1sat_1_1RoutesSupportGraph_1_1ArcLpValueOrBuilder.html", [
-        [ "operations_research.sat.RoutesSupportGraph.ArcLpValue", "classoperations__research_1_1sat_1_1RoutesSupportGraph_1_1ArcLpValue.html", null ],
-        [ "operations_research.sat.RoutesSupportGraph.ArcLpValue.Builder", "classoperations__research_1_1sat_1_1RoutesSupportGraph_1_1ArcLpValue_1_1Builder.html", null ]
-      ] ],
-      [ "operations_research.sat.RoutesSupportGraph.RoutesSupportGraphProtoOrBuilder", "interfaceoperations__research_1_1sat_1_1RoutesSupportGraph_1_1RoutesSupportGraphProtoOrBuilder.html", [
-        [ "operations_research.sat.RoutesSupportGraph.RoutesSupportGraphProto", "classoperations__research_1_1sat_1_1RoutesSupportGraph_1_1RoutesSupportGraphProto.html", null ],
-        [ "operations_research.sat.RoutesSupportGraph.RoutesSupportGraphProto.Builder", "classoperations__research_1_1sat_1_1RoutesSupportGraph_1_1RoutesSupportGraphProto_1_1Builder.html", null ]
       ] ]
     ] ],
     [ "com.google.ortools.graph.MinCostFlowBase", "classcom_1_1google_1_1ortools_1_1graph_1_1MinCostFlowBase.html", [
@@ -910,7 +910,7 @@ var hierarchy =
     [ "com.google.ortools.constraintsolver.RevInteger", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RevInteger.html", null ],
     [ "com.google.ortools.constraintsolver.RevLong", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RevLong.html", null ],
     [ "com.google.ortools.constraintsolver.RevPartialSequence", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RevPartialSequence.html", null ],
-    [ "operations_research.sat.RoutesSupportGraph", "classoperations__research_1_1sat_1_1RoutesSupportGraph.html", null ],
+    [ "com.google.ortools.sat.RoutesSupportGraph", "classcom_1_1google_1_1ortools_1_1sat_1_1RoutesSupportGraph.html", null ],
     [ "com.google.ortools.constraintsolver.RoutingDimension", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingDimension.html", null ],
     [ "com.google.ortools.constraintsolver.RoutingEnums", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingEnums.html", null ],
     [ "com.google.ortools.constraintsolver.RoutingIls", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingIls.html", null ],

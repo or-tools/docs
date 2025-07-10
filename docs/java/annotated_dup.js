@@ -275,6 +275,8 @@ var annotated_dup =
             [ "AffineExpression", "classcom_1_1google_1_1ortools_1_1sat_1_1AffineExpression.html", "classcom_1_1google_1_1ortools_1_1sat_1_1AffineExpression" ],
             [ "AllDifferentConstraintProto", "classcom_1_1google_1_1ortools_1_1sat_1_1AllDifferentConstraintProto.html", "classcom_1_1google_1_1ortools_1_1sat_1_1AllDifferentConstraintProto" ],
             [ "AllDifferentConstraintProtoOrBuilder", "interfacecom_1_1google_1_1ortools_1_1sat_1_1AllDifferentConstraintProtoOrBuilder.html", "interfacecom_1_1google_1_1ortools_1_1sat_1_1AllDifferentConstraintProtoOrBuilder" ],
+            [ "ArcLpValue", "classcom_1_1google_1_1ortools_1_1sat_1_1ArcLpValue.html", "classcom_1_1google_1_1ortools_1_1sat_1_1ArcLpValue" ],
+            [ "ArcLpValueOrBuilder", "interfacecom_1_1google_1_1ortools_1_1sat_1_1ArcLpValueOrBuilder.html", "interfacecom_1_1google_1_1ortools_1_1sat_1_1ArcLpValueOrBuilder" ],
             [ "AutomatonConstraint", "classcom_1_1google_1_1ortools_1_1sat_1_1AutomatonConstraint.html", "classcom_1_1google_1_1ortools_1_1sat_1_1AutomatonConstraint" ],
             [ "AutomatonConstraintProto", "classcom_1_1google_1_1ortools_1_1sat_1_1AutomatonConstraintProto.html", "classcom_1_1google_1_1ortools_1_1sat_1_1AutomatonConstraintProto" ],
             [ "AutomatonConstraintProtoOrBuilder", "interfacecom_1_1google_1_1ortools_1_1sat_1_1AutomatonConstraintProtoOrBuilder.html", "interfacecom_1_1google_1_1ortools_1_1sat_1_1AutomatonConstraintProtoOrBuilder" ],
@@ -358,6 +360,9 @@ var annotated_dup =
             [ "ReservoirConstraintProtoOrBuilder", "interfacecom_1_1google_1_1ortools_1_1sat_1_1ReservoirConstraintProtoOrBuilder.html", "interfacecom_1_1google_1_1ortools_1_1sat_1_1ReservoirConstraintProtoOrBuilder" ],
             [ "RoutesConstraintProto", "classcom_1_1google_1_1ortools_1_1sat_1_1RoutesConstraintProto.html", "classcom_1_1google_1_1ortools_1_1sat_1_1RoutesConstraintProto" ],
             [ "RoutesConstraintProtoOrBuilder", "interfacecom_1_1google_1_1ortools_1_1sat_1_1RoutesConstraintProtoOrBuilder.html", "interfacecom_1_1google_1_1ortools_1_1sat_1_1RoutesConstraintProtoOrBuilder" ],
+            [ "RoutesSupportGraph", "classcom_1_1google_1_1ortools_1_1sat_1_1RoutesSupportGraph.html", "classcom_1_1google_1_1ortools_1_1sat_1_1RoutesSupportGraph" ],
+            [ "RoutesSupportGraphProto", "classcom_1_1google_1_1ortools_1_1sat_1_1RoutesSupportGraphProto.html", "classcom_1_1google_1_1ortools_1_1sat_1_1RoutesSupportGraphProto" ],
+            [ "RoutesSupportGraphProtoOrBuilder", "interfacecom_1_1google_1_1ortools_1_1sat_1_1RoutesSupportGraphProtoOrBuilder.html", "interfacecom_1_1google_1_1ortools_1_1sat_1_1RoutesSupportGraphProtoOrBuilder" ],
             [ "SatParameters", "classcom_1_1google_1_1ortools_1_1sat_1_1SatParameters.html", "classcom_1_1google_1_1ortools_1_1sat_1_1SatParameters" ],
             [ "SatParametersOrBuilder", "interfacecom_1_1google_1_1ortools_1_1sat_1_1SatParametersOrBuilder.html", "interfacecom_1_1google_1_1ortools_1_1sat_1_1SatParametersOrBuilder" ],
             [ "SatParametersOuterClass", "classcom_1_1google_1_1ortools_1_1sat_1_1SatParametersOuterClass.html", "classcom_1_1google_1_1ortools_1_1sat_1_1SatParametersOuterClass" ],
@@ -384,11 +389,6 @@ var annotated_dup =
           ] ],
           [ "Loader", "classcom_1_1google_1_1ortools_1_1Loader.html", "classcom_1_1google_1_1ortools_1_1Loader" ]
         ] ]
-      ] ]
-    ] ],
-    [ "operations_research", null, [
-      [ "sat", "namespaceoperations__research_1_1sat.html", [
-        [ "RoutesSupportGraph", "classoperations__research_1_1sat_1_1RoutesSupportGraph.html", "classoperations__research_1_1sat_1_1RoutesSupportGraph" ]
       ] ]
     ] ]
 ];

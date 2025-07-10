@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,16 +96,6 @@ $(function(){initNavTree('classoperations__research_1_1math__opt_1_1BufferedMess
   <div class="headertitle"><div class="title">operations_research::math_opt::BufferedMessageCallback Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
-<p><code>#include &lt;<a class="el" href="message__callback__data_8h_source.html">message_callback_data.h</a>&gt;</code></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a2287fd3866d7ebbe4b68c0bec4a5ec2a" id="r_a2287fd3866d7ebbe4b68c0bec4a5ec2a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2287fd3866d7ebbe4b68c0bec4a5ec2a">BufferedMessageCallback</a> (<a class="el" href="classoperations__research_1_1math__opt_1_1SolverInterface.html#a478a3b5e923888a4d846548c2e42d120">SolverInterface::MessageCallback</a> user_message_callback)</td></tr>
-<tr class="memitem:af65634d66114ce896cb2044e8c3e72d9" id="r_af65634d66114ce896cb2044e8c3e72d9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af65634d66114ce896cb2044e8c3e72d9">has_user_message_callback</a> () const</td></tr>
-<tr class="memitem:aecebf515663330c1131d4426849a71c1" id="r_aecebf515663330c1131d4426849a71c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aecebf515663330c1131d4426849a71c1">OnMessage</a> (absl::string_view message)</td></tr>
-<tr class="memitem:acd66c3960cd96e47954b44931938f8cf" id="r_acd66c3960cd96e47954b44931938f8cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acd66c3960cd96e47954b44931938f8cf">Flush</a> ()</td></tr>
-</table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Buffers callback data into lines using <a class="el" href="classoperations__research_1_1math__opt_1_1MessageCallbackData.html">MessageCallbackData</a> and invokes the callback as new lines are ready.</p>
 <p>In MathOpt, typically used for solvers that provide a callback with the solver logs where the logs contain <span class="tt">\n</span> characters and messages may be both less than a complete line or multiple lines. Recommended use:</p><ul>
@@ -117,7 +108,17 @@ Public Member Functions</h2></td></tr>
 <p>This class is threadsafe if the input callback is also threadsafe. </p>
 
 <p class="definition">Definition at line <a class="el" href="message__callback__data_8h_source.html#l00081">81</a> of file <a class="el" href="message__callback__data_8h_source.html">message_callback_data.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+</div>
+<p><code>#include &lt;<a class="el" href="message__callback__data_8h_source.html">message_callback_data.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a2287fd3866d7ebbe4b68c0bec4a5ec2a" id="r_a2287fd3866d7ebbe4b68c0bec4a5ec2a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2287fd3866d7ebbe4b68c0bec4a5ec2a">BufferedMessageCallback</a> (<a class="el" href="classoperations__research_1_1math__opt_1_1SolverInterface.html#a478a3b5e923888a4d846548c2e42d120">SolverInterface::MessageCallback</a> user_message_callback)</td></tr>
+<tr class="memitem:af65634d66114ce896cb2044e8c3e72d9" id="r_af65634d66114ce896cb2044e8c3e72d9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af65634d66114ce896cb2044e8c3e72d9">has_user_message_callback</a> () const</td></tr>
+<tr class="memitem:aecebf515663330c1131d4426849a71c1" id="r_aecebf515663330c1131d4426849a71c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aecebf515663330c1131d4426849a71c1">OnMessage</a> (absl::string_view message)</td></tr>
+<tr class="memitem:acd66c3960cd96e47954b44931938f8cf" id="r_acd66c3960cd96e47954b44931938f8cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acd66c3960cd96e47954b44931938f8cf">Flush</a> ()</td></tr>
+</table>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a2287fd3866d7ebbe4b68c0bec4a5ec2a" name="a2287fd3866d7ebbe4b68c0bec4a5ec2a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2287fd3866d7ebbe4b68c0bec4a5ec2a">&#9670;&#160;</a></span>BufferedMessageCallback()</h2>
 

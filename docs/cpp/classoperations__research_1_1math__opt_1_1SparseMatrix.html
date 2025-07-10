@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,24 @@ $(function(){initNavTree('classoperations__research_1_1math__opt_1_1SparseMatrix
   <div class="headertitle"><div class="title">operations_research::math_opt::SparseMatrix&lt; RowId, ColumnId &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename RowId, typename ColumnId&gt;<br />
+class operations_research::math_opt::SparseMatrix&lt; RowId, ColumnId &gt;</div><p>A sparse double valued matrix over int-like rows and columns.</p>
+<dl class="section note"><dt>Note</dt><dd>the matrix is sparse in both:<ul>
+<li>The IDs of the rows/columns, stored as flat_hash_map.</li>
+<li>The entries with nonzero value.</li>
+</ul>
+</dd></dl>
+<p>Getting/setting/clearing entries are O(1) operations. Getting a row of the matrix runs in O(size of the row) if nothing has been deleted, and getting all the rows runs in O(number of nonzero entries), even with deletions (with deletions, accessing a particular row or columns with many deletions may be slow).</p>
+<p>Implementation: The entries are stored in a flat_hash_map&lt;pair&lt;RowId, ColumnId&gt;, double&gt; <span class="tt">values_</span>. Additionally, we maintain a flat_hash_map&lt;RowId, vector&lt;ColumnId&gt;&gt; <span class="tt">rows_</span> and a flat_hash_map&lt;ColumnId, vector&lt;RowID&gt;&gt; <span class="tt">columns_</span> that enable efficient queries of the nonzeros in any row or column. When a coefficient is set to zero or a variable is deleted, we do not immediately delete the data from <span class="tt">values_</span>, <span class="tt">rows_</span>, or <span class="tt">columns_</span>, we simply set the coefficient to zero in <span class="tt">values_</span>. We track how many zeros are in <span class="tt">values_</span>, and when more than some constant fraction of all entries are zero (see <span class="tt"><a class="el" href="namespaceoperations__research_1_1math__opt_1_1internal.html#a0fd3be09e822d758e8abe91deb04dd7a">internal::kZerosCleanup</a></span>), we clean up <span class="tt">rows_</span>, <span class="tt">columns_</span>, and <span class="tt">values_</span> to remove all the zeros. Iteration over the rows or total entries of the matrix must check for zeros in values_ and skip these terms.</p>
+<p>Memory use:</p><ul>
+<li>3*8 bytes per nonzero plus hash capacity overhead for values_.</li>
+<li>2*8 bytes per nonzero plus vector capacity overhead for rows_ and columns_.</li>
+<li>~5*8 bytes and one heap allocation per unique row and unique column. </li>
+</ul>
 
+<p class="definition">Definition at line <a class="el" href="sparse__matrix_8h_source.html#l00175">175</a> of file <a class="el" href="sparse__matrix_8h_source.html">sparse_matrix.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="sparse__matrix_8h_source.html">sparse_matrix.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -119,27 +137,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae3a335bc6bae39a68532135dacbc89b4" id="r_ae3a335bc6bae39a68532135dacbc89b4"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae3a335bc6bae39a68532135dacbc89b4">nonzeros</a> () const</td></tr>
 <tr class="memdesc:ae3a335bc6bae39a68532135dacbc89b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of (row, column) keys with nonzero value.  <br /></td></tr>
 <tr class="memitem:a81320b3767a7f3a59488d88cca32304d" id="r_a81320b3767a7f3a59488d88cca32304d"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a81320b3767a7f3a59488d88cca32304d">impl_detail_matrix_storage_size</a> () const</td></tr>
-<tr class="memitem:ad6ec08b306ff47886a9e7d7f69de4e44" id="r_ad6ec08b306ff47886a9e7d7f69de4e44"><td class="memItemLeft" align="right" valign="top">SparseDoubleMatrixProto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad6ec08b306ff47886a9e7d7f69de4e44">Proto</a> () const</td></tr>
-<tr class="memitem:a346f0dd1bc945b8a3f6acce2f868b0f3" id="r_a346f0dd1bc945b8a3f6acce2f868b0f3"><td class="memItemLeft" align="right" valign="top">SparseDoubleMatrixProto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a346f0dd1bc945b8a3f6acce2f868b0f3">Update</a> (const absl::flat_hash_set&lt; RowId &gt; &amp;deleted_rows, absl::Span&lt; const RowId &gt; new_rows, const absl::flat_hash_set&lt; ColumnId &gt; &amp;deleted_columns, absl::Span&lt; const ColumnId &gt; new_columns, const absl::flat_hash_set&lt; std::pair&lt; RowId, ColumnId &gt; &gt; &amp;dirty) const</td></tr>
+<tr class="memitem:ad6ec08b306ff47886a9e7d7f69de4e44" id="r_ad6ec08b306ff47886a9e7d7f69de4e44"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoperations__research_1_1math__opt_1_1SparseDoubleMatrixProto.html">SparseDoubleMatrixProto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad6ec08b306ff47886a9e7d7f69de4e44">Proto</a> () const</td></tr>
+<tr class="memitem:a346f0dd1bc945b8a3f6acce2f868b0f3" id="r_a346f0dd1bc945b8a3f6acce2f868b0f3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoperations__research_1_1math__opt_1_1SparseDoubleMatrixProto.html">SparseDoubleMatrixProto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a346f0dd1bc945b8a3f6acce2f868b0f3">Update</a> (const absl::flat_hash_set&lt; RowId &gt; &amp;deleted_rows, absl::Span&lt; const RowId &gt; new_rows, const absl::flat_hash_set&lt; ColumnId &gt; &amp;deleted_columns, absl::Span&lt; const ColumnId &gt; new_columns, const absl::flat_hash_set&lt; std::pair&lt; RowId, ColumnId &gt; &gt; &amp;dirty) const</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;typename RowId, typename ColumnId&gt;<br />
-class operations_research::math_opt::SparseMatrix&lt; RowId, ColumnId &gt;</div><p>A sparse double valued matrix over int-like rows and columns.</p>
-<dl class="section note"><dt>Note</dt><dd>the matrix is sparse in both:<ul>
-<li>The IDs of the rows/columns, stored as flat_hash_map.</li>
-<li>The entries with nonzero value.</li>
-</ul>
-</dd></dl>
-<p>Getting/setting/clearing entries are O(1) operations. Getting a row of the matrix runs in O(size of the row) if nothing has been deleted, and getting all the rows runs in O(number of nonzero entries), even with deletions (with deletions, accessing a particular row or columns with many deletions may be slow).</p>
-<p>Implementation: The entries are stored in a flat_hash_map&lt;pair&lt;RowId, ColumnId&gt;, double&gt; <span class="tt">values_</span>. Additionally, we maintain a flat_hash_map&lt;RowId, vector&lt;ColumnId&gt;&gt; <span class="tt">rows_</span> and a flat_hash_map&lt;ColumnId, vector&lt;RowID&gt;&gt; <span class="tt">columns_</span> that enable efficient queries of the nonzeros in any row or column. When a coefficient is set to zero or a variable is deleted, we do not immediately delete the data from <span class="tt">values_</span>, <span class="tt">rows_</span>, or <span class="tt">columns_</span>, we simply set the coefficient to zero in <span class="tt">values_</span>. We track how many zeros are in <span class="tt">values_</span>, and when more than some constant fraction of all entries are zero (see <span class="tt"><a class="el" href="namespaceoperations__research_1_1math__opt_1_1internal.html#a0fd3be09e822d758e8abe91deb04dd7a">internal::kZerosCleanup</a></span>), we clean up <span class="tt">rows_</span>, <span class="tt">columns_</span>, and <span class="tt">values_</span> to remove all the zeros. Iteration over the rows or total entries of the matrix must check for zeros in values_ and skip these terms.</p>
-<p>Memory use:</p><ul>
-<li>3*8 bytes per nonzero plus hash capacity overhead for values_.</li>
-<li>2*8 bytes per nonzero plus vector capacity overhead for rows_ and columns_.</li>
-<li>~5*8 bytes and one heap allocation per unique row and unique column. </li>
-</ul>
-
-<p class="definition">Definition at line <a class="el" href="sparse__matrix_8h_source.html#l00175">175</a> of file <a class="el" href="sparse__matrix_8h_source.html">sparse_matrix.h</a>.</p>
-</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="a4f40b2a5f2cdcd5c73636002c94fa1c2" name="a4f40b2a5f2cdcd5c73636002c94fa1c2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4f40b2a5f2cdcd5c73636002c94fa1c2">&#9670;&#160;</a></span>Clear()</h2>
 
@@ -179,7 +180,7 @@ template&lt;typename RowId, typename ColumnId&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns the variables that have nonzero entries with <span class="tt">variable</span>. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001035">Todo</a></b></dt><dd>(b/233630053): expose an iterator based API to avoid making a copy. </dd></dl>
+<p>Returns the variables that have nonzero entries with <span class="tt">variable</span>. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001034">Todo</a></b></dt><dd>(b/233630053): expose an iterator based API to avoid making a copy. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="sparse__matrix_8h_source.html#l00445">445</a> of file <a class="el" href="sparse__matrix_8h_source.html">sparse_matrix.h</a>.</p>
 
@@ -202,7 +203,7 @@ template&lt;typename RowId, typename ColumnId&gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Returns the variable value pairs (x, c) where <span class="tt">variable</span> and x have nonzero coefficient c.</p>
-<p>The return order is deterministic but not defined. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001037">Todo</a></b></dt><dd>(b/233630053): expose an iterator based API to avoid making a copy. </dd></dl>
+<p>The return order is deterministic but not defined. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001036">Todo</a></b></dt><dd>(b/233630053): expose an iterator based API to avoid making a copy. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="sparse__matrix_8h_source.html#l00477">477</a> of file <a class="el" href="sparse__matrix_8h_source.html">sparse_matrix.h</a>.</p>
 
@@ -370,7 +371,7 @@ template&lt;typename RowId, typename ColumnId&gt; </div>
 template&lt;typename RowId, typename ColumnId&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">SparseDoubleMatrixProto <a class="el" href="classoperations__research_1_1math__opt_1_1SparseMatrix.html">operations_research::math_opt::SparseMatrix</a>&lt; RowId, ColumnId &gt;::Proto </td>
+          <td class="memname"><a class="el" href="classoperations__research_1_1math__opt_1_1SparseDoubleMatrixProto.html">SparseDoubleMatrixProto</a> <a class="el" href="classoperations__research_1_1math__opt_1_1SparseMatrix.html">operations_research::math_opt::SparseMatrix</a>&lt; RowId, ColumnId &gt;::Proto </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
@@ -398,7 +399,7 @@ template&lt;typename RowId, typename ColumnId&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns the variables that have nonzero entries with <span class="tt">variable</span>. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001034">Todo</a></b></dt><dd>(b/233630053): expose an iterator based API to avoid making a copy. </dd></dl>
+<p>Returns the variables that have nonzero entries with <span class="tt">variable</span>. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001033">Todo</a></b></dt><dd>(b/233630053): expose an iterator based API to avoid making a copy. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="sparse__matrix_8h_source.html#l00430">430</a> of file <a class="el" href="sparse__matrix_8h_source.html">sparse_matrix.h</a>.</p>
 
@@ -421,7 +422,7 @@ template&lt;typename RowId, typename ColumnId&gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Returns the variable value pairs (x, c) where <span class="tt">variable</span> and x have nonzero coefficient c.</p>
-<p>The return order is deterministic but not defined. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001036">Todo</a></b></dt><dd>(b/233630053): expose an iterator based API to avoid making a copy. </dd></dl>
+<p>The return order is deterministic but not defined. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001035">Todo</a></b></dt><dd>(b/233630053): expose an iterator based API to avoid making a copy. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="sparse__matrix_8h_source.html#l00461">461</a> of file <a class="el" href="sparse__matrix_8h_source.html">sparse_matrix.h</a>.</p>
 
@@ -476,7 +477,7 @@ template&lt;typename RowId, typename ColumnId&gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Returns (x, y, c) tuples where variables x and y have nonzero coefficient c, and x &lt;= y.</p>
-<p>The return order is non-deterministic and not defined. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001038">Todo</a></b></dt><dd>(b/233630053): expose an iterator based API to avoid making a copy. </dd></dl>
+<p>The return order is non-deterministic and not defined. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001037">Todo</a></b></dt><dd>(b/233630053): expose an iterator based API to avoid making a copy. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="sparse__matrix_8h_source.html#l00493">493</a> of file <a class="el" href="sparse__matrix_8h_source.html">sparse_matrix.h</a>.</p>
 
@@ -491,7 +492,7 @@ template&lt;typename RowId, typename ColumnId&gt; </div>
 template&lt;typename RowId, typename ColumnId&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">SparseDoubleMatrixProto <a class="el" href="classoperations__research_1_1math__opt_1_1SparseMatrix.html">operations_research::math_opt::SparseMatrix</a>&lt; RowId, ColumnId &gt;::Update </td>
+          <td class="memname"><a class="el" href="classoperations__research_1_1math__opt_1_1SparseDoubleMatrixProto.html">SparseDoubleMatrixProto</a> <a class="el" href="classoperations__research_1_1math__opt_1_1SparseMatrix.html">operations_research::math_opt::SparseMatrix</a>&lt; RowId, ColumnId &gt;::Update </td>
           <td>(</td>
           <td class="paramtype">const absl::flat_hash_set&lt; RowId &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>deleted_rows</em></span>, </td>
         </tr>
@@ -519,8 +520,8 @@ template&lt;typename RowId, typename ColumnId&gt; </div>
 </div><div class="memdoc">
 <p>Extract changes to the matrix of linear constraint coefficients</p>
 <dl class="section note"><dt>Note</dt><dd>it is important that we check for deleted constraints and variables here. While we generally try to remove elements from matrix_keys_ when either their variable or constraint is deleted, if a coefficient is set to zero and then the variable/constraint is deleted, we will miss it.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001027">Todo</a></b></dt><dd>(b/233630053): use iterator API. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001028">Todo</a></b></dt><dd>(b/233630053) use iterator API. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001026">Todo</a></b></dt><dd>(b/233630053): use iterator API. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001027">Todo</a></b></dt><dd>(b/233630053) use iterator API. </dd></dl>
 <p>NOTE(user): we already have the columns above the checkpoint from the loop above, but we will do at most twice as much as needed here.</p>
 
 <p class="definition">Definition at line <a class="el" href="sparse__matrix_8h_source.html#l00530">530</a> of file <a class="el" href="sparse__matrix_8h_source.html">sparse_matrix.h</a>.</p>

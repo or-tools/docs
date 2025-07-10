@@ -1,0 +1,6 @@
+var structoperations__research_1_1pdlp_1_1TerminationCriteria__SimpleOptimalityCriteriaDefaultTypeInternal =
+[
+    [ "TerminationCriteria_SimpleOptimalityCriteriaDefaultTypeInternal", "structoperations__research_1_1pdlp_1_1TerminationCriteria__SimpleOptimalityCriteriaDefaultTypeInternal.html#ad39db1fd01b6346b9cc73223796cb112", null ],
+    [ "~TerminationCriteria_SimpleOptimalityCriteriaDefaultTypeInternal", "structoperations__research_1_1pdlp_1_1TerminationCriteria__SimpleOptimalityCriteriaDefaultTypeInternal.html#a29ce63ba074996c162cb3ced8ac64b2b", null ],
+    [ "_instance", "structoperations__research_1_1pdlp_1_1TerminationCriteria__SimpleOptimalityCriteriaDefaultTypeInternal.html#a7465894f8a0e2570be965bab6a4d4f75", null ]
+];

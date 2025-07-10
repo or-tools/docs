@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,16 @@ $(function(){initNavTree('classoperations__research_1_1math__opt_1_1ElementalDif
   <div class="headertitle"><div class="title">operations_research::math_opt::ElementalDifference Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Holds the difference between the model from two <span class="tt"><a class="el" href="classoperations__research_1_1math__opt_1_1Elemental.html">Elemental</a></span>s. Typically used to check if two <a class="el" href="classoperations__research_1_1math__opt_1_1Elemental.html">Elemental</a> objects are the same, and provide a nice description of how they differ if they are not the same.</p>
+<dl class="section note"><dt>Note</dt><dd>:<ul>
+<li>This is an entirely separate concept from the <a class="el" href="classoperations__research_1_1math__opt_1_1Diff.html">Diff</a> object held by an an <a class="el" href="classoperations__research_1_1math__opt_1_1Elemental.html">Elemental</a>, which tracks changes to an <a class="el" href="classoperations__research_1_1math__opt_1_1Elemental.html">Elemental</a> from a point in time. The similarity in names is unfortunate and confusing.</li>
+<li>This class only tracks differences between the models, it ignores any <a class="el" href="classoperations__research_1_1math__opt_1_1Diff.html">Diff</a> objects either <a class="el" href="classoperations__research_1_1math__opt_1_1Elemental.html">Elemental</a> contains. </li>
+</ul>
+</dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="elemental__differencer_8h_source.html#l00067">67</a> of file <a class="el" href="elemental__differencer_8h_source.html">elemental_differencer.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="elemental__differencer_8h_source.html">elemental_differencer.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
@@ -127,16 +137,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memdesc:ad6bff3fed40997e42f9f930bbc01bbb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string describing the difference between two models.  <br /></td></tr>
 <tr class="memitem:acfa0f7a97ddd795278a62b805a3a5d15" id="r_acfa0f7a97ddd795278a62b805a3a5d15"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acfa0f7a97ddd795278a62b805a3a5d15">Describe</a> (const <a class="el" href="classoperations__research_1_1math__opt_1_1Elemental.html">Elemental</a> &amp;first, const <a class="el" href="classoperations__research_1_1math__opt_1_1Elemental.html">Elemental</a> &amp;second, const <a class="el" href="classoperations__research_1_1math__opt_1_1ElementalDifference.html">ElementalDifference</a> &amp;difference)</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Holds the difference between the model from two <span class="tt"><a class="el" href="classoperations__research_1_1math__opt_1_1Elemental.html">Elemental</a></span>s. Typically used to check if two <a class="el" href="classoperations__research_1_1math__opt_1_1Elemental.html">Elemental</a> objects are the same, and provide a nice description of how they differ if they are not the same.</p>
-<dl class="section note"><dt>Note</dt><dd>:<ul>
-<li>This is an entirely separate concept from the <a class="el" href="classoperations__research_1_1math__opt_1_1Diff.html">Diff</a> object held by an an <a class="el" href="classoperations__research_1_1math__opt_1_1Elemental.html">Elemental</a>, which tracks changes to an <a class="el" href="classoperations__research_1_1math__opt_1_1Elemental.html">Elemental</a> from a point in time. The similarity in names is unfortunate and confusing.</li>
-<li>This class only tracks differences between the models, it ignores any <a class="el" href="classoperations__research_1_1math__opt_1_1Diff.html">Diff</a> objects either <a class="el" href="classoperations__research_1_1math__opt_1_1Elemental.html">Elemental</a> contains. </li>
-</ul>
-</dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="elemental__differencer_8h_source.html#l00067">67</a> of file <a class="el" href="elemental__differencer_8h_source.html">elemental_differencer.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa9386e2d30db3a8033755cd331683682" name="aa9386e2d30db3a8033755cd331683682"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa9386e2d30db3a8033755cd331683682">&#9670;&#160;</a></span>ElementalDifference()</h2>
 

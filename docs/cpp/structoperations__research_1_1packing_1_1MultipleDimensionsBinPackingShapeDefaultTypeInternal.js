@@ -1,0 +1,6 @@
+var structoperations__research_1_1packing_1_1MultipleDimensionsBinPackingShapeDefaultTypeInternal =
+[
+    [ "MultipleDimensionsBinPackingShapeDefaultTypeInternal", "structoperations__research_1_1packing_1_1MultipleDimensionsBinPackingShapeDefaultTypeInternal.html#a5d55e44499ae423c35be62e1521d8f15", null ],
+    [ "~MultipleDimensionsBinPackingShapeDefaultTypeInternal", "structoperations__research_1_1packing_1_1MultipleDimensionsBinPackingShapeDefaultTypeInternal.html#a912a09ea92db5db7503d48d574889a75", null ],
+    [ "_instance", "structoperations__research_1_1packing_1_1MultipleDimensionsBinPackingShapeDefaultTypeInternal.html#a984c4ef9453f1047e1e250af24473b42", null ]
+];

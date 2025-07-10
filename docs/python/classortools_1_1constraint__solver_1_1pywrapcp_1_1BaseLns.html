@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,37 @@ $(function(){initNavTree('classortools_1_1constraint__solver_1_1pywrapcp_1_1Base
   <div class="headertitle"><div class="title">ortools.constraint_solver.pywrapcp.BaseLns Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="dynheader">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><pre class="fragment">This is the base class for building an Lns operator. An Lns fragment is a
+collection of variables which will be relaxed. Fragments are built with
+NextFragment(), which returns false if there are no more fragments to build.
+Optionally one can override InitFragments, which is called from
+LocalSearchOperator::Start to initialize fragment data.
+
+Here's a sample relaxing one variable at a time:
+
+class OneVarLns : public BaseLns {
+ public:
+  OneVarLns(const std::vector&lt;IntVar*&gt;&amp; vars) : BaseLns(vars), index_(0) {}
+  virtual ~OneVarLns() {}
+  virtual void InitFragments() { index_ = 0; }
+  virtual bool NextFragment() {
+    const int size = Size();
+    if (index_ &lt; size) {
+      AppendToFragment(index_);
+      ++index_;
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+ private:
+  int index_;
+};
+</pre> 
+<p class="definition">Definition at line <a class="el" href="pywrapcp_8py_source.html#l04331">4331</a> of file <a class="el" href="pywrapcp_8py_source.html">pywrapcp.py</a>.</p>
+</div><div class="dynheader">
 Inheritance diagram for ortools.constraint_solver.pywrapcp.BaseLns:</div>
 <div class="dyncontent">
  <div class="center">
@@ -155,37 +186,7 @@ Properties</h2></td></tr>
 <tr class="inherit_header properties_classortools_1_1constraint__solver_1_1pywrapcp_1_1BaseObject"><td colspan="2" onclick="javascript:dynsection.toggleInherit('properties_classortools_1_1constraint__solver_1_1pywrapcp_1_1BaseObject')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Properties inherited from <a class="el" href="classortools_1_1constraint__solver_1_1pywrapcp_1_1BaseObject.html">ortools.constraint_solver.pywrapcp.BaseObject</a></td></tr>
 <tr class="memitem:aa3e190270c47101b7caf573d717e702f inherit properties_classortools_1_1constraint__solver_1_1pywrapcp_1_1BaseObject" id="r_aa3e190270c47101b7caf573d717e702f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classortools_1_1constraint__solver_1_1pywrapcp_1_1BaseObject.html#aa3e190270c47101b7caf573d717e702f">thisown</a> = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc=&quot;The membership flag&quot;)</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><pre class="fragment">This is the base class for building an Lns operator. An Lns fragment is a
-collection of variables which will be relaxed. Fragments are built with
-NextFragment(), which returns false if there are no more fragments to build.
-Optionally one can override InitFragments, which is called from
-LocalSearchOperator::Start to initialize fragment data.
-
-Here's a sample relaxing one variable at a time:
-
-class OneVarLns : public BaseLns {
- public:
-  OneVarLns(const std::vector&lt;IntVar*&gt;&amp; vars) : BaseLns(vars), index_(0) {}
-  virtual ~OneVarLns() {}
-  virtual void InitFragments() { index_ = 0; }
-  virtual bool NextFragment() {
-    const int size = Size();
-    if (index_ &lt; size) {
-      AppendToFragment(index_);
-      ++index_;
-      return true;
-    } else {
-      return false;
-    }
-  }
-
- private:
-  int index_;
-};
-</pre> 
-<p class="definition">Definition at line <a class="el" href="pywrapcp_8py_source.html#l04331">4331</a> of file <a class="el" href="pywrapcp_8py_source.html">pywrapcp.py</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a95636c0a0ff8d8fc90e271b901258b3d" name="a95636c0a0ff8d8fc90e271b901258b3d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a95636c0a0ff8d8fc90e271b901258b3d">&#9670;&#160;</a></span>__init__()</h2>
 

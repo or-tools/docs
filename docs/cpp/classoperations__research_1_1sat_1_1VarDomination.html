@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,14 @@ $(function(){initNavTree('classoperations__research_1_1sat_1_1VarDomination.html
   <div class="headertitle"><div class="title">operations_research::sat::VarDomination Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A variable X is say to dominate a variable Y if, from any feasible solution, doing X++ and Y&ndash; is also feasible (modulo the domain of X and Y) and has the same or a better objective value.</p>
+<dl class="section note"><dt>Note</dt><dd>we also look for dominance between the negation of the variables. So we detect all (X++, Y++), (X&ndash;, Y&ndash;), (X++, Y&ndash;) and (X&ndash;, Y++) cases. We reuse both ref / Negated(ref) and translate that to IntegerVariable for indexing vectors.</dd></dl>
+<p>Once detected, dominance relation can lead to more propagation. Note however, that we will loose feasible solution that are dominated by better solutions. In particular, in a linear constraint sum coeff * Xi &lt;= rhs with positive coeff, if an X is dominated by a set of other variable in the constraint, then its upper bound can be propagated assuming the dominating variables are at their upper bound. This can in many case result in X being fixed to its lower bound.</p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002540">Todo</a></b></dt><dd>(user): We have a lot of benchmarks and tests that shows that we don't report wrong relations, but we lack unit test that make sure we don't miss any. Try to improve the situation. </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="var__domination_8h_source.html#l00052">52</a> of file <a class="el" href="var__domination_8h_source.html">var_domination.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="var__domination_8h_source.html">var_domination.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -119,14 +127,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a4238902dfbf82b37ee853cd996e90cc6" id="r_a4238902dfbf82b37ee853cd996e90cc6"><td class="memItemLeft" align="right" valign="top">static IntegerVariable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4238902dfbf82b37ee853cd996e90cc6">RefToIntegerVariable</a> (int ref)</td></tr>
 <tr class="memitem:a027b328b0d11110f56a36bbea8c93f27" id="r_a027b328b0d11110f56a36bbea8c93f27"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a027b328b0d11110f56a36bbea8c93f27">IntegerVariableToRef</a> (IntegerVariable var)</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A variable X is say to dominate a variable Y if, from any feasible solution, doing X++ and Y&ndash; is also feasible (modulo the domain of X and Y) and has the same or a better objective value.</p>
-<dl class="section note"><dt>Note</dt><dd>we also look for dominance between the negation of the variables. So we detect all (X++, Y++), (X&ndash;, Y&ndash;), (X++, Y&ndash;) and (X&ndash;, Y++) cases. We reuse both ref / Negated(ref) and translate that to IntegerVariable for indexing vectors.</dd></dl>
-<p>Once detected, dominance relation can lead to more propagation. Note however, that we will loose feasible solution that are dominated by better solutions. In particular, in a linear constraint sum coeff * Xi &lt;= rhs with positive coeff, if an X is dominated by a set of other variable in the constraint, then its upper bound can be propagated assuming the dominating variables are at their upper bound. This can in many case result in X being fixed to its lower bound.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002542">Todo</a></b></dt><dd>(user): We have a lot of benchmarks and tests that shows that we don't report wrong relations, but we lack unit test that make sure we don't miss any. Try to improve the situation. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="var__domination_8h_source.html#l00052">52</a> of file <a class="el" href="var__domination_8h_source.html">var_domination.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa288c004dd2ca32f7312d7cac8f7c0bc" name="aa288c004dd2ca32f7312d7cac8f7c0bc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa288c004dd2ca32f7312d7cac8f7c0bc">&#9670;&#160;</a></span>VarDomination()</h2>
 
@@ -379,9 +380,9 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p><a class="el" href="#ab03b7579b6f0728fd7c98fccae5196ed">EndFirstPhase()</a> must be called once all constraints have been processed once. One then needs to redo the calls to <a class="el" href="#a916b708397a6873c225eebae2d033241">ActivityShouldNotIncrease()</a> and <a class="el" href="#aeac9827a72865e95037801d56db841b1">ActivityShouldNotDecrease()</a>. And finally call <a class="el" href="#aed783f97e857fb97d8d95591bf55ee3a">EndSecondPhase()</a> before querying the domination information.</p>
 <p>If <a class="el" href="#ab03b7579b6f0728fd7c98fccae5196ed">EndFirstPhase()</a> return false, there is no point continuing.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002519">Todo</a></b></dt><dd>(user): Use more heuristics to not miss as much dominance relation when we crop initial lists. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002517">Todo</a></b></dt><dd>(user): Use more heuristics to not miss as much dominance relation when we crop initial lists. </dd></dl>
 <p>Some initial lists ar too long and will be cropped to this size. We will handle them slightly differently.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002520">Todo</a></b></dt><dd>(user): Tune the initial size, 50 might be a bit large, since our complexity is borned by this number times the number of entries in the constraints. Still we should in most situation be a lot lower than that. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002518">Todo</a></b></dt><dd>(user): Tune the initial size, 50 might be a bit large, since our complexity is borned by this number times the number of entries in the constraints. Still we should in most situation be a lot lower than that. </dd></dl>
 <p>Fill the initial domination candidates.</p>
 <p>Two modes, either we scan the full list, or a small subset of it. Not that low variable indices should appear first, so it is better not to randomize.</p>
 <p>Heuristic: To try not to remove domination relations corresponding to short lists during transposition (see <a class="el" href="#aed783f97e857fb97d8d95591bf55ee3a">EndSecondPhase()</a>), we fill the cropped list with the transpose of the short list relations. This helps finding more relation in the presence of cropped lists.</p>
@@ -389,7 +390,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Copy into a new buffer.</p>
 <p>Fill the free spaces with transposed values. But do not use new values !</p>
 <p>Remove any duplicates.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002521">Todo</a></b></dt><dd>(user): Maybe we should do that with all lists in case the input function are called with duplicates too. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002519">Todo</a></b></dt><dd>(user): Maybe we should do that with all lists in case the input function are called with duplicates too. </dd></dl>
 <p>We no longer need the first phase memory.</p>
 <p>A second phase is only needed if there are some potential dominance relations.</p>
 

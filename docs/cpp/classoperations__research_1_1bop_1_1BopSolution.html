@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,12 +96,17 @@ $(function(){initNavTree('classoperations__research_1_1bop_1_1BopSolution.html',
   <div class="headertitle"><div class="title">operations_research::bop::BopSolution Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A Bop solution is a Boolean assignment for each variable of the problem. The cost value associated to the solution is the instantiation of the objective cost of the problem.</p>
+<dl class="section note"><dt>Note</dt><dd>a solution might not be a feasible solution, i.e. might violate some constraints of the problem. The <a class="el" href="#a0eca10871e1f0f41ab96bd325e7ef966">IsFeasible()</a> method can be used to test the feasibility. </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="bop__solution_8h_source.html#l00039">39</a> of file <a class="el" href="bop__solution_8h_source.html">bop_solution.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="bop__solution_8h_source.html">bop_solution.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af4e61ac2d15289264b6ff5cfe5bb6fcf" id="r_af4e61ac2d15289264b6ff5cfe5bb6fcf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af4e61ac2d15289264b6ff5cfe5bb6fcf">BopSolution</a> (const sat::LinearBooleanProblem &amp;problem, absl::string_view <a class="el" href="#acffe881d096403c196ad7f96baf134e8">name</a>)</td></tr>
+<tr class="memitem:af4e61ac2d15289264b6ff5cfe5bb6fcf" id="r_af4e61ac2d15289264b6ff5cfe5bb6fcf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af4e61ac2d15289264b6ff5cfe5bb6fcf">BopSolution</a> (const <a class="el" href="classoperations__research_1_1sat_1_1LinearBooleanProblem.html">sat::LinearBooleanProblem</a> &amp;problem, absl::string_view <a class="el" href="#acffe881d096403c196ad7f96baf134e8">name</a>)</td></tr>
 <tr class="memitem:ad2217fd61809ce087e78494ac0d53c70" id="r_ad2217fd61809ce087e78494ac0d53c70"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad2217fd61809ce087e78494ac0d53c70">SetValue</a> (VariableIndex var, bool value)</td></tr>
 <tr class="memitem:ab31db28ca1e3e2c941c7adc76114bc10" id="r_ab31db28ca1e3e2c941c7adc76114bc10"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab31db28ca1e3e2c941c7adc76114bc10">Size</a> () const</td></tr>
 <tr class="memitem:acaa1e40a60137417f24ed4d2a81d063a" id="r_acaa1e40a60137417f24ed4d2a81d063a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acaa1e40a60137417f24ed4d2a81d063a">Value</a> (VariableIndex var) const</td></tr>
@@ -114,12 +120,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa366d2e98703ca7599f7f7318c1175bb" id="r_aa366d2e98703ca7599f7f7318c1175bb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classutil__intops_1_1StrongVector.html">util_intops::StrongVector</a>&lt; VariableIndex, bool &gt;::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa366d2e98703ca7599f7f7318c1175bb">end</a> () const</td></tr>
 <tr class="memitem:a15dabb1ddf0a98a69a99bdb62075609a" id="r_a15dabb1ddf0a98a69a99bdb62075609a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a15dabb1ddf0a98a69a99bdb62075609a">operator&lt;</a> (const <a class="el" href="classoperations__research_1_1bop_1_1BopSolution.html">BopSolution</a> &amp;<a class="el" href="namespaceoperations__research.html#a35a30dc825cd0afa0e095f47118cd3cd">solution</a>) const</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A Bop solution is a Boolean assignment for each variable of the problem. The cost value associated to the solution is the instantiation of the objective cost of the problem.</p>
-<dl class="section note"><dt>Note</dt><dd>a solution might not be a feasible solution, i.e. might violate some constraints of the problem. The <a class="el" href="#a0eca10871e1f0f41ab96bd325e7ef966">IsFeasible()</a> method can be used to test the feasibility. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="bop__solution_8h_source.html#l00039">39</a> of file <a class="el" href="bop__solution_8h_source.html">bop_solution.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af4e61ac2d15289264b6ff5cfe5bb6fcf" name="af4e61ac2d15289264b6ff5cfe5bb6fcf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af4e61ac2d15289264b6ff5cfe5bb6fcf">&#9670;&#160;</a></span>BopSolution()</h2>
 
@@ -129,7 +130,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">operations_research::bop::BopSolution::BopSolution </td>
           <td>(</td>
-          <td class="paramtype">const sat::LinearBooleanProblem &amp;</td>          <td class="paramname"><span class="paramname"><em>problem</em></span>, </td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1sat_1_1LinearBooleanProblem.html">sat::LinearBooleanProblem</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>problem</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>

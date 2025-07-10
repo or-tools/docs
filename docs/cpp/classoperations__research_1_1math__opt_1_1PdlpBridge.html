@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,16 @@ $(function(){initNavTree('classoperations__research_1_1math__opt_1_1PdlpBridge.h
   <div class="headertitle"><div class="title">operations_research::math_opt::PdlpBridge Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Builds a PDLP model (QuadraticProgram) from <a class="el" href="classoperations__research_1_1math__opt_1_1ModelProto.html">ModelProto</a>, and provides methods to translate solutions back and forth.</p>
+<p>The primary difference in the models are:</p><ol type="1">
+<li>PDLP maps the variable/constraint ids to consecutive indices [0, 1, ..., n).</li>
+<li>PDLP does not support maximization. If the <a class="el" href="classoperations__research_1_1math__opt_1_1ModelProto.html">ModelProto</a> is a maximization problem, the objective is negated (coefficients and offset) before passing to PDLP. On the way back, the objective value, and all dual variables/reduced costs (also for rays) must be negated.</li>
+</ol>
+<p>Throughout, it is assumed that the MathOpt protos have been validated, but no assumption is made on the PDLP output. Any Status errors resulting from invalid PDLP output use the status code kInternal. </p>
 
+<p class="definition">Definition at line <a class="el" href="pdlp__bridge_8h_source.html#l00048">48</a> of file <a class="el" href="pdlp__bridge_8h_source.html">pdlp_bridge.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="pdlp__bridge_8h_source.html">pdlp_bridge.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -104,25 +114,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a580d87b056530bcf8576c9bbc51f8a4c" id="r_a580d87b056530bcf8576c9bbc51f8a4c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structoperations__research_1_1pdlp_1_1QuadraticProgram.html">pdlp::QuadraticProgram</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a580d87b056530bcf8576c9bbc51f8a4c">pdlp_lp</a> () const</td></tr>
 <tr class="memitem:a21664fc355238a0581a74a6cac850b7d" id="r_a21664fc355238a0581a74a6cac850b7d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structoperations__research_1_1math__opt_1_1InvertedBounds.html">InvertedBounds</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a21664fc355238a0581a74a6cac850b7d">ListInvertedBounds</a> () const</td></tr>
 <tr class="memdesc:a21664fc355238a0581a74a6cac850b7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the ids of variables and linear constraints with inverted bounds.  <br /></td></tr>
-<tr class="memitem:a5be3dbbc95b4b889956096613a822e40" id="r_a5be3dbbc95b4b889956096613a822e40"><td class="memItemLeft" align="right" valign="top">absl::StatusOr&lt; SparseDoubleVectorProto &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5be3dbbc95b4b889956096613a822e40">PrimalVariablesToProto</a> (const Eigen::VectorXd &amp;primal_values, const SparseVectorFilterProto &amp;variable_filter) const</td></tr>
-<tr class="memitem:a296e837ede3e4318e9fcc12d4442e4f6" id="r_a296e837ede3e4318e9fcc12d4442e4f6"><td class="memItemLeft" align="right" valign="top">absl::StatusOr&lt; SparseDoubleVectorProto &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a296e837ede3e4318e9fcc12d4442e4f6">DualVariablesToProto</a> (const Eigen::VectorXd &amp;dual_values, const SparseVectorFilterProto &amp;linear_constraint_filter) const</td></tr>
-<tr class="memitem:a68546c10ff109ad252ab8803f029c08c" id="r_a68546c10ff109ad252ab8803f029c08c"><td class="memItemLeft" align="right" valign="top">absl::StatusOr&lt; SparseDoubleVectorProto &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a68546c10ff109ad252ab8803f029c08c">ReducedCostsToProto</a> (const Eigen::VectorXd &amp;reduced_costs, const SparseVectorFilterProto &amp;variable_filter) const</td></tr>
-<tr class="memitem:aa466ee21a988473b02d894f7d26f25a9" id="r_aa466ee21a988473b02d894f7d26f25a9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structoperations__research_1_1pdlp_1_1PrimalAndDualSolution.html">pdlp::PrimalAndDualSolution</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa466ee21a988473b02d894f7d26f25a9">SolutionHintToWarmStart</a> (const SolutionHintProto &amp;solution_hint) const</td></tr>
+<tr class="memitem:a5be3dbbc95b4b889956096613a822e40" id="r_a5be3dbbc95b4b889956096613a822e40"><td class="memItemLeft" align="right" valign="top">absl::StatusOr&lt; <a class="el" href="classoperations__research_1_1math__opt_1_1SparseDoubleVectorProto.html">SparseDoubleVectorProto</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5be3dbbc95b4b889956096613a822e40">PrimalVariablesToProto</a> (const Eigen::VectorXd &amp;primal_values, const <a class="el" href="classoperations__research_1_1math__opt_1_1SparseVectorFilterProto.html">SparseVectorFilterProto</a> &amp;variable_filter) const</td></tr>
+<tr class="memitem:a296e837ede3e4318e9fcc12d4442e4f6" id="r_a296e837ede3e4318e9fcc12d4442e4f6"><td class="memItemLeft" align="right" valign="top">absl::StatusOr&lt; <a class="el" href="classoperations__research_1_1math__opt_1_1SparseDoubleVectorProto.html">SparseDoubleVectorProto</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a296e837ede3e4318e9fcc12d4442e4f6">DualVariablesToProto</a> (const Eigen::VectorXd &amp;dual_values, const <a class="el" href="classoperations__research_1_1math__opt_1_1SparseVectorFilterProto.html">SparseVectorFilterProto</a> &amp;linear_constraint_filter) const</td></tr>
+<tr class="memitem:a68546c10ff109ad252ab8803f029c08c" id="r_a68546c10ff109ad252ab8803f029c08c"><td class="memItemLeft" align="right" valign="top">absl::StatusOr&lt; <a class="el" href="classoperations__research_1_1math__opt_1_1SparseDoubleVectorProto.html">SparseDoubleVectorProto</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a68546c10ff109ad252ab8803f029c08c">ReducedCostsToProto</a> (const Eigen::VectorXd &amp;reduced_costs, const <a class="el" href="classoperations__research_1_1math__opt_1_1SparseVectorFilterProto.html">SparseVectorFilterProto</a> &amp;variable_filter) const</td></tr>
+<tr class="memitem:aa466ee21a988473b02d894f7d26f25a9" id="r_aa466ee21a988473b02d894f7d26f25a9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structoperations__research_1_1pdlp_1_1PrimalAndDualSolution.html">pdlp::PrimalAndDualSolution</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa466ee21a988473b02d894f7d26f25a9">SolutionHintToWarmStart</a> (const <a class="el" href="classoperations__research_1_1math__opt_1_1SolutionHintProto.html">SolutionHintProto</a> &amp;solution_hint) const</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a45bc24b50940e39270cd163906263615" id="r_a45bc24b50940e39270cd163906263615"><td class="memItemLeft" align="right" valign="top">static absl::StatusOr&lt; <a class="el" href="classoperations__research_1_1math__opt_1_1PdlpBridge.html">PdlpBridge</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a45bc24b50940e39270cd163906263615">FromProto</a> (const ModelProto &amp;model_proto)</td></tr>
+<tr class="memitem:a45bc24b50940e39270cd163906263615" id="r_a45bc24b50940e39270cd163906263615"><td class="memItemLeft" align="right" valign="top">static absl::StatusOr&lt; <a class="el" href="classoperations__research_1_1math__opt_1_1PdlpBridge.html">PdlpBridge</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a45bc24b50940e39270cd163906263615">FromProto</a> (const <a class="el" href="classoperations__research_1_1math__opt_1_1ModelProto.html">ModelProto</a> &amp;model_proto)</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Builds a PDLP model (QuadraticProgram) from ModelProto, and provides methods to translate solutions back and forth.</p>
-<p>The primary difference in the models are:</p><ol type="1">
-<li>PDLP maps the variable/constraint ids to consecutive indices [0, 1, ..., n).</li>
-<li>PDLP does not support maximization. If the ModelProto is a maximization problem, the objective is negated (coefficients and offset) before passing to PDLP. On the way back, the objective value, and all dual variables/reduced costs (also for rays) must be negated.</li>
-</ol>
-<p>Throughout, it is assumed that the MathOpt protos have been validated, but no assumption is made on the PDLP output. Any Status errors resulting from invalid PDLP output use the status code kInternal. </p>
-
-<p class="definition">Definition at line <a class="el" href="pdlp__bridge_8h_source.html#l00048">48</a> of file <a class="el" href="pdlp__bridge_8h_source.html">pdlp_bridge.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a86c16d11ba0235ed5d66794c9bdcca6b" name="a86c16d11ba0235ed5d66794c9bdcca6b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a86c16d11ba0235ed5d66794c9bdcca6b">&#9670;&#160;</a></span>PdlpBridge()</h2>
 
@@ -156,14 +157,14 @@ Static Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">absl::StatusOr&lt; SparseDoubleVectorProto &gt; operations_research::math_opt::PdlpBridge::DualVariablesToProto </td>
+          <td class="memname">absl::StatusOr&lt; <a class="el" href="classoperations__research_1_1math__opt_1_1SparseDoubleVectorProto.html">SparseDoubleVectorProto</a> &gt; operations_research::math_opt::PdlpBridge::DualVariablesToProto </td>
           <td>(</td>
           <td class="paramtype">const Eigen::VectorXd &amp;</td>          <td class="paramname"><span class="paramname"><em>dual_values</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const SparseVectorFilterProto &amp;</td>          <td class="paramname"><span class="paramname"><em>linear_constraint_filter</em></span>&#160;) const</td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1math__opt_1_1SparseVectorFilterProto.html">SparseVectorFilterProto</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>linear_constraint_filter</em></span>&#160;) const</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -184,7 +185,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">absl::StatusOr&lt; <a class="el" href="classoperations__research_1_1math__opt_1_1PdlpBridge.html">PdlpBridge</a> &gt; operations_research::math_opt::PdlpBridge::FromProto </td>
           <td>(</td>
-          <td class="paramtype">const ModelProto &amp;</td>          <td class="paramname"><span class="paramname"><em>model_proto</em></span></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1math__opt_1_1ModelProto.html">ModelProto</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>model_proto</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -256,18 +257,18 @@ Static Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">absl::StatusOr&lt; SparseDoubleVectorProto &gt; operations_research::math_opt::PdlpBridge::PrimalVariablesToProto </td>
+          <td class="memname">absl::StatusOr&lt; <a class="el" href="classoperations__research_1_1math__opt_1_1SparseDoubleVectorProto.html">SparseDoubleVectorProto</a> &gt; operations_research::math_opt::PdlpBridge::PrimalVariablesToProto </td>
           <td>(</td>
           <td class="paramtype">const Eigen::VectorXd &amp;</td>          <td class="paramname"><span class="paramname"><em>primal_values</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const SparseVectorFilterProto &amp;</td>          <td class="paramname"><span class="paramname"><em>variable_filter</em></span>&#160;) const</td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1math__opt_1_1SparseVectorFilterProto.html">SparseVectorFilterProto</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>variable_filter</em></span>&#160;) const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001010">Todo</a></b></dt><dd>(b/183616124): we need to support the inverse of these methods for warm start. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001009">Todo</a></b></dt><dd>(b/183616124): we need to support the inverse of these methods for warm start. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="pdlp__bridge_8cc_source.html#l00190">190</a> of file <a class="el" href="pdlp__bridge_8cc_source.html">pdlp_bridge.cc</a>.</p>
 
@@ -280,14 +281,14 @@ Static Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">absl::StatusOr&lt; SparseDoubleVectorProto &gt; operations_research::math_opt::PdlpBridge::ReducedCostsToProto </td>
+          <td class="memname">absl::StatusOr&lt; <a class="el" href="classoperations__research_1_1math__opt_1_1SparseDoubleVectorProto.html">SparseDoubleVectorProto</a> &gt; operations_research::math_opt::PdlpBridge::ReducedCostsToProto </td>
           <td>(</td>
           <td class="paramtype">const Eigen::VectorXd &amp;</td>          <td class="paramname"><span class="paramname"><em>reduced_costs</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const SparseVectorFilterProto &amp;</td>          <td class="paramname"><span class="paramname"><em>variable_filter</em></span>&#160;) const</td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1math__opt_1_1SparseVectorFilterProto.html">SparseVectorFilterProto</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>variable_filter</em></span>&#160;) const</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -305,7 +306,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="structoperations__research_1_1pdlp_1_1PrimalAndDualSolution.html">pdlp::PrimalAndDualSolution</a> operations_research::math_opt::PdlpBridge::SolutionHintToWarmStart </td>
           <td>(</td>
-          <td class="paramtype">const SolutionHintProto &amp;</td>          <td class="paramname"><span class="paramname"><em>solution_hint</em></span></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1math__opt_1_1SolutionHintProto.html">SolutionHintProto</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>solution_hint</em></span></td><td>)</td>
           <td> const</td>
         </tr>
       </table>

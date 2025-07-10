@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,12 @@ $(function(){initNavTree('classoperations__research_1_1RelocateSubtrip.html','',
   <div class="headertitle"><div class="title">operations_research::RelocateSubtrip&lt; ignore_path_vars &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;bool ignore_path_vars&gt;<br />
+class operations_research::RelocateSubtrip&lt; ignore_path_vars &gt;</div><p>Tries to move subtrips after an insertion node. A subtrip is a subsequence that contains only matched pickup and delivery nodes, or pickup-only nodes, i.e. it cannot contain a pickup without a corresponding delivery or vice-versa. For a given subtrip given by path indices i_1 ... i_k, we call 'rejected' the nodes with indices i_1 &lt; j &lt; i_k that are not in the subtrip. If the base_node is a pickup, this operator selects the smallest subtrip starting at base_node such that rejected nodes are only deliveries. If the base_node is a delivery, it selects the smallest subtrip ending at base_node such that rejected nodes are only pickups. </p>
 
+<p class="definition">Definition at line <a class="el" href="routing__neighborhoods_8h_source.html#l00841">841</a> of file <a class="el" href="routing__neighborhoods_8h_source.html">routing_neighborhoods.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="routing__neighborhoods_8h_source.html">routing_neighborhoods.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for operations_research::RelocateSubtrip&lt; ignore_path_vars &gt;:</div>
@@ -237,12 +243,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_attribs_classoperations__research_1_1PathOperator"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_classoperations__research_1_1PathOperator')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Protected Attributes inherited from <a class="el" href="classoperations__research_1_1PathOperator.html">operations_research::PathOperator&lt; ignore_path_vars &gt;</a></td></tr>
 <tr class="memitem:a630c5775c22ca7744a067ce885b4347a inherit pro_attribs_classoperations__research_1_1PathOperator" id="r_a630c5775c22ca7744a067ce885b4347a"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1PathOperator.html#a630c5775c22ca7744a067ce885b4347a">number_of_nexts_</a></td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;bool ignore_path_vars&gt;<br />
-class operations_research::RelocateSubtrip&lt; ignore_path_vars &gt;</div><p>Tries to move subtrips after an insertion node. A subtrip is a subsequence that contains only matched pickup and delivery nodes, or pickup-only nodes, i.e. it cannot contain a pickup without a corresponding delivery or vice-versa. For a given subtrip given by path indices i_1 ... i_k, we call 'rejected' the nodes with indices i_1 &lt; j &lt; i_k that are not in the subtrip. If the base_node is a pickup, this operator selects the smallest subtrip starting at base_node such that rejected nodes are only deliveries. If the base_node is a delivery, it selects the smallest subtrip ending at base_node such that rejected nodes are only pickups. </p>
-
-<p class="definition">Definition at line <a class="el" href="routing__neighborhoods_8h_source.html#l00841">841</a> of file <a class="el" href="routing__neighborhoods_8h_source.html">routing_neighborhoods.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="abd92db4852dc27831fb398c1a732c0a5" name="abd92db4852dc27831fb398c1a732c0a5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abd92db4852dc27831fb398c1a732c0a5">&#9670;&#160;</a></span>RelocateSubtrip()</h2>
 

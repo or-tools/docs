@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,18 +96,23 @@ $(function(){initNavTree('structoperations__research_1_1sat_1_1SharedClasses.htm
   <div class="headertitle"><div class="title">operations_research::sat::SharedClasses Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Small wrapper containing all the shared classes between our subsolver threads. Note that all these classes can also be retrieved with something like global_model-&gt;GetOrCreate&lt;Class&gt;() but it is not thread-safe to do so.</p>
+<p>All the classes here should be thread-safe, or at least safe in the way they are accessed. For instance the model_proto will be kept constant for the whole duration of the solve. </p>
 
+<p class="definition">Definition at line <a class="el" href="cp__model__solver__helpers_8h_source.html#l00044">44</a> of file <a class="el" href="cp__model__solver__helpers_8h_source.html">cp_model_solver_helpers.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="cp__model__solver__helpers_8h_source.html">cp_model_solver_helpers.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac98fbec8be37ad2535e9fea3f4fbee02" id="r_ac98fbec8be37ad2535e9fea3f4fbee02"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac98fbec8be37ad2535e9fea3f4fbee02">SharedClasses</a> (const CpModelProto *proto, <a class="el" href="classoperations__research_1_1sat_1_1Model.html">Model</a> *global_model)</td></tr>
+<tr class="memitem:ac98fbec8be37ad2535e9fea3f4fbee02" id="r_ac98fbec8be37ad2535e9fea3f4fbee02"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac98fbec8be37ad2535e9fea3f4fbee02">SharedClasses</a> (const <a class="el" href="classoperations__research_1_1sat_1_1CpModelProto.html">CpModelProto</a> *proto, <a class="el" href="classoperations__research_1_1sat_1_1Model.html">Model</a> *global_model)</td></tr>
 <tr class="memitem:a0ef7eff0563df64a34cebf1186994d1f" id="r_a0ef7eff0563df64a34cebf1186994d1f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0ef7eff0563df64a34cebf1186994d1f">RegisterSharedClassesInLocalModel</a> (<a class="el" href="classoperations__research_1_1sat_1_1Model.html">Model</a> *local_model)</td></tr>
 <tr class="memitem:a5a6723a343496c3217e4434c11297870" id="r_a5a6723a343496c3217e4434c11297870"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5a6723a343496c3217e4434c11297870">SearchIsDone</a> ()</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a6f008be84b95cb49443e9361f6802316" id="r_a6f008be84b95cb49443e9361f6802316"><td class="memItemLeft" align="right" valign="top">const CpModelProto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6f008be84b95cb49443e9361f6802316">model_proto</a></td></tr>
+<tr class="memitem:a6f008be84b95cb49443e9361f6802316" id="r_a6f008be84b95cb49443e9361f6802316"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classoperations__research_1_1sat_1_1CpModelProto.html">CpModelProto</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6f008be84b95cb49443e9361f6802316">model_proto</a></td></tr>
 <tr class="memdesc:a6f008be84b95cb49443e9361f6802316"><td class="mdescLeft">&#160;</td><td class="mdescRight">These are never nullptr.  <br /></td></tr>
 <tr class="memitem:aea1930cb46d0bd1bf25aac61cc6b7c79" id="r_aea1930cb46d0bd1bf25aac61cc6b7c79"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classWallTimer.html">WallTimer</a> *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aea1930cb46d0bd1bf25aac61cc6b7c79">wall_timer</a></td></tr>
 <tr class="memitem:ab2d233c3b615d7fe9a5c52c25847be07" id="r_ab2d233c3b615d7fe9a5c52c25847be07"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoperations__research_1_1sat_1_1ModelSharedTimeLimit.html">ModelSharedTimeLimit</a> *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab2d233c3b615d7fe9a5c52c25847be07">time_limit</a></td></tr>
@@ -122,12 +128,7 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a97fe2ba9e6948541210b8b76be748a54" id="r_a97fe2ba9e6948541210b8b76be748a54"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classoperations__research_1_1sat_1_1SharedIncompleteSolutionManager.html">SharedIncompleteSolutionManager</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a97fe2ba9e6948541210b8b76be748a54">incomplete_solutions</a></td></tr>
 <tr class="memitem:aa65570a88d18855a631c533ed18811c9" id="r_aa65570a88d18855a631c533ed18811c9"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classoperations__research_1_1sat_1_1SharedClausesManager.html">SharedClausesManager</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa65570a88d18855a631c533ed18811c9">clauses</a></td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Small wrapper containing all the shared classes between our subsolver threads. Note that all these classes can also be retrieved with something like global_model-&gt;GetOrCreate&lt;Class&gt;() but it is not thread-safe to do so.</p>
-<p>All the classes here should be thread-safe, or at least safe in the way they are accessed. For instance the model_proto will be kept constant for the whole duration of the solve. </p>
-
-<p class="definition">Definition at line <a class="el" href="cp__model__solver__helpers_8h_source.html#l00044">44</a> of file <a class="el" href="cp__model__solver__helpers_8h_source.html">cp_model_solver_helpers.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ac98fbec8be37ad2535e9fea3f4fbee02" name="ac98fbec8be37ad2535e9fea3f4fbee02"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac98fbec8be37ad2535e9fea3f4fbee02">&#9670;&#160;</a></span>SharedClasses()</h2>
 
@@ -137,7 +138,7 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">operations_research::sat::SharedClasses::SharedClasses </td>
           <td>(</td>
-          <td class="paramtype">const CpModelProto *</td>          <td class="paramname"><span class="paramname"><em>proto</em></span>, </td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1sat_1_1CpModelProto.html">CpModelProto</a> *</td>          <td class="paramname"><span class="paramname"><em>proto</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -171,7 +172,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>call local_model-&gt;Register() on most of the class here, this allow to more easily depends on one of the shared class deep within the solver. </p>
 <dl class="section note"><dt>Note</dt><dd>we do not register the logger which is not a shared class.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001551">Todo</a></b></dt><dd>(user): Use parameters and not the presence/absence of these class to decide when to use them. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001549">Todo</a></b></dt><dd>(user): Use parameters and not the presence/absence of these class to decide when to use them. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="cp__model__solver__helpers_8cc_source.html#l02120">2120</a> of file <a class="el" href="cp__model__solver__helpers_8cc_source.html">cp_model_solver_helpers.cc</a>.</p>
 
@@ -303,7 +304,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const CpModelProto&amp; operations_research::sat::SharedClasses::model_proto</td>
+          <td class="memname">const <a class="el" href="classoperations__research_1_1sat_1_1CpModelProto.html">CpModelProto</a>&amp; operations_research::sat::SharedClasses::model_proto</td>
         </tr>
       </table>
 </div><div class="memdoc">

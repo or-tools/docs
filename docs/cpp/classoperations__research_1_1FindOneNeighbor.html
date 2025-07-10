@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -98,7 +99,11 @@ $(function(){initNavTree('classoperations__research_1_1FindOneNeighbor.html','',
 
 <p>--&mdash; Finds a neighbor of the assignment passed --&mdash;  
  <a href="#details">More...</a></p>
-<div class="dynheader">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>--&mdash; Finds a neighbor of the assignment passed --&mdash; </p>
+
+<p class="definition">Definition at line <a class="el" href="local__search_8cc_source.html#l03930">3930</a> of file <a class="el" href="local__search_8cc_source.html">local_search.cc</a>.</p>
+</div><div class="dynheader">
 Inheritance diagram for operations_research::FindOneNeighbor:</div>
 <div class="dyncontent">
  <div class="center">
@@ -134,11 +139,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a43aa04bbde2d2de7ccb748651ba1468d inherit pub_methods_classoperations__research_1_1BaseObject" id="r_a43aa04bbde2d2de7ccb748651ba1468d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoperations__research_1_1BaseObject.html">BaseObject</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1BaseObject.html#a43aa04bbde2d2de7ccb748651ba1468d">operator=</a> (const <a class="el" href="classoperations__research_1_1BaseObject.html">BaseObject</a> &amp;)=delete</td></tr>
 <tr class="memitem:a4def224c4c1cd494fa8eede50162a326 inherit pub_methods_classoperations__research_1_1BaseObject" id="r_a4def224c4c1cd494fa8eede50162a326"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1BaseObject.html#a4def224c4c1cd494fa8eede50162a326">~BaseObject</a> ()=default</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>--&mdash; Finds a neighbor of the assignment passed --&mdash; </p>
-
-<p class="definition">Definition at line <a class="el" href="local__search_8cc_source.html#l03930">3930</a> of file <a class="el" href="local__search_8cc_source.html">local_search.cc</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae778e45052fc69775bc50b2d12294a4c" name="ae778e45052fc69775bc50b2d12294a4c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae778e45052fc69775bc50b2d12294a4c">&#9670;&#160;</a></span>FindOneNeighbor()</h2>
 
@@ -184,8 +185,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>reference_assignment_ is used to keep track of the last assignment on which operators were started, assignment_ corresponding to the last successful neighbor. last_synchronized_assignment_ keeps track of the last assignment on which filters were synchronized and is used to compute the filter_assignment_delta_ when synchronizing again. </p>
 <p>If limit is nullptr, default limit is 1 solution</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000203">Todo</a></b></dt><dd>(user): Support skipping neighborhood checks for limits accepting more than one solution (e.g. best accept). For now re-enabling systematic checks. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000204">Todo</a></b></dt><dd>(user): Support skipping neighborhood checks with LNS (at least on the non-LNS operators). </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000202">Todo</a></b></dt><dd>(user): Support skipping neighborhood checks for limits accepting more than one solution (e.g. best accept). For now re-enabling systematic checks. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000203">Todo</a></b></dt><dd>(user): Support skipping neighborhood checks with LNS (at least on the non-LNS operators). </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="local__search_8cc_source.html#l03971">3971</a> of file <a class="el" href="local__search_8cc_source.html">local_search.cc</a>.</p>
 
@@ -296,14 +297,14 @@ Public Member Functions</h2></td></tr>
 <p>Only called on the first call to <a class="el" href="one__tree__lower__bound_8h.html#a3947d19ac087ef2cd68c2409920339c4">Next()</a>, reference_assignment_ has not been synced with assignment_ yet</p>
 <p>Keeping the code in case a performance problem forces us to use the old code with a zero test on pool_. reference_assignment_-&gt;CopyIntersection(assignment_);</p>
 <p>Another assignment is needed to apply the delta</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000205">Todo</a></b></dt><dd>(user) : SyncNeed(assignment_) ? </dd></dl>
-<p>All filters must be called for incrementality reasons. Empty deltas must also be sent to incremental filters; can be needed to resync filters on non-incremental (empty) moves. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000206">Todo</a></b></dt><dd>(user): Don't call both if no filter is incremental and one of them returned false. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000204">Todo</a></b></dt><dd>(user) : SyncNeed(assignment_) ? </dd></dl>
+<p>All filters must be called for incrementality reasons. Empty deltas must also be sent to incremental filters; can be needed to resync filters on non-incremental (empty) moves. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000205">Todo</a></b></dt><dd>(user): Don't call both if no filter is incremental and one of them returned false. </dd></dl>
 <p>LNS deltas need to be restored</p>
-<p>Advancing local search to the current solution without checking. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000207">Todo</a></b></dt><dd>(user): support the case were limit_ accepts more than one solution (e.g. best accept). </dd></dl>
+<p>Advancing local search to the current solution without checking. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000206">Todo</a></b></dt><dd>(user): support the case were limit_ accepts more than one solution (e.g. best accept). </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>SynchronizeAll() sets neighbor_found_ to false, force it back to true when skipping checks.</dd></dl>
-<p>Filtering is not perfect, disabling fast local search and resynchronizing with the last checked solution. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000208">Todo</a></b></dt><dd>(user): Restore state of local search operators to make sure we are exploring neighbors in the same order. This can affect the local optimum found. </dd></dl>
+<p>Filtering is not perfect, disabling fast local search and resynchronizing with the last checked solution. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000207">Todo</a></b></dt><dd>(user): Restore state of local search operators to make sure we are exploring neighbors in the same order. This can affect the local optimum found. </dd></dl>
 <p>Reset the last synchronized assignment in case it's no longer up to date or we fail below.</p>
-<p>In case the last checked assignment isn't the current one, restore it to make sure the solver knows about it, especially if this is the end of the search. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000209">Todo</a></b></dt><dd>(user): Compare assignments in addition to their cost. </dd></dl>
+<p>In case the last checked assignment isn't the current one, restore it to make sure the solver knows about it, especially if this is the end of the search. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000208">Todo</a></b></dt><dd>(user): Compare assignments in addition to their cost. </dd></dl>
 <p>If restoring fails this means filtering is not perfect and the solver will consider the last checked assignment.</p>
 <p>Keeping the code in case a performance problem forces us to use the old code with a zero test on pool_. reference_assignment_-&gt;CopyIntersection(assignment_);</p>
 <p>NOTE(user): The last synchronized assignment must be reset here to guarantee filters will be properly synched in case we re-solve using an assignment that wasn't the last accepted and synchronized assignment.</p>

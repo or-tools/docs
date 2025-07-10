@@ -1,0 +1,6 @@
+var structoperations__research_1_1math__opt_1_1CallbackDataProto__PresolveStatsDefaultTypeInternal =
+[
+    [ "CallbackDataProto_PresolveStatsDefaultTypeInternal", "structoperations__research_1_1math__opt_1_1CallbackDataProto__PresolveStatsDefaultTypeInternal.html#a73aae68e34def7d25f296106350772a5", null ],
+    [ "~CallbackDataProto_PresolveStatsDefaultTypeInternal", "structoperations__research_1_1math__opt_1_1CallbackDataProto__PresolveStatsDefaultTypeInternal.html#a5c0bf1af08dd07a4a723db36a65c58b5", null ],
+    [ "_instance", "structoperations__research_1_1math__opt_1_1CallbackDataProto__PresolveStatsDefaultTypeInternal.html#ab313133cef2c1a752bc6ef92354a7083", null ]
+];

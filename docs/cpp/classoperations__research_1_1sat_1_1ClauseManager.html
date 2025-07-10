@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,12 @@ $(function(){initNavTree('classoperations__research_1_1sat_1_1ClauseManager.html
   <div class="headertitle"><div class="title">operations_research::sat::ClauseManager Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Stores the 2-watched literals data structure. See <a href="http://www.cs.berkeley.edu/~necula/autded/lecture24-sat.pdf">http://www.cs.berkeley.edu/~necula/autded/lecture24-sat.pdf</a> for detail.</p>
+<p>This class is also responsible for owning the clause memory and all related information. </p>
 
+<p class="definition">Definition at line <a class="el" href="clause_8h_source.html#l00161">161</a> of file <a class="el" href="clause_8h_source.html">clause.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="clause_8h_source.html">clause.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for operations_research::sat::ClauseManager:</div>
@@ -189,12 +195,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a6484a3ad51a1f74b403fc21c47055601 inherit pro_attribs_classoperations__research_1_1sat_1_1SatPropagator" id="r_a6484a3ad51a1f74b403fc21c47055601"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1SatPropagator.html#a6484a3ad51a1f74b403fc21c47055601">propagator_id_</a></td></tr>
 <tr class="memitem:a5714ef513aadb9a616a215de533b9eb4 inherit pro_attribs_classoperations__research_1_1sat_1_1SatPropagator" id="r_a5714ef513aadb9a616a215de533b9eb4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1SatPropagator.html#a5714ef513aadb9a616a215de533b9eb4">propagation_trail_index_</a></td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Stores the 2-watched literals data structure. See <a href="http://www.cs.berkeley.edu/~necula/autded/lecture24-sat.pdf">http://www.cs.berkeley.edu/~necula/autded/lecture24-sat.pdf</a> for detail.</p>
-<p>This class is also responsible for owning the clause memory and all related information. </p>
-
-<p class="definition">Definition at line <a class="el" href="clause_8h_source.html#l00161">161</a> of file <a class="el" href="clause_8h_source.html">clause.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa2c2c02989753dd9e445eaa9846bcee6" name="aa2c2c02989753dd9e445eaa9846bcee6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa2c2c02989753dd9e445eaa9846bcee6">&#9670;&#160;</a></span>ClauseManager() <span class="overload">[1/2]</span></h2>
 
@@ -462,7 +463,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Reclaims the memory of the lazily removed clauses (their size was set to zero) and remove them from <a class="el" href="#ace6b5c3dd23b027805de98172f066972">AllClausesInCreationOrder()</a> this work in O(num_clauses()).</p>
 <p>We also update to_minimize_index_/to_probe_index_ correctly.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001110">Todo</a></b></dt><dd>(user): If more indices are needed, generalize the code to a vector of indices. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001108">Todo</a></b></dt><dd>(user): If more indices are needed, generalize the code to a vector of indices. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l00482">482</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
 
@@ -483,7 +484,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Detaches the given clause right away.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001142">Todo</a></b></dt><dd>(user): It might be better to have a "slower" mode in PropagateOnFalse() that deal with detached clauses in the watcher list and is activated until the next <a class="el" href="#a0529203f55fe834c92bb36d04f35a7cf">CleanUpWatchers()</a> calls. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001140">Todo</a></b></dt><dd>(user): It might be better to have a "slower" mode in PropagateOnFalse() that deal with detached clauses in the watcher list and is activated until the next <a class="el" href="#a0529203f55fe834c92bb36d04f35a7cf">CleanUpWatchers()</a> calls. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l00325">325</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
 
@@ -555,7 +556,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>This can return nullptr if new_clause was of size one or two as these are treated differently. Note that none of the variable should be fixed in the given new clause. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001109">Todo</a></b></dt><dd>(user): We should return false... </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001107">Todo</a></b></dt><dd>(user): We should return false... </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l00439">439</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
 
@@ -577,7 +578,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>This one do not need the clause to be detached. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001107">Todo</a></b></dt><dd>(user): remove the test when the DRAT issue with fixed literal is resolved. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001105">Todo</a></b></dt><dd>(user): remove the test when the DRAT issue with fixed literal is resolved. </dd></dl>
 <p>Even when all clauses are detached, we can propagate the implication graph and we do that right away.</p>
 
 <p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l00363">363</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
@@ -600,7 +601,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>These must only be called between [Detach/Attach]AllClauses() calls. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001108">Todo</a></b></dt><dd>(user): We could do something slower if the clauses are attached like we do for <a class="el" href="#adfefdc7699f1642297d785b3042e4c44">InprocessingRewriteClause()</a>. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001106">Todo</a></b></dt><dd>(user): We could do something slower if the clauses are attached like we do for <a class="el" href="#adfefdc7699f1642297d785b3042e4c44">InprocessingRewriteClause()</a>. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="clause_8cc_source.html#l00382">382</a> of file <a class="el" href="clause_8cc_source.html">clause.cc</a>.</p>
 

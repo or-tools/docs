@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['list_0',['Deprecated List',['../deprecated.html',1,'']]]
+  ['java_20reference_0',['OR-Tools Java Reference',['../index.html',1,'']]]
 ];

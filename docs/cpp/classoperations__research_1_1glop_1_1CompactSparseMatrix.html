@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,11 @@ $(function(){initNavTree('classoperations__research_1_1glop_1_1CompactSparseMatr
   <div class="headertitle"><div class="title">operations_research::glop::CompactSparseMatrix Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Another matrix representation which is more efficient than a <a class="el" href="classoperations__research_1_1glop_1_1SparseMatrix.html">SparseMatrix</a> but doesn't allow matrix modification. It is faster to construct, uses less memory and provides a better cache locality when iterating over the non-zeros of the matrix columns. </p>
 
+<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00299">299</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="sparse_8h_source.html">sparse.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for operations_research::glop::CompactSparseMatrix:</div>
@@ -165,11 +170,7 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:ab673312f7795321d49b5119829193034" id="r_ab673312f7795321d49b5119829193034"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoperations__research_1_1glop_1_1StrictITIVector.html">StrictITIVector</a>&lt; EntryIndex, RowIndex &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab673312f7795321d49b5119829193034">rows_</a></td></tr>
 <tr class="memitem:a526404e1ee86af442f52c39ac95d51f8" id="r_a526404e1ee86af442f52c39ac95d51f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoperations__research_1_1glop_1_1StrictITIVector.html">StrictITIVector</a>&lt; ColIndex, EntryIndex &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a526404e1ee86af442f52c39ac95d51f8">starts_</a></td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Another matrix representation which is more efficient than a <a class="el" href="classoperations__research_1_1glop_1_1SparseMatrix.html">SparseMatrix</a> but doesn't allow matrix modification. It is faster to construct, uses less memory and provides a better cache locality when iterating over the non-zeros of the matrix columns. </p>
-
-<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00300">300</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a28d29a8481b6e9b5fc41eedc1fc60e84" name="a28d29a8481b6e9b5fc41eedc1fc60e84"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a28d29a8481b6e9b5fc41eedc1fc60e84">&#9670;&#160;</a></span>CompactSparseMatrix() <span class="overload">[1/3]</span></h2>
 
@@ -217,9 +218,9 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Convenient constructors for tests. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000883">Todo</a></b></dt><dd>(user): If this is needed in production code, it can be done faster. </dd></dl>
+<p>Convenient constructors for tests. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000882">Todo</a></b></dt><dd>(user): If this is needed in production code, it can be done faster. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00347">347</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00346">346</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
 
 </div>
 </div>
@@ -413,7 +414,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Functions to iterate on the entries of a given column. </p>
 
-<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00516">516</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00515">515</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
 
 </div>
 </div>
@@ -442,7 +443,7 @@ Protected Attributes</h2></td></tr>
 <p>Alternative iteration API compatible with the one from <a class="el" href="classoperations__research_1_1glop_1_1SparseMatrix.html">SparseMatrix</a>. The <a class="el" href="classoperations__research_1_1glop_1_1CompactSparseMatrix_1_1ConstView.html">ConstView</a> alternative should be faster. </p>
 <dl class="section note"><dt>Note</dt><dd>the start may be equal to row.size() if the last columns are empty, it is why we don't use &amp;row[start].</dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00420">420</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00419">419</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
 
 </div>
 </div>
@@ -478,7 +479,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00454">454</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00453">453</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
 
 </div>
 </div>
@@ -515,7 +516,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Adds a multiple of the given column of this matrix to the given dense_column. If multiplier is 0.0, this function does nothing. This function is declared in the .h for efficiency. </p>
 
-<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00445">445</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00444">444</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
 
 </div>
 </div>
@@ -552,7 +553,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Same as <a class="el" href="#a3493ab01e9fa04ad82212e27c750d91b">ColumnAddMultipleToDenseColumn()</a> but also adds the new non-zeros to the non_zeros vector. A non-zero is "new" if is_non_zero[row] was false, and we update dense_column[row]. This function also updates is_non_zero. </p>
 
-<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00463">463</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00462">462</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
 
 </div>
 </div>
@@ -584,7 +585,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Same as <a class="el" href="#a03926b548606d7ad83460d0c46242971">ColumnCopyToDenseColumn()</a> but assumes the column to be initially all zero. </p>
 
-<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00485">485</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00484">484</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
 
 </div>
 </div>
@@ -622,7 +623,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Same as <a class="el" href="#ac1563ed4581c3708b09a686468d5625a">ColumnCopyToClearedDenseColumn()</a> but also fills non_zeros. </p>
 
-<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00497">497</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00496">496</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
 
 </div>
 </div>
@@ -654,7 +655,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Copies the given column of this matrix into the given dense_column. This function is declared in the .h for efficiency. </p>
 
-<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00477">477</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00476">476</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
 
 </div>
 </div>
@@ -682,7 +683,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns true if the given column is empty. Note that for triangular matrix this does not include the diagonal coefficient (see below). </p>
 
-<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00432">432</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00431">431</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
 
 </div>
 </div>
@@ -711,7 +712,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Returns the number of entries (i.e. degree) of the given column. </p>
 
-<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00400">400</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00399">399</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
 
 </div>
 </div>
@@ -743,7 +744,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns the scalar product of the given row vector with the column of index col of this matrix. </p>
 
-<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00438">438</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00437">437</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
 
 </div>
 </div>
@@ -772,7 +773,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Returns whether or not this matrix contains any non-zero entries. </p>
 
-<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00413">413</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00412">412</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
 
 </div>
 </div>
@@ -799,7 +800,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00410">410</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00409">409</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
 
 </div>
 </div>
@@ -828,7 +829,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Returns the matrix dimensions. See same functions in <a class="el" href="classoperations__research_1_1glop_1_1SparseMatrix.html">SparseMatrix</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00405">405</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00404">404</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
 
 </div>
 </div>
@@ -855,7 +856,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00409">409</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00408">408</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
 
 </div>
 </div>
@@ -1008,7 +1009,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00343">343</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00342">342</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
 
 </div>
 </div>
@@ -1034,7 +1035,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Holds the columns non-zero coefficients and row positions. The entries for the column of index col are stored in the entries [starts_[col], starts_[col + 1]). </p>
 
-<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00527">527</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00526">526</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
 
 </div>
 </div>
@@ -1058,7 +1059,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00522">522</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00521">521</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
 
 </div>
 </div>
@@ -1084,7 +1085,7 @@ Protected Attributes</h2></td></tr>
 
 <p>The matrix dimensions, properly updated by full and incremental builders. </p>
 
-<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00521">521</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00520">520</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
 
 </div>
 </div>
@@ -1108,7 +1109,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00528">528</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00527">527</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
 
 </div>
 </div>
@@ -1132,7 +1133,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00529">529</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sparse_8h_source.html#l00528">528</a> of file <a class="el" href="sparse_8h_source.html">sparse.h</a>.</p>
 
 </div>
 </div>

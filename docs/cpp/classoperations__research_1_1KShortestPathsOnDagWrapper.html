@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,12 @@ $(function(){initNavTree('classoperations__research_1_1KShortestPathsOnDagWrappe
   <div class="headertitle"><div class="title">operations_research::KShortestPathsOnDagWrapper&lt; GraphType, ArcLengthContainer &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;class GraphType, typename ArcLengthContainer = std::vector&lt;double&gt;&gt;<br />
+class operations_research::KShortestPathsOnDagWrapper&lt; GraphType, ArcLengthContainer &gt;</div><p>A wrapper that holds the memory needed to run many k-shortest paths computations efficiently on the given DAG. One call of <span class="tt"><a class="el" href="#aacd8234ba757cc7f4f12a50cfe7987d5">RunKShortestPathOnDag()</a></span> has time complexity O(<span class="tt">E</span> + k<span class="tt">V</span>log(d)) where d is the mean degree of the graph and space complexity O(k<span class="tt">V</span>). <span class="tt">GraphType</span> can use any of the interfaces defined in <span class="tt">util/graph/graph.h</span>. IMPORTANT: Only use if <span class="tt">path_count &gt; 1</span> (k &gt; 1) otherwise use <span class="tt"><a class="el" href="classoperations__research_1_1ShortestPathsOnDagWrapper.html">ShortestPathsOnDagWrapper</a></span>. </p>
 
+<p class="definition">Definition at line <a class="el" href="dag__shortest__path_8h_source.html#l00171">171</a> of file <a class="el" href="dag__shortest__path_8h_source.html">dag_shortest_path.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="dag__shortest__path_8h_source.html">dag_shortest_path.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-types" class="groupheader"><a id="pub-types" name="pub-types"></a>
@@ -118,12 +124,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a51377acd540f99a3aea72830ad3aa0c7" id="r_a51377acd540f99a3aea72830ad3aa0c7"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="#a034f851066639006c1662ce9817c64b8">ArcLengths</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a51377acd540f99a3aea72830ad3aa0c7">arc_lengths</a> () const</td></tr>
 <tr class="memitem:ae89f33def953f2e6b09131dd8db9f7a1" id="r_ae89f33def953f2e6b09131dd8db9f7a1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae89f33def953f2e6b09131dd8db9f7a1">path_count</a> () const</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;class GraphType, typename ArcLengthContainer = std::vector&lt;double&gt;&gt;<br />
-class operations_research::KShortestPathsOnDagWrapper&lt; GraphType, ArcLengthContainer &gt;</div><p>A wrapper that holds the memory needed to run many k-shortest paths computations efficiently on the given DAG. One call of <span class="tt"><a class="el" href="#aacd8234ba757cc7f4f12a50cfe7987d5">RunKShortestPathOnDag()</a></span> has time complexity O(<span class="tt">E</span> + k<span class="tt">V</span>log(d)) where d is the mean degree of the graph and space complexity O(k<span class="tt">V</span>). <span class="tt">GraphType</span> can use any of the interfaces defined in <span class="tt">util/graph/graph.h</span>. IMPORTANT: Only use if <span class="tt">path_count &gt; 1</span> (k &gt; 1) otherwise use <span class="tt"><a class="el" href="classoperations__research_1_1ShortestPathsOnDagWrapper.html">ShortestPathsOnDagWrapper</a></span>. </p>
-
-<p class="definition">Definition at line <a class="el" href="dag__shortest__path_8h_source.html#l00171">171</a> of file <a class="el" href="dag__shortest__path_8h_source.html">dag_shortest_path.h</a>.</p>
-</div><a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Member Typedef Documentation</h2>
+<a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Member Typedef Documentation</h2>
 <a id="a85354092c450962814226e2ac1ce1f79" name="a85354092c450962814226e2ac1ce1f79"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a85354092c450962814226e2ac1ce1f79">&#9670;&#160;</a></span>ArcIndex</h2>
 
@@ -215,7 +216,7 @@ template&lt;class GraphType, typename <a class="el" href="#a034f851066639006c166
 <p>Validity of arcs and topological order are CHECKed if compiled in DEBUG mode.</p>
 <p>SUBTLE: You can modify the graph, the arc lengths or the topological order between calls to the <span class="tt"><a class="el" href="#aacd8234ba757cc7f4f12a50cfe7987d5">RunKShortestPathOnDag()</a></span> function. That's fine. Doing so will obviously invalidate the result API of the last shortest path run, which could return an upper bound, junk, or crash.</p>
 <p><a class="el" href="classoperations__research_1_1KShortestPathsOnDagWrapper.html">KShortestPathsOnDagWrapper</a> implementation. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000637">Todo</a></b></dt><dd>(b/332475713): Optimize if reverse graph is already provided in <span class="tt">GraphType</span>. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000636">Todo</a></b></dt><dd>(b/332475713): Optimize if reverse graph is already provided in <span class="tt">GraphType</span>. </dd></dl>
 <p>Memory allocation is done here and only once in order to avoid reallocation at each call of <span class="tt"><a class="el" href="#aacd8234ba757cc7f4f12a50cfe7987d5">RunKShortestPathOnDag()</a></span> for better performance.</p>
 
 <p class="definition">Definition at line <a class="el" href="dag__shortest__path_8h_source.html#l00451">451</a> of file <a class="el" href="dag__shortest__path_8h_source.html">dag_shortest_path.h</a>.</p>

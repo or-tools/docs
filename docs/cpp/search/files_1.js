@@ -21,11 +21,13 @@ var searchData=
   ['arrow_5foperator_5fproxy_2eh_18',['arrow_operator_proxy.h',['../arrow__operator__proxy_8h.html',1,'']]],
   ['assignment_2ecc_19',['assignment.cc',['../constraint__solver_2assignment_8cc.html',1,'(Global Namespace)'],['../graph_2assignment_8cc.html',1,'(Global Namespace)'],['../set__cover_2assignment_8cc.html',1,'(Global Namespace)']]],
   ['assignment_2eh_20',['assignment.h',['../graph_2assignment_8h.html',1,'(Global Namespace)'],['../set__cover_2assignment_8h.html',1,'(Global Namespace)']]],
-  ['assignment_2eproto_21',['assignment.proto',['../assignment_8proto.html',1,'']]],
-  ['atomic_5fconstraint_5fstorage_2eh_22',['atomic_constraint_storage.h',['../atomic__constraint__storage_8h.html',1,'']]],
-  ['atomic_5fconstraints_5fv2_2eh_23',['atomic_constraints_v2.h',['../atomic__constraints__v2_8h.html',1,'']]],
-  ['attr_5fdiff_2eh_24',['attr_diff.h',['../attr__diff_8h.html',1,'']]],
-  ['attr_5fkey_2eh_25',['attr_key.h',['../attr__key_8h.html',1,'']]],
-  ['attr_5fstorage_2eh_26',['attr_storage.h',['../attr__storage_8h.html',1,'']]],
-  ['attributes_2eh_27',['attributes.h',['../attributes_8h.html',1,'']]]
+  ['assignment_2epb_2ecc_21',['assignment.pb.cc',['../assignment_8pb_8cc.html',1,'']]],
+  ['assignment_2epb_2eh_22',['assignment.pb.h',['../assignment_8pb_8h.html',1,'']]],
+  ['assignment_2eproto_23',['assignment.proto',['../assignment_8proto.html',1,'']]],
+  ['atomic_5fconstraint_5fstorage_2eh_24',['atomic_constraint_storage.h',['../atomic__constraint__storage_8h.html',1,'']]],
+  ['atomic_5fconstraints_5fv2_2eh_25',['atomic_constraints_v2.h',['../atomic__constraints__v2_8h.html',1,'']]],
+  ['attr_5fdiff_2eh_26',['attr_diff.h',['../attr__diff_8h.html',1,'']]],
+  ['attr_5fkey_2eh_27',['attr_key.h',['../attr__key_8h.html',1,'']]],
+  ['attr_5fstorage_2eh_28',['attr_storage.h',['../attr__storage_8h.html',1,'']]],
+  ['attributes_2eh_29',['attributes.h',['../attributes_8h.html',1,'']]]
 ];

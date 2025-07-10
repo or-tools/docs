@@ -13,5 +13,6 @@ var searchData=
   ['variablestatus_10',['VariableStatus',['../namespaceoperations__research_1_1glop.html#a07d7f8b78757ed2996056cd79c5603ee',1,'operations_research::glop']]],
   ['variabletype_11',['VariableType',['../classoperations__research_1_1glop_1_1LinearProgram.html#a1b7f8d443a204721d1f73d944aba7ee0',1,'operations_research::glop::LinearProgram::VariableType'],['../classoperations__research_1_1bop_1_1LinearProgram.html#a1b7f8d443a204721d1f73d944aba7ee0',1,'operations_research::bop::LinearProgram::VariableType'],['../namespaceoperations__research_1_1glop.html#aa6d931570faed03245426d721087777e',1,'operations_research::glop::VariableType']]],
   ['vartypes_12',['VarTypes',['../namespaceoperations__research.html#a744e7cc90d56b2c503520ee1f97fc1db',1,'operations_research']]],
-  ['voidconstrainttype_13',['VoidConstraintType',['../classoperations__research_1_1ModelCache.html#a0a1063da2274711663b4fabdd552553e',1,'operations_research::ModelCache']]]
+  ['vectorbinpackingsolvestatus_13',['VectorBinPackingSolveStatus',['../namespaceoperations__research_1_1packing_1_1vbp.html#a9fe31b075b278337e595fd2e694f6247',1,'operations_research::packing::vbp']]],
+  ['voidconstrainttype_14',['VoidConstraintType',['../classoperations__research_1_1ModelCache.html#a0a1063da2274711663b4fabdd552553e',1,'operations_research::ModelCache']]]
 ];

@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,16 @@ $(function(){initNavTree('classoperations__research_1_1sat_1_1GreaterThanAtLeast
   <div class="headertitle"><div class="title">operations_research::sat::GreaterThanAtLeastOneOfPropagator Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>If we have:</p><ul>
+<li>selectors[i] =&gt; (target_var &gt;= vars[i] + offset[i])</li>
+<li>and we known that at least one selectors[i] must be true then we can propagate the fact that if no selectors is chosen yet, the lower bound of target_var is greater than the min of the still possible alternatives.</li>
+</ul>
+<p>This constraint take care of this case when no selectors[i] is chosen yet.</p>
+<p>This constraint support duplicate selectors. </p>
 
+<p class="definition">Definition at line <a class="el" href="cp__constraints_8h_source.html#l00071">71</a> of file <a class="el" href="cp__constraints_8h_source.html">cp_constraints.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="cp__constraints_8h_source.html">cp_constraints.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for operations_research::sat::GreaterThanAtLeastOneOfPropagator:</div>
@@ -126,16 +136,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4f4dbe887545f9ffd60b061a10256554 inherit pub_methods_classoperations__research_1_1sat_1_1LazyReasonInterface" id="r_a4f4dbe887545f9ffd60b061a10256554"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1LazyReasonInterface.html#a4f4dbe887545f9ffd60b061a10256554">LazyReasonInterface</a> ()=default</td></tr>
 <tr class="memitem:a0e6a88e820766fd61a9cd852f0d10c55 inherit pub_methods_classoperations__research_1_1sat_1_1LazyReasonInterface" id="r_a0e6a88e820766fd61a9cd852f0d10c55"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1LazyReasonInterface.html#a0e6a88e820766fd61a9cd852f0d10c55">~LazyReasonInterface</a> ()=default</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>If we have:</p><ul>
-<li>selectors[i] =&gt; (target_var &gt;= vars[i] + offset[i])</li>
-<li>and we known that at least one selectors[i] must be true then we can propagate the fact that if no selectors is chosen yet, the lower bound of target_var is greater than the min of the still possible alternatives.</li>
-</ul>
-<p>This constraint take care of this case when no selectors[i] is chosen yet.</p>
-<p>This constraint support duplicate selectors. </p>
-
-<p class="definition">Definition at line <a class="el" href="cp__constraints_8h_source.html#l00071">71</a> of file <a class="el" href="cp__constraints_8h_source.html">cp_constraints.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="abc0f8a02b61268e1e57718110cf344ef" name="abc0f8a02b61268e1e57718110cf344ef"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abc0f8a02b61268e1e57718110cf344ef">&#9670;&#160;</a></span>GreaterThanAtLeastOneOfPropagator() <span class="overload">[1/2]</span></h2>
 
@@ -251,7 +252,7 @@ Public Member Functions</h2></td></tr>
 
 <p>For <a class="el" href="classoperations__research_1_1sat_1_1LazyReasonInterface.html">LazyReasonInterface</a>. </p>
 <p>If the level zero bounds is good enough, no reason needed.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001168">Todo</a></b></dt><dd>(user): We could also skip this if we already have the reason for the expression being high enough in the current conflict. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001166">Todo</a></b></dt><dd>(user): We could also skip this if we already have the reason for the expression being high enough in the current conflict. </dd></dl>
 
 <p>Implements <a class="el" href="classoperations__research_1_1sat_1_1LazyReasonInterface.html#adc031164213fd9db6f79e99441240ded">operations_research::sat::LazyReasonInterface</a>.</p>
 
@@ -307,8 +308,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>This will be called after one or more literals that are watched by this propagator changed. It will also always be called on the first propagation cycle after registration. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001169">Todo</a></b></dt><dd>(user): In case of a conflict, we could push one of them to false if it is the only one. </dd></dl>
-<p>Compute the min of the lower-bound for the still possible variables. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001170">Todo</a></b></dt><dd>(user): This could be optimized by keeping more info from the last <a class="el" href="#a3b3ae77e1959c1da3c086669f8c28062">Propagate()</a> calls. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001167">Todo</a></b></dt><dd>(user): In case of a conflict, we could push one of them to false if it is the only one. </dd></dl>
+<p>Compute the min of the lower-bound for the still possible variables. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001168">Todo</a></b></dt><dd>(user): This could be optimized by keeping more info from the last <a class="el" href="#a3b3ae77e1959c1da3c086669f8c28062">Propagate()</a> calls. </dd></dl>
 <p>The permutation is needed to have proper lazy reason.</p>
 <p>Abort if we can't get a better bound.</p>
 <p>All false, conflit.</p>

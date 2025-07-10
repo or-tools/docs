@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,14 @@ $(function(){initNavTree('classoperations__research_1_1sat_1_1ProbingRectangle.h
   <div class="headertitle"><div class="title">operations_research::sat::ProbingRectangle Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Cheaply test several increasingly smaller rectangles for energy conflict. More precisely, each call to <span class="tt"><a class="el" href="#a5a93775d1094c06f4200e683b23045d9">Shrink()</a></span> cost O(k + n) operations, where k is the number of points that shrinking the probing rectangle will cross and n is the number of items which are in a range that overlaps the probing rectangle in both sides in the dimension that is getting shrinked. When calling repeatedely <span class="tt"><a class="el" href="#a5a93775d1094c06f4200e683b23045d9">Shrink()</a></span> until the probing rectangle collapse into a single point, the O(k) component adds up to a O(M) cost, where M is the number of items. This means this procedure is linear in time if the ranges of the items are small.</p>
+<p>The energy is defined as the minimum occupied area inside the probing rectangle. For more details, see Clautiaux, François, et al. "A new
+constraint programming approach for the orthogonal packing problem." Computers &amp; Operations Research 35.3 (2008): 944-959.</p>
+<p>This is used by <a class="el" href="namespaceoperations__research_1_1sat.html#a9c95d68b46f17e3aa215ce63ea446514">FindRectanglesWithEnergyConflictMC()</a> below. </p>
 
+<p class="definition">Definition at line <a class="el" href="diffn__util_8h_source.html#l00570">570</a> of file <a class="el" href="diffn__util_8h_source.html">diffn_util.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="diffn__util_8h_source.html">diffn_util.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-types" class="groupheader"><a id="pub-types" name="pub-types"></a>
@@ -128,14 +136,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a58a74cf53ad18fc7366b1dc350012593" id="r_a58a74cf53ad18fc7366b1dc350012593"><td class="memItemLeft" align="right" valign="top">IntegerValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a58a74cf53ad18fc7366b1dc350012593">GetMinimumEnergy</a> () const</td></tr>
 <tr class="memitem:a7d13a2f9de71872611e95522f8077c89" id="r_a7d13a2f9de71872611e95522f8077c89"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="structoperations__research_1_1sat_1_1RectangleInRange.html">RectangleInRange</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7d13a2f9de71872611e95522f8077c89">Intervals</a> () const</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Cheaply test several increasingly smaller rectangles for energy conflict. More precisely, each call to <span class="tt"><a class="el" href="#a5a93775d1094c06f4200e683b23045d9">Shrink()</a></span> cost O(k + n) operations, where k is the number of points that shrinking the probing rectangle will cross and n is the number of items which are in a range that overlaps the probing rectangle in both sides in the dimension that is getting shrinked. When calling repeatedely <span class="tt"><a class="el" href="#a5a93775d1094c06f4200e683b23045d9">Shrink()</a></span> until the probing rectangle collapse into a single point, the O(k) component adds up to a O(M) cost, where M is the number of items. This means this procedure is linear in time if the ranges of the items are small.</p>
-<p>The energy is defined as the minimum occupied area inside the probing rectangle. For more details, see Clautiaux, François, et al. "A new
-constraint programming approach for the orthogonal packing problem." Computers &amp; Operations Research 35.3 (2008): 944-959.</p>
-<p>This is used by <a class="el" href="namespaceoperations__research_1_1sat.html#a9c95d68b46f17e3aa215ce63ea446514">FindRectanglesWithEnergyConflictMC()</a> below. </p>
-
-<p class="definition">Definition at line <a class="el" href="diffn__util_8h_source.html#l00570">570</a> of file <a class="el" href="diffn__util_8h_source.html">diffn_util.h</a>.</p>
-</div><a name="doc-enum-members" id="doc-enum-members"></a><h2 id="header-doc-enum-members" class="groupheader">Member Enumeration Documentation</h2>
+<a name="doc-enum-members" id="doc-enum-members"></a><h2 id="header-doc-enum-members" class="groupheader">Member Enumeration Documentation</h2>
 <a id="a617df731c35bc1ace0e0c0968c998ee4" name="a617df731c35bc1ace0e0c0968c998ee4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a617df731c35bc1ace0e0c0968c998ee4">&#9670;&#160;</a></span>Direction</h2>
 

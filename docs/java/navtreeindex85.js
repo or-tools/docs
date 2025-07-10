@@ -1,5 +1,13 @@
 var NAVTREEINDEX85 =
 {
+"classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1Builder.html#a607c35f91f127be159a57dd92559d5fc":[3,0,0,0,0,8,27,0,58],
+"classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1Builder.html#a623cd0e084852c67d7258f2e215a8688":[2,0,0,0,0,8,27,0,60],
+"classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1Builder.html#a623cd0e084852c67d7258f2e215a8688":[3,0,0,0,0,8,27,0,60],
+"classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1Builder.html#a65fe261becb29a152f64dfb51ac896a6":[2,0,0,0,0,8,27,0,9],
+"classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1Builder.html#a65fe261becb29a152f64dfb51ac896a6":[3,0,0,0,0,8,27,0,9],
+"classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1Builder.html#a663bca942670bcf29be74a39342e9abc":[2,0,0,0,0,8,27,0,12],
+"classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1Builder.html#a663bca942670bcf29be74a39342e9abc":[3,0,0,0,0,8,27,0,12],
+"classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1Builder.html#a68c8ee98a3584d354da8c3da0571ebe1":[2,0,0,0,0,8,27,0,43],
 "classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1Builder.html#a68c8ee98a3584d354da8c3da0571ebe1":[3,0,0,0,0,8,27,0,43],
 "classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1Builder.html#a777c50164f46b05a006d86f5efee8592":[2,0,0,0,0,8,27,0,2],
 "classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1Builder.html#a777c50164f46b05a006d86f5efee8592":[3,0,0,0,0,8,27,0,2],
@@ -241,13 +249,5 @@ var NAVTREEINDEX85 =
 "classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1SimpleOptimalityCriteria.html#a1a36c81e94313469a7bcbc3982b864c4":[3,0,0,0,0,8,27,4,20],
 "classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1SimpleOptimalityCriteria.html#a1ee3c31d004b19c643239b8f8885746e":[2,0,0,0,0,8,27,4,17],
 "classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1SimpleOptimalityCriteria.html#a1ee3c31d004b19c643239b8f8885746e":[3,0,0,0,0,8,27,4,17],
-"classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1SimpleOptimalityCriteria.html#a249002982b4a70b0ba79b7c66c83796d":[2,0,0,0,0,8,27,4,23],
-"classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1SimpleOptimalityCriteria.html#a249002982b4a70b0ba79b7c66c83796d":[3,0,0,0,0,8,27,4,23],
-"classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1SimpleOptimalityCriteria.html#a28585d536454adc2e4db2d2e4eae37c8":[2,0,0,0,0,8,27,4,33],
-"classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1SimpleOptimalityCriteria.html#a28585d536454adc2e4db2d2e4eae37c8":[3,0,0,0,0,8,27,4,33],
-"classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1SimpleOptimalityCriteria.html#a3dc88ffbb8c6c5d45543ec5cd42b6327":[2,0,0,0,0,8,27,4,29],
-"classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1SimpleOptimalityCriteria.html#a3dc88ffbb8c6c5d45543ec5cd42b6327":[3,0,0,0,0,8,27,4,29],
-"classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1SimpleOptimalityCriteria.html#a41d5b142ba015b54e4644d019d2e09a6":[2,0,0,0,0,8,27,4,19],
-"classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1SimpleOptimalityCriteria.html#a41d5b142ba015b54e4644d019d2e09a6":[3,0,0,0,0,8,27,4,19],
-"classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1SimpleOptimalityCriteria.html#a468dc518bb1c0536a3b9a546334ed3d3":[2,0,0,0,0,8,27,4,5]
+"classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1SimpleOptimalityCriteria.html#a249002982b4a70b0ba79b7c66c83796d":[2,0,0,0,0,8,27,4,23]
 };

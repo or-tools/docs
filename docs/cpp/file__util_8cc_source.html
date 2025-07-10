@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -270,44 +271,48 @@ $(function(){initNavTree('file__util_8cc_source.html','',''); });
 <div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespaceoperations__research.html#abf4b57290178d736c9ab9182407ce87ca319f3b99b8d96c21e2f6b7ebc6fe8d8f">ProtoWriteFormat::kJson</a>: {</div>
 <div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>      google::protobuf::util::JsonPrintOptions options;</div>
 <div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>      options.add_whitespace = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>      options.always_print_fields_with_no_presence = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>      options.preserve_proto_field_names = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>      <span class="keywordflow">if</span> (!google::protobuf::util::MessageToJsonString(proto, &amp;output_string,</div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>                                                       options)</div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>               .ok()) {</div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>        LOG(WARNING) &lt;&lt; <span class="stringliteral">&quot;Printing to stream failed.&quot;</span>;</div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>        <span class="keywordflow">return</span> make_error(<span class="stringliteral">&quot;google::protobuf::util::MessageToJsonString()&quot;</span>);</div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>      }</div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>      file_type_suffix = <span class="stringliteral">&quot;.json&quot;</span>;</div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>      <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>    }</div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespaceoperations__research.html#abf4b57290178d736c9ab9182407ce87cadb5cce9ced76fea1f9c1e9f3e5cb1d90">ProtoWriteFormat::kCanonicalJson</a>:</div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>      google::protobuf::util::JsonPrintOptions options;</div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>      options.add_whitespace = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>      <span class="keywordflow">if</span> (!google::protobuf::util::MessageToJsonString(proto, &amp;output_string,</div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>                                                       options)</div>
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>               .ok()) {</div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>        LOG(WARNING) &lt;&lt; <span class="stringliteral">&quot;Printing to stream failed.&quot;</span>;</div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>        <span class="keywordflow">return</span> make_error(<span class="stringliteral">&quot;google::protobuf::util::MessageToJsonString()&quot;</span>);</div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>      }</div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>      file_type_suffix = <span class="stringliteral">&quot;.json&quot;</span>;</div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>      <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>  }</div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>  <span class="keywordflow">if</span> (gzipped) {</div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>    std::string gzip_string;</div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>    <a class="code hl_function" href="gzipstring_8h.html#aec8c58ca29583d27155018d7b1ad8f92">GzipString</a>(output_string, &amp;gzip_string);</div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>    output_string.swap(gzip_string);</div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>    file_type_suffix += <span class="stringliteral">&quot;.gz&quot;</span>;</div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>  }</div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>  std::string output_filename(filename);</div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>  <span class="keywordflow">if</span> (append_extension_to_file_name) output_filename += file_type_suffix;</div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>  VLOG(1) &lt;&lt; <span class="stringliteral">&quot;Writing &quot;</span> &lt;&lt; output_string.size() &lt;&lt; <span class="stringliteral">&quot; bytes to &#39;&quot;</span></div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>          &lt;&lt; output_filename &lt;&lt; <span class="stringliteral">&quot;&#39;&quot;</span>;</div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="namespacefile.html#af41a07329a7bd1cb679978387b197c42">file::SetContents</a>(output_filename, output_string, <a class="code hl_function" href="namespacefile.html#abf07fefe8ff31f769e921f195b5db868">file::Defaults</a>());</div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>}</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span><span class="preprocessor">#if PROTOBUF_VERSION &gt;= 5026000  </span><span class="comment">// Version 26.0.0</span></div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>      options.always_print_fields_with_no_presence = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>      options.always_print_primitive_fields = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>      options.preserve_proto_field_names = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>      <span class="keywordflow">if</span> (!google::protobuf::util::MessageToJsonString(proto, &amp;output_string,</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>                                                       options)</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>               .ok()) {</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>        LOG(WARNING) &lt;&lt; <span class="stringliteral">&quot;Printing to stream failed.&quot;</span>;</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>        <span class="keywordflow">return</span> make_error(<span class="stringliteral">&quot;google::protobuf::util::MessageToJsonString()&quot;</span>);</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>      }</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>      file_type_suffix = <span class="stringliteral">&quot;.json&quot;</span>;</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>      <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>    }</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespaceoperations__research.html#abf4b57290178d736c9ab9182407ce87cadb5cce9ced76fea1f9c1e9f3e5cb1d90">ProtoWriteFormat::kCanonicalJson</a>:</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>      google::protobuf::util::JsonPrintOptions options;</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>      options.add_whitespace = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>      <span class="keywordflow">if</span> (!google::protobuf::util::MessageToJsonString(proto, &amp;output_string,</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>                                                       options)</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>               .ok()) {</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>        LOG(WARNING) &lt;&lt; <span class="stringliteral">&quot;Printing to stream failed.&quot;</span>;</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>        <span class="keywordflow">return</span> make_error(<span class="stringliteral">&quot;google::protobuf::util::MessageToJsonString()&quot;</span>);</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>      }</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>      file_type_suffix = <span class="stringliteral">&quot;.json&quot;</span>;</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>      <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>  }</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>  <span class="keywordflow">if</span> (gzipped) {</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>    std::string gzip_string;</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>    <a class="code hl_function" href="gzipstring_8h.html#aec8c58ca29583d27155018d7b1ad8f92">GzipString</a>(output_string, &amp;gzip_string);</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>    output_string.swap(gzip_string);</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>    file_type_suffix += <span class="stringliteral">&quot;.gz&quot;</span>;</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>  }</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>  std::string output_filename(filename);</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>  <span class="keywordflow">if</span> (append_extension_to_file_name) output_filename += file_type_suffix;</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>  VLOG(1) &lt;&lt; <span class="stringliteral">&quot;Writing &quot;</span> &lt;&lt; output_string.size() &lt;&lt; <span class="stringliteral">&quot; bytes to &#39;&quot;</span></div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>          &lt;&lt; output_filename &lt;&lt; <span class="stringliteral">&quot;&#39;&quot;</span>;</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="namespacefile.html#af41a07329a7bd1cb679978387b197c42">file::SetContents</a>(output_filename, output_string, <a class="code hl_function" href="namespacefile.html#abf07fefe8ff31f769e921f195b5db868">file::Defaults</a>());</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>}</div>
 </div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span> </div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>}  <span class="comment">// namespace operations_research</span></div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span> </div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>}  <span class="comment">// namespace operations_research</span></div>
 <div class="ttc" id="abase_2file_8h_html"><div class="ttname"><a href="base_2file_8h.html">file.h</a></div></div>
 <div class="ttc" id="abase_2logging_8h_html"><div class="ttname"><a href="base_2logging_8h.html">logging.h</a></div></div>
 <div class="ttc" id="abase_2status__macros_8h_html"><div class="ttname"><a href="base_2status__macros_8h.html">status_macros.h</a></div></div>

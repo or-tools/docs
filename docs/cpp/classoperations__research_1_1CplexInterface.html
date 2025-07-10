@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,11 @@ $(function(){initNavTree('classoperations__research_1_1CplexInterface.html','','
   <div class="headertitle"><div class="title">operations_research::CplexInterface Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="dynheader">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>For a model that is extracted to an instance of this class there is a 1:1 corresponence between <a class="el" href="classoperations__research_1_1MPVariable.html" title="The class for variables of a Mathematical Programming (MP) model.">MPVariable</a> instances and CPLEX columns: the index of an extracted variable is the column index in the CPLEX model. Similiar for instances of <a class="el" href="classoperations__research_1_1MPConstraint.html">MPConstraint</a>: the index of the constraint in the model is the row index in the CPLEX model. </p>
+
+<p class="definition">Definition at line <a class="el" href="cplex__interface_8cc_source.html#l00059">59</a> of file <a class="el" href="cplex__interface_8cc_source.html">cplex_interface.cc</a>.</p>
+</div><div class="dynheader">
 Inheritance diagram for operations_research::CplexInterface:</div>
 <div class="dyncontent">
  <div class="center">
@@ -165,7 +170,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac11b5863b3866e251564de9a5dcfb92e inherit pub_methods_classoperations__research_1_1MPSolverInterface" id="r_ac11b5863b3866e251564de9a5dcfb92e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1MPSolverInterface.html#ac11b5863b3866e251564de9a5dcfb92e">MPSolverInterface</a> (<a class="el" href="classoperations__research_1_1MPSolver.html">MPSolver</a> *solver)</td></tr>
 <tr class="memitem:abba9200b7bd7df46cf9429f150d9bcf3 inherit pub_methods_classoperations__research_1_1MPSolverInterface" id="r_abba9200b7bd7df46cf9429f150d9bcf3"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1MPSolverInterface.html#abba9200b7bd7df46cf9429f150d9bcf3">~MPSolverInterface</a> ()</td></tr>
 <tr class="memitem:a8b65cfaad687468c7729dd4d20282ba4 inherit pub_methods_classoperations__research_1_1MPSolverInterface" id="r_a8b65cfaad687468c7729dd4d20282ba4"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1MPSolverInterface.html#a8b65cfaad687468c7729dd4d20282ba4">SupportsDirectlySolveProto</a> (std::atomic&lt; bool &gt; *) const</td></tr>
-<tr class="memitem:ab00972e23f79731d272395b85103955c inherit pub_methods_classoperations__research_1_1MPSolverInterface" id="r_ab00972e23f79731d272395b85103955c"><td class="memItemLeft" align="right" valign="top">virtual MPSolutionResponse&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1MPSolverInterface.html#ab00972e23f79731d272395b85103955c">DirectlySolveProto</a> (<a class="el" href="classoperations__research_1_1LazyMutableCopy.html">LazyMutableCopy</a>&lt; MPModelRequest &gt;, std::atomic&lt; bool &gt; *)</td></tr>
+<tr class="memitem:ab00972e23f79731d272395b85103955c inherit pub_methods_classoperations__research_1_1MPSolverInterface" id="r_ab00972e23f79731d272395b85103955c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classoperations__research_1_1MPSolutionResponse.html">MPSolutionResponse</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1MPSolverInterface.html#ab00972e23f79731d272395b85103955c">DirectlySolveProto</a> (<a class="el" href="classoperations__research_1_1LazyMutableCopy.html">LazyMutableCopy</a>&lt; <a class="el" href="classoperations__research_1_1MPModelRequest.html">MPModelRequest</a> &gt;, std::atomic&lt; bool &gt; *)</td></tr>
 <tr class="memitem:ab3bff53e637de40ce4dce407d595a2e6 inherit pub_methods_classoperations__research_1_1MPSolverInterface" id="r_ab3bff53e637de40ce4dce407d595a2e6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1MPSolverInterface.html#ab3bff53e637de40ce4dce407d595a2e6">Write</a> (const std::string &amp;filename)</td></tr>
 <tr class="memitem:ac28cad5133e6375bab5e77631f9ce271 inherit pub_methods_classoperations__research_1_1MPSolverInterface" id="r_ac28cad5133e6375bab5e77631f9ce271"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1MPSolverInterface.html#ac28cad5133e6375bab5e77631f9ce271">AddIndicatorConstraint</a> (<a class="el" href="classoperations__research_1_1MPConstraint.html">MPConstraint</a> *const)</td></tr>
 <tr class="memitem:a62053a00e2ac448c4c3b3feab0f10bde inherit pub_methods_classoperations__research_1_1MPSolverInterface" id="r_a62053a00e2ac448c4c3b3feab0f10bde"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1MPSolverInterface.html#a62053a00e2ac448c4c3b3feab0f10bde">BranchingPriorityChangedForVariable</a> (int)</td></tr>
@@ -264,11 +269,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a693c6f125a85b70fe94057be1cfd0819 inherit pro_static_attribs_classoperations__research_1_1MPSolverInterface" id="r_a693c6f125a85b70fe94057be1cfd0819"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1MPSolverInterface.html#a693c6f125a85b70fe94057be1cfd0819">kDummyVariableIndex</a> = 0</td></tr>
 <tr class="memdesc:a693c6f125a85b70fe94057be1cfd0819 inherit pro_static_attribs_classoperations__research_1_1MPSolverInterface"><td class="mdescLeft">&#160;</td><td class="mdescRight">-------&mdash; <a class="el" href="classoperations__research_1_1MPSolverInterface.html">MPSolverInterface</a> -------&mdash;  <br /></td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>For a model that is extracted to an instance of this class there is a 1:1 corresponence between <a class="el" href="classoperations__research_1_1MPVariable.html" title="The class for variables of a Mathematical Programming (MP) model.">MPVariable</a> instances and CPLEX columns: the index of an extracted variable is the column index in the CPLEX model. Similiar for instances of <a class="el" href="classoperations__research_1_1MPConstraint.html">MPConstraint</a>: the index of the constraint in the model is the row index in the CPLEX model. </p>
-
-<p class="definition">Definition at line <a class="el" href="cplex__interface_8cc_source.html#l00059">59</a> of file <a class="el" href="cplex__interface_8cc_source.html">cplex_interface.cc</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aef9a89b0bdd239cf5be63af3e46fd2bc" name="aef9a89b0bdd239cf5be63af3e46fd2bc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aef9a89b0bdd239cf5be63af3e46fd2bc">&#9670;&#160;</a></span>CplexInterface()</h2>
 
@@ -587,7 +588,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Arrays for modifying the problem are setup. Update the index of variables that will get extracted now. Updating indices <em>before</em> the actual extraction makes things much simpler in case we support incremental extraction. In case of error we just reset the indeces.</p>
 <p>If we support incremental extraction then we must update existing constraints with the new variables. To do that we use CPXXaddcols() to actually create the variables. This is supposed to be faster than combining CPXXnewcols() and CPXXchgcoeflist().</p>
 <p>For each column count the size of the intersection with existing constraints.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000760">Todo</a></b></dt><dd>: Use a bitarray to flag the constraints that actually intersect new variables? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000759">Todo</a></b></dt><dd>: Use a bitarray to flag the constraints that actually intersect new variables? </dd></dl>
 <p>At least one of the new variables did intersect with an old constraint. We have to create the new columns via CPXXaddcols().</p>
 <p>Here is how cmatbeg[] is setup:</p><ul>
 <li>it is initialized as [ 0, 0, collen[0], collen[0]+collen[1], ... ] so that cmatbeg[j+1] tells us where in cmatind[] and cmatval[] we need to put the next nonzero for column j</li>
@@ -1281,7 +1282,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Sets the scaling mode. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000761">Todo</a></b></dt><dd>: 0 is equilibrium scaling (the default), CPLEX also supports </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000760">Todo</a></b></dt><dd>: 0 is equilibrium scaling (the default), CPLEX also supports </dd></dl>
 
 <p>Implements <a class="el" href="classoperations__research_1_1MPSolverInterface.html#aaaa84e64f7c29af15440e02189a362da">operations_research::MPSolverInterface</a>.</p>
 
@@ -1393,7 +1394,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Modifies integrality of an extracted variable. </p>
 <dl class="section note"><dt>Note</dt><dd>The type of the model (continuous or mixed integer) is defined once and for all in the constructor. There are no dynamic changes to the model type.</dd></dl>
 <p>Changing the type of a variable should be fast. Still, doing all updates in one big chunk right before solve() is usually faster. However, if we support incremental extraction (supportIncrementalExtraction is true) then we MUST change the type of extracted variables here.</p>
-<p><a class="el" href="structVariable.html">Variable</a> is extracted. Change the type immediately. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000759">Todo</a></b></dt><dd>: Should we check the current type and don't do anything in case the type does not change? </dd></dl>
+<p><a class="el" href="structVariable.html">Variable</a> is extracted. Change the type immediately. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000758">Todo</a></b></dt><dd>: Should we check the current type and don't do anything in case the type does not change? </dd></dl>
 
 <p>Implements <a class="el" href="classoperations__research_1_1MPSolverInterface.html#a5e445125231a8febc619d3a81cb8c12f">operations_research::MPSolverInterface</a>.</p>
 

@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,12 @@ $(function(){initNavTree('classoperations__research_1_1math__opt_1_1SparseCoeffi
   <div class="headertitle"><div class="title">operations_research::math_opt::SparseCoefficientMap Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Represents a sparse collection of linear terms: {double_i x VariableId_i}_i. All VariableIds not represented in the collection are implicitly treated as having zero coefficient.</p>
+<p>Internally it is a lightweight wrapper around absl::flat_hash_map that only explicitly stores nonzero elements. </p>
 
+<p class="definition">Definition at line <a class="el" href="sparse__coefficient__map_8h_source.html#l00033">33</a> of file <a class="el" href="sparse__coefficient__map_8h_source.html">sparse_coefficient_map.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="sparse__coefficient__map_8h_source.html">sparse_coefficient_map.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -110,14 +116,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3036d5bc35c2cb355359bb57e763bedd" id="r_a3036d5bc35c2cb355359bb57e763bedd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3036d5bc35c2cb355359bb57e763bedd">clear</a> ()</td></tr>
 <tr class="memitem:ae408378f21438c31b6ac223f52d67505" id="r_ae408378f21438c31b6ac223f52d67505"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae408378f21438c31b6ac223f52d67505">erase</a> (<a class="el" href="namespaceoperations__research_1_1math__opt.html#a65891782521d4a9c7b5c8dd80bb3f771">VariableId</a> id)</td></tr>
 <tr class="memdesc:ae408378f21438c31b6ac223f52d67505"><td class="mdescLeft">&#160;</td><td class="mdescRight">Has no effect if id is not set.  <br /></td></tr>
-<tr class="memitem:a877347b20897635180c090c558dd0c3e" id="r_a877347b20897635180c090c558dd0c3e"><td class="memItemLeft" align="right" valign="top">SparseDoubleVectorProto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a877347b20897635180c090c558dd0c3e">Proto</a> () const</td></tr>
+<tr class="memitem:a877347b20897635180c090c558dd0c3e" id="r_a877347b20897635180c090c558dd0c3e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoperations__research_1_1math__opt_1_1SparseDoubleVectorProto.html">SparseDoubleVectorProto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a877347b20897635180c090c558dd0c3e">Proto</a> () const</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Represents a sparse collection of linear terms: {double_i x VariableId_i}_i. All VariableIds not represented in the collection are implicitly treated as having zero coefficient.</p>
-<p>Internally it is a lightweight wrapper around absl::flat_hash_map that only explicitly stores nonzero elements. </p>
-
-<p class="definition">Definition at line <a class="el" href="sparse__coefficient__map_8h_source.html#l00033">33</a> of file <a class="el" href="sparse__coefficient__map_8h_source.html">sparse_coefficient_map.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a08fdc7b4e313a5765bbac692f274551c" name="a08fdc7b4e313a5765bbac692f274551c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a08fdc7b4e313a5765bbac692f274551c">&#9670;&#160;</a></span>SparseCoefficientMap() <span class="overload">[1/2]</span></h2>
 
@@ -264,7 +265,7 @@ Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">SparseDoubleVectorProto operations_research::math_opt::SparseCoefficientMap::Proto </td>
+          <td class="memname"><a class="el" href="classoperations__research_1_1math__opt_1_1SparseDoubleVectorProto.html">SparseDoubleVectorProto</a> operations_research::math_opt::SparseCoefficientMap::Proto </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>

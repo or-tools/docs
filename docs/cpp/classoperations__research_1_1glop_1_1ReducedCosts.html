@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,18 @@ $(function(){initNavTree('classoperations__research_1_1glop_1_1ReducedCosts.html
   <div class="headertitle"><div class="title">operations_research::glop::ReducedCosts Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Maintains the reduced costs of the non-basic variables and some related quantities.</p>
+<p>Terminology:</p><ul>
+<li>To each non-basic column 'a' of A, we can associate an "edge" in the kernel of A equal to 1.0 on the index of 'a' and '-B^{-1}.a' on the basic variables.</li>
+<li>'B^{-1}.a' is called the "right inverse" of 'a'.</li>
+<li>The reduced cost of a column is equal to the scalar product of this column's edge with the cost vector (objective_), and corresponds to the variation in the objective function when we add this edge to the current solution.</li>
+<li>The dual values are the "left inverse" of the basic objective by B. That is 'basic_objective_.B^{-1}'</li>
+<li>The reduced cost of a column is also equal to the scalar product of this column with the vector of the dual values. </li>
+</ul>
 
+<p class="definition">Definition at line <a class="el" href="reduced__costs_8h_source.html#l00053">53</a> of file <a class="el" href="reduced__costs_8h_source.html">reduced_costs.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="reduced__costs_8h_source.html">reduced_costs.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -114,7 +126,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4878a41ab1ecc1870439b12fa779b0e2" id="r_a4878a41ab1ecc1870439b12fa779b0e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceoperations__research_1_1glop.html#a0cac235bd48eb39d15cc101516dc1e90">Fractional</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4878a41ab1ecc1870439b12fa779b0e2">ComputeMaximumDualInfeasibilityOnNonBoxedVariables</a> ()</td></tr>
 <tr class="memitem:acd908bfe7bcdf1ec998e96fd5ed11fb9" id="r_acd908bfe7bcdf1ec998e96fd5ed11fb9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acd908bfe7bcdf1ec998e96fd5ed11fb9">UpdateBeforeBasisPivot</a> (ColIndex entering_col, RowIndex leaving_row, const <a class="el" href="structoperations__research_1_1glop_1_1ScatteredColumn.html">ScatteredColumn</a> &amp;direction, <a class="el" href="classoperations__research_1_1glop_1_1UpdateRow.html">UpdateRow</a> *update_row)</td></tr>
 <tr class="memitem:a481334671b65826c6994e0b36774e042" id="r_a481334671b65826c6994e0b36774e042"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a481334671b65826c6994e0b36774e042">SetNonBasicVariableCostToZero</a> (ColIndex col, <a class="el" href="namespaceoperations__research_1_1glop.html#a0cac235bd48eb39d15cc101516dc1e90">Fractional</a> *current_cost)</td></tr>
-<tr class="memitem:a5b696f7532379887c8e3ad38cd20a492" id="r_a5b696f7532379887c8e3ad38cd20a492"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5b696f7532379887c8e3ad38cd20a492">SetParameters</a> (const GlopParameters &amp;parameters)</td></tr>
+<tr class="memitem:a5b696f7532379887c8e3ad38cd20a492" id="r_a5b696f7532379887c8e3ad38cd20a492"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5b696f7532379887c8e3ad38cd20a492">SetParameters</a> (const <a class="el" href="classoperations__research_1_1glop_1_1GlopParameters.html">GlopParameters</a> &amp;parameters)</td></tr>
 <tr class="memdesc:a5b696f7532379887c8e3ad38cd20a492"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the pricing parameters. This does not change the pricing rule.  <br /></td></tr>
 <tr class="memitem:a89b1126c7e7185a8b6819b35b65b9636" id="r_a89b1126c7e7185a8b6819b35b65b9636"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a89b1126c7e7185a8b6819b35b65b9636">AreReducedCostsPrecise</a> ()</td></tr>
 <tr class="memitem:ab57085734a1dc5a3f1e2e73f38ff5e9a" id="r_ab57085734a1dc5a3f1e2e73f38ff5e9a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab57085734a1dc5a3f1e2e73f38ff5e9a">AreReducedCostsRecomputed</a> ()</td></tr>
@@ -144,18 +156,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ab7353c7de8ef8e25f6f1b53996850537"><td class="mdescLeft">&#160;</td><td class="mdescRight">The deterministic time used by this class.  <br /></td></tr>
 <tr class="memitem:aac19f09b1a4997c49011f0cc4cbdd015" id="r_aac19f09b1a4997c49011f0cc4cbdd015"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aac19f09b1a4997c49011f0cc4cbdd015">AddRecomputationWatcher</a> (bool *watcher)</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Maintains the reduced costs of the non-basic variables and some related quantities.</p>
-<p>Terminology:</p><ul>
-<li>To each non-basic column 'a' of A, we can associate an "edge" in the kernel of A equal to 1.0 on the index of 'a' and '-B^{-1}.a' on the basic variables.</li>
-<li>'B^{-1}.a' is called the "right inverse" of 'a'.</li>
-<li>The reduced cost of a column is equal to the scalar product of this column's edge with the cost vector (objective_), and corresponds to the variation in the objective function when we add this edge to the current solution.</li>
-<li>The dual values are the "left inverse" of the basic objective by B. That is 'basic_objective_.B^{-1}'</li>
-<li>The reduced cost of a column is also equal to the scalar product of this column with the vector of the dual values. </li>
-</ul>
-
-<p class="definition">Definition at line <a class="el" href="reduced__costs_8h_source.html#l00053">53</a> of file <a class="el" href="reduced__costs_8h_source.html">reduced_costs.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a8a673fb44fcba28f3a74d31e4c428611" name="a8a673fb44fcba28f3a74d31e4c428611"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8a673fb44fcba28f3a74d31e4c428611">&#9670;&#160;</a></span>ReducedCosts() <span class="overload">[1/2]</span></h2>
 
@@ -755,7 +756,7 @@ performance simplex solver", Ph.D, dissertation, University of Edinburgh, sectio
         <tr>
           <td class="memname">void operations_research::glop::ReducedCosts::SetParameters </td>
           <td>(</td>
-          <td class="paramtype">const GlopParameters &amp;</td>          <td class="paramname"><span class="paramname"><em>parameters</em></span></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1glop_1_1GlopParameters.html">GlopParameters</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>parameters</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>

@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,13 @@ $(function(){initNavTree('classoperations__research_1_1Domain.html','','classope
   <div class="headertitle"><div class="title">operations_research::Domain Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>We call <em>domain</em> any subset of Int64 = [kint64min, kint64max].</p>
+<p>This class can be used to represent such set efficiently as a sorted and non-adjacent list of intervals. This is efficient as long as the size of such list stays reasonable.</p>
+<p>In the comments below, the domain of *this will always be written 'D'. Note that all the functions are safe with respect to integer overflow. </p>
 
+<p class="definition">Definition at line <a class="el" href="sorted__interval__list_8h_source.html#l00113">113</a> of file <a class="el" href="sorted__interval__list_8h_source.html">sorted_interval_list.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="sorted__interval__list_8h_source.html">sorted_interval_list.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
@@ -178,13 +185,7 @@ Friends</h2></td></tr>
 <tr class="memitem:a2bc78ed27991011d4a9148a0398febbe" id="r_a2bc78ed27991011d4a9148a0398febbe"><td class="memTemplParams" colspan="2">template&lt;typename H&gt; </td></tr>
 <tr class="memitem:a2bc78ed27991011d4a9148a0398febbe template"><td class="memItemLeft" align="right" valign="top">H&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2bc78ed27991011d4a9148a0398febbe">AbslHashValue</a> (H h, const <a class="el" href="classoperations__research_1_1Domain.html">Domain</a> &amp;domain)</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>We call <em>domain</em> any subset of Int64 = [kint64min, kint64max].</p>
-<p>This class can be used to represent such set efficiently as a sorted and non-adjacent list of intervals. This is efficient as long as the size of such list stays reasonable.</p>
-<p>In the comments below, the domain of *this will always be written 'D'. Note that all the functions are safe with respect to integer overflow. </p>
-
-<p class="definition">Definition at line <a class="el" href="sorted__interval__list_8h_source.html#l00113">113</a> of file <a class="el" href="sorted__interval__list_8h_source.html">sorted_interval_list.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a8026c98d5255e56fc3f224be687a07c3" name="a8026c98d5255e56fc3f224be687a07c3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8026c98d5255e56fc3f224be687a07c3">&#9670;&#160;</a></span>Domain() <span class="overload">[1/5]</span></h2>
 
@@ -341,7 +342,7 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns {x ∈ Int64, ∃ a ∈ D, ∃ b ∈ domain, x = a + b}.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002634">Todo</a></b></dt><dd>(user): Use a better algorithm. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002632">Todo</a></b></dt><dd>(user): Use a better algorithm. </dd></dl>
 <p>The sort is not needed if one of the list is of size 1.</p>
 
 <p class="definition">Definition at line <a class="el" href="sorted__interval__list_8cc_source.html#l00439">439</a> of file <a class="el" href="sorted__interval__list_8cc_source.html">sorted_interval_list.cc</a>.</p>
@@ -445,7 +446,7 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns the value closest to the given point. If there is a tie, pick larger one.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002632">Todo</a></b></dt><dd>(user): Use std::upper_bound() like in <a class="el" href="#af92607bb167d8c9e77963b7b797af55b">ValueAtOrBefore()</a> ? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002630">Todo</a></b></dt><dd>(user): Use std::upper_bound() like in <a class="el" href="#af92607bb167d8c9e77963b7b797af55b">ValueAtOrBefore()</a> ? </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="sorted__interval__list_8cc_source.html#l00263">263</a> of file <a class="el" href="sorted__interval__list_8cc_source.html">sorted_interval_list.cc</a>.</p>
 
@@ -549,7 +550,7 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns the distance from the value to the domain.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002633">Todo</a></b></dt><dd>(user): Deal with overflow. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002631">Todo</a></b></dt><dd>(user): Deal with overflow. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="sorted__interval__list_8cc_source.html#l00325">325</a> of file <a class="el" href="sorted__interval__list_8cc_source.html">sorted_interval_list.cc</a>.</p>
 

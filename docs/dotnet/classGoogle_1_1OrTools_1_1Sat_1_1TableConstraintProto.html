@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -98,7 +99,16 @@ $(function(){initNavTree('classGoogle_1_1OrTools_1_1Sat_1_1TableConstraintProto.
 
 <p>The values of the n-tuple formed by the given expression can only be one of the listed n-tuples in values. The n-tuples are encoded in a flattened way: [tuple0_v0, tuple0_v1, ..., tuple0_v{n-1}, tuple1_v0, ...]. Expressions must be affine (a * var + b). Corner cases:  
  <a href="#details">More...</a></p>
-<div class="dynheader">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The values of the n-tuple formed by the given expression can only be one of the listed n-tuples in values. The n-tuples are encoded in a flattened way: [tuple0_v0, tuple0_v1, ..., tuple0_v{n-1}, tuple1_v0, ...]. Expressions must be affine (a * var + b). Corner cases: </p>
+<ul>
+<li>If all <span class="tt">vars</span>, <span class="tt">values</span> and <span class="tt">exprs</span> are empty, the constraint is trivially true, irrespective of the value of <span class="tt">negated</span>.</li>
+<li>If <span class="tt">values</span> is empty but either vars or exprs is not, the constraint is trivially false if <span class="tt">negated</span> is false, and trivially true if <span class="tt">negated</span> is true.</li>
+<li>If <span class="tt">vars</span> and <span class="tt">exprs</span> are empty but <span class="tt">values</span> is not, the model is invalid. </li>
+</ul>
+
+<p class="definition">Definition at line <a class="el" href="CpModel_8pb_8cs_source.html#l04274">4274</a> of file <a class="el" href="CpModel_8pb_8cs_source.html">CpModel.pb.cs</a>.</p>
+</div><div class="dynheader">
 Inheritance diagram for Google.OrTools.Sat.TableConstraintProto:</div>
 <div class="dyncontent">
  <div class="center">
@@ -141,16 +151,7 @@ Properties</h2></td></tr>
 <tr class="memitem:a8b1b946b2659ad776d922a19e34205cd" id="r_a8b1b946b2659ad776d922a19e34205cd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8b1b946b2659ad776d922a19e34205cd">Negated</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:a8b1b946b2659ad776d922a19e34205cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true, the meaning is "negated", that is we forbid any of the given tuple from a feasible assignment.  <br /></td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The values of the n-tuple formed by the given expression can only be one of the listed n-tuples in values. The n-tuples are encoded in a flattened way: [tuple0_v0, tuple0_v1, ..., tuple0_v{n-1}, tuple1_v0, ...]. Expressions must be affine (a * var + b). Corner cases: </p>
-<ul>
-<li>If all <span class="tt">vars</span>, <span class="tt">values</span> and <span class="tt">exprs</span> are empty, the constraint is trivially true, irrespective of the value of <span class="tt">negated</span>.</li>
-<li>If <span class="tt">values</span> is empty but either vars or exprs is not, the constraint is trivially false if <span class="tt">negated</span> is false, and trivially true if <span class="tt">negated</span> is true.</li>
-<li>If <span class="tt">vars</span> and <span class="tt">exprs</span> are empty but <span class="tt">values</span> is not, the model is invalid. </li>
-</ul>
-
-<p class="definition">Definition at line <a class="el" href="CpModel_8pb_8cs_source.html#l04274">4274</a> of file <a class="el" href="CpModel_8pb_8cs_source.html">CpModel.pb.cs</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a650fc71c1287795899af58ded6eddd2a" name="a650fc71c1287795899af58ded6eddd2a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a650fc71c1287795899af58ded6eddd2a">&#9670;&#160;</a></span>TableConstraintProto() <span class="overload">[1/2]</span></h2>
 

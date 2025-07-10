@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -98,7 +99,86 @@ $(function(){initNavTree('namespacegtl.html','',''); });
 
 <p>!  
 <a href="#details">More...</a></p>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>! </p>
+<p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><div class="fragment"><div class="line">http:<span class="comment">//www.apache.org/licenses/LICENSE-2.0</span></div>
+</div><!-- fragment --><p> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000040">Todo</a></b></dt><dd>(corentinl) std::to_array available in C++20. </dd></dl>
+<p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><div class="fragment"><div class="line">http:<span class="comment">//www.apache.org/licenses/LICENSE-2.0</span></div>
+</div><!-- fragment --><p> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. Utilities for container logging. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000042">Todo</a></b></dt><dd>(user): Broaden the scope and rename to "stream_util.h"</dd></dl>
+<p>The typical use looks like this:</p>
+<p>LOG(INFO) &lt;&lt; gtl::LogContainer(container);</p>
+<p>By default, <a class="el" href="#a252ef610941828aa417152c3230ca670">LogContainer()</a> uses the <a class="el" href="structgtl_1_1LogShortUpTo100.html">LogShortUpTo100</a> policy: comma-space separation, no newlines, and with limit of 100 items.</p>
+<p>Policies can be specified:</p>
+<p>LOG(INFO) &lt;&lt; gtl::LogContainer(container, gtl::LogMultiline());</p>
+<p>The above example will print the container using newlines between elements, enclosed in [] braces.</p>
+<p>See below for further details on policies.</p>
+<p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><div class="fragment"><div class="line">http:<span class="comment">//www.apache.org/licenses/LICENSE-2.0</span></div>
+</div><!-- fragment --><p> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. <a class="el" href="classgtl_1_1IntType.html">IntType</a> is a simple template class mechanism for defining "logical" integer-like class types that support many of the same functionalities as native integer types, but which prevent assignment, construction, and other operations from other similar integer-like types. Essentially, the template class <a class="el" href="classgtl_1_1IntType.html">IntType&lt;IntTypeName, ValueType&gt;</a> (where ValueType assumes valid scalar types such as int, uint, int32_t, etc) has the additional property that it cannot be assigned to or constructed from other IntTypes or native integer types of equal or implicitly convertible type.</p>
+<p>The class is useful for preventing mingling of integer variables with different logical roles or units. Unfortunately, C++ provides relatively good type-safety for user-defined classes but not for integer types. It is essentially up to the user to use nice variable names and comments to prevent accidental mismatches, such as confusing a user-index with a group-index or a time-in-milliseconds with a time-in-seconds. The use of typedefs are limited in that regard as they do not enforce type-safety.</p>
+<p>USAGE --------------------------------------------------------------------&mdash; </p><div class="fragment"><div class="line"><a class="code hl_define" href="int__type_8h.html#a38b1a87de73c7c9bc9ff2bd0aa06536a">DEFINE_INT_TYPE</a>(IntTypeName, ValueType);</div>
+<div class="ttc" id="aint__type_8h_html_a38b1a87de73c7c9bc9ff2bd0aa06536a"><div class="ttname"><a href="int__type_8h.html#a38b1a87de73c7c9bc9ff2bd0aa06536a">DEFINE_INT_TYPE</a></div><div class="ttdeci">#define DEFINE_INT_TYPE(int_type_name, value_type)</div><div class="ttdef"><b>Definition</b> <a href="int__type_8h_source.html#l00165">int_type.h:165</a></div></div>
+</div><!-- fragment --><p> where: IntTypeName: is the desired (unique) name for the "logical" integer type. ValueType: is one of the integral types as defined by std::is_integral (see &lt;type_traits&gt;).</p>
+<p>DISALLOWED OPERATIONS / TYPE-SAFETY ENFORCEMENT --------------------------&mdash;</p>
+<p>Consider these definitions and variable declarations: <a class="el" href="int__type_8h.html#a38b1a87de73c7c9bc9ff2bd0aa06536a">DEFINE_INT_TYPE(GlobalDocID, int64_t)</a>; <a class="el" href="int__type_8h.html#a38b1a87de73c7c9bc9ff2bd0aa06536a">DEFINE_INT_TYPE(LocalDocID, int64_t)</a>; GlobalDocID global; LocalDocID local;</p>
+<p>The class <a class="el" href="classgtl_1_1IntType.html">IntType</a> prevents:</p>
+<p>1) Assignments of other IntTypes with different IntTypeNames. </p><div class="fragment"><div class="line">global = local;                  &lt;-- Fails <a class="code hl_variable" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> compile!</div>
+<div class="line">local = global;                  &lt;-- Fails <a class="code hl_variable" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> compile!</div>
+<div class="ttc" id="aone__tree__lower__bound_8h_html_a717d5dae07519577a5ed09ac24a4708b"><div class="ttname"><a href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a></div><div class="ttdeci">trees with all degrees equal to</div><div class="ttdef"><b>Definition</b> <a href="one__tree__lower__bound_8h_source.html#l00034">one_tree_lower_bound.h:34</a></div></div>
+</div><!-- fragment --><p> 2) Explicit/implicit conversion from an <a class="el" href="classgtl_1_1IntType.html">IntType</a> to another <a class="el" href="classgtl_1_1IntType.html">IntType</a>. </p><div class="fragment"><div class="line">LocalDocID l(global);            &lt;-- Fails <a class="code hl_variable" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> compile!</div>
+<div class="line">LocalDocID l = global;           &lt;-- Fails <a class="code hl_variable" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> compile!</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">void</span> GetGlobalDoc(GlobalDocID global) { }</div>
+<div class="line">GetGlobalDoc(global);            &lt;-- Compiles fine, types match!</div>
+<div class="line">GetGlobalDoc(local);             &lt;-- Fails <a class="code hl_variable" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> compile!</div>
+</div><!-- fragment --><p> 3) Implicit conversion from an <a class="el" href="classgtl_1_1IntType.html">IntType</a> to a native integer type. </p><div class="fragment"><div class="line"><span class="keywordtype">void</span> GetGlobalDoc(int64_t global) { ...</div>
+<div class="line">GetGlobalDoc(global);            &lt;-- Fails <a class="code hl_variable" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> compile!</div>
+<div class="line">GetGlobalDoc(local);             &lt;-- Fails <a class="code hl_variable" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> compile!</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">void</span> GetLocalDoc(int32_t local) { ...</div>
+<div class="line">GetLocalDoc(global);             &lt;-- Fails <a class="code hl_variable" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> compile!</div>
+<div class="line">GetLocalDoc(local);              &lt;-- Fails <a class="code hl_variable" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> compile!</div>
+</div><!-- fragment --><p> SUPPORTED OPERATIONS -----------------------------------------------------&mdash;</p>
+<p>The following operators are supported: unary: ++ (both prefix and postfix), +, -, ! (logical not), ~ (one's complement); comparison: ==, !=, &lt;, &lt;=, &gt;, &gt;=; numerical: +, -, *, /; assignment: =, +=, -=, /=, *=; stream: &lt;&lt;. Each operator allows the same IntTypeName and the ValueType to be used on both left- and right-hand sides.</p>
+<p>It also supports an accessor value() returning the stored value as ValueType, and a templatized accessor value&lt;T&gt;() method that serves as syntactic sugar for static_cast&lt;T&gt;(var.value()). These accessors are useful when assigning the stored value into protocol buffer fields and using it as printf args.</p>
+<p>The class also defines a hash functor that allows the <a class="el" href="classgtl_1_1IntType.html">IntType</a> to be used as key to hashable containers such as hash_map and hash_set.</p>
+<p>We suggest using the IntTypeIndexedContainer wrapper around google3's FixedArray and STL vector (see int-type-indexed-container.h) if an <a class="el" href="classgtl_1_1IntType.html">IntType</a> is intended to be used as an index into these containers. These wrappers are indexed in a type-safe manner using IntTypes to ensure type-safety.</p>
+<p>NB: this implementation does not attempt to abide by or enforce dimensional analysis on these scalar types.</p>
+<p>EXAMPLES -----------------------------------------------------------------&mdash; </p><div class="fragment"><div class="line"><a class="code hl_define" href="int__type_8h.html#a38b1a87de73c7c9bc9ff2bd0aa06536a">DEFINE_INT_TYPE</a>(GlobalDocID, int64_t);</div>
+<div class="line">GlobalDocID global = 3;</div>
+<div class="line">std::cout &lt;&lt; global;                      &lt;-- Prints 3 <a class="code hl_variable" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> stdout.</div>
+<div class="line"> </div>
+<div class="line">for (GlobalDocID i(0); i &lt; global; ++i) {</div>
+<div class="line">  std::cout &lt;&lt; i;</div>
+<div class="line">}                                    &lt;-- Print(ln)s 0 1 2 <a class="code hl_variable" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> stdout</div>
+<div class="line"> </div>
+<div class="line"><a class="code hl_define" href="int__type_8h.html#a38b1a87de73c7c9bc9ff2bd0aa06536a">DEFINE_INT_TYPE</a>(LocalDocID, int64_t);</div>
+<div class="line">LocalDocID local;</div>
+<div class="line">std::cout &lt;&lt; local;                       &lt;-- Prints 0 <a class="code hl_variable" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> stdout it</div>
+<div class="line"><span class="keywordflow">default</span></div>
+<div class="line">                                         initializes the value <a class="code hl_variable" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> 0.</div>
+<div class="line"> </div>
+<div class="line">local = 5;</div>
+<div class="line">local *= 2;</div>
+<div class="line">LocalDocID l(local);</div>
+<div class="line">std::cout &lt;&lt; l + local;                   &lt;-- Prints 20 <a class="code hl_variable" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> stdout.</div>
+<div class="line"> </div>
+<div class="line">GenericSearchRequest request;</div>
+<div class="line">request.set_doc_id(global.value());  &lt;-- Uses value() <a class="code hl_variable" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> extract the value</div>
+<div class="line">                                         from the IntType class.</div>
+</div><!-- fragment --><p> REMARKS ------------------------------------------------------------------&mdash;</p>
+<p>The following bad usage is permissible although discouraged. Essentially, it involves using the value*() accessors to extract the native integer type out of the <a class="el" href="classgtl_1_1IntType.html">IntType</a> class. Keep in mind that the primary reason for the <a class="el" href="classgtl_1_1IntType.html">IntType</a> class is to prevent <em>accidental</em> mingling of similar logical integer types &ndash; and not type casting from one type to another.</p>
+<p><a class="el" href="int__type_8h.html#a38b1a87de73c7c9bc9ff2bd0aa06536a">DEFINE_INT_TYPE(GlobalDocID, int64_t)</a>; <a class="el" href="int__type_8h.html#a38b1a87de73c7c9bc9ff2bd0aa06536a">DEFINE_INT_TYPE(LocalDocID, int64_t)</a>; GlobalDocID global; LocalDocID local;</p>
+<p>global = local.value(); &lt;&ndash; Compiles fine.</p>
+<p>void GetGlobalDoc(GlobalDocID global) { ... GetGlobalDoc(local.value()); &lt;&ndash; Compiles fine.</p>
+<p>void GetGlobalDoc(int64_t global) { ... GetGlobalDoc(local.value()); &lt;&ndash; Compiles fine.</p>
+<p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><div class="fragment"><div class="line">http:<span class="comment">//www.apache.org/licenses/LICENSE-2.0</span></div>
+</div><!-- fragment --><p> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.</p>
+<p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><div class="fragment"><div class="line">http:<span class="comment">//www.apache.org/licenses/LICENSE-2.0</span></div>
+</div><!-- fragment --><p> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. This is a simplistic insertion-ordered map. It behaves similarly to an STL map, but only implements a small subset of the map's methods. Internally, we just keep a map and a list going in parallel.</p>
+<p>This class provides no thread safety guarantees, beyond what you would normally see with std::list.</p>
+<p>Iterators point into the list and should be stable in the face of mutations, except for an iterator pointing to an element that was just deleted.</p>
+<p>This class supports heterogeneous lookups. </p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:detail" id="r_detail"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtl_1_1detail.html">detail</a></td></tr>
@@ -350,86 +430,7 @@ Functions</h2></td></tr>
 Variables</h2></td></tr>
 <tr class="memitem:afce6b52584bb29e142d51b262b8451e5" id="r_afce6b52584bb29e142d51b262b8451e5"><td class="memItemLeft" align="right" valign="top">class <a class="el" href="classgtl_1_1IntType.html">gtl::IntType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afce6b52584bb29e142d51b262b8451e5">ABSL_ATTRIBUTE_PACKED</a></td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>! </p>
-<p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><div class="fragment"><div class="line">http:<span class="comment">//www.apache.org/licenses/LICENSE-2.0</span></div>
-</div><!-- fragment --><p> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000041">Todo</a></b></dt><dd>(corentinl) std::to_array available in C++20. </dd></dl>
-<p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><div class="fragment"><div class="line">http:<span class="comment">//www.apache.org/licenses/LICENSE-2.0</span></div>
-</div><!-- fragment --><p> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. Utilities for container logging. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000043">Todo</a></b></dt><dd>(user): Broaden the scope and rename to "stream_util.h"</dd></dl>
-<p>The typical use looks like this:</p>
-<p>LOG(INFO) &lt;&lt; gtl::LogContainer(container);</p>
-<p>By default, <a class="el" href="#a252ef610941828aa417152c3230ca670">LogContainer()</a> uses the <a class="el" href="structgtl_1_1LogShortUpTo100.html">LogShortUpTo100</a> policy: comma-space separation, no newlines, and with limit of 100 items.</p>
-<p>Policies can be specified:</p>
-<p>LOG(INFO) &lt;&lt; gtl::LogContainer(container, gtl::LogMultiline());</p>
-<p>The above example will print the container using newlines between elements, enclosed in [] braces.</p>
-<p>See below for further details on policies.</p>
-<p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><div class="fragment"><div class="line">http:<span class="comment">//www.apache.org/licenses/LICENSE-2.0</span></div>
-</div><!-- fragment --><p> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. <a class="el" href="classgtl_1_1IntType.html">IntType</a> is a simple template class mechanism for defining "logical" integer-like class types that support many of the same functionalities as native integer types, but which prevent assignment, construction, and other operations from other similar integer-like types. Essentially, the template class <a class="el" href="classgtl_1_1IntType.html">IntType&lt;IntTypeName, ValueType&gt;</a> (where ValueType assumes valid scalar types such as int, uint, int32_t, etc) has the additional property that it cannot be assigned to or constructed from other IntTypes or native integer types of equal or implicitly convertible type.</p>
-<p>The class is useful for preventing mingling of integer variables with different logical roles or units. Unfortunately, C++ provides relatively good type-safety for user-defined classes but not for integer types. It is essentially up to the user to use nice variable names and comments to prevent accidental mismatches, such as confusing a user-index with a group-index or a time-in-milliseconds with a time-in-seconds. The use of typedefs are limited in that regard as they do not enforce type-safety.</p>
-<p>USAGE --------------------------------------------------------------------&mdash; </p><div class="fragment"><div class="line"><a class="code hl_define" href="int__type_8h.html#a38b1a87de73c7c9bc9ff2bd0aa06536a">DEFINE_INT_TYPE</a>(IntTypeName, ValueType);</div>
-<div class="ttc" id="aint__type_8h_html_a38b1a87de73c7c9bc9ff2bd0aa06536a"><div class="ttname"><a href="int__type_8h.html#a38b1a87de73c7c9bc9ff2bd0aa06536a">DEFINE_INT_TYPE</a></div><div class="ttdeci">#define DEFINE_INT_TYPE(int_type_name, value_type)</div><div class="ttdef"><b>Definition</b> <a href="int__type_8h_source.html#l00165">int_type.h:165</a></div></div>
-</div><!-- fragment --><p> where: IntTypeName: is the desired (unique) name for the "logical" integer type. ValueType: is one of the integral types as defined by std::is_integral (see &lt;type_traits&gt;).</p>
-<p>DISALLOWED OPERATIONS / TYPE-SAFETY ENFORCEMENT --------------------------&mdash;</p>
-<p>Consider these definitions and variable declarations: <a class="el" href="int__type_8h.html#a38b1a87de73c7c9bc9ff2bd0aa06536a">DEFINE_INT_TYPE(GlobalDocID, int64_t)</a>; <a class="el" href="int__type_8h.html#a38b1a87de73c7c9bc9ff2bd0aa06536a">DEFINE_INT_TYPE(LocalDocID, int64_t)</a>; GlobalDocID global; LocalDocID local;</p>
-<p>The class <a class="el" href="classgtl_1_1IntType.html">IntType</a> prevents:</p>
-<p>1) Assignments of other IntTypes with different IntTypeNames. </p><div class="fragment"><div class="line">global = local;                  &lt;-- Fails <a class="code hl_variable" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> compile!</div>
-<div class="line">local = global;                  &lt;-- Fails <a class="code hl_variable" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> compile!</div>
-<div class="ttc" id="aone__tree__lower__bound_8h_html_a717d5dae07519577a5ed09ac24a4708b"><div class="ttname"><a href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a></div><div class="ttdeci">trees with all degrees equal to</div><div class="ttdef"><b>Definition</b> <a href="one__tree__lower__bound_8h_source.html#l00034">one_tree_lower_bound.h:34</a></div></div>
-</div><!-- fragment --><p> 2) Explicit/implicit conversion from an <a class="el" href="classgtl_1_1IntType.html">IntType</a> to another <a class="el" href="classgtl_1_1IntType.html">IntType</a>. </p><div class="fragment"><div class="line">LocalDocID l(global);            &lt;-- Fails <a class="code hl_variable" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> compile!</div>
-<div class="line">LocalDocID l = global;           &lt;-- Fails <a class="code hl_variable" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> compile!</div>
-<div class="line"> </div>
-<div class="line"><span class="keywordtype">void</span> GetGlobalDoc(GlobalDocID global) { }</div>
-<div class="line">GetGlobalDoc(global);            &lt;-- Compiles fine, types match!</div>
-<div class="line">GetGlobalDoc(local);             &lt;-- Fails <a class="code hl_variable" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> compile!</div>
-</div><!-- fragment --><p> 3) Implicit conversion from an <a class="el" href="classgtl_1_1IntType.html">IntType</a> to a native integer type. </p><div class="fragment"><div class="line"><span class="keywordtype">void</span> GetGlobalDoc(int64_t global) { ...</div>
-<div class="line">GetGlobalDoc(global);            &lt;-- Fails <a class="code hl_variable" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> compile!</div>
-<div class="line">GetGlobalDoc(local);             &lt;-- Fails <a class="code hl_variable" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> compile!</div>
-<div class="line"> </div>
-<div class="line"><span class="keywordtype">void</span> GetLocalDoc(int32_t local) { ...</div>
-<div class="line">GetLocalDoc(global);             &lt;-- Fails <a class="code hl_variable" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> compile!</div>
-<div class="line">GetLocalDoc(local);              &lt;-- Fails <a class="code hl_variable" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> compile!</div>
-</div><!-- fragment --><p> SUPPORTED OPERATIONS -----------------------------------------------------&mdash;</p>
-<p>The following operators are supported: unary: ++ (both prefix and postfix), +, -, ! (logical not), ~ (one's complement); comparison: ==, !=, &lt;, &lt;=, &gt;, &gt;=; numerical: +, -, *, /; assignment: =, +=, -=, /=, *=; stream: &lt;&lt;. Each operator allows the same IntTypeName and the ValueType to be used on both left- and right-hand sides.</p>
-<p>It also supports an accessor value() returning the stored value as ValueType, and a templatized accessor value&lt;T&gt;() method that serves as syntactic sugar for static_cast&lt;T&gt;(var.value()). These accessors are useful when assigning the stored value into protocol buffer fields and using it as printf args.</p>
-<p>The class also defines a hash functor that allows the <a class="el" href="classgtl_1_1IntType.html">IntType</a> to be used as key to hashable containers such as hash_map and hash_set.</p>
-<p>We suggest using the IntTypeIndexedContainer wrapper around google3's FixedArray and STL vector (see int-type-indexed-container.h) if an <a class="el" href="classgtl_1_1IntType.html">IntType</a> is intended to be used as an index into these containers. These wrappers are indexed in a type-safe manner using IntTypes to ensure type-safety.</p>
-<p>NB: this implementation does not attempt to abide by or enforce dimensional analysis on these scalar types.</p>
-<p>EXAMPLES -----------------------------------------------------------------&mdash; </p><div class="fragment"><div class="line"><a class="code hl_define" href="int__type_8h.html#a38b1a87de73c7c9bc9ff2bd0aa06536a">DEFINE_INT_TYPE</a>(GlobalDocID, int64_t);</div>
-<div class="line">GlobalDocID global = 3;</div>
-<div class="line">std::cout &lt;&lt; global;                      &lt;-- Prints 3 <a class="code hl_variable" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> stdout.</div>
-<div class="line"> </div>
-<div class="line">for (GlobalDocID i(0); i &lt; global; ++i) {</div>
-<div class="line">  std::cout &lt;&lt; i;</div>
-<div class="line">}                                    &lt;-- Print(ln)s 0 1 2 <a class="code hl_variable" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> stdout</div>
-<div class="line"> </div>
-<div class="line"><a class="code hl_define" href="int__type_8h.html#a38b1a87de73c7c9bc9ff2bd0aa06536a">DEFINE_INT_TYPE</a>(LocalDocID, int64_t);</div>
-<div class="line">LocalDocID local;</div>
-<div class="line">std::cout &lt;&lt; local;                       &lt;-- Prints 0 <a class="code hl_variable" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> stdout it</div>
-<div class="line"><span class="keywordflow">default</span></div>
-<div class="line">                                         initializes the value <a class="code hl_variable" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> 0.</div>
-<div class="line"> </div>
-<div class="line">local = 5;</div>
-<div class="line">local *= 2;</div>
-<div class="line">LocalDocID l(local);</div>
-<div class="line">std::cout &lt;&lt; l + local;                   &lt;-- Prints 20 <a class="code hl_variable" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> stdout.</div>
-<div class="line"> </div>
-<div class="line">GenericSearchRequest request;</div>
-<div class="line">request.set_doc_id(global.value());  &lt;-- Uses value() <a class="code hl_variable" href="one__tree__lower__bound_8h.html#a717d5dae07519577a5ed09ac24a4708b">to</a> extract the value</div>
-<div class="line">                                         from the IntType class.</div>
-</div><!-- fragment --><p> REMARKS ------------------------------------------------------------------&mdash;</p>
-<p>The following bad usage is permissible although discouraged. Essentially, it involves using the value*() accessors to extract the native integer type out of the <a class="el" href="classgtl_1_1IntType.html">IntType</a> class. Keep in mind that the primary reason for the <a class="el" href="classgtl_1_1IntType.html">IntType</a> class is to prevent <em>accidental</em> mingling of similar logical integer types &ndash; and not type casting from one type to another.</p>
-<p><a class="el" href="int__type_8h.html#a38b1a87de73c7c9bc9ff2bd0aa06536a">DEFINE_INT_TYPE(GlobalDocID, int64_t)</a>; <a class="el" href="int__type_8h.html#a38b1a87de73c7c9bc9ff2bd0aa06536a">DEFINE_INT_TYPE(LocalDocID, int64_t)</a>; GlobalDocID global; LocalDocID local;</p>
-<p>global = local.value(); &lt;&ndash; Compiles fine.</p>
-<p>void GetGlobalDoc(GlobalDocID global) { ... GetGlobalDoc(local.value()); &lt;&ndash; Compiles fine.</p>
-<p>void GetGlobalDoc(int64_t global) { ... GetGlobalDoc(local.value()); &lt;&ndash; Compiles fine.</p>
-<p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><div class="fragment"><div class="line">http:<span class="comment">//www.apache.org/licenses/LICENSE-2.0</span></div>
-</div><!-- fragment --><p> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.</p>
-<p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><div class="fragment"><div class="line">http:<span class="comment">//www.apache.org/licenses/LICENSE-2.0</span></div>
-</div><!-- fragment --><p> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. This is a simplistic insertion-ordered map. It behaves similarly to an STL map, but only implements a small subset of the map's methods. Internally, we just keep a map and a list going in parallel.</p>
-<p>This class provides no thread safety guarantees, beyond what you would normally see with std::list.</p>
-<p>Iterators point into the list and should be stable in the face of mutations, except for an iterator pointing to an element that was just deleted.</p>
-<p>This class supports heterogeneous lookups. </p>
-</div><a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Typedef Documentation</h2>
+<a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Typedef Documentation</h2>
 <a id="a4f663b315f1f56d575e32524a9d06313" name="a4f663b315f1f56d575e32524a9d06313"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4f663b315f1f56d575e32524a9d06313">&#9670;&#160;</a></span>LogDefault</h2>
 
@@ -1528,7 +1529,7 @@ template&lt;typename IntTypeName, typename ValueType&gt; </div>
 </div><div class="memdoc">
 <p>&ndash; NON-MEMBER STREAM OPERATORS -------------------------------------------&mdash; We provide the &lt;&lt; operator, primarily for logging purposes. Currently, there seems to be no need for an &gt;&gt; operator. </p>
 
-<p class="definition">Definition at line <a class="el" href="int__type_8h_source.html#l00285">285</a> of file <a class="el" href="int__type_8h_source.html">int_type.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="int__type_8h_source.html#l00284">284</a> of file <a class="el" href="int__type_8h_source.html">int_type.h</a>.</p>
 
 </div>
 </div>

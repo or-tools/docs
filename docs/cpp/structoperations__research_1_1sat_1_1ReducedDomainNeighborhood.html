@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,12 @@ $(function(){initNavTree('structoperations__research_1_1sat_1_1ReducedDomainNeig
   <div class="headertitle"><div class="title">operations_research::sat::ReducedDomainNeighborhood Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A RINS <a class="el" href="structoperations__research_1_1sat_1_1Neighborhood.html" title="Neighborhood returned by Neighborhood generators.">Neighborhood</a> is actually just a generic neighborhood where the domain of some variable have been reduced (fixed or restricted in [lb, ub]).</p>
+<p>Important: It might be possible that the value of the variables here are outside the domains of these variables! This happens for RENS type of neighborhood in the presence of holes in the domains because the LP relaxation ignore those. </p>
 
+<p class="definition">Definition at line <a class="el" href="rins_8h_source.html#l00036">36</a> of file <a class="el" href="rins_8h_source.html">rins.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="rins_8h_source.html">rins.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
@@ -105,12 +111,7 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a4d4e740a8152a795f83bf9ab675485fb" id="r_a4d4e740a8152a795f83bf9ab675485fb"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::pair&lt; int, std::pair&lt; int64_t, int64_t &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4d4e740a8152a795f83bf9ab675485fb">reduced_domain_vars</a></td></tr>
 <tr class="memitem:a54898d326dec6f252f08086028b5ee3f" id="r_a54898d326dec6f252f08086028b5ee3f"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a54898d326dec6f252f08086028b5ee3f">source_info</a></td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A RINS <a class="el" href="structoperations__research_1_1sat_1_1Neighborhood.html" title="Neighborhood returned by Neighborhood generators.">Neighborhood</a> is actually just a generic neighborhood where the domain of some variable have been reduced (fixed or restricted in [lb, ub]).</p>
-<p>Important: It might be possible that the value of the variables here are outside the domains of these variables! This happens for RENS type of neighborhood in the presence of holes in the domains because the LP relaxation ignore those. </p>
-
-<p class="definition">Definition at line <a class="el" href="rins_8h_source.html#l00036">36</a> of file <a class="el" href="rins_8h_source.html">rins.h</a>.</p>
-</div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
 <a id="a96cad98342e4cb7785d9762ca09a2e18" name="a96cad98342e4cb7785d9762ca09a2e18"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a96cad98342e4cb7785d9762ca09a2e18">&#9670;&#160;</a></span>fixed_vars</h2>
 

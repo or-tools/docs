@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,11 @@ $(function(){initNavTree('classoperations__research_1_1glop_1_1RevisedSimplexDic
   <div class="headertitle"><div class="title">operations_research::glop::RevisedSimplexDictionary Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Hides the details of the dictionary matrix implementation. In the future, GLOP will support generating the dictionary one row at a time without having to store the whole matrix in memory. </p>
 
+<p class="definition">Definition at line <a class="el" href="revised__simplex_8h_source.html#l00872">872</a> of file <a class="el" href="revised__simplex_8h_source.html">revised_simplex.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="revised__simplex_8h_source.html">revised_simplex.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-types" class="groupheader"><a id="pub-types" name="pub-types"></a>
@@ -114,11 +119,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a23359894a725f27972fc3a3b6b919db9" id="r_a23359894a725f27972fc3a3b6b919db9"><td class="memItemLeft" align="right" valign="top">ColIndex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a23359894a725f27972fc3a3b6b919db9">GetBasicColumnForRow</a> (RowIndex r) const</td></tr>
 <tr class="memitem:a2a23f5950381f2307f3342ffee89d279" id="r_a2a23f5950381f2307f3342ffee89d279"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoperations__research_1_1glop_1_1SparseRow.html">SparseRow</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2a23f5950381f2307f3342ffee89d279">GetRow</a> (RowIndex r) const</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Hides the details of the dictionary matrix implementation. In the future, GLOP will support generating the dictionary one row at a time without having to store the whole matrix in memory. </p>
-
-<p class="definition">Definition at line <a class="el" href="revised__simplex_8h_source.html#l00872">872</a> of file <a class="el" href="revised__simplex_8h_source.html">revised_simplex.h</a>.</p>
-</div><a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Member Typedef Documentation</h2>
+<a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Member Typedef Documentation</h2>
 <a id="af93aec35fb0451f9af3dcd496aca82ce" name="af93aec35fb0451f9af3dcd496aca82ce"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af93aec35fb0451f9af3dcd496aca82ce">&#9670;&#160;</a></span>ConstIterator</h2>
 
@@ -162,7 +163,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p><a class="el" href="classoperations__research_1_1glop_1_1RevisedSimplex.html" title="Entry point of the revised simplex algorithm implementation.">RevisedSimplex</a> cannot be passed const because we have to call a non-const method ComputeDictionary. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000608">Todo</a></b></dt><dd>(user): Overload this to take RevisedSimplex* alone when the caller would normally pass a nullptr for col_scales so this and ComputeDictionary can take a const&amp; argument. </dd></dl>
+<p><a class="el" href="classoperations__research_1_1glop_1_1RevisedSimplex.html" title="Entry point of the revised simplex algorithm implementation.">RevisedSimplex</a> cannot be passed const because we have to call a non-const method ComputeDictionary. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000607">Todo</a></b></dt><dd>(user): Overload this to take RevisedSimplex* alone when the caller would normally pass a nullptr for col_scales so this and ComputeDictionary can take a const&amp; argument. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="revised__simplex_8h_source.html#l00881">881</a> of file <a class="el" href="revised__simplex_8h_source.html">revised_simplex.h</a>.</p>
 
@@ -272,7 +273,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000609">Todo</a></b></dt><dd>(user): This function is a better fit for the future custom iterator. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000608">Todo</a></b></dt><dd>(user): This function is a better fit for the future custom iterator. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="revised__simplex_8h_source.html#l00897">897</a> of file <a class="el" href="revised__simplex_8h_source.html">revised_simplex.h</a>.</p>
 

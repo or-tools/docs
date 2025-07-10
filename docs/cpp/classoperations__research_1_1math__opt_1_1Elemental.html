@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,12 @@ $(function(){initNavTree('classoperations__research_1_1math__opt_1_1Elemental.ht
   <div class="headertitle"><div class="title">operations_research::math_opt::Elemental Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A MathOpt optimization model and modification trackers.</p>
+<p>Holds the elements, the attribute values, and tracks modifications to the model by <span class="tt"><a class="el" href="classoperations__research_1_1math__opt_1_1Diff.html">Diff</a></span> objects, and keeps them all in sync. See README.md for details. </p>
 
+<p class="definition">Definition at line <a class="el" href="elemental_8h_source.html#l00049">49</a> of file <a class="el" href="elemental_8h_source.html">elemental.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="elemental_8h_source.html">elemental.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
@@ -160,8 +166,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a18d16ed4b271262f21d9d879c438b3d7" id="r_a18d16ed4b271262f21d9d879c438b3d7"><td class="memTemplParams" colspan="2">template&lt;int i, typename Policy = DiePolicy, typename AttrType = void&gt; </td></tr>
 <tr class="memitem:a18d16ed4b271262f21d9d879c438b3d7 template"><td class="memItemLeft" align="right" valign="top">Policy::template Wrapped&lt; int64_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a18d16ed4b271262f21d9d879c438b3d7">GetSliceSize</a> (AttrType a, int64_t key_elem) const</td></tr>
 <tr class="memitem:add173182511818f6ced117c5f72e4420" id="r_add173182511818f6ced117c5f72e4420"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoperations__research_1_1math__opt_1_1Elemental.html">Elemental</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#add173182511818f6ced117c5f72e4420">Clone</a> (std::optional&lt; absl::string_view &gt; new_model_name=std::nullopt) const</td></tr>
-<tr class="memitem:a5450ff47aec05acddf9d1ead95a2aa92" id="r_a5450ff47aec05acddf9d1ead95a2aa92"><td class="memItemLeft" align="right" valign="top">absl::StatusOr&lt; ModelProto &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5450ff47aec05acddf9d1ead95a2aa92">ExportModel</a> (bool remove_names=<a class="el" href="namespaceoperations__research_1_1math__opt.html#a205a4eeabeae0d2c1701527fce48485d">false</a>) const</td></tr>
-<tr class="memitem:a853d10fe35eb3399ffa76f7c309b3e9f" id="r_a853d10fe35eb3399ffa76f7c309b3e9f"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a853d10fe35eb3399ffa76f7c309b3e9f">ApplyUpdateProto</a> (const ModelUpdateProto &amp;update_proto)</td></tr>
+<tr class="memitem:a5450ff47aec05acddf9d1ead95a2aa92" id="r_a5450ff47aec05acddf9d1ead95a2aa92"><td class="memItemLeft" align="right" valign="top">absl::StatusOr&lt; <a class="el" href="classoperations__research_1_1math__opt_1_1ModelProto.html">ModelProto</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5450ff47aec05acddf9d1ead95a2aa92">ExportModel</a> (bool remove_names=<a class="el" href="namespaceoperations__research_1_1math__opt.html#a205a4eeabeae0d2c1701527fce48485d">false</a>) const</td></tr>
+<tr class="memitem:a853d10fe35eb3399ffa76f7c309b3e9f" id="r_a853d10fe35eb3399ffa76f7c309b3e9f"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a853d10fe35eb3399ffa76f7c309b3e9f">ApplyUpdateProto</a> (const <a class="el" href="classoperations__research_1_1math__opt_1_1ModelUpdateProto.html">ModelUpdateProto</a> &amp;update_proto)</td></tr>
 <tr class="memdesc:a853d10fe35eb3399ffa76f7c309b3e9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies the changes to the model in <span class="tt">update_proto</span>.  <br /></td></tr>
 <tr class="memitem:a3827f76c16f36d1c88f6e2ba8439fa8d" id="r_a3827f76c16f36d1c88f6e2ba8439fa8d"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="classoperations__research_1_1math__opt_1_1Elemental_1_1DiffHandle.html">DiffHandle</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3827f76c16f36d1c88f6e2ba8439fa8d">GetDiffHandle</a> (int64_t id) const</td></tr>
 <tr class="memdesc:a3827f76c16f36d1c88f6e2ba8439fa8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the <a class="el" href="classoperations__research_1_1math__opt_1_1Elemental_1_1DiffHandle.html">DiffHandle</a> for <span class="tt">id</span>, if one exists, or nullopt otherwise.  <br /></td></tr>
@@ -172,20 +178,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a24c952d25826949dcdc3eeaed264b9ee" id="r_a24c952d25826949dcdc3eeaed264b9ee"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a24c952d25826949dcdc3eeaed264b9ee">Advance</a> (<a class="el" href="classoperations__research_1_1math__opt_1_1Elemental_1_1DiffHandle.html">DiffHandle</a> diff)</td></tr>
 <tr class="memitem:ada2002ee57b259f47692cf8538e9efda" id="r_ada2002ee57b259f47692cf8538e9efda"><td class="memTemplParams" colspan="2">template&lt;typename AttrType&gt; </td></tr>
 <tr class="memitem:ada2002ee57b259f47692cf8538e9efda template"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespaceoperations__research_1_1math__opt.html#a13f9e00c52a789cb1f6b6863eb89c8e2">AttrKeyFor</a>&lt; AttrType &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ada2002ee57b259f47692cf8538e9efda">ModifiedKeysThatExist</a> (AttrType attr, const <a class="el" href="classoperations__research_1_1math__opt_1_1Diff.html">Diff</a> &amp;diff) const</td></tr>
-<tr class="memitem:ada8051e1d195ddf42d4ed108922d6fdc" id="r_ada8051e1d195ddf42d4ed108922d6fdc"><td class="memItemLeft" align="right" valign="top">absl::StatusOr&lt; std::optional&lt; ModelUpdateProto &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ada8051e1d195ddf42d4ed108922d6fdc">ExportModelUpdate</a> (<a class="el" href="classoperations__research_1_1math__opt_1_1Elemental_1_1DiffHandle.html">DiffHandle</a> diff, bool remove_names=<a class="el" href="namespaceoperations__research_1_1math__opt.html#a205a4eeabeae0d2c1701527fce48485d">false</a>) const</td></tr>
+<tr class="memitem:ada8051e1d195ddf42d4ed108922d6fdc" id="r_ada8051e1d195ddf42d4ed108922d6fdc"><td class="memItemLeft" align="right" valign="top">absl::StatusOr&lt; std::optional&lt; <a class="el" href="classoperations__research_1_1math__opt_1_1ModelUpdateProto.html">ModelUpdateProto</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ada8051e1d195ddf42d4ed108922d6fdc">ExportModelUpdate</a> (<a class="el" href="classoperations__research_1_1math__opt_1_1Elemental_1_1DiffHandle.html">DiffHandle</a> diff, bool remove_names=<a class="el" href="namespaceoperations__research_1_1math__opt.html#a205a4eeabeae0d2c1701527fce48485d">false</a>) const</td></tr>
 <tr class="memitem:a566360aa96c2e5a897f5e2f5dbc4a61f" id="r_a566360aa96c2e5a897f5e2f5dbc4a61f"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a566360aa96c2e5a897f5e2f5dbc4a61f">DebugString</a> (bool print_diffs=true) const</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:af86cdc41387b5fb9bfd8afaf7d786964" id="r_af86cdc41387b5fb9bfd8afaf7d786964"><td class="memItemLeft" align="right" valign="top">static absl::StatusOr&lt; <a class="el" href="classoperations__research_1_1math__opt_1_1Elemental.html">Elemental</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af86cdc41387b5fb9bfd8afaf7d786964">FromModelProto</a> (const ModelProto &amp;proto)</td></tr>
+<tr class="memitem:af86cdc41387b5fb9bfd8afaf7d786964" id="r_af86cdc41387b5fb9bfd8afaf7d786964"><td class="memItemLeft" align="right" valign="top">static absl::StatusOr&lt; <a class="el" href="classoperations__research_1_1math__opt_1_1Elemental.html">Elemental</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af86cdc41387b5fb9bfd8afaf7d786964">FromModelProto</a> (const <a class="el" href="classoperations__research_1_1math__opt_1_1ModelProto.html">ModelProto</a> &amp;proto)</td></tr>
 <tr class="memdesc:af86cdc41387b5fb9bfd8afaf7d786964"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an equivalent <a class="el" href="classoperations__research_1_1math__opt_1_1Elemental.html">Elemental</a> to <span class="tt">proto</span>.  <br /></td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A MathOpt optimization model and modification trackers.</p>
-<p>Holds the elements, the attribute values, and tracks modifications to the model by <span class="tt"><a class="el" href="classoperations__research_1_1math__opt_1_1Diff.html">Diff</a></span> objects, and keeps them all in sync. See README.md for details. </p>
-
-<p class="definition">Definition at line <a class="el" href="elemental_8h_source.html#l00049">49</a> of file <a class="el" href="elemental_8h_source.html">elemental.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a1f5dde27651ddcf7d992fca1cf04659d" name="a1f5dde27651ddcf7d992fca1cf04659d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1f5dde27651ddcf7d992fca1cf04659d">&#9670;&#160;</a></span>Elemental()</h2>
 
@@ -392,7 +393,7 @@ template&lt;<a class="el" href="namespaceoperations__research_1_1math__opt.html#
         <tr>
           <td class="memname">absl::Status operations_research::math_opt::Elemental::ApplyUpdateProto </td>
           <td>(</td>
-          <td class="paramtype">const ModelUpdateProto &amp;</td>          <td class="paramname"><span class="paramname"><em>update_proto</em></span></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1math__opt_1_1ModelUpdateProto.html">ModelUpdateProto</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>update_proto</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -771,7 +772,7 @@ template&lt;<a class="el" href="namespaceoperations__research_1_1math__opt.html#
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">absl::StatusOr&lt; ModelProto &gt; operations_research::math_opt::Elemental::ExportModel </td>
+          <td class="memname">absl::StatusOr&lt; <a class="el" href="classoperations__research_1_1math__opt_1_1ModelProto.html">ModelProto</a> &gt; operations_research::math_opt::Elemental::ExportModel </td>
           <td>(</td>
           <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>remove_names</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="namespaceoperations__research_1_1math__opt.html#a205a4eeabeae0d2c1701527fce48485d">false</a></span></td><td>)</td>
           <td> const</td>
@@ -792,7 +793,7 @@ template&lt;<a class="el" href="namespaceoperations__research_1_1math__opt.html#
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">absl::StatusOr&lt; std::optional&lt; ModelUpdateProto &gt; &gt; operations_research::math_opt::Elemental::ExportModelUpdate </td>
+          <td class="memname">absl::StatusOr&lt; std::optional&lt; <a class="el" href="classoperations__research_1_1math__opt_1_1ModelUpdateProto.html">ModelUpdateProto</a> &gt; &gt; operations_research::math_opt::Elemental::ExportModelUpdate </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classoperations__research_1_1math__opt_1_1Elemental_1_1DiffHandle.html">DiffHandle</a></td>          <td class="paramname"><span class="paramname"><em>diff</em></span>, </td>
         </tr>
@@ -804,7 +805,7 @@ template&lt;<a class="el" href="namespaceoperations__research_1_1math__opt.html#
       </table>
 </div><div class="memdoc">
 <p>Returns a proto describing all changes to the model for <span class="tt">diff</span> since the most recent call to <span class="tt">Advance(diff)</span> (or the creation of <span class="tt">diff</span> if <span class="tt"><a class="el" href="#a24c952d25826949dcdc3eeaed264b9ee">Advance()</a></span> was never called).</p>
-<p>Returns std::nullopt the resulting ModelUpdateProto would be the empty message (there have been no changes to the model to report).</p>
+<p>Returns std::nullopt the resulting <a class="el" href="classoperations__research_1_1math__opt_1_1ModelUpdateProto.html">ModelUpdateProto</a> would be the empty message (there have been no changes to the model to report).</p>
 <p>Fails if the update is too big to fit in the in-memory representation of the proto (it has more than 2**31-1 elements in a RepeatedField). </p>
 <p>It intentional that that this function is implemented without access to the private API of elemental. This allows us to change the implementation elemental without breaking the proto export code.</p>
 
@@ -824,7 +825,7 @@ template&lt;<a class="el" href="namespaceoperations__research_1_1math__opt.html#
         <tr>
           <td class="memname">absl::StatusOr&lt; <a class="el" href="classoperations__research_1_1math__opt_1_1Elemental.html">Elemental</a> &gt; operations_research::math_opt::Elemental::FromModelProto </td>
           <td>(</td>
-          <td class="paramtype">const ModelProto &amp;</td>          <td class="paramname"><span class="paramname"><em>proto</em></span></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1math__opt_1_1ModelProto.html">ModelProto</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>proto</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>

@@ -1,0 +1,6 @@
+var structoperations__research_1_1RoutingSearchParameters__LocalSearchNeighborhoodOperatorsDefaultTypeInternal =
+[
+    [ "RoutingSearchParameters_LocalSearchNeighborhoodOperatorsDefaultTypeInternal", "structoperations__research_1_1RoutingSearchParameters__LocalSearchNeighborhoodOperatorsDefaultTypeInternal.html#a75b7b2b0b8c2cbe0d4137f3e3b2bef58", null ],
+    [ "~RoutingSearchParameters_LocalSearchNeighborhoodOperatorsDefaultTypeInternal", "structoperations__research_1_1RoutingSearchParameters__LocalSearchNeighborhoodOperatorsDefaultTypeInternal.html#afe5f277a0622a98d7957e82489fd12a1", null ],
+    [ "_instance", "structoperations__research_1_1RoutingSearchParameters__LocalSearchNeighborhoodOperatorsDefaultTypeInternal.html#a7e18fb14f9eaca157434e37fb20d4fc5", null ]
+];

@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -98,7 +99,11 @@ $(function(){initNavTree('classOperationsResearch_1_1MPSosConstraint.html','','c
 
 <p>Special Ordered Set (SOS) constraints of type 1 or 2. See <a href="https://en.wikipedia.org/wiki/Special_ordered_set">https://en.wikipedia.org/wiki/Special_ordered_set</a> As of 2019/04, only SCIP and Gurobi support this constraint type.  
  <a href="#details">More...</a></p>
-<div class="dynheader">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Special Ordered Set (SOS) constraints of type 1 or 2. See <a href="https://en.wikipedia.org/wiki/Special_ordered_set">https://en.wikipedia.org/wiki/Special_ordered_set</a> As of 2019/04, only SCIP and Gurobi support this constraint type. </p>
+
+<p class="definition">Definition at line <a class="el" href="LinearSolver_8pb_8cs_source.html#l02275">2275</a> of file <a class="el" href="LinearSolver_8pb_8cs_source.html">LinearSolver.pb.cs</a>.</p>
+</div><div class="dynheader">
 Inheritance diagram for OperationsResearch.MPSosConstraint:</div>
 <div class="dyncontent">
  <div class="center">
@@ -147,11 +152,7 @@ Properties</h2></td></tr>
 <tr class="memitem:ab33807bd75e3c382a99f2405947654dd" id="r_ab33807bd75e3c382a99f2405947654dd"><td class="memItemLeft" align="right" valign="top">pbc::RepeatedField&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab33807bd75e3c382a99f2405947654dd">Weight</a><code> [get]</code></td></tr>
 <tr class="memdesc:ab33807bd75e3c382a99f2405947654dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional: SOS weights. If non-empty, must be of the same size as "var_index", and strictly increasing. If empty and required by the underlying solver, the 1..n sequence will be given as weights. SUBTLE: The weights can help the solver make branch-and-bound decisions that fit the underlying optimization model: after each LP relaxation, it will compute the "average weight" of the SOS variables, weighted by value (this is confusing: here we're using the values as weights), and the binary branch decision will be: is the non-zero variable above or below that? (weights are strictly monotonous, so the "cutoff" average weight corresponds to a "cutoff" index in the var_index sequence).  <br /></td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Special Ordered Set (SOS) constraints of type 1 or 2. See <a href="https://en.wikipedia.org/wiki/Special_ordered_set">https://en.wikipedia.org/wiki/Special_ordered_set</a> As of 2019/04, only SCIP and Gurobi support this constraint type. </p>
-
-<p class="definition">Definition at line <a class="el" href="LinearSolver_8pb_8cs_source.html#l02275">2275</a> of file <a class="el" href="LinearSolver_8pb_8cs_source.html">LinearSolver.pb.cs</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a2dfac8cc0a1f3be81382f2b3247b3b87" name="a2dfac8cc0a1f3be81382f2b3247b3b87"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2dfac8cc0a1f3be81382f2b3247b3b87">&#9670;&#160;</a></span>MPSosConstraint() <span class="overload">[1/2]</span></h2>
 

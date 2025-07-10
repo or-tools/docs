@@ -1,0 +1,36 @@
+var callback_8pb_8h =
+[
+    [ "TableStruct_ortools_2fmath_5fopt_2fcallback_2eproto", "structTableStruct__ortools__2fmath__5fopt__2fcallback__2eproto.html", "structTableStruct__ortools__2fmath__5fopt__2fcallback__2eproto" ],
+    [ "operations_research::math_opt::CallbackDataProto_SimplexStats", "classoperations__research_1_1math__opt_1_1CallbackDataProto__SimplexStats.html", "classoperations__research_1_1math__opt_1_1CallbackDataProto__SimplexStats" ],
+    [ "operations_research::math_opt::CallbackDataProto_PresolveStats", "classoperations__research_1_1math__opt_1_1CallbackDataProto__PresolveStats.html", "classoperations__research_1_1math__opt_1_1CallbackDataProto__PresolveStats" ],
+    [ "operations_research::math_opt::CallbackDataProto_MipStats", "classoperations__research_1_1math__opt_1_1CallbackDataProto__MipStats.html", "classoperations__research_1_1math__opt_1_1CallbackDataProto__MipStats" ],
+    [ "operations_research::math_opt::CallbackDataProto_BarrierStats", "classoperations__research_1_1math__opt_1_1CallbackDataProto__BarrierStats.html", "classoperations__research_1_1math__opt_1_1CallbackDataProto__BarrierStats" ],
+    [ "operations_research::math_opt::CallbackResultProto_GeneratedLinearConstraint", "classoperations__research_1_1math__opt_1_1CallbackResultProto__GeneratedLinearConstraint.html", "classoperations__research_1_1math__opt_1_1CallbackResultProto__GeneratedLinearConstraint" ],
+    [ "operations_research::math_opt::CallbackRegistrationProto", "classoperations__research_1_1math__opt_1_1CallbackRegistrationProto.html", "classoperations__research_1_1math__opt_1_1CallbackRegistrationProto" ],
+    [ "operations_research::math_opt::CallbackDataProto", "classoperations__research_1_1math__opt_1_1CallbackDataProto.html", "classoperations__research_1_1math__opt_1_1CallbackDataProto" ],
+    [ "operations_research::math_opt::CallbackResultProto", "classoperations__research_1_1math__opt_1_1CallbackResultProto.html", "classoperations__research_1_1math__opt_1_1CallbackResultProto" ],
+    [ "google::protobuf::is_proto_enum<::operations_research::math_opt::CallbackEventProto >", "structgoogle_1_1protobuf_1_1is__proto__enum_3_1_1operations__research_1_1math__opt_1_1CallbackEventProto_01_4.html", null ],
+    [ "PROTOBUF_INTERNAL_EXPORT_ortools_2fmath_5fopt_2fcallback_2eproto", "callback_8pb_8h.html#adee4687efbdaf618f0ff283043e5c083", null ],
+    [ "operations_research::math_opt::CallbackEventProto", "namespaceoperations__research_1_1math__opt.html#a6f1f53eae678078f83705010eedb2764", [
+      [ "operations_research::math_opt::CALLBACK_EVENT_UNSPECIFIED", "namespaceoperations__research_1_1math__opt.html#a6f1f53eae678078f83705010eedb2764a6fa709b4104b66974042623f1bab4586", null ],
+      [ "operations_research::math_opt::CALLBACK_EVENT_PRESOLVE", "namespaceoperations__research_1_1math__opt.html#a6f1f53eae678078f83705010eedb2764a04eb1539c7b75e76847ba88b8383fb4a", null ],
+      [ "operations_research::math_opt::CALLBACK_EVENT_SIMPLEX", "namespaceoperations__research_1_1math__opt.html#a6f1f53eae678078f83705010eedb2764a1f2b2ec5b938ed2581f9bffb220cf8ab", null ],
+      [ "operations_research::math_opt::CALLBACK_EVENT_MIP", "namespaceoperations__research_1_1math__opt.html#a6f1f53eae678078f83705010eedb2764a22688329f5438a80f9bf12dd7006fd0a", null ],
+      [ "operations_research::math_opt::CALLBACK_EVENT_MIP_SOLUTION", "namespaceoperations__research_1_1math__opt.html#a6f1f53eae678078f83705010eedb2764aa45dd187a30d098c2dfb88691724c870", null ],
+      [ "operations_research::math_opt::CALLBACK_EVENT_MIP_NODE", "namespaceoperations__research_1_1math__opt.html#a6f1f53eae678078f83705010eedb2764a7875abd7437f3e78e48f7fc33d506ad1", null ],
+      [ "operations_research::math_opt::CALLBACK_EVENT_BARRIER", "namespaceoperations__research_1_1math__opt.html#a6f1f53eae678078f83705010eedb2764a210c159b408c48737f89a430b61e0c1c", null ],
+      [ "operations_research::math_opt::CallbackEventProto_INT_MIN_SENTINEL_DO_NOT_USE_", "namespaceoperations__research_1_1math__opt.html#a6f1f53eae678078f83705010eedb2764ae9fecfd395cf935d2b6249f998c7e11e", null ],
+      [ "operations_research::math_opt::CallbackEventProto_INT_MAX_SENTINEL_DO_NOT_USE_", "namespaceoperations__research_1_1math__opt.html#a6f1f53eae678078f83705010eedb2764a77886548592298fbd0b0e6a6c2392d28", null ]
+    ] ],
+    [ "operations_research::math_opt::CallbackEventProto_descriptor", "namespaceoperations__research_1_1math__opt.html#ac7e52bb328321586121ae26072e95ba3", null ],
+    [ "operations_research::math_opt::CallbackEventProto_IsValid", "namespaceoperations__research_1_1math__opt.html#a971a7af0353a1463cb70820b93fe76c2", null ],
+    [ "operations_research::math_opt::CallbackEventProto_Name", "namespaceoperations__research_1_1math__opt.html#a774d6def81ac533d826fe95e6b28db93", null ],
+    [ "operations_research::math_opt::CallbackEventProto_Name", "namespaceoperations__research_1_1math__opt.html#a1e28159afeca2627aea2c4a2592182c2", null ],
+    [ "operations_research::math_opt::CallbackEventProto_Parse", "namespaceoperations__research_1_1math__opt.html#ab02caf1c16ae0a3a0329f7c81a4096da", null ],
+    [ "google::protobuf::internal::GetAnyMessageName", "namespacegoogle_1_1protobuf_1_1internal.html#ab1898cde939b307936ee3e763f9558bd", null ],
+    [ "google::protobuf::GetEnumDescriptor<::operations_research::math_opt::CallbackEventProto >", "namespacegoogle_1_1protobuf.html#a3eb25b050ddfe42da9fd42c2dadcaf5a", null ],
+    [ "operations_research::math_opt::CallbackEventProto_ARRAYSIZE", "namespaceoperations__research_1_1math__opt.html#acfb1e7daad4e44dfac3445952700e54c", null ],
+    [ "operations_research::math_opt::CallbackEventProto_MAX", "namespaceoperations__research_1_1math__opt.html#ad937e135c74462847edab84928c43d08", null ],
+    [ "operations_research::math_opt::CallbackEventProto_MIN", "namespaceoperations__research_1_1math__opt.html#accd78afe7b876ebd74ae06a7cab16ba1", null ],
+    [ "descriptor_table_ortools_2fmath_5fopt_2fcallback_2eproto", "callback_8pb_8h.html#a9ec2dd5ebb9fe475908737aa75a224d3", null ]
+];

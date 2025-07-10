@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,28 @@ $(function(){initNavTree('classoperations__research_1_1RootedTree.html','','clas
   <div class="headertitle"><div class="title">operations_research::RootedTree&lt; NodeType &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename NodeType = int32_t&gt;<br />
+class operations_research::RootedTree&lt; NodeType &gt;</div><p>A tree is an undirected graph with no cycles, n nodes, and n-1 undirected edges. Consequently, a tree is connected. Given a tree on the nodes [0..n), a <a class="el" href="classoperations__research_1_1RootedTree.html">RootedTree</a> picks any node to be the root, and then converts all edges into (directed) arcs pointing at the root. Each node has one outgoing edge, so we can store the adjacency list of this directed view of the graph as a single vector of integers with length equal to the number of nodes. At the root index, we store <a class="el" href="#a8dc5bcad8efdd72daa51fbec588deb0e">RootedTree::kNullParent</a>=-1, and at every other index, we store the next node towards the root (the parent in the tree).</p>
+<p>This class is templated on the NodeType, which must be an integer type, e.g., int or int32_t (signed and unsigned types both work).</p>
+<p>The following operations are supported:</p><ul>
+<li>Path from node to root in O(path length to root)</li>
+<li>Lowest Common Ancestor (LCA) of two nodes in O(path length between nodes)</li>
+<li>Depth of all nodes in O(num nodes)</li>
+<li>Topological sort in O(num nodes)</li>
+<li>Path between any two nodes in O(path length between nodes)</li>
+</ul>
+<p>Users can provide a vector&lt;double&gt; of arc lengths (indexed by source) to get:</p><ul>
+<li>Distance from node to root in O(path length to root)</li>
+<li>Distance from all nodes to root in O(num nodes)</li>
+<li>Distance between any two nodes in O(path length between nodes)</li>
+</ul>
+<p>Operations on rooted trees are generally more efficient than on adjacency list representations because the entire tree is in one contiguous allocation. There is also an asymptotic advantage on path finding problems.</p>
+<p>Two methods for finding the LCA are provided. The first requires the depth of every node ahead of time. The second requires a workspace of n bools, all starting at false. These values are modified and restored to false when the LCA computation finishes. In both cases, if the depths/workspace allocation is an O(n) precomputation, then the LCA runs in O(path length). Non-asymptotically, the depth method requires more precomputation, but the LCA is faster and does not require the user to manage mutable state (i.e., may be better for multi-threaded computation).</p>
+<p>An operation that is missing is bulk LCA, see <a href="https://en.wikipedia.org/wiki/Tarjan%27s_off-line_lowest_common_ancestors_algorithm">https://en.wikipedia.org/wiki/Tarjan%27s_off-line_lowest_common_ancestors_algorithm</a>. </p>
 
+<p class="definition">Definition at line <a class="el" href="rooted__tree_8h_source.html#l00087">87</a> of file <a class="el" href="rooted__tree_8h_source.html">rooted_tree.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="rooted__tree_8h_source.html">rooted_tree.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -134,28 +156,7 @@ Static Public Member Functions</h2></td></tr>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:a8dc5bcad8efdd72daa51fbec588deb0e" id="r_a8dc5bcad8efdd72daa51fbec588deb0e"><td class="memItemLeft" align="right" valign="top">static constexpr NodeType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8dc5bcad8efdd72daa51fbec588deb0e">kNullParent</a> = static_cast&lt;NodeType&gt;(-1)</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;typename NodeType = int32_t&gt;<br />
-class operations_research::RootedTree&lt; NodeType &gt;</div><p>A tree is an undirected graph with no cycles, n nodes, and n-1 undirected edges. Consequently, a tree is connected. Given a tree on the nodes [0..n), a <a class="el" href="classoperations__research_1_1RootedTree.html">RootedTree</a> picks any node to be the root, and then converts all edges into (directed) arcs pointing at the root. Each node has one outgoing edge, so we can store the adjacency list of this directed view of the graph as a single vector of integers with length equal to the number of nodes. At the root index, we store <a class="el" href="#a8dc5bcad8efdd72daa51fbec588deb0e">RootedTree::kNullParent</a>=-1, and at every other index, we store the next node towards the root (the parent in the tree).</p>
-<p>This class is templated on the NodeType, which must be an integer type, e.g., int or int32_t (signed and unsigned types both work).</p>
-<p>The following operations are supported:</p><ul>
-<li>Path from node to root in O(path length to root)</li>
-<li>Lowest Common Ancestor (LCA) of two nodes in O(path length between nodes)</li>
-<li>Depth of all nodes in O(num nodes)</li>
-<li>Topological sort in O(num nodes)</li>
-<li>Path between any two nodes in O(path length between nodes)</li>
-</ul>
-<p>Users can provide a vector&lt;double&gt; of arc lengths (indexed by source) to get:</p><ul>
-<li>Distance from node to root in O(path length to root)</li>
-<li>Distance from all nodes to root in O(num nodes)</li>
-<li>Distance between any two nodes in O(path length between nodes)</li>
-</ul>
-<p>Operations on rooted trees are generally more efficient than on adjacency list representations because the entire tree is in one contiguous allocation. There is also an asymptotic advantage on path finding problems.</p>
-<p>Two methods for finding the LCA are provided. The first requires the depth of every node ahead of time. The second requires a workspace of n bools, all starting at false. These values are modified and restored to false when the LCA computation finishes. In both cases, if the depths/workspace allocation is an O(n) precomputation, then the LCA runs in O(path length). Non-asymptotically, the depth method requires more precomputation, but the LCA is faster and does not require the user to manage mutable state (i.e., may be better for multi-threaded computation).</p>
-<p>An operation that is missing is bulk LCA, see <a href="https://en.wikipedia.org/wiki/Tarjan%27s_off-line_lowest_common_ancestors_algorithm">https://en.wikipedia.org/wiki/Tarjan%27s_off-line_lowest_common_ancestors_algorithm</a>. </p>
-
-<p class="definition">Definition at line <a class="el" href="rooted__tree_8h_source.html#l00087">87</a> of file <a class="el" href="rooted__tree_8h_source.html">rooted_tree.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a4049f5904a26c840abc6bb431b550d03" name="a4049f5904a26c840abc6bb431b550d03"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4049f5904a26c840abc6bb431b550d03">&#9670;&#160;</a></span>RootedTree()</h2>
 

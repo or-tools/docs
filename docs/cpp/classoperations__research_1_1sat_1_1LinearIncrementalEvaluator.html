@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,10 @@ $(function(){initNavTree('classoperations__research_1_1sat_1_1LinearIncrementalE
   <div class="headertitle"><div class="title">operations_research::sat::LinearIncrementalEvaluator Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="constraint__violation_8h_source.html#l00039">39</a> of file <a class="el" href="constraint__violation_8h_source.html">constraint_violation.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="constraint__violation_8h_source.html">constraint_violation.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -107,7 +111,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3f91581c53443df425ea7dacf5c634c8" id="r_a3f91581c53443df425ea7dacf5c634c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3f91581c53443df425ea7dacf5c634c8">AddLiteral</a> (int ct_index, int lit, int64_t coeff=1)</td></tr>
 <tr class="memitem:af35d34038f4f535af6b560cb133a9806" id="r_af35d34038f4f535af6b560cb133a9806"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af35d34038f4f535af6b560cb133a9806">AddTerm</a> (int ct_index, int var, int64_t coeff, int64_t offset=0)</td></tr>
 <tr class="memitem:a10a2e3af01fe675fc66f6f8445284536" id="r_a10a2e3af01fe675fc66f6f8445284536"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a10a2e3af01fe675fc66f6f8445284536">AddOffset</a> (int ct_index, int64_t offset)</td></tr>
-<tr class="memitem:acc310b06e4c7f687365afb8a29d2ae39" id="r_acc310b06e4c7f687365afb8a29d2ae39"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acc310b06e4c7f687365afb8a29d2ae39">AddLinearExpression</a> (int ct_index, const LinearExpressionProto &amp;expr, int64_t multiplier)</td></tr>
+<tr class="memitem:acc310b06e4c7f687365afb8a29d2ae39" id="r_acc310b06e4c7f687365afb8a29d2ae39"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acc310b06e4c7f687365afb8a29d2ae39">AddLinearExpression</a> (int ct_index, const <a class="el" href="classoperations__research_1_1sat_1_1LinearExpressionProto.html">LinearExpressionProto</a> &amp;expr, int64_t multiplier)</td></tr>
 <tr class="memitem:ad15e855847e8e9fd85eb17774c2fe277" id="r_ad15e855847e8e9fd85eb17774c2fe277"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad15e855847e8e9fd85eb17774c2fe277">PrecomputeCompactView</a> (absl::Span&lt; const int64_t &gt; var_max_variation)</td></tr>
 <tr class="memitem:a37bd96e052745fa92b1e5d9fc8f3167d" id="r_a37bd96e052745fa92b1e5d9fc8f3167d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a37bd96e052745fa92b1e5d9fc8f3167d">ComputeInitialActivities</a> (absl::Span&lt; const int64_t &gt; <a class="el" href="namespaceoperations__research.html#a35a30dc825cd0afa0e095f47118cd3cd">solution</a>)</td></tr>
 <tr class="memdesc:a37bd96e052745fa92b1e5d9fc8f3167d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute activities.  <br /></td></tr>
@@ -135,10 +139,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9eb993826ad968918aa1e0db23057817" id="r_a9eb993826ad968918aa1e0db23057817"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9eb993826ad968918aa1e0db23057817">ObjectiveCoefficient</a> (int var) const</td></tr>
 <tr class="memitem:ad823f76616edcd69c575d47b29b04b58" id="r_ad823f76616edcd69c575d47b29b04b58"><td class="memItemLeft" align="right" valign="top">absl::Span&lt; const int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad823f76616edcd69c575d47b29b04b58">ConstraintToVars</a> (int c) const</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="constraint__violation_8h_source.html#l00039">39</a> of file <a class="el" href="constraint__violation_8h_source.html">constraint_violation.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae34f2bde3365839accaeec3587da2504" name="ae34f2bde3365839accaeec3587da2504"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae34f2bde3365839accaeec3587da2504">&#9670;&#160;</a></span>LinearIncrementalEvaluator()</h2>
 
@@ -226,7 +227,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const LinearExpressionProto &amp;</td>          <td class="paramname"><span class="paramname"><em>expr</em></span>, </td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1sat_1_1LinearExpressionProto.html">LinearExpressionProto</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>expr</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -557,7 +558,7 @@ Public Member Functions</h2></td></tr>
 <p>Compute the total size. </p><dl class="section note"><dt>Note</dt><dd>at this point the constraint indices are not "encoded" yet.</dd></dl>
 <p>Compactify for faster <a class="el" href="#a201fdc143b0a225b578f5a5d123ef53a">WeightedViolationDelta()</a>.</p>
 <p>We do not need var_entries_ or literal_entries_ anymore.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001161">Todo</a></b></dt><dd>(user): We could delete them before. But at the time of this optimization, I didn't want to change the behavior of the algorithm at all. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001159">Todo</a></b></dt><dd>(user): We could delete them before. But at the time of this optimization, I didn't want to change the behavior of the algorithm at all. </dd></dl>
 <p>Initialize the SpanData. Transform tmp_row_sizes_ to starts in the row_var_buffer_. Transform tmp_row_num_linear_entries_ to starts in the row_coeff_buffer_.</p>
 <p>Copy data.</p>
 
@@ -619,7 +620,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>The violation for each constraint is a piecewise linear function. This computes and aggregates all the breakpoints for the given variable and its domain.</p>
 <dl class="section note"><dt>Note</dt><dd>if the domain contains less than two values, we return an empty vector. This function is not meant to be used for such domains. </dd></dl>
-<p>We only consider min / max. There is a change when we cross the slack. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001160">Todo</a></b></dt><dd>(user): Deal with holes? </dd></dl>
+<p>We only consider min / max. There is a change when we cross the slack. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001158">Todo</a></b></dt><dd>(user): Deal with holes? </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l00734">734</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>
 
@@ -653,7 +654,7 @@ Public Member Functions</h2></td></tr>
 <p>Tricky: Here we reuse last_affected_variables_ to reset var_to_score_change. And in particular we need to list all variable whose score changed here. Not just the one for which we have a decrease. </p>
 <p>Update enforcement part. Because we only update weight of currently infeasible constraint, all change are 0 -&gt; 1 transition and change by the same amount, which is the current distance.</p>
 <p>Update linear part.</p>
-<p>Computing general <a class="el" href="classoperations__research_1_1Domain.html">Domain</a> distance is slow. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001155">Todo</a></b></dt><dd>(user): optimize even more for one sided constraints. Note(user): I tried to factor the two usage of this, but it is slower. </dd></dl>
+<p>Computing general <a class="el" href="classoperations__research_1_1Domain.html">Domain</a> distance is slow. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001153">Todo</a></b></dt><dd>(user): optimize even more for one sided constraints. Note(user): I tried to factor the two usage of this, but it is slower. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="constraint__violation_8cc_source.html#l00255">255</a> of file <a class="el" href="constraint__violation_8cc_source.html">constraint_violation.cc</a>.</p>
 
@@ -840,7 +841,7 @@ the code assumes that a column has no duplicates ct indices. </dd></dl>
 </div><div class="memdoc">
 <p>Computes how much the weighted violation will change if var was changed from its old value by += delta.</p>
 <p>Most of the time is spent in this function.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001159">Todo</a></b></dt><dd><p class="startdd">(user): We can safely abort early if we know that delta will be &gt;= 0. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001157">Todo</a></b></dt><dd><p class="startdd">(user): We can safely abort early if we know that delta will be &gt;= 0. </p>
 <p class="enddd">(user): Maybe we can compute an absolute value instead of removing old_distance. </p>
 </dd></dl>
 <p>Since delta != 0, we are sure this is an enforced -&gt; unenforced change.</p>

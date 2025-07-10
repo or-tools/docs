@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,14 @@ $(function(){initNavTree('namespacefile.html','',''); });
   <div class="headertitle"><div class="title">file Namespace Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><div class="fragment"><div class="line">http:<span class="comment">//www.apache.org/licenses/LICENSE-2.0</span></div>
+</div><!-- fragment --><p> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.</p>
+<p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><div class="fragment"><div class="line">http:<span class="comment">//www.apache.org/licenses/LICENSE-2.0</span></div>
+</div><!-- fragment --><p> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. A set of file pathname manipulation routines. Calls to each of the following functions assume their input is well-formed (for some currently nebulous definition of the word). You can get a well-formed path by using <a href="file::CleanPath()">file::CleanPath()</a>, and future versions of this API may require this.</p>
+<p>This collection is largely modelled on Python's os.path module. Filenames are restricted to ASCII characters in most filesystems at Google. There are additional restrictions and quirks for some filesystems. For example, see file/colossus/base/cfs_path.h for filename character set restrictions for Colossus.</p>
+<p>One additional filename quirk: for legacy reasons, filenames of the forms: localhost:pathname hostname:pathname hostname.domainname:pathname will all route to ///&lt;file/localfile and use only the pathname part, so long as hostname/hostname.domainname refer to the current host. The primary implication of this behavior is that filenames that do not begin with a leading '/' and that have a ':' before any '/' may be interpreted differently depending on the hostname where they are evaluated. </p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:internal" id="r_internal"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefile_1_1internal.html">internal</a></td></tr>
@@ -148,14 +156,7 @@ Functions</h2></td></tr>
 <tr class="memitem:af77dc8891129fc957af20dc56f10ff0b template"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af77dc8891129fc957af20dc56f10ff0b">JoinPathRespectAbsolute</a> (const T &amp;... args)</td></tr>
 <tr class="memitem:ac75740d6adf3c9082af68abeefbb0656" id="r_ac75740d6adf3c9082af68abeefbb0656"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac75740d6adf3c9082af68abeefbb0656">TempFile</a> (absl::string_view prefix)</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><div class="fragment"><div class="line">http:<span class="comment">//www.apache.org/licenses/LICENSE-2.0</span></div>
-</div><!-- fragment --><p> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.</p>
-<p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><div class="fragment"><div class="line">http:<span class="comment">//www.apache.org/licenses/LICENSE-2.0</span></div>
-</div><!-- fragment --><p> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. A set of file pathname manipulation routines. Calls to each of the following functions assume their input is well-formed (for some currently nebulous definition of the word). You can get a well-formed path by using <a href="file::CleanPath()">file::CleanPath()</a>, and future versions of this API may require this.</p>
-<p>This collection is largely modelled on Python's os.path module. Filenames are restricted to ASCII characters in most filesystems at Google. There are additional restrictions and quirks for some filesystems. For example, see file/colossus/base/cfs_path.h for filename character set restrictions for Colossus.</p>
-<p>One additional filename quirk: for legacy reasons, filenames of the forms: localhost:pathname hostname:pathname hostname.domainname:pathname will all route to ///&lt;file/localfile and use only the pathname part, so long as hostname/hostname.domainname refer to the current host. The primary implication of this behavior is that filenames that do not begin with a leading '/' and that have a ':' before any '/' may be interpreted differently depending on the hostname where they are evaluated. </p>
-</div><a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Typedef Documentation</h2>
+<a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Typedef Documentation</h2>
 <a id="a0add95c1cd4f3d86183e7428a1d03956" name="a0add95c1cd4f3d86183e7428a1d03956"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0add95c1cd4f3d86183e7428a1d03956">&#9670;&#160;</a></span>Options</h2>
 

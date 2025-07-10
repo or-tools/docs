@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -98,7 +99,29 @@ $(function(){initNavTree('namespaceoperations__research_1_1internal.html','','')
 
 <p>End of the interface. Below is the implementation.  
 <a href="#details">More...</a></p>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>End of the interface. Below is the implementation. </p>
+<p>Implementation details, here and below.</p>
+<hr  />
+<p> Implementation.</p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000032">Todo</a></b></dt><dd>(user): Support the user providing already-allocated memory buffers for the radix counts and/or for the temporary vector&lt;T&gt; copy. </dd></dl>
+<hr  />
+<p> The rest of this .h is the implementation of the above templates.</p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000679">Todo</a></b></dt><dd>(user): introduce an enum to choose the algorithm. It's useless as long as this file only provides Yen. </dd></dl>
+<p>Template implementations</p>
+<p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><div class="fragment"><div class="line">http:<span class="comment">//www.apache.org/licenses/LICENSE-2.0</span></div>
+</div><!-- fragment --><p> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.</p>
+<p>Clearly not the fastest radix sort, but its complexity is the right one. Furthermore:</p><ul>
+<li>it is as memory-safe as std::vectors can be (no pointers),</li>
+<li>no multiplication is performed,</li>
+<li>it is stable</li>
+<li>it handles the cases of signed and unsigned integers automatically,</li>
+<li>bounds on the keys are optional, or they can be computed automatically,</li>
+<li>based on those bounds, the number of passes is automatically computed,</li>
+<li>a payload is associated to each key, and it is sorted in the same way as the keys. This payload can be a vector of integers or a vector of pointers to larger objects. <dl class="todo"><dt><b><a class="el" href="todo.html#_todo002566">Todo</a></b></dt><dd>(user): Make it an independent library.</dd></dl>
+</li>
+</ul>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:AlignedBlock" id="r_AlignedBlock"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoperations__research_1_1internal_1_1AlignedBlock.html">AlignedBlock</a></td></tr>
@@ -195,29 +218,7 @@ Variables</h2></td></tr>
 <tr class="memitem:abf625005f250173e1bf34b85e36f1d98" id="r_abf625005f250173e1bf34b85e36f1d98"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespaceoperations__research.html#a9d0b51193192a89d45cca391dfb13d4b">PathDistance</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abf625005f250173e1bf34b85e36f1d98">kMaxDistance</a> = std::numeric_limits&lt;<a class="el" href="namespaceoperations__research.html#a9d0b51193192a89d45cca391dfb13d4b">PathDistance</a>&gt;::max() - 1</td></tr>
 <tr class="memitem:a80b050d31e410a80458c8dc040d0f02d" id="r_a80b050d31e410a80458c8dc040d0f02d"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespaceoperations__research.html#a9d0b51193192a89d45cca391dfb13d4b">PathDistance</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a80b050d31e410a80458c8dc040d0f02d">kDisconnectedDistance</a></td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>End of the interface. Below is the implementation. </p>
-<p>Implementation details, here and below.</p>
-<hr  />
-<p> Implementation.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000033">Todo</a></b></dt><dd>(user): Support the user providing already-allocated memory buffers for the radix counts and/or for the temporary vector&lt;T&gt; copy. </dd></dl>
-<hr  />
-<p> The rest of this .h is the implementation of the above templates.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000680">Todo</a></b></dt><dd>(user): introduce an enum to choose the algorithm. It's useless as long as this file only provides Yen. </dd></dl>
-<p>Template implementations</p>
-<p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><div class="fragment"><div class="line">http:<span class="comment">//www.apache.org/licenses/LICENSE-2.0</span></div>
-</div><!-- fragment --><p> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.</p>
-<p>Clearly not the fastest radix sort, but its complexity is the right one. Furthermore:</p><ul>
-<li>it is as memory-safe as std::vectors can be (no pointers),</li>
-<li>no multiplication is performed,</li>
-<li>it is stable</li>
-<li>it handles the cases of signed and unsigned integers automatically,</li>
-<li>bounds on the keys are optional, or they can be computed automatically,</li>
-<li>based on those bounds, the number of passes is automatically computed,</li>
-<li>a payload is associated to each key, and it is sorted in the same way as the keys. This payload can be a vector of integers or a vector of pointers to larger objects. <dl class="todo"><dt><b><a class="el" href="todo.html#_todo002568">Todo</a></b></dt><dd>(user): Make it an independent library.</dd></dl>
-</li>
-</ul>
-</div><a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Typedef Documentation</h2>
+<a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Typedef Documentation</h2>
 <a id="a0af9c6de04b858727a278d36a2eb5597" name="a0af9c6de04b858727a278d36a2eb5597"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0af9c6de04b858727a278d36a2eb5597">&#9670;&#160;</a></span>IndexedVector</h2>
 

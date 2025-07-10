@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,12 +96,16 @@ $(function(){initNavTree('classoperations__research_1_1sat_1_1PresolveContext.ht
   <div class="headertitle"><div class="title">operations_research::sat::PresolveContext Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Wrap the <a class="el" href="classoperations__research_1_1sat_1_1CpModelProto.html">CpModelProto</a> we are presolving with extra data structure like the in-memory domain of each variables and the constraint variable graph. </p>
 
+<p class="definition">Definition at line <a class="el" href="presolve__context_8h_source.html#l00095">95</a> of file <a class="el" href="presolve__context_8h_source.html">presolve_context.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="presolve__context_8h_source.html">presolve_context.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ace44b7515ea8289bbc7878a9f90f94e3" id="r_ace44b7515ea8289bbc7878a9f90f94e3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ace44b7515ea8289bbc7878a9f90f94e3">PresolveContext</a> (<a class="el" href="classoperations__research_1_1sat_1_1Model.html">Model</a> *model, CpModelProto *cp_model, CpModelProto *mapping)</td></tr>
+<tr class="memitem:ace44b7515ea8289bbc7878a9f90f94e3" id="r_ace44b7515ea8289bbc7878a9f90f94e3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ace44b7515ea8289bbc7878a9f90f94e3">PresolveContext</a> (<a class="el" href="classoperations__research_1_1sat_1_1Model.html">Model</a> *model, <a class="el" href="classoperations__research_1_1sat_1_1CpModelProto.html">CpModelProto</a> *cp_model, <a class="el" href="classoperations__research_1_1sat_1_1CpModelProto.html">CpModelProto</a> *mapping)</td></tr>
 <tr class="memitem:a38e2f15d439243fcc447d48fe120624e" id="r_a38e2f15d439243fcc447d48fe120624e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a38e2f15d439243fcc447d48fe120624e">NewIntVar</a> (const <a class="el" href="classoperations__research_1_1Domain.html">Domain</a> &amp;domain)</td></tr>
 <tr class="memdesc:a38e2f15d439243fcc447d48fe120624e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helpers to adds new variables to the presolved model.  <br /></td></tr>
 <tr class="memitem:a65fe14466fe82586570c22769cfae527" id="r_a65fe14466fe82586570c22769cfae527"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a65fe14466fe82586570c22769cfae527">NewBoolVar</a> (absl::string_view source)</td></tr>
@@ -113,7 +118,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a34b5d3417fd42df1be2401e867caae2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">a =&gt; b.  <br /></td></tr>
 <tr class="memitem:a5670894aad056fc4452807432b031858" id="r_a5670894aad056fc4452807432b031858"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5670894aad056fc4452807432b031858">AddImplyInDomain</a> (int <a class="el" href="namespaceoperations__research_1_1sat.html#aea68c208c5e7f0abb9afc90d9188d3d4">b</a>, int x, const <a class="el" href="classoperations__research_1_1Domain.html">Domain</a> &amp;domain)</td></tr>
 <tr class="memdesc:a5670894aad056fc4452807432b031858"><td class="mdescLeft">&#160;</td><td class="mdescRight">b =&gt; (x ∈ domain).  <br /></td></tr>
-<tr class="memitem:a3102d3d48b1fe0e958283ece21720a37" id="r_a3102d3d48b1fe0e958283ece21720a37"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3102d3d48b1fe0e958283ece21720a37">AddImplyInDomain</a> (int <a class="el" href="namespaceoperations__research_1_1sat.html#aea68c208c5e7f0abb9afc90d9188d3d4">b</a>, const LinearExpressionProto &amp;expr, const <a class="el" href="classoperations__research_1_1Domain.html">Domain</a> &amp;domain)</td></tr>
+<tr class="memitem:a3102d3d48b1fe0e958283ece21720a37" id="r_a3102d3d48b1fe0e958283ece21720a37"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3102d3d48b1fe0e958283ece21720a37">AddImplyInDomain</a> (int <a class="el" href="namespaceoperations__research_1_1sat.html#aea68c208c5e7f0abb9afc90d9188d3d4">b</a>, const <a class="el" href="classoperations__research_1_1sat_1_1LinearExpressionProto.html">LinearExpressionProto</a> &amp;expr, const <a class="el" href="classoperations__research_1_1Domain.html">Domain</a> &amp;domain)</td></tr>
 <tr class="memdesc:a3102d3d48b1fe0e958283ece21720a37"><td class="mdescLeft">&#160;</td><td class="mdescRight">b =&gt; (expr ∈ domain).  <br /></td></tr>
 <tr class="memitem:a2fa30837da268a9688f608013d857a7e" id="r_a2fa30837da268a9688f608013d857a7e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2fa30837da268a9688f608013d857a7e">DomainIsEmpty</a> (int ref) const</td></tr>
 <tr class="memdesc:a2fa30837da268a9688f608013d857a7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helpers to query the current domain of a variable.  <br /></td></tr>
@@ -136,27 +141,27 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4f2df4dacfec58076552318ce49afd4e" id="r_a4f2df4dacfec58076552318ce49afd4e"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4f2df4dacfec58076552318ce49afd4e">EndMin</a> (int ct_ref) const</td></tr>
 <tr class="memitem:a5098e7cbef49fc9630e1e3c4622f7b73" id="r_a5098e7cbef49fc9630e1e3c4622f7b73"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5098e7cbef49fc9630e1e3c4622f7b73">EndMax</a> (int ct_ref) const</td></tr>
 <tr class="memitem:a49ad52aff108d76ac1171f9442a0b982" id="r_a49ad52aff108d76ac1171f9442a0b982"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a49ad52aff108d76ac1171f9442a0b982">IntervalDebugString</a> (int ct_ref) const</td></tr>
-<tr class="memitem:a76145cb4d679559edda7c09d4008dab6" id="r_a76145cb4d679559edda7c09d4008dab6"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a76145cb4d679559edda7c09d4008dab6">MinOf</a> (const LinearExpressionProto &amp;expr) const</td></tr>
-<tr class="memitem:a7962f28e1a59532176ee5af3313fb81c" id="r_a7962f28e1a59532176ee5af3313fb81c"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7962f28e1a59532176ee5af3313fb81c">MaxOf</a> (const LinearExpressionProto &amp;expr) const</td></tr>
-<tr class="memitem:a92ec01005eca2e8acd89dd803a909c47" id="r_a92ec01005eca2e8acd89dd803a909c47"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a92ec01005eca2e8acd89dd803a909c47">IsFixed</a> (const LinearExpressionProto &amp;expr) const</td></tr>
-<tr class="memitem:a1a85526dd2e4d2a34d323a91e05df368" id="r_a1a85526dd2e4d2a34d323a91e05df368"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1a85526dd2e4d2a34d323a91e05df368">FixedValue</a> (const LinearExpressionProto &amp;expr) const</td></tr>
-<tr class="memitem:a7ff962ccabd1ddb157562b0620c50639" id="r_a7ff962ccabd1ddb157562b0620c50639"><td class="memItemLeft" align="right" valign="top">std::optional&lt; int64_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7ff962ccabd1ddb157562b0620c50639">FixedValueOrNullopt</a> (const LinearExpressionProto &amp;expr) const</td></tr>
+<tr class="memitem:a76145cb4d679559edda7c09d4008dab6" id="r_a76145cb4d679559edda7c09d4008dab6"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a76145cb4d679559edda7c09d4008dab6">MinOf</a> (const <a class="el" href="classoperations__research_1_1sat_1_1LinearExpressionProto.html">LinearExpressionProto</a> &amp;expr) const</td></tr>
+<tr class="memitem:a7962f28e1a59532176ee5af3313fb81c" id="r_a7962f28e1a59532176ee5af3313fb81c"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7962f28e1a59532176ee5af3313fb81c">MaxOf</a> (const <a class="el" href="classoperations__research_1_1sat_1_1LinearExpressionProto.html">LinearExpressionProto</a> &amp;expr) const</td></tr>
+<tr class="memitem:a92ec01005eca2e8acd89dd803a909c47" id="r_a92ec01005eca2e8acd89dd803a909c47"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a92ec01005eca2e8acd89dd803a909c47">IsFixed</a> (const <a class="el" href="classoperations__research_1_1sat_1_1LinearExpressionProto.html">LinearExpressionProto</a> &amp;expr) const</td></tr>
+<tr class="memitem:a1a85526dd2e4d2a34d323a91e05df368" id="r_a1a85526dd2e4d2a34d323a91e05df368"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1a85526dd2e4d2a34d323a91e05df368">FixedValue</a> (const <a class="el" href="classoperations__research_1_1sat_1_1LinearExpressionProto.html">LinearExpressionProto</a> &amp;expr) const</td></tr>
+<tr class="memitem:a7ff962ccabd1ddb157562b0620c50639" id="r_a7ff962ccabd1ddb157562b0620c50639"><td class="memItemLeft" align="right" valign="top">std::optional&lt; int64_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7ff962ccabd1ddb157562b0620c50639">FixedValueOrNullopt</a> (const <a class="el" href="classoperations__research_1_1sat_1_1LinearExpressionProto.html">LinearExpressionProto</a> &amp;expr) const</td></tr>
 <tr class="memdesc:a7ff962ccabd1ddb157562b0620c50639"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is faster than testing <a class="el" href="#a4c1d359c4b268649c50d4c848c6aec0b">IsFixed()</a> + <a class="el" href="#a34067a2486e93d9eac27e465f9524aca">FixedValue()</a>.  <br /></td></tr>
 <tr class="memitem:a623bc44b1287fc333a3210b8e2282b5f" id="r_a623bc44b1287fc333a3210b8e2282b5f"><td class="memTemplParams" colspan="2">template&lt;typename ProtoWithVarsAndCoeffs&gt; </td></tr>
 <tr class="memitem:a623bc44b1287fc333a3210b8e2282b5f template"><td class="memItemLeft" align="right" valign="top">std::pair&lt; int64_t, int64_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a623bc44b1287fc333a3210b8e2282b5f">ComputeMinMaxActivity</a> (const ProtoWithVarsAndCoeffs &amp;proto) const</td></tr>
 <tr class="memitem:a5e457fe5fabd8656ded206a1d5416937" id="r_a5e457fe5fabd8656ded206a1d5416937"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5e457fe5fabd8656ded206a1d5416937">CappedUpdateMinMaxActivity</a> (int var, int64_t coeff, int64_t *min_activity, int64_t *max_activity)</td></tr>
 <tr class="memdesc:a5e457fe5fabd8656ded206a1d5416937"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility function.  <br /></td></tr>
-<tr class="memitem:afc9cfa1ea87ca40b15c2ed4ce25d8d14" id="r_afc9cfa1ea87ca40b15c2ed4ce25d8d14"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afc9cfa1ea87ca40b15c2ed4ce25d8d14">CanonicalizeLinearConstraint</a> (ConstraintProto *ct)</td></tr>
-<tr class="memitem:aaf474172c863fee40c3f7a4b1f27c7f5" id="r_aaf474172c863fee40c3f7a4b1f27c7f5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaf474172c863fee40c3f7a4b1f27c7f5">CanonicalizeLinearExpression</a> (absl::Span&lt; const int &gt; enforcements, LinearExpressionProto *expr)</td></tr>
-<tr class="memitem:a1e0fa3dc65c8a6b695024acd5ffd3f0f" id="r_a1e0fa3dc65c8a6b695024acd5ffd3f0f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1e0fa3dc65c8a6b695024acd5ffd3f0f">DomainContains</a> (const LinearExpressionProto &amp;expr, int64_t value) const</td></tr>
+<tr class="memitem:afc9cfa1ea87ca40b15c2ed4ce25d8d14" id="r_afc9cfa1ea87ca40b15c2ed4ce25d8d14"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afc9cfa1ea87ca40b15c2ed4ce25d8d14">CanonicalizeLinearConstraint</a> (<a class="el" href="classoperations__research_1_1sat_1_1ConstraintProto.html">ConstraintProto</a> *ct)</td></tr>
+<tr class="memitem:aaf474172c863fee40c3f7a4b1f27c7f5" id="r_aaf474172c863fee40c3f7a4b1f27c7f5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaf474172c863fee40c3f7a4b1f27c7f5">CanonicalizeLinearExpression</a> (absl::Span&lt; const int &gt; enforcements, <a class="el" href="classoperations__research_1_1sat_1_1LinearExpressionProto.html">LinearExpressionProto</a> *expr)</td></tr>
+<tr class="memitem:a1e0fa3dc65c8a6b695024acd5ffd3f0f" id="r_a1e0fa3dc65c8a6b695024acd5ffd3f0f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1e0fa3dc65c8a6b695024acd5ffd3f0f">DomainContains</a> (const <a class="el" href="classoperations__research_1_1sat_1_1LinearExpressionProto.html">LinearExpressionProto</a> &amp;expr, int64_t value) const</td></tr>
 <tr class="memdesc:a1e0fa3dc65c8a6b695024acd5ffd3f0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This methods only works for affine expressions (checked).  <br /></td></tr>
-<tr class="memitem:a83d914783666534a61a6032f9c77bf34" id="r_a83d914783666534a61a6032f9c77bf34"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoperations__research_1_1Domain.html">Domain</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a83d914783666534a61a6032f9c77bf34">DomainSuperSetOf</a> (const LinearExpressionProto &amp;expr) const</td></tr>
+<tr class="memitem:a83d914783666534a61a6032f9c77bf34" id="r_a83d914783666534a61a6032f9c77bf34"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoperations__research_1_1Domain.html">Domain</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a83d914783666534a61a6032f9c77bf34">DomainSuperSetOf</a> (const <a class="el" href="classoperations__research_1_1sat_1_1LinearExpressionProto.html">LinearExpressionProto</a> &amp;expr) const</td></tr>
 <tr class="memdesc:a83d914783666534a61a6032f9c77bf34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a super-set of the domain of the linear expression.  <br /></td></tr>
-<tr class="memitem:a4b1bc99af7b7f09a7af40dc25905724b" id="r_a4b1bc99af7b7f09a7af40dc25905724b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4b1bc99af7b7f09a7af40dc25905724b">ExpressionIsAffineBoolean</a> (const LinearExpressionProto &amp;expr) const</td></tr>
-<tr class="memitem:aa55b4a0e9ef1a0345a8787a702471fd6" id="r_aa55b4a0e9ef1a0345a8787a702471fd6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa55b4a0e9ef1a0345a8787a702471fd6">LiteralForExpressionMax</a> (const LinearExpressionProto &amp;expr) const</td></tr>
-<tr class="memitem:a0e6584f3002678b48e00c3405472ed5f" id="r_a0e6584f3002678b48e00c3405472ed5f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0e6584f3002678b48e00c3405472ed5f">ExpressionIsSingleVariable</a> (const LinearExpressionProto &amp;expr) const</td></tr>
+<tr class="memitem:a4b1bc99af7b7f09a7af40dc25905724b" id="r_a4b1bc99af7b7f09a7af40dc25905724b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4b1bc99af7b7f09a7af40dc25905724b">ExpressionIsAffineBoolean</a> (const <a class="el" href="classoperations__research_1_1sat_1_1LinearExpressionProto.html">LinearExpressionProto</a> &amp;expr) const</td></tr>
+<tr class="memitem:aa55b4a0e9ef1a0345a8787a702471fd6" id="r_aa55b4a0e9ef1a0345a8787a702471fd6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa55b4a0e9ef1a0345a8787a702471fd6">LiteralForExpressionMax</a> (const <a class="el" href="classoperations__research_1_1sat_1_1LinearExpressionProto.html">LinearExpressionProto</a> &amp;expr) const</td></tr>
+<tr class="memitem:a0e6584f3002678b48e00c3405472ed5f" id="r_a0e6584f3002678b48e00c3405472ed5f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0e6584f3002678b48e00c3405472ed5f">ExpressionIsSingleVariable</a> (const <a class="el" href="classoperations__research_1_1sat_1_1LinearExpressionProto.html">LinearExpressionProto</a> &amp;expr) const</td></tr>
 <tr class="memdesc:a0e6584f3002678b48e00c3405472ed5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true iff the expr is of the form 1 * var + 0.  <br /></td></tr>
-<tr class="memitem:a188528e271a7307bead68d00d351f4ef" id="r_a188528e271a7307bead68d00d351f4ef"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a188528e271a7307bead68d00d351f4ef">ExpressionIsALiteral</a> (const LinearExpressionProto &amp;expr, int *literal=nullptr) const</td></tr>
+<tr class="memitem:a188528e271a7307bead68d00d351f4ef" id="r_a188528e271a7307bead68d00d351f4ef"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a188528e271a7307bead68d00d351f4ef">ExpressionIsALiteral</a> (const <a class="el" href="classoperations__research_1_1sat_1_1LinearExpressionProto.html">LinearExpressionProto</a> &amp;expr, int *literal=nullptr) const</td></tr>
 <tr class="memdesc:a188528e271a7307bead68d00d351f4ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true iff the expr is a literal (x or not(x)).  <br /></td></tr>
 <tr class="memitem:ab1c55b01ac54cd61519d8899d5badac8" id="r_ab1c55b01ac54cd61519d8899d5badac8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab1c55b01ac54cd61519d8899d5badac8">DomainOfVarIsIncludedIn</a> (int var, const <a class="el" href="classoperations__research_1_1Domain.html">Domain</a> &amp;domain)</td></tr>
 <tr class="memdesc:ab1c55b01ac54cd61519d8899d5badac8"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function takes a positive variable reference.  <br /></td></tr>
@@ -175,7 +180,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a394e849d9191a33e5052df380f79d0e4" id="r_a394e849d9191a33e5052df380f79d0e4"><td class="memItemLeft" align="right" valign="top">ABSL_MUST_USE_RESULT bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a394e849d9191a33e5052df380f79d0e4">SetLiteralToFalse</a> (int lit)</td></tr>
 <tr class="memdesc:a394e849d9191a33e5052df380f79d0e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns false if the 'lit' doesn't have the desired value in the domain.  <br /></td></tr>
 <tr class="memitem:a2a2aab8b3e16828d9adda83f1c7a3dd0" id="r_a2a2aab8b3e16828d9adda83f1c7a3dd0"><td class="memItemLeft" align="right" valign="top">ABSL_MUST_USE_RESULT bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2a2aab8b3e16828d9adda83f1c7a3dd0">SetLiteralToTrue</a> (int lit)</td></tr>
-<tr class="memitem:a69c0765d4c9e3b2ab0d3974aa7b192d0" id="r_a69c0765d4c9e3b2ab0d3974aa7b192d0"><td class="memItemLeft" align="right" valign="top">ABSL_MUST_USE_RESULT bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a69c0765d4c9e3b2ab0d3974aa7b192d0">IntersectDomainWith</a> (const LinearExpressionProto &amp;expr, const <a class="el" href="classoperations__research_1_1Domain.html">Domain</a> &amp;domain, bool *domain_modified=nullptr)</td></tr>
+<tr class="memitem:a69c0765d4c9e3b2ab0d3974aa7b192d0" id="r_a69c0765d4c9e3b2ab0d3974aa7b192d0"><td class="memItemLeft" align="right" valign="top">ABSL_MUST_USE_RESULT bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a69c0765d4c9e3b2ab0d3974aa7b192d0">IntersectDomainWith</a> (const <a class="el" href="classoperations__research_1_1sat_1_1LinearExpressionProto.html">LinearExpressionProto</a> &amp;expr, const <a class="el" href="classoperations__research_1_1Domain.html">Domain</a> &amp;domain, bool *domain_modified=nullptr)</td></tr>
 <tr class="memitem:a3ee008e9272dbcc3132a667eefc41923" id="r_a3ee008e9272dbcc3132a667eefc41923"><td class="memItemLeft" align="right" valign="top">ABSL_MUST_USE_RESULT bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3ee008e9272dbcc3132a667eefc41923">NotifyThatModelIsUnsat</a> (absl::string_view message=&quot;&quot;)</td></tr>
 <tr class="memitem:af4c2e4b921ea89bdfc12181513bf28e4" id="r_af4c2e4b921ea89bdfc12181513bf28e4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af4c2e4b921ea89bdfc12181513bf28e4">ModelIsUnsat</a> () const</td></tr>
 <tr class="memitem:ab43f7366b32b2ac40cc0f7f668040c49" id="r_ab43f7366b32b2ac40cc0f7f668040c49"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab43f7366b32b2ac40cc0f7f668040c49">UpdateRuleStats</a> (const std::string &amp;name, int num_times=1)</td></tr>
@@ -207,11 +212,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a212fc7df57af89e8314ab853ad9accb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the "rules" statistics.  <br /></td></tr>
 <tr class="memitem:ac5377b5320ad26e469e680b7d3bab02b" id="r_ac5377b5320ad26e469e680b7d3bab02b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac5377b5320ad26e469e680b7d3bab02b">InsertVarValueEncoding</a> (int literal, int var, int64_t value)</td></tr>
 <tr class="memitem:a45893717d68218877a72b6f5a8337841" id="r_a45893717d68218877a72b6f5a8337841"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a45893717d68218877a72b6f5a8337841">GetOrCreateVarValueEncoding</a> (int ref, int64_t value)</td></tr>
-<tr class="memitem:aa16ac390cb27a7c227504191d332a722" id="r_aa16ac390cb27a7c227504191d332a722"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa16ac390cb27a7c227504191d332a722">GetOrCreateAffineValueEncoding</a> (const LinearExpressionProto &amp;expr, int64_t value)</td></tr>
+<tr class="memitem:aa16ac390cb27a7c227504191d332a722" id="r_aa16ac390cb27a7c227504191d332a722"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa16ac390cb27a7c227504191d332a722">GetOrCreateAffineValueEncoding</a> (const <a class="el" href="classoperations__research_1_1sat_1_1LinearExpressionProto.html">LinearExpressionProto</a> &amp;expr, int64_t value)</td></tr>
 <tr class="memitem:a42f3a878e8123ad62ad1cf17f7aba9b8" id="r_a42f3a878e8123ad62ad1cf17f7aba9b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a42f3a878e8123ad62ad1cf17f7aba9b8">CanonicalizeDomainOfSizeTwo</a> (int var)</td></tr>
 <tr class="memitem:a7885a2de2501c1001c45a797711d6e21" id="r_a7885a2de2501c1001c45a797711d6e21"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7885a2de2501c1001c45a797711d6e21">HasVarValueEncoding</a> (int ref, int64_t value, int *literal=nullptr)</td></tr>
 <tr class="memitem:a6e1524915705b3272bab45c634fb5a37" id="r_a6e1524915705b3272bab45c634fb5a37"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6e1524915705b3272bab45c634fb5a37">IsFullyEncoded</a> (int ref) const</td></tr>
-<tr class="memitem:aa220c1d4e5bb95e12705c8c46d9ee29f" id="r_aa220c1d4e5bb95e12705c8c46d9ee29f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa220c1d4e5bb95e12705c8c46d9ee29f">IsFullyEncoded</a> (const LinearExpressionProto &amp;expr) const</td></tr>
+<tr class="memitem:aa220c1d4e5bb95e12705c8c46d9ee29f" id="r_aa220c1d4e5bb95e12705c8c46d9ee29f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa220c1d4e5bb95e12705c8c46d9ee29f">IsFullyEncoded</a> (const <a class="el" href="classoperations__research_1_1sat_1_1LinearExpressionProto.html">LinearExpressionProto</a> &amp;expr) const</td></tr>
 <tr class="memitem:a1c2e2998571c6d42aab23f0f4ad8b5a5" id="r_a1c2e2998571c6d42aab23f0f4ad8b5a5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1c2e2998571c6d42aab23f0f4ad8b5a5">StoreLiteralImpliesVarEqValue</a> (int literal, int var, int64_t value)</td></tr>
 <tr class="memitem:ad98b92e80b8333221127c9c1ca073418" id="r_ad98b92e80b8333221127c9c1ca073418"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad98b92e80b8333221127c9c1ca073418">StoreLiteralImpliesVarNEqValue</a> (int literal, int var, int64_t value)</td></tr>
 <tr class="memitem:a3ecb80a62e74147541a2067b27392547" id="r_a3ecb80a62e74147541a2067b27392547"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3ecb80a62e74147541a2067b27392547">ReadObjectiveFromProto</a> ()</td></tr>
@@ -227,7 +232,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a7c28c6dddefaa06e0c550a2de2cb16a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows to manipulate the objective coefficients.  <br /></td></tr>
 <tr class="memitem:ab7212c04bff33960705373584f86c678" id="r_ab7212c04bff33960705373584f86c678"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab7212c04bff33960705373584f86c678">AddToObjective</a> (int var, int64_t value)</td></tr>
 <tr class="memitem:ac44f2bf6c587fef730b061c92edfb8e0" id="r_ac44f2bf6c587fef730b061c92edfb8e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac44f2bf6c587fef730b061c92edfb8e0">AddLiteralToObjective</a> (int ref, int64_t value)</td></tr>
-<tr class="memitem:a31bffaf05dc1044c33640439b03a0a32" id="r_a31bffaf05dc1044c33640439b03a0a32"><td class="memItemLeft" align="right" valign="top">ABSL_MUST_USE_RESULT bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a31bffaf05dc1044c33640439b03a0a32">SubstituteVariableInObjective</a> (int var_in_equality, int64_t coeff_in_equality, const ConstraintProto &amp;equality)</td></tr>
+<tr class="memitem:a31bffaf05dc1044c33640439b03a0a32" id="r_a31bffaf05dc1044c33640439b03a0a32"><td class="memItemLeft" align="right" valign="top">ABSL_MUST_USE_RESULT bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a31bffaf05dc1044c33640439b03a0a32">SubstituteVariableInObjective</a> (int var_in_equality, int64_t coeff_in_equality, const <a class="el" href="classoperations__research_1_1sat_1_1ConstraintProto.html">ConstraintProto</a> &amp;equality)</td></tr>
 <tr class="memitem:a82e8a2af54e81d21aa090779f8b28b50" id="r_a82e8a2af54e81d21aa090779f8b28b50"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classoperations__research_1_1Domain.html">Domain</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a82e8a2af54e81d21aa090779f8b28b50">ObjectiveDomain</a> () const</td></tr>
 <tr class="memdesc:a82e8a2af54e81d21aa090779f8b28b50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Objective getters.  <br /></td></tr>
 <tr class="memitem:acecb9114e2e1d60557bb2969d8ff1345" id="r_acecb9114e2e1d60557bb2969d8ff1345"><td class="memItemLeft" align="right" valign="top">const absl::flat_hash_map&lt; int, int64_t &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acecb9114e2e1d60557bb2969d8ff1345">ObjectiveMap</a> () const</td></tr>
@@ -244,8 +249,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a11d119ebdd1d6b3b9cc8c1c6bdd4f629" id="r_a11d119ebdd1d6b3b9cc8c1c6bdd4f629"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a11d119ebdd1d6b3b9cc8c1c6bdd4f629">RegisterVariablesUsedInAssumptions</a> ()</td></tr>
 <tr class="memitem:a84087f5101427229d7bc340e6c81d135" id="r_a84087f5101427229d7bc340e6c81d135"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a84087f5101427229d7bc340e6c81d135">ModelIsExpanded</a> () const</td></tr>
 <tr class="memitem:a70894f2ef41b230cdd08ee88469234af" id="r_a70894f2ef41b230cdd08ee88469234af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a70894f2ef41b230cdd08ee88469234af">NotifyThatModelIsExpanded</a> ()</td></tr>
-<tr class="memitem:af6e5eb0b8b6161a63fecc9b3c9b25bd8" id="r_af6e5eb0b8b6161a63fecc9b3c9b25bd8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af6e5eb0b8b6161a63fecc9b3c9b25bd8">GetOrCreateReifiedPrecedenceLiteral</a> (const LinearExpressionProto &amp;time_i, const LinearExpressionProto &amp;time_j, int active_i, int active_j)</td></tr>
-<tr class="memitem:a5c18ce421cae00c8aaaef0f0fd95a03f" id="r_a5c18ce421cae00c8aaaef0f0fd95a03f"><td class="memItemLeft" align="right" valign="top">std::tuple&lt; int, int64_t, int, int64_t, int64_t, int, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5c18ce421cae00c8aaaef0f0fd95a03f">GetReifiedPrecedenceKey</a> (const LinearExpressionProto &amp;time_i, const LinearExpressionProto &amp;time_j, int active_i, int active_j)</td></tr>
+<tr class="memitem:af6e5eb0b8b6161a63fecc9b3c9b25bd8" id="r_af6e5eb0b8b6161a63fecc9b3c9b25bd8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af6e5eb0b8b6161a63fecc9b3c9b25bd8">GetOrCreateReifiedPrecedenceLiteral</a> (const <a class="el" href="classoperations__research_1_1sat_1_1LinearExpressionProto.html">LinearExpressionProto</a> &amp;time_i, const <a class="el" href="classoperations__research_1_1sat_1_1LinearExpressionProto.html">LinearExpressionProto</a> &amp;time_j, int active_i, int active_j)</td></tr>
+<tr class="memitem:a5c18ce421cae00c8aaaef0f0fd95a03f" id="r_a5c18ce421cae00c8aaaef0f0fd95a03f"><td class="memItemLeft" align="right" valign="top">std::tuple&lt; int, int64_t, int, int64_t, int64_t, int, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5c18ce421cae00c8aaaef0f0fd95a03f">GetReifiedPrecedenceKey</a> (const <a class="el" href="classoperations__research_1_1sat_1_1LinearExpressionProto.html">LinearExpressionProto</a> &amp;time_i, const <a class="el" href="classoperations__research_1_1sat_1_1LinearExpressionProto.html">LinearExpressionProto</a> &amp;time_j, int active_i, int active_j)</td></tr>
 <tr class="memitem:a6bd90df6a9ab7768cf0f0fa3862c3538" id="r_a6bd90df6a9ab7768cf0f0fa3862c3538"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6bd90df6a9ab7768cf0f0fa3862c3538">ClearPrecedenceCache</a> ()</td></tr>
 <tr class="memdesc:a6bd90df6a9ab7768cf0f0fa3862c3538"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the precedence cache.  <br /></td></tr>
 <tr class="memitem:a664a5c02d10b2b92e519333b27afbe90" id="r_a664a5c02d10b2b92e519333b27afbe90"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a664a5c02d10b2b92e519333b27afbe90">LogInfo</a> ()</td></tr>
@@ -254,16 +259,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afcd68da91643e55c494dc497262d92a3" id="r_afcd68da91643e55c494dc497262d92a3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoperations__research_1_1sat_1_1SolutionCrush.html">SolutionCrush</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afcd68da91643e55c494dc497262d92a3">solution_crush</a> ()</td></tr>
 <tr class="memitem:a38e52323006df0063f7107521c185871" id="r_a38e52323006df0063f7107521c185871"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a38e52323006df0063f7107521c185871">DebugTestHintFeasibility</a> ()</td></tr>
 <tr class="memitem:ab971274eb7bdbdb94968186af59bec29" id="r_ab971274eb7bdbdb94968186af59bec29"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoperations__research_1_1SolverLogger.html">SolverLogger</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab971274eb7bdbdb94968186af59bec29">logger</a> () const</td></tr>
-<tr class="memitem:a0cc6bad04e287ac6274685b274dfd5ed" id="r_a0cc6bad04e287ac6274685b274dfd5ed"><td class="memItemLeft" align="right" valign="top">const SatParameters &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0cc6bad04e287ac6274685b274dfd5ed">params</a> () const</td></tr>
+<tr class="memitem:a0cc6bad04e287ac6274685b274dfd5ed" id="r_a0cc6bad04e287ac6274685b274dfd5ed"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classoperations__research_1_1sat_1_1SatParameters.html">SatParameters</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0cc6bad04e287ac6274685b274dfd5ed">params</a> () const</td></tr>
 <tr class="memitem:ab9a606ad9026a599315765e615bcd9a2" id="r_ab9a606ad9026a599315765e615bcd9a2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoperations__research_1_1TimeLimit.html">TimeLimit</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab9a606ad9026a599315765e615bcd9a2">time_limit</a> ()</td></tr>
 <tr class="memitem:adb6a4c93ee1cc7d4c058334f395b7757" id="r_adb6a4c93ee1cc7d4c058334f395b7757"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoperations__research_1_1sat_1_1ModelRandomGenerator.html">ModelRandomGenerator</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adb6a4c93ee1cc7d4c058334f395b7757">random</a> ()</td></tr>
-<tr class="memitem:a9461dc66ac42662bc9c36774944536fe" id="r_a9461dc66ac42662bc9c36774944536fe"><td class="memItemLeft" align="right" valign="top">ConstraintProto *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9461dc66ac42662bc9c36774944536fe">NewMappingConstraint</a> (absl::string_view file, int line)</td></tr>
-<tr class="memitem:a61a52cd28d5f7a200da251558b723665" id="r_a61a52cd28d5f7a200da251558b723665"><td class="memItemLeft" align="right" valign="top">ConstraintProto *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a61a52cd28d5f7a200da251558b723665">NewMappingConstraint</a> (const ConstraintProto &amp;base_ct, absl::string_view file, int line)</td></tr>
+<tr class="memitem:a9461dc66ac42662bc9c36774944536fe" id="r_a9461dc66ac42662bc9c36774944536fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoperations__research_1_1sat_1_1ConstraintProto.html">ConstraintProto</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9461dc66ac42662bc9c36774944536fe">NewMappingConstraint</a> (absl::string_view file, int line)</td></tr>
+<tr class="memitem:a61a52cd28d5f7a200da251558b723665" id="r_a61a52cd28d5f7a200da251558b723665"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoperations__research_1_1sat_1_1ConstraintProto.html">ConstraintProto</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a61a52cd28d5f7a200da251558b723665">NewMappingConstraint</a> (const <a class="el" href="classoperations__research_1_1sat_1_1ConstraintProto.html">ConstraintProto</a> &amp;base_ct, absl::string_view file, int line)</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a1a267c1154e80e2966e5a39128e55b21" id="r_a1a267c1154e80e2966e5a39128e55b21"><td class="memItemLeft" align="right" valign="top">CpModelProto *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1a267c1154e80e2966e5a39128e55b21">working_model</a> = nullptr</td></tr>
-<tr class="memitem:aecdea9a3ee9d89bc4faf30c485fdbe93" id="r_aecdea9a3ee9d89bc4faf30c485fdbe93"><td class="memItemLeft" align="right" valign="top">CpModelProto *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aecdea9a3ee9d89bc4faf30c485fdbe93">mapping_model</a> = nullptr</td></tr>
+<tr class="memitem:a1a267c1154e80e2966e5a39128e55b21" id="r_a1a267c1154e80e2966e5a39128e55b21"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoperations__research_1_1sat_1_1CpModelProto.html">CpModelProto</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1a267c1154e80e2966e5a39128e55b21">working_model</a> = nullptr</td></tr>
+<tr class="memitem:aecdea9a3ee9d89bc4faf30c485fdbe93" id="r_aecdea9a3ee9d89bc4faf30c485fdbe93"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoperations__research_1_1sat_1_1CpModelProto.html">CpModelProto</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aecdea9a3ee9d89bc4faf30c485fdbe93">mapping_model</a> = nullptr</td></tr>
 <tr class="memitem:a466d33d9ecb905e979b48094e5b4d300" id="r_a466d33d9ecb905e979b48094e5b4d300"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a466d33d9ecb905e979b48094e5b4d300">num_presolve_operations</a> = 0</td></tr>
 <tr class="memitem:aad6a1238ac4eb29d5265fbd6ec6a33eb" id="r_aad6a1238ac4eb29d5265fbd6ec6a33eb"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aad6a1238ac4eb29d5265fbd6ec6a33eb">tmp_literals</a></td></tr>
 <tr class="memdesc:aad6a1238ac4eb29d5265fbd6ec6a33eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Temporary storage.  <br /></td></tr>
@@ -276,11 +281,7 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a036dd9262c47acb71c05816e82f40f9d" id="r_a036dd9262c47acb71c05816e82f40f9d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoperations__research_1_1sat_1_1DomainDeductions.html">DomainDeductions</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a036dd9262c47acb71c05816e82f40f9d">deductions</a></td></tr>
 <tr class="memdesc:a036dd9262c47acb71c05816e82f40f9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Advanced presolve. See this class comment.  <br /></td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Wrap the CpModelProto we are presolving with extra data structure like the in-memory domain of each variables and the constraint variable graph. </p>
-
-<p class="definition">Definition at line <a class="el" href="presolve__context_8h_source.html#l00095">95</a> of file <a class="el" href="presolve__context_8h_source.html">presolve_context.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ace44b7515ea8289bbc7878a9f90f94e3" name="ace44b7515ea8289bbc7878a9f90f94e3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ace44b7515ea8289bbc7878a9f90f94e3">&#9670;&#160;</a></span>PresolveContext()</h2>
 
@@ -298,12 +299,12 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">CpModelProto *</td>          <td class="paramname"><span class="paramname"><em>cp_model</em></span>, </td>
+          <td class="paramtype"><a class="el" href="classoperations__research_1_1sat_1_1CpModelProto.html">CpModelProto</a> *</td>          <td class="paramname"><span class="paramname"><em>cp_model</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">CpModelProto *</td>          <td class="paramname"><span class="paramname"><em>mapping</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="classoperations__research_1_1sat_1_1CpModelProto.html">CpModelProto</a> *</td>          <td class="paramname"><span class="paramname"><em>mapping</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -357,7 +358,7 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const LinearExpressionProto &amp;</td>          <td class="paramname"><span class="paramname"><em>expr</em></span>, </td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1sat_1_1LinearExpressionProto.html">LinearExpressionProto</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>expr</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -399,7 +400,7 @@ Public Attributes</h2></td></tr>
 
 <p>b =&gt; (x ∈ domain). </p>
 <p>b =&gt; x in [lb, ub]. </p>
-<p>Doing it like this seems to use slightly less memory. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002185">Todo</a></b></dt><dd>(user): Find the best way to create such small proto. </dd></dl>
+<p>Doing it like this seems to use slightly less memory. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002183">Todo</a></b></dt><dd>(user): Find the best way to create such small proto. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00161">161</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
@@ -611,7 +612,7 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">bool operations_research::sat::PresolveContext::CanonicalizeLinearConstraint </td>
           <td>(</td>
-          <td class="paramtype">ConstraintProto *</td>          <td class="paramname"><span class="paramname"><em>ct</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="classoperations__research_1_1sat_1_1ConstraintProto.html">ConstraintProto</a> *</td>          <td class="paramname"><span class="paramname"><em>ct</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -638,7 +639,7 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">LinearExpressionProto *</td>          <td class="paramname"><span class="paramname"><em>expr</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="classoperations__research_1_1sat_1_1LinearExpressionProto.html">LinearExpressionProto</a> *</td>          <td class="paramname"><span class="paramname"><em>expr</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -662,7 +663,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>We replace each entry by its affine representative. </p><dl class="section note"><dt>Note</dt><dd>the non-deterministic loop is fine, but because we iterate one the map while modifying it, it is safer to do a copy rather than to try to handle that in one pass.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002194">Todo</a></b></dt><dd>(user): This is a bit duplicated with the presolve linear code. We also do not propagate back any domain restriction from the objective to the variables if any. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002192">Todo</a></b></dt><dd>(user): This is a bit duplicated with the presolve linear code. We also do not propagate back any domain restriction from the objective to the variables if any. </dd></dl>
 <p>We need to sort the entries to be deterministic.</p>
 <p>This is the new domain. </p><dl class="section note"><dt>Note</dt><dd>the domain never include the offset.</dd></dl>
 <p>Depending on the use case, we cannot do that.</p>
@@ -715,7 +716,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>A "canonical domain" always have a <a class="el" href="#ad5c777be53b24b90df4e7be5969d95fa">MinOf()</a> equal to zero. If needed we introduce a new variable with such canonical domain and add the relation X = Y + offset.</p>
 <p>This is useful in some corner case to avoid overflow.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002204">Todo</a></b></dt><dd>(user): When we can always get rid of affine relation, it might be good to do a final pass to canonicalize all domains in a model after presolve. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002202">Todo</a></b></dt><dd>(user): When we can always get rid of affine relation, it might be good to do a final pass to canonicalize all domains in a model after presolve. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00995">995</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
@@ -830,7 +831,7 @@ template&lt;typename ProtoWithVarsAndCoeffs&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Accepts any proto with two parallel vector .vars() and .coeffs(), like LinearConstraintProto or ObjectiveProto or LinearExpressionProto but beware that this ignore any offset. </p>
+<p>Accepts any proto with two parallel vector .vars() and .coeffs(), like <a class="el" href="classoperations__research_1_1sat_1_1LinearConstraintProto.html">LinearConstraintProto</a> or ObjectiveProto or <a class="el" href="classoperations__research_1_1sat_1_1LinearExpressionProto.html">LinearExpressionProto</a> but beware that this ignore any offset. </p>
 
 <p class="definition">Definition at line <a class="el" href="presolve__context_8h_source.html#l00186">186</a> of file <a class="el" href="presolve__context_8h_source.html">presolve_context.h</a>.</p>
 
@@ -940,7 +941,7 @@ template&lt;typename ProtoWithVarsAndCoeffs&gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Returns true if our current constraints &lt;-&gt; variables graph is ok. This is meant to be used in DEBUG mode only.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002187">Todo</a></b></dt><dd>(user): Also test var_to_constraints_ !! </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002185">Todo</a></b></dt><dd>(user): Also test var_to_constraints_ !! </dd></dl>
 <p>We do not care in these cases.</p>
 
 <p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00796">796</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
@@ -976,7 +977,7 @@ template&lt;typename ProtoWithVarsAndCoeffs&gt; </div>
         <tr>
           <td class="memname">bool operations_research::sat::PresolveContext::DomainContains </td>
           <td>(</td>
-          <td class="paramtype">const LinearExpressionProto &amp;</td>          <td class="paramname"><span class="paramname"><em>expr</em></span>, </td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1sat_1_1LinearExpressionProto.html">LinearExpressionProto</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>expr</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1098,7 +1099,7 @@ template&lt;typename ProtoWithVarsAndCoeffs&gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classoperations__research_1_1Domain.html">Domain</a> operations_research::sat::PresolveContext::DomainSuperSetOf </td>
           <td>(</td>
-          <td class="paramtype">const LinearExpressionProto &amp;</td>          <td class="paramname"><span class="paramname"><em>expr</em></span></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1sat_1_1LinearExpressionProto.html">LinearExpressionProto</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>expr</em></span></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -1179,7 +1180,7 @@ template&lt;typename ProtoWithVarsAndCoeffs&gt; </div>
         <tr>
           <td class="memname">bool operations_research::sat::PresolveContext::ExpressionIsAffineBoolean </td>
           <td>(</td>
-          <td class="paramtype">const LinearExpressionProto &amp;</td>          <td class="paramname"><span class="paramname"><em>expr</em></span></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1sat_1_1LinearExpressionProto.html">LinearExpressionProto</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>expr</em></span></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -1199,7 +1200,7 @@ template&lt;typename ProtoWithVarsAndCoeffs&gt; </div>
         <tr>
           <td class="memname">bool operations_research::sat::PresolveContext::ExpressionIsALiteral </td>
           <td>(</td>
-          <td class="paramtype">const LinearExpressionProto &amp;</td>          <td class="paramname"><span class="paramname"><em>expr</em></span>, </td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1sat_1_1LinearExpressionProto.html">LinearExpressionProto</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>expr</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1224,7 +1225,7 @@ template&lt;typename ProtoWithVarsAndCoeffs&gt; </div>
         <tr>
           <td class="memname">bool operations_research::sat::PresolveContext::ExpressionIsSingleVariable </td>
           <td>(</td>
-          <td class="paramtype">const LinearExpressionProto &amp;</td>          <td class="paramname"><span class="paramname"><em>expr</em></span></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1sat_1_1LinearExpressionProto.html">LinearExpressionProto</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>expr</em></span></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -1245,7 +1246,7 @@ template&lt;typename ProtoWithVarsAndCoeffs&gt; </div>
         <tr>
           <td class="memname">int64_t operations_research::sat::PresolveContext::FixedValue </td>
           <td>(</td>
-          <td class="paramtype">const LinearExpressionProto &amp;</td>          <td class="paramname"><span class="paramname"><em>expr</em></span></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1sat_1_1LinearExpressionProto.html">LinearExpressionProto</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>expr</em></span></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -1283,7 +1284,7 @@ template&lt;typename ProtoWithVarsAndCoeffs&gt; </div>
         <tr>
           <td class="memname">std::optional&lt; int64_t &gt; operations_research::sat::PresolveContext::FixedValueOrNullopt </td>
           <td>(</td>
-          <td class="paramtype">const LinearExpressionProto &amp;</td>          <td class="paramname"><span class="paramname"><em>expr</em></span></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1sat_1_1LinearExpressionProto.html">LinearExpressionProto</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>expr</em></span></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -1369,7 +1370,7 @@ template&lt;typename ProtoWithVarsAndCoeffs&gt; </div>
         <tr>
           <td class="memname">int operations_research::sat::PresolveContext::GetOrCreateAffineValueEncoding </td>
           <td>(</td>
-          <td class="paramtype">const LinearExpressionProto &amp;</td>          <td class="paramname"><span class="paramname"><em>expr</em></span>, </td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1sat_1_1LinearExpressionProto.html">LinearExpressionProto</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>expr</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1394,12 +1395,12 @@ template&lt;typename ProtoWithVarsAndCoeffs&gt; </div>
         <tr>
           <td class="memname">int operations_research::sat::PresolveContext::GetOrCreateReifiedPrecedenceLiteral </td>
           <td>(</td>
-          <td class="paramtype">const LinearExpressionProto &amp;</td>          <td class="paramname"><span class="paramname"><em>time_i</em></span>, </td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1sat_1_1LinearExpressionProto.html">LinearExpressionProto</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>time_i</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const LinearExpressionProto &amp;</td>          <td class="paramname"><span class="paramname"><em>time_j</em></span>, </td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1sat_1_1LinearExpressionProto.html">LinearExpressionProto</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>time_j</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1468,12 +1469,12 @@ template&lt;typename ProtoWithVarsAndCoeffs&gt; </div>
         <tr>
           <td class="memname">std::tuple&lt; int, int64_t, int, int64_t, int64_t, int, int &gt; operations_research::sat::PresolveContext::GetReifiedPrecedenceKey </td>
           <td>(</td>
-          <td class="paramtype">const LinearExpressionProto &amp;</td>          <td class="paramname"><span class="paramname"><em>time_i</em></span>, </td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1sat_1_1LinearExpressionProto.html">LinearExpressionProto</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>time_i</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const LinearExpressionProto &amp;</td>          <td class="paramname"><span class="paramname"><em>time_j</em></span>, </td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1sat_1_1LinearExpressionProto.html">LinearExpressionProto</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>time_j</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1613,7 +1614,7 @@ template&lt;typename ProtoWithVarsAndCoeffs&gt; </div>
 <p>Inserts the given literal to encode var == value. If an encoding already exists, it adds the two implications between the previous encoding and the new encoding.</p>
 <p>Important: This does not update the constraint&lt;-&gt;variable graph, so <a class="el" href="#a9b3712d2df9a0fb81962a7d9a528d699">ConstraintVariableGraphIsUpToDate()</a> will be false until <a class="el" href="#ac58a2f700fb28455324dd0268a9d510b" title="Calls UpdateConstraintVariableUsage() on all newly created constraints.">UpdateNewConstraintsVariableUsage()</a> is called.</p>
 <p>Returns false if the model become UNSAT.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002206">Todo</a></b></dt><dd>(user): This function is not always correct if !context-&gt;DomainOf(var).contains(value), we could make it correct but it might be a bit expansive to do so. For now we just have a DCHECK(). </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002204">Todo</a></b></dt><dd>(user): This function is not always correct if !context-&gt;DomainOf(var).contains(value), we could make it correct but it might be a bit expansive to do so. For now we just have a DCHECK(). </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l01652">1652</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
@@ -1628,7 +1629,7 @@ template&lt;typename ProtoWithVarsAndCoeffs&gt; </div>
         <tr>
           <td class="memname">ABSL_MUST_USE_RESULT bool operations_research::sat::PresolveContext::IntersectDomainWith </td>
           <td>(</td>
-          <td class="paramtype">const LinearExpressionProto &amp;</td>          <td class="paramname"><span class="paramname"><em>expr</em></span>, </td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1sat_1_1LinearExpressionProto.html">LinearExpressionProto</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>expr</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1756,7 +1757,7 @@ template&lt;typename ProtoWithVarsAndCoeffs&gt; </div>
         <tr>
           <td class="memname">bool operations_research::sat::PresolveContext::IsFixed </td>
           <td>(</td>
-          <td class="paramtype">const LinearExpressionProto &amp;</td>          <td class="paramname"><span class="paramname"><em>expr</em></span></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1sat_1_1LinearExpressionProto.html">LinearExpressionProto</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>expr</em></span></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -1794,7 +1795,7 @@ template&lt;typename ProtoWithVarsAndCoeffs&gt; </div>
         <tr>
           <td class="memname">bool operations_research::sat::PresolveContext::IsFullyEncoded </td>
           <td>(</td>
-          <td class="paramtype">const LinearExpressionProto &amp;</td>          <td class="paramname"><span class="paramname"><em>expr</em></span></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1sat_1_1LinearExpressionProto.html">LinearExpressionProto</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>expr</em></span></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -1820,7 +1821,7 @@ template&lt;typename ProtoWithVarsAndCoeffs&gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Returns true if we have literal &lt;=&gt; var = value for all values of var.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002207">Todo</a></b></dt><dd>(user): If the domain was shrunk, we can have a false positive. Still it means that the number of values removed is greater than the number of values not encoded. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002205">Todo</a></b></dt><dd>(user): If the domain was shrunk, we can have a false positive. Still it means that the number of values removed is greater than the number of values not encoded. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l01720">1720</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
@@ -1835,7 +1836,7 @@ template&lt;typename ProtoWithVarsAndCoeffs&gt; </div>
         <tr>
           <td class="memname">int operations_research::sat::PresolveContext::LiteralForExpressionMax </td>
           <td>(</td>
-          <td class="paramtype">const LinearExpressionProto &amp;</td>          <td class="paramname"><span class="paramname"><em>expr</em></span></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1sat_1_1LinearExpressionProto.html">LinearExpressionProto</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>expr</em></span></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -1980,7 +1981,7 @@ template&lt;typename ProtoWithVarsAndCoeffs&gt; </div>
         <tr>
           <td class="memname">int64_t operations_research::sat::PresolveContext::MaxOf </td>
           <td>(</td>
-          <td class="paramtype">const LinearExpressionProto &amp;</td>          <td class="paramname"><span class="paramname"><em>expr</em></span></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1sat_1_1LinearExpressionProto.html">LinearExpressionProto</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>expr</em></span></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -2018,7 +2019,7 @@ template&lt;typename ProtoWithVarsAndCoeffs&gt; </div>
         <tr>
           <td class="memname">int64_t operations_research::sat::PresolveContext::MinOf </td>
           <td>(</td>
-          <td class="paramtype">const LinearExpressionProto &amp;</td>          <td class="paramname"><span class="paramname"><em>expr</em></span></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1sat_1_1LinearExpressionProto.html">LinearExpressionProto</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>expr</em></span></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -2209,7 +2210,7 @@ template&lt;typename ProtoWithVarsAndCoeffs&gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Creates a new integer variable with the given domain and definition. By default this also creates the linking constraint new_var = definition. Its hint value is set to the value of the definition. Returns -1 if we couldn't create the definition due to overflow. </p>
-<p>Create new linear constraint new_var = definition. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002184">Todo</a></b></dt><dd>(user): When we encounter overflow (rare), we still create a variable. </dd></dl>
+<p>Create new linear constraint new_var = definition. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002182">Todo</a></b></dt><dd>(user): When we encounter overflow (rare), we still create a variable. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00082">82</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
@@ -2222,7 +2223,7 @@ template&lt;typename ProtoWithVarsAndCoeffs&gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">ConstraintProto * operations_research::sat::PresolveContext::NewMappingConstraint </td>
+          <td class="memname"><a class="el" href="classoperations__research_1_1sat_1_1ConstraintProto.html">ConstraintProto</a> * operations_research::sat::PresolveContext::NewMappingConstraint </td>
           <td>(</td>
           <td class="paramtype">absl::string_view</td>          <td class="paramname"><span class="paramname"><em>file</em></span>, </td>
         </tr>
@@ -2247,9 +2248,9 @@ template&lt;typename ProtoWithVarsAndCoeffs&gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">ConstraintProto * operations_research::sat::PresolveContext::NewMappingConstraint </td>
+          <td class="memname"><a class="el" href="classoperations__research_1_1sat_1_1ConstraintProto.html">ConstraintProto</a> * operations_research::sat::PresolveContext::NewMappingConstraint </td>
           <td>(</td>
-          <td class="paramtype">const ConstraintProto &amp;</td>          <td class="paramname"><span class="paramname"><em>base_ct</em></span>, </td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1sat_1_1ConstraintProto.html">ConstraintProto</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>base_ct</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2318,7 +2319,7 @@ template&lt;typename ProtoWithVarsAndCoeffs&gt; </div>
 </table>
 </div><div class="memdoc">
 <p>This function always return false. It is just a way to make a little bit more sure that we abort right away when infeasibility is detected. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002203">Todo</a></b></dt><dd>(user): Report any explanation for the client in a nicer way? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002201">Todo</a></b></dt><dd>(user): Report any explanation for the client in a nicer way? </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="presolve__context_8h_source.html#l00299">299</a> of file <a class="el" href="presolve__context_8h_source.html">presolve_context.h</a>.</p>
 
@@ -2474,7 +2475,7 @@ template&lt;typename ProtoWithVarsAndCoeffs&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const SatParameters &amp; operations_research::sat::PresolveContext::params </td>
+          <td class="memname">const <a class="el" href="classoperations__research_1_1sat_1_1SatParameters.html">SatParameters</a> &amp; operations_research::sat::PresolveContext::params </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
@@ -2592,7 +2593,7 @@ template&lt;typename ProtoWithVarsAndCoeffs&gt; </div>
 <p>We do some small canonicalization here</p>
 <p>We might relax this in <a class="el" href="#a0e57a4d478e6619ec142e1c0e3da51a3">CanonicalizeObjective()</a> when we will compute the possible objective domain from the domains of the variables.</p>
 <p>This is an upper bound of the higher magnitude that can be reach by summing an objective partial sum. Because of the model validation, this shouldn't overflow, and we make sure it stays this way.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002193">Todo</a></b></dt><dd>(user): There should be no negative reference here ! </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002191">Todo</a></b></dt><dd>(user): There should be no negative reference here ! </dd></dl>
 <p>We remove fixed terms as we read the objective. This can help a lot on LNS problems with a large proportions of fixed terms.</p>
 
 <p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l01834">1834</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
@@ -2770,7 +2771,7 @@ template&lt;typename ProtoWithVarsAndCoeffs&gt; </div>
       </table>
 </div><div class="memdoc">
 <p>This is a bit hacky. Clear some fields. See call site.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002205">Todo</a></b></dt><dd>(user): The ModelCopier should probably not depend on the full context it only need to read/write domains and call <a class="el" href="#ab43f7366b32b2ac40cc0f7f668040c49">UpdateRuleStats()</a>, so we might want to split that part out so that we can just initialize the full context later. Alternatively, we could just move more complex part of the context out, like the graph, the encoding, the affine representative, and so on to individual and easier to manage classes. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002203">Todo</a></b></dt><dd>(user): The ModelCopier should probably not depend on the full context it only need to read/write domains and call <a class="el" href="#ab43f7366b32b2ac40cc0f7f668040c49">UpdateRuleStats()</a>, so we might want to split that part out so that we can just initialize the full context later. Alternatively, we could just move more complex part of the context out, like the graph, the encoding, the affine representative, and so on to individual and easier to manage classes. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l01343">1343</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
@@ -2836,12 +2837,12 @@ template&lt;typename ProtoWithVarsAndCoeffs&gt; </div>
 </div><div class="memdoc">
 <p>We can always add a multiple of sum X - 1 == 0 to the objective. However, depending on which multiple we choose, this might break our overflow preconditions on the objective. So we return false and do nothing if this happens. </p>
 <p>We have to be careful because shifting cost like this might increase the min/max possible activity of the sum.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002195">Todo</a></b></dt><dd>(user): Be more precise with this objective_overflow_detection_ and always keep it up to date on each offset / coeff change. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002193">Todo</a></b></dt><dd>(user): Be more precise with this objective_overflow_detection_ and always keep it up to date on each offset / coeff change. </dd></dl>
 <p>The value will be zero if it wasn't present.</p>
 <p>Term = coeff * (1 - X) = coeff - coeff * X; So -coeff -&gt; -coeff -shift And Term = coeff + shift - shift - (coeff + shift) * X = (coeff + shift) * (1 - X) - shift;</p>
 <dl class="section note"><dt>Note</dt><dd>the domain never include the offset, so we need to update it.</dd></dl>
 <p>When we shift the cost using an exactly one, our objective implied bounds might be more or less precise. If the objective domain is not constraining (and thus just constraining the upper bound), we relax it to make sure its stay "non constraining".</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002196">Todo</a></b></dt><dd>(user): This is a bit hacky, find a nicer way. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002194">Todo</a></b></dt><dd>(user): This is a bit hacky, find a nicer way. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l02224">2224</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
@@ -2988,7 +2989,7 @@ template&lt;typename ProtoWithVarsAndCoeffs&gt; </div>
 <dl class="section note"><dt>Note</dt><dd>this should always add a relation, even though it might need to create a new representative for both var_x and var_y in some cases. Like if x = 3z and y = 5t are already added, if we add x = 2y, we have 3z = 10t and can only resolve this by creating a new variable r such that z = 10r and t = 3r.</dd></dl>
 <p>All involved variables will be marked to appear in the special kAffineRelationConstraint. This will allow to identify when a variable is no longer needed (only appear there and is not a representative). </p>
 <p>Sets var_y's value to the solution of "var_x's value - coeff * var_y's value = offset".</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002188">Todo</a></b></dt><dd>(user): I am not 100% sure why, but sometimes the representative is fixed but that is not propagated to var_x or var_y and this causes issues. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002186">Todo</a></b></dt><dd>(user): I am not 100% sure why, but sometimes the representative is fixed but that is not propagated to var_x or var_y and this causes issues. </dd></dl>
 <p>If both are already in the same class, we need to make sure the relations are compatible.</p>
 <p>x = rx.coeff * rep + rx.offset; y = ry.coeff * rep + ry.offset; And x == coeff * ry.coeff * rep + (coeff * ry.offset + offset).</p>
 <p>So we get the relation a * rep == b with a and b defined here:</p>
@@ -2999,11 +3000,11 @@ template&lt;typename ProtoWithVarsAndCoeffs&gt; </div>
 <p>Canonicalize from (a * rep_x + b * rep_y = o) to (x = c * y + o).</p>
 <p>Lets propagate domains first.</p>
 <p>To avoid corner cases where replacing x by y in a linear expression can cause overflow, we might want to canonicalize y first to avoid cases like x = c * [large_value, ...] - large_value.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002189">Todo</a></b></dt><dd>(user): we can do better for overflow by not always choosing the min at zero, do the best things if it becomes needed. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002187">Todo</a></b></dt><dd>(user): we can do better for overflow by not always choosing the min at zero, do the best things if it becomes needed. </dd></dl>
 <p>Both these function recursively call <a class="el" href="#a21f9fb012d35d444b8d3438157f5c9c3">StoreAffineRelation()</a> but shouldn't be able to cascade (CHECKED).</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002190">Todo</a></b></dt><dd>(user): can we force the rep and remove <a class="el" href="#ab5d4fbe94ad2402fb6bad6225b423572" title="Returns the representative of ref under the affine relations.">GetAffineRelation()</a>? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002188">Todo</a></b></dt><dd>(user): can we force the rep and remove <a class="el" href="#ab5d4fbe94ad2402fb6bad6225b423572" title="Returns the representative of ref under the affine relations.">GetAffineRelation()</a>? </dd></dl>
 <p>Lets propagate again the new relation. We might as well do it as early as possible and not all call site do it.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002191">Todo</a></b></dt><dd>(user): I am not sure this is needed given the propagation above. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002189">Todo</a></b></dt><dd>(user): I am not sure this is needed given the propagation above. </dd></dl>
 <p>These maps should only contains representative, so only need to remap either x or y.</p>
 <p>The domain didn't change, but this notification allows to re-process any constraint containing these variables. Note that we do not need to retrigger a propagation of the constraint containing a variable whose representative didn't change.</p>
 
@@ -3116,7 +3117,7 @@ template&lt;typename ProtoWithVarsAndCoeffs&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const ConstraintProto &amp;</td>          <td class="paramname"><span class="paramname"><em>equality</em></span>&#160;)</td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1sat_1_1ConstraintProto.html">ConstraintProto</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>equality</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -3222,7 +3223,7 @@ template&lt;typename ProtoWithVarsAndCoeffs&gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Stores a description of a rule that was just applied to have a summary of what the presolve did at the end. </p>
-<p>Hack: we don't want to count </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002186">Todo</a></b></dt><dd>rules as this is used to decide if we loop again. </dd></dl>
+<p>Hack: we don't want to count </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo002184">Todo</a></b></dt><dd>rules as this is used to decide if we loop again. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="presolve__context_8cc_source.html#l00622">622</a> of file <a class="el" href="presolve__context_8cc_source.html">presolve_context.cc</a>.</p>
 
@@ -3486,7 +3487,7 @@ template&lt;typename ProtoWithVarsAndCoeffs&gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">CpModelProto* operations_research::sat::PresolveContext::mapping_model = nullptr</td>
+          <td class="memname"><a class="el" href="classoperations__research_1_1sat_1_1CpModelProto.html">CpModelProto</a>* operations_research::sat::PresolveContext::mapping_model = nullptr</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -3620,7 +3621,7 @@ template&lt;typename ProtoWithVarsAndCoeffs&gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">CpModelProto* operations_research::sat::PresolveContext::working_model = nullptr</td>
+          <td class="memname"><a class="el" href="classoperations__research_1_1sat_1_1CpModelProto.html">CpModelProto</a>* operations_research::sat::PresolveContext::working_model = nullptr</td>
         </tr>
       </table>
 </div><div class="memdoc">

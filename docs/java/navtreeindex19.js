@@ -1,5 +1,13 @@
 var NAVTREEINDEX19 =
 {
+"classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchStatistics_1_1LocalSearchFilterStatistics.html#a757158cb886e8088cfa348c72775b55f":[3,0,0,0,0,2,55,3,13],
+"classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchStatistics_1_1LocalSearchFilterStatistics.html#a820f80ffd9b52c8a5878d71ed16aca42":[2,0,0,0,0,2,55,3,33],
+"classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchStatistics_1_1LocalSearchFilterStatistics.html#a820f80ffd9b52c8a5878d71ed16aca42":[3,0,0,0,0,2,55,3,33],
+"classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchStatistics_1_1LocalSearchFilterStatistics.html#a8de57468e5f5eb4d6f8bbfd64936d847":[2,0,0,0,0,2,55,3,3],
+"classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchStatistics_1_1LocalSearchFilterStatistics.html#a8de57468e5f5eb4d6f8bbfd64936d847":[3,0,0,0,0,2,55,3,3],
+"classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchStatistics_1_1LocalSearchFilterStatistics.html#a8ebbee7187cbbc3f8ed83d1e6df5c041":[2,0,0,0,0,2,55,3,41],
+"classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchStatistics_1_1LocalSearchFilterStatistics.html#a8ebbee7187cbbc3f8ed83d1e6df5c041":[3,0,0,0,0,2,55,3,41],
+"classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchStatistics_1_1LocalSearchFilterStatistics.html#a9038165f8015bdc89626f89e71f328c0":[2,0,0,0,0,2,55,3,2],
 "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchStatistics_1_1LocalSearchFilterStatistics.html#a9038165f8015bdc89626f89e71f328c0":[3,0,0,0,0,2,55,3,2],
 "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchStatistics_1_1LocalSearchFilterStatistics.html#a962c6a0d5ba030060787164fec067107":[2,0,0,0,0,2,55,3,26],
 "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchStatistics_1_1LocalSearchFilterStatistics.html#a962c6a0d5ba030060787164fec067107":[3,0,0,0,0,2,55,3,26],
@@ -241,13 +249,5 @@ var NAVTREEINDEX19 =
 "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchStatistics_1_1LocalSearchOperatorStatistics_1_1Builder.html#a8eb449a9df6efd4832b8909edd861cc2":[3,0,0,0,0,2,55,5,0,3],
 "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchStatistics_1_1LocalSearchOperatorStatistics_1_1Builder.html#a9b993f2fe6dcd804482724f0a8c5cfbc":[2,0,0,0,0,2,55,5,0,33],
 "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchStatistics_1_1LocalSearchOperatorStatistics_1_1Builder.html#a9b993f2fe6dcd804482724f0a8c5cfbc":[3,0,0,0,0,2,55,5,0,33],
-"classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchStatistics_1_1LocalSearchOperatorStatistics_1_1Builder.html#a9ede74dac0ac797c32ac644c06ff3b4f":[2,0,0,0,0,2,55,5,0,8],
-"classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchStatistics_1_1LocalSearchOperatorStatistics_1_1Builder.html#a9ede74dac0ac797c32ac644c06ff3b4f":[3,0,0,0,0,2,55,5,0,8],
-"classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchStatistics_1_1LocalSearchOperatorStatistics_1_1Builder.html#aa58edb3d6e20fb25c8772690b76ea529":[2,0,0,0,0,2,55,5,0,23],
-"classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchStatistics_1_1LocalSearchOperatorStatistics_1_1Builder.html#aa58edb3d6e20fb25c8772690b76ea529":[3,0,0,0,0,2,55,5,0,23],
-"classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchStatistics_1_1LocalSearchOperatorStatistics_1_1Builder.html#aa77dc955d27aa2e5bb96430470975b6c":[2,0,0,0,0,2,55,5,0,26],
-"classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchStatistics_1_1LocalSearchOperatorStatistics_1_1Builder.html#aa77dc955d27aa2e5bb96430470975b6c":[3,0,0,0,0,2,55,5,0,26],
-"classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchStatistics_1_1LocalSearchOperatorStatistics_1_1Builder.html#aa962368620141b4ad661616d6f04f6cf":[2,0,0,0,0,2,55,5,0,12],
-"classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchStatistics_1_1LocalSearchOperatorStatistics_1_1Builder.html#aa962368620141b4ad661616d6f04f6cf":[3,0,0,0,0,2,55,5,0,12],
-"classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchStatistics_1_1LocalSearchOperatorStatistics_1_1Builder.html#aad6ffba68fcebdaa6daae52ae1e7a559":[2,0,0,0,0,2,55,5,0,0]
+"classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchStatistics_1_1LocalSearchOperatorStatistics_1_1Builder.html#a9ede74dac0ac797c32ac644c06ff3b4f":[2,0,0,0,0,2,55,5,0,8]
 };

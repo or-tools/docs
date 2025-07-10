@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,24 @@ $(function(){initNavTree('classoperations__research_1_1sat_1_1TimeTableEdgeFindi
   <div class="headertitle"><div class="title">operations_research::sat::TimeTableEdgeFinding Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="classoperations__research_1_1sat_1_1TimeTableEdgeFinding.html">TimeTableEdgeFinding</a> implements the timetable edge finding filtering rule presented in Vilim Petr, "Timetable edge finding filtering algorithm for
+    discrete cumulative resources", CPAIOR 2011, <a href="http://vilim.eu/petr/cpaior2011.pdf">http://vilim.eu/petr/cpaior2011.pdf</a>.</p>
+<p>This propagator runs in O(n^2) where n is the number of tasks. It increases both the start times and decreases the ending times of the tasks.</p>
+<dl class="section note"><dt>Note</dt><dd>this propagator does not ensure that the cumulative constraint holds. It should thus always be used with at least a timetable propagator.</dd></dl>
+<p>ALOGRITHM:</p>
+<p>The algorithm relies on free tasks. A free task is basically a task without its mandatory part. For instance: </p><div class="fragment"><div class="line">       s_min       s_max            e_min       e_max</div>
+<div class="line">         v           v                v           v</div>
+<div class="line">task:    =============================</div>
+<div class="line">         ^           ^                ^</div>
+<div class="line">         | <a class="code hl_function" href="parser_8tab_8cc.html#af07d89f5ceaea0c7c8252cc41fd75f37">free</a> part | Mandatory part |</div>
+<div class="ttc" id="aparser_8tab_8cc_html_af07d89f5ceaea0c7c8252cc41fd75f37"><div class="ttname"><a href="parser_8tab_8cc.html#af07d89f5ceaea0c7c8252cc41fd75f37">free</a></div><div class="ttdeci">void free(void *)</div></div>
+</div><!-- fragment --><p> Obviously, the free part of a task that has no mandatory part is equal to the task itself. Also, a free part cannot have a mandatory part by definition. A fixed task thus have no free part.</p>
+<p>The idea of the algorithm is to use free and mandatory parts separately to have a better estimation of the energy contained in a task interval.</p>
+<p>If the sum of the energy of all the free parts and mandatory subparts contained in a task interval exceeds the amount of energy available, then the problem is unfeasible. A task thus cannot be scheduled at its minimum start time if this would cause an overload in one of the task intervals. </p>
 
+<p class="definition">Definition at line <a class="el" href="timetable__edgefinding_8h_source.html#l00061">61</a> of file <a class="el" href="timetable__edgefinding_8h_source.html">timetable_edgefinding.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="timetable__edgefinding_8h_source.html">timetable_edgefinding.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for operations_research::sat::TimeTableEdgeFinding:</div>
@@ -120,24 +138,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2050a6e5fb78d733582e3fe1beb7d9ed inherit pub_methods_classoperations__research_1_1sat_1_1PropagatorInterface" id="r_a2050a6e5fb78d733582e3fe1beb7d9ed"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1PropagatorInterface.html#a2050a6e5fb78d733582e3fe1beb7d9ed">~PropagatorInterface</a> ()=default</td></tr>
 <tr class="memitem:a8df009b18974352e71f74929860c2326 inherit pub_methods_classoperations__research_1_1sat_1_1PropagatorInterface" id="r_a8df009b18974352e71f74929860c2326"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1PropagatorInterface.html#a8df009b18974352e71f74929860c2326">IncrementalPropagate</a> (const std::vector&lt; int &gt; &amp;)</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="classoperations__research_1_1sat_1_1TimeTableEdgeFinding.html">TimeTableEdgeFinding</a> implements the timetable edge finding filtering rule presented in Vilim Petr, "Timetable edge finding filtering algorithm for
-    discrete cumulative resources", CPAIOR 2011, <a href="http://vilim.eu/petr/cpaior2011.pdf">http://vilim.eu/petr/cpaior2011.pdf</a>.</p>
-<p>This propagator runs in O(n^2) where n is the number of tasks. It increases both the start times and decreases the ending times of the tasks.</p>
-<dl class="section note"><dt>Note</dt><dd>this propagator does not ensure that the cumulative constraint holds. It should thus always be used with at least a timetable propagator.</dd></dl>
-<p>ALOGRITHM:</p>
-<p>The algorithm relies on free tasks. A free task is basically a task without its mandatory part. For instance: </p><div class="fragment"><div class="line">       s_min       s_max            e_min       e_max</div>
-<div class="line">         v           v                v           v</div>
-<div class="line">task:    =============================</div>
-<div class="line">         ^           ^                ^</div>
-<div class="line">         | <a class="code hl_function" href="parser_8tab_8cc.html#af07d89f5ceaea0c7c8252cc41fd75f37">free</a> part | Mandatory part |</div>
-<div class="ttc" id="aparser_8tab_8cc_html_af07d89f5ceaea0c7c8252cc41fd75f37"><div class="ttname"><a href="parser_8tab_8cc.html#af07d89f5ceaea0c7c8252cc41fd75f37">free</a></div><div class="ttdeci">void free(void *)</div></div>
-</div><!-- fragment --><p> Obviously, the free part of a task that has no mandatory part is equal to the task itself. Also, a free part cannot have a mandatory part by definition. A fixed task thus have no free part.</p>
-<p>The idea of the algorithm is to use free and mandatory parts separately to have a better estimation of the energy contained in a task interval.</p>
-<p>If the sum of the energy of all the free parts and mandatory subparts contained in a task interval exceeds the amount of energy available, then the problem is unfeasible. A task thus cannot be scheduled at its minimum start time if this would cause an overload in one of the task intervals. </p>
-
-<p class="definition">Definition at line <a class="el" href="timetable__edgefinding_8h_source.html#l00061">61</a> of file <a class="el" href="timetable__edgefinding_8h_source.html">timetable_edgefinding.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="add5296a23ab744251b7971fbaad2aa9a" name="add5296a23ab744251b7971fbaad2aa9a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#add5296a23ab744251b7971fbaad2aa9a">&#9670;&#160;</a></span>TimeTableEdgeFinding() <span class="overload">[1/2]</span></h2>
 

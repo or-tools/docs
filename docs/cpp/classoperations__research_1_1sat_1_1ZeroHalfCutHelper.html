@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,14 @@ $(function(){initNavTree('classoperations__research_1_1sat_1_1ZeroHalfCutHelper.
   <div class="headertitle"><div class="title">operations_research::sat::ZeroHalfCutHelper Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Heuristic to find a good sums of rows from the LP (with coeff -1, +1) that can lead to a violated zero-half cut (i.e. after integer rounding with a divisor 2).</p>
+<p>For this, all that matter is the parity of the coefficients and the rhs in the linear combination of the original problem constraint. So this class maintain a copy of the LP matrix modulo 2 on which simplification and heuristic are performed to find good cut candidates(s).</p>
+<p>Most of what is done here is described in the paper "Algorithms to Separate
+{0, 1/2}-Chvátal-Gomory Cuts", Arie M. C. A. Koster, Adrian Zymolka, Manuel Kutschka. </p>
 
+<p class="definition">Definition at line <a class="el" href="zero__half__cuts_8h_source.html#l00040">40</a> of file <a class="el" href="zero__half__cuts_8h_source.html">zero_half_cuts.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="zero__half__cuts_8h_source.html">zero_half_cuts.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
@@ -116,14 +124,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a6af96a4c4659a3ed22a87052945a60ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is basically one step of a Gaussian elimination with the given pivot.  <br /></td></tr>
 <tr class="memitem:a263bfb5f369c64ebc8abba96d2e69d63" id="r_a263bfb5f369c64ebc8abba96d2e69d63"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a263bfb5f369c64ebc8abba96d2e69d63">SymmetricDifference</a> (absl::Span&lt; const int &gt; a, std::vector&lt; int &gt; *<a class="el" href="namespaceoperations__research_1_1sat.html#aea68c208c5e7f0abb9afc90d9188d3d4">b</a>)</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Heuristic to find a good sums of rows from the LP (with coeff -1, +1) that can lead to a violated zero-half cut (i.e. after integer rounding with a divisor 2).</p>
-<p>For this, all that matter is the parity of the coefficients and the rhs in the linear combination of the original problem constraint. So this class maintain a copy of the LP matrix modulo 2 on which simplification and heuristic are performed to find good cut candidates(s).</p>
-<p>Most of what is done here is described in the paper "Algorithms to Separate
-{0, 1/2}-Chvátal-Gomory Cuts", Arie M. C. A. Koster, Adrian Zymolka, Manuel Kutschka. </p>
-
-<p class="definition">Definition at line <a class="el" href="zero__half__cuts_8h_source.html#l00040">40</a> of file <a class="el" href="zero__half__cuts_8h_source.html">zero_half_cuts.h</a>.</p>
-</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="aefcbcc45843defee91aa741eea4d501a" name="aefcbcc45843defee91aa741eea4d501a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aefcbcc45843defee91aa741eea4d501a">&#9670;&#160;</a></span>AddBinaryRow()</h2>
 
@@ -181,8 +182,8 @@ Public Member Functions</h2></td></tr>
 <p>Ignore column in the binary matrix if its lp value is almost zero.</p>
 <p>Because we work on the shifted variable, the rhs needs to be updated.</p>
 <p>We ignore constraint with large coefficient, since there is little chance to cancel them and because of that the efficacity of a generated cut will be limited.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002548">Todo</a></b></dt><dd>(user): experiment with the best value. probably only tight rows are best? and we could use the basis status rather than recomputing the activity for that.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002549">Todo</a></b></dt><dd>(user): Avoid adding duplicates and just randomly pick one. Note that we should also remove duplicate in a generic way. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002546">Todo</a></b></dt><dd>(user): experiment with the best value. probably only tight rows are best? and we could use the basis status rather than recomputing the activity for that.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002547">Todo</a></b></dt><dd>(user): Avoid adding duplicates and just randomly pick one. Note that we should also remove duplicate in a generic way. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="zero__half__cuts_8cc_source.html#l00070">70</a> of file <a class="el" href="zero__half__cuts_8cc_source.html">zero_half_cuts.cc</a>.</p>
 
@@ -323,7 +324,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Public API: <a class="el" href="#a67c63ecc26af5761893b5b5e93e7c5dd">ProcessVariables()</a> must be called first and then constraints can be added one by one. Finally GetZeroHalfInterestingCuts() will return a set of good candidates.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002551">Todo</a></b></dt><dd>(user): This is a first implementation, both the heuristic and the code performance can probably be improved uppon. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002549">Todo</a></b></dt><dd>(user): This is a first implementation, both the heuristic and the code performance can probably be improved uppon. </dd></dl>
 <p>Shift all variables to their closest bound.</p>
 
 <p class="definition">Definition at line <a class="el" href="zero__half__cuts_8cc_source.html#l00040">40</a> of file <a class="el" href="zero__half__cuts_8cc_source.html">zero_half_cuts.cc</a>.</p>
@@ -371,7 +372,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Visible for testing.</p>
 <p>Like std::set_symmetric_difference, but use a vector&lt;bool&gt; instead of sort. This assumes tmp_marked_ to be all false. We don't DCHECK it here for speed, but it DCHECKed on each <a class="el" href="#a6af96a4c4659a3ed22a87052945a60ee" title="This is basically one step of a Gaussian elimination with the given pivot.">EliminateVarUsingRow()</a> call. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002550">Todo</a></b></dt><dd>(user): optim by doing that at the end? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002548">Todo</a></b></dt><dd>(user): optim by doing that at the end? </dd></dl>
 <p>Remove position that are not marked, and clear tmp_marked_.</p>
 
 <p class="definition">Definition at line <a class="el" href="zero__half__cuts_8cc_source.html#l00125">125</a> of file <a class="el" href="zero__half__cuts_8cc_source.html">zero_half_cuts.cc</a>.</p>

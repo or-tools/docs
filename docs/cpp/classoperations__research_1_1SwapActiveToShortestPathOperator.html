@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -98,7 +99,13 @@ $(function(){initNavTree('classoperations__research_1_1SwapActiveToShortestPathO
 
 <p>| / \ ^  
  <a href="#details">More...</a></p>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;bool ignore_path_vars&gt;<br />
+class operations_research::SwapActiveToShortestPathOperator&lt; ignore_path_vars &gt;</div><p>| / \ ^ </p>
+<p>Swaps active nodes from node alternatives in sequence. Considers chains of nodes with alternatives, builds a DAG from the chain, each "layer" of the DAG being composed of the set of alternatives of the node at a given rank in the chain, fully connected to the next layer. A neighbor is built from the shortest path starting from the node before the chain (source), through the DAG to the node following the chain. The path is valued with a given callback. Example: Alternative sets: {1,2} and {3,4} Current path: 0 -&gt; 1 -&gt; 3 -&gt; 5 DAG + source and sink: -&gt; 1 ---&gt; 3 &ndash; | \ / v Supposing the shortest path from 0 to 5 is 0, 2, 3, 5, the neighbor for the chain will be: 0 -&gt; 2 -&gt; 3 -&gt; 5. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000350">Todo</a></b></dt><dd>(user): Support vehicle-class-dependent arc_evaluators. </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="routing__neighborhoods_8h_source.html#l00203">203</a> of file <a class="el" href="routing__neighborhoods_8h_source.html">routing_neighborhoods.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="routing__neighborhoods_8h_source.html">routing_neighborhoods.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for operations_research::SwapActiveToShortestPathOperator&lt; ignore_path_vars &gt;:</div>
@@ -241,13 +248,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_attribs_classoperations__research_1_1PathOperator"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_classoperations__research_1_1PathOperator')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Protected Attributes inherited from <a class="el" href="classoperations__research_1_1PathOperator.html">operations_research::PathOperator&lt; ignore_path_vars &gt;</a></td></tr>
 <tr class="memitem:a630c5775c22ca7744a067ce885b4347a inherit pro_attribs_classoperations__research_1_1PathOperator" id="r_a630c5775c22ca7744a067ce885b4347a"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1PathOperator.html#a630c5775c22ca7744a067ce885b4347a">number_of_nexts_</a></td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;bool ignore_path_vars&gt;<br />
-class operations_research::SwapActiveToShortestPathOperator&lt; ignore_path_vars &gt;</div><p>| / \ ^ </p>
-<p>Swaps active nodes from node alternatives in sequence. Considers chains of nodes with alternatives, builds a DAG from the chain, each "layer" of the DAG being composed of the set of alternatives of the node at a given rank in the chain, fully connected to the next layer. A neighbor is built from the shortest path starting from the node before the chain (source), through the DAG to the node following the chain. The path is valued with a given callback. Example: Alternative sets: {1,2} and {3,4} Current path: 0 -&gt; 1 -&gt; 3 -&gt; 5 DAG + source and sink: -&gt; 1 ---&gt; 3 &ndash; | \ / v Supposing the shortest path from 0 to 5 is 0, 2, 3, 5, the neighbor for the chain will be: 0 -&gt; 2 -&gt; 3 -&gt; 5. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000351">Todo</a></b></dt><dd>(user): Support vehicle-class-dependent arc_evaluators. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="routing__neighborhoods_8h_source.html#l00203">203</a> of file <a class="el" href="routing__neighborhoods_8h_source.html">routing_neighborhoods.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a7ad5d10e10573868fd7ba9c54158c922" name="a7ad5d10e10573868fd7ba9c54158c922"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7ad5d10e10573868fd7ba9c54158c922">&#9670;&#160;</a></span>SwapActiveToShortestPathOperator()</h2>
 

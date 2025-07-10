@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,19 @@ $(function(){initNavTree('classoperations__research_1_1glop_1_1SparseVector.html
   <div class="headertitle"><div class="title">operations_research::glop::SparseVector&lt; IndexType, IteratorType &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename IndexType, typename IteratorType = VectorIterator&lt;SparseVectorEntry&lt;IndexType&gt;&gt;&gt;<br />
+class operations_research::glop::SparseVector&lt; IndexType, IteratorType &gt;</div><p><a class="el" href="classoperations__research_1_1glop_1_1SparseVector.html">SparseVector</a> This class allows to store a vector taking advantage of its sparsity. Space complexity is in O(num_entries). In the current implementation, entries are stored in a first-in order (order of <a class="el" href="#ab68c2b45ba21cb0a49e6c174cbfadc9f" title="Defines the coefficient at index, i.e. vector[index] = value;.">SetCoefficient()</a> calls) when they are added; then the "cleaning" process sorts them by index (and duplicates are removed: the last entry takes precedence). Many methods assume that the entries are sorted by index and without duplicates, and DCHECK() that.</p>
+<p>Default copy construction is fully supported.</p>
+<p>This class uses strong integer types (i.e. no implicit cast to/from other integer types) for both:</p><ul>
+<li>the index of entries (eg. SparseVector&lt;RowIndex&gt; is a <a class="el" href="classoperations__research_1_1glop_1_1SparseColumn.html">SparseColumn</a>, see ./sparse_column.h).</li>
+<li><p class="startli">the <em>internal</em> indices of entries in the internal storage, which is an entirely different type: EntryType. This class can be extended with a custom iterator/entry type for the iterator-based API. This can be used to extend the interface with additional methods for the entries returned by the iterators; for an example of such extension, see <a class="el" href="classoperations__research_1_1glop_1_1SparseColumnEntry.html">SparseColumnEntry</a> in <a class="el" href="sparse__column_8h.html">sparse_column.h</a>. The custom entries and iterators should be derived from <a class="el" href="classoperations__research_1_1glop_1_1SparseVectorEntry.html">SparseVectorEntry</a> and SparseVectorIterator, or at least provide the same public and protected interface.</p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000889">Todo</a></b></dt><dd>(user): un-expose this type to client; by getting rid of the index-based APIs and leveraging iterator-based APIs; if possible. </dd></dl>
+</li>
+</ul>
 
+<p class="definition">Definition at line <a class="el" href="lp__data_2sparse__vector_8h_source.html#l00087">87</a> of file <a class="el" href="lp__data_2sparse__vector_8h_source.html">sparse_vector.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="lp__data_2sparse__vector_8h_source.html">sparse_vector.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-types" class="groupheader"><a id="pub-types" name="pub-types"></a>
@@ -182,19 +195,7 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a079ca448e72034a09503ed79f4c46a85" id="r_a079ca448e72034a09503ed79f4c46a85"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceoperations__research_1_1glop.html#a0cac235bd48eb39d15cc101516dc1e90">Fractional</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a079ca448e72034a09503ed79f4c46a85">coefficient_</a> = nullptr</td></tr>
 <tr class="memitem:a905f925c4884ff9c163e630ffef925c9" id="r_a905f925c4884ff9c163e630ffef925c9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a905f925c4884ff9c163e630ffef925c9">may_contain_duplicates_</a></td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;typename IndexType, typename IteratorType = VectorIterator&lt;SparseVectorEntry&lt;IndexType&gt;&gt;&gt;<br />
-class operations_research::glop::SparseVector&lt; IndexType, IteratorType &gt;</div><p><a class="el" href="classoperations__research_1_1glop_1_1SparseVector.html">SparseVector</a> This class allows to store a vector taking advantage of its sparsity. Space complexity is in O(num_entries). In the current implementation, entries are stored in a first-in order (order of <a class="el" href="#ab68c2b45ba21cb0a49e6c174cbfadc9f" title="Defines the coefficient at index, i.e. vector[index] = value;.">SetCoefficient()</a> calls) when they are added; then the "cleaning" process sorts them by index (and duplicates are removed: the last entry takes precedence). Many methods assume that the entries are sorted by index and without duplicates, and DCHECK() that.</p>
-<p>Default copy construction is fully supported.</p>
-<p>This class uses strong integer types (i.e. no implicit cast to/from other integer types) for both:</p><ul>
-<li>the index of entries (eg. SparseVector&lt;RowIndex&gt; is a <a class="el" href="classoperations__research_1_1glop_1_1SparseColumn.html">SparseColumn</a>, see ./sparse_column.h).</li>
-<li><p class="startli">the <em>internal</em> indices of entries in the internal storage, which is an entirely different type: EntryType. This class can be extended with a custom iterator/entry type for the iterator-based API. This can be used to extend the interface with additional methods for the entries returned by the iterators; for an example of such extension, see <a class="el" href="classoperations__research_1_1glop_1_1SparseColumnEntry.html">SparseColumnEntry</a> in <a class="el" href="sparse__column_8h.html">sparse_column.h</a>. The custom entries and iterators should be derived from <a class="el" href="classoperations__research_1_1glop_1_1SparseVectorEntry.html">SparseVectorEntry</a> and SparseVectorIterator, or at least provide the same public and protected interface.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000890">Todo</a></b></dt><dd>(user): un-expose this type to client; by getting rid of the index-based APIs and leveraging iterator-based APIs; if possible. </dd></dl>
-</li>
-</ul>
-
-<p class="definition">Definition at line <a class="el" href="lp__data_2sparse__vector_8h_source.html#l00087">87</a> of file <a class="el" href="lp__data_2sparse__vector_8h_source.html">sparse_vector.h</a>.</p>
-</div><a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Member Typedef Documentation</h2>
+<a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Member Typedef Documentation</h2>
 <a id="a38c031d168b70a7966cb28608543423c" name="a38c031d168b70a7966cb28608543423c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a38c031d168b70a7966cb28608543423c">&#9670;&#160;</a></span>DenseVector</h2>
 
@@ -516,7 +517,7 @@ template&lt;typename IndexType, typename IteratorType = VectorIterator&lt;Sparse
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Allows to loop over the entry indices like this: for (const EntryIndex i : sparse_vector.AllEntryIndices()) { ... } </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000895">Todo</a></b></dt><dd>(user): consider removing this, in favor of the natural range iteration. </dd></dl>
+<p>Allows to loop over the entry indices like this: for (const EntryIndex i : sparse_vector.AllEntryIndices()) { ... } </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000894">Todo</a></b></dt><dd>(user): consider removing this, in favor of the natural range iteration. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="lp__data_2sparse__vector_8h_source.html#l00306">306</a> of file <a class="el" href="lp__data_2sparse__vector_8h_source.html">sparse_vector.h</a>.</p>
 
@@ -684,7 +685,7 @@ template&lt;typename IndexType, typename IteratorType&gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Cleans the vector, i.e. removes zero-values entries, removes duplicates entries and sorts remaining entries in increasing index order. Runs in O(num_entries * log(num_entries)). </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000891">Todo</a></b></dt><dd>(user): Implement in-place sorting of the entries and cleanup. The current version converts the data to an array-of-pairs representation that can be sorted easily with std::stable_sort, and the converts the sorted data back to the struct-of-arrays implementation. The current version is ~20% slower than the in-place sort on the array-of-struct representation. It is not visible on GLOP benchmarks, but it increases peak memory usage by ~8%. Implementing in-place search will require either implementing a custom sorting code, or custom iterators that abstract away the internal representation. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000890">Todo</a></b></dt><dd>(user): Implement in-place sorting of the entries and cleanup. The current version converts the data to an array-of-pairs representation that can be sorted easily with std::stable_sort, and the converts the sorted data back to the struct-of-arrays implementation. The current version is ~20% slower than the in-place sort on the array-of-struct representation. It is not visible on GLOP benchmarks, but it increases peak memory usage by ~8%. Implementing in-place search will require either implementing a custom sorting code, or custom iterators that abstract away the internal representation. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="lp__data_2sparse__vector_8h_source.html#l00552">552</a> of file <a class="el" href="lp__data_2sparse__vector_8h_source.html">sparse_vector.h</a>.</p>
 
@@ -1156,7 +1157,7 @@ template&lt;typename IndexType, typename IteratorType&gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Returns the coefficient at position index. Call with care: runs in O(number-of-entries) as entries may not be sorted. </p>
-<p>Keep in mind the vector may contains several entries with the same index. In such a case the last one is returned. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000894">Todo</a></b></dt><dd>(user): investigate whether an optimized version of LookUpCoefficient for "clean" columns yields speed-ups. </dd></dl>
+<p>Keep in mind the vector may contains several entries with the same index. In such a case the last one is returned. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000893">Todo</a></b></dt><dd>(user): investigate whether an optimized version of LookUpCoefficient for "clean" columns yields speed-ups. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="lp__data_2sparse__vector_8h_source.html#l00999">999</a> of file <a class="el" href="lp__data_2sparse__vector_8h_source.html">sparse_vector.h</a>.</p>
 
@@ -1228,7 +1229,7 @@ template&lt;typename IndexType, typename IteratorType&gt; </div>
 </div><div class="memdoc">
 <p>Removes the entries for which index_perm[index] is non-negative and appends them to output. Note that the index of the entries are NOT permuted. </p>
 <dl class="section note"><dt>Note</dt><dd>this function is called many times, so performance does matter and it is why we optimized the "nothing to do" case.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000893">Todo</a></b></dt><dd>(user): In the way we use this function, we know that will not happen, but it is better to be careful so we can check that properly in debug mode. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000892">Todo</a></b></dt><dd>(user): In the way we use this function, we know that will not happen, but it is better to be careful so we can check that properly in debug mode. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="lp__data_2sparse__vector_8h_source.html#l00969">969</a> of file <a class="el" href="lp__data_2sparse__vector_8h_source.html">sparse_vector.h</a>.</p>
 

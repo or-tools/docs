@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,12 @@ $(function(){initNavTree('classoperations__research_1_1sat_1_1CpModelView.html',
   <div class="headertitle"><div class="title">operations_research::sat::CpModelView Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This class allows to query information about the current bounds of the loaded <a class="el" href="cp__model_8proto.html">cp_model.proto</a> variables during the search. It is a "view" of the current solver state using the indices of the proto.</p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001495">Todo</a></b></dt><dd>(user): For now it uses proto indices of the loaded model. We will need to add a mapping to use proto indices of the non-presolved model to allow for a client custom search with presolve. The main API shouldn't change though and the change will be transparent. </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="cp__model__search_8h_source.html#l00047">47</a> of file <a class="el" href="cp__model__search_8h_source.html">cp_model_search.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="cp__model__search_8h_source.html">cp_model_search.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -113,12 +119,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1d3be8ba87a2d709a97c87cf1a7c10b9" id="r_a1d3be8ba87a2d709a97c87cf1a7c10b9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structoperations__research_1_1sat_1_1BooleanOrIntegerLiteral.html">BooleanOrIntegerLiteral</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1d3be8ba87a2d709a97c87cf1a7c10b9">MedianValue</a> (int var) const</td></tr>
 <tr class="memitem:af4ad6fffcbfe163b8f086b4630f1bde0" id="r_af4ad6fffcbfe163b8f086b4630f1bde0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structoperations__research_1_1sat_1_1BooleanOrIntegerLiteral.html">BooleanOrIntegerLiteral</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af4ad6fffcbfe163b8f086b4630f1bde0">RandomSplit</a> (int var, int64_t lb, int64_t ub) const</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This class allows to query information about the current bounds of the loaded <a class="el" href="cp__model_8proto.html">cp_model.proto</a> variables during the search. It is a "view" of the current solver state using the indices of the proto.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001497">Todo</a></b></dt><dd>(user): For now it uses proto indices of the loaded model. We will need to add a mapping to use proto indices of the non-presolved model to allow for a client custom search with presolve. The main API shouldn't change though and the change will be transparent. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="cp__model__search_8h_source.html#l00047">47</a> of file <a class="el" href="cp__model__search_8h_source.html">cp_model_search.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab289fd5d9a9758c798994fd53d4e14c3" name="ab289fd5d9a9758c798994fd53d4e14c3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab289fd5d9a9758c798994fd53d4e14c3">&#9670;&#160;</a></span>CpModelView()</h2>
 

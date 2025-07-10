@@ -1,0 +1,6 @@
+var structoperations__research_1_1math__opt_1_1PrimalSolutionProto__AuxiliaryObjectiveValuesEntry__DoNotUseDefaultTypeInternal =
+[
+    [ "PrimalSolutionProto_AuxiliaryObjectiveValuesEntry_DoNotUseDefaultTypeInternal", "structoperations__research_1_1math__opt_1_1PrimalSolutionProto__AuxiliaryObjectiveValuesEntry__DoNotUseDefaultTypeInternal.html#a154bf71280bfe971f8b73e3e63247518", null ],
+    [ "~PrimalSolutionProto_AuxiliaryObjectiveValuesEntry_DoNotUseDefaultTypeInternal", "structoperations__research_1_1math__opt_1_1PrimalSolutionProto__AuxiliaryObjectiveValuesEntry__DoNotUseDefaultTypeInternal.html#a86bb6d957d7e4d511b6c1f3abbe774f7", null ],
+    [ "_instance", "structoperations__research_1_1math__opt_1_1PrimalSolutionProto__AuxiliaryObjectiveValuesEntry__DoNotUseDefaultTypeInternal.html#a8024f5fbc421458497e3f6bc02a88b94", null ]
+];

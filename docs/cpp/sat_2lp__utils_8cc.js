@@ -1,5 +1,8 @@
 var sat_2lp__utils_8cc =
 [
+    [ "operations_research::sat::MPConstraintProto", "classoperations__research_1_1sat_1_1MPConstraintProto.html", "classoperations__research_1_1sat_1_1MPConstraintProto" ],
+    [ "operations_research::sat::MPModelProto", "classoperations__research_1_1sat_1_1MPModelProto.html", "classoperations__research_1_1sat_1_1MPModelProto" ],
+    [ "operations_research::sat::MPVariableProto", "classoperations__research_1_1sat_1_1MPVariableProto.html", "classoperations__research_1_1sat_1_1MPVariableProto" ],
     [ "operations_research::sat::Fractional", "namespaceoperations__research_1_1sat.html#a0cac235bd48eb39d15cc101516dc1e90", null ],
     [ "operations_research::sat::ChangeLargeBoundsToInfinity", "namespaceoperations__research_1_1sat.html#a5e72e8b29637efc57d3d9489078a5748", null ],
     [ "operations_research::sat::ComputeTrueObjectiveLowerBound", "namespaceoperations__research_1_1sat.html#ac47959359a009b02531ab19f206cdd54", null ],

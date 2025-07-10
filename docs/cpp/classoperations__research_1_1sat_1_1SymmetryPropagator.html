@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,24 @@ $(function(){initNavTree('classoperations__research_1_1sat_1_1SymmetryPropagator
   <div class="headertitle"><div class="title">operations_research::sat::SymmetryPropagator Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This class implements more or less the strategy described in the paper: Devriendt J., Bogaerts B., De Cat B., Denecker M., Mears C. "Symmetry
+propagation: Improved Dynamic Symmetry Breaking in SAT", 2012, IEEE 24th International Conference on Tools with Artificial Intelligence.</p>
+<p>Basically, each time a literal is propagated, this class tries to detect if another literal could also be propagated by symmetry. Note that this uses a heuristic in order to be efficient and that it is not exhaustive in the sense that it doesn't detect all possible propagations.</p>
+<p>Algorithm details:</p>
+<p>Given the current solver trail (i.e. the assigned literals and their assignment order) the idea is to compute (as efficiently as possible) for each permutation added to this class what is called the first (under the trail assignment order) non-symmetric literal. A literal 'l' is said to be non-symmetric under a given assignment and for a given permutation 'p' if 'l' is assigned to true but not 'p(l)'.</p>
+<p>If a first non-symmetric literal 'l' for a permutation 'p' is not a decision, then:</p><ul>
+<li>Because it is not a decision, 'l' has been implied by a reason formed by literals assigned to true at lower trail indices.</li>
+<li>Because this is the first non-symmetric literal for 'p', the permuted reason only contains literal that are also assigned to true.</li>
+<li>Because of this, 'p(l)' is also implied by the current assignment. Of course, this assume that p is a symmetry of the full problem. <dl class="section note"><dt>Note</dt><dd>if it is already assigned to false, then we have a conflict.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002465">Todo</a></b></dt><dd><p class="startdd">(user): Implement the optimizations mentioned in the paper? </p>
+<p class="enddd">(user): Instrument and see if the code can be optimized. </p>
+</dd></dl>
+</li>
+</ul>
 
+<p class="definition">Definition at line <a class="el" href="sat_2symmetry_8h_source.html#l00061">61</a> of file <a class="el" href="sat_2symmetry_8h_source.html">symmetry.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="sat_2symmetry_8h_source.html">symmetry.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for operations_research::sat::SymmetryPropagator:</div>
@@ -142,24 +160,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a6484a3ad51a1f74b403fc21c47055601 inherit pro_attribs_classoperations__research_1_1sat_1_1SatPropagator" id="r_a6484a3ad51a1f74b403fc21c47055601"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1SatPropagator.html#a6484a3ad51a1f74b403fc21c47055601">propagator_id_</a></td></tr>
 <tr class="memitem:a5714ef513aadb9a616a215de533b9eb4 inherit pro_attribs_classoperations__research_1_1sat_1_1SatPropagator" id="r_a5714ef513aadb9a616a215de533b9eb4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1SatPropagator.html#a5714ef513aadb9a616a215de533b9eb4">propagation_trail_index_</a></td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This class implements more or less the strategy described in the paper: Devriendt J., Bogaerts B., De Cat B., Denecker M., Mears C. "Symmetry
-propagation: Improved Dynamic Symmetry Breaking in SAT", 2012, IEEE 24th International Conference on Tools with Artificial Intelligence.</p>
-<p>Basically, each time a literal is propagated, this class tries to detect if another literal could also be propagated by symmetry. Note that this uses a heuristic in order to be efficient and that it is not exhaustive in the sense that it doesn't detect all possible propagations.</p>
-<p>Algorithm details:</p>
-<p>Given the current solver trail (i.e. the assigned literals and their assignment order) the idea is to compute (as efficiently as possible) for each permutation added to this class what is called the first (under the trail assignment order) non-symmetric literal. A literal 'l' is said to be non-symmetric under a given assignment and for a given permutation 'p' if 'l' is assigned to true but not 'p(l)'.</p>
-<p>If a first non-symmetric literal 'l' for a permutation 'p' is not a decision, then:</p><ul>
-<li>Because it is not a decision, 'l' has been implied by a reason formed by literals assigned to true at lower trail indices.</li>
-<li>Because this is the first non-symmetric literal for 'p', the permuted reason only contains literal that are also assigned to true.</li>
-<li>Because of this, 'p(l)' is also implied by the current assignment. Of course, this assume that p is a symmetry of the full problem. <dl class="section note"><dt>Note</dt><dd>if it is already assigned to false, then we have a conflict.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002467">Todo</a></b></dt><dd><p class="startdd">(user): Implement the optimizations mentioned in the paper? </p>
-<p class="enddd">(user): Instrument and see if the code can be optimized. </p>
-</dd></dl>
-</li>
-</ul>
-
-<p class="definition">Definition at line <a class="el" href="sat_2symmetry_8h_source.html#l00061">61</a> of file <a class="el" href="sat_2symmetry_8h_source.html">symmetry.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af9321e40b1d09d88b880370b03b49ce5" name="af9321e40b1d09d88b880370b03b49ce5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af9321e40b1d09d88b880370b03b49ce5">&#9670;&#160;</a></span>SymmetryPropagator() <span class="overload">[1/2]</span></h2>
 
@@ -253,7 +254,7 @@ propagation: Improved Dynamic Symmetry Breaking in SAT", 2012, IEEE 24th Interna
 <li>It must be compatible with the negation, for any literal l; not(p(l)) must be the same as p(not(l)), where p(x) represents the image of x by the permutation.</li>
 </ul>
 <p>Remark: Any permutation which is a symmetry of the main SAT problem can be added here. However, since the number of permutations is usually not manageable, a good alternative is to only add the generators of the permutation group. It is also important to add permutations with a support as small as possible.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002468">Todo</a></b></dt><dd>(user): Currently this can only be called before PropagateNext() is called (DCHECKed). Not sure if we need more incrementality though. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002466">Todo</a></b></dt><dd>(user): Currently this can only be called before PropagateNext() is called (DCHECKed). Not sure if we need more incrementality though. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="symmetry_8cc_source.html#l00045">45</a> of file <a class="el" href="symmetry_8cc_source.html">symmetry.cc</a>.</p>
 
@@ -444,8 +445,8 @@ propagation: Improved Dynamic Symmetry Breaking in SAT", 2012, IEEE 24th Interna
 </table>
 </div><div class="memdoc">
 <p>Reverts the state so that all the literals with a trail index greater or equal to the given one are not processed for propagation. Note that the trail current decision level is already reverted before this is called.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002286">Todo</a></b></dt><dd>(user): Currently this is called at each Backtrack(), but we could bundle the calls in case multiple conflict one after the other are detected even before the <a class="el" href="#a61cde651dc6dca2f88fdc7d67b900f13">Propagate()</a> call of a <a class="el" href="classoperations__research_1_1sat_1_1SatPropagator.html" title="Base class for all the SAT constraints.">SatPropagator</a> is called.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002287">Todo</a></b></dt><dd>(user): It is not yet 100% the case, but this can be guaranteed to be called with a trail index that will always be the start of a new decision level. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002284">Todo</a></b></dt><dd>(user): Currently this is called at each Backtrack(), but we could bundle the calls in case multiple conflict one after the other are detected even before the <a class="el" href="#a61cde651dc6dca2f88fdc7d67b900f13">Propagate()</a> call of a <a class="el" href="classoperations__research_1_1sat_1_1SatPropagator.html" title="Base class for all the SAT constraints.">SatPropagator</a> is called.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002285">Todo</a></b></dt><dd>(user): It is not yet 100% the case, but this can be guaranteed to be called with a trail index that will always be the start of a new decision level. </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classoperations__research_1_1sat_1_1SatPropagator.html#a5f04df27e81298743cf658683344b0a0">operations_research::sat::SatPropagator</a>.</p>
 

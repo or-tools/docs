@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,15 @@ $(function(){initNavTree('classoperations__research_1_1sat_1_1FirstFewValues.htm
   <div class="headertitle"><div class="title">operations_research::sat::FirstFewValues&lt; n &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;int n&gt;<br />
+class operations_research::sat::FirstFewValues&lt; n &gt;</div><p>Simple DP to keep the set of the first n reachable value (n &gt; 1).</p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002511">Todo</a></b></dt><dd><p class="startdd">(user): Maybe modulo some prime number we can keep more info. </p>
+<p class="enddd">(user): Another common case is a bunch of really small values and larger ones, so we could bound the sum of the small values and keep the first few reachable by the big ones. This is similar to some presolve transformations. </p>
+</dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="sat_2util_8h_source.html#l00452">452</a> of file <a class="el" href="sat_2util_8h_source.html">util.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="sat_2util_8h_source.html">util.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -107,15 +116,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a10c73995e4366dcfe28ccfa1d91e2a22" id="r_a10c73995e4366dcfe28ccfa1d91e2a22"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a10c73995e4366dcfe28ccfa1d91e2a22">LastValue</a> () const</td></tr>
 <tr class="memitem:a87afa2f3955f9bcc62c04b42450b4312" id="r_a87afa2f3955f9bcc62c04b42450b4312"><td class="memItemLeft" align="right" valign="top">absl::Span&lt; const int64_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a87afa2f3955f9bcc62c04b42450b4312">reachable</a> ()</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;int n&gt;<br />
-class operations_research::sat::FirstFewValues&lt; n &gt;</div><p>Simple DP to keep the set of the first n reachable value (n &gt; 1).</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002513">Todo</a></b></dt><dd><p class="startdd">(user): Maybe modulo some prime number we can keep more info. </p>
-<p class="enddd">(user): Another common case is a bunch of really small values and larger ones, so we could bound the sum of the small values and keep the first few reachable by the big ones. This is similar to some presolve transformations. </p>
-</dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="sat_2util_8h_source.html#l00452">452</a> of file <a class="el" href="sat_2util_8h_source.html">util.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af4b7fae9dfe9c6c69bca8ece3f7bc568" name="af4b7fae9dfe9c6c69bca8ece3f7bc568"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af4b7fae9dfe9c6c69bca8ece3f7bc568">&#9670;&#160;</a></span>FirstFewValues()</h2>
 
@@ -171,7 +172,7 @@ template&lt;int n&gt; </div>
 </table>
 </div><div class="memdoc">
 <p>We assume the given positive value can be added as many time as wanted.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002516">Todo</a></b></dt><dd>(user): Implement <a class="el" href="#afb10d079fe78aa99d7256c85f6d24bde">Add()</a> with an upper bound on the multiplicity. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002514">Todo</a></b></dt><dd>(user): Implement <a class="el" href="#afb10d079fe78aa99d7256c85f6d24bde">Add()</a> with an upper bound on the multiplicity. </dd></dl>
 <p>We copy from reachable_[i] to new_reachable_[j]. The position zero is already copied.</p>
 <p>Eliminate duplicates.</p>
 <p>insert candidate in its final place.</p>

@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,12 @@ $(function(){initNavTree('structoperations__research_1_1sat_1_1LinearConstraint.
   <div class="headertitle"><div class="title">operations_research::sat::LinearConstraint Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>One linear constraint on a set of Integer variables. Important: there should be no duplicate variables.</p>
+<p>We also assume that we never have integer overflow when evaluating such constraint at the ROOT node. This should be enforced by the checker for user given constraints, and we must enforce it ourselves for the newly created constraint. See <a class="el" href="namespaceoperations__research_1_1sat.html#ad582c9543b77917ac1084bbfda601f5e">ValidateLinearConstraintForOverflow()</a>. </p>
 
+<p class="definition">Definition at line <a class="el" href="sat_2linear__constraint_8h_source.html#l00048">48</a> of file <a class="el" href="sat_2linear__constraint_8h_source.html">linear_constraint.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="sat_2linear__constraint_8h_source.html">linear_constraint.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -118,12 +124,7 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a288b79354e28643cc85435b8bbbb07db" id="r_a288b79354e28643cc85435b8bbbb07db"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; IntegerVariable[]&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a288b79354e28643cc85435b8bbbb07db">vars</a></td></tr>
 <tr class="memitem:a24504f0342fd31fc70680e38c8d55f9c" id="r_a24504f0342fd31fc70680e38c8d55f9c"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; IntegerValue[]&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a24504f0342fd31fc70680e38c8d55f9c">coeffs</a></td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>One linear constraint on a set of Integer variables. Important: there should be no duplicate variables.</p>
-<p>We also assume that we never have integer overflow when evaluating such constraint at the ROOT node. This should be enforced by the checker for user given constraints, and we must enforce it ourselves for the newly created constraint. See <a class="el" href="namespaceoperations__research_1_1sat.html#ad582c9543b77917ac1084bbfda601f5e">ValidateLinearConstraintForOverflow()</a>. </p>
-
-<p class="definition">Definition at line <a class="el" href="sat_2linear__constraint_8h_source.html#l00048">48</a> of file <a class="el" href="sat_2linear__constraint_8h_source.html">linear_constraint.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a125d525e843a1d704452f47a75f62068" name="a125d525e843a1d704452f47a75f62068"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a125d525e843a1d704452f47a75f62068">&#9670;&#160;</a></span>LinearConstraint() <span class="overload">[1/2]</span></h2>
 

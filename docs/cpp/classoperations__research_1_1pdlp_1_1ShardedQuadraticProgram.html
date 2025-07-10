@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,12 +96,21 @@ $(function(){initNavTree('classoperations__research_1_1pdlp_1_1ShardedQuadraticP
   <div class="headertitle"><div class="title">operations_research::pdlp::ShardedQuadraticProgram Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This class stores:</p><ul>
+<li>A <span class="tt"><a class="el" href="structoperations__research_1_1pdlp_1_1QuadraticProgram.html">QuadraticProgram</a></span> (QP)</li>
+<li>A transposed version of the QP's constraint matrix</li>
+<li>A thread scheduler</li>
+<li>Various <span class="tt"><a class="el" href="classoperations__research_1_1pdlp_1_1Sharder.html">Sharder</a></span> objects for doing sharded matrix and vector computations. </li>
+</ul>
 
+<p class="definition">Definition at line <a class="el" href="sharded__quadratic__program_8h_source.html#l00037">37</a> of file <a class="el" href="sharded__quadratic__program_8h_source.html">sharded_quadratic_program.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="sharded__quadratic__program_8h_source.html">sharded_quadratic_program.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac4cac29637dd2a356badb2a3ceee3783" id="r_ac4cac29637dd2a356badb2a3ceee3783"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac4cac29637dd2a356badb2a3ceee3783">ShardedQuadraticProgram</a> (<a class="el" href="structoperations__research_1_1pdlp_1_1QuadraticProgram.html">QuadraticProgram</a> qp, int num_threads, int num_shards, SchedulerType scheduler_type=SCHEDULER_TYPE_GOOGLE_THREADPOOL, <a class="el" href="classoperations__research_1_1SolverLogger.html">operations_research::SolverLogger</a> *logger=nullptr)</td></tr>
+<tr class="memitem:ac4cac29637dd2a356badb2a3ceee3783" id="r_ac4cac29637dd2a356badb2a3ceee3783"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac4cac29637dd2a356badb2a3ceee3783">ShardedQuadraticProgram</a> (<a class="el" href="structoperations__research_1_1pdlp_1_1QuadraticProgram.html">QuadraticProgram</a> qp, int num_threads, int num_shards, <a class="el" href="namespaceoperations__research_1_1pdlp.html#a16e599804c1e09507fa6148e41ef4d6b">SchedulerType</a> scheduler_type=<a class="el" href="namespaceoperations__research_1_1pdlp.html#a16e599804c1e09507fa6148e41ef4d6ba02c1cde315a5befd8b9ab7c02c762efe">SCHEDULER_TYPE_GOOGLE_THREADPOOL</a>, <a class="el" href="classoperations__research_1_1SolverLogger.html">operations_research::SolverLogger</a> *logger=nullptr)</td></tr>
 <tr class="memitem:a870a699dbdedbd4997c58be8af83a5e6" id="r_a870a699dbdedbd4997c58be8af83a5e6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a870a699dbdedbd4997c58be8af83a5e6">ShardedQuadraticProgram</a> (const <a class="el" href="classoperations__research_1_1pdlp_1_1ShardedQuadraticProgram.html">ShardedQuadraticProgram</a> &amp;)=delete</td></tr>
 <tr class="memdesc:a870a699dbdedbd4997c58be8af83a5e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Movable but not copyable.  <br /></td></tr>
 <tr class="memitem:aa32c51a625ad9cae3b85fb7050d0fa38" id="r_aa32c51a625ad9cae3b85fb7050d0fa38"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoperations__research_1_1pdlp_1_1ShardedQuadraticProgram.html">ShardedQuadraticProgram</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa32c51a625ad9cae3b85fb7050d0fa38">operator=</a> (const <a class="el" href="classoperations__research_1_1pdlp_1_1ShardedQuadraticProgram.html">ShardedQuadraticProgram</a> &amp;)=delete</td></tr>
@@ -126,16 +136,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aba8402aa2d7b3371de8a938789e9882c" id="r_aba8402aa2d7b3371de8a938789e9882c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aba8402aa2d7b3371de8a938789e9882c">SwapObjectiveVector</a> (Eigen::VectorXd &amp;objective)</td></tr>
 <tr class="memitem:aa9d9d5903bdf63af31485d871f95477c" id="r_aa9d9d5903bdf63af31485d871f95477c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa9d9d5903bdf63af31485d871f95477c">ReplaceLargeConstraintBoundsWithInfinity</a> (double threshold)</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This class stores:</p><ul>
-<li>A <span class="tt"><a class="el" href="structoperations__research_1_1pdlp_1_1QuadraticProgram.html">QuadraticProgram</a></span> (QP)</li>
-<li>A transposed version of the QP's constraint matrix</li>
-<li>A thread scheduler</li>
-<li>Various <span class="tt"><a class="el" href="classoperations__research_1_1pdlp_1_1Sharder.html">Sharder</a></span> objects for doing sharded matrix and vector computations. </li>
-</ul>
-
-<p class="definition">Definition at line <a class="el" href="sharded__quadratic__program_8h_source.html#l00037">37</a> of file <a class="el" href="sharded__quadratic__program_8h_source.html">sharded_quadratic_program.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ac4cac29637dd2a356badb2a3ceee3783" name="ac4cac29637dd2a356badb2a3ceee3783"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac4cac29637dd2a356badb2a3ceee3783">&#9670;&#160;</a></span>ShardedQuadraticProgram() <span class="overload">[1/3]</span></h2>
 
@@ -160,7 +161,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">SchedulerType</td>          <td class="paramname"><span class="paramname"><em>scheduler_type</em></span><span class="paramdefsep"> = </span><span class="paramdefval">SCHEDULER_TYPE_GOOGLE_THREADPOOL</span>, </td>
+          <td class="paramtype"><a class="el" href="namespaceoperations__research_1_1pdlp.html#a16e599804c1e09507fa6148e41ef4d6b">SchedulerType</a></td>          <td class="paramname"><span class="paramname"><em>scheduler_type</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="namespaceoperations__research_1_1pdlp.html#a16e599804c1e09507fa6148e41ef4d6ba02c1cde315a5befd8b9ab7c02c762efe">SCHEDULER_TYPE_GOOGLE_THREADPOOL</a></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>

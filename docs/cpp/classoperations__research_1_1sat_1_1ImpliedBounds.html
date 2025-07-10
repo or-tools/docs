@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,15 @@ $(function(){initNavTree('classoperations__research_1_1sat_1_1ImpliedBounds.html
   <div class="headertitle"><div class="title">operations_research::sat::ImpliedBounds Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Maintains all the implications of the form <a class="el" href="classoperations__research_1_1sat_1_1Literal.html">Literal</a> =&gt; <a class="el" href="structoperations__research_1_1sat_1_1IntegerLiteral.html">IntegerLiteral</a>. We collect these implication at model loading, during probing and during search.</p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001750">Todo</a></b></dt><dd>(user): This can quickly use up too much memory. Add some limit in place. In particular, each time we have literal =&gt; integer_literal we should avoid storing the same integer_literal for all other_literal for which other_literal =&gt; literal. For this we need to interact with the <a class="el" href="classoperations__research_1_1sat_1_1BinaryImplicationGraph.html">BinaryImplicationGraph</a>.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001751">Todo</a></b></dt><dd>(user): This is a bit of a duplicate with the <a class="el" href="classoperations__research_1_1sat_1_1Literal.html">Literal</a> &lt;=&gt; <a class="el" href="structoperations__research_1_1sat_1_1IntegerLiteral.html">IntegerLiteral</a> stored in the <a class="el" href="classoperations__research_1_1sat_1_1IntegerEncoder.html">IntegerEncoder</a> class. However we only need one side here.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001752">Todo</a></b></dt><dd>(user): Do like in the <a class="el" href="classoperations__research_1_1sat_1_1DomainDeductions.html">DomainDeductions</a> class and allow to process clauses (or store them) to perform more level zero deductions. Note that this is again a slight duplicate with what we do there (except that we work at the <a class="el" href="classoperations__research_1_1Domain.html">Domain</a> level in that presolve class).</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001753">Todo</a></b></dt><dd>(user): Add an implied bound cut generator to add these simple constraints to the LP when needed. </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="implied__bounds_8h_source.html#l00088">88</a> of file <a class="el" href="implied__bounds_8h_source.html">implied_bounds.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="implied__bounds_8h_source.html">implied_bounds.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -113,15 +122,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a51008af4d55e7e2658a7b2f74d4cdc8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns all the implied values stored for a given literal.  <br /></td></tr>
 <tr class="memitem:a402d53867d2626501bd9cb37b2a730a6" id="r_a402d53867d2626501bd9cb37b2a730a6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a402d53867d2626501bd9cb37b2a730a6">EnqueueNewDeductions</a> ()</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Maintains all the implications of the form <a class="el" href="classoperations__research_1_1sat_1_1Literal.html">Literal</a> =&gt; <a class="el" href="structoperations__research_1_1sat_1_1IntegerLiteral.html">IntegerLiteral</a>. We collect these implication at model loading, during probing and during search.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001752">Todo</a></b></dt><dd>(user): This can quickly use up too much memory. Add some limit in place. In particular, each time we have literal =&gt; integer_literal we should avoid storing the same integer_literal for all other_literal for which other_literal =&gt; literal. For this we need to interact with the <a class="el" href="classoperations__research_1_1sat_1_1BinaryImplicationGraph.html">BinaryImplicationGraph</a>.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001753">Todo</a></b></dt><dd>(user): This is a bit of a duplicate with the <a class="el" href="classoperations__research_1_1sat_1_1Literal.html">Literal</a> &lt;=&gt; <a class="el" href="structoperations__research_1_1sat_1_1IntegerLiteral.html">IntegerLiteral</a> stored in the <a class="el" href="classoperations__research_1_1sat_1_1IntegerEncoder.html">IntegerEncoder</a> class. However we only need one side here.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001754">Todo</a></b></dt><dd>(user): Do like in the <a class="el" href="classoperations__research_1_1sat_1_1DomainDeductions.html">DomainDeductions</a> class and allow to process clauses (or store them) to perform more level zero deductions. Note that this is again a slight duplicate with what we do there (except that we work at the <a class="el" href="classoperations__research_1_1Domain.html">Domain</a> level in that presolve class).</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001755">Todo</a></b></dt><dd>(user): Add an implied bound cut generator to add these simple constraints to the LP when needed. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="implied__bounds_8h_source.html#l00088">88</a> of file <a class="el" href="implied__bounds_8h_source.html">implied_bounds.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a9afb04daf2da92c413bd9a9c30f46a80" name="a9afb04daf2da92c413bd9a9c30f46a80"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9afb04daf2da92c413bd9a9c30f46a80">&#9670;&#160;</a></span>ImpliedBounds()</h2>
 
@@ -191,13 +192,13 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Adds literal =&gt; integer_literal to the repository.</p>
 <p>Not that it checks right aways if there is another bound on the same variable involving literal.Negated(), in which case we can improve the level zero lower bound of the variable. </p>
-<p>Ignore any <a class="el" href="#accac5e129274770ef3d646e15aa13b1c">Add()</a> with a bound worse than the level zero one. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001741">Todo</a></b></dt><dd>(user): Check that this never happen? it shouldn't. </dd></dl>
+<p>Ignore any <a class="el" href="#accac5e129274770ef3d646e15aa13b1c">Add()</a> with a bound worse than the level zero one. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo001739">Todo</a></b></dt><dd>(user): Check that this never happen? it shouldn't. </dd></dl>
 <p>We skip any <a class="el" href="structoperations__research_1_1sat_1_1IntegerLiteral.html">IntegerLiteral</a> referring to a variable with only two consecutive possible values. This is because, once shifted this will already be a variable in [0, 1] so we shouldn't gain much by substituing it.</p>
 <p>Add or update the current bound.</p>
 <p>No new info.</p>
 <p>Checks if the variable is now fixed.</p>
 <p>Check if we have any deduction. Since at least one of (literal, literal.Negated()) must be true, we can take the min bound as valid at level zero.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001742">Todo</a></b></dt><dd>(user): Like in probing, we can also create hole in the domain if there is some implied bounds for (literal.NegatedIndex, NegagtionOf(var)) that crosses integer_literal.bound. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001740">Todo</a></b></dt><dd>(user): Like in probing, we can also create hole in the domain if there is some implied bounds for (literal.NegatedIndex, NegagtionOf(var)) that crosses integer_literal.bound. </dd></dl>
 <p>The other bounds is worse than the new level-zero bound which can happen because of lazy update, so here we just remove it.</p>
 <p>The entries that are equal to the min no longer need to be stored once the level zero bound is enqueued.</p>
 <p>No need to update var_to_bounds_ in this case.</p>
@@ -272,7 +273,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns all the implied bounds stored for the given variable. </p><dl class="section note"><dt>Note</dt><dd>only literal with an IntegerView are considered here. </dd></dl>
 <p>Lazily remove obsolete entries from the vector.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001743">Todo</a></b></dt><dd>(user): Check no duplicate and remove old entry if the enforcement is tighter. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001741">Todo</a></b></dt><dd>(user): Check no duplicate and remove old entry if the enforcement is tighter. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="implied__bounds_8cc_source.html#l00178">178</a> of file <a class="el" href="implied__bounds_8cc_source.html">implied_bounds.cc</a>.</p>
 

@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,12 @@ $(function(){initNavTree('classoperations__research_1_1math__opt_1_1VariableStor
   <div class="headertitle"><div class="title">operations_research::math_opt::VariableStorage Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The in memory representation of the variables of an optimization model.</p>
+<p>The setter functions all accept a <span class="tt">DiffIter</span>, which must be an iterator over non-const references to <a class="el" href="structoperations__research_1_1math__opt_1_1VariableStorage_1_1Diff.html">VariableStorage::Diff</a>. These functions will modify the <a class="el" href="structoperations__research_1_1math__opt_1_1VariableStorage_1_1Diff.html">VariableStorage::Diff</a> objects. </p>
 
+<p class="definition">Definition at line <a class="el" href="variable__storage_8h_source.html#l00039">39</a> of file <a class="el" href="variable__storage_8h_source.html">variable_storage.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="variable__storage_8h_source.html">variable_storage.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
@@ -127,7 +133,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a21f252dc29b71ef371c428324685268f" id="r_a21f252dc29b71ef371c428324685268f"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespaceoperations__research_1_1math__opt.html#a65891782521d4a9c7b5c8dd80bb3f771">VariableId</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a21f252dc29b71ef371c428324685268f">Variables</a> () const</td></tr>
 <tr class="memdesc:a21f252dc29b71ef371c428324685268f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The VariableIds in use (not deleted), order not defined.  <br /></td></tr>
 <tr class="memitem:a96ef5820506ae00019f5bbbe84118616" id="r_a96ef5820506ae00019f5bbbe84118616"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespaceoperations__research_1_1math__opt.html#a65891782521d4a9c7b5c8dd80bb3f771">VariableId</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a96ef5820506ae00019f5bbbe84118616">SortedVariables</a> () const</td></tr>
-<tr class="memitem:a0827fd079e54d31a07107a706ae410ed" id="r_a0827fd079e54d31a07107a706ae410ed"><td class="memItemLeft" align="right" valign="top">VariablesProto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0827fd079e54d31a07107a706ae410ed">Proto</a> () const</td></tr>
+<tr class="memitem:a0827fd079e54d31a07107a706ae410ed" id="r_a0827fd079e54d31a07107a706ae410ed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoperations__research_1_1math__opt_1_1VariablesProto.html">VariablesProto</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0827fd079e54d31a07107a706ae410ed">Proto</a> () const</td></tr>
 <tr class="memdesc:a0827fd079e54d31a07107a706ae410ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">An equivalent proto of <span class="tt">this</span>.  <br /></td></tr>
 <tr class="memitem:adc88c0ff62a2e02e62d8d63dc004fc01" id="r_adc88c0ff62a2e02e62d8d63dc004fc01"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adc88c0ff62a2e02e62d8d63dc004fc01">diff_is_empty</a> (const <a class="el" href="structoperations__research_1_1math__opt_1_1VariableStorage_1_1Diff.html">Diff</a> &amp;diff) const</td></tr>
 <tr class="memitem:af6f3613cad1dfd1e42fd4d6fafa84e55" id="r_af6f3613cad1dfd1e42fd4d6fafa84e55"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structoperations__research_1_1math__opt_1_1VariableStorage_1_1UpdateResult.html">UpdateResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af6f3613cad1dfd1e42fd4d6fafa84e55">Update</a> (const <a class="el" href="structoperations__research_1_1math__opt_1_1VariableStorage_1_1Diff.html">Diff</a> &amp;diff) const</td></tr>
@@ -135,12 +141,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a583b4bd201ad27e315b6efa7b0d136b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the checkpoint and clears all stored changes in diff.  <br /></td></tr>
 <tr class="memitem:ab3ebccd72d4eb0903880f2073d00a6fd" id="r_ab3ebccd72d4eb0903880f2073d00a6fd"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespaceoperations__research_1_1math__opt.html#a65891782521d4a9c7b5c8dd80bb3f771">VariableId</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab3ebccd72d4eb0903880f2073d00a6fd">VariablesFrom</a> (<a class="el" href="namespaceoperations__research_1_1math__opt.html#a65891782521d4a9c7b5c8dd80bb3f771">VariableId</a> start) const</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The in memory representation of the variables of an optimization model.</p>
-<p>The setter functions all accept a <span class="tt">DiffIter</span>, which must be an iterator over non-const references to <a class="el" href="structoperations__research_1_1math__opt_1_1VariableStorage_1_1Diff.html">VariableStorage::Diff</a>. These functions will modify the <a class="el" href="structoperations__research_1_1math__opt_1_1VariableStorage_1_1Diff.html">VariableStorage::Diff</a> objects. </p>
-
-<p class="definition">Definition at line <a class="el" href="variable__storage_8h_source.html#l00039">39</a> of file <a class="el" href="variable__storage_8h_source.html">variable_storage.h</a>.</p>
-</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="aebd41483d87e9ff2feea4b6587d2f60e" name="aebd41483d87e9ff2feea4b6587d2f60e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aebd41483d87e9ff2feea4b6587d2f60e">&#9670;&#160;</a></span>Add()</h2>
 
@@ -428,7 +429,7 @@ template&lt;typename DiffIter&gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">VariablesProto operations_research::math_opt::VariableStorage::Proto </td>
+          <td class="memname"><a class="el" href="classoperations__research_1_1math__opt_1_1VariablesProto.html">VariablesProto</a> operations_research::math_opt::VariableStorage::Proto </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>

@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,14 @@ $(function(){initNavTree('classoperations__research_1_1Demon.html','','classoper
   <div class="headertitle"><div class="title">operations_research::Demon Class Reference<span class="mlabels"><span class="mlabel abstract">abstract</span></span></div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A <a class="el" href="classoperations__research_1_1Demon.html">Demon</a> is the base element of a propagation queue. It is the main object responsible for implementing the actual propagation of the constraint and pruning the inconsistent values in the domains of the variables. The main concept is that demons are listeners that are attached to the variables and listen to their modifications. There are two methods:</p><ul>
+<li><a class="el" href="namespaceoperations__research.html#aa88829d135400535426e7ab86209e80c">Run()</a> is the actual method called when the demon is processed.</li>
+<li><a class="el" href="#a4b049794b3d0709d2a46950898ac63a1" title="---------------— Demon class -------------—">priority()</a> returns its priority. Standard priorities are slow, normal or fast. "immediate" is reserved for variables and is treated separately. </li>
+</ul>
 
+<p class="definition">Definition at line <a class="el" href="constraint__solver_8h_source.html#l03629">3629</a> of file <a class="el" href="constraint__solver_8h_source.html">constraint_solver.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="constraint__solver_8h_source.html">constraint_solver.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for operations_research::Demon:</div>
@@ -140,14 +148,7 @@ Public Member Functions</h2></td></tr>
 Friends</h2></td></tr>
 <tr class="memitem:a47dfc6f2bc0d50a6e7c92eb00d97b064" id="r_a47dfc6f2bc0d50a6e7c92eb00d97b064"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a47dfc6f2bc0d50a6e7c92eb00d97b064">Queue</a></td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A <a class="el" href="classoperations__research_1_1Demon.html">Demon</a> is the base element of a propagation queue. It is the main object responsible for implementing the actual propagation of the constraint and pruning the inconsistent values in the domains of the variables. The main concept is that demons are listeners that are attached to the variables and listen to their modifications. There are two methods:</p><ul>
-<li><a class="el" href="namespaceoperations__research.html#aa88829d135400535426e7ab86209e80c">Run()</a> is the actual method called when the demon is processed.</li>
-<li><a class="el" href="#a4b049794b3d0709d2a46950898ac63a1" title="---------------— Demon class -------------—">priority()</a> returns its priority. Standard priorities are slow, normal or fast. "immediate" is reserved for variables and is treated separately. </li>
-</ul>
-
-<p class="definition">Definition at line <a class="el" href="constraint__solver_8h_source.html#l03629">3629</a> of file <a class="el" href="constraint__solver_8h_source.html">constraint_solver.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab1cf435bf9f422682783c255027e0570" name="ab1cf435bf9f422682783c255027e0570"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab1cf435bf9f422682783c255027e0570">&#9670;&#160;</a></span>Demon() <span class="overload">[1/2]</span></h2>
 

@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,11 @@ $(function(){initNavTree('structoperations__research_1_1sat_1_1SweepLineInterval
   <div class="headertitle"><div class="title">operations_research::sat::SweepLineIntervalTree Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A data structure to store which boxes are overlapping the current sweep line. This uses a binary tree in a slight non-standard way: in a typical use of a binary tree the actual values are stored in the leaves and the intermediate nodes are there just to make finding the right leaf efficient. Here we do the opposite: the values are stored as high up in the tree as possible. For example, for a tree of size 8 a box that occupies the y interval [0, 7] will be stored as a single node at the root. In the same tree, a box that occupies [3, 7] will be stored with the nodes representing the [3, 4), [4, 6) and [6, 8) intervals. There is no difference on what is stored in the intermediate nodes or on the leaves. When the sweep line moves, we don't update the existing nodes on the tree. Thus, some nodes will become stale and will represent boxes that no longer overlap the sweep line. Those stale nodes get removed lazily. </p>
+
+<p class="definition">Definition at line <a class="el" href="diffn__util_8cc_source.html#l01656">1656</a> of file <a class="el" href="diffn__util_8cc_source.html">diffn_util.cc</a>.</p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:af908bdb59fda5f4a62657f476c19756c" id="r_af908bdb59fda5f4a62657f476c19756c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af908bdb59fda5f4a62657f476c19756c">SweepLineIntervalTree</a> (int max_y, int num_boxes)</td></tr>
@@ -111,11 +116,7 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:af99435bf961557ec7480252061516265" id="r_af99435bf961557ec7480252061516265"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classutil__intops_1_1StrongVector.html">util_intops::StrongVector</a>&lt; TreeNodeIndex, <a class="el" href="structoperations__research_1_1sat_1_1BinaryTreeNode.html">BinaryTreeNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af99435bf961557ec7480252061516265">tree_nodes</a></td></tr>
 <tr class="memitem:a03cef30df41b3d97f5a9bf384e652112" id="r_a03cef30df41b3d97f5a9bf384e652112"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDenseConnectedComponentsFinder.html">DenseConnectedComponentsFinder</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a03cef30df41b3d97f5a9bf384e652112">union_find</a></td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A data structure to store which boxes are overlapping the current sweep line. This uses a binary tree in a slight non-standard way: in a typical use of a binary tree the actual values are stored in the leaves and the intermediate nodes are there just to make finding the right leaf efficient. Here we do the opposite: the values are stored as high up in the tree as possible. For example, for a tree of size 8 a box that occupies the y interval [0, 7] will be stored as a single node at the root. In the same tree, a box that occupies [3, 7] will be stored with the nodes representing the [3, 4), [4, 6) and [6, 8) intervals. There is no difference on what is stored in the intermediate nodes or on the leaves. When the sweep line moves, we don't update the existing nodes on the tree. Thus, some nodes will become stale and will represent boxes that no longer overlap the sweep line. Those stale nodes get removed lazily. </p>
-
-<p class="definition">Definition at line <a class="el" href="diffn__util_8cc_source.html#l01656">1656</a> of file <a class="el" href="diffn__util_8cc_source.html">diffn_util.cc</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af908bdb59fda5f4a62657f476c19756c" name="af908bdb59fda5f4a62657f476c19756c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af908bdb59fda5f4a62657f476c19756c">&#9670;&#160;</a></span>SweepLineIntervalTree()</h2>
 

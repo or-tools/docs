@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,11 @@ $(function(){initNavTree('classoperations__research_1_1HamiltonianPathSolver.htm
   <div class="headertitle"><div class="title">operations_research::HamiltonianPathSolver&lt; CostType, CostFunction &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename CostType, typename CostFunction&gt;<br />
+class operations_research::HamiltonianPathSolver&lt; CostType, CostFunction &gt;</div>
+<p class="definition">Definition at line <a class="el" href="hamiltonian__path_8h_source.html#l00458">458</a> of file <a class="el" href="hamiltonian__path_8h_source.html">hamiltonian_path.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="hamiltonian__path_8h_source.html">hamiltonian_path.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-types" class="groupheader"><a id="pub-types" name="pub-types"></a>
@@ -125,11 +130,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af71c1510258301efccfc6e948ea06a82" id="r_af71c1510258301efccfc6e948ea06a82"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af71c1510258301efccfc6e948ea06a82">VerifiesTriangleInequality</a> ()</td></tr>
 <tr class="memdesc:af71c1510258301efccfc6e948ea06a82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the cost matrix verifies the triangle inequality.  <br /></td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;typename CostType, typename CostFunction&gt;<br />
-class operations_research::HamiltonianPathSolver&lt; CostType, CostFunction &gt;</div>
-<p class="definition">Definition at line <a class="el" href="hamiltonian__path_8h_source.html#l00458">458</a> of file <a class="el" href="hamiltonian__path_8h_source.html">hamiltonian_path.h</a>.</p>
-</div><a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Member Typedef Documentation</h2>
+<a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Member Typedef Documentation</h2>
 <a id="ab293ea14a0f4a4b8df374ec4d46610bd" name="ab293ea14a0f4a4b8df374ec4d46610bd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab293ea14a0f4a4b8df374ec4d46610bd">&#9670;&#160;</a></span>Integer</h2>
 
@@ -143,7 +144,7 @@ template&lt;typename CostType, typename CostFunction&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p><a class="el" href="classoperations__research_1_1HamiltonianPathSolver.html">HamiltonianPathSolver</a> computes a minimum Hamiltonian path starting at node 0 over a graph defined by a cost matrix. The cost function need not be symmetric. When the Hamiltonian path is closed, it's a Hamiltonian cycle, i.e. the algorithm solves the Traveling Salesman Problem. Example: std::vector&lt;std::vector&lt;int&gt;&gt; cost_mat; ... fill in cost matrix <a class="el" href="#a1e754bd18247e695674bbb1a3d1187f3">HamiltonianPathSolver&lt;int, std::vector&lt;std::vector&lt;int&gt;&gt;&gt;</a> mhp(cost_mat); ///&lt; no computation done printf("%d\n", mhp.TravelingSalesmanCost()); ///&lt; computation done and stored In 2010, 26 was the maximum solvable with 24 Gigs of RAM, and it took several minutes. With this 2014 version of the code, one may go a little higher, but considering the complexity of the algorithm (n*2^n), and that there are very good ways to solve TSP with more than 32 cities, we limit ourselves to 32 cites. This is why we define the type <a class="el" href="#a0e5f40eb1d5f56e36367d94f94f8de50">NodeSet</a> to be 32-bit wide. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000671">Todo</a></b></dt><dd>(user): remove this limitation by using pruning techniques. </dd></dl>
+<p><a class="el" href="classoperations__research_1_1HamiltonianPathSolver.html">HamiltonianPathSolver</a> computes a minimum Hamiltonian path starting at node 0 over a graph defined by a cost matrix. The cost function need not be symmetric. When the Hamiltonian path is closed, it's a Hamiltonian cycle, i.e. the algorithm solves the Traveling Salesman Problem. Example: std::vector&lt;std::vector&lt;int&gt;&gt; cost_mat; ... fill in cost matrix <a class="el" href="#a1e754bd18247e695674bbb1a3d1187f3">HamiltonianPathSolver&lt;int, std::vector&lt;std::vector&lt;int&gt;&gt;&gt;</a> mhp(cost_mat); ///&lt; no computation done printf("%d\n", mhp.TravelingSalesmanCost()); ///&lt; computation done and stored In 2010, 26 was the maximum solvable with 24 Gigs of RAM, and it took several minutes. With this 2014 version of the code, one may go a little higher, but considering the complexity of the algorithm (n*2^n), and that there are very good ways to solve TSP with more than 32 cities, we limit ourselves to 32 cites. This is why we define the type <a class="el" href="#a0e5f40eb1d5f56e36367d94f94f8de50">NodeSet</a> to be 32-bit wide. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000670">Todo</a></b></dt><dd>(user): remove this limitation by using pruning techniques. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="hamiltonian__path_8h_source.html#l00480">480</a> of file <a class="el" href="hamiltonian__path_8h_source.html">hamiltonian_path.h</a>.</p>
 

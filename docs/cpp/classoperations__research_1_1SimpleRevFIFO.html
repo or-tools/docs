@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,12 @@ $(function(){initNavTree('classoperations__research_1_1SimpleRevFIFO.html','','c
   <div class="headertitle"><div class="title">operations_research::SimpleRevFIFO&lt; T &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;class T&gt;<br />
+class operations_research::SimpleRevFIFO&lt; T &gt;</div><p>This class represent a reversible FIFO structure. The main difference w.r.t a standard FIFO structure is that a <a class="el" href="classoperations__research_1_1Solver.html" title="For the time being, Solver is neither MT_SAFE nor MT_HOT.">Solver</a> is given as parameter to the modifiers such that the solver can store the backtrack information <a class="el" href="classoperations__research_1_1SimpleRevFIFO_1_1Iterator.html" title="This iterator is not stable with respect to deletion.">Iterator</a>'s traversing order should not be changed, as some algorithm depend on it to be consistent. It's main use is to store a list of demons in the various classes of variables. </p>
 
+<p class="definition">Definition at line <a class="el" href="constraint__solveri_8h_source.html#l00153">153</a> of file <a class="el" href="constraint__solveri_8h_source.html">constraint_solveri.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="constraint__solveri_8h_source.html">constraint_solveri.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
@@ -117,12 +123,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1cd3644228ae5a0f0ec3862d91276470" id="r_a1cd3644228ae5a0f0ec3862d91276470"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1cd3644228ae5a0f0ec3862d91276470">SetLastValue</a> (const T &amp;v)</td></tr>
 <tr class="memdesc:a1cd3644228ae5a0f0ec3862d91276470"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the last value in the FIFO.  <br /></td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;class T&gt;<br />
-class operations_research::SimpleRevFIFO&lt; T &gt;</div><p>This class represent a reversible FIFO structure. The main difference w.r.t a standard FIFO structure is that a <a class="el" href="classoperations__research_1_1Solver.html" title="For the time being, Solver is neither MT_SAFE nor MT_HOT.">Solver</a> is given as parameter to the modifiers such that the solver can store the backtrack information <a class="el" href="classoperations__research_1_1SimpleRevFIFO_1_1Iterator.html" title="This iterator is not stable with respect to deletion.">Iterator</a>'s traversing order should not be changed, as some algorithm depend on it to be consistent. It's main use is to store a list of demons in the various classes of variables. </p>
-
-<p class="definition">Definition at line <a class="el" href="constraint__solveri_8h_source.html#l00153">153</a> of file <a class="el" href="constraint__solveri_8h_source.html">constraint_solveri.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="afe165ef59bdd847273347b78397eed2d" name="afe165ef59bdd847273347b78397eed2d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afe165ef59bdd847273347b78397eed2d">&#9670;&#160;</a></span>SimpleRevFIFO()</h2>
 

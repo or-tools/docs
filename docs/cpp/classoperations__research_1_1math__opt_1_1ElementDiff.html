@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,19 +96,6 @@ $(function(){initNavTree('classoperations__research_1_1math__opt_1_1ElementDiff.
   <div class="headertitle"><div class="title">operations_research::math_opt::ElementDiff Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
-<p><code>#include &lt;<a class="el" href="element__diff_8h_source.html">element_diff.h</a>&gt;</code></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a9eb79476abb464eacfea1f3e445355e1" id="r_a9eb79476abb464eacfea1f3e445355e1"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9eb79476abb464eacfea1f3e445355e1">checkpoint</a> () const</td></tr>
-<tr class="memitem:a43a5ba7dd2a6941f60174ae930b5d437" id="r_a43a5ba7dd2a6941f60174ae930b5d437"><td class="memItemLeft" align="right" valign="top">const absl::flat_hash_set&lt; int64_t &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a43a5ba7dd2a6941f60174ae930b5d437">deleted</a> () const</td></tr>
-<tr class="memdesc:a43a5ba7dd2a6941f60174ae930b5d437"><td class="mdescLeft">&#160;</td><td class="mdescRight">The elements that have been deleted before the checkpoint.  <br /></td></tr>
-<tr class="memitem:abec505df8fd04a054e23c68583bf7ed2" id="r_abec505df8fd04a054e23c68583bf7ed2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abec505df8fd04a054e23c68583bf7ed2">Delete</a> (int64_t id)</td></tr>
-<tr class="memdesc:abec505df8fd04a054e23c68583bf7ed2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tracks the element <span class="tt">id</span> as deleted if it is less than the checkpoint.  <br /></td></tr>
-<tr class="memitem:a04bd1124a36fb6b3f6422c631e2897f1" id="r_a04bd1124a36fb6b3f6422c631e2897f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a04bd1124a36fb6b3f6422c631e2897f1">Advance</a> (int64_t <a class="el" href="#a9eb79476abb464eacfea1f3e445355e1">checkpoint</a>)</td></tr>
-<tr class="memdesc:a04bd1124a36fb6b3f6422c631e2897f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the checkpoint and clears all tracked deletions.  <br /></td></tr>
-</table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Tracks the ids of the elements in a model that:</p><ol type="1">
 <li>Are less than the checkpoint for this element.</li>
@@ -120,7 +108,20 @@ Public Member Functions</h2></td></tr>
 </ul>
 
 <p class="definition">Definition at line <a class="el" href="element__diff_8h_source.html#l00034">34</a> of file <a class="el" href="element__diff_8h_source.html">element_diff.h</a>.</p>
-</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+</div>
+<p><code>#include &lt;<a class="el" href="element__diff_8h_source.html">element_diff.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a9eb79476abb464eacfea1f3e445355e1" id="r_a9eb79476abb464eacfea1f3e445355e1"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9eb79476abb464eacfea1f3e445355e1">checkpoint</a> () const</td></tr>
+<tr class="memitem:a43a5ba7dd2a6941f60174ae930b5d437" id="r_a43a5ba7dd2a6941f60174ae930b5d437"><td class="memItemLeft" align="right" valign="top">const absl::flat_hash_set&lt; int64_t &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a43a5ba7dd2a6941f60174ae930b5d437">deleted</a> () const</td></tr>
+<tr class="memdesc:a43a5ba7dd2a6941f60174ae930b5d437"><td class="mdescLeft">&#160;</td><td class="mdescRight">The elements that have been deleted before the checkpoint.  <br /></td></tr>
+<tr class="memitem:abec505df8fd04a054e23c68583bf7ed2" id="r_abec505df8fd04a054e23c68583bf7ed2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abec505df8fd04a054e23c68583bf7ed2">Delete</a> (int64_t id)</td></tr>
+<tr class="memdesc:abec505df8fd04a054e23c68583bf7ed2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tracks the element <span class="tt">id</span> as deleted if it is less than the checkpoint.  <br /></td></tr>
+<tr class="memitem:a04bd1124a36fb6b3f6422c631e2897f1" id="r_a04bd1124a36fb6b3f6422c631e2897f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a04bd1124a36fb6b3f6422c631e2897f1">Advance</a> (int64_t <a class="el" href="#a9eb79476abb464eacfea1f3e445355e1">checkpoint</a>)</td></tr>
+<tr class="memdesc:a04bd1124a36fb6b3f6422c631e2897f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the checkpoint and clears all tracked deletions.  <br /></td></tr>
+</table>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="a04bd1124a36fb6b3f6422c631e2897f1" name="a04bd1124a36fb6b3f6422c631e2897f1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a04bd1124a36fb6b3f6422c631e2897f1">&#9670;&#160;</a></span>Advance()</h2>
 

@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,28 @@ $(function(){initNavTree('classoperations__research_1_1bop_1_1PortfolioOptimizer
   <div class="headertitle"><div class="title">operations_research::bop::PortfolioOptimizer Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This class implements a portfolio optimizer. The portfolio currently includes all the following optimizers:</p><ul>
+<li>SAT_CORE_BASED</li>
+<li>SAT_LINEAR_SEARCH</li>
+<li>LINEAR_RELAXATION</li>
+<li>LOCAL_SEARCH</li>
+<li>RANDOM_FIRST_SOLUTION</li>
+<li>RANDOM_CONSTRAINT_LNS</li>
+<li>RANDOM_VARIABLE_LNS</li>
+<li>COMPLETE_LNS</li>
+<li>LP_FIRST_SOLUTION</li>
+<li>OBJECTIVE_FIRST_SOLUTION</li>
+<li>USER_GUIDED_FIRST_SOLUTION</li>
+<li>RANDOM_CONSTRAINT_LNS_GUIDED_BY_LP</li>
+<li>RANDOM_VARIABLE_LNS_GUIDED_BY_LP</li>
+<li>RELATION_GRAPH_LNS</li>
+<li>RELATION_GRAPH_LNS_GUIDED_BY_LP</li>
+</ul>
+<p>At each call of <a class="el" href="#a80a6069365c385e427e6e5a1c08d1757">Optimize()</a>, the portfolio optimizer selects the next optimizer to run and runs it. The selection is auto-adaptative, meaning that optimizers that succeeded more in the previous calls to Optimizer() are more likely to be selected. </p>
 
+<p class="definition">Definition at line <a class="el" href="bop__portfolio_8h_source.html#l00068">68</a> of file <a class="el" href="bop__portfolio_8h_source.html">bop_portfolio.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="bop__portfolio_8h_source.html">bop_portfolio.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for operations_research::bop::PortfolioOptimizer:</div>
@@ -109,10 +131,10 @@ Inheritance diagram for operations_research::bop::PortfolioOptimizer:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af615d1603a84ff0a9b37edd481876113" id="r_af615d1603a84ff0a9b37edd481876113"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af615d1603a84ff0a9b37edd481876113">PortfolioOptimizer</a> (const <a class="el" href="classoperations__research_1_1bop_1_1ProblemState.html">ProblemState</a> &amp;problem_state, const BopParameters &amp;parameters, const BopSolverOptimizerSet &amp;optimizer_set, absl::string_view <a class="el" href="classoperations__research_1_1bop_1_1BopOptimizerBase.html#ac8ee60f097e34724154fd5845ddda2e5">name</a>)</td></tr>
+<tr class="memitem:af615d1603a84ff0a9b37edd481876113" id="r_af615d1603a84ff0a9b37edd481876113"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af615d1603a84ff0a9b37edd481876113">PortfolioOptimizer</a> (const <a class="el" href="classoperations__research_1_1bop_1_1ProblemState.html">ProblemState</a> &amp;problem_state, const <a class="el" href="classoperations__research_1_1bop_1_1BopParameters.html">BopParameters</a> &amp;parameters, const <a class="el" href="classoperations__research_1_1bop_1_1BopSolverOptimizerSet.html">BopSolverOptimizerSet</a> &amp;optimizer_set, absl::string_view <a class="el" href="classoperations__research_1_1bop_1_1BopOptimizerBase.html#ac8ee60f097e34724154fd5845ddda2e5">name</a>)</td></tr>
 <tr class="memitem:af535552c9355f172feb0a015815c4632" id="r_af535552c9355f172feb0a015815c4632"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af535552c9355f172feb0a015815c4632">~PortfolioOptimizer</a> () override</td></tr>
 <tr class="memitem:a4211b7713500fe98359d2bf2cac7f03a" id="r_a4211b7713500fe98359d2bf2cac7f03a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4211b7713500fe98359d2bf2cac7f03a">ShouldBeRun</a> (const <a class="el" href="classoperations__research_1_1bop_1_1ProblemState.html">ProblemState</a> &amp;problem_state) const override</td></tr>
-<tr class="memitem:a80a6069365c385e427e6e5a1c08d1757" id="r_a80a6069365c385e427e6e5a1c08d1757"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoperations__research_1_1bop_1_1BopOptimizerBase.html#a881ed93d8f98879bbbfddf21807fff63">Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a80a6069365c385e427e6e5a1c08d1757">Optimize</a> (const BopParameters &amp;parameters, const <a class="el" href="classoperations__research_1_1bop_1_1ProblemState.html">ProblemState</a> &amp;problem_state, <a class="el" href="structoperations__research_1_1bop_1_1LearnedInfo.html">LearnedInfo</a> *learned_info, <a class="el" href="classoperations__research_1_1TimeLimit.html">TimeLimit</a> *<a class="el" href="linear__solver_2solve_8cc.html#a5924b2104bcf836d8c82d6d5b6bf4b36">time_limit</a>) override</td></tr>
+<tr class="memitem:a80a6069365c385e427e6e5a1c08d1757" id="r_a80a6069365c385e427e6e5a1c08d1757"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoperations__research_1_1bop_1_1BopOptimizerBase.html#a881ed93d8f98879bbbfddf21807fff63">Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a80a6069365c385e427e6e5a1c08d1757">Optimize</a> (const <a class="el" href="classoperations__research_1_1bop_1_1BopParameters.html">BopParameters</a> &amp;parameters, const <a class="el" href="classoperations__research_1_1bop_1_1ProblemState.html">ProblemState</a> &amp;problem_state, <a class="el" href="structoperations__research_1_1bop_1_1LearnedInfo.html">LearnedInfo</a> *learned_info, <a class="el" href="classoperations__research_1_1TimeLimit.html">TimeLimit</a> *<a class="el" href="linear__solver_2solve_8cc.html#a5924b2104bcf836d8c82d6d5b6bf4b36">time_limit</a>) override</td></tr>
 <tr class="inherit_header pub_methods_classoperations__research_1_1bop_1_1BopOptimizerBase"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classoperations__research_1_1bop_1_1BopOptimizerBase')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Member Functions inherited from <a class="el" href="classoperations__research_1_1bop_1_1BopOptimizerBase.html">operations_research::bop::BopOptimizerBase</a></td></tr>
 <tr class="memitem:a3191b249fa2ddde580c3bad5e17cfeb7 inherit pub_methods_classoperations__research_1_1bop_1_1BopOptimizerBase" id="r_a3191b249fa2ddde580c3bad5e17cfeb7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1bop_1_1BopOptimizerBase.html#a3191b249fa2ddde580c3bad5e17cfeb7">BopOptimizerBase</a> (absl::string_view <a class="el" href="classoperations__research_1_1bop_1_1BopOptimizerBase.html#ac8ee60f097e34724154fd5845ddda2e5">name</a>)</td></tr>
 <tr class="memitem:a162a3865c22498a562e88d89222b2816 inherit pub_methods_classoperations__research_1_1bop_1_1BopOptimizerBase" id="r_a162a3865c22498a562e88d89222b2816"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1bop_1_1BopOptimizerBase.html#a162a3865c22498a562e88d89222b2816">~BopOptimizerBase</a> ()</td></tr>
@@ -140,29 +162,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:ae475ce351666afe2ad29ea9b38d14b61 inherit pro_attribs_classoperations__research_1_1bop_1_1BopOptimizerBase" id="r_ae475ce351666afe2ad29ea9b38d14b61"><td class="memItemLeft" align="right" valign="top">const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1bop_1_1BopOptimizerBase.html#ae475ce351666afe2ad29ea9b38d14b61">name_</a></td></tr>
 <tr class="memitem:a2525e54b69557ddaab4035c4a70f3c94 inherit pro_attribs_classoperations__research_1_1bop_1_1BopOptimizerBase" id="r_a2525e54b69557ddaab4035c4a70f3c94"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoperations__research_1_1StatsGroup.html">StatsGroup</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1bop_1_1BopOptimizerBase.html#a2525e54b69557ddaab4035c4a70f3c94">stats_</a></td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This class implements a portfolio optimizer. The portfolio currently includes all the following optimizers:</p><ul>
-<li>SAT_CORE_BASED</li>
-<li>SAT_LINEAR_SEARCH</li>
-<li>LINEAR_RELAXATION</li>
-<li>LOCAL_SEARCH</li>
-<li>RANDOM_FIRST_SOLUTION</li>
-<li>RANDOM_CONSTRAINT_LNS</li>
-<li>RANDOM_VARIABLE_LNS</li>
-<li>COMPLETE_LNS</li>
-<li>LP_FIRST_SOLUTION</li>
-<li>OBJECTIVE_FIRST_SOLUTION</li>
-<li>USER_GUIDED_FIRST_SOLUTION</li>
-<li>FEASIBILITY_PUMP_FIRST_SOLUTION</li>
-<li>RANDOM_CONSTRAINT_LNS_GUIDED_BY_LP</li>
-<li>RANDOM_VARIABLE_LNS_GUIDED_BY_LP</li>
-<li>RELATION_GRAPH_LNS</li>
-<li>RELATION_GRAPH_LNS_GUIDED_BY_LP</li>
-</ul>
-<p>At each call of <a class="el" href="#a80a6069365c385e427e6e5a1c08d1757">Optimize()</a>, the portfolio optimizer selects the next optimizer to run and runs it. The selection is auto-adaptative, meaning that optimizers that succeeded more in the previous calls to Optimizer() are more likely to be selected. </p>
-
-<p class="definition">Definition at line <a class="el" href="bop__portfolio_8h_source.html#l00069">69</a> of file <a class="el" href="bop__portfolio_8h_source.html">bop_portfolio.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af615d1603a84ff0a9b37edd481876113" name="af615d1603a84ff0a9b37edd481876113"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af615d1603a84ff0a9b37edd481876113">&#9670;&#160;</a></span>PortfolioOptimizer()</h2>
 
@@ -177,12 +177,12 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const BopParameters &amp;</td>          <td class="paramname"><span class="paramname"><em>parameters</em></span>, </td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1bop_1_1BopParameters.html">BopParameters</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>parameters</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const BopSolverOptimizerSet &amp;</td>          <td class="paramname"><span class="paramname"><em>optimizer_set</em></span>, </td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1bop_1_1BopSolverOptimizerSet.html">BopSolverOptimizerSet</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>optimizer_set</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -238,7 +238,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="classoperations__research_1_1bop_1_1BopOptimizerBase.html#a881ed93d8f98879bbbfddf21807fff63">BopOptimizerBase::Status</a> operations_research::bop::PortfolioOptimizer::Optimize </td>
           <td>(</td>
-          <td class="paramtype">const BopParameters &amp;</td>          <td class="paramname"><span class="paramname"><em>parameters</em></span>, </td>
+          <td class="paramtype">const <a class="el" href="classoperations__research_1_1bop_1_1BopParameters.html">BopParameters</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>parameters</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -265,11 +265,11 @@ Additional Inherited Members</h2></td></tr>
 <p>Tries to infer more information about the problem state, i.e. reduces the gap by increasing the lower bound or finding a better solution. Returns SOLUTION_FOUND when a new solution with a better objective cost is found before a time limit. The learned information is cleared and the filled with any new information about the problem, e.g. a new lower bound.</p>
 <p>Preconditions: <a class="el" href="#a4211b7713500fe98359d2bf2cac7f03a">ShouldBeRun()</a> must returns true. </p>
 <p>ABORT means that this optimizer can't be run until we found a new solution.</p>
-<p>The gain is defined as 1 for the first solution. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000079">Todo</a></b></dt><dd>(user): Is 1 the right value? It might be better to use a percentage of the gap, or use the same gain as for the second solution. </dd></dl>
+<p>The gain is defined as 1 for the first solution. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000078">Todo</a></b></dt><dd>(user): Is 1 the right value? It might be better to use a percentage of the gap, or use the same gain as for the second solution. </dd></dl>
 <p>Stop the portfolio optimizer after too many unsuccessful calls.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000080">Todo</a></b></dt><dd>(user): don't penalize the <a class="el" href="classoperations__research_1_1bop_1_1SatCoreBasedOptimizer.html">SatCoreBasedOptimizer</a> or the <a class="el" href="classoperations__research_1_1bop_1_1LinearRelaxation.html">LinearRelaxation</a> when they improve the lower bound. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000081">Todo</a></b></dt><dd></dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000082">Todo</a></b></dt><dd>(user): Do we want to re-order the optimizers in the selector when the status is <a class="el" href="classoperations__research_1_1bop_1_1BopOptimizerBase.html#a881ed93d8f98879bbbfddf21807fff63ab5cd6094ad1ef99cfb1c8e77da1f59b1">BopOptimizerBase::INFORMATION_FOUND</a>? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000079">Todo</a></b></dt><dd>(user): don't penalize the <a class="el" href="classoperations__research_1_1bop_1_1SatCoreBasedOptimizer.html">SatCoreBasedOptimizer</a> or the <a class="el" href="classoperations__research_1_1bop_1_1LinearRelaxation.html">LinearRelaxation</a> when they improve the lower bound. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000080">Todo</a></b></dt><dd></dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000081">Todo</a></b></dt><dd>(user): Do we want to re-order the optimizers in the selector when the status is <a class="el" href="classoperations__research_1_1bop_1_1BopOptimizerBase.html#a881ed93d8f98879bbbfddf21807fff63ab5cd6094ad1ef99cfb1c8e77da1f59b1">BopOptimizerBase::INFORMATION_FOUND</a>? </dd></dl>
 
 <p>Implements <a class="el" href="classoperations__research_1_1bop_1_1BopOptimizerBase.html#a73892ece560eb1d202823c65ba5aaeaa">operations_research::bop::BopOptimizerBase</a>.</p>
 
@@ -304,7 +304,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classoperations__research_1_1bop_1_1BopOptimizerBase.html#ab2044a69e49c1de2a0bc3f6a855487c2">operations_research::bop::BopOptimizerBase</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="bop__portfolio_8h_source.html#l00077">77</a> of file <a class="el" href="bop__portfolio_8h_source.html">bop_portfolio.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bop__portfolio_8h_source.html#l00076">76</a> of file <a class="el" href="bop__portfolio_8h_source.html">bop_portfolio.h</a>.</p>
 
 </div>
 </div>

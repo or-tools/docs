@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,15 @@ $(function(){initNavTree('classoperations__research_1_1DimensionChecker.html',''
   <div class="headertitle"><div class="title">operations_research::DimensionChecker Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This checker enforces dimension requirements. A dimension requires that there is some valuation of cumul and demand such that for all paths:</p><ul>
+<li>cumul[A] is in interval node_capacity[A]</li>
+<li>if arc A -&gt; B is on a path of path_class p, then cumul[A] + demand[p](A, B) = cumul[B].</li>
+<li>if A is on a path of class p, then cumul[A] must be inside interval path_capacity[path]. </li>
+</ul>
 
+<p class="definition">Definition at line <a class="el" href="routing__filters_8h_source.html#l00491">491</a> of file <a class="el" href="routing__filters_8h_source.html">routing_filters.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="routing__filters_8h_source.html">routing_filters.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
@@ -113,15 +122,7 @@ Public Member Functions</h2></td></tr>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:ad83860408de2f0ae903abff7f8fd35bc" id="r_ad83860408de2f0ae903abff7f8fd35bc"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad83860408de2f0ae903abff7f8fd35bc">kOptimalMinRangeSizeForRIQ</a> = 4</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This checker enforces dimension requirements. A dimension requires that there is some valuation of cumul and demand such that for all paths:</p><ul>
-<li>cumul[A] is in interval node_capacity[A]</li>
-<li>if arc A -&gt; B is on a path of path_class p, then cumul[A] + demand[p](A, B) = cumul[B].</li>
-<li>if A is on a path of class p, then cumul[A] must be inside interval path_capacity[path]. </li>
-</ul>
-
-<p class="definition">Definition at line <a class="el" href="routing__filters_8h_source.html#l00491">491</a> of file <a class="el" href="routing__filters_8h_source.html">routing_filters.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a0f3d75f9157801c9a32ab3e5d9bdc23e" name="a0f3d75f9157801c9a32ab3e5d9bdc23e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0f3d75f9157801c9a32ab3e5d9bdc23e">&#9670;&#160;</a></span>DimensionChecker()</h2>
 
@@ -160,7 +161,7 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000309">Todo</a></b></dt><dd>(user): the addition of kMinRangeSizeForRIQ slowed down <a class="el" href="#aaee47c0af958b234cd50bea2af25da7d">Check()</a>. See if using a template parameter makes it faster. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000308">Todo</a></b></dt><dd>(user): the addition of kMinRangeSizeForRIQ slowed down <a class="el" href="#aaee47c0af958b234cd50bea2af25da7d">Check()</a>. See if using a template parameter makes it faster. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="routing__filters_8cc_source.html#l03991">3991</a> of file <a class="el" href="routing__filters_8cc_source.html">routing_filters.cc</a>.</p>
 

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['tools_0',['OR-Tools',['../index.html',1,'']]]
+  ['python_20reference_0',['OR-Tools Python Reference',['../index.html',1,'']]]
 ];

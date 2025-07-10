@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,31 @@ $(function(){initNavTree('classortools_1_1math__opt_1_1python_1_1model_1_1Model.
   <div class="headertitle"><div class="title">ortools.math_opt.python.model.Model Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><pre class="fragment">An optimization model.
+
+The objective function of the model can be linear or quadratic, and some
+solvers can only handle linear objective functions. For this reason Model has
+three versions of all objective setting functions:
+  * A generic one (e.g. maximize()), which accepts linear or quadratic
+    expressions,
+  * a quadratic version (e.g. maximize_quadratic_objective()), which also
+    accepts linear or quadratic expressions and can be used to signal a
+    quadratic objective is possible, and
+  * a linear version (e.g. maximize_linear_objective()), which only accepts
+    linear expressions and can be used to avoid solve time errors for solvers
+    that do not accept quadratic objectives.
+
+Attributes:
+  name: A description of the problem, can be empty.
+  objective: A function to maximize or minimize.
+  storage: Implementation detail, do not access directly.
+  _variable_ids: Maps variable ids to Variable objects.
+  _linear_constraint_ids: Maps linear constraint ids to LinearConstraint
+    objects.
+</pre> 
+<p class="definition">Definition at line <a class="el" href="model_8py_source.html#l00117">117</a> of file <a class="el" href="model_8py_source.html">model.py</a>.</p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a3163c605fb47d4572c88c6b9479bcdec" id="r_a3163c605fb47d4572c88c6b9479bcdec"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3163c605fb47d4572c88c6b9479bcdec">__init__</a> (self, *, str <a class="el" href="#a36b48723bb22634076a5df2658cf27c3">name</a>=&quot;&quot;, str primary_objective_name=&quot;&quot;)</td></tr>
@@ -177,31 +202,7 @@ Public Member Functions</h2></td></tr>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a362e6bd2a4eaf8d3228e76549cb00646" id="r_a362e6bd2a4eaf8d3228e76549cb00646"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classortools_1_1math__opt_1_1python_1_1elemental_1_1elemental_1_1Elemental.html">elemental.Elemental</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a362e6bd2a4eaf8d3228e76549cb00646">_elemental</a></td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><pre class="fragment">An optimization model.
-
-The objective function of the model can be linear or quadratic, and some
-solvers can only handle linear objective functions. For this reason Model has
-three versions of all objective setting functions:
-  * A generic one (e.g. maximize()), which accepts linear or quadratic
-    expressions,
-  * a quadratic version (e.g. maximize_quadratic_objective()), which also
-    accepts linear or quadratic expressions and can be used to signal a
-    quadratic objective is possible, and
-  * a linear version (e.g. maximize_linear_objective()), which only accepts
-    linear expressions and can be used to avoid solve time errors for solvers
-    that do not accept quadratic objectives.
-
-Attributes:
-  name: A description of the problem, can be empty.
-  objective: A function to maximize or minimize.
-  storage: Implementation detail, do not access directly.
-  _variable_ids: Maps variable ids to Variable objects.
-  _linear_constraint_ids: Maps linear constraint ids to LinearConstraint
-    objects.
-</pre> 
-<p class="definition">Definition at line <a class="el" href="model_8py_source.html#l00117">117</a> of file <a class="el" href="model_8py_source.html">model.py</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a3163c605fb47d4572c88c6b9479bcdec" name="a3163c605fb47d4572c88c6b9479bcdec"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3163c605fb47d4572c88c6b9479bcdec">&#9670;&#160;</a></span>__init__()</h2>
 

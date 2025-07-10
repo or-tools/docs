@@ -1,0 +1,6 @@
+var structoperations__research_1_1math__opt_1_1ModelProto__AuxiliaryObjectivesEntry__DoNotUseDefaultTypeInternal =
+[
+    [ "ModelProto_AuxiliaryObjectivesEntry_DoNotUseDefaultTypeInternal", "structoperations__research_1_1math__opt_1_1ModelProto__AuxiliaryObjectivesEntry__DoNotUseDefaultTypeInternal.html#afb1fc3624c20e3609b8ef07e9ae57302", null ],
+    [ "~ModelProto_AuxiliaryObjectivesEntry_DoNotUseDefaultTypeInternal", "structoperations__research_1_1math__opt_1_1ModelProto__AuxiliaryObjectivesEntry__DoNotUseDefaultTypeInternal.html#a5333f37a8e2a2bce492cd0c5764e9fe9", null ],
+    [ "_instance", "structoperations__research_1_1math__opt_1_1ModelProto__AuxiliaryObjectivesEntry__DoNotUseDefaultTypeInternal.html#a8c62d68f2772322d50f20b2a212d4f9c", null ]
+];

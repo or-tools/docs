@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['tools_0',['OR-Tools',['../index.html',1,'']]]
+  ['or_20tools_20java_20reference_0',['OR-Tools Java Reference',['../index.html',1,'']]]
 ];

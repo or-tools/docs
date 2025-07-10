@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,15 +96,6 @@ $(function(){initNavTree('namespacegtl_1_1internal.html','',''); });
   <div class="headertitle"><div class="title">gtl::internal Namespace Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:Equiv" id="r_Equiv"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtl_1_1internal_1_1Equiv.html">Equiv</a></td></tr>
-<tr class="memitem:LogBase" id="r_LogBase"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgtl_1_1internal_1_1LogBase.html">LogBase</a></td></tr>
-<tr class="memitem:LogLegacyBase" id="r_LogLegacyBase"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgtl_1_1internal_1_1LogLegacyBase.html">LogLegacyBase</a></td></tr>
-<tr class="memitem:LogMultilineBase" id="r_LogMultilineBase"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgtl_1_1internal_1_1LogMultilineBase.html">LogMultilineBase</a></td></tr>
-<tr class="memitem:LogShortBase" id="r_LogShortBase"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgtl_1_1internal_1_1LogShortBase.html">LogShortBase</a></td></tr>
-</table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Several policy classes below determine how LogRangeToStream will format a range of items. A Policy class should have these methods:</p>
 <p>Called to print an individual container element. void Log(ostream &amp;out, const ElementT &amp;element) const;</p>
@@ -113,7 +105,16 @@ Classes</h2></td></tr>
 <p>Called before printing the remaining elements: void LogSeparator(ostream &amp;out) const;</p>
 <p>Returns the maximum number of elements to print: int64_t MaxElements() const;</p>
 <p>Called to print an indication that MaximumElements() was reached: void LogEllipsis(ostream &amp;out) const; </p>
-</div></div><!-- contents -->
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:Equiv" id="r_Equiv"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgtl_1_1internal_1_1Equiv.html">Equiv</a></td></tr>
+<tr class="memitem:LogBase" id="r_LogBase"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgtl_1_1internal_1_1LogBase.html">LogBase</a></td></tr>
+<tr class="memitem:LogLegacyBase" id="r_LogLegacyBase"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgtl_1_1internal_1_1LogLegacyBase.html">LogLegacyBase</a></td></tr>
+<tr class="memitem:LogMultilineBase" id="r_LogMultilineBase"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgtl_1_1internal_1_1LogMultilineBase.html">LogMultilineBase</a></td></tr>
+<tr class="memitem:LogShortBase" id="r_LogShortBase"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgtl_1_1internal_1_1LogShortBase.html">LogShortBase</a></td></tr>
+</table>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <div id="page-nav" class="page-nav-panel">
 <div id="page-nav-resize-handle"></div>

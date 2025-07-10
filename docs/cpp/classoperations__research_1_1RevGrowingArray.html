@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,12 @@ $(function(){initNavTree('classoperations__research_1_1RevGrowingArray.html','',
   <div class="headertitle"><div class="title">operations_research::RevGrowingArray&lt; T, C &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;class T, class C&gt;<br />
+class operations_research::RevGrowingArray&lt; T, C &gt;</div><p>This class is a reversible growing array. In can grow in both directions, and even accept negative indices. The objects stored have a type T. As it relies on the solver for reversibility, these objects can be up-casted to 'C' when using <a class="el" href="classoperations__research_1_1Solver.html#add51e06535f44461347658d8ce59979a" title="reversibility">Solver::SaveValue()</a>. </p>
 
+<p class="definition">Definition at line <a class="el" href="constraint__solveri_8h_source.html#l03839">3839</a> of file <a class="el" href="constraint__solveri_8h_source.html">constraint_solveri.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="constraint__solveri_8h_source.html">constraint_solveri.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -105,12 +111,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab6a6e1342c935370053cc07390e26a01" id="r_ab6a6e1342c935370053cc07390e26a01"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab6a6e1342c935370053cc07390e26a01">At</a> (int64_t index) const</td></tr>
 <tr class="memitem:ad9df8dbdd8715bdcf8e9c84f83504027" id="r_ad9df8dbdd8715bdcf8e9c84f83504027"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad9df8dbdd8715bdcf8e9c84f83504027">RevInsert</a> (<a class="el" href="classoperations__research_1_1Solver.html">Solver</a> *const solver, int64_t index, T value)</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;class T, class C&gt;<br />
-class operations_research::RevGrowingArray&lt; T, C &gt;</div><p>This class is a reversible growing array. In can grow in both directions, and even accept negative indices. The objects stored have a type T. As it relies on the solver for reversibility, these objects can be up-casted to 'C' when using <a class="el" href="classoperations__research_1_1Solver.html#add51e06535f44461347658d8ce59979a" title="reversibility">Solver::SaveValue()</a>. </p>
-
-<p class="definition">Definition at line <a class="el" href="constraint__solveri_8h_source.html#l03839">3839</a> of file <a class="el" href="constraint__solveri_8h_source.html">constraint_solveri.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a4593b52cf5073d32b36bbdfc77b8a685" name="a4593b52cf5073d32b36bbdfc77b8a685"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4593b52cf5073d32b36bbdfc77b8a685">&#9670;&#160;</a></span>RevGrowingArray()</h2>
 

@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,13 @@ $(function(){initNavTree('classoperations__research_1_1AffineRelation.html','','
   <div class="headertitle"><div class="title">operations_research::AffineRelation Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Union-Find algorithm to maintain "representative" for relations of the form: x = coeff * y + offset, where "coeff" and "offset" are integers. The variable x and y are represented by non-negative integer indices. The idea is to express variables in affine relation using as little different variables as possible (the representatives).</p>
+<p>IMPORTANT: If there are relations with std::abs(coeff) != 1, then some relations might be ignored. See <a class="el" href="#a5c2556af84128ec02d7f72be8c51a43d">TryAdd()</a> for more details.</p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002605">Todo</a></b></dt><dd>(user): it might be possible to do something fancier and drop less relations if all the affine relations are given before hand. </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="affine__relation_8h_source.html#l00037">37</a> of file <a class="el" href="affine__relation_8h_source.html">affine_relation.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="affine__relation_8h_source.html">affine_relation.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
@@ -114,13 +121,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad116a5684a399ac42bf9ddd3fe869e4e" id="r_ad116a5684a399ac42bf9ddd3fe869e4e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad116a5684a399ac42bf9ddd3fe869e4e">ClassSize</a> (int x) const</td></tr>
 <tr class="memdesc:ad116a5684a399ac42bf9ddd3fe869e4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the size of the class of x.  <br /></td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Union-Find algorithm to maintain "representative" for relations of the form: x = coeff * y + offset, where "coeff" and "offset" are integers. The variable x and y are represented by non-negative integer indices. The idea is to express variables in affine relation using as little different variables as possible (the representatives).</p>
-<p>IMPORTANT: If there are relations with std::abs(coeff) != 1, then some relations might be ignored. See <a class="el" href="#a5c2556af84128ec02d7f72be8c51a43d">TryAdd()</a> for more details.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002607">Todo</a></b></dt><dd>(user): it might be possible to do something fancier and drop less relations if all the affine relations are given before hand. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="affine__relation_8h_source.html#l00037">37</a> of file <a class="el" href="affine__relation_8h_source.html">affine_relation.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="abd2ba6d63b474d9c42adea0f4cb2e254" name="abd2ba6d63b474d9c42adea0f4cb2e254"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abd2ba6d63b474d9c42adea0f4cb2e254">&#9670;&#160;</a></span>AffineRelation()</h2>
 
@@ -362,7 +363,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Same as <a class="el" href="#a5c2556af84128ec02d7f72be8c51a43d">TryAdd()</a> with the option to disallow the use of a given representative. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002608">Todo</a></b></dt><dd>(user): It should be possible to optimize this code block a bit, for instance depending on the magnitude of new_coeff vs coeff_x, we may already know that one of the two merge is not possible. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo002606">Todo</a></b></dt><dd>(user): It should be possible to optimize this code block a bit, for instance depending on the magnitude of new_coeff vs coeff_x, we may already know that one of the two merge is not possible. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="affine__relation_8h_source.html#l00173">173</a> of file <a class="el" href="affine__relation_8h_source.html">affine_relation.h</a>.</p>
 

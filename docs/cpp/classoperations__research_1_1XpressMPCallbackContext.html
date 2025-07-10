@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,10 @@ $(function(){initNavTree('classoperations__research_1_1XpressMPCallbackContext.h
   <div class="headertitle"><div class="title">operations_research::XpressMPCallbackContext Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="dynheader">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="xpress__interface_8cc_source.html#l00216">216</a> of file <a class="el" href="xpress__interface_8cc_source.html">xpress_interface.cc</a>.</p>
+</div><div class="dynheader">
 Inheritance diagram for operations_research::XpressMPCallbackContext:</div>
 <div class="dyncontent">
  <div class="center">
@@ -124,10 +128,7 @@ Public Member Functions</h2></td></tr>
 Friends</h2></td></tr>
 <tr class="memitem:abc935c6e0cb353e2c61d38ad8af1ed5c" id="r_abc935c6e0cb353e2c61d38ad8af1ed5c"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abc935c6e0cb353e2c61d38ad8af1ed5c">XpressInterface</a></td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="xpress__interface_8cc_source.html#l00216">216</a> of file <a class="el" href="xpress__interface_8cc_source.html">xpress_interface.cc</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a70ee9c1898ee813ac16a08eec158d7b3" name="a70ee9c1898ee813ac16a08eec158d7b3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a70ee9c1898ee813ac16a08eec158d7b3">&#9670;&#160;</a></span>XpressMPCallbackContext()</h2>
 
@@ -352,7 +353,7 @@ Friends</h2></td></tr>
 <p>Call only when the event is kMipNode. </p>
 <p>Currently the XPRESS API does not handle clearing out previous hints</p>
 <p>hint is empty, do nothing</p>
-<p>Currently, XPRESS does not handle adding a new MIP solution inside the "cbintsol" callback (cb for new MIP solutions that is used here) So we have to prevent the user from adding a solution </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000843">Todo</a></b></dt><dd>: remove this workaround when it is handled in XPRESS </dd></dl>
+<p>Currently, XPRESS does not handle adding a new MIP solution inside the "cbintsol" callback (cb for new MIP solutions that is used here) So we have to prevent the user from adding a solution </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000842">Todo</a></b></dt><dd>: remove this workaround when it is handled in XPRESS </dd></dl>
 <p>XPRESS doesn't guarantee if nor when it will test the suggested solution. So we return NaN because we can't know the actual objective value.</p>
 
 <p>Implements <a class="el" href="classoperations__research_1_1MPCallbackContext.html#a6cafdd4f3dd4af801a93a42de09a2286">operations_research::MPCallbackContext</a>.</p>

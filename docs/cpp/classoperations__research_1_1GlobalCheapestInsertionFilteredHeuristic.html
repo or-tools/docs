@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,11 @@ $(function(){initNavTree('classoperations__research_1_1GlobalCheapestInsertionFi
   <div class="headertitle"><div class="title">operations_research::GlobalCheapestInsertionFilteredHeuristic Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Filter-based decision builder which builds a solution by inserting nodes at their cheapest position on any route; potentially several routes can be built in parallel. The cost of a position is computed from an arc-based cost callback. The node selected for insertion is the one which minimizes insertion cost. If a non null penalty evaluator is passed, making nodes unperformed is also taken into account with the corresponding penalty cost. </p>
 
+<p class="definition">Definition at line <a class="el" href="routing__search_8h_source.html#l00503">503</a> of file <a class="el" href="routing__search_8h_source.html">routing_search.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="routing__search_8h_source.html">routing_search.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for operations_research::GlobalCheapestInsertionFilteredHeuristic:</div>
@@ -202,11 +207,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_attribs_classoperations__research_1_1IntVarFilteredHeuristic"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_classoperations__research_1_1IntVarFilteredHeuristic')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Protected Attributes inherited from <a class="el" href="classoperations__research_1_1IntVarFilteredHeuristic.html">operations_research::IntVarFilteredHeuristic</a></td></tr>
 <tr class="memitem:a1a48f614cbb0c665f5908c04536742e1 inherit pro_attribs_classoperations__research_1_1IntVarFilteredHeuristic" id="r_a1a48f614cbb0c665f5908c04536742e1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoperations__research_1_1Assignment.html">Assignment</a> *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1IntVarFilteredHeuristic.html#a1a48f614cbb0c665f5908c04536742e1">assignment_</a></td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Filter-based decision builder which builds a solution by inserting nodes at their cheapest position on any route; potentially several routes can be built in parallel. The cost of a position is computed from an arc-based cost callback. The node selected for insertion is the one which minimizes insertion cost. If a non null penalty evaluator is passed, making nodes unperformed is also taken into account with the corresponding penalty cost. </p>
-
-<p class="definition">Definition at line <a class="el" href="routing__search_8h_source.html#l00503">503</a> of file <a class="el" href="routing__search_8h_source.html">routing_search.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a1bd6f38abdc29d52875b7194404e67f7" name="a1bd6f38abdc29d52875b7194404e67f7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1bd6f38abdc29d52875b7194404e67f7">&#9670;&#160;</a></span>GlobalCheapestInsertionFilteredHeuristic()</h2>
 
@@ -306,7 +307,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Get neighbors.</p>
 <p>Store all empty vehicles in the empty_vehicle_type_curator_.</p>
 <p>Insert partially inserted pairs.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000367">Todo</a></b></dt><dd>(user): Adapt the pair insertions to also support seed and sequential insertion. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000366">Todo</a></b></dt><dd>(user): Adapt the pair insertions to also support seed and sequential insertion. </dd></dl>
 
 <p>Implements <a class="el" href="classoperations__research_1_1IntVarFilteredHeuristic.html#a2bb6eaa2c29bcf1894e96e9cae332ff7">operations_research::IntVarFilteredHeuristic</a>.</p>
 

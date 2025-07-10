@@ -1,0 +1,6 @@
+var structoperations__research_1_1math__opt_1_1HighsOptionsProto__BoolOptionsEntry__DoNotUseDefaultTypeInternal =
+[
+    [ "HighsOptionsProto_BoolOptionsEntry_DoNotUseDefaultTypeInternal", "structoperations__research_1_1math__opt_1_1HighsOptionsProto__BoolOptionsEntry__DoNotUseDefaultTypeInternal.html#a31f490d96b8090e200c89cb679772c03", null ],
+    [ "~HighsOptionsProto_BoolOptionsEntry_DoNotUseDefaultTypeInternal", "structoperations__research_1_1math__opt_1_1HighsOptionsProto__BoolOptionsEntry__DoNotUseDefaultTypeInternal.html#a66cff1940dff92414ecfb92f06e80a81", null ],
+    [ "_instance", "structoperations__research_1_1math__opt_1_1HighsOptionsProto__BoolOptionsEntry__DoNotUseDefaultTypeInternal.html#a2a5f4966f82333e3c6202873fb5540c9", null ]
+];

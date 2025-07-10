@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,20 +96,6 @@ $(function(){initNavTree('classMPSReaderTemplate.html','','classMPSReaderTemplat
   <div class="headertitle"><div class="title">MPSReaderTemplate&lt; DataWrapper &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
-<p><code>#include &lt;<a class="el" href="mps__reader__template_8h_source.html">mps_reader_template.h</a>&gt;</code></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 id="header-pub-types" class="groupheader"><a id="pub-types" name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:a61b5e15eb1e39d83fe5197c137d64786" id="r_a61b5e15eb1e39d83fe5197c137d64786"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a61b5e15eb1e39d83fe5197c137d64786">IndexType</a> = typename DataWrapper::IndexType</td></tr>
-<tr class="memdesc:a61b5e15eb1e39d83fe5197c137d64786"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type for row and column indices, as provided by <span class="tt">DataWrapper</span>.  <br /></td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a41dca56e2f203706f6b8eaeb13cadfea" id="r_a41dca56e2f203706f6b8eaeb13cadfea"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a41dca56e2f203706f6b8eaeb13cadfea">MPSReaderTemplate</a> ()</td></tr>
-<tr class="memitem:a15529cf8d70701db7f057de36471747f" id="r_a15529cf8d70701db7f057de36471747f"><td class="memItemLeft" align="right" valign="top">absl::StatusOr&lt; MPSReaderFormat &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a15529cf8d70701db7f057de36471747f">ParseFile</a> (absl::string_view file_name, DataWrapper *data, MPSReaderFormat form=MPSReaderFormat::kAutoDetect)</td></tr>
-<tr class="memitem:aa49430ceffef60e195a77a20aaf455df" id="r_aa49430ceffef60e195a77a20aaf455df"><td class="memItemLeft" align="right" valign="top">absl::StatusOr&lt; MPSReaderFormat &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa49430ceffef60e195a77a20aaf455df">ParseString</a> (absl::string_view source, DataWrapper *data, MPSReaderFormat form=MPSReaderFormat::kAutoDetect)</td></tr>
-</table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;class DataWrapper&gt;<br />
 class MPSReaderTemplate&lt; DataWrapper &gt;</div><p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><div class="fragment"><div class="line">http:<span class="comment">//www.apache.org/licenses/LICENSE-2.0</span></div>
@@ -140,7 +127,7 @@ class MPSReaderTemplate&lt; DataWrapper &gt;</div><p>Licensed under the Apache L
     </span></p>
 <dl class="section note"><dt>Note</dt><dd>the example, and the previous paragraph, mention that data must start at given columns in the text. This is commonly referred to as 'fixed' (width) format. In this version of the format, variable and constraint names can contain white space, but they are limited to a maximum width of eight characters, and each <span class="tt">section</span> marker must start at column 1.</dd></dl>
 <p>A common alternative is the so-called <span class="tt">free</span> format; where names can have (in principle) arbitrary length, but no white space, and where each data or section line can start with or without white space. In both cases the number of fields in each line remain unchanged. This implementation supports both <span class="tt">fixed</span> and <span class="tt">free</span> (width) format.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000866">Todo</a></b></dt><dd>(b/284163180): The current behavior is that in free format header lines do not start with white space, and data lines must start with at least one white space.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000865">Todo</a></b></dt><dd>(b/284163180): The current behavior is that in free format header lines do not start with white space, and data lines must start with at least one white space.</dd></dl>
 <p>Although there is no <span class="tt">one</span> format (as many solvers have expanded it over time to support their own generalizations to MIP; i.e. Mixed Integer (Linear) Programming; most support the sections shown in the previous example.</p>
 <p>In what follows, we describe the format and requirements for each of the supported sections. Note that sections must appear in the order in this description, and that optional sections can be skipped altogether, but if they do appear, the must do so in the order in this description.</p>
 <dl class="section note"><dt>Note</dt><dd>variables and constraints are declared in the order in which they appear in the file. Lines whose first character is '*' are considered comments and ignored; empty lines are also ignored.</dd></dl>
@@ -171,7 +158,7 @@ class MPSReaderTemplate&lt; DataWrapper &gt;</div><p>Licensed under the Apache L
 <p>/ Represents a single line of an MPS file (or string), and its corresponding / fields. class MPSLineInfo { public: / Creates an <span class="tt">MPSLineInfo</span> for <span class="tt">line</span>, which should outlive this object. If / the line is a comment line, does not split the line into fields. Returns / InvalidArgumentError if: / * <span class="tt">free_form == false</span> and <span class="tt">line</span> contains a forbidden character ('\t') / after stripping trailing whitespace, / * <span class="tt">free_form == false</span> and <span class="tt">line</span> is not in fixed format, or / * if when splitting the line into fields too many fields are detected. static absl::StatusOr&lt;MPSLineInfo&gt; Create(int64_t line_num, bool free_form,
                                             absl::string_view line);</p>
 <p>/ Returns a view of the line. absl::string_view GetLine() const { return line_; }</p>
-<p>/ </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000867">Todo</a></b></dt><dd>(b/284163180): Fix handling of sections and data in <span class="tt">free_form</span>. / Returns true if the line defines a new section. bool IsNewSection() const { return line_[0] != '\0' &amp;&amp; line_[0] != ' '; }</dd></dl>
+<p>/ </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000866">Todo</a></b></dt><dd>(b/284163180): Fix handling of sections and data in <span class="tt">free_form</span>. / Returns true if the line defines a new section. bool IsNewSection() const { return line_[0] != '\0' &amp;&amp; line_[0] != ' '; }</dd></dl>
 <p>/ Returns the number of fields in the line. What constitutes a 'field' / depends on the format (fixed or free) used at creation time. See the / previous description of MPS fixed and free formats for more details. int GetFieldsSize() const { return fields_.size(); }</p>
 <p>/ Returns the word starting at position 0 in the line. If the line is empty, / or if the line starts with a space, returns <span class="tt">""</span>. absl::string_view GetFirstWord() const;</p>
 <p>/ Returns true if the line contains a comment (starting with '*') or / if it is a blank line. bool IsCommentOrBlank() const;</p>
@@ -205,7 +192,21 @@ class MPSReaderTemplate&lt; DataWrapper &gt;</div><p>Licensed under the Apache L
 </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="mps__reader__template_8h_source.html#l00494">494</a> of file <a class="el" href="mps__reader__template_8h_source.html">mps_reader_template.h</a>.</p>
-</div><a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Member Typedef Documentation</h2>
+</div>
+<p><code>#include &lt;<a class="el" href="mps__reader__template_8h_source.html">mps_reader_template.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-types" class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a61b5e15eb1e39d83fe5197c137d64786" id="r_a61b5e15eb1e39d83fe5197c137d64786"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a61b5e15eb1e39d83fe5197c137d64786">IndexType</a> = typename DataWrapper::IndexType</td></tr>
+<tr class="memdesc:a61b5e15eb1e39d83fe5197c137d64786"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type for row and column indices, as provided by <span class="tt">DataWrapper</span>.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a41dca56e2f203706f6b8eaeb13cadfea" id="r_a41dca56e2f203706f6b8eaeb13cadfea"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a41dca56e2f203706f6b8eaeb13cadfea">MPSReaderTemplate</a> ()</td></tr>
+<tr class="memitem:a15529cf8d70701db7f057de36471747f" id="r_a15529cf8d70701db7f057de36471747f"><td class="memItemLeft" align="right" valign="top">absl::StatusOr&lt; MPSReaderFormat &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a15529cf8d70701db7f057de36471747f">ParseFile</a> (absl::string_view file_name, DataWrapper *data, MPSReaderFormat form=MPSReaderFormat::kAutoDetect)</td></tr>
+<tr class="memitem:aa49430ceffef60e195a77a20aaf455df" id="r_aa49430ceffef60e195a77a20aaf455df"><td class="memItemLeft" align="right" valign="top">absl::StatusOr&lt; MPSReaderFormat &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa49430ceffef60e195a77a20aaf455df">ParseString</a> (absl::string_view source, DataWrapper *data, MPSReaderFormat form=MPSReaderFormat::kAutoDetect)</td></tr>
+</table>
+<a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Member Typedef Documentation</h2>
 <a id="a61b5e15eb1e39d83fe5197c137d64786" name="a61b5e15eb1e39d83fe5197c137d64786"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a61b5e15eb1e39d83fe5197c137d64786">&#9670;&#160;</a></span>IndexType</h2>
 
@@ -243,7 +244,7 @@ template&lt;class DataWrapper&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000872">Todo</a></b></dt><dd>(user): Support 'SI' (semi integer). </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000871">Todo</a></b></dt><dd>(user): Support 'SI' (semi integer). </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="mps__reader__template_8h_source.html#l01174">1174</a> of file <a class="el" href="mps__reader__template_8h_source.html">mps_reader_template.h</a>.</p>
 

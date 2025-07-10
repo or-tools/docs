@@ -1,0 +1,6 @@
+var structoperations__research_1_1RoutingSearchParameters__ImprovementSearchLimitParametersDefaultTypeInternal =
+[
+    [ "RoutingSearchParameters_ImprovementSearchLimitParametersDefaultTypeInternal", "structoperations__research_1_1RoutingSearchParameters__ImprovementSearchLimitParametersDefaultTypeInternal.html#a084f4ace11f4b9a47a9991a6786cf1fa", null ],
+    [ "~RoutingSearchParameters_ImprovementSearchLimitParametersDefaultTypeInternal", "structoperations__research_1_1RoutingSearchParameters__ImprovementSearchLimitParametersDefaultTypeInternal.html#a1c45aadd021ab09d852670cb7c3a9712", null ],
+    [ "_instance", "structoperations__research_1_1RoutingSearchParameters__ImprovementSearchLimitParametersDefaultTypeInternal.html#a02211dea6b31c80b99da9f9bc1579f36", null ]
+];

@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,13 @@ $(function(){initNavTree('classoperations__research_1_1SolveInterrupter.html',''
   <div class="headertitle"><div class="title">operations_research::SolveInterrupter Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Interrupter used by solvers to know if/when they should interrupt the solve.</p>
+<p>Once triggered with <a class="el" href="#acd281d4bae468c0fa1a7d2f7116a3489">Interrupt()</a>, an interrupter can't be reset. It can be triggered from any thread.</p>
+<p>Thread-safety: APIs on this class are safe to call concurrently from multiple threads. </p>
 
+<p class="definition">Definition at line <a class="el" href="solve__interrupter_8h_source.html#l00036">36</a> of file <a class="el" href="solve__interrupter_8h_source.html">solve_interrupter.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="solve__interrupter_8h_source.html">solve_interrupter.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-types" class="groupheader"><a id="pub-types" name="pub-types"></a>
@@ -114,13 +121,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abfbd4d5716b77c46b6a806b69392cf97" id="r_abfbd4d5716b77c46b6a806b69392cf97"><td class="memItemLeft" align="right" valign="top">CallbackId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abfbd4d5716b77c46b6a806b69392cf97">AddInterruptionCallback</a> (<a class="el" href="#a73b51bbdfb2e30ca305360491b842aca">Callback</a> callback) const</td></tr>
 <tr class="memitem:a31a6b134e122abaa0325858dc4253caf" id="r_a31a6b134e122abaa0325858dc4253caf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a31a6b134e122abaa0325858dc4253caf">RemoveInterruptionCallback</a> (CallbackId id) const</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Interrupter used by solvers to know if/when they should interrupt the solve.</p>
-<p>Once triggered with <a class="el" href="#acd281d4bae468c0fa1a7d2f7116a3489">Interrupt()</a>, an interrupter can't be reset. It can be triggered from any thread.</p>
-<p>Thread-safety: APIs on this class are safe to call concurrently from multiple threads. </p>
-
-<p class="definition">Definition at line <a class="el" href="solve__interrupter_8h_source.html#l00036">36</a> of file <a class="el" href="solve__interrupter_8h_source.html">solve_interrupter.h</a>.</p>
-</div><a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Member Typedef Documentation</h2>
+<a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Member Typedef Documentation</h2>
 <a id="a73b51bbdfb2e30ca305360491b842aca" name="a73b51bbdfb2e30ca305360491b842aca"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a73b51bbdfb2e30ca305360491b842aca">&#9670;&#160;</a></span>Callback</h2>
 

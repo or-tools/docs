@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,18 @@ $(function(){initNavTree('classoperations__research_1_1math__opt_1_1IdNameBiMap.
   <div class="headertitle"><div class="title">operations_research::math_opt::IdNameBiMap Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Maintains a bidirectional mapping between names and ids, e.g. as used for variables and linear constraints.</p>
+<p>The following invariants are enforced:</p><ul>
+<li>Ids must be unique and increasing (in insertion order).</li>
+<li>Ids are non-negative.</li>
+<li>Ids are not equal to std::numeric_limits&lt;int64_t&gt;::max()</li>
+<li>Ids removed are never reused.</li>
+<li>Names must be either empty or unique when built with check_names=true. </li>
+</ul>
 
+<p class="definition">Definition at line <a class="el" href="model__summary_8h_source.html#l00050">50</a> of file <a class="el" href="model__summary_8h_source.html">model_summary.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="model__summary_8h_source.html">model_summary.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -122,18 +134,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a2529a4eda56f8f35635954bfa3f11357"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is std::nullopt if check_names was false at construction.  <br /></td></tr>
 <tr class="memitem:a945436d6869f990086cec2764e64e6b3" id="r_a945436d6869f990086cec2764e64e6b3"><td class="memItemLeft" align="right" valign="top">absl::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a945436d6869f990086cec2764e64e6b3">BulkUpdate</a> (absl::Span&lt; const int64_t &gt; deleted_ids, absl::Span&lt; const int64_t &gt; new_ids, absl::Span&lt; const std::string *const &gt; names)</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Maintains a bidirectional mapping between names and ids, e.g. as used for variables and linear constraints.</p>
-<p>The following invariants are enforced:</p><ul>
-<li>Ids must be unique and increasing (in insertion order).</li>
-<li>Ids are non-negative.</li>
-<li>Ids are not equal to std::numeric_limits&lt;int64_t&gt;::max()</li>
-<li>Ids removed are never reused.</li>
-<li>Names must be either empty or unique when built with check_names=true. </li>
-</ul>
-
-<p class="definition">Definition at line <a class="el" href="model__summary_8h_source.html#l00050">50</a> of file <a class="el" href="model__summary_8h_source.html">model_summary.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a507c3aceeb0bc53ef0d46996bac28355" name="a507c3aceeb0bc53ef0d46996bac28355"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a507c3aceeb0bc53ef0d46996bac28355">&#9670;&#160;</a></span>IdNameBiMap() <span class="overload">[1/4]</span></h2>
 

@@ -1,0 +1,6 @@
+var structoperations__research_1_1GScipParameters__RealParamsEntry__DoNotUseDefaultTypeInternal =
+[
+    [ "GScipParameters_RealParamsEntry_DoNotUseDefaultTypeInternal", "structoperations__research_1_1GScipParameters__RealParamsEntry__DoNotUseDefaultTypeInternal.html#ad12f2845cb40bfee8d7da216efb953fc", null ],
+    [ "~GScipParameters_RealParamsEntry_DoNotUseDefaultTypeInternal", "structoperations__research_1_1GScipParameters__RealParamsEntry__DoNotUseDefaultTypeInternal.html#aa601c575bb2748f060a27de5e3f1d2b8", null ],
+    [ "_instance", "structoperations__research_1_1GScipParameters__RealParamsEntry__DoNotUseDefaultTypeInternal.html#a6dff57bb0fca5ddb37da2ad4b1c149e5", null ]
+];

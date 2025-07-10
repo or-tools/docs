@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,18 @@ $(function(){initNavTree('classoperations__research_1_1sat_1_1MinPropagator.html
   <div class="headertitle"><div class="title">operations_research::sat::MinPropagator Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A min (resp max) constraint of the form min == MIN(vars) can be decomposed into two inequalities: 1/ min &lt;= MIN(vars), which is the same as for all v in vars, "min &lt;= v". This can be taken care of by the LowerOrEqual(min, v) constraint. 2/ min &gt;= MIN(vars).</p>
+<p>And in turn, 2/ can be decomposed in: a) lb(min) &gt;= lb(MIN(vars)) = MIN(lb(var)); b) ub(min) &gt;= ub(MIN(vars)) and we can't propagate anything here unless there is just one possible variable 'v' that can be the min: for all u != v, lb(u) &gt; ub(min); In this case, ub(min) &gt;= ub(v).</p>
+<p>This constraint take care of a) and b). That is:</p><ul>
+<li>If the min of the lower bound of the vars increase, then the lower bound of the min_var will be &gt;= to it.</li>
+<li>If there is only one candidate for the min, then if the ub(min) decrease, the ub of the only candidate will be &lt;= to it.</li>
+</ul>
+<p>Complexity: This is a basic implementation in O(num_vars) on each call to <a class="el" href="#aa5ab4a97c4fe03823494846846b5accd">Propagate()</a>, which will happen each time one or more variables in vars_ changed.</p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001825">Todo</a></b></dt><dd>(user): Implement a more efficient algorithm when the need arise. </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="integer__expr_8h_source.html#l00221">221</a> of file <a class="el" href="integer__expr_8h_source.html">integer_expr.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="integer__expr_8h_source.html">integer_expr.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for operations_research::sat::MinPropagator:</div>
@@ -120,18 +132,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2050a6e5fb78d733582e3fe1beb7d9ed inherit pub_methods_classoperations__research_1_1sat_1_1PropagatorInterface" id="r_a2050a6e5fb78d733582e3fe1beb7d9ed"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1PropagatorInterface.html#a2050a6e5fb78d733582e3fe1beb7d9ed">~PropagatorInterface</a> ()=default</td></tr>
 <tr class="memitem:a8df009b18974352e71f74929860c2326 inherit pub_methods_classoperations__research_1_1sat_1_1PropagatorInterface" id="r_a8df009b18974352e71f74929860c2326"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoperations__research_1_1sat_1_1PropagatorInterface.html#a8df009b18974352e71f74929860c2326">IncrementalPropagate</a> (const std::vector&lt; int &gt; &amp;)</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A min (resp max) constraint of the form min == MIN(vars) can be decomposed into two inequalities: 1/ min &lt;= MIN(vars), which is the same as for all v in vars, "min &lt;= v". This can be taken care of by the LowerOrEqual(min, v) constraint. 2/ min &gt;= MIN(vars).</p>
-<p>And in turn, 2/ can be decomposed in: a) lb(min) &gt;= lb(MIN(vars)) = MIN(lb(var)); b) ub(min) &gt;= ub(MIN(vars)) and we can't propagate anything here unless there is just one possible variable 'v' that can be the min: for all u != v, lb(u) &gt; ub(min); In this case, ub(min) &gt;= ub(v).</p>
-<p>This constraint take care of a) and b). That is:</p><ul>
-<li>If the min of the lower bound of the vars increase, then the lower bound of the min_var will be &gt;= to it.</li>
-<li>If there is only one candidate for the min, then if the ub(min) decrease, the ub of the only candidate will be &lt;= to it.</li>
-</ul>
-<p>Complexity: This is a basic implementation in O(num_vars) on each call to <a class="el" href="#aa5ab4a97c4fe03823494846846b5accd">Propagate()</a>, which will happen each time one or more variables in vars_ changed.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001827">Todo</a></b></dt><dd>(user): Implement a more efficient algorithm when the need arise. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="integer__expr_8h_source.html#l00221">221</a> of file <a class="el" href="integer__expr_8h_source.html">integer_expr.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a7c5151cc2cd6b88bf03b9d213881968e" name="a7c5151cc2cd6b88bf03b9d213881968e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7c5151cc2cd6b88bf03b9d213881968e">&#9670;&#160;</a></span>MinPropagator() <span class="overload">[1/2]</span></h2>
 
@@ -241,7 +242,7 @@ Public Member Functions</h2></td></tr>
 <p>Propagation b)</p>
 <p>The reason is that all the other interval start after current_min_ub. And that min_ub has its current value.</p>
 <p>Conflict.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001819">Todo</a></b></dt><dd>(user): Not sure this code is useful since this will be detected by the fact that the [lb, ub] of the min is empty. It depends on the propagation order though, but probably the precedences propagator would propagate before this one. So change this to a CHECK? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo001817">Todo</a></b></dt><dd>(user): Not sure this code is useful since this will be detected by the fact that the [lb, ub] of the min is empty. It depends on the propagation order though, but probably the precedences propagator would propagate before this one. So change this to a CHECK? </dd></dl>
 <p>Almost the same as propagation b).</p>
 
 <p>Implements <a class="el" href="classoperations__research_1_1sat_1_1PropagatorInterface.html#a92be510851b26838f85adeec4a92a1b1">operations_research::sat::PropagatorInterface</a>.</p>

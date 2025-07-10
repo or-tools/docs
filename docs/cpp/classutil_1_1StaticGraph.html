@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,17 @@ $(function(){initNavTree('classutil_1_1StaticGraph.html','','classutil_1_1Static
   <div class="headertitle"><div class="title">util::StaticGraph&lt; NodeIndexType, ArcIndexType &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename NodeIndexType = int32_t, typename ArcIndexType = int32_t&gt;<br />
+class util::StaticGraph&lt; NodeIndexType, ArcIndexType &gt;</div><p>Most efficient implementation of a graph without reverse arcs:</p><ul>
+<li><a class="el" href="#a0b8444bcee7138b5702880a882d29283">Build()</a> needs to be called after the arc and node have been added.</li>
+<li>The graph is really compact memory wise: ArcIndexType * <a class="el" href="classutil_1_1BaseGraph.html#a37bfc797d615a301e75e2212de0dd11b">node_capacity()</a> + 2 * NodeIndexType * <a class="el" href="classutil_1_1BaseGraph.html#a4d620734ced86ff6b1b0faf61d6a2ed8">arc_capacity()</a>, but when <a class="el" href="#a0b8444bcee7138b5702880a882d29283">Build()</a> is called it uses a temporary extra space of ArcIndexType * <a class="el" href="classutil_1_1BaseGraph.html#a4d620734ced86ff6b1b0faf61d6a2ed8">arc_capacity()</a>.</li>
+<li>The construction is really fast.</li>
+</ul>
+<p>NOTE(user): if the need arises for very-well compressed graphs, we could shave NodeIndexType * <a class="el" href="classutil_1_1BaseGraph.html#a4d620734ced86ff6b1b0faf61d6a2ed8">arc_capacity()</a> off the permanent memory requirement with a similar class that doesn't support <a class="el" href="#a9615f3c590e39f40ca5158bd4f37b5b4">Tail()</a>, i.e. StaticGraphWithoutTail&lt;&gt;. This almost corresponds to a past implementation of StaticGraph&lt;&gt; @CL 116144340. </p>
 
+<p class="definition">Definition at line <a class="el" href="graph_8h_source.html#l00758">758</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="graph_8h_source.html">graph.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for util::StaticGraph&lt; NodeIndexType, ArcIndexType &gt;:</div>
@@ -176,17 +187,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a58fd651211672a6783b14b0da1b68b43 inherit pro_attribs_classutil_1_1BaseGraph" id="r_a58fd651211672a6783b14b0da1b68b43"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classutil_1_1BaseGraph.html#a58fd651211672a6783b14b0da1b68b43">arc_capacity_</a></td></tr>
 <tr class="memitem:a15e85276d915bdae22620a1f2b89cf5f inherit pro_attribs_classutil_1_1BaseGraph" id="r_a15e85276d915bdae22620a1f2b89cf5f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classutil_1_1BaseGraph.html#a15e85276d915bdae22620a1f2b89cf5f">const_capacities_</a></td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;typename NodeIndexType = int32_t, typename ArcIndexType = int32_t&gt;<br />
-class util::StaticGraph&lt; NodeIndexType, ArcIndexType &gt;</div><p>Most efficient implementation of a graph without reverse arcs:</p><ul>
-<li><a class="el" href="#a0b8444bcee7138b5702880a882d29283">Build()</a> needs to be called after the arc and node have been added.</li>
-<li>The graph is really compact memory wise: ArcIndexType * <a class="el" href="classutil_1_1BaseGraph.html#a37bfc797d615a301e75e2212de0dd11b">node_capacity()</a> + 2 * NodeIndexType * <a class="el" href="classutil_1_1BaseGraph.html#a4d620734ced86ff6b1b0faf61d6a2ed8">arc_capacity()</a>, but when <a class="el" href="#a0b8444bcee7138b5702880a882d29283">Build()</a> is called it uses a temporary extra space of ArcIndexType * <a class="el" href="classutil_1_1BaseGraph.html#a4d620734ced86ff6b1b0faf61d6a2ed8">arc_capacity()</a>.</li>
-<li>The construction is really fast.</li>
-</ul>
-<p>NOTE(user): if the need arises for very-well compressed graphs, we could shave NodeIndexType * <a class="el" href="classutil_1_1BaseGraph.html#a4d620734ced86ff6b1b0faf61d6a2ed8">arc_capacity()</a> off the permanent memory requirement with a similar class that doesn't support <a class="el" href="#a9615f3c590e39f40ca5158bd4f37b5b4">Tail()</a>, i.e. StaticGraphWithoutTail&lt;&gt;. This almost corresponds to a past implementation of StaticGraph&lt;&gt; @CL 116144340. </p>
-
-<p class="definition">Definition at line <a class="el" href="graph_8h_source.html#l00754">754</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="afe7f293d20a6f38c859af7c51ab1b105" name="afe7f293d20a6f38c859af7c51ab1b105"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afe7f293d20a6f38c859af7c51ab1b105">&#9670;&#160;</a></span>StaticGraph() <span class="overload">[1/2]</span></h2>
 
@@ -212,7 +213,7 @@ template&lt;typename NodeIndexType = int32_t, typename ArcIndexType = int32_t&gt
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="graph_8h_source.html#l00764">764</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="graph_8h_source.html#l00768">768</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
 
 </div>
 </div>
@@ -245,7 +246,7 @@ template&lt;typename NodeIndexType = int32_t, typename ArcIndexType = int32_t&gt
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="graph_8h_source.html#l00765">765</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="graph_8h_source.html#l00769">769</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
 
 </div>
 </div>
@@ -271,7 +272,7 @@ template&lt;typename NodeIndexType, typename ArcIndexType&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="graph_8h_source.html#l01419">1419</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="graph_8h_source.html#l01423">1423</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
 
 </div>
 </div>
@@ -292,7 +293,7 @@ template&lt;typename NodeIndexType, typename ArcIndexType&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="graph_8h_source.html#l01411">1411</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="graph_8h_source.html#l01415">1415</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
 
 </div>
 </div>
@@ -321,7 +322,7 @@ template&lt;typename NodeIndexType = int32_t, typename ArcIndexType = int32_t&gt
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="graph_8h_source.html#l00806">806</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="graph_8h_source.html#l00810">810</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
 
 </div>
 </div>
@@ -353,7 +354,7 @@ template&lt;typename NodeIndexType, typename ArcIndexType&gt; </div>
 <p>Restore in start_[i] the index of the first arc with tail &gt;= i.</p>
 <p>Recompute the correct tail_ vector</p>
 
-<p class="definition">Definition at line <a class="el" href="graph_8h_source.html#l01466">1466</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="graph_8h_source.html#l01470">1470</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
 
 </div>
 </div>
@@ -417,7 +418,7 @@ template&lt;class ArcContainer&gt; </div>
 
 <p><a class="el" href="classutil_1_1StaticGraph.html">StaticGraph</a> implementation -----------------------------------------------&mdash;. </p>
 
-<p class="definition">Definition at line <a class="el" href="graph_8h_source.html#l01372">1372</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="graph_8h_source.html#l01376">1376</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
 
 </div>
 </div>
@@ -438,7 +439,7 @@ template&lt;typename NodeIndexType, typename ArcIndexType&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="graph_8h_source.html#l01447">1447</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="graph_8h_source.html#l01451">1451</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
 
 </div>
 </div>
@@ -490,7 +491,7 @@ template&lt;typename NodeIndexType, typename ArcIndexType&gt; </div>
 </div><div class="memdoc">
 <p>This loops over the heads of the OutgoingArcs(node). It is just a more convenient way to achieve this. Moreover this interface is used by some graph algorithms. </p>
 
-<p class="definition">Definition at line <a class="el" href="graph_8h_source.html#l01382">1382</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="graph_8h_source.html#l01386">1386</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
 
 </div>
 </div>
@@ -511,7 +512,7 @@ template&lt;typename NodeIndexType, typename ArcIndexType&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="graph_8h_source.html#l01389">1389</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="graph_8h_source.html#l01393">1393</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
 
 </div>
 </div>
@@ -540,7 +541,7 @@ template&lt;typename NodeIndexType = int32_t, typename ArcIndexType = int32_t&gt
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="graph_8h_source.html#l00785">785</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="graph_8h_source.html#l00789">789</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
 
 </div>
 </div>
@@ -573,7 +574,7 @@ template&lt;typename NodeIndexType = int32_t, typename ArcIndexType = int32_t&gt
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="graph_8h_source.html#l00788">788</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="graph_8h_source.html#l00792">792</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
 
 </div>
 </div>
@@ -602,7 +603,7 @@ template&lt;typename NodeIndexType, typename ArcIndexType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="graph_8h_source.html#l01403">1403</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="graph_8h_source.html#l01407">1407</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
 
 </div>
 </div>
@@ -631,7 +632,7 @@ template&lt;typename NodeIndexType, typename ArcIndexType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="graph_8h_source.html#l01395">1395</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="graph_8h_source.html#l01399">1399</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
 
 </div>
 </div>
@@ -652,7 +653,7 @@ template&lt;typename NodeIndexType, typename ArcIndexType&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="graph_8h_source.html#l01440">1440</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="graph_8h_source.html#l01444">1444</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
 
 </div>
 </div>

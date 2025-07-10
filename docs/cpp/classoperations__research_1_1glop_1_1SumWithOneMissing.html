@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,14 @@ $(function(){initNavTree('classoperations__research_1_1glop_1_1SumWithOneMissing
   <div class="headertitle"><div class="title">operations_research::glop::SumWithOneMissing&lt; supported_infinity_is_positive &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;bool supported_infinity_is_positive&gt;<br />
+class operations_research::glop::SumWithOneMissing&lt; supported_infinity_is_positive &gt;</div><p>Given N <a class="el" href="namespaceoperations__research_1_1glop.html#a0cac235bd48eb39d15cc101516dc1e90">Fractional</a> elements, this class maintains their sum and can provide, for each element X, the sum of all elements except X. The subtelty is that it works well with infinities: for example, if there is exactly one infinite element X, then SumWithout(X) will be finite.</p>
+<p>Two flavors of this class are provided: <a class="el" href="namespaceoperations__research_1_1glop.html#a4ee0884ca39d797357187ce178839dc2">SumWithPositiveInfiniteAndOneMissing</a> supports calling <a class="el" href="#a37cd40cbe56e690b3bebb04e3bf310d1">Add()</a> with normal numbers and positive infinities (and will DCHECK() that), and <a class="el" href="namespaceoperations__research_1_1glop.html#adfda9cd0e944b3b944450b35de987040">SumWithNegativeInfiniteAndOneMissing</a> does the same with negative infinities.</p>
+<p>The numerical accuracy suffers however. If X is 1e100 and SumWithout(X) should be 1e-100, then the value actually returned by SumWithout(X) is likely to be wrong. </p>
 
+<p class="definition">Definition at line <a class="el" href="lp__data_2lp__utils_8h_source.html#l00333">333</a> of file <a class="el" href="lp__data_2lp__utils_8h_source.html">lp_utils.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="lp__data_2lp__utils_8h_source.html">lp_utils.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -108,14 +116,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af79d68403fc068ad64db82cb00e54bf8" id="r_af79d68403fc068ad64db82cb00e54bf8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceoperations__research_1_1glop.html#a0cac235bd48eb39d15cc101516dc1e90">Fractional</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af79d68403fc068ad64db82cb00e54bf8">SumWithoutLb</a> (<a class="el" href="namespaceoperations__research_1_1glop.html#a0cac235bd48eb39d15cc101516dc1e90">Fractional</a> c) const</td></tr>
 <tr class="memitem:ab8f7376978691a7fe55d4fc0dc64219e" id="r_ab8f7376978691a7fe55d4fc0dc64219e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceoperations__research_1_1glop.html#a0cac235bd48eb39d15cc101516dc1e90">Fractional</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab8f7376978691a7fe55d4fc0dc64219e">SumWithoutUb</a> (<a class="el" href="namespaceoperations__research_1_1glop.html#a0cac235bd48eb39d15cc101516dc1e90">Fractional</a> c) const</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;bool supported_infinity_is_positive&gt;<br />
-class operations_research::glop::SumWithOneMissing&lt; supported_infinity_is_positive &gt;</div><p>Given N <a class="el" href="namespaceoperations__research_1_1glop.html#a0cac235bd48eb39d15cc101516dc1e90">Fractional</a> elements, this class maintains their sum and can provide, for each element X, the sum of all elements except X. The subtelty is that it works well with infinities: for example, if there is exactly one infinite element X, then SumWithout(X) will be finite.</p>
-<p>Two flavors of this class are provided: <a class="el" href="namespaceoperations__research_1_1glop.html#a4ee0884ca39d797357187ce178839dc2">SumWithPositiveInfiniteAndOneMissing</a> supports calling <a class="el" href="#a37cd40cbe56e690b3bebb04e3bf310d1">Add()</a> with normal numbers and positive infinities (and will DCHECK() that), and <a class="el" href="namespaceoperations__research_1_1glop.html#adfda9cd0e944b3b944450b35de987040">SumWithNegativeInfiniteAndOneMissing</a> does the same with negative infinities.</p>
-<p>The numerical accuracy suffers however. If X is 1e100 and SumWithout(X) should be 1e-100, then the value actually returned by SumWithout(X) is likely to be wrong. </p>
-
-<p class="definition">Definition at line <a class="el" href="lp__data_2lp__utils_8h_source.html#l00333">333</a> of file <a class="el" href="lp__data_2lp__utils_8h_source.html">lp_utils.h</a>.</p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a55eaf7ab2b044675559d5217bcf41195" name="a55eaf7ab2b044675559d5217bcf41195"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a55eaf7ab2b044675559d5217bcf41195">&#9670;&#160;</a></span>SumWithOneMissing()</h2>
 

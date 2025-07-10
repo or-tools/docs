@@ -8,7 +8,7 @@ var cp__model__solver_8h =
     [ "operations_research::sat::NewFeasibleSolutionLogCallback", "namespaceoperations__research_1_1sat.html#aa7e12611a48297771228ed1bb6971fe1", null ],
     [ "operations_research::sat::NewFeasibleSolutionObserver", "namespaceoperations__research_1_1sat.html#ad13630b39d297fb31cc3c151ff02dcc0", null ],
     [ "operations_research::sat::NewSatParameters", "namespaceoperations__research_1_1sat.html#a73b27f0cb65c9c616ac558095e3480dc", null ],
-    [ "operations_research::sat::NewSatParameters", "namespaceoperations__research_1_1sat.html#adbf4fa68898b3aaa2e6de2b5d3064580", null ],
+    [ "operations_research::sat::NewSatParameters", "namespaceoperations__research_1_1sat.html#a4bd54ab16ebc1bd6fa80d1e23ab79adc", null ],
     [ "operations_research::sat::Solve", "namespaceoperations__research_1_1sat.html#a09d851f944ab4f305c3d9f8df99b7bf8", null ],
     [ "operations_research::sat::SolveCpModel", "namespaceoperations__research_1_1sat.html#a9d67b9c66f1cb9c1dcc3415cd5af11bf", null ],
     [ "operations_research::sat::SolveWithParameters", "namespaceoperations__research_1_1sat.html#a6b3a52a3a85f4da3a03f3ec892fc3d37", null ],

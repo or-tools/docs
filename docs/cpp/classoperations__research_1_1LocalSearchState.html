@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -95,7 +96,11 @@ $(function(){initNavTree('classoperations__research_1_1LocalSearchState.html',''
   <div class="headertitle"><div class="title">operations_research::LocalSearchState Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A <a class="el" href="classoperations__research_1_1LocalSearchState.html">LocalSearchState</a> is a container for variables with domains that can be relaxed and tightened, saved and restored. It represents the solution state of a local search engine, and allows it to go from solution to solution by relaxing some variables to form a new subproblem, then tightening those variables to move to a new solution representation. That state may be saved to an internal copy, or reverted to the last saved internal copy. Relaxing a variable returns its bounds to their initial state. Tightening a variable's bounds may make its min larger than its max, in that case, the tightening function will return false, and the state will be marked as invalid. No other operations than <a class="el" href="#a9b1ef765de213fecab8473760318dfd1">Revert()</a> can be called on an invalid state: in particular, an invalid state cannot be saved. </p>
 
+<p class="definition">Definition at line <a class="el" href="constraint__solveri_8h_source.html#l02809">2809</a> of file <a class="el" href="constraint__solveri_8h_source.html">constraint_solveri.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="constraint__solveri_8h_source.html">constraint_solveri.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
@@ -132,11 +137,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a52f92121954e1cd441439dde8c6a23e8" id="r_a52f92121954e1cd441439dde8c6a23e8"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classoperations__research_1_1LocalSearchState_1_1Variable.html">Variable</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a52f92121954e1cd441439dde8c6a23e8">DummyVariable</a> ()</td></tr>
 <tr class="memdesc:a52f92121954e1cd441439dde8c6a23e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes a variable with no state, this is meant as a placeholder.  <br /></td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A <a class="el" href="classoperations__research_1_1LocalSearchState.html">LocalSearchState</a> is a container for variables with domains that can be relaxed and tightened, saved and restored. It represents the solution state of a local search engine, and allows it to go from solution to solution by relaxing some variables to form a new subproblem, then tightening those variables to move to a new solution representation. That state may be saved to an internal copy, or reverted to the last saved internal copy. Relaxing a variable returns its bounds to their initial state. Tightening a variable's bounds may make its min larger than its max, in that case, the tightening function will return false, and the state will be marked as invalid. No other operations than <a class="el" href="#a9b1ef765de213fecab8473760318dfd1">Revert()</a> can be called on an invalid state: in particular, an invalid state cannot be saved. </p>
-
-<p class="definition">Definition at line <a class="el" href="constraint__solveri_8h_source.html#l02809">2809</a> of file <a class="el" href="constraint__solveri_8h_source.html">constraint_solveri.h</a>.</p>
-</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="a368b88729ee8cf94896cdda4bce01dd3" name="a368b88729ee8cf94896cdda4bce01dd3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a368b88729ee8cf94896cdda4bce01dd3">&#9670;&#160;</a></span>AddVariableDomain()</h2>
 
@@ -241,7 +242,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000200">Todo</a></b></dt><dd>(user): When the class has more users, find a threshold ratio of saved/total domains under which a sparse clear would be more efficient for both <a class="el" href="#ab21fa79fdab637a71137bfb392c3bc42">Commit()</a> and <a class="el" href="#a9b1ef765de213fecab8473760318dfd1">Revert()</a>. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000199">Todo</a></b></dt><dd>(user): When the class has more users, find a threshold ratio of saved/total domains under which a sparse clear would be more efficient for both <a class="el" href="#ab21fa79fdab637a71137bfb392c3bc42">Commit()</a> and <a class="el" href="#a9b1ef765de213fecab8473760318dfd1">Revert()</a>. </dd></dl>
 <p>Clear domains trail.</p>
 <p>Clear constraint trail.</p>
 

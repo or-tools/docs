@@ -1,5 +1,6 @@
+<!-- HTML header for doxygen 1.14.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="light-mode">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
@@ -98,7 +99,100 @@ $(function(){initNavTree('namespaceutil.html','',''); });
 
 <p>A collections of i/o utilities for the <a class="el" href="#ae76339cb2dcd3bc05ad762146f91fdda" title="Defining the simplest Graph interface as Graph for convenience.">Graph</a> classes in ./graph.h.  
 <a href="#details">More...</a></p>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A collections of i/o utilities for the <a class="el" href="#ae76339cb2dcd3bc05ad762146f91fdda" title="Defining the simplest Graph interface as Graph for convenience.">Graph</a> classes in ./graph.h. </p>
+<p>A collections of utilities for the <a class="el" href="#ae76339cb2dcd3bc05ad762146f91fdda" title="Defining the simplest Graph interface as Graph for convenience.">Graph</a> classes in ./graph.h.</p>
+<p>Unit test utilities related to <a class="el" href="graph_8h.html">graph.h</a>.</p>
+<p>Helper classes to make it easy to implement range-based for loops.</p>
+<p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><div class="fragment"><div class="line">http:<span class="comment">//www.apache.org/licenses/LICENSE-2.0</span></div>
+</div><!-- fragment --><p> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.</p>
+<p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><div class="fragment"><div class="line">http:<span class="comment">//www.apache.org/licenses/LICENSE-2.0</span></div>
+</div><!-- fragment --><p> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. Provides faster division in situations where the same divisor is used repeatedly but is not known at compile time. For example, a hash table might not be sized until the model is loaded, but once loaded it is not resized for the life of the model. As this is not a compile time constant, the compiler can not optimize away the division.</p>
+<p>However the cost of precomputing coefficients when the hash table is sized can be dwarfed by the cycles saved avoiding hardware division on every lookup. See benchmark section below to estimate the breakeven point. This reduces the CPU penalty of non-power of two sized hash tables, bloom filters, etc.</p>
+<p>The following template and specializations are defined in this file:</p><ul>
+<li>ConstantDivisor&lt;T&gt;</li>
+<li>ConstantDivisor&lt;uint8_t&gt;</li>
+<li>ConstantDivisor&lt;uint16_t&gt;</li>
+<li>ConstantDivisor&lt;uint32_t&gt; (Only supports denominators &gt; 1)</li>
+<li>ConstantDivisor&lt;uint64_t&gt; (Only supports denominators &gt; 1)</li>
+</ul>
+<p>Fast div/mod implementation based on "Faster Remainder by Direct Computation: Applications to Compilers and
+Software Libraries" Daniel Lemire, Owen Kaser, Nathan Kurz arXiv:1902.01961</p>
+<p>Usage: uint64_t n; ///&lt; Not known at compile time! ConstantDivisor&lt;uint64_t&gt; divisor(n); uint64_t m = ...; EXPECT_EQ(m / n, divisor.div(m)); EXPECT_EQ(m % n, divisor.mod(m));</p>
+<p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><div class="fragment"><div class="line">http:<span class="comment">//www.apache.org/licenses/LICENSE-2.0</span></div>
+</div><!-- fragment --><p> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. These 3 functions give the full functionality of a BFS (Breadth-First-Search) on any type of <a class="el" href="#ae76339cb2dcd3bc05ad762146f91fdda" title="Defining the simplest Graph interface as Graph for convenience.">Graph</a> on dense integers that implements the [] operator to yield the adjacency list: graph[i] should yield a vector&lt;int&gt;-like object that lists all the (outgoing) neighbors of node #i.</p>
+<p>If your graph is undirected, it means that for each edge (i,j), graph[i] must contain j and graph[j] must contain i.</p>
+<p>Self-arcs and multi-arcs are supported, since they don't affect BFS.</p>
+<p>These functions are fast: they have the optimal asymptotic complexity, and are reasonably optimized. You may still get performance gains if you implement your own BFS for your application. In particular, this API is optimized for repeated calls to GetBFSShortestPath(); if you only care about GetBFSDistances() there exists more optimized implementations.</p>
+<p>ERRORS: This library does perform many checks at runtime, and returns an error Status if it detects a problem, but it doesn't fully protect you from crashes if the input is ill-formed in some ways this library can't check. For example, if calling graph[i] crashes for some i in 0..num_nodes-1, this won't detect it.</p>
+<p>Example: const int num_nodes = 3; vector&lt;vector&lt;int&gt;&gt; <a class="el" href="namespaceutil_1_1graph.html">graph(num_nodes)</a> = {{1}, {0}, {1, 2}}; ///&lt; 0↔1←2⟲ const int source = 1; vector&lt;int&gt; bfs_tree = GetBFSRootedTree(graph, num_nodes, source).value(); LOG(INFO) &lt;&lt; <a class="el" href="dump__vars_8h.html#a7f47f1b526f076743c5ffd6f4dc3141b">DUMP_VARS(GetBFSDistances(bfs_tree))</a>; for (int target : {0, 1, 2}) { vector&lt;int&gt; path = GetBFSShortestPath(bfs_tree, target); LOG(INFO) &lt;&lt; <a class="el" href="dump__vars_8h.html#a7f47f1b526f076743c5ffd6f4dc3141b">DUMP_VARS(path)</a>; }</p>
+<p>Would log this: GetBFSDistances(bfs_tree) = [1, 0, -1] path = [1, 0] path = [1] path = [] ///&lt; no path from 1 to 2.</p>
+<p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><div class="fragment"><div class="line">http:<span class="comment">//www.apache.org/licenses/LICENSE-2.0</span></div>
+</div><!-- fragment --><p> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><div class="fragment"><div class="line">http:<span class="comment">//www.apache.org/licenses/LICENSE-2.0</span></div>
+</div><!-- fragment --><p> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. Finds the connected components in an undirected graph: <a href="https://en.wikipedia.org/wiki/Connected_component_(graph_theory)">https://en.wikipedia.org/wiki/Connected_component_(graph_theory)</a></p>
+<p>If you have a fixed graph where the node are dense integers, use <a class="el" href="#a13f0e8f7e15873600cf8e395958c71e1">GetConnectedComponents()</a>: it's very fast and uses little memory.</p>
+<p>If you have a more dynamic scenario where you want to incrementally add nodes or edges and query the connectivity between them, use the [Dense]<a class="el" href="classConnectedComponentsFinder.html">ConnectedComponentsFinder</a> class, which uses the union-find algorithm aka disjoint sets: <a href="https://en.wikipedia.org/wiki/Disjoint-set_data_structure">https://en.wikipedia.org/wiki/Disjoint-set_data_structure</a>.</p>
+<p>Implementations of the method templates</p>
+<p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><div class="fragment"><div class="line">http:<span class="comment">//www.apache.org/licenses/LICENSE-2.0</span></div>
+</div><!-- fragment --><p> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. This file defines a generic graph interface on which most algorithms can be built and provides a few efficient implementations with a fast construction time. Its design is based on the experience acquired by the Operations Research team in their various graph algorithm implementations.</p>
+<p>Also see README.md#basegraph for a more graphical documentation of the concepts presented here.</p>
+<p>The main ideas are:</p><ul>
+<li><a class="el" href="#ae76339cb2dcd3bc05ad762146f91fdda" title="Defining the simplest Graph interface as Graph for convenience.">Graph</a> nodes and arcs are represented by integers.</li>
+<li>Node or arc annotations (weight, cost, ...) are not part of the graph class, they can be stored outside in one or more arrays and can be easily retrieved using a node or arc as an index.</li>
+</ul>
+<p>Terminology:</p><ul>
+<li>An arc of a graph is directed and going from a tail node to a head node.</li>
+<li>Some implementations also store 'reverse' arcs and can be used for undirected graph or flow-like algorithm.</li>
+<li>A node or arc index is 'valid' if it represents a node or arc of the graph. The validity ranges are always [0, num_nodes()) for nodes and [0, num_arcs()) for forward arcs. Reverse arcs are elements of [-num_arcs(), 0) and are also considered valid by the implementations that store them.</li>
+</ul>
+<p>Provided implementations:</p><ul>
+<li><a class="el" href="classutil_1_1ListGraph.html">ListGraph&lt;&gt;</a> for the simplest api. Also aliased to <a class="el" href="#ae76339cb2dcd3bc05ad762146f91fdda" title="Defining the simplest Graph interface as Graph for convenience.">util::Graph</a>.</li>
+<li><a class="el" href="classutil_1_1StaticGraph.html">StaticGraph&lt;&gt;</a> for performance, but require calling Build(), see below</li>
+<li><a class="el" href="classutil_1_1CompleteGraph.html">CompleteGraph&lt;&gt;</a> if you need a fully connected graph</li>
+<li><a class="el" href="classutil_1_1CompleteBipartiteGraph.html">CompleteBipartiteGraph&lt;&gt;</a> if you need a fully connected bipartite graph</li>
+<li><a class="el" href="classutil_1_1ReverseArcListGraph.html">ReverseArcListGraph&lt;&gt;</a> to add reverse arcs to <a class="el" href="classutil_1_1ListGraph.html">ListGraph&lt;&gt;</a></li>
+<li><a class="el" href="classutil_1_1ReverseArcStaticGraph.html">ReverseArcStaticGraph&lt;&gt;</a> to add reverse arcs to <a class="el" href="classutil_1_1StaticGraph.html">StaticGraph&lt;&gt;</a></li>
+</ul>
+<p>Utility classes &amp; functions:</p><ul>
+<li><a class="el" href="#a8c227a057c1ce9d46b1185abf77ad91e">Permute()</a> to permute an array according to a given permutation.</li>
+<li>SVector&lt;&gt; vector with index range [-size(), size()) for ReverseArcGraph.</li>
+</ul>
+<p>Basic usage: typedef <a class="el" href="classutil_1_1ListGraph.html">ListGraph&lt;&gt;</a> <a class="el" href="#ae76339cb2dcd3bc05ad762146f91fdda" title="Defining the simplest Graph interface as Graph for convenience.">Graph</a>; ///&lt; Choose a graph implementation. <a class="el" href="#ae76339cb2dcd3bc05ad762146f91fdda" title="Defining the simplest Graph interface as Graph for convenience.">Graph</a> graph; for (...) { graph.AddArc(tail, head); } ... for (int node = 0; node &lt; graph.num_nodes(); ++node) { for (const int arc : graph.OutgoingArcs(node)) { head = graph.Head(arc); tail = node; ///&lt; or graph.Tail(arc) which is fast but not as much. } }</p>
+<p>Iteration over the arcs touching a node:</p>
+<ul>
+<li>OutgoingArcs(node): All the forward arcs leaving the node.</li>
+<li>IncomingArcs(node): All the forward arcs arriving at the node.</li>
+</ul>
+<p>And two more involved ones:</p>
+<ul>
+<li>OutgoingOrOppositeIncomingArcs(node): This returns both the forward arcs leaving the node (i.e. OutgoingArcs(node)) and the reverse arcs leaving the node (i.e. the opposite arcs of the ones returned by IncomingArcs(node)).</li>
+<li>OppositeIncomingArcs(node): This returns the reverse arcs leaving the node.</li>
+</ul>
+<p>Note on iteration efficiency: When re-indexing the arcs it is not possible to have both the outgoing arcs and the incoming ones form a consecutive range.</p>
+<p>Iterators are invalidated by any operation that changes the graph (e.g. <span class="tt">AddArc()</span>).</p>
+<p>It is however possible to do so for the outgoing arcs and the opposite incoming arcs. It is why the OutgoingOrOppositeIncomingArcs() and OutgoingArcs() iterations are more efficient than the IncomingArcs() one. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000652">Todo</a></b></dt><dd>(b/385094969): Once we no longer use <span class="tt"><a class="el" href="one__tree__lower__bound_8h.html#a3947d19ac087ef2cd68c2409920339c4">Next()</a>/Ok()</span> for iterators, we can get rid of <span class="tt">limit_</span>, which will make iteration much more efficient.</dd></dl>
+<p>If you know the graph size in advance, this already set the number of nodes, reserve space for the arcs and check in DEBUG mode that you don't go over the bounds: <a class="el" href="#ae76339cb2dcd3bc05ad762146f91fdda" title="Defining the simplest Graph interface as Graph for convenience.">Graph</a> <a class="el" href="namespaceutil_1_1graph.html">graph(num_nodes, arc_capacity)</a>;</p>
+<p>Storing and using node annotations: vector&lt;bool&gt; is_visited(graph.num_nodes(), false); ... for (int node = 0; node &lt; graph.num_nodes(); ++node) { if (!is_visited[node]) ... }</p>
+<p>Storing and using arc annotations: vector&lt;int&gt; weights; for (...) { graph.AddArc(tail, head); weights.push_back(arc_weight); } ... for (const int arc : graph.OutgoingArcs(node)) { ... weights[arc] ...; }</p>
+<p>More efficient version: typedef <a class="el" href="classutil_1_1StaticGraph.html">StaticGraph&lt;&gt;</a> <a class="el" href="#ae76339cb2dcd3bc05ad762146f91fdda" title="Defining the simplest Graph interface as Graph for convenience.">Graph</a>; <a class="el" href="#ae76339cb2dcd3bc05ad762146f91fdda" title="Defining the simplest Graph interface as Graph for convenience.">Graph</a> <a class="el" href="namespaceutil_1_1graph.html">graph(num_nodes, arc_capacity)</a>; ///&lt; Optional, but help memory usage. vector&lt;int&gt; weights; weights.reserve(arc_capacity); ///&lt; Optional, but help memory usage. for (...) { graph.AddArc(tail, head); weights.push_back(arc_weight); } ... vector&lt;Graph::ArcIndex&gt; permutation; graph.Build(&amp;permutation); ///&lt; A static graph must be Build() before usage. Permute(permutation, &amp;weights); ///&lt; Build() may permute the arc index. ...</p>
+<p>Encoding an undirected graph: If you don't need arc annotation, then the best is to add two arcs for each edge (one in each direction) to a directed graph. Otherwise you can do the following.</p>
+<p>typedef ReverseArc... <a class="el" href="#ae76339cb2dcd3bc05ad762146f91fdda" title="Defining the simplest Graph interface as Graph for convenience.">Graph</a>; <a class="el" href="#ae76339cb2dcd3bc05ad762146f91fdda" title="Defining the simplest Graph interface as Graph for convenience.">Graph</a> graph; for (...) { graph.AddArc(tail, head); ///&lt; or graph.AddArc(head, tail) but not both. edge_annotations.push_back(value); } ... for (const <a class="el" href="classutil_1_1BaseGraph.html#af79cd652ad4b1e7142c1acbec35b01a6">Graph::NodeIndex</a> node : graph.AllNodes()) { for (const <a class="el" href="classutil_1_1BaseGraph.html#a68014ae932b1c5f50d7365cecae209fd">Graph::ArcIndex</a> arc : graph.OutgoingOrOppositeIncomingArcs(node)) { destination = graph.Head(arc); annotation = edge_annotations[arc &lt; 0 ? graph.OppositeArc(arc) : arc]; } }</p>
+<dl class="section note"><dt>Note</dt><dd>The graphs are primarily designed to be constructed first and then used because it covers most of the use cases. It is possible to extend the interface with more dynamicity (like removing arcs), but this is not done at this point. Note that a "dynamic" implementation will break some assumptions we make on what node or arc are valid and also on the indices returned by AddArc(). Some arguments for simplifying the interface at the cost of dynamicity are:</dd></dl>
+<ul>
+<li>It is always possible to construct a static graph from a dynamic one before calling a complex algo.</li>
+<li>If you really need a dynamic graph, maybe it is better to compute a graph property incrementally rather than calling an algorithm that starts from scratch each time.</li>
+</ul>
+<p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><div class="fragment"><div class="line">http:<span class="comment">//www.apache.org/licenses/LICENSE-2.0</span></div>
+</div><!-- fragment --><p> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. A collection of functions to be used in unit tests involving the ortools/graph/... library.</p>
+<p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><div class="fragment"><div class="line">http:<span class="comment">//www.apache.org/licenses/LICENSE-2.0</span></div>
+</div><!-- fragment --><p> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. This file provides topologically sorted traversal of the nodes of a directed acyclic graph (DAG) with up to INT_MAX nodes. It sorts ancestor nodes before their descendants. Multi-arcs are fine.</p>
+<p>If your graph is not a DAG and you're reading this, you are probably looking for <a class="el" href="strongly__connected__components_8h.html">ortools/graph/strongly_connected_components.h</a> which does the topological decomposition of a directed graph.</p>
+<p>USAGE:</p><ul>
+<li>If performance matters, use FastTopologicalSort().</li>
+<li>If your nodes are non-integers, or you need to break topological ties by node index (like "stable_sort"), use one of the <a class="el" href="#af88ca9916b6307f51dd4983ffd2896ca" title="Implementations of the &quot;simple API&quot; functions declared at the top.">DenseIntTopologicalSort()</a> or TopologicalSort variants (see below).</li>
+<li>If you need more control (cycle extraction?), or a step-by-step topological sort, see the <a class="el" href="classutil_1_1TopologicalSorter.html">TopologicalSorter</a> classes below. </li>
+</ul>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:graph" id="r_graph"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceutil_1_1graph.html">graph</a></td></tr>
@@ -264,100 +358,7 @@ Functions</h2></td></tr>
 <tr class="memitem:ae469c559688b92f36bae2788c2e6063e" id="r_ae469c559688b92f36bae2788c2e6063e"><td class="memTemplParams" colspan="2">template&lt;class <a class="el" href="#ae76339cb2dcd3bc05ad762146f91fdda">Graph</a>&gt; </td></tr>
 <tr class="memitem:ae469c559688b92f36bae2788c2e6063e template"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae469c559688b92f36bae2788c2e6063e">ComputeOnePossibleReverseArcMapping</a> (const <a class="el" href="#ae76339cb2dcd3bc05ad762146f91fdda">Graph</a> &amp;graph, bool die_if_not_symmetric)</td></tr>
 </table>
-<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A collections of i/o utilities for the <a class="el" href="#ae76339cb2dcd3bc05ad762146f91fdda" title="Defining the simplest Graph interface as Graph for convenience.">Graph</a> classes in ./graph.h. </p>
-<p>A collections of utilities for the <a class="el" href="#ae76339cb2dcd3bc05ad762146f91fdda" title="Defining the simplest Graph interface as Graph for convenience.">Graph</a> classes in ./graph.h.</p>
-<p>Unit test utilities related to <a class="el" href="graph_8h.html">graph.h</a>.</p>
-<p>Helper classes to make it easy to implement range-based for loops.</p>
-<p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><div class="fragment"><div class="line">http:<span class="comment">//www.apache.org/licenses/LICENSE-2.0</span></div>
-</div><!-- fragment --><p> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.</p>
-<p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><div class="fragment"><div class="line">http:<span class="comment">//www.apache.org/licenses/LICENSE-2.0</span></div>
-</div><!-- fragment --><p> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. Provides faster division in situations where the same divisor is used repeatedly but is not known at compile time. For example, a hash table might not be sized until the model is loaded, but once loaded it is not resized for the life of the model. As this is not a compile time constant, the compiler can not optimize away the division.</p>
-<p>However the cost of precomputing coefficients when the hash table is sized can be dwarfed by the cycles saved avoiding hardware division on every lookup. See benchmark section below to estimate the breakeven point. This reduces the CPU penalty of non-power of two sized hash tables, bloom filters, etc.</p>
-<p>The following template and specializations are defined in this file:</p><ul>
-<li>ConstantDivisor&lt;T&gt;</li>
-<li>ConstantDivisor&lt;uint8_t&gt;</li>
-<li>ConstantDivisor&lt;uint16_t&gt;</li>
-<li>ConstantDivisor&lt;uint32_t&gt; (Only supports denominators &gt; 1)</li>
-<li>ConstantDivisor&lt;uint64_t&gt; (Only supports denominators &gt; 1)</li>
-</ul>
-<p>Fast div/mod implementation based on "Faster Remainder by Direct Computation: Applications to Compilers and
-Software Libraries" Daniel Lemire, Owen Kaser, Nathan Kurz arXiv:1902.01961</p>
-<p>Usage: uint64_t n; ///&lt; Not known at compile time! ConstantDivisor&lt;uint64_t&gt; divisor(n); uint64_t m = ...; EXPECT_EQ(m / n, divisor.div(m)); EXPECT_EQ(m % n, divisor.mod(m));</p>
-<p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><div class="fragment"><div class="line">http:<span class="comment">//www.apache.org/licenses/LICENSE-2.0</span></div>
-</div><!-- fragment --><p> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. These 3 functions give the full functionality of a BFS (Breadth-First-Search) on any type of <a class="el" href="#ae76339cb2dcd3bc05ad762146f91fdda" title="Defining the simplest Graph interface as Graph for convenience.">Graph</a> on dense integers that implements the [] operator to yield the adjacency list: graph[i] should yield a vector&lt;int&gt;-like object that lists all the (outgoing) neighbors of node #i.</p>
-<p>If your graph is undirected, it means that for each edge (i,j), graph[i] must contain j and graph[j] must contain i.</p>
-<p>Self-arcs and multi-arcs are supported, since they don't affect BFS.</p>
-<p>These functions are fast: they have the optimal asymptotic complexity, and are reasonably optimized. You may still get performance gains if you implement your own BFS for your application. In particular, this API is optimized for repeated calls to GetBFSShortestPath(); if you only care about GetBFSDistances() there exists more optimized implementations.</p>
-<p>ERRORS: This library does perform many checks at runtime, and returns an error Status if it detects a problem, but it doesn't fully protect you from crashes if the input is ill-formed in some ways this library can't check. For example, if calling graph[i] crashes for some i in 0..num_nodes-1, this won't detect it.</p>
-<p>Example: const int num_nodes = 3; vector&lt;vector&lt;int&gt;&gt; <a class="el" href="namespaceutil_1_1graph.html">graph(num_nodes)</a> = {{1}, {0}, {1, 2}}; ///&lt; 0↔1←2⟲ const int source = 1; vector&lt;int&gt; bfs_tree = GetBFSRootedTree(graph, num_nodes, source).value(); LOG(INFO) &lt;&lt; <a class="el" href="dump__vars_8h.html#a7f47f1b526f076743c5ffd6f4dc3141b">DUMP_VARS(GetBFSDistances(bfs_tree))</a>; for (int target : {0, 1, 2}) { vector&lt;int&gt; path = GetBFSShortestPath(bfs_tree, target); LOG(INFO) &lt;&lt; <a class="el" href="dump__vars_8h.html#a7f47f1b526f076743c5ffd6f4dc3141b">DUMP_VARS(path)</a>; }</p>
-<p>Would log this: GetBFSDistances(bfs_tree) = [1, 0, -1] path = [1, 0] path = [1] path = [] ///&lt; no path from 1 to 2.</p>
-<p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><div class="fragment"><div class="line">http:<span class="comment">//www.apache.org/licenses/LICENSE-2.0</span></div>
-</div><!-- fragment --><p> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><div class="fragment"><div class="line">http:<span class="comment">//www.apache.org/licenses/LICENSE-2.0</span></div>
-</div><!-- fragment --><p> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. Finds the connected components in an undirected graph: <a href="https://en.wikipedia.org/wiki/Connected_component_(graph_theory)">https://en.wikipedia.org/wiki/Connected_component_(graph_theory)</a></p>
-<p>If you have a fixed graph where the node are dense integers, use <a class="el" href="#a13f0e8f7e15873600cf8e395958c71e1">GetConnectedComponents()</a>: it's very fast and uses little memory.</p>
-<p>If you have a more dynamic scenario where you want to incrementally add nodes or edges and query the connectivity between them, use the [Dense]<a class="el" href="classConnectedComponentsFinder.html">ConnectedComponentsFinder</a> class, which uses the union-find algorithm aka disjoint sets: <a href="https://en.wikipedia.org/wiki/Disjoint-set_data_structure">https://en.wikipedia.org/wiki/Disjoint-set_data_structure</a>.</p>
-<p>Implementations of the method templates</p>
-<p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><div class="fragment"><div class="line">http:<span class="comment">//www.apache.org/licenses/LICENSE-2.0</span></div>
-</div><!-- fragment --><p> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. This file defines a generic graph interface on which most algorithms can be built and provides a few efficient implementations with a fast construction time. Its design is based on the experience acquired by the Operations Research team in their various graph algorithm implementations.</p>
-<p>Also see README.md#basegraph for a more graphical documentation of the concepts presented here.</p>
-<p>The main ideas are:</p><ul>
-<li><a class="el" href="#ae76339cb2dcd3bc05ad762146f91fdda" title="Defining the simplest Graph interface as Graph for convenience.">Graph</a> nodes and arcs are represented by integers.</li>
-<li>Node or arc annotations (weight, cost, ...) are not part of the graph class, they can be stored outside in one or more arrays and can be easily retrieved using a node or arc as an index.</li>
-</ul>
-<p>Terminology:</p><ul>
-<li>An arc of a graph is directed and going from a tail node to a head node.</li>
-<li>Some implementations also store 'reverse' arcs and can be used for undirected graph or flow-like algorithm.</li>
-<li>A node or arc index is 'valid' if it represents a node or arc of the graph. The validity ranges are always [0, num_nodes()) for nodes and [0, num_arcs()) for forward arcs. Reverse arcs are elements of [-num_arcs(), 0) and are also considered valid by the implementations that store them.</li>
-</ul>
-<p>Provided implementations:</p><ul>
-<li><a class="el" href="classutil_1_1ListGraph.html">ListGraph&lt;&gt;</a> for the simplest api. Also aliased to <a class="el" href="#ae76339cb2dcd3bc05ad762146f91fdda" title="Defining the simplest Graph interface as Graph for convenience.">util::Graph</a>.</li>
-<li><a class="el" href="classutil_1_1StaticGraph.html">StaticGraph&lt;&gt;</a> for performance, but require calling Build(), see below</li>
-<li><a class="el" href="classutil_1_1CompleteGraph.html">CompleteGraph&lt;&gt;</a> if you need a fully connected graph</li>
-<li><a class="el" href="classutil_1_1CompleteBipartiteGraph.html">CompleteBipartiteGraph&lt;&gt;</a> if you need a fully connected bipartite graph</li>
-<li><a class="el" href="classutil_1_1ReverseArcListGraph.html">ReverseArcListGraph&lt;&gt;</a> to add reverse arcs to <a class="el" href="classutil_1_1ListGraph.html">ListGraph&lt;&gt;</a></li>
-<li><a class="el" href="classutil_1_1ReverseArcStaticGraph.html">ReverseArcStaticGraph&lt;&gt;</a> to add reverse arcs to <a class="el" href="classutil_1_1StaticGraph.html">StaticGraph&lt;&gt;</a></li>
-</ul>
-<p>Utility classes &amp; functions:</p><ul>
-<li><a class="el" href="#a8c227a057c1ce9d46b1185abf77ad91e">Permute()</a> to permute an array according to a given permutation.</li>
-<li>SVector&lt;&gt; vector with index range [-size(), size()) for ReverseArcGraph.</li>
-</ul>
-<p>Basic usage: typedef <a class="el" href="classutil_1_1ListGraph.html">ListGraph&lt;&gt;</a> <a class="el" href="#ae76339cb2dcd3bc05ad762146f91fdda" title="Defining the simplest Graph interface as Graph for convenience.">Graph</a>; ///&lt; Choose a graph implementation. <a class="el" href="#ae76339cb2dcd3bc05ad762146f91fdda" title="Defining the simplest Graph interface as Graph for convenience.">Graph</a> graph; for (...) { graph.AddArc(tail, head); } ... for (int node = 0; node &lt; graph.num_nodes(); ++node) { for (const int arc : graph.OutgoingArcs(node)) { head = graph.Head(arc); tail = node; ///&lt; or graph.Tail(arc) which is fast but not as much. } }</p>
-<p>Iteration over the arcs touching a node:</p>
-<ul>
-<li>OutgoingArcs(node): All the forward arcs leaving the node.</li>
-<li>IncomingArcs(node): All the forward arcs arriving at the node.</li>
-</ul>
-<p>And two more involved ones:</p>
-<ul>
-<li>OutgoingOrOppositeIncomingArcs(node): This returns both the forward arcs leaving the node (i.e. OutgoingArcs(node)) and the reverse arcs leaving the node (i.e. the opposite arcs of the ones returned by IncomingArcs(node)).</li>
-<li>OppositeIncomingArcs(node): This returns the reverse arcs leaving the node.</li>
-</ul>
-<p>Note on iteration efficiency: When re-indexing the arcs it is not possible to have both the outgoing arcs and the incoming ones form a consecutive range.</p>
-<p>Iterators are invalidated by any operation that changes the graph (e.g. <span class="tt">AddArc()</span>).</p>
-<p>It is however possible to do so for the outgoing arcs and the opposite incoming arcs. It is why the OutgoingOrOppositeIncomingArcs() and OutgoingArcs() iterations are more efficient than the IncomingArcs() one. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000653">Todo</a></b></dt><dd>(b/385094969): Once we no longer use <span class="tt"><a class="el" href="one__tree__lower__bound_8h.html#a3947d19ac087ef2cd68c2409920339c4">Next()</a>/Ok()</span> for iterators, we can get rid of <span class="tt">limit_</span>, which will make iteration much more efficient.</dd></dl>
-<p>If you know the graph size in advance, this already set the number of nodes, reserve space for the arcs and check in DEBUG mode that you don't go over the bounds: <a class="el" href="#ae76339cb2dcd3bc05ad762146f91fdda" title="Defining the simplest Graph interface as Graph for convenience.">Graph</a> <a class="el" href="namespaceutil_1_1graph.html">graph(num_nodes, arc_capacity)</a>;</p>
-<p>Storing and using node annotations: vector&lt;bool&gt; is_visited(graph.num_nodes(), false); ... for (int node = 0; node &lt; graph.num_nodes(); ++node) { if (!is_visited[node]) ... }</p>
-<p>Storing and using arc annotations: vector&lt;int&gt; weights; for (...) { graph.AddArc(tail, head); weights.push_back(arc_weight); } ... for (const int arc : graph.OutgoingArcs(node)) { ... weights[arc] ...; }</p>
-<p>More efficient version: typedef <a class="el" href="classutil_1_1StaticGraph.html">StaticGraph&lt;&gt;</a> <a class="el" href="#ae76339cb2dcd3bc05ad762146f91fdda" title="Defining the simplest Graph interface as Graph for convenience.">Graph</a>; <a class="el" href="#ae76339cb2dcd3bc05ad762146f91fdda" title="Defining the simplest Graph interface as Graph for convenience.">Graph</a> <a class="el" href="namespaceutil_1_1graph.html">graph(num_nodes, arc_capacity)</a>; ///&lt; Optional, but help memory usage. vector&lt;int&gt; weights; weights.reserve(arc_capacity); ///&lt; Optional, but help memory usage. for (...) { graph.AddArc(tail, head); weights.push_back(arc_weight); } ... vector&lt;Graph::ArcIndex&gt; permutation; graph.Build(&amp;permutation); ///&lt; A static graph must be Build() before usage. Permute(permutation, &amp;weights); ///&lt; Build() may permute the arc index. ...</p>
-<p>Encoding an undirected graph: If you don't need arc annotation, then the best is to add two arcs for each edge (one in each direction) to a directed graph. Otherwise you can do the following.</p>
-<p>typedef ReverseArc... <a class="el" href="#ae76339cb2dcd3bc05ad762146f91fdda" title="Defining the simplest Graph interface as Graph for convenience.">Graph</a>; <a class="el" href="#ae76339cb2dcd3bc05ad762146f91fdda" title="Defining the simplest Graph interface as Graph for convenience.">Graph</a> graph; for (...) { graph.AddArc(tail, head); ///&lt; or graph.AddArc(head, tail) but not both. edge_annotations.push_back(value); } ... for (const <a class="el" href="classutil_1_1BaseGraph.html#af79cd652ad4b1e7142c1acbec35b01a6">Graph::NodeIndex</a> node : graph.AllNodes()) { for (const <a class="el" href="classutil_1_1BaseGraph.html#a68014ae932b1c5f50d7365cecae209fd">Graph::ArcIndex</a> arc : graph.OutgoingOrOppositeIncomingArcs(node)) { destination = graph.Head(arc); annotation = edge_annotations[arc &lt; 0 ? graph.OppositeArc(arc) : arc]; } }</p>
-<dl class="section note"><dt>Note</dt><dd>The graphs are primarily designed to be constructed first and then used because it covers most of the use cases. It is possible to extend the interface with more dynamicity (like removing arcs), but this is not done at this point. Note that a "dynamic" implementation will break some assumptions we make on what node or arc are valid and also on the indices returned by AddArc(). Some arguments for simplifying the interface at the cost of dynamicity are:</dd></dl>
-<ul>
-<li>It is always possible to construct a static graph from a dynamic one before calling a complex algo.</li>
-<li>If you really need a dynamic graph, maybe it is better to compute a graph property incrementally rather than calling an algorithm that starts from scratch each time.</li>
-</ul>
-<p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><div class="fragment"><div class="line">http:<span class="comment">//www.apache.org/licenses/LICENSE-2.0</span></div>
-</div><!-- fragment --><p> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. A collection of functions to be used in unit tests involving the ortools/graph/... library.</p>
-<p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><div class="fragment"><div class="line">http:<span class="comment">//www.apache.org/licenses/LICENSE-2.0</span></div>
-</div><!-- fragment --><p> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. This file provides topologically sorted traversal of the nodes of a directed acyclic graph (DAG) with up to INT_MAX nodes. It sorts ancestor nodes before their descendants. Multi-arcs are fine.</p>
-<p>If your graph is not a DAG and you're reading this, you are probably looking for <a class="el" href="strongly__connected__components_8h.html">ortools/graph/strongly_connected_components.h</a> which does the topological decomposition of a directed graph.</p>
-<p>USAGE:</p><ul>
-<li>If performance matters, use FastTopologicalSort().</li>
-<li>If your nodes are non-integers, or you need to break topological ties by node index (like "stable_sort"), use one of the <a class="el" href="#af88ca9916b6307f51dd4983ffd2896ca" title="Implementations of the &quot;simple API&quot; functions declared at the top.">DenseIntTopologicalSort()</a> or TopologicalSort variants (see below).</li>
-<li>If you need more control (cycle extraction?), or a step-by-step topological sort, see the <a class="el" href="classutil_1_1TopologicalSorter.html">TopologicalSorter</a> classes below. </li>
-</ul>
-</div><a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Typedef Documentation</h2>
+<a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Typedef Documentation</h2>
 <a id="a508f85d59be33cb61fdc8a54d5e3288e" name="a508f85d59be33cb61fdc8a54d5e3288e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a508f85d59be33cb61fdc8a54d5e3288e">&#9670;&#160;</a></span>ArcHeadIterator</h2>
 
@@ -376,12 +377,12 @@ template&lt;typename <a class="el" href="#ae76339cb2dcd3bc05ad762146f91fdda">Gra
 <div class="line">                        &amp;<a class="code hl_function" href="classutil_1_1ListGraph.html#ad7d3d076d3c154d89f1eda855a34b487">Graph::Head</a>&gt;</div>
 <div class="ttc" id="aclassutil_1_1ArcPropertyIterator_html"><div class="ttname"><a href="classutil_1_1ArcPropertyIterator.html">util::ArcPropertyIterator</a></div><div class="ttdef"><b>Definition</b> <a href="graph_8h_source.html#l00317">graph.h:321</a></div></div>
 <div class="ttc" id="aclassutil_1_1BaseGraph_html_af79cd652ad4b1e7142c1acbec35b01a6"><div class="ttname"><a href="classutil_1_1BaseGraph.html#af79cd652ad4b1e7142c1acbec35b01a6">util::BaseGraph&lt; int32_t, int32_t, false &gt;::NodeIndex</a></div><div class="ttdeci">int32_t NodeIndex</div><div class="ttdef"><b>Definition</b> <a href="graph_8h_source.html#l00213">graph.h:213</a></div></div>
-<div class="ttc" id="aclassutil_1_1ListGraph_html_ad7d3d076d3c154d89f1eda855a34b487"><div class="ttname"><a href="classutil_1_1ListGraph.html#ad7d3d076d3c154d89f1eda855a34b487">util::ListGraph::Head</a></div><div class="ttdeci">NodeIndexType Head(ArcIndexType arc) const</div><div class="ttdef"><b>Definition</b> <a href="graph_8h_source.html#l01307">graph.h:1307</a></div></div>
-<div class="ttc" id="anamespaceutil_html_ae76339cb2dcd3bc05ad762146f91fdda"><div class="ttname"><a href="#ae76339cb2dcd3bc05ad762146f91fdda">util::Graph</a></div><div class="ttdeci">ListGraph Graph</div><div class="ttdoc">Defining the simplest Graph interface as Graph for convenience.</div><div class="ttdef"><b>Definition</b> <a href="graph_8h_source.html#l02049">graph.h:2049</a></div></div>
+<div class="ttc" id="aclassutil_1_1ListGraph_html_ad7d3d076d3c154d89f1eda855a34b487"><div class="ttname"><a href="classutil_1_1ListGraph.html#ad7d3d076d3c154d89f1eda855a34b487">util::ListGraph::Head</a></div><div class="ttdeci">NodeIndexType Head(ArcIndexType arc) const</div><div class="ttdef"><b>Definition</b> <a href="graph_8h_source.html#l01311">graph.h:1311</a></div></div>
+<div class="ttc" id="anamespaceutil_html_ae76339cb2dcd3bc05ad762146f91fdda"><div class="ttname"><a href="#ae76339cb2dcd3bc05ad762146f91fdda">util::Graph</a></div><div class="ttdeci">ListGraph Graph</div><div class="ttdoc">Defining the simplest Graph interface as Graph for convenience.</div><div class="ttdef"><b>Definition</b> <a href="graph_8h_source.html#l02053">graph.h:2053</a></div></div>
 </div><!-- fragment -->
 <p>An iterator that iterates on the heads of the arcs of another iterator. </p>
 
-<p class="definition">Definition at line <a class="el" href="graph_8h_source.html#l00361">361</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="graph_8h_source.html#l00367">367</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
 
 </div>
 </div>
@@ -405,7 +406,7 @@ template&lt;typename <a class="el" href="#ae76339cb2dcd3bc05ad762146f91fdda">Gra
 </div><!-- fragment -->
 <p>An iterator that iterates on the opposite arcs of another iterator. </p>
 
-<p class="definition">Definition at line <a class="el" href="graph_8h_source.html#l00367">367</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="graph_8h_source.html#l00373">373</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
 
 </div>
 </div>
@@ -457,7 +458,7 @@ template&lt;typename <a class="el" href="#ae76339cb2dcd3bc05ad762146f91fdda">Gra
 
 <p>Defining the simplest <a class="el" href="#ae76339cb2dcd3bc05ad762146f91fdda" title="Defining the simplest Graph interface as Graph for convenience.">Graph</a> interface as <a class="el" href="#ae76339cb2dcd3bc05ad762146f91fdda" title="Defining the simplest Graph interface as Graph for convenience.">Graph</a> for convenience. </p>
 
-<p class="definition">Definition at line <a class="el" href="graph_8h_source.html#l02049">2049</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="graph_8h_source.html#l02053">2053</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
 
 </div>
 </div>
@@ -486,7 +487,7 @@ template&lt;typename <a class="el" href="#ae76339cb2dcd3bc05ad762146f91fdda">Gra
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="graph__io_8h_source.html#l00041">41</a> of file <a class="el" href="graph__io_8h_source.html">graph_io.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="graph__io_8h_source.html#l00042">42</a> of file <a class="el" href="graph__io_8h_source.html">graph_io.h</a>.</p>
 
 </div>
 </div>
@@ -666,7 +667,7 @@ template&lt;class <a class="el" href="#ae76339cb2dcd3bc05ad762146f91fdda">Graph<
 <p>Reverse arc not in the map. Add the current arc to the map.</p>
 <p>Algorithm check, for debugging.</p>
 
-<p class="definition">Definition at line <a class="el" href="graph_2util_8h_source.html#l00398">398</a> of file <a class="el" href="graph_2util_8h_source.html">util.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="graph_2util_8h_source.html#l00397">397</a> of file <a class="el" href="graph_2util_8h_source.html">util.h</a>.</p>
 
 </div>
 </div>
@@ -689,7 +690,7 @@ template&lt;class <a class="el" href="#ae76339cb2dcd3bc05ad762146f91fdda">Graph<
 
 <p>Returns a fresh copy of a given graph. </p>
 
-<p class="definition">Definition at line <a class="el" href="graph_2util_8h_source.html#l00274">274</a> of file <a class="el" href="graph_2util_8h_source.html">util.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="graph_2util_8h_source.html#l00273">273</a> of file <a class="el" href="graph_2util_8h_source.html">util.h</a>.</p>
 
 </div>
 </div>
@@ -854,7 +855,7 @@ template&lt;class <a class="el" href="#ae76339cb2dcd3bc05ad762146f91fdda">Graph<
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="topologicalsorter_8h_source.html#l00529">529</a> of file <a class="el" href="topologicalsorter_8h_source.html">topologicalsorter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="topologicalsorter_8h_source.html#l00527">527</a> of file <a class="el" href="topologicalsorter_8h_source.html">topologicalsorter.h</a>.</p>
 
 </div>
 </div>
@@ -885,7 +886,7 @@ template&lt;class <a class="el" href="#ae76339cb2dcd3bc05ad762146f91fdda">Graph<
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="topologicalsorter_8h_source.html#l00574">574</a> of file <a class="el" href="topologicalsorter_8h_source.html">topologicalsorter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="topologicalsorter_8h_source.html#l00572">572</a> of file <a class="el" href="topologicalsorter_8h_source.html">topologicalsorter.h</a>.</p>
 
 </div>
 </div>
@@ -928,7 +929,7 @@ template&lt;class <a class="el" href="#ae76339cb2dcd3bc05ad762146f91fdda">Graph<
 </ul>
 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="topologicalsorter_8h_source.html#l00522">522</a> of file <a class="el" href="topologicalsorter_8h_source.html">topologicalsorter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="topologicalsorter_8h_source.html#l00520">520</a> of file <a class="el" href="topologicalsorter_8h_source.html">topologicalsorter.h</a>.</p>
 
 </div>
 </div>
@@ -959,7 +960,7 @@ template&lt;class <a class="el" href="#ae76339cb2dcd3bc05ad762146f91fdda">Graph<
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="topologicalsorter_8h_source.html#l00569">569</a> of file <a class="el" href="topologicalsorter_8h_source.html">topologicalsorter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="topologicalsorter_8h_source.html#l00567">567</a> of file <a class="el" href="topologicalsorter_8h_source.html">topologicalsorter.h</a>.</p>
 
 </div>
 </div>
@@ -1024,7 +1025,7 @@ template&lt;typename MultiMap&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Shortcut for BeginEndRange(multimap::equal_range(key)). </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000675">Todo</a></b></dt><dd>(user): go further and expose only the values, not the pairs (key, values) since the caller already knows the key. </dd></dl>
+<p>Shortcut for BeginEndRange(multimap::equal_range(key)). </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000674">Todo</a></b></dt><dd>(user): go further and expose only the values, not the pairs (key, values) since the caller already knows the key. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="graph_2iterators_8h_source.html#l00088">88</a> of file <a class="el" href="graph_2iterators_8h_source.html">iterators.h</a>.</p>
 
@@ -1274,7 +1275,7 @@ template&lt;class <a class="el" href="#ae76339cb2dcd3bc05ad762146f91fdda">Graph<
 <p>Do a first pass to count the arcs, so that we don't allocate more memory than needed.</p>
 <p>A second pass where we actually copy the subgraph. NOTE(user): there might seem to be a bit of duplication with <a class="el" href="#a88c65bcf51a7c679ad0159e09ecfb3fc">RemapGraph()</a>, but there is a key difference: the loop below only iterates on "nodes", which could be much smaller than all the graph's nodes.</p>
 
-<p class="definition">Definition at line <a class="el" href="graph_2util_8h_source.html#l00306">306</a> of file <a class="el" href="graph_2util_8h_source.html">util.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="graph_2util_8h_source.html#l00305">305</a> of file <a class="el" href="graph_2util_8h_source.html">util.h</a>.</p>
 
 </div>
 </div>
@@ -1296,7 +1297,7 @@ template&lt;class <a class="el" href="#ae76339cb2dcd3bc05ad762146f91fdda">Graph<
 </div><div class="memdoc">
 <p>Computes the weakly connected components of a directed graph that provides the OutgoingOrOppositeIncomingArcs() API, and returns them as a mapping from node to component index. See <a class="el" href="#a13f0e8f7e15873600cf8e395958c71e1">GetConnectedComponents()</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="graph_2util_8h_source.html#l00145">145</a> of file <a class="el" href="graph_2util_8h_source.html">util.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="graph_2util_8h_source.html#l00144">144</a> of file <a class="el" href="graph_2util_8h_source.html">util.h</a>.</p>
 
 </div>
 </div>
@@ -1317,7 +1318,7 @@ template&lt;class <a class="el" href="#ae76339cb2dcd3bc05ad762146f91fdda">Graph<
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="graph_2util_8h_source.html#l00211">211</a> of file <a class="el" href="graph_2util_8h_source.html">util.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="graph_2util_8h_source.html#l00210">210</a> of file <a class="el" href="graph_2util_8h_source.html">util.h</a>.</p>
 
 </div>
 </div>
@@ -1348,7 +1349,7 @@ template&lt;class <a class="el" href="#ae76339cb2dcd3bc05ad762146f91fdda">Graph<
 <p>All these diagnosis work in O(graph size), since the inverse Ackerman function is &lt;= 5 for all practical instances, and are very fast.</p>
 <p>If the graph is a "static" kind, they must be finalized, except for <a class="el" href="#ac4af76993c891ee4ad507783edec2a1c" title="Implementations of the templated methods.">GraphHasSelfArcs()</a> and <a class="el" href="#a97311561fd1f01e9f35b2f7ce18b0af3">GraphIsWeaklyConnected()</a> which also support non-finalized <a class="el" href="classutil_1_1StaticGraph.html">StaticGraph&lt;&gt;</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="graph_2util_8h_source.html#l00203">203</a> of file <a class="el" href="graph_2util_8h_source.html">util.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="graph_2util_8h_source.html#l00202">202</a> of file <a class="el" href="graph_2util_8h_source.html">util.h</a>.</p>
 
 </div>
 </div>
@@ -1371,7 +1372,7 @@ template&lt;class <a class="el" href="#ae76339cb2dcd3bc05ad762146f91fdda">Graph<
 <p>Create a reverse copy of the graph.</p>
 <p>Compare the graph to its reverse, one adjacency list at a time.</p>
 
-<p class="definition">Definition at line <a class="el" href="graph_2util_8h_source.html#l00229">229</a> of file <a class="el" href="graph_2util_8h_source.html">util.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="graph_2util_8h_source.html#l00228">228</a> of file <a class="el" href="graph_2util_8h_source.html">util.h</a>.</p>
 
 </div>
 </div>
@@ -1392,7 +1393,7 @@ template&lt;class <a class="el" href="#ae76339cb2dcd3bc05ad762146f91fdda">Graph<
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="graph_2util_8h_source.html#l00258">258</a> of file <a class="el" href="graph_2util_8h_source.html">util.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="graph_2util_8h_source.html#l00257">257</a> of file <a class="el" href="graph_2util_8h_source.html">util.h</a>.</p>
 
 </div>
 </div>
@@ -1419,7 +1420,7 @@ template&lt;class <a class="el" href="#ae76339cb2dcd3bc05ad762146f91fdda">Graph<
 
 <p>Implementations of the templated methods. </p>
 
-<p class="definition">Definition at line <a class="el" href="graph__io_8h_source.html#l00078">78</a> of file <a class="el" href="graph__io_8h_source.html">graph_io.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="graph__io_8h_source.html#l00079">79</a> of file <a class="el" href="graph__io_8h_source.html">graph_io.h</a>.</p>
 
 </div>
 </div>
@@ -1526,7 +1527,7 @@ template&lt;class <a class="el" href="#ae76339cb2dcd3bc05ad762146f91fdda">Graph<
 
 <p>Returns true iff the given vector is a permutation of [0..size()-1]. </p>
 
-<p class="definition">Definition at line <a class="el" href="graph_2util_8h_source.html#l00156">156</a> of file <a class="el" href="graph_2util_8h_source.html">util.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="graph_2util_8h_source.html#l00155">155</a> of file <a class="el" href="graph_2util_8h_source.html">util.h</a>.</p>
 
 </div>
 </div>
@@ -1607,7 +1608,7 @@ template&lt;class <a class="el" href="#ae76339cb2dcd3bc05ad762146f91fdda">Graph<
 
 <p>Returns true iff the given path contains a cycle. </p>
 
-<p class="definition">Definition at line <a class="el" href="graph_2util_8h_source.html#l00387">387</a> of file <a class="el" href="graph_2util_8h_source.html">util.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="graph_2util_8h_source.html#l00386">386</a> of file <a class="el" href="graph_2util_8h_source.html">util.h</a>.</p>
 
 </div>
 </div>
@@ -1660,9 +1661,9 @@ template&lt;class IntVector, class Array&gt; </div>
 </div><div class="memdoc">
 <p>Permutes the elements of array_to_permute: element #i will be moved to position permutation[i]. permutation must be either empty (in which case nothing happens), or a permutation of [0, permutation.size()).</p>
 <p>The algorithm is fast but need extra memory for a copy of the permuted part of array_to_permute.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000654">Todo</a></b></dt><dd>(user): consider slower but more memory efficient implementations that follow the cycles of the permutation and use a bitmap to indicate what has been permuted or to mark the beginning of each cycle. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000653">Todo</a></b></dt><dd>(user): consider slower but more memory efficient implementations that follow the cycles of the permutation and use a bitmap to indicate what has been permuted or to mark the beginning of each cycle. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="graph_8h_source.html#l01101">1101</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="graph_8h_source.html#l01105">1105</a> of file <a class="el" href="graph_8h_source.html">graph.h</a>.</p>
 
 </div>
 </div>
@@ -1688,7 +1689,7 @@ template&lt;class <a class="el" href="#ae76339cb2dcd3bc05ad762146f91fdda">Graph<
 </div><div class="memdoc">
 <p>Creates a remapped copy of graph "graph", where node i becomes node new_node_index[i]. "new_node_index" must be a valid permutation of [0..num_nodes-1] or the behavior is undefined (it may die). </p><dl class="section note"><dt>Note</dt><dd>you can call <a class="el" href="#a0aab823d80d85f004d3d2139cc4f6c2f" title="Returns true iff the given vector is a permutation of [0..size()-1].">IsValidPermutation()</a> to check it yourself. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="graph_2util_8h_source.html#l00287">287</a> of file <a class="el" href="graph_2util_8h_source.html">util.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="graph_2util_8h_source.html#l00286">286</a> of file <a class="el" href="graph_2util_8h_source.html">util.h</a>.</p>
 
 </div>
 </div>
@@ -1714,12 +1715,12 @@ template&lt;class <a class="el" href="#ae76339cb2dcd3bc05ad762146f91fdda">Graph<
 </div><div class="memdoc">
 <p>Given an arc path, changes it to a sub-path with the same source and destination but without any cycle. Nothing happen if the path was already without cycle.</p>
 <p>The graph class should support Tail(arc) and Head(arc). They should both return an integer representing the corresponding tail/head of the passed arc.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000734">Todo</a></b></dt><dd>(user): In some cases, there is more than one possible solution. We could take some arc costs and return the cheapest path instead. Or return the shortest path in term of number of arcs. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000733">Todo</a></b></dt><dd>(user): In some cases, there is more than one possible solution. We could take some arc costs and return the cheapest path instead. Or return the shortest path in term of number of arcs. </dd></dl>
 <p>This maps each node to the latest arc in the given path that leaves it.</p>
 <p>Special case for the destination. </p><dl class="section note"><dt>Note</dt><dd>this requires that -1 is not a valid arc of <a class="el" href="#ae76339cb2dcd3bc05ad762146f91fdda" title="Defining the simplest Graph interface as Graph for convenience.">Graph</a>.</dd></dl>
 <p>Reconstruct the path by starting at the source and then following the "next" arcs. We override the given arc_path at the same time.</p>
 
-<p class="definition">Definition at line <a class="el" href="graph_2util_8h_source.html#l00362">362</a> of file <a class="el" href="graph_2util_8h_source.html">util.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="graph_2util_8h_source.html#l00361">361</a> of file <a class="el" href="graph_2util_8h_source.html">util.h</a>.</p>
 
 </div>
 </div>
@@ -1742,7 +1743,7 @@ template&lt;class <a class="el" href="#ae76339cb2dcd3bc05ad762146f91fdda">Graph<
 
 <p>Returns a copy of "graph", without self-arcs and duplicate arcs. </p>
 
-<p class="definition">Definition at line <a class="el" href="graph_2util_8h_source.html#l00340">340</a> of file <a class="el" href="graph_2util_8h_source.html">util.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="graph_2util_8h_source.html#l00339">339</a> of file <a class="el" href="graph_2util_8h_source.html">util.h</a>.</p>
 
 </div>
 </div>
@@ -1821,7 +1822,7 @@ template&lt;typename T&gt; </div>
 </div><div class="memdoc">
 <p>The "Stable" variants are a little slower but preserve the input order of nodes, if possible. More precisely, the returned topological order will be the lexicographically minimal valid order, where "lexicographic" applies to the indices of the nodes. </p>
 
-<p class="definition">Definition at line <a class="el" href="topologicalsorter_8h_source.html#l00553">553</a> of file <a class="el" href="topologicalsorter_8h_source.html">topologicalsorter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="topologicalsorter_8h_source.html#l00551">551</a> of file <a class="el" href="topologicalsorter_8h_source.html">topologicalsorter.h</a>.</p>
 
 </div>
 </div>
@@ -1852,7 +1853,7 @@ template&lt;typename T&gt; </div>
 </div><div class="memdoc">
 <p>The "Stable" variants are a little slower but preserve the input order of nodes, if possible. More precisely, the returned topological order will be the lexicographically minimal valid order, where "lexicographic" applies to the indices of the nodes. </p>
 
-<p class="definition">Definition at line <a class="el" href="topologicalsorter_8h_source.html#l00553">553</a> of file <a class="el" href="topologicalsorter_8h_source.html">topologicalsorter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="topologicalsorter_8h_source.html#l00551">551</a> of file <a class="el" href="topologicalsorter_8h_source.html">topologicalsorter.h</a>.</p>
 
 </div>
 </div>
@@ -1889,7 +1890,7 @@ template&lt;typename T&gt; </div>
 
 <p>Override of the above that outputs the detected cycle. </p>
 
-<p class="definition">Definition at line <a class="el" href="topologicalsorter_8h_source.html#l00561">561</a> of file <a class="el" href="topologicalsorter_8h_source.html">topologicalsorter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="topologicalsorter_8h_source.html#l00559">559</a> of file <a class="el" href="topologicalsorter_8h_source.html">topologicalsorter.h</a>.</p>
 
 </div>
 </div>
@@ -1926,7 +1927,7 @@ template&lt;typename T&gt; </div>
 
 <p>Override of the above that outputs the detected cycle. </p>
 
-<p class="definition">Definition at line <a class="el" href="topologicalsorter_8h_source.html#l00561">561</a> of file <a class="el" href="topologicalsorter_8h_source.html">topologicalsorter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="topologicalsorter_8h_source.html#l00559">559</a> of file <a class="el" href="topologicalsorter_8h_source.html">topologicalsorter.h</a>.</p>
 
 </div>
 </div>
@@ -1953,7 +1954,7 @@ template&lt;typename T&gt; </div>
 
 <p>OrDie() variant of the above. </p>
 
-<p class="definition">Definition at line <a class="el" href="topologicalsorter_8h_source.html#l00586">586</a> of file <a class="el" href="topologicalsorter_8h_source.html">topologicalsorter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="topologicalsorter_8h_source.html#l00584">584</a> of file <a class="el" href="topologicalsorter_8h_source.html">topologicalsorter.h</a>.</p>
 
 </div>
 </div>
@@ -1985,7 +1986,7 @@ template&lt;typename T&gt; </div>
 <p>[Stable]TopologicalSort[OrDie]:</p>
 <p>These variants are much slower than FastTopologicalSort(), but support non-integer (or integer, but sparse) nodes. </p><dl class="section note"><dt>Note</dt><dd>if performance matters, you're probably better off building your own mapping from node to dense index with a flat_hash_map and calling FastTopologicalSort(). Returns true if the graph was a DAG, and outputs the topological order in "topological_order". Returns false if the graph is cyclic, and outputs the detected cycle in "cycle". </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="topologicalsorter_8h_source.html#l00537">537</a> of file <a class="el" href="topologicalsorter_8h_source.html">topologicalsorter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="topologicalsorter_8h_source.html#l00535">535</a> of file <a class="el" href="topologicalsorter_8h_source.html">topologicalsorter.h</a>.</p>
 
 </div>
 </div>
@@ -2017,7 +2018,7 @@ template&lt;typename T&gt; </div>
 <p>[Stable]TopologicalSort[OrDie]:</p>
 <p>These variants are much slower than FastTopologicalSort(), but support non-integer (or integer, but sparse) nodes. </p><dl class="section note"><dt>Note</dt><dd>if performance matters, you're probably better off building your own mapping from node to dense index with a flat_hash_map and calling FastTopologicalSort(). Returns true if the graph was a DAG, and outputs the topological order in "topological_order". Returns false if the graph is cyclic, and outputs the detected cycle in "cycle". </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="topologicalsorter_8h_source.html#l00537">537</a> of file <a class="el" href="topologicalsorter_8h_source.html">topologicalsorter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="topologicalsorter_8h_source.html#l00535">535</a> of file <a class="el" href="topologicalsorter_8h_source.html">topologicalsorter.h</a>.</p>
 
 </div>
 </div>
@@ -2054,7 +2055,7 @@ template&lt;typename T&gt; </div>
 
 <p>Override of the above that outputs the detected cycle. </p>
 
-<p class="definition">Definition at line <a class="el" href="topologicalsorter_8h_source.html#l00545">545</a> of file <a class="el" href="topologicalsorter_8h_source.html">topologicalsorter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="topologicalsorter_8h_source.html#l00543">543</a> of file <a class="el" href="topologicalsorter_8h_source.html">topologicalsorter.h</a>.</p>
 
 </div>
 </div>
@@ -2091,7 +2092,7 @@ template&lt;typename T&gt; </div>
 
 <p>Override of the above that outputs the detected cycle. </p>
 
-<p class="definition">Definition at line <a class="el" href="topologicalsorter_8h_source.html#l00545">545</a> of file <a class="el" href="topologicalsorter_8h_source.html">topologicalsorter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="topologicalsorter_8h_source.html#l00543">543</a> of file <a class="el" href="topologicalsorter_8h_source.html">topologicalsorter.h</a>.</p>
 
 </div>
 </div>
@@ -2118,7 +2119,7 @@ template&lt;typename T&gt; </div>
 
 <p>OrDie() variant of the above. </p>
 
-<p class="definition">Definition at line <a class="el" href="topologicalsorter_8h_source.html#l00580">580</a> of file <a class="el" href="topologicalsorter_8h_source.html">topologicalsorter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="topologicalsorter_8h_source.html#l00578">578</a> of file <a class="el" href="topologicalsorter_8h_source.html">topologicalsorter.h</a>.</p>
 
 </div>
 </div>
@@ -2286,7 +2287,7 @@ template&lt;class <a class="el" href="#ae76339cb2dcd3bc05ad762146f91fdda">Graph<
 <p>This method is the reverse of ReadGraphFile (with the same value for "directed"). </p>
 <p>In undirected mode, we must count the self-arcs separately. All other arcs should be duplicated.</p>
 
-<p class="definition">Definition at line <a class="el" href="graph__io_8h_source.html#l00114">114</a> of file <a class="el" href="graph__io_8h_source.html">graph_io.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="graph__io_8h_source.html#l00115">115</a> of file <a class="el" href="graph__io_8h_source.html">graph_io.h</a>.</p>
 
 </div>
 </div>
