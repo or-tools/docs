@@ -2,6 +2,7 @@ var parameters_8h =
 [
     [ "operations_research::math_opt::GurobiParameters", "structoperations__research_1_1math__opt_1_1GurobiParameters.html", "structoperations__research_1_1math__opt_1_1GurobiParameters" ],
     [ "operations_research::math_opt::GlpkParameters", "structoperations__research_1_1math__opt_1_1GlpkParameters.html", "structoperations__research_1_1math__opt_1_1GlpkParameters" ],
+    [ "operations_research::math_opt::XpressParameters", "structoperations__research_1_1math__opt_1_1XpressParameters.html", "structoperations__research_1_1math__opt_1_1XpressParameters" ],
     [ "operations_research::math_opt::SolveParameters", "structoperations__research_1_1math__opt_1_1SolveParameters.html", "structoperations__research_1_1math__opt_1_1SolveParameters" ],
     [ "operations_research::math_opt::Emphasis", "namespaceoperations__research_1_1math__opt.html#a322dff029ac8b26a6056a11211e14efd", [
       [ "operations_research::math_opt::Emphasis::kOff", "namespaceoperations__research_1_1math__opt.html#a322dff029ac8b26a6056a11211e14efdacc9ab5e60ac2a9a675ba64bf4bb49dc8", null ],

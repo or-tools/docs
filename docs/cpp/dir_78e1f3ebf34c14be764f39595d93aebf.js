@@ -26,6 +26,7 @@ var dir_78e1f3ebf34c14be764f39595d93aebf =
     [ "elements.h", "elements_8h.html", "elements_8h" ],
     [ "safe_attr_ops.h", "safe__attr__ops_8h.html", "safe__attr__ops_8h" ],
     [ "symmetry.h", "math__opt_2elemental_2symmetry_8h.html", "math__opt_2elemental_2symmetry_8h" ],
+    [ "tagged_id.h", "tagged__id_8h.html", "tagged__id_8h" ],
     [ "testing.h", "testing_8h.html", "testing_8h" ],
     [ "thread_safe_id_map.h", "thread__safe__id__map_8h.html", "thread__safe__id__map_8h" ]
 ];

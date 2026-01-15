@@ -20,7 +20,7 @@ var classgtl_1_1IntType =
     [ "operator=", "classgtl_1_1IntType.html#abe89060cbc19c098306e9179c4066f08", null ],
     [ "operator~", "classgtl_1_1IntType.html#a181b4782c61465972f9c4d86adfc454d", null ],
     [ "TypeName", "classgtl_1_1IntType.html#a3a2e2553e0725156dbf61e5c0b6132f4", null ],
-    [ "value", "classgtl_1_1IntType.html#a60ad56296145ded49bdad107a4301c51", null ],
     [ "value", "classgtl_1_1IntType.html#a1b26669f2d9088f376d3b0dea3b7360f", null ],
+    [ "value", "classgtl_1_1IntType.html#a60ad56296145ded49bdad107a4301c51", null ],
     [ "AbslHashValue", "classgtl_1_1IntType.html#a66719dba785011c3e530f11e5ffd7a78", null ]
 ];

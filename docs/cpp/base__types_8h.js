@@ -1,11 +1,11 @@
 var base__types_8h =
 [
-    [ "operations_research::CompressedStrongVector< EntryIndex, Index >", "classoperations__research_1_1CompressedStrongVector.html", "classoperations__research_1_1CompressedStrongVector" ],
-    [ "operations_research::CompressedStrongVectorIterator< EntryIndex, Index >", "classoperations__research_1_1CompressedStrongVectorIterator.html", "classoperations__research_1_1CompressedStrongVectorIterator" ],
-    [ "operations_research::IndexRange< Index >", "structoperations__research_1_1IndexRange.html", "structoperations__research_1_1IndexRange" ],
-    [ "operations_research::IndexRangeIterator< Index >", "classoperations__research_1_1IndexRangeIterator.html", "classoperations__research_1_1IndexRangeIterator" ],
-    [ "operations_research::IterableContainerBase< T, Derived >", "classoperations__research_1_1IterableContainerBase.html", "classoperations__research_1_1IterableContainerBase" ],
-    [ "operations_research::IterableContainer< T >", "classoperations__research_1_1IterableContainer.html", "classoperations__research_1_1IterableContainer" ],
+    [ "operations_research::CompressedStrongVector&lt; EntryIndex, Index &gt;", "classoperations__research_1_1CompressedStrongVector.html", "classoperations__research_1_1CompressedStrongVector" ],
+    [ "operations_research::CompressedStrongVectorIterator&lt; EntryIndex, Index &gt;", "classoperations__research_1_1CompressedStrongVectorIterator.html", "classoperations__research_1_1CompressedStrongVectorIterator" ],
+    [ "operations_research::IndexRange&lt; Index &gt;", "structoperations__research_1_1IndexRange.html", "structoperations__research_1_1IndexRange" ],
+    [ "operations_research::IndexRangeIterator&lt; Index &gt;", "classoperations__research_1_1IndexRangeIterator.html", "classoperations__research_1_1IndexRangeIterator" ],
+    [ "operations_research::IterableContainerBase&lt; T, Derived &gt;", "classoperations__research_1_1IterableContainerBase.html", "classoperations__research_1_1IterableContainerBase" ],
+    [ "operations_research::IterableContainer&lt; T &gt;", "classoperations__research_1_1IterableContainer.html", "classoperations__research_1_1IterableContainer" ],
     [ "operations_research::StopWatch", "classoperations__research_1_1StopWatch.html", "classoperations__research_1_1StopWatch" ],
     [ "operations_research::BaseInt", "namespaceoperations__research.html#aa4b693a5c933e34232abe1e791a38b40", null ],
     [ "operations_research::ColumnEntryRange", "namespaceoperations__research.html#a794f9969185a82ebeb8419834826ac00", null ],

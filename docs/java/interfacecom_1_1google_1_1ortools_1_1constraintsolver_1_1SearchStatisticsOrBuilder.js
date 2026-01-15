@@ -9,5 +9,10 @@ var interfacecom_1_1google_1_1ortools_1_1constraintsolver_1_1SearchStatisticsOrB
     [ "getLocalSearchStatisticsCount", "interfacecom_1_1google_1_1ortools_1_1constraintsolver_1_1SearchStatisticsOrBuilder.html#aea1a31815edd8b2a42c79cef70b2d2b3", null ],
     [ "getLocalSearchStatisticsList", "interfacecom_1_1google_1_1ortools_1_1constraintsolver_1_1SearchStatisticsOrBuilder.html#aa7973192e58577b7ca1490437148e579", null ],
     [ "getLocalSearchStatisticsOrBuilder", "interfacecom_1_1google_1_1ortools_1_1constraintsolver_1_1SearchStatisticsOrBuilder.html#a736abd02da7baeb2af123ba5248ea1f3", null ],
-    [ "getLocalSearchStatisticsOrBuilderList", "interfacecom_1_1google_1_1ortools_1_1constraintsolver_1_1SearchStatisticsOrBuilder.html#ae3a209ec552e6837778786cf24a46bc3", null ]
+    [ "getLocalSearchStatisticsOrBuilderList", "interfacecom_1_1google_1_1ortools_1_1constraintsolver_1_1SearchStatisticsOrBuilder.html#ae3a209ec552e6837778786cf24a46bc3", null ],
+    [ "getSubSolverStatistics", "interfacecom_1_1google_1_1ortools_1_1constraintsolver_1_1SearchStatisticsOrBuilder.html#a77d2253c5d800cad37fcf65eccfdeaa3", null ],
+    [ "getSubSolverStatisticsCount", "interfacecom_1_1google_1_1ortools_1_1constraintsolver_1_1SearchStatisticsOrBuilder.html#a3e9a13abf8424584355bb2c8bf1f2201", null ],
+    [ "getSubSolverStatisticsList", "interfacecom_1_1google_1_1ortools_1_1constraintsolver_1_1SearchStatisticsOrBuilder.html#a17e12d84c3392c9df7c13f9a3bd6efbf", null ],
+    [ "getSubSolverStatisticsOrBuilder", "interfacecom_1_1google_1_1ortools_1_1constraintsolver_1_1SearchStatisticsOrBuilder.html#abc0105f5c64e04691c738e0387288646", null ],
+    [ "getSubSolverStatisticsOrBuilderList", "interfacecom_1_1google_1_1ortools_1_1constraintsolver_1_1SearchStatisticsOrBuilder.html#a12b5b468954e694da28449b93748eb04", null ]
 ];

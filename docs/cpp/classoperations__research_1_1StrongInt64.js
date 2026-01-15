@@ -18,7 +18,7 @@ var classoperations__research_1_1StrongInt64 =
     [ "STRONG_ASSIGNMENT_OP", "classoperations__research_1_1StrongInt64.html#af5a56893c1af18a59a26c10db9987204", null ],
     [ "STRONG_ASSIGNMENT_OP", "classoperations__research_1_1StrongInt64.html#a95f40f39967f0c2443c3346e62e99919", null ],
     [ "TypeName", "classoperations__research_1_1StrongInt64.html#a6025b049852a55fdb9347f8532c3bac0", null ],
-    [ "value", "classoperations__research_1_1StrongInt64.html#a04f7a53b1c0427646948c1cb011f0d19", null ],
     [ "value", "classoperations__research_1_1StrongInt64.html#a269bdd47e6a0641b1efd38d5b0c44c49", null ],
+    [ "value", "classoperations__research_1_1StrongInt64.html#a04f7a53b1c0427646948c1cb011f0d19", null ],
     [ "INCREMENT_AND_DECREMENT_OPERATORS", "classoperations__research_1_1StrongInt64.html#ac43ada8f7558be76995dad7360fdcd8c", null ]
 ];

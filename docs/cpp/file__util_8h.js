@@ -14,7 +14,7 @@ var file__util_8h =
     [ "operations_research::internal::ReadNumRecords", "namespaceoperations__research_1_1internal.html#a4c502cb057a0c067c38aff7673965727", null ],
     [ "operations_research::internal::ReadNumRecords", "namespaceoperations__research_1_1internal.html#a69fdb007201984e0caf5498e5a05490f", null ],
     [ "operations_research::ReadOneRecordOrDie", "namespaceoperations__research.html#ace54bf84f7270aae9477ad57dcf7ce59", null ],
-    [ "operations_research::StringToProto", "namespaceoperations__research.html#aa37f1c42c1c2691397cf578d762fff44", null ],
+    [ "operations_research::StringToProto", "namespaceoperations__research.html#acae675a71adce0960b24831d34b33b01", null ],
     [ "operations_research::WriteProtoToFile", "namespaceoperations__research.html#acf7f6c6d11e2912d96b43d9ab516b744", null ],
     [ "operations_research::WriteRecordsOrDie", "namespaceoperations__research.html#a6b3cadabb0e5354ea2730e10401427f5", null ]
 ];

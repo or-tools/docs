@@ -11,10 +11,11 @@ var classoperations__research_1_1sat_1_1SatDecisionPolicy =
     [ "InStablePhase", "classoperations__research_1_1sat_1_1SatDecisionPolicy.html#a2fe392f64c32808477cd973d1ae87f4d", null ],
     [ "MaybeEnablePhaseSaving", "classoperations__research_1_1sat_1_1SatDecisionPolicy.html#adb5bccaa393dfb2a7de6d8e954940e9e", null ],
     [ "NextBranch", "classoperations__research_1_1sat_1_1SatDecisionPolicy.html#ad02a374fc46af7a8ed8112257438dbc1", null ],
+    [ "ResetActivitiesToFollowBestPartialAssignment", "classoperations__research_1_1sat_1_1SatDecisionPolicy.html#a54b5478bf225d21adf44d197bd5e2679", null ],
     [ "ResetDecisionHeuristic", "classoperations__research_1_1sat_1_1SatDecisionPolicy.html#adbee36df4092ea77a019afb03e805c46", null ],
     [ "SetAssignmentPreference", "classoperations__research_1_1sat_1_1SatDecisionPolicy.html#a2b8daf97b17136a35e4e19524c5209d9", null ],
     [ "SetStablePhase", "classoperations__research_1_1sat_1_1SatDecisionPolicy.html#a05ff0c7ea3c2c9e3a2682381e75be021", null ],
-    [ "SetTargetPolarity", "classoperations__research_1_1sat_1_1SatDecisionPolicy.html#a5c8114c3c4f8fc748ba2a4ae31e6aeee", null ],
+    [ "SetTargetPolarityIfUnassigned", "classoperations__research_1_1sat_1_1SatDecisionPolicy.html#a9a6cf4c4446121dc8b698ca05f27d74d", null ],
     [ "Untrail", "classoperations__research_1_1sat_1_1SatDecisionPolicy.html#a9f05bb03afa86725c194d50e613f2593", null ],
     [ "UpdateVariableActivityIncrement", "classoperations__research_1_1sat_1_1SatDecisionPolicy.html#af87fdb74b3ad3435c8d13faf7fcc408c", null ]
 ];

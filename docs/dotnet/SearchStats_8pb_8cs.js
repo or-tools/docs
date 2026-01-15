@@ -7,5 +7,6 @@ var SearchStats_8pb_8cs =
     [ "Google.OrTools.ConstraintSolver.LocalSearchStatistics.Types.LocalSearchOperatorStatistics", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1LocalSearchStatistics_1_1Types_1_1LocalSearchOperatorStatistics.html", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1LocalSearchStatistics_1_1Types_1_1LocalSearchOperatorStatistics" ],
     [ "Google.OrTools.ConstraintSolver.LocalSearchStatistics.Types.LocalSearchFilterStatistics", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1LocalSearchStatistics_1_1Types_1_1LocalSearchFilterStatistics.html", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1LocalSearchStatistics_1_1Types_1_1LocalSearchFilterStatistics" ],
     [ "Google.OrTools.ConstraintSolver.ConstraintSolverStatistics", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1ConstraintSolverStatistics.html", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1ConstraintSolverStatistics" ],
+    [ "Google.OrTools.ConstraintSolver.SubSolverStatistics", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SubSolverStatistics.html", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SubSolverStatistics" ],
     [ "Google.OrTools.ConstraintSolver.SearchStatistics", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SearchStatistics.html", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SearchStatistics" ]
 ];

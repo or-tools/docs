@@ -1,9 +1,17 @@
 var classGoogle_1_1OrTools_1_1ConstraintSolver_1_1AcceptanceStrategy =
 [
-    [ "Types", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1AcceptanceStrategy_1_1Types.html", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1AcceptanceStrategy_1_1Types" ],
+    [ "StrategyOneofCase", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1AcceptanceStrategy.html#ad85fc673da0e0b8dcc1d3ebfc507b4a4", [
+      [ "None", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1AcceptanceStrategy.html#ad85fc673da0e0b8dcc1d3ebfc507b4a4a6adf97f83acf6453d4a6a4b1070f3754", null ],
+      [ "GreedyDescent", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1AcceptanceStrategy.html#ad85fc673da0e0b8dcc1d3ebfc507b4a4acb6fff8d60b88e3ae5fe6c65141fc29d", null ],
+      [ "SimulatedAnnealing", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1AcceptanceStrategy.html#ad85fc673da0e0b8dcc1d3ebfc507b4a4a9e54e50d057e08825382c09877dede7f", null ],
+      [ "AllNodesPerformed", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1AcceptanceStrategy.html#ad85fc673da0e0b8dcc1d3ebfc507b4a4a6a3f4e012440cf0bf7acaf9cf53513d9", null ],
+      [ "MoreNodesPerformed", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1AcceptanceStrategy.html#ad85fc673da0e0b8dcc1d3ebfc507b4a4a7f61b989951000228cb90fc9d324017f", null ],
+      [ "AbsencesBased", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1AcceptanceStrategy.html#ad85fc673da0e0b8dcc1d3ebfc507b4a4a0b2913fd7cb6bba3bec14941ab2b080a", null ]
+    ] ],
     [ "AcceptanceStrategy", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1AcceptanceStrategy.html#a6dfc212cefb0aab174aad55673e60441", null ],
     [ "AcceptanceStrategy", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1AcceptanceStrategy.html#a4b3aea0f242c48f8de3e8dd32c16b1fb", null ],
     [ "CalculateSize", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1AcceptanceStrategy.html#afdcbd6050c77efe62632c0133f1cc50e", null ],
+    [ "ClearStrategy", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1AcceptanceStrategy.html#a2bc667f57f47648440b99a88e938b84f", null ],
     [ "Clone", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1AcceptanceStrategy.html#a28bddbc07efdb9a5b9ec5c3d33a7cc87", null ],
     [ "Equals", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1AcceptanceStrategy.html#a7912c744d1988deec07bdd5b7ea163c1", null ],
     [ "Equals", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1AcceptanceStrategy.html#aa095904c0d23d44ac61ea09ee22ceb5f", null ],
@@ -12,6 +20,17 @@ var classGoogle_1_1OrTools_1_1ConstraintSolver_1_1AcceptanceStrategy =
     [ "MergeFrom", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1AcceptanceStrategy.html#a2450533fd734287d6998379a69b84843", null ],
     [ "ToString", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1AcceptanceStrategy.html#a6f83db3bc35d1fabf99f19207e35a155", null ],
     [ "WriteTo", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1AcceptanceStrategy.html#a6d0fd354f0c0f8d59ef52f9a9aa3b949", null ],
+    [ "AbsencesBasedFieldNumber", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1AcceptanceStrategy.html#ab232b80132a4f50718ff7bbc589bfe41", null ],
+    [ "AllNodesPerformedFieldNumber", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1AcceptanceStrategy.html#a6094906f6c867360054e97b0a9ff44f6", null ],
+    [ "GreedyDescentFieldNumber", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1AcceptanceStrategy.html#ad3c1d38d5367404fa2e2d8bbac16bb9a", null ],
+    [ "MoreNodesPerformedFieldNumber", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1AcceptanceStrategy.html#ab7c36f263b2acc3b935bca27523413c8", null ],
+    [ "SimulatedAnnealingFieldNumber", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1AcceptanceStrategy.html#aa862dfc36992720218b971fec10ab0b0", null ],
+    [ "AbsencesBased", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1AcceptanceStrategy.html#a230e6f0ea7c0d5c550dc1edb9131a426", null ],
+    [ "AllNodesPerformed", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1AcceptanceStrategy.html#a7b0cde84ec8a32b6118f50406c3d5f8d", null ],
     [ "Descriptor", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1AcceptanceStrategy.html#afb6fe82943c29fab8c09a3ff544096cb", null ],
-    [ "Parser", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1AcceptanceStrategy.html#a29fe3f9528c4cdc7054a222512c3eaba", null ]
+    [ "GreedyDescent", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1AcceptanceStrategy.html#a4ffad14bf00b8c54156df53828dc48be", null ],
+    [ "MoreNodesPerformed", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1AcceptanceStrategy.html#a2b123caca25c3d16c13b5c23d6ab8183", null ],
+    [ "Parser", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1AcceptanceStrategy.html#a29fe3f9528c4cdc7054a222512c3eaba", null ],
+    [ "SimulatedAnnealing", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1AcceptanceStrategy.html#adb35ae9a59e4a335517f3408eb30d4e1", null ],
+    [ "StrategyCase", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1AcceptanceStrategy.html#ac38e841998e6131779ecc1d1531ab77a", null ]
 ];

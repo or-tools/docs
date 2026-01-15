@@ -3,6 +3,7 @@ var classoperations__research_1_1sat_1_1CompactVectorVector =
     [ "value_type", "classoperations__research_1_1sat_1_1CompactVectorVector.html#a42a4bcd5a3d4c4d22111f0b0fe85dea6", null ],
     [ "Add", "classoperations__research_1_1sat_1_1CompactVectorVector.html#ab457f5467d82b7cd8c542d4d5fab148c", null ],
     [ "AddLiterals", "classoperations__research_1_1sat_1_1CompactVectorVector.html#a819da786a6c4c84162619e9296690982", null ],
+    [ "AppendToLastVector", "classoperations__research_1_1sat_1_1CompactVectorVector.html#ac1be18140da5cbf70ff0991e464b8b0f", null ],
     [ "AppendToLastVector", "classoperations__research_1_1sat_1_1CompactVectorVector.html#aa7ddfbb53500e51e1e204c3880d4029b", null ],
     [ "AsVectorOfSpan", "classoperations__research_1_1sat_1_1CompactVectorVector.html#a7a54dbcafd3041ca47b9f949cc19ca7b", null ],
     [ "clear", "classoperations__research_1_1sat_1_1CompactVectorVector.html#a25b558855419db266994fea1fd05fce2", null ],
@@ -18,5 +19,7 @@ var classoperations__research_1_1sat_1_1CompactVectorVector =
     [ "ResetFromFlatMapping", "classoperations__research_1_1sat_1_1CompactVectorVector.html#a149f5bf7e2d52bff36388312799c38db", null ],
     [ "ResetFromPairs", "classoperations__research_1_1sat_1_1CompactVectorVector.html#a0bbe561c8c47f85791c82e5d0dcb6a85", null ],
     [ "ResetFromTranspose", "classoperations__research_1_1sat_1_1CompactVectorVector.html#a0862b0c61000ddc2d0497af649029fed", null ],
+    [ "ResetFromTransposeMap", "classoperations__research_1_1sat_1_1CompactVectorVector.html#ae1f18d9e67ce3dbbea4dac92dd7d0625", null ],
+    [ "Shrink", "classoperations__research_1_1sat_1_1CompactVectorVector.html#a6d752a4a4e02419a138ddf4564731417", null ],
     [ "size", "classoperations__research_1_1sat_1_1CompactVectorVector.html#a8f644ab0bc97480a2ce865aa3ff16d96", null ]
 ];

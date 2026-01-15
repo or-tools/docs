@@ -19,10 +19,10 @@ var classoperations__research_1_1routing_1_1TspLibParser =
     [ "edges", "classoperations__research_1_1routing_1_1TspLibParser.html#aaed25435c5cf6935c56e1cbf718b4039", null ],
     [ "fixed_edges", "classoperations__research_1_1routing_1_1TspLibParser.html#a1edef8b706c0612b39e81c4ecfe4abc1", null ],
     [ "GetEdgeWeights", "classoperations__research_1_1routing_1_1TspLibParser.html#a39c0af60b106a3f2ea15655cdb7bf782", null ],
-    [ "LoadFile", "classoperations__research_1_1routing_1_1TspLibParser.html#a0d4967124e849049e47af4ac8c199ade", null ],
+    [ "LoadFile", "classoperations__research_1_1routing_1_1TspLibParser.html#ac75fbc89f78704b23590b4b98a1a9fb0", null ],
     [ "max_distance", "classoperations__research_1_1routing_1_1TspLibParser.html#abd7585441f581cb6e64f821cfd8dc906", null ],
     [ "name", "classoperations__research_1_1routing_1_1TspLibParser.html#a5e353aadf6cf34fbbb06a23322ebd28d", null ],
     [ "size", "classoperations__research_1_1routing_1_1TspLibParser.html#a658ac690adb8d737efe5d1cd8d41aba8", null ],
-    [ "SizeFromFile", "classoperations__research_1_1routing_1_1TspLibParser.html#a5c7559e8dbc3638585ee9a52556b628d", null ],
+    [ "SizeFromFile", "classoperations__research_1_1routing_1_1TspLibParser.html#a9af5ff4fca7be986a0f651153254df52", null ],
     [ "type", "classoperations__research_1_1routing_1_1TspLibParser.html#a16dd012d5d0d42dd02ce10781d0b6626", null ]
 ];

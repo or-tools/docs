@@ -2,6 +2,7 @@ var classoperations__research_1_1sat_1_1LinearProgrammingConstraint =
 [
     [ "ConstraintIndex", "classoperations__research_1_1sat_1_1LinearProgrammingConstraint.html#a8fe544f4c772d8b90d4c4eff81533b70", null ],
     [ "LinearProgrammingConstraint", "classoperations__research_1_1sat_1_1LinearProgrammingConstraint.html#ac305ae4d90e003c68c190a412f9879de", null ],
+    [ "~LinearProgrammingConstraint", "classoperations__research_1_1sat_1_1LinearProgrammingConstraint.html#a92ce90666c644f5089a39571a3682124", null ],
     [ "AddCutGenerator", "classoperations__research_1_1sat_1_1LinearProgrammingConstraint.html#a6fcb3c581c8d5c59ce05d3bb52ab30c7", null ],
     [ "AddLinearConstraint", "classoperations__research_1_1sat_1_1LinearProgrammingConstraint.html#a70a3957a10e9d5de078b8d7100c413df", null ],
     [ "AtOptimal", "classoperations__research_1_1sat_1_1LinearProgrammingConstraint.html#a86aefc1266220f6351747f080a9ffa20", null ],

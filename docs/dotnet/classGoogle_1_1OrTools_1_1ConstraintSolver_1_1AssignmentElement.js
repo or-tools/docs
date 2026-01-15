@@ -1,6 +1,7 @@
 var classGoogle_1_1OrTools_1_1ConstraintSolver_1_1AssignmentElement =
 [
     [ "AssignmentElement", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1AssignmentElement.html#a50c5720d5f441be81f6dc4b282651cdc", null ],
+    [ "AssignmentElement", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1AssignmentElement.html#a0221b8e65c13d50df933779a6cb3dacb", null ],
     [ "Activate", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1AssignmentElement.html#a98256ef6a0de87ae04e4a2f0b7fbe1ad", null ],
     [ "Activated", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1AssignmentElement.html#a1c7485e08cdb3f18dd83d3b2d2017efb", null ],
     [ "Deactivate", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1AssignmentElement.html#a6fe604ba903123586572e1fc365d1a41", null ],

@@ -1,7 +1,7 @@
 var classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSosConstraint =
 [
-    [ "Builder", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSosConstraint_1_1Builder.html", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSosConstraint_1_1Builder" ],
     [ "Type", "enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSosConstraint_1_1Type.html", "enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSosConstraint_1_1Type" ],
+    [ "Builder", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSosConstraint_1_1Builder.html", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSosConstraint_1_1Builder" ],
     [ "equals", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSosConstraint.html#af676906313d548b7b50fa4cea0b030c3", null ],
     [ "getDefaultInstance", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSosConstraint.html#a80ce7e3ebf85e35b37c87cd181877c9a", null ],
     [ "getDefaultInstanceForType", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSosConstraint.html#a2a359601b23ba14b0e74c82639a169c7", null ],

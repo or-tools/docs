@@ -1,11 +1,11 @@
 var bitset_8h =
 [
-    [ "operations_research::Bitset64< IndexType >", "classoperations__research_1_1Bitset64.html", "classoperations__research_1_1Bitset64" ],
-    [ "operations_research::Bitset64< IndexType >::ConstView", "classoperations__research_1_1Bitset64_1_1ConstView.html", "classoperations__research_1_1Bitset64_1_1ConstView" ],
-    [ "operations_research::Bitset64< IndexType >::View", "classoperations__research_1_1Bitset64_1_1View.html", "classoperations__research_1_1Bitset64_1_1View" ],
-    [ "operations_research::Bitset64< IndexType >::Iterator", "classoperations__research_1_1Bitset64_1_1Iterator.html", "classoperations__research_1_1Bitset64_1_1Iterator" ],
+    [ "operations_research::Bitset64&lt; IndexType &gt;", "classoperations__research_1_1Bitset64.html", "classoperations__research_1_1Bitset64" ],
+    [ "operations_research::Bitset64&lt; IndexType &gt;::ConstView", "classoperations__research_1_1Bitset64_1_1ConstView.html", "classoperations__research_1_1Bitset64_1_1ConstView" ],
+    [ "operations_research::Bitset64&lt; IndexType &gt;::View", "classoperations__research_1_1Bitset64_1_1View.html", "classoperations__research_1_1Bitset64_1_1View" ],
+    [ "operations_research::Bitset64&lt; IndexType &gt;::Iterator", "classoperations__research_1_1Bitset64_1_1Iterator.html", "classoperations__research_1_1Bitset64_1_1Iterator" ],
     [ "operations_research::BitQueue64", "classoperations__research_1_1BitQueue64.html", "classoperations__research_1_1BitQueue64" ],
-    [ "operations_research::SparseBitset< IntegerType >", "classoperations__research_1_1SparseBitset.html", "classoperations__research_1_1SparseBitset" ],
+    [ "operations_research::SparseBitset&lt; IntegerType &gt;", "classoperations__research_1_1SparseBitset.html", "classoperations__research_1_1SparseBitset" ],
     [ "USE_DEBRUIJN", "bitset_8h.html#ae5a53e66fb1e93cdfc78edc0aa603d81", null ],
     [ "operations_research::BitCount32", "namespaceoperations__research.html#a4841d3c6b072a22ba2b2fe43d6c03298", null ],
     [ "operations_research::BitCount64", "namespaceoperations__research.html#abc979832d72da1ae793ba6d28ae46672", null ],

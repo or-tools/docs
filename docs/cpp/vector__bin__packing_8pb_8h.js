@@ -5,7 +5,7 @@ var vector__bin__packing_8pb_8h =
     [ "operations_research::packing::vbp::Item", "classoperations__research_1_1packing_1_1vbp_1_1Item.html", "classoperations__research_1_1packing_1_1vbp_1_1Item" ],
     [ "operations_research::packing::vbp::VectorBinPackingSolution", "classoperations__research_1_1packing_1_1vbp_1_1VectorBinPackingSolution.html", "classoperations__research_1_1packing_1_1vbp_1_1VectorBinPackingSolution" ],
     [ "operations_research::packing::vbp::VectorBinPackingProblem", "classoperations__research_1_1packing_1_1vbp_1_1VectorBinPackingProblem.html", "classoperations__research_1_1packing_1_1vbp_1_1VectorBinPackingProblem" ],
-    [ "google::protobuf::is_proto_enum<::operations_research::packing::vbp::VectorBinPackingSolveStatus >", "structgoogle_1_1protobuf_1_1is__proto__enum_3_1_1operations__research_1_1packing_1_1vbp_1_1VectorBinPackingSolveStatus_01_4.html", null ],
+    [ "google::protobuf::is_proto_enum&lt;::operations_research::packing::vbp::VectorBinPackingSolveStatus &gt;", "structgoogle_1_1protobuf_1_1is__proto__enum_3_1_1operations__research_1_1packing_1_1vbp_1_1VectorBinPackingSolveStatus_01_4.html", null ],
     [ "PROTOBUF_INTERNAL_EXPORT_ortools_2fpacking_2fvector_5fbin_5fpacking_2eproto", "vector__bin__packing_8pb_8h.html#ab5ea2c36170d9b90a220f32d412d0f21", null ],
     [ "operations_research::packing::vbp::VectorBinPackingSolveStatus", "namespaceoperations__research_1_1packing_1_1vbp.html#a9fe31b075b278337e595fd2e694f6247", [
       [ "operations_research::packing::vbp::VECTOR_BIN_PACKING_SOLVE_STATUS_UNSPECIFIED", "namespaceoperations__research_1_1packing_1_1vbp.html#a9fe31b075b278337e595fd2e694f6247ae5d065564701d39d4d5cb7a63b73965f", null ],

@@ -1,7 +1,7 @@
 var classcom_1_1google_1_1ortools_1_1sat_1_1ConstraintProto =
 [
-    [ "Builder", "classcom_1_1google_1_1ortools_1_1sat_1_1ConstraintProto_1_1Builder.html", "classcom_1_1google_1_1ortools_1_1sat_1_1ConstraintProto_1_1Builder" ],
     [ "ConstraintCase", "enumcom_1_1google_1_1ortools_1_1sat_1_1ConstraintProto_1_1ConstraintCase.html", "enumcom_1_1google_1_1ortools_1_1sat_1_1ConstraintProto_1_1ConstraintCase" ],
+    [ "Builder", "classcom_1_1google_1_1ortools_1_1sat_1_1ConstraintProto_1_1Builder.html", "classcom_1_1google_1_1ortools_1_1sat_1_1ConstraintProto_1_1Builder" ],
     [ "equals", "classcom_1_1google_1_1ortools_1_1sat_1_1ConstraintProto.html#a6169420a5e403c03a1579673942ce8fe", null ],
     [ "getAllDiff", "classcom_1_1google_1_1ortools_1_1sat_1_1ConstraintProto.html#a89a375ca06d1dff87798cbefbc43b13c", null ],
     [ "getAllDiffOrBuilder", "classcom_1_1google_1_1ortools_1_1sat_1_1ConstraintProto.html#a4ff05e8cc8921df0addbf458d607ef21", null ],

@@ -43,12 +43,12 @@ var constraint__solver_8cc =
     [ "operations_research::BuildTrace", "namespaceoperations__research.html#a305fb2c8d1b04315d29bbb9e56bfe16b", null ],
     [ "operations_research::CleanVariableOnFail", "namespaceoperations__research.html#af6bec3858b63f705c96c55ec276f0309", null ],
     [ "ConstraintSolverFailsHere", "constraint__solver_8cc.html#ac13a1be8287ff935b4a93be3cc716e79", null ],
+    [ "operations_research::ContinueAtLocalOptimum", "namespaceoperations__research.html#acdb803c5445594bbfad154ebe2dcc1cb", null ],
     [ "operations_research::DeleteDemonProfiler", "namespaceoperations__research.html#a16668bdef0fba9904c7e10b84c3d0780", null ],
     [ "operations_research::DeleteLocalSearchProfiler", "namespaceoperations__research.html#a0610659039d8f9942cff20ba68272b56", null ],
     [ "operations_research::InstallDemonProfiler", "namespaceoperations__research.html#aef807da89540a4d6f7624f187b0a3470", null ],
     [ "operations_research::InstallLocalSearchProfiler", "namespaceoperations__research.html#aa62cc81b70810b07f4e311d2976d2e21", null ],
     [ "operations_research::InternalSaveBooleanVarValue", "namespaceoperations__research.html#a0e9621c9c2973131800432eaa57818d5", null ],
-    [ "operations_research::LocalOptimumReached", "namespaceoperations__research.html#a731d145d42cc267bb4adb5b29f712c80", null ],
     [ "operations_research::operator<<", "namespaceoperations__research.html#ac041fcf7265a3961cffe73a3dd9c546b", null ],
     [ "operations_research::operator<<", "namespaceoperations__research.html#a87fdc0126f6fc98ffb86ba1aa618f322", null ],
     [ "operations_research::RestoreBoolValue", "namespaceoperations__research.html#a1fbed096e1f23c078612cf49e81137a7", null ]

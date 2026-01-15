@@ -1,11 +1,11 @@
 var classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria =
 [
-    [ "Builder", "classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1Builder.html", "classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1Builder" ],
-    [ "DetailedOptimalityCriteria", "classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1DetailedOptimalityCriteria.html", "classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1DetailedOptimalityCriteria" ],
-    [ "DetailedOptimalityCriteriaOrBuilder", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1DetailedOptimalityCriteriaOrBuilder.html", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1DetailedOptimalityCriteriaOrBuilder" ],
-    [ "OptimalityCriteriaCase", "enumcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1OptimalityCriteriaCase.html", "enumcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1OptimalityCriteriaCase" ],
-    [ "SimpleOptimalityCriteria", "classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1SimpleOptimalityCriteria.html", "classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1SimpleOptimalityCriteria" ],
     [ "SimpleOptimalityCriteriaOrBuilder", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1SimpleOptimalityCriteriaOrBuilder.html", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1SimpleOptimalityCriteriaOrBuilder" ],
+    [ "SimpleOptimalityCriteria", "classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1SimpleOptimalityCriteria.html", "classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1SimpleOptimalityCriteria" ],
+    [ "DetailedOptimalityCriteriaOrBuilder", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1DetailedOptimalityCriteriaOrBuilder.html", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1DetailedOptimalityCriteriaOrBuilder" ],
+    [ "DetailedOptimalityCriteria", "classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1DetailedOptimalityCriteria.html", "classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1DetailedOptimalityCriteria" ],
+    [ "OptimalityCriteriaCase", "enumcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1OptimalityCriteriaCase.html", "enumcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1OptimalityCriteriaCase" ],
+    [ "Builder", "classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1Builder.html", "classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1Builder" ],
     [ "equals", "classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria.html#a1c2520f9c20adf33fed274f3f6a17d94", null ],
     [ "getDefaultInstance", "classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria.html#aedeaceb893f7d35aac618994edff6429", null ],
     [ "getDefaultInstanceForType", "classcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria.html#a38e2ef361085f3f2167823e0435a10c4", null ],

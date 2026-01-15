@@ -5,9 +5,9 @@ var gscip__constraint__handler_8h =
     [ "operations_research::GScipLazyConstraintOptions", "structoperations__research_1_1GScipLazyConstraintOptions.html", "structoperations__research_1_1GScipLazyConstraintOptions" ],
     [ "operations_research::GScipCallbackStats", "structoperations__research_1_1GScipCallbackStats.html", "structoperations__research_1_1GScipCallbackStats" ],
     [ "operations_research::GScipConstraintHandlerContext", "classoperations__research_1_1GScipConstraintHandlerContext.html", "classoperations__research_1_1GScipConstraintHandlerContext" ],
-    [ "operations_research::GScipConstraintHandler< ConstraintData >", "classoperations__research_1_1GScipConstraintHandler.html", "classoperations__research_1_1GScipConstraintHandler" ],
+    [ "operations_research::GScipConstraintHandler&lt; ConstraintData &gt;", "classoperations__research_1_1GScipConstraintHandler.html", "classoperations__research_1_1GScipConstraintHandler" ],
     [ "operations_research::internal::UntypedGScipConstraintHandler", "classoperations__research_1_1internal_1_1UntypedGScipConstraintHandler.html", "classoperations__research_1_1internal_1_1UntypedGScipConstraintHandler" ],
-    [ "operations_research::internal::UntypedGScipConstraintHandlerImpl< ConstraintData >", "classoperations__research_1_1internal_1_1UntypedGScipConstraintHandlerImpl.html", "classoperations__research_1_1internal_1_1UntypedGScipConstraintHandlerImpl" ],
+    [ "operations_research::internal::UntypedGScipConstraintHandlerImpl&lt; ConstraintData &gt;", "classoperations__research_1_1internal_1_1UntypedGScipConstraintHandlerImpl.html", "classoperations__research_1_1internal_1_1UntypedGScipConstraintHandlerImpl" ],
     [ "operations_research::ConstraintHandlerCallbackType", "namespaceoperations__research.html#a55e125ad0e0a965f9a1914744590c0de", [
       [ "operations_research::ConstraintHandlerCallbackType::kSepaLp", "namespaceoperations__research.html#a55e125ad0e0a965f9a1914744590c0dea6073aa9bbcd4e8b471d3261629a1aa4c", null ],
       [ "operations_research::ConstraintHandlerCallbackType::kSepaSol", "namespaceoperations__research.html#a55e125ad0e0a965f9a1914744590c0deaa2e0fc115580e0a41e85029b8ba88e6b", null ],

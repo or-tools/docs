@@ -2,25 +2,17 @@ var classGoogle_1_1OrTools_1_1Sat_1_1SatParameters_1_1Types =
 [
     [ "BinaryMinizationAlgorithm", "classGoogle_1_1OrTools_1_1Sat_1_1SatParameters_1_1Types.html#a0e602238245548221c8cd22ee897868f", [
       [ "NoBinaryMinimization", "classGoogle_1_1OrTools_1_1Sat_1_1SatParameters_1_1Types.html#a0e602238245548221c8cd22ee897868fa863ddd5eea7c5624bb9d9dd18433f9f4", null ],
-      [ "BinaryMinimizationFirst", "classGoogle_1_1OrTools_1_1Sat_1_1SatParameters_1_1Types.html#a0e602238245548221c8cd22ee897868fa48331336763794cdc361ea0a85a21ba2", null ],
-      [ "BinaryMinimizationFirstWithTransitiveReduction", "classGoogle_1_1OrTools_1_1Sat_1_1SatParameters_1_1Types.html#a0e602238245548221c8cd22ee897868faf5c6199f04cb8e32c4821664ea590407", null ],
-      [ "BinaryMinimizationWithReachability", "classGoogle_1_1OrTools_1_1Sat_1_1SatParameters_1_1Types.html#a0e602238245548221c8cd22ee897868fa6c1d87886c7de7ff516c1271c4454c5d", null ],
-      [ "ExperimentalBinaryMinimization", "classGoogle_1_1OrTools_1_1Sat_1_1SatParameters_1_1Types.html#a0e602238245548221c8cd22ee897868fa8362fe1672630d173dfad15a38fef136", null ]
+      [ "BinaryMinimizationFromUip", "classGoogle_1_1OrTools_1_1Sat_1_1SatParameters_1_1Types.html#a0e602238245548221c8cd22ee897868fa725bebdcbb7137d0c632aa5f55abc8f0", null ],
+      [ "BinaryMinimizationFromUipAndDecisions", "classGoogle_1_1OrTools_1_1Sat_1_1SatParameters_1_1Types.html#a0e602238245548221c8cd22ee897868fae8ba101e12a87ad494a06ebf379eb1e0", null ]
     ] ],
     [ "ClauseOrdering", "classGoogle_1_1OrTools_1_1Sat_1_1SatParameters_1_1Types.html#addc21256fe2181d4a9a267a2a0479309", [
       [ "ClauseActivity", "classGoogle_1_1OrTools_1_1Sat_1_1SatParameters_1_1Types.html#addc21256fe2181d4a9a267a2a0479309a4c1ddb769ad1aa9baaff9638521d3420", null ],
       [ "ClauseLbd", "classGoogle_1_1OrTools_1_1Sat_1_1SatParameters_1_1Types.html#addc21256fe2181d4a9a267a2a0479309a01beb33803b8d17489178f2f7cf90e4b", null ]
     ] ],
-    [ "ClauseProtection", "classGoogle_1_1OrTools_1_1Sat_1_1SatParameters_1_1Types.html#affc2d8c431eb54bc166ad4b6429985d0", [
-      [ "ProtectionNone", "classGoogle_1_1OrTools_1_1Sat_1_1SatParameters_1_1Types.html#affc2d8c431eb54bc166ad4b6429985d0a3c2d862f4536788c6b00eb3bbdcd81bf", null ],
-      [ "ProtectionAlways", "classGoogle_1_1OrTools_1_1Sat_1_1SatParameters_1_1Types.html#affc2d8c431eb54bc166ad4b6429985d0aa55bfd0b764cb345b5ecb6ad74057080", null ],
-      [ "ProtectionLbd", "classGoogle_1_1OrTools_1_1Sat_1_1SatParameters_1_1Types.html#affc2d8c431eb54bc166ad4b6429985d0a31568504133c70a7d7e9322bac4c625a", null ]
-    ] ],
     [ "ConflictMinimizationAlgorithm", "classGoogle_1_1OrTools_1_1Sat_1_1SatParameters_1_1Types.html#aac36f8c43f8e6c7187ba1992f1fca1eb", [
       [ "None", "classGoogle_1_1OrTools_1_1Sat_1_1SatParameters_1_1Types.html#aac36f8c43f8e6c7187ba1992f1fca1eba6adf97f83acf6453d4a6a4b1070f3754", null ],
       [ "Simple", "classGoogle_1_1OrTools_1_1Sat_1_1SatParameters_1_1Types.html#aac36f8c43f8e6c7187ba1992f1fca1eba1fbb1e3943c2c6c560247ac8f9289780", null ],
-      [ "Recursive", "classGoogle_1_1OrTools_1_1Sat_1_1SatParameters_1_1Types.html#aac36f8c43f8e6c7187ba1992f1fca1eba556c3dd912453ae5cb3095cd5054e6f4", null ],
-      [ "Experimental", "classGoogle_1_1OrTools_1_1Sat_1_1SatParameters_1_1Types.html#aac36f8c43f8e6c7187ba1992f1fca1eba704b5561562b054400f33f22cf61c5f5", null ]
+      [ "Recursive", "classGoogle_1_1OrTools_1_1Sat_1_1SatParameters_1_1Types.html#aac36f8c43f8e6c7187ba1992f1fca1eba556c3dd912453ae5cb3095cd5054e6f4", null ]
     ] ],
     [ "FPRoundingMethod", "classGoogle_1_1OrTools_1_1Sat_1_1SatParameters_1_1Types.html#a8f8dd41def5a928901d75117b82a5f2c", [
       [ "NearestInteger", "classGoogle_1_1OrTools_1_1Sat_1_1SatParameters_1_1Types.html#a8f8dd41def5a928901d75117b82a5f2cada827bccd8b9c009d675e73413178825", null ],

@@ -1,7 +1,7 @@
 var classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPModelRequest =
 [
-    [ "Builder", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPModelRequest_1_1Builder.html", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPModelRequest_1_1Builder" ],
     [ "SolverType", "enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPModelRequest_1_1SolverType.html", "enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPModelRequest_1_1SolverType" ],
+    [ "Builder", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPModelRequest_1_1Builder.html", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPModelRequest_1_1Builder" ],
     [ "equals", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPModelRequest.html#ab11527fd2c0706355b070e226f519e25", null ],
     [ "getDefaultInstance", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPModelRequest.html#a7d4c80605cd34ec9a434c9a5bd571487", null ],
     [ "getDefaultInstanceForType", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPModelRequest.html#abb413132f65d027c0a7460430c8d94a1", null ],

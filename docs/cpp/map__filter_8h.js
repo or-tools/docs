@@ -1,6 +1,6 @@
 var map__filter_8h =
 [
-    [ "operations_research::math_opt::MapFilter< KeyType >", "structoperations__research_1_1math__opt_1_1MapFilter.html", "structoperations__research_1_1math__opt_1_1MapFilter" ],
+    [ "operations_research::math_opt::MapFilter&lt; KeyType &gt;", "structoperations__research_1_1math__opt_1_1MapFilter.html", "structoperations__research_1_1math__opt_1_1MapFilter" ],
     [ "operations_research::math_opt::LinearConstraintFilterFromProto", "namespaceoperations__research_1_1math__opt.html#a673c4f57f93632f039ed8f8692e193c8", null ],
     [ "operations_research::math_opt::MakeKeepKeysFilter", "namespaceoperations__research_1_1math__opt.html#aa7894be01df87f86ca493611830c88d9", null ],
     [ "operations_research::math_opt::MakeKeepKeysFilter", "namespaceoperations__research_1_1math__opt.html#a08dd9fe8b5d24b8b3e8252b821b6f043", null ],

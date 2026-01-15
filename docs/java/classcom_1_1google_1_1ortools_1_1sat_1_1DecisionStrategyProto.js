@@ -1,8 +1,8 @@
 var classcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto =
 [
-    [ "Builder", "classcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto_1_1Builder.html", "classcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto_1_1Builder" ],
-    [ "DomainReductionStrategy", "enumcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto_1_1DomainReductionStrategy.html", "enumcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto_1_1DomainReductionStrategy" ],
     [ "VariableSelectionStrategy", "enumcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto_1_1VariableSelectionStrategy.html", "enumcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto_1_1VariableSelectionStrategy" ],
+    [ "DomainReductionStrategy", "enumcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto_1_1DomainReductionStrategy.html", "enumcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto_1_1DomainReductionStrategy" ],
+    [ "Builder", "classcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto_1_1Builder.html", "classcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto_1_1Builder" ],
     [ "equals", "classcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto.html#a80c0c92fdd06588451647ffbcf7c0915", null ],
     [ "getDefaultInstance", "classcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto.html#ac9f0eb087ae93fe43f226c28be2aaf68", null ],
     [ "getDefaultInstanceForType", "classcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto.html#af8d0ca66ceb9a7092f08883174e322e6", null ],

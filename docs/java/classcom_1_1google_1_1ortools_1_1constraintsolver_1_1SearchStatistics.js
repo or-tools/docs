@@ -17,6 +17,11 @@ var classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SearchStatistics =
     [ "getLocalSearchStatisticsOrBuilderList", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SearchStatistics.html#aac1dd50cfe4f256efd93cea3eccbe3ef", null ],
     [ "getParserForType", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SearchStatistics.html#ab2e06f9d9b2fc63f764a405d0dd1cadc", null ],
     [ "getSerializedSize", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SearchStatistics.html#a97c3347cea0330244ef8029fa76d4e10", null ],
+    [ "getSubSolverStatistics", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SearchStatistics.html#aabfde594737ffe41a613b9ac6b55b0fc", null ],
+    [ "getSubSolverStatisticsCount", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SearchStatistics.html#a8bcd3b53308de6c291e63686bc127c63", null ],
+    [ "getSubSolverStatisticsList", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SearchStatistics.html#a6d2a302734734a6bbd0470c07b2ac7a4", null ],
+    [ "getSubSolverStatisticsOrBuilder", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SearchStatistics.html#ae0a74ca94266168f209d055190651fa7", null ],
+    [ "getSubSolverStatisticsOrBuilderList", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SearchStatistics.html#a049846ca5e14e9232c636febaba8333c", null ],
     [ "hashCode", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SearchStatistics.html#abd977acf255f562b493a3dd98479a76d", null ],
     [ "internalGetFieldAccessorTable", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SearchStatistics.html#af2e2d7dd8c3477931af4cd3805cf0d1c", null ],
     [ "isInitialized", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SearchStatistics.html#a0dd9ad2c2a1c8c53590f6ff9bef5d26a", null ],
@@ -40,5 +45,6 @@ var classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SearchStatistics =
     [ "toBuilder", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SearchStatistics.html#a4ed392f15dd649fe63ad5b52696551ad", null ],
     [ "writeTo", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SearchStatistics.html#ae071e55f0da5cec9f589b7ff29f7f4cb", null ],
     [ "CONSTRAINT_SOLVER_STATISTICS_FIELD_NUMBER", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SearchStatistics.html#adad44ea0627defcbb7c57960b7711fe7", null ],
-    [ "LOCAL_SEARCH_STATISTICS_FIELD_NUMBER", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SearchStatistics.html#a2ad85eaeed8c8aaf98f53212ffc65225", null ]
+    [ "LOCAL_SEARCH_STATISTICS_FIELD_NUMBER", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SearchStatistics.html#a2ad85eaeed8c8aaf98f53212ffc65225", null ],
+    [ "SUB_SOLVER_STATISTICS_FIELD_NUMBER", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SearchStatistics.html#a03769344c87a5c463de554a32aa6b199", null ]
 ];

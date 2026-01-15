@@ -10,6 +10,5 @@ var searchData=
   ['relative_5fmip_5fgap_7',['RELATIVE_MIP_GAP',['../classortools_1_1linear__solver_1_1pywraplp_1_1MPSolverParameters.html#ab20f5a25013f1b1d4ab64b56e66551f7',1,'ortools::linear_solver::pywraplp::MPSolverParameters']]],
   ['relocate_8',['RELOCATE',['../classortools_1_1constraint__solver_1_1pywrapcp_1_1Solver.html#a15b6c67ee17e7dee4b45dffb7ae768f5',1,'ortools::constraint_solver::pywrapcp::Solver']]],
   ['resource_5fexhausted_9',['RESOURCE_EXHAUSTED',['../classortools_1_1math__opt_1_1python_1_1errors_1_1__StatusCode.html#aacbcc3bfcb9d8a7b5cf800713d2a4f1d',1,'ortools::math_opt::python::errors::_StatusCode']]],
-  ['retired_10',['retired',['../classortools_1_1math__opt_1_1python_1_1hash__model__storage_1_1__UpdateTracker.html#a55a3f409e53f3be4644d134c19fb90ca',1,'ortools::math_opt::python::hash_model_storage::_UpdateTracker']]],
-  ['runtime_11',['runtime',['../classortools_1_1math__opt_1_1python_1_1callback_1_1CallbackData.html#af163b6714a63dcda9261e2bb16769a03',1,'ortools::math_opt::python::callback::CallbackData']]]
+  ['runtime_10',['runtime',['../classortools_1_1math__opt_1_1python_1_1callback_1_1CallbackData.html#af163b6714a63dcda9261e2bb16769a03',1,'ortools::math_opt::python::callback::CallbackData']]]
 ];

@@ -1,6 +1,6 @@
 var classoperations__research_1_1RoutingGlopWrapper =
 [
-    [ "RoutingGlopWrapper", "classoperations__research_1_1RoutingGlopWrapper.html#a647767aeb42c1b6fbc0594cfc2d1bb09", null ],
+    [ "RoutingGlopWrapper", "classoperations__research_1_1RoutingGlopWrapper.html#a600f1c63945777db38367123418de209", null ],
     [ "AddMaximumConstraint", "classoperations__research_1_1RoutingGlopWrapper.html#a92819ee4717d4f3be3c881441aa86074", null ],
     [ "AddObjectiveConstraint", "classoperations__research_1_1RoutingGlopWrapper.html#a95cb138c3b9a16a600857fd691b8fe57", null ],
     [ "AddProductConstraint", "classoperations__research_1_1RoutingGlopWrapper.html#afa1a954348bd5d97c512e2a24b928e9e", null ],
@@ -11,9 +11,9 @@ var classoperations__research_1_1RoutingGlopWrapper =
     [ "CreateNewPositiveVariable", "classoperations__research_1_1RoutingGlopWrapper.html#a5288c17bc20828683a3b28c4377c726c", null ],
     [ "GetObjectiveCoefficient", "classoperations__research_1_1RoutingGlopWrapper.html#a3944d86b32b06a08e2534fd2dfb767c2", null ],
     [ "GetObjectiveValue", "classoperations__research_1_1RoutingGlopWrapper.html#aa9a42236a0852a27a9079833555c0aa7", null ],
-    [ "GetValue", "classoperations__research_1_1RoutingGlopWrapper.html#a36af42d56b29a802866c46d69287c0f6", null ],
     [ "GetVariableLowerBound", "classoperations__research_1_1RoutingGlopWrapper.html#a0355dd71f3ae8f586eb9cd5585a1c899", null ],
     [ "GetVariableUpperBound", "classoperations__research_1_1RoutingGlopWrapper.html#ac83dfb1a8199db000406e5bb9a8af29f", null ],
+    [ "GetVariableValue", "classoperations__research_1_1RoutingGlopWrapper.html#a281cb6f484fec5f32843f9e727b0c096", null ],
     [ "IsCPSATSolver", "classoperations__research_1_1RoutingGlopWrapper.html#ad20fc400faf341fcae77364a5d91dd90", null ],
     [ "NumVariables", "classoperations__research_1_1RoutingGlopWrapper.html#a10abe84f1ca1aa2f3eef07b5958c41c8", null ],
     [ "PrintModel", "classoperations__research_1_1RoutingGlopWrapper.html#a6e9afdf1ffb0dba256ae65a29dcc3e64", null ],

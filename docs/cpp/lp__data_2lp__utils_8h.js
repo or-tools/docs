@@ -1,6 +1,6 @@
 var lp__data_2lp__utils_8h =
 [
-    [ "operations_research::glop::SumWithOneMissing< supported_infinity_is_positive >", "classoperations__research_1_1glop_1_1SumWithOneMissing.html", "classoperations__research_1_1glop_1_1SumWithOneMissing" ],
+    [ "operations_research::glop::SumWithOneMissing&lt; supported_infinity_is_positive &gt;", "classoperations__research_1_1glop_1_1SumWithOneMissing.html", "classoperations__research_1_1glop_1_1SumWithOneMissing" ],
     [ "operations_research::glop::KahanSum", "namespaceoperations__research_1_1glop.html#a451faba66f544c02438a3ce062b69900", null ],
     [ "operations_research::glop::SumWithNegativeInfiniteAndOneMissing", "namespaceoperations__research_1_1glop.html#adfda9cd0e944b3b944450b35de987040", null ],
     [ "operations_research::glop::SumWithPositiveInfiniteAndOneMissing", "namespaceoperations__research_1_1glop.html#a4ee0884ca39d797357187ce178839dc2", null ],
@@ -36,5 +36,5 @@ var lp__data_2lp__utils_8h =
     [ "operations_research::glop::SquaredNorm", "namespaceoperations__research_1_1glop.html#a251d28033e817dc9c714888a54b28335", null ],
     [ "operations_research::glop::SquaredNorm", "namespaceoperations__research_1_1glop.html#acc121482814b7aa114912f5de1601a40", null ],
     [ "operations_research::glop::SquaredNormAndResetToZero", "namespaceoperations__research_1_1glop.html#ae3ee0e0e5017ea0b50147ac7e08c0d1d", null ],
-    [ "operations_research::glop::Transpose", "namespaceoperations__research_1_1glop.html#a57e4ca3510085acc223e7067fcd1e283", null ]
+    [ "operations_research::glop::Transpose", "namespaceoperations__research_1_1glop.html#a7b9550503a9c0494b09c4383fd8b2da1", null ]
 ];

@@ -3,6 +3,7 @@ var classoperations__research_1_1sat_1_1PbConstraints =
     [ "PbConstraints", "classoperations__research_1_1sat_1_1PbConstraints.html#a42f1f47f547f84fd8941efd1b9d3cf98", null ],
     [ "PbConstraints", "classoperations__research_1_1sat_1_1PbConstraints.html#a36c0c13831be197bcf681a12b4365173", null ],
     [ "~PbConstraints", "classoperations__research_1_1sat_1_1PbConstraints.html#a435ebc62a792f25c66b80a5c7414ff84", null ],
+    [ "AddConstraint", "classoperations__research_1_1sat_1_1PbConstraints.html#a972fc110bcee78b56ee922dc2a95bb66", null ],
     [ "AddConstraint", "classoperations__research_1_1sat_1_1PbConstraints.html#a09190309faf157e3b7187403cfcb514c", null ],
     [ "AddLearnedConstraint", "classoperations__research_1_1sat_1_1PbConstraints.html#a9f899a5003debe87f874330b80760cdb", null ],
     [ "BumpActivity", "classoperations__research_1_1sat_1_1PbConstraints.html#a9474a3e975c9c26b00740c514d82c373", null ],

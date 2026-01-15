@@ -1,7 +1,7 @@
 var classcom_1_1google_1_1ortools_1_1graph_1_1FlowModelProto =
 [
-    [ "Builder", "classcom_1_1google_1_1ortools_1_1graph_1_1FlowModelProto_1_1Builder.html", "classcom_1_1google_1_1ortools_1_1graph_1_1FlowModelProto_1_1Builder" ],
     [ "ProblemType", "enumcom_1_1google_1_1ortools_1_1graph_1_1FlowModelProto_1_1ProblemType.html", "enumcom_1_1google_1_1ortools_1_1graph_1_1FlowModelProto_1_1ProblemType" ],
+    [ "Builder", "classcom_1_1google_1_1ortools_1_1graph_1_1FlowModelProto_1_1Builder.html", "classcom_1_1google_1_1ortools_1_1graph_1_1FlowModelProto_1_1Builder" ],
     [ "equals", "classcom_1_1google_1_1ortools_1_1graph_1_1FlowModelProto.html#a7540dd18378d9c9e2690f26e987230d4", null ],
     [ "getArcs", "classcom_1_1google_1_1ortools_1_1graph_1_1FlowModelProto.html#a73387bac078fb999828d5ab44ef61ed6", null ],
     [ "getArcsCount", "classcom_1_1google_1_1ortools_1_1graph_1_1FlowModelProto.html#ac4ef3dfc173e143ba2adba0cc932aab1", null ],

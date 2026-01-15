@@ -1,12 +1,12 @@
 var searchData=
 [
-  ['quadraticbase_0',['QuadraticBase',['../classortools_1_1math__opt_1_1python_1_1variables_1_1QuadraticBase.html',1,'ortools::math_opt::python::variables']]],
-  ['quadraticconstraint_1',['QuadraticConstraint',['../classortools_1_1math__opt_1_1python_1_1quadratic__constraints_1_1QuadraticConstraint.html',1,'ortools::math_opt::python::quadratic_constraints']]],
-  ['quadraticentry_2',['QuadraticEntry',['../classortools_1_1math__opt_1_1python_1_1model__storage_1_1QuadraticEntry.html',1,'ortools::math_opt::python::model_storage']]],
-  ['quadraticexpression_3',['QuadraticExpression',['../classortools_1_1math__opt_1_1python_1_1variables_1_1QuadraticExpression.html',1,'ortools::math_opt::python::variables']]],
-  ['quadraticproduct_4',['QuadraticProduct',['../classortools_1_1math__opt_1_1python_1_1variables_1_1QuadraticProduct.html',1,'ortools::math_opt::python::variables']]],
-  ['quadraticsum_5',['QuadraticSum',['../classortools_1_1math__opt_1_1python_1_1variables_1_1QuadraticSum.html',1,'ortools::math_opt::python::variables']]],
-  ['quadraticterm_6',['QuadraticTerm',['../classortools_1_1math__opt_1_1python_1_1variables_1_1QuadraticTerm.html',1,'ortools::math_opt::python::variables']]],
-  ['quadratictermidkey_7',['QuadraticTermIdKey',['../classortools_1_1math__opt_1_1python_1_1model__storage_1_1QuadraticTermIdKey.html',1,'ortools::math_opt::python::model_storage']]],
-  ['quadratictermkey_8',['QuadraticTermKey',['../classortools_1_1math__opt_1_1python_1_1variables_1_1QuadraticTermKey.html',1,'ortools::math_opt::python::variables']]]
+  ['range_0',['Range',['../classortools_1_1math__opt_1_1python_1_1statistics_1_1Range.html',1,'ortools::math_opt::python::statistics']]],
+  ['revbool_1',['RevBool',['../classortools_1_1constraint__solver_1_1pywrapcp_1_1RevBool.html',1,'ortools::constraint_solver::pywrapcp']]],
+  ['revinteger_2',['RevInteger',['../classortools_1_1constraint__solver_1_1pywrapcp_1_1RevInteger.html',1,'ortools::constraint_solver::pywrapcp']]],
+  ['routingdimension_3',['RoutingDimension',['../classortools_1_1constraint__solver_1_1pywrapcp_1_1RoutingDimension.html',1,'ortools::constraint_solver::pywrapcp']]],
+  ['routingindexmanager_4',['RoutingIndexManager',['../classortools_1_1constraint__solver_1_1pywrapcp_1_1RoutingIndexManager.html',1,'ortools::constraint_solver::pywrapcp']]],
+  ['routingmodel_5',['RoutingModel',['../classortools_1_1constraint__solver_1_1pywrapcp_1_1RoutingModel.html',1,'ortools::constraint_solver::pywrapcp']]],
+  ['routingmodelvisitor_6',['RoutingModelVisitor',['../classortools_1_1constraint__solver_1_1pywrapcp_1_1RoutingModelVisitor.html',1,'ortools::constraint_solver::pywrapcp']]],
+  ['routingsearchstats_7',['RoutingSearchStats',['../classortools_1_1constraint__solver_1_1pywrapcp_1_1RoutingSearchStats.html',1,'ortools::constraint_solver::pywrapcp']]],
+  ['routingsearchstatus_8',['RoutingSearchStatus',['../classortools_1_1constraint__solver_1_1pywrapcp_1_1RoutingSearchStatus.html',1,'ortools::constraint_solver::pywrapcp']]]
 ];

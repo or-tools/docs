@@ -2,7 +2,7 @@ var solver__parameters_8pb_8h =
 [
     [ "TableStruct_ortools_2fconstraint_5fsolver_2fsolver_5fparameters_2eproto", "structTableStruct__ortools__2fconstraint__5fsolver__2fsolver__5fparameters__2eproto.html", "structTableStruct__ortools__2fconstraint__5fsolver__2fsolver__5fparameters__2eproto" ],
     [ "operations_research::ConstraintSolverParameters", "classoperations__research_1_1ConstraintSolverParameters.html", "classoperations__research_1_1ConstraintSolverParameters" ],
-    [ "google::protobuf::is_proto_enum<::operations_research::ConstraintSolverParameters_TrailCompression >", "structgoogle_1_1protobuf_1_1is__proto__enum_3_1_1operations__research_1_1ConstraintSolverParameters__TrailCompression_01_4.html", null ],
+    [ "google::protobuf::is_proto_enum&lt;::operations_research::ConstraintSolverParameters_TrailCompression &gt;", "structgoogle_1_1protobuf_1_1is__proto__enum_3_1_1operations__research_1_1ConstraintSolverParameters__TrailCompression_01_4.html", null ],
     [ "PROTOBUF_INTERNAL_EXPORT_ortools_2fconstraint_5fsolver_2fsolver_5fparameters_2eproto", "solver__parameters_8pb_8h.html#a98bf155317127ca9271994ccab0f6846", null ],
     [ "operations_research::ConstraintSolverParameters_TrailCompression", "namespaceoperations__research.html#a9c3529e9c95b6c871477af83cac9f64e", [
       [ "operations_research::ConstraintSolverParameters_TrailCompression_NO_COMPRESSION", "namespaceoperations__research.html#a9c3529e9c95b6c871477af83cac9f64eab58cdc7d748841755f8173b1ebc9071b", null ],

@@ -1,10 +1,10 @@
 var classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolverParameters =
 [
     [ "DoubleParam", "enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolverParameters_1_1DoubleParam.html", "enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolverParameters_1_1DoubleParam" ],
-    [ "IncrementalityValues", "enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolverParameters_1_1IncrementalityValues.html", "enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolverParameters_1_1IncrementalityValues" ],
     [ "IntegerParam", "enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolverParameters_1_1IntegerParam.html", "enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolverParameters_1_1IntegerParam" ],
-    [ "LpAlgorithmValues", "enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolverParameters_1_1LpAlgorithmValues.html", "enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolverParameters_1_1LpAlgorithmValues" ],
     [ "PresolveValues", "enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolverParameters_1_1PresolveValues.html", "enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolverParameters_1_1PresolveValues" ],
+    [ "LpAlgorithmValues", "enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolverParameters_1_1LpAlgorithmValues.html", "enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolverParameters_1_1LpAlgorithmValues" ],
+    [ "IncrementalityValues", "enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolverParameters_1_1IncrementalityValues.html", "enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolverParameters_1_1IncrementalityValues" ],
     [ "ScalingValues", "enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolverParameters_1_1ScalingValues.html", "enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolverParameters_1_1ScalingValues" ],
     [ "MPSolverParameters", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolverParameters.html#aa9d297881f54a39c43de294763dcf5e4", null ],
     [ "MPSolverParameters", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolverParameters.html#a5d6d5158beb8bec7631899e127364704", null ],

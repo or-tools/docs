@@ -1,9 +1,9 @@
 var namespaceoperations__research_1_1math__opt_1_1codegen =
 [
-    [ "AttrOpFunctionInfo", "structoperations__research_1_1math__opt_1_1codegen_1_1AttrOpFunctionInfo.html", "structoperations__research_1_1math__opt_1_1codegen_1_1AttrOpFunctionInfo" ],
     [ "CodegenAttrTypeDescriptor", "structoperations__research_1_1math__opt_1_1codegen_1_1CodegenAttrTypeDescriptor.html", "structoperations__research_1_1math__opt_1_1codegen_1_1CodegenAttrTypeDescriptor" ],
-    [ "CodeGenerator", "classoperations__research_1_1math__opt_1_1codegen_1_1CodeGenerator.html", "classoperations__research_1_1math__opt_1_1codegen_1_1CodeGenerator" ],
     [ "Type", "classoperations__research_1_1math__opt_1_1codegen_1_1Type.html", "classoperations__research_1_1math__opt_1_1codegen_1_1Type" ],
+    [ "AttrOpFunctionInfo", "structoperations__research_1_1math__opt_1_1codegen_1_1AttrOpFunctionInfo.html", "structoperations__research_1_1math__opt_1_1codegen_1_1AttrOpFunctionInfo" ],
+    [ "CodeGenerator", "classoperations__research_1_1math__opt_1_1codegen_1_1CodeGenerator.html", "classoperations__research_1_1math__opt_1_1codegen_1_1CodeGenerator" ],
     [ "AttrOpFunctionInfos", "namespaceoperations__research_1_1math__opt_1_1codegen.html#ae1a2fb48c88e4a64dbac3505c77f48bc", null ],
     [ "AttrOp", "namespaceoperations__research_1_1math__opt_1_1codegen.html#aa3f7e965df7536caa122f3186b962954", [
       [ "kGet", "namespaceoperations__research_1_1math__opt_1_1codegen.html#aa3f7e965df7536caa122f3186b962954aa2598ea1b9c49e158bc197c788e03cc3", null ],

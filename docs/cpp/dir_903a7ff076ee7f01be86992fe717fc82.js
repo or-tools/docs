@@ -18,8 +18,6 @@ var dir_903a7ff076ee7f01be86992fe717fc82 =
     [ "matrix_scaler.h", "matrix__scaler_8h.html", "matrix__scaler_8h" ],
     [ "matrix_utils.cc", "matrix__utils_8cc.html", "matrix__utils_8cc" ],
     [ "matrix_utils.h", "matrix__utils_8h.html", "matrix__utils_8h" ],
-    [ "model_reader.cc", "model__reader_8cc.html", "model__reader_8cc" ],
-    [ "model_reader.h", "model__reader_8h.html", "model__reader_8h" ],
     [ "mps_reader.cc", "mps__reader_8cc.html", "mps__reader_8cc" ],
     [ "mps_reader.h", "mps__reader_8h.html", "mps__reader_8h" ],
     [ "mps_reader_template.cc", "mps__reader__template_8cc.html", null ],

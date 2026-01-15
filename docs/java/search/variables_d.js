@@ -48,5 +48,7 @@ var searchData=
   ['original_5fnum_5fvariables_5ffield_5fnumber_45',['ORIGINAL_NUM_VARIABLES_FIELD_NUMBER',['../classcom_1_1google_1_1ortools_1_1sat_1_1LinearBooleanProblem.html#a8ba983ed42fc0ea0ba426c7ea378fd3f',1,'com::google::ortools::sat::LinearBooleanProblem']]],
   ['original_5fproblem_5fstats_5ffield_5fnumber_46',['ORIGINAL_PROBLEM_STATS_FIELD_NUMBER',['../classcom_1_1google_1_1ortools_1_1pdlp_1_1SolveLog.html#a3fb0539ee611a3f4f6835c1cb3fbb04c',1,'com::google::ortools::pdlp::SolveLog']]],
   ['oropt_47',['OROPT',['../classcom_1_1google_1_1ortools_1_1constraintsolver_1_1Solver.html#a751e7cd4c1826d55910599317734f666',1,'com::google::ortools::constraintsolver::Solver']]],
-  ['outside_5fsearch_48',['OUTSIDE_SEARCH',['../classcom_1_1google_1_1ortools_1_1constraintsolver_1_1Solver.html#ae35d5ae1d79e5b0362ed5bed3629e9f1',1,'com::google::ortools::constraintsolver::Solver']]]
+  ['output_5fdrat_5fproof_5ffield_5fnumber_48',['OUTPUT_DRAT_PROOF_FIELD_NUMBER',['../classcom_1_1google_1_1ortools_1_1sat_1_1SatParameters.html#a1a50780f9696b50f67e3ce68150ab92a',1,'com::google::ortools::sat::SatParameters']]],
+  ['output_5flrat_5fproof_5ffield_5fnumber_49',['OUTPUT_LRAT_PROOF_FIELD_NUMBER',['../classcom_1_1google_1_1ortools_1_1sat_1_1SatParameters.html#aa6b8d8f3ff9ed4dcc1315d84e2e5e96a',1,'com::google::ortools::sat::SatParameters']]],
+  ['outside_5fsearch_50',['OUTSIDE_SEARCH',['../classcom_1_1google_1_1ortools_1_1constraintsolver_1_1Solver.html#ae35d5ae1d79e5b0362ed5bed3629e9f1',1,'com::google::ortools::constraintsolver::Solver']]]
 ];

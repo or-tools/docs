@@ -6,5 +6,6 @@ var structoperations__research_1_1math__opt_1_1StreamableSolverInitArguments =
     [ "glop", "structoperations__research_1_1math__opt_1_1StreamableSolverInitArguments.html#ab19ef5063b2c49b7086b14e761ed12ac", null ],
     [ "glpk", "structoperations__research_1_1math__opt_1_1StreamableSolverInitArguments.html#aa9ccc5b7e3232c951379c8fb9c75f3ff", null ],
     [ "gscip", "structoperations__research_1_1math__opt_1_1StreamableSolverInitArguments.html#ae1eb62ebb370c4b3c73113f857f9427c", null ],
-    [ "gurobi", "structoperations__research_1_1math__opt_1_1StreamableSolverInitArguments.html#a61272b149e472f46566e355df7b9da54", null ]
+    [ "gurobi", "structoperations__research_1_1math__opt_1_1StreamableSolverInitArguments.html#a61272b149e472f46566e355df7b9da54", null ],
+    [ "xpress", "structoperations__research_1_1math__opt_1_1StreamableSolverInitArguments.html#acb2f99c0d4ed766f416df124a0bb3045", null ]
 ];

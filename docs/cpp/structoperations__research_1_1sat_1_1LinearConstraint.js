@@ -3,6 +3,7 @@ var structoperations__research_1_1sat_1_1LinearConstraint =
     [ "LinearConstraint", "structoperations__research_1_1sat_1_1LinearConstraint.html#a125d525e843a1d704452f47a75f62068", null ],
     [ "LinearConstraint", "structoperations__research_1_1sat_1_1LinearConstraint.html#ac87ae1e46163f45bdfe5c222f03a94db", null ],
     [ "CoeffsAsSpan", "structoperations__research_1_1sat_1_1LinearConstraint.html#a6b269babeca468ba881143b907e06d65", null ],
+    [ "CopyFrom", "structoperations__research_1_1sat_1_1LinearConstraint.html#a2f10a008e6484feca0d21ec346bd5a07", null ],
     [ "DebugString", "structoperations__research_1_1sat_1_1LinearConstraint.html#a83db1afda4add1e0977a3cc913336491", null ],
     [ "IsEqualIgnoringBounds", "structoperations__research_1_1sat_1_1LinearConstraint.html#aa51fdf3e80917d9b14cacfe2f5ea35b3", null ],
     [ "NormalizedViolation", "structoperations__research_1_1sat_1_1LinearConstraint.html#af32db93ff589de421f231dbf367f2fbd", null ],

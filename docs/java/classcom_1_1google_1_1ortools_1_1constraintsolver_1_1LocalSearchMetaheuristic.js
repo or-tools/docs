@@ -1,7 +1,7 @@
 var classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchMetaheuristic =
 [
-    [ "Builder", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchMetaheuristic_1_1Builder.html", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchMetaheuristic_1_1Builder" ],
     [ "Value", "enumcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchMetaheuristic_1_1Value.html", "enumcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchMetaheuristic_1_1Value" ],
+    [ "Builder", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchMetaheuristic_1_1Builder.html", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchMetaheuristic_1_1Builder" ],
     [ "equals", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchMetaheuristic.html#a140ae247337dd909679f375b45b6fe7e", null ],
     [ "getDefaultInstance", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchMetaheuristic.html#ac945f8a737bc30d4324ba15c15bd4ea1", null ],
     [ "getDefaultInstanceForType", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchMetaheuristic.html#a3d9cf36e028bbf776f62c0fd0d066ee4", null ],

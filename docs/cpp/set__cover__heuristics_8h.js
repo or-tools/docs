@@ -10,11 +10,11 @@ var set__cover__heuristics_8h =
     [ "operations_research::LazyElementDegreeSolutionGenerator", "classoperations__research_1_1LazyElementDegreeSolutionGenerator.html", "classoperations__research_1_1LazyElementDegreeSolutionGenerator" ],
     [ "operations_research::SteepestSearch", "classoperations__research_1_1SteepestSearch.html", "classoperations__research_1_1SteepestSearch" ],
     [ "operations_research::LazySteepestSearch", "classoperations__research_1_1LazySteepestSearch.html", "classoperations__research_1_1LazySteepestSearch" ],
-    [ "operations_research::TabuList< T >", "classoperations__research_1_1TabuList.html", "classoperations__research_1_1TabuList" ],
+    [ "operations_research::TabuList&lt; T &gt;", "classoperations__research_1_1TabuList.html", "classoperations__research_1_1TabuList" ],
     [ "operations_research::GuidedTabuSearch", "classoperations__research_1_1GuidedTabuSearch.html", "classoperations__research_1_1GuidedTabuSearch" ],
     [ "operations_research::GuidedLocalSearch", "classoperations__research_1_1GuidedLocalSearch.html", "classoperations__research_1_1GuidedLocalSearch" ],
-    [ "operations_research::ClearMostCoveredElements", "namespaceoperations__research.html#a847f0d17543462778951c488a176ea7e", null ],
-    [ "operations_research::ClearMostCoveredElements", "namespaceoperations__research.html#a83bba640c0d87bf715b181f315052c30", null ],
-    [ "operations_research::ClearRandomSubsets", "namespaceoperations__research.html#a9b023dc4bac44d145ac25be56c9cf5e2", null ],
+    [ "operations_research::ClearMostCoveredElements", "namespaceoperations__research.html#a920d36ff2bad2fd11254f2e614c33f58", null ],
+    [ "operations_research::ClearMostCoveredElements", "namespaceoperations__research.html#aca79f0774799dece330f13501617652e", null ],
+    [ "operations_research::ClearRandomSubsets", "namespaceoperations__research.html#adeb467748461b8ec6b33abd13f7ea350", null ],
     [ "operations_research::ClearRandomSubsets", "namespaceoperations__research.html#a3c48e9727ea29de201d8c81fc1ca0502", null ]
 ];

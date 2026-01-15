@@ -27,6 +27,7 @@ var namespacefile =
     [ "JoinPath", "namespacefile.html#a16012c75098a10032a714ce6e149e7e2", null ],
     [ "JoinPath", "namespacefile.html#ad3f1bf0c08a666c444298bd025ce460f", null ],
     [ "JoinPathRespectAbsolute", "namespacefile.html#af77dc8891129fc957af20dc56f10ff0b", null ],
+    [ "MakeTempFilename", "namespacefile.html#a13f0dbbfee6bdb01e6f537f38be6555a", null ],
     [ "Match", "namespacefile.html#a3a82554bc7842d9f22bd1299451122ef", null ],
     [ "Open", "namespacefile.html#ae1ba4f7be88acb9581fbc8667999d210", null ],
     [ "OpenOrDie", "namespacefile.html#a62d8e95b386a78fd5c484d63b9dff66a", null ],

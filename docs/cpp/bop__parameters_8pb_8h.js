@@ -4,8 +4,8 @@ var bop__parameters_8pb_8h =
     [ "operations_research::bop::BopOptimizerMethod", "classoperations__research_1_1bop_1_1BopOptimizerMethod.html", "classoperations__research_1_1bop_1_1BopOptimizerMethod" ],
     [ "operations_research::bop::BopSolverOptimizerSet", "classoperations__research_1_1bop_1_1BopSolverOptimizerSet.html", "classoperations__research_1_1bop_1_1BopSolverOptimizerSet" ],
     [ "operations_research::bop::BopParameters", "classoperations__research_1_1bop_1_1BopParameters.html", "classoperations__research_1_1bop_1_1BopParameters" ],
-    [ "google::protobuf::is_proto_enum<::operations_research::bop::BopOptimizerMethod_OptimizerType >", "structgoogle_1_1protobuf_1_1is__proto__enum_3_1_1operations__research_1_1bop_1_1BopOptimizerMethod__OptimizerType_01_4.html", null ],
-    [ "google::protobuf::is_proto_enum<::operations_research::bop::BopParameters_ThreadSynchronizationType >", "structgoogle_1_1protobuf_1_1is__proto__enum_3_1_1operations__research_1_1bop_1_1BopParameters__ThreadSynchronizationType_01_4.html", null ],
+    [ "google::protobuf::is_proto_enum&lt;::operations_research::bop::BopOptimizerMethod_OptimizerType &gt;", "structgoogle_1_1protobuf_1_1is__proto__enum_3_1_1operations__research_1_1bop_1_1BopOptimizerMethod__OptimizerType_01_4.html", null ],
+    [ "google::protobuf::is_proto_enum&lt;::operations_research::bop::BopParameters_ThreadSynchronizationType &gt;", "structgoogle_1_1protobuf_1_1is__proto__enum_3_1_1operations__research_1_1bop_1_1BopParameters__ThreadSynchronizationType_01_4.html", null ],
     [ "PROTOBUF_INTERNAL_EXPORT_ortools_2fbop_2fbop_5fparameters_2eproto", "bop__parameters_8pb_8h.html#a8a814f60f2294201161d9b27ea2d4342", null ],
     [ "operations_research::bop::BopOptimizerMethod_OptimizerType", "namespaceoperations__research_1_1bop.html#ab28b03c2fd04f4d2653532abbded40e5", [
       [ "operations_research::bop::BopOptimizerMethod_OptimizerType_SAT_CORE_BASED", "namespaceoperations__research_1_1bop.html#ab28b03c2fd04f4d2653532abbded40e5ae3643f50bab66a5375e0c132d97a5fab", null ],

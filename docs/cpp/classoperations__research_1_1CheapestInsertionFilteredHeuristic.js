@@ -1,9 +1,9 @@
 var classoperations__research_1_1CheapestInsertionFilteredHeuristic =
 [
+    [ "StartEndValue", "structoperations__research_1_1CheapestInsertionFilteredHeuristic_1_1StartEndValue.html", "structoperations__research_1_1CheapestInsertionFilteredHeuristic_1_1StartEndValue" ],
     [ "EvaluatorCache", "structoperations__research_1_1CheapestInsertionFilteredHeuristic_1_1EvaluatorCache.html", "structoperations__research_1_1CheapestInsertionFilteredHeuristic_1_1EvaluatorCache" ],
     [ "Seed", "structoperations__research_1_1CheapestInsertionFilteredHeuristic_1_1Seed.html", "structoperations__research_1_1CheapestInsertionFilteredHeuristic_1_1Seed" ],
     [ "SeedQueue", "structoperations__research_1_1CheapestInsertionFilteredHeuristic_1_1SeedQueue.html", "structoperations__research_1_1CheapestInsertionFilteredHeuristic_1_1SeedQueue" ],
-    [ "StartEndValue", "structoperations__research_1_1CheapestInsertionFilteredHeuristic_1_1StartEndValue.html", "structoperations__research_1_1CheapestInsertionFilteredHeuristic_1_1StartEndValue" ],
     [ "CheapestInsertionFilteredHeuristic", "classoperations__research_1_1CheapestInsertionFilteredHeuristic.html#aaf0b140fd14f2bb37e2279df950d13d5", null ],
     [ "~CheapestInsertionFilteredHeuristic", "classoperations__research_1_1CheapestInsertionFilteredHeuristic.html#a9227056a2aaa8f86ac563db663c23b39", null ],
     [ "AddSeedNodeToQueue", "classoperations__research_1_1CheapestInsertionFilteredHeuristic.html#af7c0a735c5ed327dfe80cafd7a90db2e", null ],

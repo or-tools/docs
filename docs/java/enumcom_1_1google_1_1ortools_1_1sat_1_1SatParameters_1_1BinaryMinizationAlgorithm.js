@@ -9,14 +9,10 @@ var enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1BinaryMinizationAlgo
     [ "internalGetValueMap", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1BinaryMinizationAlgorithm.html#ae3efd460012f6e58c55880835a61dff6", null ],
     [ "valueOf", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1BinaryMinizationAlgorithm.html#aa17a016f28ba3d2df7a0fba7a1bbf296", null ],
     [ "valueOf", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1BinaryMinizationAlgorithm.html#a0d783d1b70b5264d9938fc07452970e6", null ],
-    [ "BINARY_MINIMIZATION_FIRST", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1BinaryMinizationAlgorithm.html#a23d90e1df1e2f2a4f565b8072df9b245", null ],
-    [ "BINARY_MINIMIZATION_FIRST_VALUE", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1BinaryMinizationAlgorithm.html#a213f64b76f065dd5aeabaa03d1e10b2c", null ],
-    [ "BINARY_MINIMIZATION_FIRST_WITH_TRANSITIVE_REDUCTION", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1BinaryMinizationAlgorithm.html#a1919e51dd117868e8e2a054fc9b13baf", null ],
-    [ "BINARY_MINIMIZATION_FIRST_WITH_TRANSITIVE_REDUCTION_VALUE", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1BinaryMinizationAlgorithm.html#a73e4fba78e69d4ecc7dba3da350ec98a", null ],
-    [ "BINARY_MINIMIZATION_WITH_REACHABILITY", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1BinaryMinizationAlgorithm.html#a204b162f72d251bce79d2716b7a48dd6", null ],
-    [ "BINARY_MINIMIZATION_WITH_REACHABILITY_VALUE", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1BinaryMinizationAlgorithm.html#a95ee6fcf641ddc69f3479c4b32c2bf05", null ],
-    [ "EXPERIMENTAL_BINARY_MINIMIZATION", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1BinaryMinizationAlgorithm.html#a83e3cd6c16ff3c6499035715a0190632", null ],
-    [ "EXPERIMENTAL_BINARY_MINIMIZATION_VALUE", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1BinaryMinizationAlgorithm.html#a0aa3137308eeb24ab4d0518ba3c1318e", null ],
+    [ "BINARY_MINIMIZATION_FROM_UIP", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1BinaryMinizationAlgorithm.html#a2cec1141236feb491707be1c1da069a2", null ],
+    [ "BINARY_MINIMIZATION_FROM_UIP_AND_DECISIONS", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1BinaryMinizationAlgorithm.html#ad06e3872ba6ef00d8f797cfda3be0904", null ],
+    [ "BINARY_MINIMIZATION_FROM_UIP_AND_DECISIONS_VALUE", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1BinaryMinizationAlgorithm.html#a88292e6b246d956dad4ae5a877743e88", null ],
+    [ "BINARY_MINIMIZATION_FROM_UIP_VALUE", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1BinaryMinizationAlgorithm.html#a996708f4d4850155befb6554f2e17641", null ],
     [ "NO_BINARY_MINIMIZATION", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1BinaryMinizationAlgorithm.html#a56fa6acaa7ed7ce72b0b63e0edbddd59", null ],
     [ "NO_BINARY_MINIMIZATION_VALUE", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1BinaryMinizationAlgorithm.html#a850264a3ba450ba8e78b1fd1309b31e3", null ]
 ];

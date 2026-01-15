@@ -5,7 +5,7 @@ var routing__cuts_8cc =
     [ "operations_research::sat::CreateCVRPCutGenerator", "namespaceoperations__research_1_1sat.html#ab29c598d9db452022a4115399e23c106", null ],
     [ "operations_research::sat::CreateFlowCutGenerator", "namespaceoperations__research_1_1sat.html#a88677d1180474733727feff2bbca0d31", null ],
     [ "operations_research::sat::CreateStronglyConnectedGraphCutGenerator", "namespaceoperations__research_1_1sat.html#a29a3f925228a72fd13718b740037c2a8", null ],
-    [ "operations_research::sat::DetectDimensionsAndCumulExpressions", "namespaceoperations__research_1_1sat.html#a4bb6136150c89b59a71fd30d426fa564", null ],
+    [ "operations_research::sat::DetectDimensionsAndCumulExpressions", "namespaceoperations__research_1_1sat.html#a15d6428b6da851f5af3abc1294ca7e85", null ],
     [ "operations_research::sat::ExtractAllSubsetsFromForest", "namespaceoperations__research_1_1sat.html#adeb8d3a8598889ab54b14dd56b56ae1b", null ],
     [ "operations_research::sat::GenerateInterestingSubsets", "namespaceoperations__research_1_1sat.html#ae8d88eb1ae1d8e5ab4507b8f809f2672", null ],
     [ "operations_research::sat::GetDifferenceBounds", "namespaceoperations__research_1_1sat.html#a5553f608ce2e5b6b8606fb416837873a", null ],

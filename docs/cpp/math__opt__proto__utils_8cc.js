@@ -1,7 +1,7 @@
 var math__opt__proto__utils_8cc =
 [
     [ "operations_research::math_opt::ApplyAllFilters", "namespaceoperations__research_1_1math__opt.html#ae492beecf00c5bcfab49f0eb64bd5467", null ],
-    [ "operations_research::math_opt::CutoffTerminationProto", "namespaceoperations__research_1_1math__opt.html#a83249de0e912dcd5d351fda61b0cf6c1", null ],
+    [ "operations_research::math_opt::CutoffTerminationProto", "namespaceoperations__research_1_1math__opt.html#ad6065f869228e0b5544c2ddd2a5c3b26", null ],
     [ "operations_research::math_opt::EventSet", "namespaceoperations__research_1_1math__opt.html#a3a25afd17af174d34cc833c9de987f9a", null ],
     [ "operations_research::math_opt::FeasibleTermination", "namespaceoperations__research_1_1math__opt.html#a06f70319c3f435d923d74912576b77e6", null ],
     [ "operations_research::math_opt::FeasibleTerminationProto", "namespaceoperations__research_1_1math__opt.html#a614c1a306a138f7593f4ae84dbf034c9", null ],

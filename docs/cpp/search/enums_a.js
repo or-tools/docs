@@ -6,6 +6,6 @@ var searchData=
   ['optimizationdirection_3',['OptimizationDirection',['../classoperations__research_1_1Solver.html#a8a00b64c16b54cef4e0467730e171bef',1,'operations_research::Solver']]],
   ['optimizationproblemtype_4',['OptimizationProblemType',['../classoperations__research_1_1MPSolver.html#a42c406c7e6fba381aa2bb41aae4b44f2',1,'operations_research::MPSolver']]],
   ['optionalboolean_5',['OptionalBoolean',['../namespaceoperations__research.html#abdee17b84b82d56408681cc174dccfa2',1,'operations_research']]],
-  ['orfz_5ftokentype_6',['orfz_tokentype',['../parser_8tab_8cc.html#a85ce62c6a1b129948aacc3737e8aad69',1,'orfz_tokentype:&#160;parser.tab.cc'],['../parser_8tab_8hh.html#a85ce62c6a1b129948aacc3737e8aad69',1,'orfz_tokentype:&#160;parser.tab.hh']]],
-  ['ownership_7',['Ownership',['../basictypes_8h.html#a7fc5ad23d8bdbc2ef84b60aa5b90d0e4',1,'basictypes.h']]]
+  ['orfz_5ftokentype_6',['orfz_tokentype',['../parser_8tab_8hh.html#a85ce62c6a1b129948aacc3737e8aad69',1,'parser.tab.hh']]],
+  ['ownership_7',['Ownership',['../gzipfile_8h.html#a7fc5ad23d8bdbc2ef84b60aa5b90d0e4',1,'gzipfile.h']]]
 ];

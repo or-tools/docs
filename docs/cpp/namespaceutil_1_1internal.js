@@ -1,8 +1,8 @@
 var namespaceutil_1_1internal =
 [
-    [ "DenseIntTopologicalSorterTpl", "classutil_1_1internal_1_1DenseIntTopologicalSorterTpl.html", "classutil_1_1internal_1_1DenseIntTopologicalSorterTpl" ],
     [ "SVector", "classutil_1_1internal_1_1SVector.html", "classutil_1_1internal_1_1SVector" ],
     [ "Vector", "classutil_1_1internal_1_1Vector.html", "classutil_1_1internal_1_1Vector" ],
+    [ "DenseIntTopologicalSorterTpl", "classutil_1_1internal_1_1DenseIntTopologicalSorterTpl.html", "classutil_1_1internal_1_1DenseIntTopologicalSorterTpl" ],
     [ "DenseIntTopologicalSortImpl", "namespaceutil_1_1internal.html#a84ebf3e6418a4e82ddf0dac3a0b0c488", null ],
     [ "DenseIntTopologicalSortOrDieImpl", "namespaceutil_1_1internal.html#a98ed204bd7ff7f88ae27d73bf4ae1458", null ],
     [ "IsSigned", "namespaceutil_1_1internal.html#ab30de0eb8be10034da79f59907ed55f6", null ],

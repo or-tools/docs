@@ -1,10 +1,10 @@
 var gscip__pb2_8py =
 [
-    [ "ortools.gscip.gscip_pb2._globals", "namespaceortools_1_1gscip_1_1gscip__pb2.html#af16bb19ec161d4574afb7dae92b71c70", null ],
-    [ "ortools.gscip.gscip_pb2._loaded_options", "namespaceortools_1_1gscip_1_1gscip__pb2.html#adf06c7da89637604c580ff30aa52a58b", null ],
-    [ "ortools.gscip.gscip_pb2._serialized_end", "namespaceortools_1_1gscip_1_1gscip__pb2.html#ab305f4a4b40143530e51de204d846b30", null ],
-    [ "ortools.gscip.gscip_pb2._serialized_options", "namespaceortools_1_1gscip_1_1gscip__pb2.html#a9ad93bad2925e0043f1609e405d5c1fd", null ],
-    [ "ortools.gscip.gscip_pb2._serialized_start", "namespaceortools_1_1gscip_1_1gscip__pb2.html#afa0bdaa0565f2d964244e38fefebc324", null ],
-    [ "ortools.gscip.gscip_pb2._sym_db", "namespaceortools_1_1gscip_1_1gscip__pb2.html#a34fae4d617a429bde20c59dd45ba4da5", null ],
-    [ "ortools.gscip.gscip_pb2.DESCRIPTOR", "namespaceortools_1_1gscip_1_1gscip__pb2.html#a4e6e4ae723c0e91e00f7208eefda9911", null ]
+    [ "ortools.math_opt.solvers.gscip.gscip_pb2._globals", "namespaceortools_1_1math__opt_1_1solvers_1_1gscip_1_1gscip__pb2.html#a813ca2982349d5eb1df3173632211193", null ],
+    [ "ortools.math_opt.solvers.gscip.gscip_pb2._loaded_options", "namespaceortools_1_1math__opt_1_1solvers_1_1gscip_1_1gscip__pb2.html#ad369ef4946bfa493e4c4676e363830c4", null ],
+    [ "ortools.math_opt.solvers.gscip.gscip_pb2._serialized_end", "namespaceortools_1_1math__opt_1_1solvers_1_1gscip_1_1gscip__pb2.html#a38a5781c3516a67c8bf3707a8466dc0c", null ],
+    [ "ortools.math_opt.solvers.gscip.gscip_pb2._serialized_options", "namespaceortools_1_1math__opt_1_1solvers_1_1gscip_1_1gscip__pb2.html#abce60ac4375428e36548352abcdb4714", null ],
+    [ "ortools.math_opt.solvers.gscip.gscip_pb2._serialized_start", "namespaceortools_1_1math__opt_1_1solvers_1_1gscip_1_1gscip__pb2.html#a1756ff0716ba1c010bfa8ba22b947da9", null ],
+    [ "ortools.math_opt.solvers.gscip.gscip_pb2._sym_db", "namespaceortools_1_1math__opt_1_1solvers_1_1gscip_1_1gscip__pb2.html#aed2555c3678e17896d46510bb4deb0f0", null ],
+    [ "ortools.math_opt.solvers.gscip.gscip_pb2.DESCRIPTOR", "namespaceortools_1_1math__opt_1_1solvers_1_1gscip_1_1gscip__pb2.html#ad04ab7cd537c10bfbb405b168d83585b", null ]
 ];

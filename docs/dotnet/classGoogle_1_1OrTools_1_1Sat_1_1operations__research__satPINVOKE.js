@@ -32,7 +32,7 @@ var classGoogle_1_1OrTools_1_1Sat_1_1operations__research__satPINVOKE =
     [ "SolutionCallback_NumIntegerPropagations", "classGoogle_1_1OrTools_1_1Sat_1_1operations__research__satPINVOKE.html#acfa17a1dfbfd394013dc5fabdf5a679d", null ],
     [ "SolutionCallback_ObjectiveValue", "classGoogle_1_1OrTools_1_1Sat_1_1operations__research__satPINVOKE.html#aae3673c516137129d180be1d838bd6e1", null ],
     [ "SolutionCallback_OnSolutionCallback", "classGoogle_1_1OrTools_1_1Sat_1_1operations__research__satPINVOKE.html#ab6ed1c9d2e0ff464fa2c08618f3eb1df", null ],
-    [ "SolutionCallback_Response", "classGoogle_1_1OrTools_1_1Sat_1_1operations__research__satPINVOKE.html#a8576a2051e996eebc3dcc604d97d71ea", null ],
+    [ "SolutionCallback_Response", "classGoogle_1_1OrTools_1_1Sat_1_1operations__research__satPINVOKE.html#a79a49c53038ae30a98fe48be0c62c16a", null ],
     [ "SolutionCallback_SolutionBooleanValue", "classGoogle_1_1OrTools_1_1Sat_1_1operations__research__satPINVOKE.html#a4318b02fe3967bd71953150389aea582", null ],
     [ "SolutionCallback_SolutionIntegerValue", "classGoogle_1_1OrTools_1_1Sat_1_1operations__research__satPINVOKE.html#af15759569d9b3ec2a2910a42627ce6a1", null ],
     [ "SolutionCallback_StopSearch", "classGoogle_1_1OrTools_1_1Sat_1_1operations__research__satPINVOKE.html#a2f550d85ea23d300bbf5f33aa35b77e7", null ],

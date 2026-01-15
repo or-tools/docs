@@ -1,7 +1,7 @@
 var classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingSearchStatus =
 [
-    [ "Builder", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingSearchStatus_1_1Builder.html", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingSearchStatus_1_1Builder" ],
     [ "Value", "enumcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingSearchStatus_1_1Value.html", "enumcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingSearchStatus_1_1Value" ],
+    [ "Builder", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingSearchStatus_1_1Builder.html", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingSearchStatus_1_1Builder" ],
     [ "equals", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingSearchStatus.html#a3d6c9f6c3e846691054c991fb1fc1a29", null ],
     [ "getDefaultInstance", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingSearchStatus.html#aa98c574486743219c33484ce077e7ae8", null ],
     [ "getDefaultInstanceForType", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingSearchStatus.html#a5933e5614ff553b061b9cefde053354d", null ],

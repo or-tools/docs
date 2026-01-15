@@ -7,6 +7,8 @@ var structoperations__research_1_1DimensionValues_1_1Interval =
     [ "IntersectWith", "structoperations__research_1_1DimensionValues_1_1Interval.html#ae3031bb564ec0fcb699694a3c05e0bb6", null ],
     [ "IsEmpty", "structoperations__research_1_1DimensionValues_1_1Interval.html#aeded93881e0981dfb49085290dd94707", null ],
     [ "operator!=", "structoperations__research_1_1DimensionValues_1_1Interval.html#ad8e64fc74cc43727099c89aeb8fa6100", null ],
+    [ "operator+", "structoperations__research_1_1DimensionValues_1_1Interval.html#a0909f398cebd01d309eee7eaf5b47499", null ],
+    [ "operator-", "structoperations__research_1_1DimensionValues_1_1Interval.html#ac35671615643ccc5cb34eb07a8f1d119", null ],
     [ "operator==", "structoperations__research_1_1DimensionValues_1_1Interval.html#abc199227a47031dcb7ba6d0e2fe0166d", null ],
     [ "Subtract", "structoperations__research_1_1DimensionValues_1_1Interval.html#a76959335b83fb419c09088727fcc1997", null ],
     [ "max", "structoperations__research_1_1DimensionValues_1_1Interval.html#a677b8f787192e683bd178f2b72bfd62b", null ],

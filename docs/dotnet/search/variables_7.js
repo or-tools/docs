@@ -7,6 +7,7 @@ var searchData=
   ['helper_5f_4',['helper_',['../classGoogle_1_1OrTools_1_1ModelBuilder_1_1Variable.html#a428989e232bc7ddcf1af727781a3cef5',1,'Google::OrTools::ModelBuilder::Variable']]],
   ['heuristicclosenodeslnsnumnodesfieldnumber_5',['HeuristicCloseNodesLnsNumNodesFieldNumber',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingSearchParameters.html#a9d0f5acb78f3eff5c47fa190923e4339',1,'Google::OrTools::ConstraintSolver::RoutingSearchParameters']]],
   ['heuristicexpensivechainlnsnumarcstoconsiderfieldnumber_6',['HeuristicExpensiveChainLnsNumArcsToConsiderFieldNumber',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingSearchParameters.html#a4b8389e3dba55fec8d0c622b72f8a58b',1,'Google::OrTools::ConstraintSolver::RoutingSearchParameters']]],
-  ['highfieldnumber_7',['HighFieldNumber',['../classGoogle_1_1OrTools_1_1Util_1_1Int128.html#a5a156a6e472c12767eee7a00376fd52e',1,'Google::OrTools::Util::Int128']]],
-  ['hintconflictlimitfieldnumber_8',['HintConflictLimitFieldNumber',['../classGoogle_1_1OrTools_1_1Sat_1_1SatParameters.html#a73421795c7de56870be5367d57ebed50',1,'Google::OrTools::Sat::SatParameters']]]
+  ['heuristicfieldnumber_7',['HeuristicFieldNumber',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RecreateStrategy.html#ab4621df2f696ccece2a231983ccc2b2b',1,'Google::OrTools::ConstraintSolver::RecreateStrategy']]],
+  ['highfieldnumber_8',['HighFieldNumber',['../classGoogle_1_1OrTools_1_1Util_1_1Int128.html#a5a156a6e472c12767eee7a00376fd52e',1,'Google::OrTools::Util::Int128']]],
+  ['hintconflictlimitfieldnumber_9',['HintConflictLimitFieldNumber',['../classGoogle_1_1OrTools_1_1Sat_1_1SatParameters.html#a73421795c7de56870be5367d57ebed50',1,'Google::OrTools::Sat::SatParameters']]]
 ];

@@ -1,5 +1,6 @@
 var sat_2lp__utils_8h =
 [
+    [ "operations_research::sat::ConstraintScaler", "structoperations__research_1_1sat_1_1ConstraintScaler.html", "structoperations__research_1_1sat_1_1ConstraintScaler" ],
     [ "operations_research::sat::ChangeLargeBoundsToInfinity", "namespaceoperations__research_1_1sat.html#a5e72e8b29637efc57d3d9489078a5748", null ],
     [ "operations_research::sat::ComputeTrueObjectiveLowerBound", "namespaceoperations__research_1_1sat.html#ac47959359a009b02531ab19f206cdd54", null ],
     [ "operations_research::sat::ConvertBinaryMPModelProtoToBooleanProblem", "namespaceoperations__research_1_1sat.html#aa97f36cf2700f25a17eb5f3370df6b11", null ],

@@ -7,7 +7,7 @@ var classoperations__research_1_1sat_1_1DratChecker =
     ] ],
     [ "DratChecker", "classoperations__research_1_1sat_1_1DratChecker.html#a47dde31eb7393931fa6697a3ec1cfa00", null ],
     [ "~DratChecker", "classoperations__research_1_1sat_1_1DratChecker.html#a9918f4b0af67d963e869b64f53ba4051", null ],
-    [ "AddInferedClause", "classoperations__research_1_1sat_1_1DratChecker.html#aab5c71c5d07b84e2cfb729d5e09f7a64", null ],
+    [ "AddInferredClause", "classoperations__research_1_1sat_1_1DratChecker.html#a82b134437a5d0f9f250b90c1e31c0770", null ],
     [ "AddProblemClause", "classoperations__research_1_1sat_1_1DratChecker.html#a0628cd183c424dce1314e3458faf9a83", null ],
     [ "Check", "classoperations__research_1_1sat_1_1DratChecker.html#a63220253f70d760b8cd8755a0bfacbce", null ],
     [ "DeleteClause", "classoperations__research_1_1sat_1_1DratChecker.html#af13f339dabc5b919996d625db92ff9ac", null ],

@@ -278,12 +278,14 @@ var menudata={children:[
 {text:"n",url:"functions_type_n.html#index_n"},
 {text:"o",url:"functions_type_o.html#index_o"},
 {text:"p",url:"functions_type_p.html#index_p"},
+{text:"q",url:"functions_type_q.html#index_q"},
 {text:"r",url:"functions_type_r.html#index_r"},
 {text:"s",url:"functions_type_s.html#index_s"},
 {text:"t",url:"functions_type_t.html#index_t"},
 {text:"u",url:"functions_type_u.html#index_u"},
 {text:"v",url:"functions_type_v.html#index_v"},
-{text:"w",url:"functions_type_w.html#index_w"}]},
+{text:"w",url:"functions_type_w.html#index_w"},
+{text:"x",url:"functions_type_x.html#index_x"}]},
 {text:"Enumerations",url:"functions_enum.html",children:[
 {text:"a",url:"functions_enum.html#index_a"},
 {text:"b",url:"functions_enum.html#index_b"},
@@ -348,6 +350,7 @@ var menudata={children:[
 {text:"s",url:"functions_rela_s.html#index_s"},
 {text:"t",url:"functions_rela_t.html#index_t"},
 {text:"u",url:"functions_rela_u.html#index_u"},
+{text:"w",url:"functions_rela_w.html#index_w"},
 {text:"x",url:"functions_rela_x.html#index_x"}]}]}]},
 {text:"Files",url:"files.html",children:[
 {text:"File List",url:"files.html"},
@@ -446,4 +449,5 @@ var menudata={children:[
 {text:"u",url:"globals_defs_u.html#index_u"},
 {text:"v",url:"globals_defs_v.html#index_v"},
 {text:"x",url:"globals_defs_x.html#index_x"},
-{text:"y",url:"globals_defs_y.html#index_y"}]}]}]}]}
+{text:"y",url:"globals_defs_y.html#index_y"}]}]}]},
+{text:"Examples",url:"examples.html"}]}

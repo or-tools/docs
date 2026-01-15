@@ -10,7 +10,6 @@ var routing__search_8h =
     [ "operations_research::CheapestInsertionFilteredHeuristic::Seed", "structoperations__research_1_1CheapestInsertionFilteredHeuristic_1_1Seed.html", "structoperations__research_1_1CheapestInsertionFilteredHeuristic_1_1Seed" ],
     [ "operations_research::CheapestInsertionFilteredHeuristic::SeedQueue", "structoperations__research_1_1CheapestInsertionFilteredHeuristic_1_1SeedQueue.html", "structoperations__research_1_1CheapestInsertionFilteredHeuristic_1_1SeedQueue" ],
     [ "operations_research::GlobalCheapestInsertionFilteredHeuristic", "classoperations__research_1_1GlobalCheapestInsertionFilteredHeuristic.html", "classoperations__research_1_1GlobalCheapestInsertionFilteredHeuristic" ],
-    [ "operations_research::GlobalCheapestInsertionFilteredHeuristic::GlobalCheapestInsertionParameters", "structoperations__research_1_1GlobalCheapestInsertionFilteredHeuristic_1_1GlobalCheapestInsertionParameters.html", "structoperations__research_1_1GlobalCheapestInsertionFilteredHeuristic_1_1GlobalCheapestInsertionParameters" ],
     [ "operations_research::InsertionSequenceContainer", "classoperations__research_1_1InsertionSequenceContainer.html", "classoperations__research_1_1InsertionSequenceContainer" ],
     [ "operations_research::InsertionSequenceContainer::Insertion", "structoperations__research_1_1InsertionSequenceContainer_1_1Insertion.html", "structoperations__research_1_1InsertionSequenceContainer_1_1Insertion" ],
     [ "operations_research::InsertionSequenceContainer::InsertionSequence", "classoperations__research_1_1InsertionSequenceContainer_1_1InsertionSequence.html", "classoperations__research_1_1InsertionSequenceContainer_1_1InsertionSequence" ],
@@ -22,7 +21,6 @@ var routing__search_8h =
     [ "operations_research::EvaluatorCheapestAdditionFilteredHeuristic", "classoperations__research_1_1EvaluatorCheapestAdditionFilteredHeuristic.html", "classoperations__research_1_1EvaluatorCheapestAdditionFilteredHeuristic" ],
     [ "operations_research::ComparatorCheapestAdditionFilteredHeuristic", "classoperations__research_1_1ComparatorCheapestAdditionFilteredHeuristic.html", "classoperations__research_1_1ComparatorCheapestAdditionFilteredHeuristic" ],
     [ "operations_research::SavingsFilteredHeuristic", "classoperations__research_1_1SavingsFilteredHeuristic.html", "classoperations__research_1_1SavingsFilteredHeuristic" ],
-    [ "operations_research::SavingsFilteredHeuristic::SavingsParameters", "structoperations__research_1_1SavingsFilteredHeuristic_1_1SavingsParameters.html", "structoperations__research_1_1SavingsFilteredHeuristic_1_1SavingsParameters" ],
     [ "operations_research::SavingsFilteredHeuristic::Saving", "structoperations__research_1_1SavingsFilteredHeuristic_1_1Saving.html", "structoperations__research_1_1SavingsFilteredHeuristic_1_1Saving" ],
     [ "operations_research::SequentialSavingsFilteredHeuristic", "classoperations__research_1_1SequentialSavingsFilteredHeuristic.html", "classoperations__research_1_1SequentialSavingsFilteredHeuristic" ],
     [ "operations_research::ParallelSavingsFilteredHeuristic", "classoperations__research_1_1ParallelSavingsFilteredHeuristic.html", "classoperations__research_1_1ParallelSavingsFilteredHeuristic" ],
@@ -33,6 +31,6 @@ var routing__search_8h =
     [ "operations_research::MakeAllUnperformed", "namespaceoperations__research.html#a0f93915e843433755b9ac673fbe78f7c", null ],
     [ "operations_research::MakeSweepDecisionBuilder", "namespaceoperations__research.html#abcfddf7e2bc62dbfcd1fd3f22a860f65", null ],
     [ "operations_research::SolveFromAssignmentWithAlternativeSolvers", "namespaceoperations__research.html#a7ac996fa516eff446d61b3650e51cf62", null ],
-    [ "operations_research::SolveFromAssignmentWithAlternativeSolversAndParameters", "namespaceoperations__research.html#a0e4560b3dd453377ef8c29372e7e75e1", null ],
+    [ "operations_research::SolveFromAssignmentWithAlternativeSolversAndParameters", "namespaceoperations__research.html#a9ad3c1e9040200c0d5323b49e300fcfe", null ],
     [ "operations_research::SolveWithAlternativeSolvers", "namespaceoperations__research.html#aec0a1432f35c101cf94319828d2e13a7", null ]
 ];

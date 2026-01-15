@@ -20,8 +20,5 @@ var searchData=
   ['primalinfeasible_17',['PrimalInfeasible',['../namespaceGoogle_1_1OrTools_1_1PDLP.html#a1ae8303887d3649feead1b21e9849ddfa190b2e9507159faf8c6939d98220a75e',1,'Google::OrTools::PDLP']]],
   ['primalordualinfeasible_18',['PrimalOrDualInfeasible',['../namespaceGoogle_1_1OrTools_1_1PDLP.html#a1ae8303887d3649feead1b21e9849ddfab62c8b0062e3d9552ab387f351d96b66',1,'Google::OrTools::PDLP']]],
   ['propagationassisted_19',['PropagationAssisted',['../classGoogle_1_1OrTools_1_1Sat_1_1SatParameters_1_1Types.html#a8f8dd41def5a928901d75117b82a5f2cadce97a511aaf409c7912bef68ceaeb2a',1,'Google::OrTools::Sat::SatParameters::Types']]],
-  ['protectionalways_20',['ProtectionAlways',['../classGoogle_1_1OrTools_1_1Sat_1_1SatParameters_1_1Types.html#affc2d8c431eb54bc166ad4b6429985d0aa55bfd0b764cb345b5ecb6ad74057080',1,'Google::OrTools::Sat::SatParameters::Types']]],
-  ['protectionlbd_21',['ProtectionLbd',['../classGoogle_1_1OrTools_1_1Sat_1_1SatParameters_1_1Types.html#affc2d8c431eb54bc166ad4b6429985d0a31568504133c70a7d7e9322bac4c625a',1,'Google::OrTools::Sat::SatParameters::Types']]],
-  ['protectionnone_22',['ProtectionNone',['../classGoogle_1_1OrTools_1_1Sat_1_1SatParameters_1_1Types.html#affc2d8c431eb54bc166ad4b6429985d0a3c2d862f4536788c6b00eb3bbdcd81bf',1,'Google::OrTools::Sat::SatParameters::Types']]],
-  ['pseudocostsearch_23',['PseudoCostSearch',['../classGoogle_1_1OrTools_1_1Sat_1_1SatParameters_1_1Types.html#a4580e9209846703d95109307354f4c67a35542c30fe22d024e4b0095e5f0effa4',1,'Google::OrTools::Sat::SatParameters::Types']]]
+  ['pseudocostsearch_20',['PseudoCostSearch',['../classGoogle_1_1OrTools_1_1Sat_1_1SatParameters_1_1Types.html#a4580e9209846703d95109307354f4c67a35542c30fe22d024e4b0095e5f0effa4',1,'Google::OrTools::Sat::SatParameters::Types']]]
 ];

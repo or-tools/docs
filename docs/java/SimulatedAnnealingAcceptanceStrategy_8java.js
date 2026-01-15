@@ -1,0 +1,5 @@
+var SimulatedAnnealingAcceptanceStrategy_8java =
+[
+    [ "com.google.ortools.constraintsolver.SimulatedAnnealingAcceptanceStrategy", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SimulatedAnnealingAcceptanceStrategy.html", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SimulatedAnnealingAcceptanceStrategy" ],
+    [ "com.google.ortools.constraintsolver.SimulatedAnnealingAcceptanceStrategy.Builder", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SimulatedAnnealingAcceptanceStrategy_1_1Builder.html", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SimulatedAnnealingAcceptanceStrategy_1_1Builder" ]
+];

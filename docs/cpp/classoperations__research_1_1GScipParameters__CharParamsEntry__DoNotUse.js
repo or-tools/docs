@@ -1,6 +1,6 @@
 var classoperations__research_1_1GScipParameters__CharParamsEntry__DoNotUse =
 [
-    [ "SuperType", "classoperations__research_1_1GScipParameters__CharParamsEntry__DoNotUse.html#abd57714dbc458af4182e4901130201a3", null ],
+    [ "SuperType", "classoperations__research_1_1GScipParameters__CharParamsEntry__DoNotUse.html#aeb5b91c6b97391d0187148971e1ebbd2", null ],
     [ "GScipParameters_CharParamsEntry_DoNotUse", "classoperations__research_1_1GScipParameters__CharParamsEntry__DoNotUse.html#a5c7f376ebe58620626828ea69984791f", null ],
     [ "GScipParameters_CharParamsEntry_DoNotUse", "classoperations__research_1_1GScipParameters__CharParamsEntry__DoNotUse.html#af5aac93282c0984edca88680aad83081", null ],
     [ "GScipParameters_CharParamsEntry_DoNotUse", "classoperations__research_1_1GScipParameters__CharParamsEntry__DoNotUse.html#ab6de934b3fbe2d5c3b41e4945daccfaa", null ],
@@ -9,5 +9,5 @@ var classoperations__research_1_1GScipParameters__CharParamsEntry__DoNotUse =
     [ "InternalGenerateClassData_", "classoperations__research_1_1GScipParameters__CharParamsEntry__DoNotUse.html#a99168d685faa8d553d4f657d209d3506", null ],
     [ "::google::protobuf::internal::TcParser", "classoperations__research_1_1GScipParameters__CharParamsEntry__DoNotUse.html#aa6561bef59f7013022da6e9099205570", null ],
     [ "::google::protobuf::MessageLite", "classoperations__research_1_1GScipParameters__CharParamsEntry__DoNotUse.html#a0bb15113c7ac579c5ed1112132cdde07", null ],
-    [ "::TableStruct_ortools_2fgscip_2fgscip_2eproto", "classoperations__research_1_1GScipParameters__CharParamsEntry__DoNotUse.html#a8d1c945470a9411a0ec0c3c2a270fa0e", null ]
+    [ "::TableStruct_ortools_2fmath_5fopt_2fsolvers_2fgscip_2fgscip_2eproto", "classoperations__research_1_1GScipParameters__CharParamsEntry__DoNotUse.html#a87212f73077c7979c6bd9adf2ef61005", null ]
 ];

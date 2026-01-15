@@ -4,9 +4,9 @@ var routing__enums_8pb_8h =
     [ "operations_research::RoutingSearchStatus", "classoperations__research_1_1RoutingSearchStatus.html", "classoperations__research_1_1RoutingSearchStatus" ],
     [ "operations_research::LocalSearchMetaheuristic", "classoperations__research_1_1LocalSearchMetaheuristic.html", "classoperations__research_1_1LocalSearchMetaheuristic" ],
     [ "operations_research::FirstSolutionStrategy", "classoperations__research_1_1FirstSolutionStrategy.html", "classoperations__research_1_1FirstSolutionStrategy" ],
-    [ "google::protobuf::is_proto_enum<::operations_research::FirstSolutionStrategy_Value >", "structgoogle_1_1protobuf_1_1is__proto__enum_3_1_1operations__research_1_1FirstSolutionStrategy__Value_01_4.html", null ],
-    [ "google::protobuf::is_proto_enum<::operations_research::LocalSearchMetaheuristic_Value >", "structgoogle_1_1protobuf_1_1is__proto__enum_3_1_1operations__research_1_1LocalSearchMetaheuristic__Value_01_4.html", null ],
-    [ "google::protobuf::is_proto_enum<::operations_research::RoutingSearchStatus_Value >", "structgoogle_1_1protobuf_1_1is__proto__enum_3_1_1operations__research_1_1RoutingSearchStatus__Value_01_4.html", null ],
+    [ "google::protobuf::is_proto_enum&lt;::operations_research::FirstSolutionStrategy_Value &gt;", "structgoogle_1_1protobuf_1_1is__proto__enum_3_1_1operations__research_1_1FirstSolutionStrategy__Value_01_4.html", null ],
+    [ "google::protobuf::is_proto_enum&lt;::operations_research::LocalSearchMetaheuristic_Value &gt;", "structgoogle_1_1protobuf_1_1is__proto__enum_3_1_1operations__research_1_1LocalSearchMetaheuristic__Value_01_4.html", null ],
+    [ "google::protobuf::is_proto_enum&lt;::operations_research::RoutingSearchStatus_Value &gt;", "structgoogle_1_1protobuf_1_1is__proto__enum_3_1_1operations__research_1_1RoutingSearchStatus__Value_01_4.html", null ],
     [ "PROTOBUF_INTERNAL_EXPORT_ortools_2fconstraint_5fsolver_2frouting_5fenums_2eproto", "routing__enums_8pb_8h.html#ab99f705eeba00bba1fbe3cbd06567188", null ],
     [ "operations_research::FirstSolutionStrategy_Value", "namespaceoperations__research.html#aef3a296fa4f9d9d745fe62f1aa67a06d", [
       [ "operations_research::FirstSolutionStrategy_Value_UNSET", "namespaceoperations__research.html#aef3a296fa4f9d9d745fe62f1aa67a06dad02e019c28342793688466400afd032d", null ],

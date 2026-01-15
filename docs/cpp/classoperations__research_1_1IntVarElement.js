@@ -2,6 +2,7 @@ var classoperations__research_1_1IntVarElement =
 [
     [ "IntVarElement", "classoperations__research_1_1IntVarElement.html#a7c4b5dea7c81f6ffeeab2d8144a1c7db", null ],
     [ "IntVarElement", "classoperations__research_1_1IntVarElement.html#ab23cf5118e5f24088d6e4f6d0a267a7c", null ],
+    [ "IntVarElement", "classoperations__research_1_1IntVarElement.html#a574d20023e21707066197039446b96cf", null ],
     [ "Bound", "classoperations__research_1_1IntVarElement.html#a4205abd38e203b570f9ff6b49d351a06", null ],
     [ "Clone", "classoperations__research_1_1IntVarElement.html#a67c4b2c17bda6ee6716d0dd1f09e6cd9", null ],
     [ "Copy", "classoperations__research_1_1IntVarElement.html#ab75541e5c6fe6f193f5cf94d8b12f5a4", null ],

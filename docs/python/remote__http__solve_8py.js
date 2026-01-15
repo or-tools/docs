@@ -2,9 +2,9 @@ var remote__http__solve_8py =
 [
     [ "ortools.math_opt.python.ipc.remote_http_solve.OptimizationServiceError", "classortools_1_1math__opt_1_1python_1_1ipc_1_1remote__http__solve_1_1OptimizationServiceError.html", null ],
     [ "ortools.math_opt.python.ipc.remote_http_solve._build_json_payload", "namespaceortools_1_1math__opt_1_1python_1_1ipc_1_1remote__http__solve.html#af0938e866545982ab015c42885250cb3", null ],
-    [ "ortools.math_opt.python.ipc.remote_http_solve._build_solve_result", "namespaceortools_1_1math__opt_1_1python_1_1ipc_1_1remote__http__solve.html#a06339640fc9d6e235e857cc78ded5f1e", null ],
+    [ "ortools.math_opt.python.ipc.remote_http_solve._build_solve_result", "namespaceortools_1_1math__opt_1_1python_1_1ipc_1_1remote__http__solve.html#a165ec0502522f4a94feaae394c4cb742", null ],
     [ "ortools.math_opt.python.ipc.remote_http_solve.create_optimization_service_session", "namespaceortools_1_1math__opt_1_1python_1_1ipc_1_1remote__http__solve.html#aafd4ca5b9b0261f6f9d9a8f2d5d5b0d0", null ],
-    [ "ortools.math_opt.python.ipc.remote_http_solve.remote_http_solve", "namespaceortools_1_1math__opt_1_1python_1_1ipc_1_1remote__http__solve.html#a097e090c2be3a1c75af3bb556e0d2f57", null ],
+    [ "ortools.math_opt.python.ipc.remote_http_solve.remote_http_solve", "namespaceortools_1_1math__opt_1_1python_1_1ipc_1_1remote__http__solve.html#a80a92ad5d9678509d9e4279331ef4f79", null ],
     [ "ortools.math_opt.python.ipc.remote_http_solve._DEFAULT_DEADLINE_SEC", "namespaceortools_1_1math__opt_1_1python_1_1ipc_1_1remote__http__solve.html#a6247133850ad7eeed0f1d3837c3af3f6", null ],
     [ "ortools.math_opt.python.ipc.remote_http_solve._DEFAULT_ENDPOINT", "namespaceortools_1_1math__opt_1_1python_1_1ipc_1_1remote__http__solve.html#a48158e7a2cabd42d21da167c37132ef0", null ],
     [ "ortools.math_opt.python.ipc.remote_http_solve._RELATIVE_TIME_BUFFER", "namespaceortools_1_1math__opt_1_1python_1_1ipc_1_1remote__http__solve.html#aff6f17b30fe4ed77f74931a92a7bbb9f", null ]

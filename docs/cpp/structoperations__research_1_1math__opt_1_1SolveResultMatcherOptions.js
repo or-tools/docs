@@ -5,5 +5,6 @@ var structoperations__research_1_1math__opt_1_1SolveResultMatcherOptions =
     [ "check_rays", "structoperations__research_1_1math__opt_1_1SolveResultMatcherOptions.html#a45c1021e27ed5b5b127f536cc17c8bd4", null ],
     [ "check_solutions_if_inf_or_unbounded", "structoperations__research_1_1math__opt_1_1SolveResultMatcherOptions.html#ae41b54030c8d6d4345348e188263eb7b", null ],
     [ "first_solution_only", "structoperations__research_1_1math__opt_1_1SolveResultMatcherOptions.html#a09e77f536eb59fd1ea3b4fd4f43b62b5", null ],
+    [ "inf_or_unb_soft_match", "structoperations__research_1_1math__opt_1_1SolveResultMatcherOptions.html#a9eb32162b75832edfa27677d204dc14e", null ],
     [ "tolerance", "structoperations__research_1_1math__opt_1_1SolveResultMatcherOptions.html#a371bb85b5ff98b03f1afd8c11811c07e", null ]
 ];

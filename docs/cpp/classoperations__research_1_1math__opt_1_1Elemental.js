@@ -1,8 +1,8 @@
 var classoperations__research_1_1math__opt_1_1Elemental =
 [
+    [ "DiffHandle", "classoperations__research_1_1math__opt_1_1Elemental_1_1DiffHandle.html", "classoperations__research_1_1math__opt_1_1Elemental_1_1DiffHandle" ],
     [ "AlwaysOk", "structoperations__research_1_1math__opt_1_1Elemental_1_1AlwaysOk.html", null ],
     [ "DiePolicy", "structoperations__research_1_1math__opt_1_1Elemental_1_1DiePolicy.html", "structoperations__research_1_1math__opt_1_1Elemental_1_1DiePolicy" ],
-    [ "DiffHandle", "classoperations__research_1_1math__opt_1_1Elemental_1_1DiffHandle.html", "classoperations__research_1_1math__opt_1_1Elemental_1_1DiffHandle" ],
     [ "StatusPolicy", "structoperations__research_1_1math__opt_1_1Elemental_1_1StatusPolicy.html", "structoperations__research_1_1math__opt_1_1Elemental_1_1StatusPolicy" ],
     [ "UBPolicy", "structoperations__research_1_1math__opt_1_1Elemental_1_1UBPolicy.html", "structoperations__research_1_1math__opt_1_1Elemental_1_1UBPolicy" ],
     [ "Elemental", "classoperations__research_1_1math__opt_1_1Elemental.html#a1f5dde27651ddcf7d992fca1cf04659d", null ],

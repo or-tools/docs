@@ -26,7 +26,6 @@ var dir_725f3a5915051842f84e3ea508be2a62 =
     [ "hamiltonian_path.h", "hamiltonian__path_8h.html", "hamiltonian__path_8h" ],
     [ "iterators.h", "graph_2iterators_8h.html", "graph_2iterators_8h" ],
     [ "k_shortest_paths.h", "k__shortest__paths_8h.html", "k__shortest__paths_8h" ],
-    [ "line_graph.h", "line__graph_8h.html", "line__graph_8h" ],
     [ "linear_assignment.cc", "linear__assignment_8cc.html", "linear__assignment_8cc" ],
     [ "linear_assignment.h", "linear__assignment_8h.html", "linear__assignment_8h" ],
     [ "max_flow.cc", "max__flow_8cc.html", null ],

@@ -1,0 +1,6 @@
+var structoperations__research_1_1math__opt_1_1XpressParametersProto__ParameterDefaultTypeInternal =
+[
+    [ "XpressParametersProto_ParameterDefaultTypeInternal", "structoperations__research_1_1math__opt_1_1XpressParametersProto__ParameterDefaultTypeInternal.html#a28c873d2ce3fd135b9120cd7c93a105f", null ],
+    [ "~XpressParametersProto_ParameterDefaultTypeInternal", "structoperations__research_1_1math__opt_1_1XpressParametersProto__ParameterDefaultTypeInternal.html#a5e2cf049882f26d442136e040a183a8b", null ],
+    [ "_instance", "structoperations__research_1_1math__opt_1_1XpressParametersProto__ParameterDefaultTypeInternal.html#ac33297c1102f2464195f382174e81bc1", null ]
+];

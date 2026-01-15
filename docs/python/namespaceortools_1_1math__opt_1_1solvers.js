@@ -8,6 +8,7 @@ var namespaceortools_1_1math__opt_1_1solvers =
       [ "_sym_db", "namespaceortools_1_1math__opt_1_1solvers_1_1glpk__pb2.html#a0930e4f7ba13a82465403dac8860ead6", null ],
       [ "DESCRIPTOR", "namespaceortools_1_1math__opt_1_1solvers_1_1glpk__pb2.html#aa4f0682d9943d347f8a736b4c9df4a9b", null ]
     ] ],
+    [ "gscip", "namespaceortools_1_1math__opt_1_1solvers_1_1gscip.html", "namespaceortools_1_1math__opt_1_1solvers_1_1gscip" ],
     [ "gurobi_pb2", "namespaceortools_1_1math__opt_1_1solvers_1_1gurobi__pb2.html", [
       [ "_globals", "namespaceortools_1_1math__opt_1_1solvers_1_1gurobi__pb2.html#ac185b84802443f4749c7100ecb532e28", null ],
       [ "_loaded_options", "namespaceortools_1_1math__opt_1_1solvers_1_1gurobi__pb2.html#a43657e7a296cb8c0c1e05066565bfba3", null ],
@@ -32,5 +33,13 @@ var namespaceortools_1_1math__opt_1_1solvers =
       [ "_serialized_start", "namespaceortools_1_1math__opt_1_1solvers_1_1osqp__pb2.html#a9fbc26156824b425db29919c814bf29b", null ],
       [ "_sym_db", "namespaceortools_1_1math__opt_1_1solvers_1_1osqp__pb2.html#adfdcc86b6780d7ff14384956c715073d", null ],
       [ "DESCRIPTOR", "namespaceortools_1_1math__opt_1_1solvers_1_1osqp__pb2.html#a9b4b27320704ee2fff35392fc1f71462", null ]
+    ] ],
+    [ "xpress_pb2", "namespaceortools_1_1math__opt_1_1solvers_1_1xpress__pb2.html", [
+      [ "_globals", "namespaceortools_1_1math__opt_1_1solvers_1_1xpress__pb2.html#af15563d5ec58dd79982d9da6478888c9", null ],
+      [ "_loaded_options", "namespaceortools_1_1math__opt_1_1solvers_1_1xpress__pb2.html#a981ffe60b7abb9a8517b041430a04254", null ],
+      [ "_serialized_end", "namespaceortools_1_1math__opt_1_1solvers_1_1xpress__pb2.html#aa4995531da6a9cab66ba1f01a1b50c62", null ],
+      [ "_serialized_start", "namespaceortools_1_1math__opt_1_1solvers_1_1xpress__pb2.html#a6a17cbfd748386fa2a67dc6382225acc", null ],
+      [ "_sym_db", "namespaceortools_1_1math__opt_1_1solvers_1_1xpress__pb2.html#ab731703305d8ed20818312327c57177f", null ],
+      [ "DESCRIPTOR", "namespaceortools_1_1math__opt_1_1solvers_1_1xpress__pb2.html#afec984fb02ac2ccaff328f6b3e7807d2", null ]
     ] ]
 ];

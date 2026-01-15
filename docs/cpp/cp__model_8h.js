@@ -48,7 +48,7 @@ var cp__model_8h =
     [ "operations_research::sat::operator<<", "namespaceoperations__research_1_1sat.html#afeefd0a183a2d1c9f09fec0aa52b200a", null ],
     [ "operations_research::sat::operator<<", "namespaceoperations__research_1_1sat.html#a0c1b0a196a70f7edd0ff1bc0250e76ac", null ],
     [ "operations_research::sat::operator<<", "namespaceoperations__research_1_1sat.html#a616a1843aa394d2d018e052050588bb2", null ],
-    [ "operations_research::sat::SolutionBooleanValue", "namespaceoperations__research_1_1sat.html#afa415e372a9d64eede869ed98666c29c", null ],
-    [ "operations_research::sat::SolutionIntegerValue", "namespaceoperations__research_1_1sat.html#ab6fe86bc876c281163a053a9581346c3", null ],
+    [ "operations_research::sat::SolutionBooleanValue", "namespaceoperations__research_1_1sat.html#ab84fd322ef3866f71f4fa31416b4f184", null ],
+    [ "operations_research::sat::SolutionIntegerValue", "namespaceoperations__research_1_1sat.html#a3cc82c4d90efc144a816aef7f506ed4d", null ],
     [ "operations_research::sat::VarDebugString", "namespaceoperations__research_1_1sat.html#a007d129b4917935f84c9ae0823c2cb11", null ]
 ];

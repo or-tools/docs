@@ -73,6 +73,7 @@ var menudata={children:[
 {text:"b",url:"namespacemembers_vars_b.html#index_b"},
 {text:"c",url:"namespacemembers_vars_c.html#index_c"},
 {text:"d",url:"namespacemembers_vars_d.html#index_d"},
+{text:"e",url:"namespacemembers_vars_e.html#index_e"},
 {text:"f",url:"namespacemembers_vars_f.html#index_f"},
 {text:"h",url:"namespacemembers_vars_h.html#index_h"},
 {text:"i",url:"namespacemembers_vars_i.html#index_i"},
@@ -165,7 +166,6 @@ var menudata={children:[
 {text:"t",url:"functions_vars_t.html#index_t"},
 {text:"u",url:"functions_vars_u.html#index_u"},
 {text:"v",url:"functions_vars_v.html#index_v"},
-{text:"w",url:"functions_vars_w.html#index_w"},
 {text:"x",url:"functions_vars_x.html#index_x"}]},
 {text:"Properties",url:"functions_prop.html",children:[
 {text:"b",url:"functions_prop.html#index_b"},
@@ -173,6 +173,7 @@ var menudata={children:[
 {text:"d",url:"functions_prop.html#index_d"},
 {text:"h",url:"functions_prop.html#index_h"},
 {text:"i",url:"functions_prop.html#index_i"},
+{text:"n",url:"functions_prop.html#index_n"},
 {text:"p",url:"functions_prop.html#index_p"},
 {text:"r",url:"functions_prop.html#index_r"},
 {text:"t",url:"functions_prop.html#index_t"},

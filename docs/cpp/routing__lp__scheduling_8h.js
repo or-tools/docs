@@ -5,6 +5,7 @@ var routing__lp__scheduling_8h =
     [ "operations_research::RoutingGlopWrapper", "classoperations__research_1_1RoutingGlopWrapper.html", "classoperations__research_1_1RoutingGlopWrapper" ],
     [ "operations_research::RoutingCPSatWrapper", "classoperations__research_1_1RoutingCPSatWrapper.html", "classoperations__research_1_1RoutingCPSatWrapper" ],
     [ "operations_research::DimensionCumulOptimizerCore", "classoperations__research_1_1DimensionCumulOptimizerCore.html", "classoperations__research_1_1DimensionCumulOptimizerCore" ],
+    [ "operations_research::DimensionCumulOptimizerCore::TransitTargetCost", "structoperations__research_1_1DimensionCumulOptimizerCore_1_1TransitTargetCost.html", "structoperations__research_1_1DimensionCumulOptimizerCore_1_1TransitTargetCost" ],
     [ "operations_research::LocalDimensionCumulOptimizer", "classoperations__research_1_1LocalDimensionCumulOptimizer.html", "classoperations__research_1_1LocalDimensionCumulOptimizer" ],
     [ "operations_research::GlobalDimensionCumulOptimizer", "classoperations__research_1_1GlobalDimensionCumulOptimizer.html", "classoperations__research_1_1GlobalDimensionCumulOptimizer" ],
     [ "operations_research::SlopeAndYIntercept", "structoperations__research_1_1SlopeAndYIntercept.html", "structoperations__research_1_1SlopeAndYIntercept" ],

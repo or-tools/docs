@@ -1,7 +1,7 @@
 var classoperations__research_1_1sat_1_1TaskSet =
 [
-    [ "Entry", "structoperations__research_1_1sat_1_1TaskSet_1_1Entry.html", "structoperations__research_1_1sat_1_1TaskSet_1_1Entry" ],
-    [ "TaskSet", "classoperations__research_1_1sat_1_1TaskSet.html#a708e0618e264757ecf38eed35063f5eb", null ],
+    [ "Entry", "classoperations__research_1_1sat_1_1TaskSet.html#a401c6588f4eba3a7318e077c5cafd753", null ],
+    [ "TaskSet", "classoperations__research_1_1sat_1_1TaskSet.html#a8af4a5f802555a26dbb05e3e1f70c26c", null ],
     [ "AddEntry", "classoperations__research_1_1sat_1_1TaskSet.html#a660aa36d23b846efd5c6859d2ea186a0", null ],
     [ "AddShiftedStartMinEntry", "classoperations__research_1_1sat_1_1TaskSet.html#af3e8713f8cee3570d9110abf46ad2b2d", null ],
     [ "AddUnsortedEntry", "classoperations__research_1_1sat_1_1TaskSet.html#a9b8ed1fc63b03410ebacff32852c6b3f", null ],

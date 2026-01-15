@@ -6,9 +6,7 @@ var dir_a7cc1eeded8f693d0da6c729bc88c45a =
     [ "constraint_solver", "dir_afbb39f66221aac28bbdefd1dca2b2b0.html", "dir_afbb39f66221aac28bbdefd1dca2b2b0" ],
     [ "flatzinc", "dir_92d538196d04323bb571488ea744da84.html", "dir_92d538196d04323bb571488ea744da84" ],
     [ "glop", "dir_747248fa8ec2ebcb4d8ad85ced34db0b.html", "dir_747248fa8ec2ebcb4d8ad85ced34db0b" ],
-    [ "glpk", "dir_58ed79a894bb74cff484b2521913175b.html", "dir_58ed79a894bb74cff484b2521913175b" ],
     [ "graph", "dir_725f3a5915051842f84e3ea508be2a62.html", "dir_725f3a5915051842f84e3ea508be2a62" ],
-    [ "gscip", "dir_7ebe005d782fae78e581b12d74364053.html", "dir_7ebe005d782fae78e581b12d74364053" ],
     [ "gurobi", "dir_ca966d537abd5424901cf1273891b331.html", "dir_ca966d537abd5424901cf1273891b331" ],
     [ "init", "dir_b58ef2c5f6b67bda9423238e62144661.html", "dir_b58ef2c5f6b67bda9423238e62144661" ],
     [ "linear_solver", "dir_4d3a5a688e4550f3d7725aaa5ab9c27b.html", "dir_4d3a5a688e4550f3d7725aaa5ab9c27b" ],
@@ -22,6 +20,6 @@ var dir_a7cc1eeded8f693d0da6c729bc88c45a =
     [ "scheduling", "dir_2acf60cea6a5e15c2c72192424e7f50e.html", "dir_2acf60cea6a5e15c2c72192424e7f50e" ],
     [ "service", "dir_b9b04626500200bfaf9927ae01f2eadf.html", "dir_b9b04626500200bfaf9927ae01f2eadf" ],
     [ "set_cover", "dir_964716d1c322aaf6850e60f33b0ccea3.html", "dir_964716d1c322aaf6850e60f33b0ccea3" ],
-    [ "util", "dir_a3328a0ea67a2aaa160c2783ffbaa5dc.html", "dir_a3328a0ea67a2aaa160c2783ffbaa5dc" ],
-    [ "xpress", "dir_a02fde108e33a3dd564a8799e7b75c0a.html", "dir_a02fde108e33a3dd564a8799e7b75c0a" ]
+    [ "third_party_solvers", "dir_fe8b974f9c754cd22e4054267d08f6d5.html", "dir_fe8b974f9c754cd22e4054267d08f6d5" ],
+    [ "util", "dir_a3328a0ea67a2aaa160c2783ffbaa5dc.html", "dir_a3328a0ea67a2aaa160c2783ffbaa5dc" ]
 ];

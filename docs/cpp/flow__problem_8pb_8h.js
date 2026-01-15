@@ -4,7 +4,7 @@ var flow__problem_8pb_8h =
     [ "operations_research::FlowNodeProto", "classoperations__research_1_1FlowNodeProto.html", "classoperations__research_1_1FlowNodeProto" ],
     [ "operations_research::FlowArcProto", "classoperations__research_1_1FlowArcProto.html", "classoperations__research_1_1FlowArcProto" ],
     [ "operations_research::FlowModelProto", "classoperations__research_1_1FlowModelProto.html", "classoperations__research_1_1FlowModelProto" ],
-    [ "google::protobuf::is_proto_enum<::operations_research::FlowModelProto_ProblemType >", "structgoogle_1_1protobuf_1_1is__proto__enum_3_1_1operations__research_1_1FlowModelProto__ProblemType_01_4.html", null ],
+    [ "google::protobuf::is_proto_enum&lt;::operations_research::FlowModelProto_ProblemType &gt;", "structgoogle_1_1protobuf_1_1is__proto__enum_3_1_1operations__research_1_1FlowModelProto__ProblemType_01_4.html", null ],
     [ "PROTOBUF_INTERNAL_EXPORT_ortools_2fgraph_2fflow_5fproblem_2eproto", "flow__problem_8pb_8h.html#a3944ad1910d9b0f5063f1f888f7af61a", null ],
     [ "operations_research::FlowModelProto_ProblemType", "namespaceoperations__research.html#a346030c59bd2a5befc48b32f8adc1f51", [
       [ "operations_research::FlowModelProto_ProblemType_LINEAR_SUM_ASSIGNMENT", "namespaceoperations__research.html#a346030c59bd2a5befc48b32f8adc1f51a1abaea2a6f4824362f6ec2bdcaf1f5e1", null ],

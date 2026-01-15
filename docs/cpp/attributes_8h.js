@@ -1,7 +1,7 @@
 var attributes_8h =
 [
-    [ "operations_research::math_opt::AttrTypeDescriptor< ValueTypeT, n, SymmetryT, Impl >", "structoperations__research_1_1math__opt_1_1AttrTypeDescriptor.html", "structoperations__research_1_1math__opt_1_1AttrTypeDescriptor" ],
-    [ "operations_research::math_opt::AttrTypeDescriptor< ValueTypeT, n, SymmetryT, Impl >::AttrDescriptor", "structoperations__research_1_1math__opt_1_1AttrTypeDescriptor_1_1AttrDescriptor.html", "structoperations__research_1_1math__opt_1_1AttrTypeDescriptor_1_1AttrDescriptor" ],
+    [ "operations_research::math_opt::AttrTypeDescriptor&lt; ValueTypeT, n, SymmetryT, Impl &gt;", "structoperations__research_1_1math__opt_1_1AttrTypeDescriptor.html", "structoperations__research_1_1math__opt_1_1AttrTypeDescriptor" ],
+    [ "operations_research::math_opt::AttrTypeDescriptor&lt; ValueTypeT, n, SymmetryT, Impl &gt;::AttrDescriptor", "structoperations__research_1_1math__opt_1_1AttrTypeDescriptor_1_1AttrDescriptor.html", "structoperations__research_1_1math__opt_1_1AttrTypeDescriptor_1_1AttrDescriptor" ],
     [ "operations_research::math_opt::BoolAttr0TypeDescriptor", "structoperations__research_1_1math__opt_1_1BoolAttr0TypeDescriptor.html", "structoperations__research_1_1math__opt_1_1BoolAttr0TypeDescriptor" ],
     [ "operations_research::math_opt::BoolAttr1TypeDescriptor", "structoperations__research_1_1math__opt_1_1BoolAttr1TypeDescriptor.html", "structoperations__research_1_1math__opt_1_1BoolAttr1TypeDescriptor" ],
     [ "operations_research::math_opt::IntAttr0TypeDescriptor", "structoperations__research_1_1math__opt_1_1IntAttr0TypeDescriptor.html", "structoperations__research_1_1math__opt_1_1IntAttr0TypeDescriptor" ],

@@ -1,7 +1,7 @@
 var classcom_1_1google_1_1ortools_1_1constraintsolver_1_1PerturbationStrategy =
 [
-    [ "Builder", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1PerturbationStrategy_1_1Builder.html", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1PerturbationStrategy_1_1Builder" ],
     [ "Value", "enumcom_1_1google_1_1ortools_1_1constraintsolver_1_1PerturbationStrategy_1_1Value.html", "enumcom_1_1google_1_1ortools_1_1constraintsolver_1_1PerturbationStrategy_1_1Value" ],
+    [ "Builder", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1PerturbationStrategy_1_1Builder.html", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1PerturbationStrategy_1_1Builder" ],
     [ "equals", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1PerturbationStrategy.html#ae7404150c71500c650934596467e8f69", null ],
     [ "getDefaultInstance", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1PerturbationStrategy.html#a4d9d5b929f9a05d990008113a21f69ab", null ],
     [ "getDefaultInstanceForType", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1PerturbationStrategy.html#a78e9c1e33fc44ed7d0b7dfd971588b25", null ],

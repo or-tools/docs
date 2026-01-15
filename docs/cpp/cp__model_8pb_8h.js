@@ -32,9 +32,9 @@ var cp__model_8pb_8h =
     [ "operations_research::sat::ConstraintProto", "classoperations__research_1_1sat_1_1ConstraintProto.html", "classoperations__research_1_1sat_1_1ConstraintProto" ],
     [ "operations_research::sat::ConstraintProto::Impl_::ConstraintUnion", "unionoperations__research_1_1sat_1_1ConstraintProto_1_1Impl___1_1ConstraintUnion.html", "unionoperations__research_1_1sat_1_1ConstraintProto_1_1Impl___1_1ConstraintUnion" ],
     [ "operations_research::sat::CpModelProto", "classoperations__research_1_1sat_1_1CpModelProto.html", "classoperations__research_1_1sat_1_1CpModelProto" ],
-    [ "google::protobuf::is_proto_enum<::operations_research::sat::DecisionStrategyProto_VariableSelectionStrategy >", "structgoogle_1_1protobuf_1_1is__proto__enum_3_1_1operations__research_1_1sat_1_1DecisionStrategyc968749278380f15f952e03729d157b3.html", null ],
-    [ "google::protobuf::is_proto_enum<::operations_research::sat::DecisionStrategyProto_DomainReductionStrategy >", "structgoogle_1_1protobuf_1_1is__proto__enum_3_1_1operations__research_1_1sat_1_1DecisionStrategy0dfe5b8d52714df093cef73e0f81fa12.html", null ],
-    [ "google::protobuf::is_proto_enum<::operations_research::sat::CpSolverStatus >", "structgoogle_1_1protobuf_1_1is__proto__enum_3_1_1operations__research_1_1sat_1_1CpSolverStatus_01_4.html", null ],
+    [ "google::protobuf::is_proto_enum&lt;::operations_research::sat::DecisionStrategyProto_VariableSelectionStrategy &gt;", "structgoogle_1_1protobuf_1_1is__proto__enum_3_1_1operations__research_1_1sat_1_1DecisionStrategyc968749278380f15f952e03729d157b3.html", null ],
+    [ "google::protobuf::is_proto_enum&lt;::operations_research::sat::DecisionStrategyProto_DomainReductionStrategy &gt;", "structgoogle_1_1protobuf_1_1is__proto__enum_3_1_1operations__research_1_1sat_1_1DecisionStrategy0dfe5b8d52714df093cef73e0f81fa12.html", null ],
+    [ "google::protobuf::is_proto_enum&lt;::operations_research::sat::CpSolverStatus &gt;", "structgoogle_1_1protobuf_1_1is__proto__enum_3_1_1operations__research_1_1sat_1_1CpSolverStatus_01_4.html", null ],
     [ "PROTOBUF_INTERNAL_EXPORT_ortools_2fsat_2fcp_5fmodel_2eproto", "cp__model_8pb_8h.html#a198722177a36417069228aec0f9d97d6", null ],
     [ "operations_research::sat::CpSolverStatus", "namespaceoperations__research_1_1sat.html#ac14a394f629f2cf1070b84bce2e427ce", [
       [ "operations_research::sat::UNKNOWN", "namespaceoperations__research_1_1sat.html#ac14a394f629f2cf1070b84bce2e427cea693e3d1636a488a456c173453c45cc14", null ],

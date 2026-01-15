@@ -1,7 +1,7 @@
 var namespaceortools_1_1linear__solver_1_1python_1_1model__builder =
 [
-    [ "EnforcedLinearConstraint", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1EnforcedLinearConstraint.html", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1EnforcedLinearConstraint" ],
     [ "LinearConstraint", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1LinearConstraint.html", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1LinearConstraint" ],
+    [ "EnforcedLinearConstraint", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1EnforcedLinearConstraint.html", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1EnforcedLinearConstraint" ],
     [ "Model", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1Model.html", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1Model" ],
     [ "Solver", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1Solver.html", "classortools_1_1linear__solver_1_1python_1_1model__builder_1_1Solver" ],
     [ "_add_enforced_linear_constraint_to_helper", "namespaceortools_1_1linear__solver_1_1python_1_1model__builder.html#a0d9c600bf0639bc207044b08b9a50f9b", null ],

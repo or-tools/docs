@@ -3,7 +3,7 @@ var presolve__context_8h =
     [ "operations_research::sat::SavedLiteral", "classoperations__research_1_1sat_1_1SavedLiteral.html", "classoperations__research_1_1sat_1_1SavedLiteral" ],
     [ "operations_research::sat::SavedVariable", "classoperations__research_1_1sat_1_1SavedVariable.html", "classoperations__research_1_1sat_1_1SavedVariable" ],
     [ "operations_research::sat::PresolveContext", "classoperations__research_1_1sat_1_1PresolveContext.html", "classoperations__research_1_1sat_1_1PresolveContext" ],
-    [ "ABSL_DECLARE_FLAG", "presolve__context_8h.html#a45fb61e9ec7f66aca90cfbffade57fea", null ],
+    [ "ABSL_DECLARE_FLAG", "presolve__context_8h.html#a2fe1112883bb3c11b6cc77453ab682ee", null ],
     [ "operations_research::sat::CreateValidModelWithSingleConstraint", "namespaceoperations__research_1_1sat.html#add50a2f0b709713e4943459a845da887", null ],
     [ "operations_research::sat::LoadModelForPresolve", "namespaceoperations__research_1_1sat.html#af8c33159d33daea6d86cc399b37e8b20", null ],
     [ "operations_research::sat::LoadModelForProbing", "namespaceoperations__research_1_1sat.html#a0f015dd7f088e0a586993ec925a94ced", null ],

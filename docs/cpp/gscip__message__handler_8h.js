@@ -10,5 +10,5 @@ var gscip__message__handler_8h =
       [ "operations_research::GScipMessageType::kWarningMessage", "namespaceoperations__research.html#a9c86560917fd7728a05a423837f92771a706708cd9a814cabf8a83ed922629e57", null ]
     ] ],
     [ "operations_research::internal::CaptureMessageHandlerPtr", "namespaceoperations__research_1_1internal.html#a70409052918b97eb7654fc0e38a17100", null ],
-    [ "operations_research::internal::MakeSCIPMessageHandler", "namespaceoperations__research_1_1internal.html#a1a90612450d01dd31b13ebc6f3437e86", null ]
+    [ "operations_research::internal::MakeSCIPMessageHandler", "namespaceoperations__research_1_1internal.html#a2995b0a3228c76188aaa5d13c5cd33e9", null ]
 ];

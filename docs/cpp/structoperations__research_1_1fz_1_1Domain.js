@@ -35,6 +35,7 @@ var structoperations__research_1_1fz_1_1Domain =
     [ "display_as_boolean", "structoperations__research_1_1fz_1_1Domain.html#a975f3e87c7caaa93a39b20903b54b566", null ],
     [ "float_values", "structoperations__research_1_1fz_1_1Domain.html#abb66661dce54c92a214cc41ca57ca668", null ],
     [ "is_a_set", "structoperations__research_1_1fz_1_1Domain.html#a5079c97ce67f3e24089b9d8740761cd3", null ],
+    [ "is_fixed_set", "structoperations__research_1_1fz_1_1Domain.html#ae7701994a9bc896c8a496afdc996f676", null ],
     [ "is_float", "structoperations__research_1_1fz_1_1Domain.html#a9ba89347b42e7901b929e183702824c7", null ],
     [ "is_interval", "structoperations__research_1_1fz_1_1Domain.html#a2b51118495b35851ae0821ea1b288c98", null ],
     [ "values", "structoperations__research_1_1fz_1_1Domain.html#a9319f85d50468d745d9aef268c86e38e", null ]

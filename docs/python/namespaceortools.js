@@ -5,7 +5,6 @@ var namespaceortools =
     [ "constraint_solver", "namespaceortools_1_1constraint__solver.html", "namespaceortools_1_1constraint__solver" ],
     [ "glop", "namespaceortools_1_1glop.html", "namespaceortools_1_1glop" ],
     [ "graph", "namespaceortools_1_1graph.html", "namespaceortools_1_1graph" ],
-    [ "gscip", "namespaceortools_1_1gscip.html", "namespaceortools_1_1gscip" ],
     [ "init", "namespaceortools_1_1init.html", "namespaceortools_1_1init" ],
     [ "linear_solver", "namespaceortools_1_1linear__solver.html", "namespaceortools_1_1linear__solver" ],
     [ "math_opt", "namespaceortools_1_1math__opt.html", "namespaceortools_1_1math__opt" ],

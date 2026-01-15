@@ -1,7 +1,7 @@
 var classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RuinCompositionStrategy =
 [
-    [ "Builder", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RuinCompositionStrategy_1_1Builder.html", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RuinCompositionStrategy_1_1Builder" ],
     [ "Value", "enumcom_1_1google_1_1ortools_1_1constraintsolver_1_1RuinCompositionStrategy_1_1Value.html", "enumcom_1_1google_1_1ortools_1_1constraintsolver_1_1RuinCompositionStrategy_1_1Value" ],
+    [ "Builder", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RuinCompositionStrategy_1_1Builder.html", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RuinCompositionStrategy_1_1Builder" ],
     [ "equals", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RuinCompositionStrategy.html#a1611456023cc4e9aded4cebf88fd0583", null ],
     [ "getDefaultInstance", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RuinCompositionStrategy.html#a7af70d7da5a8b47fc258c15c72ea04d6", null ],
     [ "getDefaultInstanceForType", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RuinCompositionStrategy.html#a2a4336681da1a0e41cb23428e7297c97", null ],

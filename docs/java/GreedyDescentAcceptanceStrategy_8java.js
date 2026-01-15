@@ -1,0 +1,5 @@
+var GreedyDescentAcceptanceStrategy_8java =
+[
+    [ "com.google.ortools.constraintsolver.GreedyDescentAcceptanceStrategy", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1GreedyDescentAcceptanceStrategy.html", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1GreedyDescentAcceptanceStrategy" ],
+    [ "com.google.ortools.constraintsolver.GreedyDescentAcceptanceStrategy.Builder", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1GreedyDescentAcceptanceStrategy_1_1Builder.html", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1GreedyDescentAcceptanceStrategy_1_1Builder" ]
+];

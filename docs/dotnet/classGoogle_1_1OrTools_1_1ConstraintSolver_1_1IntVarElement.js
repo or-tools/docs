@@ -2,6 +2,7 @@ var classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IntVarElement =
 [
     [ "IntVarElement", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IntVarElement.html#abfff8224ad1c45d1ff021932a94edbef", null ],
     [ "IntVarElement", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IntVarElement.html#a98f3e1c556ae5a1c66842482a8e90a37", null ],
+    [ "IntVarElement", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IntVarElement.html#a00f8a1449cecae1c88534a32b61faedb", null ],
     [ "Bound", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IntVarElement.html#adbd55a71759b2f54488107663e0b0731", null ],
     [ "Clone", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IntVarElement.html#af88dcb18dca63cafc7687551d507ac42", null ],
     [ "Copy", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IntVarElement.html#a123f611dd21c871636e128cb75345db0", null ],

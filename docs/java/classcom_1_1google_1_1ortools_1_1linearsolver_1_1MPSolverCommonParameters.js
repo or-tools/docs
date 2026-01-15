@@ -1,7 +1,7 @@
 var classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolverCommonParameters =
 [
-    [ "Builder", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolverCommonParameters_1_1Builder.html", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolverCommonParameters_1_1Builder" ],
     [ "LPAlgorithmValues", "enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolverCommonParameters_1_1LPAlgorithmValues.html", "enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolverCommonParameters_1_1LPAlgorithmValues" ],
+    [ "Builder", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolverCommonParameters_1_1Builder.html", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolverCommonParameters_1_1Builder" ],
     [ "equals", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolverCommonParameters.html#a70748fa6f638545a9d31e062507af9f5", null ],
     [ "getDefaultInstance", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolverCommonParameters.html#a6940e025ab52600212fda3863b63b4c8", null ],
     [ "getDefaultInstanceForType", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolverCommonParameters.html#ab5f17cace258ce25a55878a670f3e23e", null ],

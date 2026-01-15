@@ -1,7 +1,7 @@
 var structoperations__research_1_1sat_1_1IndexedInterval =
 [
-    [ "ComparatorByStart", "structoperations__research_1_1sat_1_1IndexedInterval_1_1ComparatorByStart.html", "structoperations__research_1_1sat_1_1IndexedInterval_1_1ComparatorByStart" ],
     [ "ComparatorByStartThenEndThenIndex", "structoperations__research_1_1sat_1_1IndexedInterval_1_1ComparatorByStartThenEndThenIndex.html", "structoperations__research_1_1sat_1_1IndexedInterval_1_1ComparatorByStartThenEndThenIndex" ],
+    [ "ComparatorByStart", "structoperations__research_1_1sat_1_1IndexedInterval_1_1ComparatorByStart.html", "structoperations__research_1_1sat_1_1IndexedInterval_1_1ComparatorByStart" ],
     [ "operator==", "structoperations__research_1_1sat_1_1IndexedInterval.html#a2ac5e7554ced4b6f48493aa28c1052bf", null ],
     [ "AbslStringify", "structoperations__research_1_1sat_1_1IndexedInterval.html#a8cca37f7a86d4dea8fbc854356200b0b", null ],
     [ "end", "structoperations__research_1_1sat_1_1IndexedInterval.html#af1a863421ca6c647e0a160abfe7855e0", null ],

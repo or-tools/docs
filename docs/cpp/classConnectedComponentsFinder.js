@@ -1,7 +1,7 @@
 var classConnectedComponentsFinder =
 [
     [ "Set", "classConnectedComponentsFinder.html#a6cd32b6504f24cd6d026665a339178d8", null ],
-    [ "ConnectedComponentsFinder", "classConnectedComponentsFinder.html#ae7ed69a45b68fbb40ee55aeaeefab33f", null ],
+    [ "ConnectedComponentsFinder", "classConnectedComponentsFinder.html#a062e6551c119777569c6f7feb3d4b33a", null ],
     [ "ConnectedComponentsFinder", "classConnectedComponentsFinder.html#a25511a87bf653cbde2de116eee03a2e6", null ],
     [ "AddEdge", "classConnectedComponentsFinder.html#aed3f10c2b8ecd068e0275e8e6cdd5b91", null ],
     [ "AddNode", "classConnectedComponentsFinder.html#af4cf557d4373e79235570e3f57a2d94c", null ],

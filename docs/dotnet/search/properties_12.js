@@ -28,6 +28,7 @@ var searchData=
   ['transitionhead_25',['TransitionHead',['../classGoogle_1_1OrTools_1_1Sat_1_1AutomatonConstraintProto.html#a3b77a588981d32a5b26709cd1a486f70',1,'Google::OrTools::Sat::AutomatonConstraintProto']]],
   ['transitionlabel_26',['TransitionLabel',['../classGoogle_1_1OrTools_1_1Sat_1_1AutomatonConstraintProto.html#a505245ddec624dc6072bc7d1f8c27de2',1,'Google::OrTools::Sat::AutomatonConstraintProto']]],
   ['transitiontail_27',['TransitionTail',['../classGoogle_1_1OrTools_1_1Sat_1_1AutomatonConstraintProto.html#a1c6cccbce3d12f47bdff6e6914a74d68',1,'Google::OrTools::Sat::AutomatonConstraintProto']]],
-  ['type_28',['Type',['../classGoogle_1_1OrTools_1_1Bop_1_1BopOptimizerMethod.html#ad88a42bf59133b3e26c70a3877b48894',1,'Google.OrTools.Bop.BopOptimizerMethod.Type'],['../classOperationsResearch_1_1MPSosConstraint.html#a451920032092c6c0dcdaa0a92bc18412',1,'OperationsResearch.MPSosConstraint.Type']]],
-  ['type_5findex_5fof_5fvehicle_29',['type_index_of_vehicle',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingModel_1_1VehicleTypeContainer.html#aecaa944feb4e286c4a00c45e02afd628',1,'Google::OrTools::ConstraintSolver::RoutingModel::VehicleTypeContainer']]]
+  ['transitiveprecedencesworklimit_28',['TransitivePrecedencesWorkLimit',['../classGoogle_1_1OrTools_1_1Sat_1_1SatParameters.html#a561c89d6c3f2d40227cde8298461231d',1,'Google::OrTools::Sat::SatParameters']]],
+  ['type_29',['Type',['../classGoogle_1_1OrTools_1_1Bop_1_1BopOptimizerMethod.html#ad88a42bf59133b3e26c70a3877b48894',1,'Google.OrTools.Bop.BopOptimizerMethod.Type'],['../classOperationsResearch_1_1MPSosConstraint.html#a451920032092c6c0dcdaa0a92bc18412',1,'OperationsResearch.MPSosConstraint.Type']]],
+  ['type_5findex_5fof_5fvehicle_30',['type_index_of_vehicle',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RoutingModel_1_1VehicleTypeContainer.html#aecaa944feb4e286c4a00c45e02afd628',1,'Google::OrTools::ConstraintSolver::RoutingModel::VehicleTypeContainer']]]
 ];

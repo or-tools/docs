@@ -123,5 +123,6 @@ var searchData=
   ['ortoolsversion_5fpatchnumber_120',['OrToolsVersion_PatchNumber',['../classGoogle_1_1OrTools_1_1Init_1_1operations__research__initPINVOKE.html#a5e6cb0b49bbec18028bb9c90abf8714d',1,'Google::OrTools::Init::operations_research_initPINVOKE']]],
   ['ortoolsversion_5fversionstring_121',['OrToolsVersion_VersionString',['../classGoogle_1_1OrTools_1_1Init_1_1operations__research__initPINVOKE.html#aaccb12ab455251f496be4c15e65c45e0',1,'Google::OrTools::Init::operations_research_initPINVOKE']]],
   ['outputdecision_122',['OutputDecision',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1SearchLog.html#acdddd61c36a41fcabb6ffc5053270b72',1,'Google::OrTools::ConstraintSolver::SearchLog']]],
-  ['overwritemodel_123',['OverwriteModel',['../classGoogle_1_1OrTools_1_1ModelBuilder_1_1ModelBuilderHelper.html#a56822cedbf187690d9252b4d8638180d',1,'Google::OrTools::ModelBuilder::ModelBuilderHelper']]]
+  ['overlapswith_123',['OverlapsWith',['../classGoogle_1_1OrTools_1_1Util_1_1Domain.html#adb283a19eba02459d379c23ed06c52c2',1,'Google::OrTools::Util::Domain']]],
+  ['overwritemodel_124',['OverwriteModel',['../classGoogle_1_1OrTools_1_1ModelBuilder_1_1ModelBuilderHelper.html#a56822cedbf187690d9252b4d8638180d',1,'Google::OrTools::ModelBuilder::ModelBuilderHelper']]]
 ];

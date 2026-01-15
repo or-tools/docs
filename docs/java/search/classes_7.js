@@ -7,7 +7,7 @@ var searchData=
   ['infeasibilityinformation_4',['InfeasibilityInformation',['../classcom_1_1google_1_1ortools_1_1pdlp_1_1InfeasibilityInformation.html',1,'com::google::ortools::pdlp']]],
   ['infeasibilityinformationorbuilder_5',['InfeasibilityInformationOrBuilder',['../interfacecom_1_1google_1_1ortools_1_1pdlp_1_1InfeasibilityInformationOrBuilder.html',1,'com::google::ortools::pdlp']]],
   ['initialbasisheuristic_6',['InitialBasisHeuristic',['../enumcom_1_1google_1_1ortools_1_1glop_1_1GlopParameters_1_1InitialBasisHeuristic.html',1,'com::google::ortools::glop::GlopParameters']]],
-  ['insertionsortingproperty_7',['InsertionSortingProperty',['../enumcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingSearchParameters_1_1InsertionSortingProperty.html',1,'com::google::ortools::constraintsolver::RoutingSearchParameters']]],
+  ['insertionsortingproperty_7',['InsertionSortingProperty',['../enumcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalCheapestInsertionParameters_1_1InsertionSortingProperty.html',1,'com::google::ortools::constraintsolver::LocalCheapestInsertionParameters']]],
   ['int128_8',['Int128',['../classcom_1_1google_1_1ortools_1_1util_1_1Int128.html',1,'com::google::ortools::util']]],
   ['int128orbuilder_9',['Int128OrBuilder',['../interfacecom_1_1google_1_1ortools_1_1util_1_1Int128OrBuilder.html',1,'com::google::ortools::util']]],
   ['int128outerclass_10',['Int128OuterClass',['../classcom_1_1google_1_1ortools_1_1util_1_1Int128OuterClass.html',1,'com::google::ortools::util']]],

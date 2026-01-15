@@ -1,21 +1,12 @@
 var searchData=
 [
-  ['limit_0',['Limit',['../classortools_1_1math__opt_1_1python_1_1result_1_1Limit.html',1,'ortools::math_opt::python::result']]],
-  ['linearbase_1',['LinearBase',['../classortools_1_1math__opt_1_1python_1_1variables_1_1LinearBase.html',1,'ortools::math_opt::python::variables']]],
-  ['linearconstraint_2',['LinearConstraint',['../classortools_1_1linear__solver_1_1python_1_1linear__solver__natural__api_1_1LinearConstraint.html',1,'ortools.linear_solver.python.linear_solver_natural_api.LinearConstraint'],['../classortools_1_1linear__solver_1_1python_1_1model__builder_1_1LinearConstraint.html',1,'ortools.linear_solver.python.model_builder.LinearConstraint'],['../classortools_1_1math__opt_1_1python_1_1linear__constraints_1_1LinearConstraint.html',1,'ortools.math_opt.python.linear_constraints.LinearConstraint']]],
-  ['linearconstraintmatrixentry_3',['LinearConstraintMatrixEntry',['../classortools_1_1math__opt_1_1python_1_1linear__constraints_1_1LinearConstraintMatrixEntry.html',1,'ortools::math_opt::python::linear_constraints']]],
-  ['linearconstraintmatrixidentry_4',['LinearConstraintMatrixIdEntry',['../classortools_1_1math__opt_1_1python_1_1model__storage_1_1LinearConstraintMatrixIdEntry.html',1,'ortools::math_opt::python::model_storage']]],
-  ['linearexpr_5',['LinearExpr',['../classortools_1_1linear__solver_1_1python_1_1linear__solver__natural__api_1_1LinearExpr.html',1,'ortools::linear_solver::python::linear_solver_natural_api']]],
-  ['linearexpression_6',['LinearExpression',['../classortools_1_1math__opt_1_1python_1_1variables_1_1LinearExpression.html',1,'ortools::math_opt::python::variables']]],
-  ['linearlinearproduct_7',['LinearLinearProduct',['../classortools_1_1math__opt_1_1python_1_1variables_1_1LinearLinearProduct.html',1,'ortools::math_opt::python::variables']]],
-  ['linearobjectiveentry_8',['LinearObjectiveEntry',['../classortools_1_1math__opt_1_1python_1_1model__storage_1_1LinearObjectiveEntry.html',1,'ortools::math_opt::python::model_storage']]],
-  ['linearproduct_9',['LinearProduct',['../classortools_1_1math__opt_1_1python_1_1variables_1_1LinearProduct.html',1,'ortools::math_opt::python::variables']]],
-  ['linearsum_10',['LinearSum',['../classortools_1_1math__opt_1_1python_1_1variables_1_1LinearSum.html',1,'ortools::math_opt::python::variables']]],
-  ['linearterm_11',['LinearTerm',['../classortools_1_1math__opt_1_1python_1_1variables_1_1LinearTerm.html',1,'ortools::math_opt::python::variables']]],
-  ['localsearchfilter_12',['LocalSearchFilter',['../classortools_1_1constraint__solver_1_1pywrapcp_1_1LocalSearchFilter.html',1,'ortools::constraint_solver::pywrapcp']]],
-  ['localsearchfiltermanager_13',['LocalSearchFilterManager',['../classortools_1_1constraint__solver_1_1pywrapcp_1_1LocalSearchFilterManager.html',1,'ortools::constraint_solver::pywrapcp']]],
-  ['localsearchmetaheuristic_14',['LocalSearchMetaheuristic',['../classortools_1_1constraint__solver_1_1pywrapcp_1_1LocalSearchMetaheuristic.html',1,'ortools::constraint_solver::pywrapcp']]],
-  ['localsearchoperator_15',['LocalSearchOperator',['../classortools_1_1constraint__solver_1_1pywrapcp_1_1LocalSearchOperator.html',1,'ortools::constraint_solver::pywrapcp']]],
-  ['lowerboundedexpression_16',['LowerBoundedExpression',['../classortools_1_1math__opt_1_1python_1_1bounded__expressions_1_1LowerBoundedExpression.html',1,'ortools::math_opt::python::bounded_expressions']]],
-  ['lpalgorithm_17',['LPAlgorithm',['../classortools_1_1math__opt_1_1python_1_1parameters_1_1LPAlgorithm.html',1,'ortools::math_opt::python::parameters']]]
+  ['mathoptprotoassertions_0',['MathOptProtoAssertions',['../classortools_1_1math__opt_1_1python_1_1testing_1_1compare__proto_1_1MathOptProtoAssertions.html',1,'ortools::math_opt::python::testing::compare_proto']]],
+  ['mathoptprotoequivmatcher_1',['MathOptProtoEquivMatcher',['../classortools_1_1math__opt_1_1python_1_1testing_1_1proto__matcher_1_1MathOptProtoEquivMatcher.html',1,'ortools::math_opt::python::testing::proto_matcher']]],
+  ['model_2',['Model',['../classortools_1_1linear__solver_1_1python_1_1model__builder_1_1Model.html',1,'ortools.linear_solver.python.model_builder.Model'],['../classortools_1_1math__opt_1_1python_1_1model_1_1Model.html',1,'ortools.math_opt.python.model.Model']]],
+  ['modelexportoptions_3',['ModelExportOptions',['../classortools_1_1linear__solver_1_1pywraplp_1_1ModelExportOptions.html',1,'ortools::linear_solver::pywraplp']]],
+  ['modelranges_4',['ModelRanges',['../classortools_1_1math__opt_1_1python_1_1statistics_1_1ModelRanges.html',1,'ortools::math_opt::python::statistics']]],
+  ['modelsolveparameters_5',['ModelSolveParameters',['../classortools_1_1math__opt_1_1python_1_1model__parameters_1_1ModelSolveParameters.html',1,'ortools::math_opt::python::model_parameters']]],
+  ['modelsubset_6',['ModelSubset',['../classortools_1_1math__opt_1_1python_1_1compute__infeasible__subsystem__result_1_1ModelSubset.html',1,'ortools::math_opt::python::compute_infeasible_subsystem_result']]],
+  ['modelsubsetbounds_7',['ModelSubsetBounds',['../classortools_1_1math__opt_1_1python_1_1compute__infeasible__subsystem__result_1_1ModelSubsetBounds.html',1,'ortools::math_opt::python::compute_infeasible_subsystem_result']]],
+  ['mpsolverparameters_8',['MPSolverParameters',['../classortools_1_1linear__solver_1_1pywraplp_1_1MPSolverParameters.html',1,'ortools::linear_solver::pywraplp']]]
 ];

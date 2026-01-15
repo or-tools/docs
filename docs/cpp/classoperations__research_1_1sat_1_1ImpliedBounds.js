@@ -6,7 +6,9 @@ var classoperations__research_1_1sat_1_1ImpliedBounds =
     [ "AddLiteralImpliesVarEqValue", "classoperations__research_1_1sat_1_1ImpliedBounds.html#acaa666c81d2c23c27c54304559521fb4", null ],
     [ "EnqueueNewDeductions", "classoperations__research_1_1sat_1_1ImpliedBounds.html#a402d53867d2626501bd9cb37b2a730a6", null ],
     [ "GetImpliedBounds", "classoperations__research_1_1sat_1_1ImpliedBounds.html#ace9f6e200fff7933263a014bb9d62fb8", null ],
+    [ "GetImpliedBounds", "classoperations__research_1_1sat_1_1ImpliedBounds.html#a0e46d7b1456b948e4f9c3bfb5a3db98d", null ],
     [ "GetImpliedValues", "classoperations__research_1_1sat_1_1ImpliedBounds.html#a51008af4d55e7e2658a7b2f74d4cdc8e", null ],
+    [ "GetModelImpliedBounds", "classoperations__research_1_1sat_1_1ImpliedBounds.html#aea158ed316ad69d28e96d7fd8655bb1c", null ],
     [ "ProcessIntegerTrail", "classoperations__research_1_1sat_1_1ImpliedBounds.html#a0a0ebe9a95ba1313b693761ea53f64fa", null ],
     [ "VariablesWithImpliedBounds", "classoperations__research_1_1sat_1_1ImpliedBounds.html#ac6ac45e18c837fbf817b585dd5a4dab4", null ]
 ];

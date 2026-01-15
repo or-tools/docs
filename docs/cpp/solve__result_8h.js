@@ -4,6 +4,7 @@ var solve__result_8h =
     [ "operations_research::math_opt::SolveStats", "structoperations__research_1_1math__opt_1_1SolveStats.html", "structoperations__research_1_1math__opt_1_1SolveStats" ],
     [ "operations_research::math_opt::ObjectiveBounds", "structoperations__research_1_1math__opt_1_1ObjectiveBounds.html", "structoperations__research_1_1math__opt_1_1ObjectiveBounds" ],
     [ "operations_research::math_opt::Termination", "structoperations__research_1_1math__opt_1_1Termination.html", "structoperations__research_1_1math__opt_1_1Termination" ],
+    [ "operations_research::math_opt::SolveResult", "structoperations__research_1_1math__opt_1_1SolveResult.html", "structoperations__research_1_1math__opt_1_1SolveResult" ],
     [ "operations_research::math_opt::FeasibilityStatus", "namespaceoperations__research_1_1math__opt.html#afbadea5ab90874606c70ca64817ac2bb", [
       [ "operations_research::math_opt::FeasibilityStatus::kUndetermined", "namespaceoperations__research_1_1math__opt.html#afbadea5ab90874606c70ca64817ac2bba180f453eb66237810dfc39ee46e04c9a", null ],
       [ "operations_research::math_opt::FeasibilityStatus::kFeasible", "namespaceoperations__research_1_1math__opt.html#afbadea5ab90874606c70ca64817ac2bba6936fc811b6bf3bfd7c65ab1f48e3f1f", null ],
@@ -34,11 +35,13 @@ var solve__result_8h =
       [ "operations_research::math_opt::TerminationReason::kNumericalError", "namespaceoperations__research_1_1math__opt.html#a1e2e001b55e2f55dffeafd6fc18773a2a631fe1d70108dee6ae7d6acde27f76ef", null ],
       [ "operations_research::math_opt::TerminationReason::kOtherError", "namespaceoperations__research_1_1math__opt.html#a1e2e001b55e2f55dffeafd6fc18773a2a298223b78cd88f4983fbc5ae093136ca", null ]
     ] ],
+    [ "operations_research::math_opt::AbslStringify", "namespaceoperations__research_1_1math__opt.html#a9c2698f10b46c1590cfeb7537cd0468d", null ],
     [ "operations_research::math_opt::MATH_OPT_DEFINE_ENUM", "namespaceoperations__research_1_1math__opt.html#afd61e5a9a83580286ce2e9a185642f94", null ],
     [ "operations_research::math_opt::MATH_OPT_DEFINE_ENUM", "namespaceoperations__research_1_1math__opt.html#ad80f0acad4ffc70b0438653db4503bf5", null ],
     [ "operations_research::math_opt::MATH_OPT_DEFINE_ENUM", "namespaceoperations__research_1_1math__opt.html#abac41abdbb7a6ee0f536d9b4a5ba6579", null ],
     [ "operations_research::math_opt::operator<<", "namespaceoperations__research_1_1math__opt.html#ad6006a96d3f4ce72a30c619a7151286e", null ],
     [ "operations_research::math_opt::operator<<", "namespaceoperations__research_1_1math__opt.html#a18d8859ffa055ca8b3f843b8cacfea67", null ],
     [ "operations_research::math_opt::operator<<", "namespaceoperations__research_1_1math__opt.html#aa1276d0f31347dd1f2b5595180c7531c", null ],
+    [ "operations_research::math_opt::operator<<", "namespaceoperations__research_1_1math__opt.html#a0c5b0162f1414d908ad71eca691451b1", null ],
     [ "operations_research::math_opt::operator<<", "namespaceoperations__research_1_1math__opt.html#ad3896e25146b8152c39cfdac26063d25", null ]
 ];

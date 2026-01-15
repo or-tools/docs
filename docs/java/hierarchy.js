@@ -37,7 +37,6 @@ var hierarchy =
         [ "com.google.ortools.constraintsolver.Constraint", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1Constraint.html", [
           [ "com.google.ortools.constraintsolver.CastConstraint", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1CastConstraint.html", null ],
           [ "com.google.ortools.constraintsolver.DisjunctiveConstraint", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1DisjunctiveConstraint.html", null ],
-          [ "com.google.ortools.constraintsolver.GlobalVehicleBreaksConstraint", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1GlobalVehicleBreaksConstraint.html", null ],
           [ "com.google.ortools.constraintsolver.Pack", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1Pack.html", null ],
           [ "com.google.ortools.constraintsolver.TypeRegulationsConstraint", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1TypeRegulationsConstraint.html", null ]
         ] ],
@@ -69,26 +68,32 @@ var hierarchy =
       [ "com.google.ortools.constraintsolver.SolutionPool", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SolutionPool.html", null ]
     ] ],
     [ "com.google.ortools.linearsolver.MPSolver.BasisStatus", "enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolver_1_1BasisStatus.html", null ],
-    [ "com.google.ortools.sat.BooleanProblem", "classcom_1_1google_1_1ortools_1_1sat_1_1BooleanProblem.html", null ],
-    [ "com.google.ortools.bop.BopParametersOuterClass", "classcom_1_1google_1_1ortools_1_1bop_1_1BopParametersOuterClass.html", null ],
     [ "com.google.ortools.constraintsolver.BoundCost", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1BoundCost.html", null ],
     [ "com.google.protobuf.GeneratedMessage.Builder", null, [
       [ "com.google.ortools.bop.BopOptimizerMethod.Builder", "classcom_1_1google_1_1ortools_1_1bop_1_1BopOptimizerMethod_1_1Builder.html", null ],
       [ "com.google.ortools.bop.BopParameters.Builder", "classcom_1_1google_1_1ortools_1_1bop_1_1BopParameters_1_1Builder.html", null ],
       [ "com.google.ortools.bop.BopSolverOptimizerSet.Builder", "classcom_1_1google_1_1ortools_1_1bop_1_1BopSolverOptimizerSet_1_1Builder.html", null ],
+      [ "com.google.ortools.constraintsolver.AbsencesBasedAcceptanceStrategy.Builder", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1AbsencesBasedAcceptanceStrategy_1_1Builder.html", null ],
       [ "com.google.ortools.constraintsolver.AcceptanceStrategy.Builder", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1AcceptanceStrategy_1_1Builder.html", null ],
+      [ "com.google.ortools.constraintsolver.AllNodesPerformedAcceptanceStrategy.Builder", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1AllNodesPerformedAcceptanceStrategy_1_1Builder.html", null ],
       [ "com.google.ortools.constraintsolver.ConstraintSolverParameters.Builder", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1ConstraintSolverParameters_1_1Builder.html", null ],
       [ "com.google.ortools.constraintsolver.ConstraintSolverStatistics.Builder", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1ConstraintSolverStatistics_1_1Builder.html", null ],
       [ "com.google.ortools.constraintsolver.CoolingScheduleStrategy.Builder", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1CoolingScheduleStrategy_1_1Builder.html", null ],
       [ "com.google.ortools.constraintsolver.FirstSolutionStrategy.Builder", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1FirstSolutionStrategy_1_1Builder.html", null ],
+      [ "com.google.ortools.constraintsolver.GlobalCheapestInsertionParameters.Builder", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1GlobalCheapestInsertionParameters_1_1Builder.html", null ],
+      [ "com.google.ortools.constraintsolver.GreedyDescentAcceptanceStrategy.Builder", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1GreedyDescentAcceptanceStrategy_1_1Builder.html", null ],
       [ "com.google.ortools.constraintsolver.IteratedLocalSearchParameters.Builder", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1IteratedLocalSearchParameters_1_1Builder.html", null ],
+      [ "com.google.ortools.constraintsolver.LocalCheapestInsertionParameters.Builder", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalCheapestInsertionParameters_1_1Builder.html", null ],
       [ "com.google.ortools.constraintsolver.LocalSearchMetaheuristic.Builder", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchMetaheuristic_1_1Builder.html", null ],
       [ "com.google.ortools.constraintsolver.LocalSearchStatistics.Builder", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchStatistics_1_1Builder.html", null ],
       [ "com.google.ortools.constraintsolver.LocalSearchStatistics.FirstSolutionStatistics.Builder", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchStatistics_1_1FirstSolutionStatistics_1_1Builder.html", null ],
       [ "com.google.ortools.constraintsolver.LocalSearchStatistics.LocalSearchFilterStatistics.Builder", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchStatistics_1_1LocalSearchFilterStatistics_1_1Builder.html", null ],
       [ "com.google.ortools.constraintsolver.LocalSearchStatistics.LocalSearchOperatorStatistics.Builder", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchStatistics_1_1LocalSearchOperatorStatistics_1_1Builder.html", null ],
+      [ "com.google.ortools.constraintsolver.MoreNodesPerformedAcceptanceStrategy.Builder", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1MoreNodesPerformedAcceptanceStrategy_1_1Builder.html", null ],
       [ "com.google.ortools.constraintsolver.PerturbationStrategy.Builder", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1PerturbationStrategy_1_1Builder.html", null ],
       [ "com.google.ortools.constraintsolver.RandomWalkRuinStrategy.Builder", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RandomWalkRuinStrategy_1_1Builder.html", null ],
+      [ "com.google.ortools.constraintsolver.RecreateParameters.Builder", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RecreateParameters_1_1Builder.html", null ],
+      [ "com.google.ortools.constraintsolver.RecreateStrategy.Builder", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RecreateStrategy_1_1Builder.html", null ],
       [ "com.google.ortools.constraintsolver.RegularLimitParameters.Builder", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RegularLimitParameters_1_1Builder.html", null ],
       [ "com.google.ortools.constraintsolver.RoutingModelParameters.Builder", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingModelParameters_1_1Builder.html", null ],
       [ "com.google.ortools.constraintsolver.RoutingSearchParameters.Builder", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingSearchParameters_1_1Builder.html", null ],
@@ -99,9 +104,11 @@ var hierarchy =
       [ "com.google.ortools.constraintsolver.RuinRecreateParameters.Builder", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RuinRecreateParameters_1_1Builder.html", null ],
       [ "com.google.ortools.constraintsolver.RuinStrategy.Builder", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RuinStrategy_1_1Builder.html", null ],
       [ "com.google.ortools.constraintsolver.SISRRuinStrategy.Builder", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SISRRuinStrategy_1_1Builder.html", null ],
+      [ "com.google.ortools.constraintsolver.SavingsParameters.Builder", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SavingsParameters_1_1Builder.html", null ],
       [ "com.google.ortools.constraintsolver.SearchStatistics.Builder", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SearchStatistics_1_1Builder.html", null ],
-      [ "com.google.ortools.constraintsolver.SimulatedAnnealingParameters.Builder", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SimulatedAnnealingParameters_1_1Builder.html", null ],
+      [ "com.google.ortools.constraintsolver.SimulatedAnnealingAcceptanceStrategy.Builder", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SimulatedAnnealingAcceptanceStrategy_1_1Builder.html", null ],
       [ "com.google.ortools.constraintsolver.SpatiallyCloseRoutesRuinStrategy.Builder", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SpatiallyCloseRoutesRuinStrategy_1_1Builder.html", null ],
+      [ "com.google.ortools.constraintsolver.SubSolverStatistics.Builder", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SubSolverStatistics_1_1Builder.html", null ],
       [ "com.google.ortools.glop.GlopParameters.Builder", "classcom_1_1google_1_1ortools_1_1glop_1_1GlopParameters_1_1Builder.html", null ],
       [ "com.google.ortools.graph.FlowArcProto.Builder", "classcom_1_1google_1_1ortools_1_1graph_1_1FlowArcProto_1_1Builder.html", null ],
       [ "com.google.ortools.graph.FlowModelProto.Builder", "classcom_1_1google_1_1ortools_1_1graph_1_1FlowModelProto_1_1Builder.html", null ],
@@ -178,7 +185,13 @@ var hierarchy =
       [ "com.google.ortools.sat.SymmetryProto.Builder", "classcom_1_1google_1_1ortools_1_1sat_1_1SymmetryProto_1_1Builder.html", null ],
       [ "com.google.ortools.sat.TableConstraintProto.Builder", "classcom_1_1google_1_1ortools_1_1sat_1_1TableConstraintProto_1_1Builder.html", null ],
       [ "com.google.ortools.sat.v1.CpSolverRequest.Builder", "classcom_1_1google_1_1ortools_1_1sat_1_1v1_1_1CpSolverRequest_1_1Builder.html", null ],
-      [ "com.google.ortools.util.Int128.Builder", "classcom_1_1google_1_1ortools_1_1util_1_1Int128_1_1Builder.html", null ]
+      [ "com.google.ortools.util.Int128.Builder", "classcom_1_1google_1_1ortools_1_1util_1_1Int128_1_1Builder.html", null ],
+      [ "operations_research.sat.Lrat.LratDeletedClauses.Builder", "classoperations__research_1_1sat_1_1Lrat_1_1LratDeletedClauses_1_1Builder.html", null ],
+      [ "operations_research.sat.Lrat.LratExportedClause.Builder", "classoperations__research_1_1sat_1_1Lrat_1_1LratExportedClause_1_1Builder.html", null ],
+      [ "operations_research.sat.Lrat.LratImportedClause.Builder", "classoperations__research_1_1sat_1_1Lrat_1_1LratImportedClause_1_1Builder.html", null ],
+      [ "operations_research.sat.Lrat.LratInferredClause.Builder", "classoperations__research_1_1sat_1_1Lrat_1_1LratInferredClause_1_1Builder.html", null ],
+      [ "operations_research.sat.Lrat.LratInferredClause.RatInfo.Builder", "classoperations__research_1_1sat_1_1Lrat_1_1LratInferredClause_1_1RatInfo_1_1Builder.html", null ],
+      [ "operations_research.sat.Lrat.LratProofStep.Builder", "classoperations__research_1_1sat_1_1Lrat_1_1LratProofStep_1_1Builder.html", null ]
     ] ],
     [ "com.google.ortools.sat.Constraint", "classcom_1_1google_1_1ortools_1_1sat_1_1Constraint.html", [
       [ "com.google.ortools.sat.AutomatonConstraint", "classcom_1_1google_1_1ortools_1_1sat_1_1AutomatonConstraint.html", null ],
@@ -197,8 +210,6 @@ var hierarchy =
       [ "com.google.ortools.sat.TableConstraint", "classcom_1_1google_1_1ortools_1_1sat_1_1TableConstraint.html", null ]
     ] ],
     [ "com.google.ortools.sat.CpModel", "classcom_1_1google_1_1ortools_1_1sat_1_1CpModel.html", null ],
-    [ "com.google.ortools.sat.CpModelProtobuf", "classcom_1_1google_1_1ortools_1_1sat_1_1CpModelProtobuf.html", null ],
-    [ "com.google.ortools.sat.v1.CpModelServiceProto", "classcom_1_1google_1_1ortools_1_1sat_1_1v1_1_1CpModelServiceProto.html", null ],
     [ "com.google.ortools.init.CppBridge", "classcom_1_1google_1_1ortools_1_1init_1_1CppBridge.html", null ],
     [ "com.google.ortools.init.CppFlags", "classcom_1_1google_1_1ortools_1_1init_1_1CppFlags.html", null ],
     [ "com.google.ortools.sat.CpSatHelper", "classcom_1_1google_1_1ortools_1_1sat_1_1CpSatHelper.html", null ],
@@ -209,33 +220,66 @@ var hierarchy =
     [ "com.google.ortools.linearsolver.MPSolverParameters.DoubleParam", "enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolverParameters_1_1DoubleParam.html", null ],
     [ "com.google.ortools.modelbuilder.EnforcedLinearConstraint", "classcom_1_1google_1_1ortools_1_1modelbuilder_1_1EnforcedLinearConstraint.html", null ],
     [ "com.google.protobuf.Internal.EnumLite", null, [
+      [ "com.google.ortools.constraintsolver.AcceptanceStrategy.StrategyCase", "enumcom_1_1google_1_1ortools_1_1constraintsolver_1_1AcceptanceStrategy_1_1StrategyCase.html", null ],
+      [ "com.google.ortools.constraintsolver.RecreateParameters.ParametersCase", "enumcom_1_1google_1_1ortools_1_1constraintsolver_1_1RecreateParameters_1_1ParametersCase.html", null ],
       [ "com.google.ortools.constraintsolver.RuinStrategy.StrategyCase", "enumcom_1_1google_1_1ortools_1_1constraintsolver_1_1RuinStrategy_1_1StrategyCase.html", null ],
       [ "com.google.ortools.linearsolver.MPGeneralConstraintProto.GeneralConstraintCase", "enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPGeneralConstraintProto_1_1GeneralConstraintCase.html", null ],
       [ "com.google.ortools.pdlp.TerminationCriteria.OptimalityCriteriaCase", "enumcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1OptimalityCriteriaCase.html", null ],
-      [ "com.google.ortools.sat.ConstraintProto.ConstraintCase", "enumcom_1_1google_1_1ortools_1_1sat_1_1ConstraintProto_1_1ConstraintCase.html", null ]
+      [ "com.google.ortools.sat.ConstraintProto.ConstraintCase", "enumcom_1_1google_1_1ortools_1_1sat_1_1ConstraintProto_1_1ConstraintCase.html", null ],
+      [ "operations_research.sat.Lrat.LratProofStep.StepCase", "enumoperations__research_1_1sat_1_1Lrat_1_1LratProofStep_1_1StepCase.html", null ]
     ] ],
     [ "Exception", null, [
       [ "com.google.ortools.constraintsolver.Solver.FailException", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1Solver_1_1FailException.html", null ]
     ] ],
     [ "com.google.ortools.constraintsolver.LocalSearchFilterManager.FilterEvent", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchFilterManager_1_1FilterEvent.html", null ],
-    [ "com.google.ortools.graph.FlowProblem", "classcom_1_1google_1_1ortools_1_1graph_1_1FlowProblem.html", null ],
+    [ "com.google.protobuf.GeneratedFile", null, [
+      [ "com.google.ortools.bop.BopParametersOuterClass", "classcom_1_1google_1_1ortools_1_1bop_1_1BopParametersOuterClass.html", null ],
+      [ "com.google.ortools.constraintsolver.RoutingEnums", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingEnums.html", null ],
+      [ "com.google.ortools.constraintsolver.RoutingHeuristicParameters", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingHeuristicParameters.html", null ],
+      [ "com.google.ortools.constraintsolver.RoutingIls", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingIls.html", null ],
+      [ "com.google.ortools.constraintsolver.RoutingParameters", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingParameters.html", null ],
+      [ "com.google.ortools.constraintsolver.SearchLimitProtobuf", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SearchLimitProtobuf.html", null ],
+      [ "com.google.ortools.constraintsolver.SearchStats", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SearchStats.html", null ],
+      [ "com.google.ortools.constraintsolver.SolverParameters", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SolverParameters.html", null ],
+      [ "com.google.ortools.glop.Parameters", "classcom_1_1google_1_1ortools_1_1glop_1_1Parameters.html", null ],
+      [ "com.google.ortools.graph.FlowProblem", "classcom_1_1google_1_1ortools_1_1graph_1_1FlowProblem.html", null ],
+      [ "com.google.ortools.linearsolver.LinearSolver", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1LinearSolver.html", null ],
+      [ "com.google.ortools.pdlp.SolveLogOuterClass", "classcom_1_1google_1_1ortools_1_1pdlp_1_1SolveLogOuterClass.html", null ],
+      [ "com.google.ortools.pdlp.Solvers", "classcom_1_1google_1_1ortools_1_1pdlp_1_1Solvers.html", null ],
+      [ "com.google.ortools.sat.BooleanProblem", "classcom_1_1google_1_1ortools_1_1sat_1_1BooleanProblem.html", null ],
+      [ "com.google.ortools.sat.CpModelProtobuf", "classcom_1_1google_1_1ortools_1_1sat_1_1CpModelProtobuf.html", null ],
+      [ "com.google.ortools.sat.RoutesSupportGraph", "classcom_1_1google_1_1ortools_1_1sat_1_1RoutesSupportGraph.html", null ],
+      [ "com.google.ortools.sat.SatParametersOuterClass", "classcom_1_1google_1_1ortools_1_1sat_1_1SatParametersOuterClass.html", null ],
+      [ "com.google.ortools.sat.v1.CpModelServiceProto", "classcom_1_1google_1_1ortools_1_1sat_1_1v1_1_1CpModelServiceProto.html", null ],
+      [ "com.google.ortools.util.Int128OuterClass", "classcom_1_1google_1_1ortools_1_1util_1_1Int128OuterClass.html", null ],
+      [ "com.google.ortools.util.OptionalBooleanOuterClass", "classcom_1_1google_1_1ortools_1_1util_1_1OptionalBooleanOuterClass.html", null ],
+      [ "operations_research.sat.Lrat", "classoperations__research_1_1sat_1_1Lrat.html", null ]
+    ] ],
     [ "com.google.protobuf.GeneratedMessage", null, [
       [ "com.google.ortools.bop.BopOptimizerMethod", "classcom_1_1google_1_1ortools_1_1bop_1_1BopOptimizerMethod.html", null ],
       [ "com.google.ortools.bop.BopParameters", "classcom_1_1google_1_1ortools_1_1bop_1_1BopParameters.html", null ],
       [ "com.google.ortools.bop.BopSolverOptimizerSet", "classcom_1_1google_1_1ortools_1_1bop_1_1BopSolverOptimizerSet.html", null ],
+      [ "com.google.ortools.constraintsolver.AbsencesBasedAcceptanceStrategy", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1AbsencesBasedAcceptanceStrategy.html", null ],
       [ "com.google.ortools.constraintsolver.AcceptanceStrategy", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1AcceptanceStrategy.html", null ],
+      [ "com.google.ortools.constraintsolver.AllNodesPerformedAcceptanceStrategy", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1AllNodesPerformedAcceptanceStrategy.html", null ],
       [ "com.google.ortools.constraintsolver.ConstraintSolverParameters", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1ConstraintSolverParameters.html", null ],
       [ "com.google.ortools.constraintsolver.ConstraintSolverStatistics", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1ConstraintSolverStatistics.html", null ],
       [ "com.google.ortools.constraintsolver.CoolingScheduleStrategy", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1CoolingScheduleStrategy.html", null ],
       [ "com.google.ortools.constraintsolver.FirstSolutionStrategy", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1FirstSolutionStrategy.html", null ],
+      [ "com.google.ortools.constraintsolver.GlobalCheapestInsertionParameters", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1GlobalCheapestInsertionParameters.html", null ],
+      [ "com.google.ortools.constraintsolver.GreedyDescentAcceptanceStrategy", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1GreedyDescentAcceptanceStrategy.html", null ],
       [ "com.google.ortools.constraintsolver.IteratedLocalSearchParameters", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1IteratedLocalSearchParameters.html", null ],
+      [ "com.google.ortools.constraintsolver.LocalCheapestInsertionParameters", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalCheapestInsertionParameters.html", null ],
       [ "com.google.ortools.constraintsolver.LocalSearchMetaheuristic", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchMetaheuristic.html", null ],
       [ "com.google.ortools.constraintsolver.LocalSearchStatistics", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchStatistics.html", null ],
       [ "com.google.ortools.constraintsolver.LocalSearchStatistics.FirstSolutionStatistics", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchStatistics_1_1FirstSolutionStatistics.html", null ],
       [ "com.google.ortools.constraintsolver.LocalSearchStatistics.LocalSearchFilterStatistics", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchStatistics_1_1LocalSearchFilterStatistics.html", null ],
       [ "com.google.ortools.constraintsolver.LocalSearchStatistics.LocalSearchOperatorStatistics", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchStatistics_1_1LocalSearchOperatorStatistics.html", null ],
+      [ "com.google.ortools.constraintsolver.MoreNodesPerformedAcceptanceStrategy", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1MoreNodesPerformedAcceptanceStrategy.html", null ],
       [ "com.google.ortools.constraintsolver.PerturbationStrategy", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1PerturbationStrategy.html", null ],
       [ "com.google.ortools.constraintsolver.RandomWalkRuinStrategy", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RandomWalkRuinStrategy.html", null ],
+      [ "com.google.ortools.constraintsolver.RecreateParameters", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RecreateParameters.html", null ],
+      [ "com.google.ortools.constraintsolver.RecreateStrategy", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RecreateStrategy.html", null ],
       [ "com.google.ortools.constraintsolver.RegularLimitParameters", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RegularLimitParameters.html", null ],
       [ "com.google.ortools.constraintsolver.RoutingModelParameters", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingModelParameters.html", null ],
       [ "com.google.ortools.constraintsolver.RoutingSearchParameters", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingSearchParameters.html", null ],
@@ -246,9 +290,11 @@ var hierarchy =
       [ "com.google.ortools.constraintsolver.RuinRecreateParameters", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RuinRecreateParameters.html", null ],
       [ "com.google.ortools.constraintsolver.RuinStrategy", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RuinStrategy.html", null ],
       [ "com.google.ortools.constraintsolver.SISRRuinStrategy", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SISRRuinStrategy.html", null ],
+      [ "com.google.ortools.constraintsolver.SavingsParameters", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SavingsParameters.html", null ],
       [ "com.google.ortools.constraintsolver.SearchStatistics", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SearchStatistics.html", null ],
-      [ "com.google.ortools.constraintsolver.SimulatedAnnealingParameters", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SimulatedAnnealingParameters.html", null ],
+      [ "com.google.ortools.constraintsolver.SimulatedAnnealingAcceptanceStrategy", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SimulatedAnnealingAcceptanceStrategy.html", null ],
       [ "com.google.ortools.constraintsolver.SpatiallyCloseRoutesRuinStrategy", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SpatiallyCloseRoutesRuinStrategy.html", null ],
+      [ "com.google.ortools.constraintsolver.SubSolverStatistics", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SubSolverStatistics.html", null ],
       [ "com.google.ortools.glop.GlopParameters", "classcom_1_1google_1_1ortools_1_1glop_1_1GlopParameters.html", null ],
       [ "com.google.ortools.graph.FlowArcProto", "classcom_1_1google_1_1ortools_1_1graph_1_1FlowArcProto.html", null ],
       [ "com.google.ortools.graph.FlowModelProto", "classcom_1_1google_1_1ortools_1_1graph_1_1FlowModelProto.html", null ],
@@ -325,18 +371,26 @@ var hierarchy =
       [ "com.google.ortools.sat.SymmetryProto", "classcom_1_1google_1_1ortools_1_1sat_1_1SymmetryProto.html", null ],
       [ "com.google.ortools.sat.TableConstraintProto", "classcom_1_1google_1_1ortools_1_1sat_1_1TableConstraintProto.html", null ],
       [ "com.google.ortools.sat.v1.CpSolverRequest", "classcom_1_1google_1_1ortools_1_1sat_1_1v1_1_1CpSolverRequest.html", null ],
-      [ "com.google.ortools.util.Int128", "classcom_1_1google_1_1ortools_1_1util_1_1Int128.html", null ]
+      [ "com.google.ortools.util.Int128", "classcom_1_1google_1_1ortools_1_1util_1_1Int128.html", null ],
+      [ "operations_research.sat.Lrat.LratDeletedClauses", "classoperations__research_1_1sat_1_1Lrat_1_1LratDeletedClauses.html", null ],
+      [ "operations_research.sat.Lrat.LratExportedClause", "classoperations__research_1_1sat_1_1Lrat_1_1LratExportedClause.html", null ],
+      [ "operations_research.sat.Lrat.LratImportedClause", "classoperations__research_1_1sat_1_1Lrat_1_1LratImportedClause.html", null ],
+      [ "operations_research.sat.Lrat.LratInferredClause", "classoperations__research_1_1sat_1_1Lrat_1_1LratInferredClause.html", null ],
+      [ "operations_research.sat.Lrat.LratInferredClause.RatInfo", "classoperations__research_1_1sat_1_1Lrat_1_1LratInferredClause_1_1RatInfo.html", null ],
+      [ "operations_research.sat.Lrat.LratProofStep", "classoperations__research_1_1sat_1_1Lrat_1_1LratProofStep.html", null ]
     ] ],
     [ "com.google.ortools.linearsolver.MPSolverParameters.IncrementalityValues", "enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolverParameters_1_1IncrementalityValues.html", null ],
-    [ "com.google.ortools.util.Int128OuterClass", "classcom_1_1google_1_1ortools_1_1util_1_1Int128OuterClass.html", null ],
     [ "com.google.ortools.constraintsolver.IntBoolPair", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1IntBoolPair.html", null ],
     [ "com.google.ortools.constraintsolver.Solver.IntegerCastInfo", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1Solver_1_1IntegerCastInfo.html", null ],
     [ "com.google.ortools.linearsolver.MPSolverParameters.IntegerParam", "enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolverParameters_1_1IntegerParam.html", null ],
     [ "com.google.protobuf.AbstractMessage.InternalOneOfEnum", null, [
+      [ "com.google.ortools.constraintsolver.AcceptanceStrategy.StrategyCase", "enumcom_1_1google_1_1ortools_1_1constraintsolver_1_1AcceptanceStrategy_1_1StrategyCase.html", null ],
+      [ "com.google.ortools.constraintsolver.RecreateParameters.ParametersCase", "enumcom_1_1google_1_1ortools_1_1constraintsolver_1_1RecreateParameters_1_1ParametersCase.html", null ],
       [ "com.google.ortools.constraintsolver.RuinStrategy.StrategyCase", "enumcom_1_1google_1_1ortools_1_1constraintsolver_1_1RuinStrategy_1_1StrategyCase.html", null ],
       [ "com.google.ortools.linearsolver.MPGeneralConstraintProto.GeneralConstraintCase", "enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPGeneralConstraintProto_1_1GeneralConstraintCase.html", null ],
       [ "com.google.ortools.pdlp.TerminationCriteria.OptimalityCriteriaCase", "enumcom_1_1google_1_1ortools_1_1pdlp_1_1TerminationCriteria_1_1OptimalityCriteriaCase.html", null ],
-      [ "com.google.ortools.sat.ConstraintProto.ConstraintCase", "enumcom_1_1google_1_1ortools_1_1sat_1_1ConstraintProto_1_1ConstraintCase.html", null ]
+      [ "com.google.ortools.sat.ConstraintProto.ConstraintCase", "enumcom_1_1google_1_1ortools_1_1sat_1_1ConstraintProto_1_1ConstraintCase.html", null ],
+      [ "operations_research.sat.Lrat.LratProofStep.StepCase", "enumoperations__research_1_1sat_1_1Lrat_1_1LratProofStep_1_1StepCase.html", null ]
     ] ],
     [ "com.google.ortools.sat.IntervalVar", "classcom_1_1google_1_1ortools_1_1sat_1_1IntervalVar.html", null ],
     [ "com.google.ortools.constraintsolver.IntIntToLongFunction", "interfacecom_1_1google_1_1ortools_1_1constraintsolver_1_1IntIntToLongFunction.html", null ],
@@ -383,7 +437,6 @@ var hierarchy =
       [ "com.google.ortools.sat.Literal", "interfacecom_1_1google_1_1ortools_1_1sat_1_1Literal.html", null ]
     ] ],
     [ "com.google.ortools.modelbuilder.LinearConstraint", "classcom_1_1google_1_1ortools_1_1modelbuilder_1_1LinearConstraint.html", null ],
-    [ "com.google.ortools.linearsolver.LinearSolver", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1LinearSolver.html", null ],
     [ "com.google.ortools.graph.LinearSumAssignment", "classcom_1_1google_1_1ortools_1_1graph_1_1LinearSumAssignment.html", null ],
     [ "com.google.ortools.Loader", "classcom_1_1google_1_1ortools_1_1Loader.html", null ],
     [ "com.google.ortools.constraintsolver.LocalSearchOperatorState", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchOperatorState.html", null ],
@@ -415,9 +468,17 @@ var hierarchy =
         [ "com.google.ortools.bop.BopSolverOptimizerSet", "classcom_1_1google_1_1ortools_1_1bop_1_1BopSolverOptimizerSet.html", null ],
         [ "com.google.ortools.bop.BopSolverOptimizerSet.Builder", "classcom_1_1google_1_1ortools_1_1bop_1_1BopSolverOptimizerSet_1_1Builder.html", null ]
       ] ],
+      [ "com.google.ortools.constraintsolver.AbsencesBasedAcceptanceStrategyOrBuilder", "interfacecom_1_1google_1_1ortools_1_1constraintsolver_1_1AbsencesBasedAcceptanceStrategyOrBuilder.html", [
+        [ "com.google.ortools.constraintsolver.AbsencesBasedAcceptanceStrategy", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1AbsencesBasedAcceptanceStrategy.html", null ],
+        [ "com.google.ortools.constraintsolver.AbsencesBasedAcceptanceStrategy.Builder", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1AbsencesBasedAcceptanceStrategy_1_1Builder.html", null ]
+      ] ],
       [ "com.google.ortools.constraintsolver.AcceptanceStrategyOrBuilder", "interfacecom_1_1google_1_1ortools_1_1constraintsolver_1_1AcceptanceStrategyOrBuilder.html", [
         [ "com.google.ortools.constraintsolver.AcceptanceStrategy", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1AcceptanceStrategy.html", null ],
         [ "com.google.ortools.constraintsolver.AcceptanceStrategy.Builder", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1AcceptanceStrategy_1_1Builder.html", null ]
+      ] ],
+      [ "com.google.ortools.constraintsolver.AllNodesPerformedAcceptanceStrategyOrBuilder", "interfacecom_1_1google_1_1ortools_1_1constraintsolver_1_1AllNodesPerformedAcceptanceStrategyOrBuilder.html", [
+        [ "com.google.ortools.constraintsolver.AllNodesPerformedAcceptanceStrategy", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1AllNodesPerformedAcceptanceStrategy.html", null ],
+        [ "com.google.ortools.constraintsolver.AllNodesPerformedAcceptanceStrategy.Builder", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1AllNodesPerformedAcceptanceStrategy_1_1Builder.html", null ]
       ] ],
       [ "com.google.ortools.constraintsolver.ConstraintSolverParametersOrBuilder", "interfacecom_1_1google_1_1ortools_1_1constraintsolver_1_1ConstraintSolverParametersOrBuilder.html", [
         [ "com.google.ortools.constraintsolver.ConstraintSolverParameters", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1ConstraintSolverParameters.html", null ],
@@ -435,9 +496,21 @@ var hierarchy =
         [ "com.google.ortools.constraintsolver.FirstSolutionStrategy", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1FirstSolutionStrategy.html", null ],
         [ "com.google.ortools.constraintsolver.FirstSolutionStrategy.Builder", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1FirstSolutionStrategy_1_1Builder.html", null ]
       ] ],
+      [ "com.google.ortools.constraintsolver.GlobalCheapestInsertionParametersOrBuilder", "interfacecom_1_1google_1_1ortools_1_1constraintsolver_1_1GlobalCheapestInsertionParametersOrBuilder.html", [
+        [ "com.google.ortools.constraintsolver.GlobalCheapestInsertionParameters", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1GlobalCheapestInsertionParameters.html", null ],
+        [ "com.google.ortools.constraintsolver.GlobalCheapestInsertionParameters.Builder", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1GlobalCheapestInsertionParameters_1_1Builder.html", null ]
+      ] ],
+      [ "com.google.ortools.constraintsolver.GreedyDescentAcceptanceStrategyOrBuilder", "interfacecom_1_1google_1_1ortools_1_1constraintsolver_1_1GreedyDescentAcceptanceStrategyOrBuilder.html", [
+        [ "com.google.ortools.constraintsolver.GreedyDescentAcceptanceStrategy", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1GreedyDescentAcceptanceStrategy.html", null ],
+        [ "com.google.ortools.constraintsolver.GreedyDescentAcceptanceStrategy.Builder", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1GreedyDescentAcceptanceStrategy_1_1Builder.html", null ]
+      ] ],
       [ "com.google.ortools.constraintsolver.IteratedLocalSearchParametersOrBuilder", "interfacecom_1_1google_1_1ortools_1_1constraintsolver_1_1IteratedLocalSearchParametersOrBuilder.html", [
         [ "com.google.ortools.constraintsolver.IteratedLocalSearchParameters", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1IteratedLocalSearchParameters.html", null ],
         [ "com.google.ortools.constraintsolver.IteratedLocalSearchParameters.Builder", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1IteratedLocalSearchParameters_1_1Builder.html", null ]
+      ] ],
+      [ "com.google.ortools.constraintsolver.LocalCheapestInsertionParametersOrBuilder", "interfacecom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalCheapestInsertionParametersOrBuilder.html", [
+        [ "com.google.ortools.constraintsolver.LocalCheapestInsertionParameters", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalCheapestInsertionParameters.html", null ],
+        [ "com.google.ortools.constraintsolver.LocalCheapestInsertionParameters.Builder", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalCheapestInsertionParameters_1_1Builder.html", null ]
       ] ],
       [ "com.google.ortools.constraintsolver.LocalSearchMetaheuristicOrBuilder", "interfacecom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchMetaheuristicOrBuilder.html", [
         [ "com.google.ortools.constraintsolver.LocalSearchMetaheuristic", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchMetaheuristic.html", null ],
@@ -459,6 +532,10 @@ var hierarchy =
         [ "com.google.ortools.constraintsolver.LocalSearchStatistics", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchStatistics.html", null ],
         [ "com.google.ortools.constraintsolver.LocalSearchStatistics.Builder", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchStatistics_1_1Builder.html", null ]
       ] ],
+      [ "com.google.ortools.constraintsolver.MoreNodesPerformedAcceptanceStrategyOrBuilder", "interfacecom_1_1google_1_1ortools_1_1constraintsolver_1_1MoreNodesPerformedAcceptanceStrategyOrBuilder.html", [
+        [ "com.google.ortools.constraintsolver.MoreNodesPerformedAcceptanceStrategy", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1MoreNodesPerformedAcceptanceStrategy.html", null ],
+        [ "com.google.ortools.constraintsolver.MoreNodesPerformedAcceptanceStrategy.Builder", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1MoreNodesPerformedAcceptanceStrategy_1_1Builder.html", null ]
+      ] ],
       [ "com.google.ortools.constraintsolver.PerturbationStrategyOrBuilder", "interfacecom_1_1google_1_1ortools_1_1constraintsolver_1_1PerturbationStrategyOrBuilder.html", [
         [ "com.google.ortools.constraintsolver.PerturbationStrategy", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1PerturbationStrategy.html", null ],
         [ "com.google.ortools.constraintsolver.PerturbationStrategy.Builder", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1PerturbationStrategy_1_1Builder.html", null ]
@@ -466,6 +543,14 @@ var hierarchy =
       [ "com.google.ortools.constraintsolver.RandomWalkRuinStrategyOrBuilder", "interfacecom_1_1google_1_1ortools_1_1constraintsolver_1_1RandomWalkRuinStrategyOrBuilder.html", [
         [ "com.google.ortools.constraintsolver.RandomWalkRuinStrategy", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RandomWalkRuinStrategy.html", null ],
         [ "com.google.ortools.constraintsolver.RandomWalkRuinStrategy.Builder", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RandomWalkRuinStrategy_1_1Builder.html", null ]
+      ] ],
+      [ "com.google.ortools.constraintsolver.RecreateParametersOrBuilder", "interfacecom_1_1google_1_1ortools_1_1constraintsolver_1_1RecreateParametersOrBuilder.html", [
+        [ "com.google.ortools.constraintsolver.RecreateParameters", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RecreateParameters.html", null ],
+        [ "com.google.ortools.constraintsolver.RecreateParameters.Builder", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RecreateParameters_1_1Builder.html", null ]
+      ] ],
+      [ "com.google.ortools.constraintsolver.RecreateStrategyOrBuilder", "interfacecom_1_1google_1_1ortools_1_1constraintsolver_1_1RecreateStrategyOrBuilder.html", [
+        [ "com.google.ortools.constraintsolver.RecreateStrategy", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RecreateStrategy.html", null ],
+        [ "com.google.ortools.constraintsolver.RecreateStrategy.Builder", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RecreateStrategy_1_1Builder.html", null ]
       ] ],
       [ "com.google.ortools.constraintsolver.RegularLimitParametersOrBuilder", "interfacecom_1_1google_1_1ortools_1_1constraintsolver_1_1RegularLimitParametersOrBuilder.html", [
         [ "com.google.ortools.constraintsolver.RegularLimitParameters", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RegularLimitParameters.html", null ],
@@ -507,17 +592,25 @@ var hierarchy =
         [ "com.google.ortools.constraintsolver.SISRRuinStrategy", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SISRRuinStrategy.html", null ],
         [ "com.google.ortools.constraintsolver.SISRRuinStrategy.Builder", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SISRRuinStrategy_1_1Builder.html", null ]
       ] ],
+      [ "com.google.ortools.constraintsolver.SavingsParametersOrBuilder", "interfacecom_1_1google_1_1ortools_1_1constraintsolver_1_1SavingsParametersOrBuilder.html", [
+        [ "com.google.ortools.constraintsolver.SavingsParameters", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SavingsParameters.html", null ],
+        [ "com.google.ortools.constraintsolver.SavingsParameters.Builder", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SavingsParameters_1_1Builder.html", null ]
+      ] ],
       [ "com.google.ortools.constraintsolver.SearchStatisticsOrBuilder", "interfacecom_1_1google_1_1ortools_1_1constraintsolver_1_1SearchStatisticsOrBuilder.html", [
         [ "com.google.ortools.constraintsolver.SearchStatistics", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SearchStatistics.html", null ],
         [ "com.google.ortools.constraintsolver.SearchStatistics.Builder", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SearchStatistics_1_1Builder.html", null ]
       ] ],
-      [ "com.google.ortools.constraintsolver.SimulatedAnnealingParametersOrBuilder", "interfacecom_1_1google_1_1ortools_1_1constraintsolver_1_1SimulatedAnnealingParametersOrBuilder.html", [
-        [ "com.google.ortools.constraintsolver.SimulatedAnnealingParameters", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SimulatedAnnealingParameters.html", null ],
-        [ "com.google.ortools.constraintsolver.SimulatedAnnealingParameters.Builder", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SimulatedAnnealingParameters_1_1Builder.html", null ]
+      [ "com.google.ortools.constraintsolver.SimulatedAnnealingAcceptanceStrategyOrBuilder", "interfacecom_1_1google_1_1ortools_1_1constraintsolver_1_1SimulatedAnnealingAcceptanceStrategyOrBuilder.html", [
+        [ "com.google.ortools.constraintsolver.SimulatedAnnealingAcceptanceStrategy", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SimulatedAnnealingAcceptanceStrategy.html", null ],
+        [ "com.google.ortools.constraintsolver.SimulatedAnnealingAcceptanceStrategy.Builder", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SimulatedAnnealingAcceptanceStrategy_1_1Builder.html", null ]
       ] ],
       [ "com.google.ortools.constraintsolver.SpatiallyCloseRoutesRuinStrategyOrBuilder", "interfacecom_1_1google_1_1ortools_1_1constraintsolver_1_1SpatiallyCloseRoutesRuinStrategyOrBuilder.html", [
         [ "com.google.ortools.constraintsolver.SpatiallyCloseRoutesRuinStrategy", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SpatiallyCloseRoutesRuinStrategy.html", null ],
         [ "com.google.ortools.constraintsolver.SpatiallyCloseRoutesRuinStrategy.Builder", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SpatiallyCloseRoutesRuinStrategy_1_1Builder.html", null ]
+      ] ],
+      [ "com.google.ortools.constraintsolver.SubSolverStatisticsOrBuilder", "interfacecom_1_1google_1_1ortools_1_1constraintsolver_1_1SubSolverStatisticsOrBuilder.html", [
+        [ "com.google.ortools.constraintsolver.SubSolverStatistics", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SubSolverStatistics.html", null ],
+        [ "com.google.ortools.constraintsolver.SubSolverStatistics.Builder", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SubSolverStatistics_1_1Builder.html", null ]
       ] ],
       [ "com.google.ortools.glop.GlopParametersOrBuilder", "interfacecom_1_1google_1_1ortools_1_1glop_1_1GlopParametersOrBuilder.html", [
         [ "com.google.ortools.glop.GlopParameters", "classcom_1_1google_1_1ortools_1_1glop_1_1GlopParameters.html", null ],
@@ -826,6 +919,30 @@ var hierarchy =
       [ "com.google.ortools.util.Int128OrBuilder", "interfacecom_1_1google_1_1ortools_1_1util_1_1Int128OrBuilder.html", [
         [ "com.google.ortools.util.Int128", "classcom_1_1google_1_1ortools_1_1util_1_1Int128.html", null ],
         [ "com.google.ortools.util.Int128.Builder", "classcom_1_1google_1_1ortools_1_1util_1_1Int128_1_1Builder.html", null ]
+      ] ],
+      [ "operations_research.sat.Lrat.LratDeletedClausesOrBuilder", "interfaceoperations__research_1_1sat_1_1Lrat_1_1LratDeletedClausesOrBuilder.html", [
+        [ "operations_research.sat.Lrat.LratDeletedClauses", "classoperations__research_1_1sat_1_1Lrat_1_1LratDeletedClauses.html", null ],
+        [ "operations_research.sat.Lrat.LratDeletedClauses.Builder", "classoperations__research_1_1sat_1_1Lrat_1_1LratDeletedClauses_1_1Builder.html", null ]
+      ] ],
+      [ "operations_research.sat.Lrat.LratExportedClauseOrBuilder", "interfaceoperations__research_1_1sat_1_1Lrat_1_1LratExportedClauseOrBuilder.html", [
+        [ "operations_research.sat.Lrat.LratExportedClause", "classoperations__research_1_1sat_1_1Lrat_1_1LratExportedClause.html", null ],
+        [ "operations_research.sat.Lrat.LratExportedClause.Builder", "classoperations__research_1_1sat_1_1Lrat_1_1LratExportedClause_1_1Builder.html", null ]
+      ] ],
+      [ "operations_research.sat.Lrat.LratImportedClauseOrBuilder", "interfaceoperations__research_1_1sat_1_1Lrat_1_1LratImportedClauseOrBuilder.html", [
+        [ "operations_research.sat.Lrat.LratImportedClause", "classoperations__research_1_1sat_1_1Lrat_1_1LratImportedClause.html", null ],
+        [ "operations_research.sat.Lrat.LratImportedClause.Builder", "classoperations__research_1_1sat_1_1Lrat_1_1LratImportedClause_1_1Builder.html", null ]
+      ] ],
+      [ "operations_research.sat.Lrat.LratInferredClause.RatInfoOrBuilder", "interfaceoperations__research_1_1sat_1_1Lrat_1_1LratInferredClause_1_1RatInfoOrBuilder.html", [
+        [ "operations_research.sat.Lrat.LratInferredClause.RatInfo", "classoperations__research_1_1sat_1_1Lrat_1_1LratInferredClause_1_1RatInfo.html", null ],
+        [ "operations_research.sat.Lrat.LratInferredClause.RatInfo.Builder", "classoperations__research_1_1sat_1_1Lrat_1_1LratInferredClause_1_1RatInfo_1_1Builder.html", null ]
+      ] ],
+      [ "operations_research.sat.Lrat.LratInferredClauseOrBuilder", "interfaceoperations__research_1_1sat_1_1Lrat_1_1LratInferredClauseOrBuilder.html", [
+        [ "operations_research.sat.Lrat.LratInferredClause", "classoperations__research_1_1sat_1_1Lrat_1_1LratInferredClause.html", null ],
+        [ "operations_research.sat.Lrat.LratInferredClause.Builder", "classoperations__research_1_1sat_1_1Lrat_1_1LratInferredClause_1_1Builder.html", null ]
+      ] ],
+      [ "operations_research.sat.Lrat.LratProofStepOrBuilder", "interfaceoperations__research_1_1sat_1_1Lrat_1_1LratProofStepOrBuilder.html", [
+        [ "operations_research.sat.Lrat.LratProofStep", "classoperations__research_1_1sat_1_1Lrat_1_1LratProofStep.html", null ],
+        [ "operations_research.sat.Lrat.LratProofStep.Builder", "classoperations__research_1_1sat_1_1Lrat_1_1LratProofStep_1_1Builder.html", null ]
       ] ]
     ] ],
     [ "com.google.ortools.graph.MinCostFlowBase", "classcom_1_1google_1_1ortools_1_1graph_1_1MinCostFlowBase.html", [
@@ -846,24 +963,21 @@ var hierarchy =
     [ "com.google.ortools.constraintsolver.RoutingModel.NodeNeighborsByCostClass", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingModel_1_1NodeNeighborsByCostClass.html", null ],
     [ "com.google.ortools.constraintsolver.RoutingModel.NodeNeighborsParameters", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingModel_1_1NodeNeighborsParameters.html", null ],
     [ "com.google.ortools.linearsolver.MPSolver.OptimizationProblemType", "enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolver_1_1OptimizationProblemType.html", null ],
-    [ "com.google.ortools.util.OptionalBooleanOuterClass", "classcom_1_1google_1_1ortools_1_1util_1_1OptionalBooleanOuterClass.html", null ],
     [ "com.google.ortools.init.OrToolsVersion", "classcom_1_1google_1_1ortools_1_1init_1_1OrToolsVersion.html", null ],
-    [ "com.google.ortools.glop.Parameters", "classcom_1_1google_1_1ortools_1_1glop_1_1Parameters.html", null ],
-    [ "com.google.ortools.Loader.PathConsumer< T extends IOException >", "interfacecom_1_1google_1_1ortools_1_1Loader_1_1PathConsumer.html", null ],
+    [ "com.google.ortools.Loader.PathConsumer&lt; T extends IOException &gt;", "interfacecom_1_1google_1_1ortools_1_1Loader_1_1PathConsumer.html", null ],
     [ "com.google.ortools.constraintsolver.PathsMetadata", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1PathsMetadata.html", null ],
     [ "com.google.ortools.constraintsolver.RoutingModel.PickupDeliveryPosition", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingModel_1_1PickupDeliveryPosition.html", null ],
     [ "com.google.ortools.linearsolver.MPSolverParameters.PresolveValues", "enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolverParameters_1_1PresolveValues.html", null ],
     [ "com.google.protobuf.ProtocolMessageEnum", null, [
       [ "com.google.ortools.bop.BopOptimizerMethod.OptimizerType", "enumcom_1_1google_1_1ortools_1_1bop_1_1BopOptimizerMethod_1_1OptimizerType.html", null ],
       [ "com.google.ortools.bop.BopParameters.ThreadSynchronizationType", "enumcom_1_1google_1_1ortools_1_1bop_1_1BopParameters_1_1ThreadSynchronizationType.html", null ],
-      [ "com.google.ortools.constraintsolver.AcceptanceStrategy.Value", "enumcom_1_1google_1_1ortools_1_1constraintsolver_1_1AcceptanceStrategy_1_1Value.html", null ],
       [ "com.google.ortools.constraintsolver.ConstraintSolverParameters.TrailCompression", "enumcom_1_1google_1_1ortools_1_1constraintsolver_1_1ConstraintSolverParameters_1_1TrailCompression.html", null ],
       [ "com.google.ortools.constraintsolver.CoolingScheduleStrategy.Value", "enumcom_1_1google_1_1ortools_1_1constraintsolver_1_1CoolingScheduleStrategy_1_1Value.html", null ],
       [ "com.google.ortools.constraintsolver.FirstSolutionStrategy.Value", "enumcom_1_1google_1_1ortools_1_1constraintsolver_1_1FirstSolutionStrategy_1_1Value.html", null ],
+      [ "com.google.ortools.constraintsolver.LocalCheapestInsertionParameters.InsertionSortingProperty", "enumcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalCheapestInsertionParameters_1_1InsertionSortingProperty.html", null ],
+      [ "com.google.ortools.constraintsolver.LocalCheapestInsertionParameters.PairInsertionStrategy", "enumcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalCheapestInsertionParameters_1_1PairInsertionStrategy.html", null ],
       [ "com.google.ortools.constraintsolver.LocalSearchMetaheuristic.Value", "enumcom_1_1google_1_1ortools_1_1constraintsolver_1_1LocalSearchMetaheuristic_1_1Value.html", null ],
       [ "com.google.ortools.constraintsolver.PerturbationStrategy.Value", "enumcom_1_1google_1_1ortools_1_1constraintsolver_1_1PerturbationStrategy_1_1Value.html", null ],
-      [ "com.google.ortools.constraintsolver.RoutingSearchParameters.InsertionSortingProperty", "enumcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingSearchParameters_1_1InsertionSortingProperty.html", null ],
-      [ "com.google.ortools.constraintsolver.RoutingSearchParameters.PairInsertionStrategy", "enumcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingSearchParameters_1_1PairInsertionStrategy.html", null ],
       [ "com.google.ortools.constraintsolver.RoutingSearchParameters.SchedulingSolver", "enumcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingSearchParameters_1_1SchedulingSolver.html", null ],
       [ "com.google.ortools.constraintsolver.RoutingSearchStatus.Value", "enumcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingSearchStatus_1_1Value.html", null ],
       [ "com.google.ortools.constraintsolver.RuinCompositionStrategy.Value", "enumcom_1_1google_1_1ortools_1_1constraintsolver_1_1RuinCompositionStrategy_1_1Value.html", null ],
@@ -891,7 +1005,6 @@ var hierarchy =
       [ "com.google.ortools.sat.DecisionStrategyProto.VariableSelectionStrategy", "enumcom_1_1google_1_1ortools_1_1sat_1_1DecisionStrategyProto_1_1VariableSelectionStrategy.html", null ],
       [ "com.google.ortools.sat.SatParameters.BinaryMinizationAlgorithm", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1BinaryMinizationAlgorithm.html", null ],
       [ "com.google.ortools.sat.SatParameters.ClauseOrdering", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1ClauseOrdering.html", null ],
-      [ "com.google.ortools.sat.SatParameters.ClauseProtection", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1ClauseProtection.html", null ],
       [ "com.google.ortools.sat.SatParameters.ConflictMinimizationAlgorithm", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1ConflictMinimizationAlgorithm.html", null ],
       [ "com.google.ortools.sat.SatParameters.FPRoundingMethod", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1FPRoundingMethod.html", null ],
       [ "com.google.ortools.sat.SatParameters.MaxSatAssumptionOrder", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1MaxSatAssumptionOrder.html", null ],
@@ -910,28 +1023,19 @@ var hierarchy =
     [ "com.google.ortools.constraintsolver.RevInteger", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RevInteger.html", null ],
     [ "com.google.ortools.constraintsolver.RevLong", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RevLong.html", null ],
     [ "com.google.ortools.constraintsolver.RevPartialSequence", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RevPartialSequence.html", null ],
-    [ "com.google.ortools.sat.RoutesSupportGraph", "classcom_1_1google_1_1ortools_1_1sat_1_1RoutesSupportGraph.html", null ],
     [ "com.google.ortools.constraintsolver.RoutingDimension", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingDimension.html", null ],
-    [ "com.google.ortools.constraintsolver.RoutingEnums", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingEnums.html", null ],
-    [ "com.google.ortools.constraintsolver.RoutingIls", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingIls.html", null ],
     [ "com.google.ortools.constraintsolver.RoutingIndexManager", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingIndexManager.html", null ],
     [ "com.google.ortools.constraintsolver.RoutingModel", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingModel.html", null ],
-    [ "com.google.ortools.constraintsolver.RoutingParameters", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingParameters.html", null ],
+    [ "com.google.ortools.constraintsolver.RoutingSearchStats", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingSearchStats.html", null ],
     [ "RuntimeException", null, null ],
-    [ "com.google.ortools.sat.SatParametersOuterClass", "classcom_1_1google_1_1ortools_1_1sat_1_1SatParametersOuterClass.html", null ],
     [ "com.google.ortools.linearsolver.MPSolverParameters.ScalingValues", "enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolverParameters_1_1ScalingValues.html", null ],
-    [ "com.google.ortools.constraintsolver.SearchLimitProtobuf", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SearchLimitProtobuf.html", null ],
-    [ "com.google.ortools.constraintsolver.SearchStats", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SearchStats.html", null ],
     [ "com.google.ortools.constraintsolver.RoutingModel.SecondaryOptimizer", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RoutingModel_1_1SecondaryOptimizer.html", null ],
     [ "com.google.ortools.constraintsolver.SimpleBoundCosts", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SimpleBoundCosts.html", null ],
     [ "com.google.ortools.sat.SolutionCallback", "classcom_1_1google_1_1ortools_1_1sat_1_1SolutionCallback.html", [
       [ "com.google.ortools.sat.CpSolverSolutionCallback", "classcom_1_1google_1_1ortools_1_1sat_1_1CpSolverSolutionCallback.html", null ],
       [ "com.google.ortools.sat.CpSolverSolutionCallback", "classcom_1_1google_1_1ortools_1_1sat_1_1CpSolverSolutionCallback.html", null ]
     ] ],
-    [ "com.google.ortools.pdlp.SolveLogOuterClass", "classcom_1_1google_1_1ortools_1_1pdlp_1_1SolveLogOuterClass.html", null ],
     [ "com.google.ortools.constraintsolver.Solver", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1Solver.html", null ],
-    [ "com.google.ortools.constraintsolver.SolverParameters", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1SolverParameters.html", null ],
-    [ "com.google.ortools.pdlp.Solvers", "classcom_1_1google_1_1ortools_1_1pdlp_1_1Solvers.html", null ],
     [ "com.google.ortools.algorithms.KnapsackSolver.SolverType", "enumcom_1_1google_1_1ortools_1_1algorithms_1_1KnapsackSolver_1_1SolverType.html", null ],
     [ "com.google.ortools.modelbuilder.SolveStatus", "enumcom_1_1google_1_1ortools_1_1modelbuilder_1_1SolveStatus.html", null ],
     [ "com.google.ortools.sat.SolveWrapper", "classcom_1_1google_1_1ortools_1_1sat_1_1SolveWrapper.html", null ],

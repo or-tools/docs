@@ -1,8 +1,6 @@
 var routing__sat_8cc =
 [
     [ "operations_research::sat::CpSolverStatus", "namespaceoperations__research_1_1sat.html#ac14a394f629f2cf1070b84bce2e427ce", null ],
-    [ "operations_research::sat::kMaxIntegerValue", "namespaceoperations__research_1_1sat.html#a1227e67513602591fb959e35c9de66e8", null ],
-    [ "operations_research::sat::kMinIntegerValue", "namespaceoperations__research_1_1sat.html#a5316808a2d5007c3b489e844801385e5", null ],
     [ "operations_research::sat::NewSatParameters", "namespaceoperations__research_1_1sat.html#a73b27f0cb65c9c616ac558095e3480dc", null ],
-    [ "operations_research::SolveModelWithSat", "namespaceoperations__research.html#ae1b6e8c0d3d27218470118e9182605ed", null ]
+    [ "operations_research::SolveModelWithSat", "namespaceoperations__research.html#ab0273d0ee866141aedc377055de90c66", null ]
 ];

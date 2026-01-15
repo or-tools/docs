@@ -1,7 +1,7 @@
 var namespaceoperations__research_1_1pdlp_1_1internal =
 [
-    [ "DualTrustRegionProblem", "classoperations__research_1_1pdlp_1_1internal_1_1DualTrustRegionProblem.html", "classoperations__research_1_1pdlp_1_1internal_1_1DualTrustRegionProblem" ],
     [ "PrimalTrustRegionProblem", "classoperations__research_1_1pdlp_1_1internal_1_1PrimalTrustRegionProblem.html", "classoperations__research_1_1pdlp_1_1internal_1_1PrimalTrustRegionProblem" ],
+    [ "DualTrustRegionProblem", "classoperations__research_1_1pdlp_1_1internal_1_1DualTrustRegionProblem.html", "classoperations__research_1_1pdlp_1_1internal_1_1DualTrustRegionProblem" ],
     [ "CombineRepeatedTripletsInPlace", "namespaceoperations__research_1_1pdlp_1_1internal.html#a447ec3acc6fcfa2bfbbe2e2ac685f959", null ],
     [ "ComputeInitialUndecidedComponents", "namespaceoperations__research_1_1pdlp_1_1internal.html#a0d1a488cd88b2db320196184c8a60713", null ],
     [ "ComputeStatuses", "namespaceoperations__research_1_1pdlp_1_1internal.html#acae8b13203ae4acdf59f3c411c79ae9a", null ],

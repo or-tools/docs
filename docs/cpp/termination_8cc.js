@@ -8,5 +8,5 @@ var termination_8cc =
     [ "operations_research::pdlp::EffectiveOptimalityCriteria", "namespaceoperations__research_1_1pdlp.html#a7254f8c83c3395526dcc958f19e3c14a", null ],
     [ "operations_research::pdlp::EpsilonRatio", "namespaceoperations__research_1_1pdlp.html#a5c7474762d0771b51e98686306ec7b4f", null ],
     [ "operations_research::pdlp::ObjectiveGapMet", "namespaceoperations__research_1_1pdlp.html#ad05b31a796e1009f7087884df50815fc", null ],
-    [ "operations_research::pdlp::OptimalityCriteriaMet", "namespaceoperations__research_1_1pdlp.html#aa473ed1679cf7844c7a65548cabe8599", null ]
+    [ "operations_research::pdlp::OptimalityCriteriaMet", "namespaceoperations__research_1_1pdlp.html#aba79804abf8f9932eba7e98356c05ad5", null ]
 ];

@@ -1,5 +1,6 @@
 var structoperations__research_1_1fz_1_1FlatzincSatParameters =
 [
+    [ "check_all_solutions", "structoperations__research_1_1fz_1_1FlatzincSatParameters.html#a80e47b66f4690e7ce6cc6cfbf4dddec6", null ],
     [ "display_all_solutions", "structoperations__research_1_1fz_1_1FlatzincSatParameters.html#a9eb566eb200a4132d10c46bba2177284", null ],
     [ "display_statistics", "structoperations__research_1_1fz_1_1FlatzincSatParameters.html#a066a381664fafc6d58c0344612621844", null ],
     [ "log_search_progress", "structoperations__research_1_1fz_1_1FlatzincSatParameters.html#a436c7347ce1da6462d1cbb4309ccf91e", null ],

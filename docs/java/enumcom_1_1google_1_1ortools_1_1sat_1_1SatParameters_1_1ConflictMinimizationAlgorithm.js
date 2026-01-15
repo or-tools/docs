@@ -9,8 +9,6 @@ var enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1ConflictMinimization
     [ "internalGetValueMap", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1ConflictMinimizationAlgorithm.html#aaf085139feae89ca5701c9f4f9fa2942", null ],
     [ "valueOf", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1ConflictMinimizationAlgorithm.html#a316ec53cc68204a96dcf6309ab003851", null ],
     [ "valueOf", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1ConflictMinimizationAlgorithm.html#affba570494beb97d4518faf5ba527bb4", null ],
-    [ "EXPERIMENTAL", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1ConflictMinimizationAlgorithm.html#ad431111bfbdf17f126e962dbcf0b904a", null ],
-    [ "EXPERIMENTAL_VALUE", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1ConflictMinimizationAlgorithm.html#a0028b97077150f788ab21deedc0382d0", null ],
     [ "NONE", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1ConflictMinimizationAlgorithm.html#aa11e7ff671c18c5cc5da0b981865130e", null ],
     [ "NONE_VALUE", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1ConflictMinimizationAlgorithm.html#a0109f7aee1225a1edc7cc6091415ebee", null ],
     [ "RECURSIVE", "enumcom_1_1google_1_1ortools_1_1sat_1_1SatParameters_1_1ConflictMinimizationAlgorithm.html#a9f1b80edee76e25e06533d1a7bd54e7c", null ],

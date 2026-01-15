@@ -14,12 +14,11 @@ var classoperations__research_1_1SortedDisjointIntervalList =
     [ "DebugString", "classoperations__research_1_1SortedDisjointIntervalList.html#a403ba2c2147b5f9086ca988671dd00fd", null ],
     [ "end", "classoperations__research_1_1SortedDisjointIntervalList.html#ac3b1f858ae81b06879054a1e6c982835", null ],
     [ "FirstIntervalGreaterOrEqual", "classoperations__research_1_1SortedDisjointIntervalList.html#ab6e49b2af175658bbc163ccfb4b410bd", null ],
-    [ "GrowRightByOne", "classoperations__research_1_1SortedDisjointIntervalList.html#aec2bbf97e17d5d06968ca29d6b2b9568", null ],
     [ "InsertInterval", "classoperations__research_1_1SortedDisjointIntervalList.html#a53aa27777a48b981046ad09b97bded60", null ],
     [ "InsertIntervals", "classoperations__research_1_1SortedDisjointIntervalList.html#ad937d5864aa7a209f5c565a49daad904", null ],
     [ "InsertIntervals", "classoperations__research_1_1SortedDisjointIntervalList.html#a012ebc58df4ae590e12e89509b69ee90", null ],
     [ "last", "classoperations__research_1_1SortedDisjointIntervalList.html#a53deeb317bbdc7d5d4c12d48db429582", null ],
     [ "LastIntervalLessOrEqual", "classoperations__research_1_1SortedDisjointIntervalList.html#a3eb66514e4477ad359cf03b3d14b2c42", null ],
     [ "NumIntervals", "classoperations__research_1_1SortedDisjointIntervalList.html#a6d5b1054cf1c7338bfd929bf2460140c", null ],
-    [ "swap", "classoperations__research_1_1SortedDisjointIntervalList.html#a92df806fd079d25dbff73b57d36485f0", null ]
+    [ "swap", "classoperations__research_1_1SortedDisjointIntervalList.html#a173b4585edf784ea67b14f063f5920a9", null ]
 ];

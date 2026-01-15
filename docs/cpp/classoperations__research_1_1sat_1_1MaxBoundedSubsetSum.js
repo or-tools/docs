@@ -7,6 +7,5 @@ var classoperations__research_1_1sat_1_1MaxBoundedSubsetSum =
     [ "AddMultiples", "classoperations__research_1_1sat_1_1MaxBoundedSubsetSum.html#ad88a938ad36a1e161f97664046fbdef6", null ],
     [ "Bound", "classoperations__research_1_1sat_1_1MaxBoundedSubsetSum.html#a461fa5dc6e977afe2baa02da790bfe1c", null ],
     [ "CurrentMax", "classoperations__research_1_1sat_1_1MaxBoundedSubsetSum.html#a8c7deddeba3f5aa652b89be5a5782c6a", null ],
-    [ "MaxIfAdded", "classoperations__research_1_1sat_1_1MaxBoundedSubsetSum.html#a92507e25b13ec3dfb19b578fb7c5bb38", null ],
     [ "Reset", "classoperations__research_1_1sat_1_1MaxBoundedSubsetSum.html#acb1a91ff163b2ab9f163d1c09ab02bb7", null ]
 ];

@@ -29,5 +29,7 @@ var searchData=
   ['orbitopes_26',['Orbitopes',['../classGoogle_1_1OrTools_1_1Sat_1_1SymmetryProto.html#af7794f3936a45819bf71feb1c6404ce7',1,'Google::OrTools::Sat::SymmetryProto']]],
   ['orconstraint_27',['OrConstraint',['../classOperationsResearch_1_1MPGeneralConstraintProto.html#af6420d75e3dec58f6ae02f7d57970c92',1,'OperationsResearch::MPGeneralConstraintProto']]],
   ['originalnumvariables_28',['OriginalNumVariables',['../classGoogle_1_1OrTools_1_1Sat_1_1LinearBooleanProblem.html#ae4ac5c2f7b0df9a5fc0eea92be628c7e',1,'Google::OrTools::Sat::LinearBooleanProblem']]],
-  ['originalproblemstats_29',['OriginalProblemStats',['../classGoogle_1_1OrTools_1_1PDLP_1_1SolveLog.html#a1cb461f912596695baa2b6bb752f4060',1,'Google::OrTools::PDLP::SolveLog']]]
+  ['originalproblemstats_29',['OriginalProblemStats',['../classGoogle_1_1OrTools_1_1PDLP_1_1SolveLog.html#a1cb461f912596695baa2b6bb752f4060',1,'Google::OrTools::PDLP::SolveLog']]],
+  ['outputdratproof_30',['OutputDratProof',['../classGoogle_1_1OrTools_1_1Sat_1_1SatParameters.html#a6f09dde0dd8a184493ac11d8ec52d871',1,'Google::OrTools::Sat::SatParameters']]],
+  ['outputlratproof_31',['OutputLratProof',['../classGoogle_1_1OrTools_1_1Sat_1_1SatParameters.html#a87c3cd258042fa804e7f08303c272257',1,'Google::OrTools::Sat::SatParameters']]]
 ];

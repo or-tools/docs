@@ -45,7 +45,7 @@ var searchData=
   ['fragmentsize_42',['FragmentSize',['../classortools_1_1constraint__solver_1_1pywrapcp_1_1BaseLns.html#ae94b4c0643c24626796b120a284dead4',1,'ortools::constraint_solver::pywrapcp::BaseLns']]],
   ['free_43',['FREE',['../classortools_1_1linear__solver_1_1pywraplp_1_1Solver.html#a855af8820856d16c138d2224d7729fd7',1,'ortools.linear_solver.pywraplp.Solver.FREE'],['../classortools_1_1math__opt_1_1python_1_1solution_1_1BasisStatus.html#a10816cebb828294ab84b93a79ba4d78e',1,'ortools.math_opt.python.solution.BasisStatus.FREE']]],
   ['from_5fmodel_2epy_44',['from_model.py',['../from__model_8py.html',1,'']]],
-  ['from_5fmodel_5fproto_45',['from_model_proto',['../classortools_1_1math__opt_1_1python_1_1elemental_1_1elemental_1_1Elemental.html#a40dd8d6a7d8a3baeac6543e03cb3d23f',1,'ortools::math_opt::python::elemental::elemental::Elemental']]],
+  ['from_5fmodel_5fproto_45',['from_model_proto',['../classortools_1_1math__opt_1_1python_1_1elemental_1_1elemental_1_1Elemental.html#a40dd8d6a7d8a3baeac6543e03cb3d23f',1,'ortools.math_opt.python.elemental.elemental.Elemental.from_model_proto()'],['../classortools_1_1math__opt_1_1python_1_1model_1_1Model.html#a771bcbccd74e5af85950f027ab9590fa',1,'ortools.math_opt.python.model.Model.from_model_proto()']]],
   ['frommodel_46',['FromModel',['../classortools_1_1math__opt_1_1python_1_1from__model_1_1FromModel.html',1,'ortools::math_opt::python::from_model']]],
   ['fullpathlns_47',['FULLPATHLNS',['../classortools_1_1constraint__solver_1_1pywrapcp_1_1Solver.html#a59f12e0960809e9ed17861db791e7688',1,'ortools::constraint_solver::pywrapcp::Solver']]]
 ];

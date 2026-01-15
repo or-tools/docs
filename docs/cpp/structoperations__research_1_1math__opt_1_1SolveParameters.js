@@ -26,5 +26,6 @@ var structoperations__research_1_1math__opt_1_1SolveParameters =
     [ "solution_limit", "structoperations__research_1_1math__opt_1_1SolveParameters.html#a78d3b0bb603df6cfa8270b4ff7187778", null ],
     [ "solution_pool_size", "structoperations__research_1_1math__opt_1_1SolveParameters.html#acb140b0669e51e9aa959190ec9fe2df8", null ],
     [ "threads", "structoperations__research_1_1math__opt_1_1SolveParameters.html#a8ec60a4f21e03172a31b4fc3643da6d0", null ],
-    [ "time_limit", "structoperations__research_1_1math__opt_1_1SolveParameters.html#a300cc759fe5549169fff70fa376e6e74", null ]
+    [ "time_limit", "structoperations__research_1_1math__opt_1_1SolveParameters.html#a300cc759fe5549169fff70fa376e6e74", null ],
+    [ "xpress", "structoperations__research_1_1math__opt_1_1SolveParameters.html#a27d0a7c1549071f048e27981ff5dd751", null ]
 ];

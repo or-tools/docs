@@ -1,7 +1,7 @@
 var dump__vars_8h =
 [
     [ "operations_research::base::internal_dump_vars::print_fields", "structoperations__research_1_1base_1_1internal__dump__vars_1_1print__fields.html", "structoperations__research_1_1base_1_1internal__dump__vars_1_1print__fields" ],
-    [ "operations_research::base::internal_dump_vars::Dump< F >", "classoperations__research_1_1base_1_1internal__dump__vars_1_1Dump.html", "classoperations__research_1_1base_1_1internal__dump__vars_1_1Dump" ],
+    [ "operations_research::base::internal_dump_vars::Dump&lt; F &gt;", "classoperations__research_1_1base_1_1internal__dump__vars_1_1Dump.html", "classoperations__research_1_1base_1_1internal__dump__vars_1_1Dump" ],
     [ "DUMP_ARG_N", "dump__vars_8h.html#ab9a435b48c1d7cba89fd66288e78cb7d", null ],
     [ "DUMP_CONCATENATE", "dump__vars_8h.html#aeea1b2ce40df620b1a9ac48b4fffb06b", null ],
     [ "DUMP_FOR_EACH", "dump__vars_8h.html#a399fbfd4999cb5ab3724af18fd0b9111", null ],

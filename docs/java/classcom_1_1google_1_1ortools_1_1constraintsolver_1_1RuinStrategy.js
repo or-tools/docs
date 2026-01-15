@@ -1,7 +1,7 @@
 var classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RuinStrategy =
 [
-    [ "Builder", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RuinStrategy_1_1Builder.html", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RuinStrategy_1_1Builder" ],
     [ "StrategyCase", "enumcom_1_1google_1_1ortools_1_1constraintsolver_1_1RuinStrategy_1_1StrategyCase.html", "enumcom_1_1google_1_1ortools_1_1constraintsolver_1_1RuinStrategy_1_1StrategyCase" ],
+    [ "Builder", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RuinStrategy_1_1Builder.html", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RuinStrategy_1_1Builder" ],
     [ "equals", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RuinStrategy.html#aa97e32e11f0d432b2e7abdb44a10ea1c", null ],
     [ "getDefaultInstance", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RuinStrategy.html#a4b6f77069b87de5975d31b0cba91ec2a", null ],
     [ "getDefaultInstanceForType", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1RuinStrategy.html#a1adcffe54efc753a4572f09e7e8428f5", null ],

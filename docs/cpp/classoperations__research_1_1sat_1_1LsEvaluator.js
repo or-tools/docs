@@ -1,7 +1,7 @@
 var classoperations__research_1_1sat_1_1LsEvaluator =
 [
     [ "LsEvaluator", "classoperations__research_1_1sat_1_1LsEvaluator.html#a814fccd6766548fe394b2469a57e23d8", null ],
-    [ "LsEvaluator", "classoperations__research_1_1sat_1_1LsEvaluator.html#a7f76d557510962d562c1a12fe41df8e0", null ],
+    [ "LsEvaluator", "classoperations__research_1_1sat_1_1LsEvaluator.html#aa447771e9ab65a4903a0316f03cea527", null ],
     [ "ComputeAllNonLinearViolations", "classoperations__research_1_1sat_1_1LsEvaluator.html#a0fb96c1c4a619b5119fbb5567d7bd0b3", null ],
     [ "ComputeAllViolations", "classoperations__research_1_1sat_1_1LsEvaluator.html#a4c3cfc7f317babfb9843bd0168224f9c", null ],
     [ "ConstraintToVars", "classoperations__research_1_1sat_1_1LsEvaluator.html#aa003049be513be152d7b701f5e7ea084", null ],

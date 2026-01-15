@@ -8,9 +8,9 @@ var result_8pb_8h =
     [ "operations_research::math_opt::SolveResultProto_PdlpOutput", "classoperations__research_1_1math__opt_1_1SolveResultProto__PdlpOutput.html", "classoperations__research_1_1math__opt_1_1SolveResultProto__PdlpOutput" ],
     [ "operations_research::math_opt::SolveResultProto", "classoperations__research_1_1math__opt_1_1SolveResultProto.html", "classoperations__research_1_1math__opt_1_1SolveResultProto" ],
     [ "operations_research::math_opt::SolveResultProto::Impl_::SolverSpecificOutputUnion", "unionoperations__research_1_1math__opt_1_1SolveResultProto_1_1Impl___1_1SolverSpecificOutputUnion.html", "unionoperations__research_1_1math__opt_1_1SolveResultProto_1_1Impl___1_1SolverSpecificOutputUnion" ],
-    [ "google::protobuf::is_proto_enum<::operations_research::math_opt::FeasibilityStatusProto >", "structgoogle_1_1protobuf_1_1is__proto__enum_3_1_1operations__research_1_1math__opt_1_1FeasibilityStatusProto_01_4.html", null ],
-    [ "google::protobuf::is_proto_enum<::operations_research::math_opt::TerminationReasonProto >", "structgoogle_1_1protobuf_1_1is__proto__enum_3_1_1operations__research_1_1math__opt_1_1TerminationReasonProto_01_4.html", null ],
-    [ "google::protobuf::is_proto_enum<::operations_research::math_opt::LimitProto >", "structgoogle_1_1protobuf_1_1is__proto__enum_3_1_1operations__research_1_1math__opt_1_1LimitProto_01_4.html", null ],
+    [ "google::protobuf::is_proto_enum&lt;::operations_research::math_opt::FeasibilityStatusProto &gt;", "structgoogle_1_1protobuf_1_1is__proto__enum_3_1_1operations__research_1_1math__opt_1_1FeasibilityStatusProto_01_4.html", null ],
+    [ "google::protobuf::is_proto_enum&lt;::operations_research::math_opt::TerminationReasonProto &gt;", "structgoogle_1_1protobuf_1_1is__proto__enum_3_1_1operations__research_1_1math__opt_1_1TerminationReasonProto_01_4.html", null ],
+    [ "google::protobuf::is_proto_enum&lt;::operations_research::math_opt::LimitProto &gt;", "structgoogle_1_1protobuf_1_1is__proto__enum_3_1_1operations__research_1_1math__opt_1_1LimitProto_01_4.html", null ],
     [ "PROTOBUF_INTERNAL_EXPORT_ortools_2fmath_5fopt_2fresult_2eproto", "result_8pb_8h.html#ae87dcf17b8836e118331491b247f64b9", null ],
     [ "operations_research::math_opt::FeasibilityStatusProto", "namespaceoperations__research_1_1math__opt.html#a4b7f8e2feb825339520083bf59364e14", [
       [ "operations_research::math_opt::FEASIBILITY_STATUS_UNSPECIFIED", "namespaceoperations__research_1_1math__opt.html#a4b7f8e2feb825339520083bf59364e14a863d722edcf162357d46cc652fcec3af", null ],

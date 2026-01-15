@@ -1,8 +1,8 @@
 var classoperations__research_1_1Bitset64 =
 [
     [ "ConstView", "classoperations__research_1_1Bitset64_1_1ConstView.html", "classoperations__research_1_1Bitset64_1_1ConstView" ],
-    [ "Iterator", "classoperations__research_1_1Bitset64_1_1Iterator.html", "classoperations__research_1_1Bitset64_1_1Iterator" ],
     [ "View", "classoperations__research_1_1Bitset64_1_1View.html", "classoperations__research_1_1Bitset64_1_1View" ],
+    [ "Iterator", "classoperations__research_1_1Bitset64_1_1Iterator.html", "classoperations__research_1_1Bitset64_1_1Iterator" ],
     [ "value_type", "classoperations__research_1_1Bitset64.html#a6c86cec021f3202f3046b69e51fbd199", null ],
     [ "Bitset64", "classoperations__research_1_1Bitset64.html#ac9f83666423013e68cc3481c4a397b22", null ],
     [ "Bitset64", "classoperations__research_1_1Bitset64.html#ab0746d309f0ea913d5a9d0197717fc9c", null ],

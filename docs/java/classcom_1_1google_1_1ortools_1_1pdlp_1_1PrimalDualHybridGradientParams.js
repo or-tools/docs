@@ -1,10 +1,10 @@
 var classcom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParams =
 [
-    [ "Builder", "classcom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParams_1_1Builder.html", "classcom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParams_1_1Builder" ],
-    [ "LinesearchRule", "enumcom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParams_1_1LinesearchRule.html", "enumcom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParams_1_1LinesearchRule" ],
-    [ "PresolveOptions", "classcom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParams_1_1PresolveOptions.html", "classcom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParams_1_1PresolveOptions" ],
-    [ "PresolveOptionsOrBuilder", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParams_1_1PresolveOptionsOrBuilder.html", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParams_1_1PresolveOptionsOrBuilder" ],
     [ "RestartStrategy", "enumcom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParams_1_1RestartStrategy.html", "enumcom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParams_1_1RestartStrategy" ],
+    [ "LinesearchRule", "enumcom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParams_1_1LinesearchRule.html", "enumcom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParams_1_1LinesearchRule" ],
+    [ "PresolveOptionsOrBuilder", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParams_1_1PresolveOptionsOrBuilder.html", "interfacecom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParams_1_1PresolveOptionsOrBuilder" ],
+    [ "PresolveOptions", "classcom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParams_1_1PresolveOptions.html", "classcom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParams_1_1PresolveOptions" ],
+    [ "Builder", "classcom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParams_1_1Builder.html", "classcom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParams_1_1Builder" ],
     [ "equals", "classcom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParams.html#ac8b1fd662c9b48d649f1bc4550172508", null ],
     [ "getAdaptiveLinesearchParameters", "classcom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParams.html#a6f23a8cc2651a1286f41ef4082637217", null ],
     [ "getAdaptiveLinesearchParametersOrBuilder", "classcom_1_1google_1_1ortools_1_1pdlp_1_1PrimalDualHybridGradientParams.html#a5cc24be425630b4e6136d104b3d9b4ba", null ],

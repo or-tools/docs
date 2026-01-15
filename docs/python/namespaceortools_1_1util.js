@@ -18,5 +18,5 @@ var namespaceortools_1_1util =
       [ "_sym_db", "namespaceortools_1_1util_1_1optional__boolean__pb2.html#abf1c411f41e5723413ae98f0cc7de84d", null ],
       [ "DESCRIPTOR", "namespaceortools_1_1util_1_1optional__boolean__pb2.html#a1d0e6746d02bdaf04d26bc9e39354f80", null ]
     ] ],
-    [ "python", "namespaceortools_1_1util_1_1python.html", null ]
+    [ "python", "namespaceortools_1_1util_1_1python.html", "namespaceortools_1_1util_1_1python" ]
 ];

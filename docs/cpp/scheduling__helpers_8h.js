@@ -5,6 +5,7 @@ var scheduling__helpers_8h =
     [ "operations_research::sat::IntervalDefinition", "structoperations__research_1_1sat_1_1IntervalDefinition.html", "structoperations__research_1_1sat_1_1IntervalDefinition" ],
     [ "operations_research::sat::SchedulingConstraintHelper", "classoperations__research_1_1sat_1_1SchedulingConstraintHelper.html", "classoperations__research_1_1sat_1_1SchedulingConstraintHelper" ],
     [ "operations_research::sat::SchedulingConstraintHelper::ProfileEvent", "structoperations__research_1_1sat_1_1SchedulingConstraintHelper_1_1ProfileEvent.html", "structoperations__research_1_1sat_1_1SchedulingConstraintHelper_1_1ProfileEvent" ],
+    [ "operations_research::sat::SchedulingConstraintHelper::TaskInfo", "structoperations__research_1_1sat_1_1SchedulingConstraintHelper_1_1TaskInfo.html", "structoperations__research_1_1sat_1_1SchedulingConstraintHelper_1_1TaskInfo" ],
     [ "operations_research::sat::SchedulingDemandHelper", "classoperations__research_1_1sat_1_1SchedulingDemandHelper.html", "classoperations__research_1_1sat_1_1SchedulingDemandHelper" ],
     [ "operations_research::sat::IntegerVariablesToAddMask", "namespaceoperations__research_1_1sat.html#af0e549ab3da5547f8c99169f6e26ec4e", [
       [ "operations_research::sat::kStart", "namespaceoperations__research_1_1sat.html#af0e549ab3da5547f8c99169f6e26ec4ea5d612278e0fdd4dc98f532671a3d0b78", null ],

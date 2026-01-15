@@ -1,7 +1,6 @@
 var classoperations__research_1_1RevBitSet =
 [
     [ "RevBitSet", "classoperations__research_1_1RevBitSet.html#a641187ce7ac12c9de0dc86e7447ac530", null ],
-    [ "~RevBitSet", "classoperations__research_1_1RevBitSet.html#a72aaa0163218aec6e1ca39a8118fa584", null ],
     [ "Cardinality", "classoperations__research_1_1RevBitSet.html#a22d90a4e36865ad847c0d03106ffe5fa", null ],
     [ "ClearAll", "classoperations__research_1_1RevBitSet.html#a5480935b832898fd1030a5578f0eb459", null ],
     [ "GetFirstBit", "classoperations__research_1_1RevBitSet.html#acd1f8d6de91e4fb47fea44770328f8ff", null ],

@@ -5,6 +5,7 @@ var cp__model__loader_8cc =
     [ "operations_research::sat::ExtractElementEncoding", "namespaceoperations__research_1_1sat.html#a89efb582832622f508e29d0c32f56ca9", null ],
     [ "operations_research::sat::ExtractEncoding", "namespaceoperations__research_1_1sat.html#afa73e23a5cfae0eaf253c2e2518e05e7", null ],
     [ "operations_research::sat::LoadAllDiffConstraint", "namespaceoperations__research_1_1sat.html#a968bcd1e78c91d4c861a784deb8a9f80", null ],
+    [ "operations_research::sat::LoadAlwaysFalseConstraint", "namespaceoperations__research_1_1sat.html#a7444aa83b23e35aaabc1f16c59dbe739", null ],
     [ "operations_research::sat::LoadAtMostOneConstraint", "namespaceoperations__research_1_1sat.html#a74ba965c06434561f068b227d5b1f8a3", null ],
     [ "operations_research::sat::LoadBoolAndConstraint", "namespaceoperations__research_1_1sat.html#ab29def40923c6b49578f7f0b8658bbf1", null ],
     [ "operations_research::sat::LoadBooleanSymmetries", "namespaceoperations__research_1_1sat.html#a64c230730625662a2a2032da620b6c6e", null ],
@@ -25,5 +26,5 @@ var cp__model__loader_8cc =
     [ "operations_research::sat::LoadRoutesConstraint", "namespaceoperations__research_1_1sat.html#a71a2aae922f1cb8ec020517dfd5a103c", null ],
     [ "operations_research::sat::LoadVariables", "namespaceoperations__research_1_1sat.html#a47e5d5cb3e7eb43191d094fc4752b5c6", null ],
     [ "operations_research::sat::PropagateEncodingFromEquivalenceRelations", "namespaceoperations__research_1_1sat.html#ad1ebf465eb7ccee4f79a5b8cfccfe7d9", null ],
-    [ "operations_research::sat::SplitAndLoadIntermediateConstraints", "namespaceoperations__research_1_1sat.html#a2af162f5376a8d8234b9287b5c8163c1", null ]
+    [ "operations_research::sat::SplitAndLoadIntermediateConstraints", "namespaceoperations__research_1_1sat.html#afaa1cde77274a169952ea37b12149bf3", null ]
 ];

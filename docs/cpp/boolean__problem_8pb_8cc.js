@@ -6,7 +6,7 @@ var boolean__problem_8pb_8cc =
     [ "operations_research::sat::LinearBooleanProblemDefaultTypeInternal", "structoperations__research_1_1sat_1_1LinearBooleanProblemDefaultTypeInternal.html", "structoperations__research_1_1sat_1_1LinearBooleanProblemDefaultTypeInternal" ],
     [ "operations_research::sat::LinearBooleanConstraint::_Internal", "classoperations__research_1_1sat_1_1LinearBooleanConstraint_1_1__Internal.html", "classoperations__research_1_1sat_1_1LinearBooleanConstraint_1_1__Internal" ],
     [ "operations_research::sat::LinearObjective::_Internal", "classoperations__research_1_1sat_1_1LinearObjective_1_1__Internal.html", "classoperations__research_1_1sat_1_1LinearObjective_1_1__Internal" ],
-    [ "operations_research::sat::BooleanAssignment::_Internal", "classoperations__research_1_1sat_1_1BooleanAssignment_1_1__Internal.html", null ],
+    [ "operations_research::sat::BooleanAssignment::_Internal", "classoperations__research_1_1sat_1_1BooleanAssignment_1_1__Internal.html", "classoperations__research_1_1sat_1_1BooleanAssignment_1_1__Internal" ],
     [ "operations_research::sat::LinearBooleanProblem::_Internal", "classoperations__research_1_1sat_1_1LinearBooleanProblem_1_1__Internal.html", "classoperations__research_1_1sat_1_1LinearBooleanProblem_1_1__Internal" ],
     [ "ABSL_ATTRIBUTE_SECTION_VARIABLE", "boolean__problem_8pb_8cc.html#abbb968f6f142b451c0ad9d06c2330b81", null ],
     [ "operations_research::sat::_BooleanAssignment_default_instance_", "namespaceoperations__research_1_1sat.html#a2d5f677774be20e6d699027ba25e4c12", null ],

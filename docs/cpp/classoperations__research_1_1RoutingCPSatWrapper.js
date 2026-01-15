@@ -1,6 +1,6 @@
 var classoperations__research_1_1RoutingCPSatWrapper =
 [
-    [ "RoutingCPSatWrapper", "classoperations__research_1_1RoutingCPSatWrapper.html#a79c17f40136d663079392539d42813c7", null ],
+    [ "RoutingCPSatWrapper", "classoperations__research_1_1RoutingCPSatWrapper.html#abfd874053b3d6a2398c512909ad82f05", null ],
     [ "~RoutingCPSatWrapper", "classoperations__research_1_1RoutingCPSatWrapper.html#ad90b990d368c63fe07ab8cb1ea093cf5", null ],
     [ "AddMaximumConstraint", "classoperations__research_1_1RoutingCPSatWrapper.html#a06a6d50c0adbd65c97dc7dbf672ebb88", null ],
     [ "AddObjectiveConstraint", "classoperations__research_1_1RoutingCPSatWrapper.html#a0fa3ec59b6409721d433ca0ba3ef5b75", null ],
@@ -12,9 +12,9 @@ var classoperations__research_1_1RoutingCPSatWrapper =
     [ "CreateNewPositiveVariable", "classoperations__research_1_1RoutingCPSatWrapper.html#a42b52ff7b0e1b952ea2c1a4d123d6fd3", null ],
     [ "GetObjectiveCoefficient", "classoperations__research_1_1RoutingCPSatWrapper.html#a5fb67381a894d9c63fc0228d521ae6a6", null ],
     [ "GetObjectiveValue", "classoperations__research_1_1RoutingCPSatWrapper.html#a9fd3847f5c636c296cc9889cb9d3da03", null ],
-    [ "GetValue", "classoperations__research_1_1RoutingCPSatWrapper.html#a3901763c5a9cc39251efa6c3679b94d2", null ],
     [ "GetVariableLowerBound", "classoperations__research_1_1RoutingCPSatWrapper.html#ac1c8fa9e8cfda873541f81309c35dc99", null ],
     [ "GetVariableUpperBound", "classoperations__research_1_1RoutingCPSatWrapper.html#a826b2eb2ea3d059e9fbbebb82d677dae", null ],
+    [ "GetVariableValue", "classoperations__research_1_1RoutingCPSatWrapper.html#ac257ab1132c2fb865642899a20fe4fbd", null ],
     [ "IsCPSATSolver", "classoperations__research_1_1RoutingCPSatWrapper.html#a36ca4e68959a9d9ddd9233c3da374077", null ],
     [ "ModelIsEmpty", "classoperations__research_1_1RoutingCPSatWrapper.html#ac60f018d14bea687a62a6f1c719da0bc", null ],
     [ "NumVariables", "classoperations__research_1_1RoutingCPSatWrapper.html#a2bfa1c773aef2938aa643a28ae416a5e", null ],

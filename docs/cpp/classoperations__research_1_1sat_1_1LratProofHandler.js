@@ -1,0 +1,25 @@
+var classoperations__research_1_1sat_1_1LratProofHandler =
+[
+    [ "AddAndProveInferredClauseByEnumeration", "classoperations__research_1_1sat_1_1LratProofHandler.html#a577d2eb8f0ef67e632e1d74054a65226", null ],
+    [ "AddAssumedClause", "classoperations__research_1_1sat_1_1LratProofHandler.html#ad88f4594d465f775f10d6bf9d383c033", null ],
+    [ "AddImportedClause", "classoperations__research_1_1sat_1_1LratProofHandler.html#a796f03ce7a611d99a553f12fac82215c", null ],
+    [ "AddInferredClause", "classoperations__research_1_1sat_1_1LratProofHandler.html#af81e9d1514c419f3bcf7a33558284f43", null ],
+    [ "AddInferredClause", "classoperations__research_1_1sat_1_1LratProofHandler.html#a70ade8d16c08b041ffedea457025821d", null ],
+    [ "AddProblemClause", "classoperations__research_1_1sat_1_1LratProofHandler.html#a3015aa07e1ae3905159b3d88c168c4d1", null ],
+    [ "Check", "classoperations__research_1_1sat_1_1LratProofHandler.html#a4997557b51a356eeb370b519e3278276", null ],
+    [ "Close", "classoperations__research_1_1sat_1_1LratProofHandler.html#a4efc5b8c5482b27d86a83791287730ad", null ],
+    [ "DeleteClause", "classoperations__research_1_1sat_1_1LratProofHandler.html#a0582e8e1a6056c1bf44e7c9e869030c8", null ],
+    [ "drat_check_enabled", "classoperations__research_1_1sat_1_1LratProofHandler.html#af70d0232829819663875467840fa97f1", null ],
+    [ "drat_output_enabled", "classoperations__research_1_1sat_1_1LratProofHandler.html#a89ca8d22ae45746942c46ee00eb89272", null ],
+    [ "EndProblemClauses", "classoperations__research_1_1sat_1_1LratProofHandler.html#adf69eb6ba3ad634cad18b997badc6e5b", null ],
+    [ "ExportClause", "classoperations__research_1_1sat_1_1LratProofHandler.html#a21b13d55a115dc9f3aef0885f0365a26", null ],
+    [ "GetLratClauseForDebug", "classoperations__research_1_1sat_1_1LratProofHandler.html#a54324aa08b2515a0f2a7e00d042b0539", null ],
+    [ "lrat_check_enabled", "classoperations__research_1_1sat_1_1LratProofHandler.html#acd16a7f1c61ce17d25bc2ff1c84c12a4", null ],
+    [ "lrat_output_enabled", "classoperations__research_1_1sat_1_1LratProofHandler.html#ae0c4334357350c9f726aa27b63d7c7cf", null ],
+    [ "MaybeCreate", "classoperations__research_1_1sat_1_1LratProofHandler.html#a5e2f36394d0319000fa1e6c43a00b8ae", null ],
+    [ "MaybeCreate", "classoperations__research_1_1sat_1_1LratProofHandler.html#a6d04bc1a77dc1c7d09035e314680b59e", null ],
+    [ "num_assumed_clauses", "classoperations__research_1_1sat_1_1LratProofHandler.html#a55982b85cc59d39a8ce3bacf3b6a8d5a", null ],
+    [ "PinClause", "classoperations__research_1_1sat_1_1LratProofHandler.html#a9c6233f8386617eb855657379579170e", null ],
+    [ "UnpinClause", "classoperations__research_1_1sat_1_1LratProofHandler.html#aae5afa61ca71bcd76275278b97e8f513", null ],
+    [ "Valid", "classoperations__research_1_1sat_1_1LratProofHandler.html#a8c456552e1a159f45bcd4043c1cf1e59", null ]
+];

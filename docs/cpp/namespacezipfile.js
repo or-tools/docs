@@ -1,7 +1,7 @@
 var namespacezipfile =
 [
-    [ "ZipArchive", "classzipfile_1_1ZipArchive.html", "classzipfile_1_1ZipArchive" ],
     [ "ZipFileOptions", "structzipfile_1_1ZipFileOptions.html", "structzipfile_1_1ZipFileOptions" ],
+    [ "ZipArchive", "classzipfile_1_1ZipArchive.html", "classzipfile_1_1ZipArchive" ],
     [ "AccessPattern", "namespacezipfile.html#ae8ba0d8603805da50cc7f1c320166687", [
       [ "ACCESS_NONE", "namespacezipfile.html#ae8ba0d8603805da50cc7f1c320166687a7b9b44b7a04e7d5cfe9b42b9466ea0c6", null ],
       [ "ACCESS_NORMAL", "namespacezipfile.html#ae8ba0d8603805da50cc7f1c320166687a78286b51112c36737129ceb077d2ae16", null ],

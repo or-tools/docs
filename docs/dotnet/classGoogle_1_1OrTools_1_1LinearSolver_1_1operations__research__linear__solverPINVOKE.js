@@ -5,6 +5,7 @@ var classGoogle_1_1OrTools_1_1LinearSolver_1_1operations__research__linear__solv
     [ "SWIGStringHelper", "classGoogle_1_1OrTools_1_1LinearSolver_1_1operations__research__linear__solverPINVOKE_1_1SWIGStringHelper.html", "classGoogle_1_1OrTools_1_1LinearSolver_1_1operations__research__linear__solverPINVOKE_1_1SWIGStringHelper" ],
     [ "SWIGStringWithLengthHelper", "classGoogle_1_1OrTools_1_1LinearSolver_1_1operations__research__linear__solverPINVOKE_1_1SWIGStringWithLengthHelper.html", "classGoogle_1_1OrTools_1_1LinearSolver_1_1operations__research__linear__solverPINVOKE_1_1SWIGStringWithLengthHelper" ],
     [ "Constraint_BasisStatus", "classGoogle_1_1OrTools_1_1LinearSolver_1_1operations__research__linear__solverPINVOKE.html#a8723b87f0e2eafd9387c06310f0c1134", null ],
+    [ "Constraint_Clear", "classGoogle_1_1OrTools_1_1LinearSolver_1_1operations__research__linear__solverPINVOKE.html#ab7c7ecbcf52a9383238b140549d84a89", null ],
     [ "Constraint_DualValue", "classGoogle_1_1OrTools_1_1LinearSolver_1_1operations__research__linear__solverPINVOKE.html#aac0ab5d3a9e6e3931b36d4352ea95649", null ],
     [ "Constraint_GetCoefficient", "classGoogle_1_1OrTools_1_1LinearSolver_1_1operations__research__linear__solverPINVOKE.html#af8a0b5a282820d8d884028d41d1513f3", null ],
     [ "Constraint_Index", "classGoogle_1_1OrTools_1_1LinearSolver_1_1operations__research__linear__solverPINVOKE.html#a54dc81768a7fde1e510cb8166646759f", null ],

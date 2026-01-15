@@ -1,5 +1,6 @@
 var classoperations__research_1_1RoutingLinearSolverWrapper =
 [
+    [ "RoutingLinearSolverWrapper", "classoperations__research_1_1RoutingLinearSolverWrapper.html#aebd0da10ea269753d4f713496f8b63a4", null ],
     [ "~RoutingLinearSolverWrapper", "classoperations__research_1_1RoutingLinearSolverWrapper.html#a3b1c5d4aa6c6cf2791193067a6e0f09a", null ],
     [ "AddLinearConstraint", "classoperations__research_1_1RoutingLinearSolverWrapper.html#a40627d30439a7f35241569136abf6abb", null ],
     [ "AddMaximumConstraint", "classoperations__research_1_1RoutingLinearSolverWrapper.html#ac48deed1b69acb79c2e9a323e4b5e91a", null ],
@@ -14,9 +15,9 @@ var classoperations__research_1_1RoutingLinearSolverWrapper =
     [ "CreateNewPositiveVariable", "classoperations__research_1_1RoutingLinearSolverWrapper.html#ab8d4447ea88844c40c4ed091830dd2e9", null ],
     [ "GetObjectiveCoefficient", "classoperations__research_1_1RoutingLinearSolverWrapper.html#af4fdde8a016b5cabbd84530780065b9d", null ],
     [ "GetObjectiveValue", "classoperations__research_1_1RoutingLinearSolverWrapper.html#a0159ffe86725bb74b55ff9e23cd5c87f", null ],
-    [ "GetValue", "classoperations__research_1_1RoutingLinearSolverWrapper.html#a85a89b732335ec92d31d30e8c2cc7121", null ],
     [ "GetVariableLowerBound", "classoperations__research_1_1RoutingLinearSolverWrapper.html#ae3788476cc0c9078c7cb282757016c1a", null ],
     [ "GetVariableUpperBound", "classoperations__research_1_1RoutingLinearSolverWrapper.html#a3466a1746baa139d60b468a76333174a", null ],
+    [ "GetVariableValue", "classoperations__research_1_1RoutingLinearSolverWrapper.html#a97f42d6a194647c2935195c9d1e5c6f4", null ],
     [ "IsCPSATSolver", "classoperations__research_1_1RoutingLinearSolverWrapper.html#ae774ea1f1262b396ea9d9f3caa5cdc3d", null ],
     [ "ModelIsEmpty", "classoperations__research_1_1RoutingLinearSolverWrapper.html#ad7c4921208d937ff83fcbdd697b029e3", null ],
     [ "NumVariables", "classoperations__research_1_1RoutingLinearSolverWrapper.html#a013067dd840a0b2252dc20ea512c221c", null ],
@@ -30,5 +31,6 @@ var classoperations__research_1_1RoutingLinearSolverWrapper =
     [ "SetVariableName", "classoperations__research_1_1RoutingLinearSolverWrapper.html#acd06cb513bcc99df2a239d0b64ceb147", null ],
     [ "SolutionIsInteger", "classoperations__research_1_1RoutingLinearSolverWrapper.html#a6267db73058365ff8b8c0b5023e80b78", null ],
     [ "Solve", "classoperations__research_1_1RoutingLinearSolverWrapper.html#a24ed4a6d6a4588099bdcca07f8a7487a", null ],
-    [ "kNoConstraint", "classoperations__research_1_1RoutingLinearSolverWrapper.html#ab42cc5ada76679bb3c7f759115c3d40b", null ]
+    [ "kNoConstraint", "classoperations__research_1_1RoutingLinearSolverWrapper.html#ab42cc5ada76679bb3c7f759115c3d40b", null ],
+    [ "search_stats_", "classoperations__research_1_1RoutingLinearSolverWrapper.html#a35ddca8972e496b290fe84046c8a9d72", null ]
 ];

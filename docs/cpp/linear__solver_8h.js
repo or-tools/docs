@@ -6,6 +6,8 @@ var linear__solver_8h =
     [ "operations_research::MPConstraint", "classoperations__research_1_1MPConstraint.html", "classoperations__research_1_1MPConstraint" ],
     [ "operations_research::MPSolverParameters", "classoperations__research_1_1MPSolverParameters.html", "classoperations__research_1_1MPSolverParameters" ],
     [ "operations_research::MPSolverInterface", "classoperations__research_1_1MPSolverInterface.html", "classoperations__research_1_1MPSolverInterface" ],
+    [ "operations_research::MPSolverInterfaceFactoryRepository", "classoperations__research_1_1MPSolverInterfaceFactoryRepository.html", "classoperations__research_1_1MPSolverInterfaceFactoryRepository" ],
+    [ "operations_research::MPSolverInterfaceFactory", "namespaceoperations__research.html#a0dd1be3345356b2afdbf2d37db9c8f96", null ],
     [ "ABSL_DECLARE_FLAG", "linear__solver_8h.html#a77dc04a2c38c52219aa1beead21e440a", null ],
     [ "ABSL_DECLARE_FLAG", "linear__solver_8h.html#a8a6472abbb8b45b16705bd1ea18b51fb", null ],
     [ "ABSL_DECLARE_FLAG", "linear__solver_8h.html#ada57ea28256c7de49c80f38f8690dc42", null ],

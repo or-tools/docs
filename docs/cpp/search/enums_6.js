@@ -9,8 +9,10 @@ var searchData=
   ['glpkraytype_6',['GlpkRayType',['../namespaceoperations__research_1_1math__opt.html#af8a3e009f8ece75838c3dbc70ce8857a',1,'operations_research::math_opt']]],
   ['graphtostringformat_7',['GraphToStringFormat',['../namespaceutil.html#ae705e1342dacc10a13fb3f11f91d0696',1,'util']]],
   ['gscipcallbackresult_8',['GScipCallbackResult',['../namespaceoperations__research.html#ab17a03069123f8c8d6d487eceeb73fe8',1,'operations_research']]],
-  ['gscipmessagetype_9',['GScipMessageType',['../namespaceoperations__research.html#a9c86560917fd7728a05a423837f92771',1,'operations_research']]],
-  ['gscipoutput_5fstatus_10',['GScipOutput_Status',['../namespaceoperations__research.html#a565a18eed81d44f7f595b51ab599c8fb',1,'operations_research']]],
-  ['gscipparameters_5femphasis_11',['GScipParameters_Emphasis',['../namespaceoperations__research.html#af214ccfb61ed626e26a7e2aaa950cfd7',1,'operations_research']]],
-  ['gscipparameters_5fmetaparamvalue_12',['GScipParameters_MetaParamValue',['../namespaceoperations__research.html#aef2a37a6a9890ed6ccf898013e8348b4',1,'operations_research']]]
+  ['gsciphintresult_9',['GScipHintResult',['../namespaceoperations__research.html#a9a7e1f3fb22a5734fecf0159c3538d9c',1,'operations_research']]],
+  ['gscipmessagetype_10',['GScipMessageType',['../namespaceoperations__research.html#a9c86560917fd7728a05a423837f92771',1,'operations_research']]],
+  ['gscipoutput_5fstatus_11',['GScipOutput_Status',['../namespaceoperations__research.html#a565a18eed81d44f7f595b51ab599c8fb',1,'operations_research']]],
+  ['gscipparameters_5femphasis_12',['GScipParameters_Emphasis',['../namespaceoperations__research.html#af214ccfb61ed626e26a7e2aaa950cfd7',1,'operations_research']]],
+  ['gscipparameters_5fmetaparamvalue_13',['GScipParameters_MetaParamValue',['../namespaceoperations__research.html#aef2a37a6a9890ed6ccf898013e8348b4',1,'operations_research']]],
+  ['gscipvartype_14',['GScipVarType',['../namespaceoperations__research.html#a1edaca52d984bba90b4c85b9ba7964e2',1,'operations_research']]]
 ];

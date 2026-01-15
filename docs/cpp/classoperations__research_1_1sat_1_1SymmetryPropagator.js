@@ -9,5 +9,6 @@ var classoperations__research_1_1sat_1_1SymmetryPropagator =
     [ "Permute", "classoperations__research_1_1sat_1_1SymmetryPropagator.html#aec2366f4ee59be57b06db35a90652ceb", null ],
     [ "Propagate", "classoperations__research_1_1sat_1_1SymmetryPropagator.html#a61cde651dc6dca2f88fdc7d67b900f13", null ],
     [ "Reason", "classoperations__research_1_1sat_1_1SymmetryPropagator.html#a6ad12e5c68c62058b4876a50c0b05150", null ],
+    [ "SetNumLiterals", "classoperations__research_1_1sat_1_1SymmetryPropagator.html#a5ab093c2d730c6417dcca12bbfaf6cc4", null ],
     [ "Untrail", "classoperations__research_1_1sat_1_1SymmetryPropagator.html#a5f2d4a145f2a351c25423b84b5eb047d", null ]
 ];

@@ -1,7 +1,7 @@
 var searchData=
 [
   ['valid_0',['VALID',['../classoperations__research_1_1sat_1_1DratChecker.html#a0b1c77a2d9b42a612c9cbbb6a49c49a3a1c116109136aa54abbb58db4211b00ff',1,'operations_research::sat::DratChecker']]],
-  ['var_1',['VAR',['../parser_8tab_8cc.html#a85ce62c6a1b129948aacc3737e8aad69af68346ce0bfce7ab2ca0a240f5132863',1,'VAR:&#160;parser.tab.cc'],['../parser_8tab_8hh.html#a85ce62c6a1b129948aacc3737e8aad69af68346ce0bfce7ab2ca0a240f5132863',1,'VAR:&#160;parser.tab.hh']]],
+  ['var_1',['VAR',['../parser_8tab_8hh.html#a85ce62c6a1b129948aacc3737e8aad69af68346ce0bfce7ab2ca0a240f5132863',1,'parser.tab.hh']]],
   ['var_5fadd_5fcst_2',['VAR_ADD_CST',['../namespaceoperations__research.html#a744e7cc90d56b2c503520ee1f97fc1dba0cc8439ff5d71bb0c4c981cd04b73d55',1,'operations_research']]],
   ['var_5farray_5fconstant_5farray_5fexpression_5fmax_3',['VAR_ARRAY_CONSTANT_ARRAY_EXPRESSION_MAX',['../classoperations__research_1_1ModelCache.html#a110dc5d522d143f90b07c31a23feb82ea400c369e52a35c4f713b334636fdf8b3',1,'operations_research::ModelCache']]],
   ['var_5farray_5fconstant_5farray_5fscal_5fprod_4',['VAR_ARRAY_CONSTANT_ARRAY_SCAL_PROD',['../classoperations__research_1_1ModelCache.html#a110dc5d522d143f90b07c31a23feb82ea8badb2c8850e8b40e03e6bb6603be49d',1,'operations_research::ModelCache']]],

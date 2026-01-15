@@ -1,7 +1,7 @@
 var classoperations__research_1_1PathState =
 [
-    [ "Chain", "classoperations__research_1_1PathState_1_1Chain.html", "classoperations__research_1_1PathState_1_1Chain" ],
     [ "ChainBounds", "structoperations__research_1_1PathState_1_1ChainBounds.html", "structoperations__research_1_1PathState_1_1ChainBounds" ],
+    [ "Chain", "classoperations__research_1_1PathState_1_1Chain.html", "classoperations__research_1_1PathState_1_1Chain" ],
     [ "ChainRange", "classoperations__research_1_1PathState_1_1ChainRange.html", "classoperations__research_1_1PathState_1_1ChainRange" ],
     [ "NodeRange", "classoperations__research_1_1PathState_1_1NodeRange.html", "classoperations__research_1_1PathState_1_1NodeRange" ],
     [ "PathState", "classoperations__research_1_1PathState.html#aaf27472184dce475a087fdc304fb4350", null ],

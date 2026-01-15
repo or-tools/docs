@@ -5,6 +5,7 @@ var classGoogle_1_1OrTools_1_1ConstraintSolver_1_1Solver =
     [ "Solver", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1Solver.html#a2a9945e6aa474702b62dabe7b1755e47", null ],
     [ "Accept", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1Solver.html#abe97141abd089b1975a07dc09f7273c3", null ],
     [ "AcceptedNeighbors", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1Solver.html#a3eacc24fe1f395e8353bfe09d4085026", null ],
+    [ "AcceptSolution", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1Solver.html#a1108e1b347c3741224ba3be8ba42fc52", null ],
     [ "Add", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1Solver.html#a70550268bb3ba05ea99c03c7bade681d", null ],
     [ "AddCastConstraint", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1Solver.html#a8052daaed1459a3db97d9964d7038d08", null ],
     [ "AddLocalSearchMonitor", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1Solver.html#ac7856850c74117f151413d441a46a20c", null ],

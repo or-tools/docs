@@ -1,7 +1,7 @@
 var optional__boolean_8pb_8h =
 [
     [ "TableStruct_ortools_2futil_2foptional_5fboolean_2eproto", "structTableStruct__ortools__2futil__2foptional__5fboolean__2eproto.html", "structTableStruct__ortools__2futil__2foptional__5fboolean__2eproto" ],
-    [ "google::protobuf::is_proto_enum<::operations_research::OptionalBoolean >", "structgoogle_1_1protobuf_1_1is__proto__enum_3_1_1operations__research_1_1OptionalBoolean_01_4.html", null ],
+    [ "google::protobuf::is_proto_enum&lt;::operations_research::OptionalBoolean &gt;", "structgoogle_1_1protobuf_1_1is__proto__enum_3_1_1operations__research_1_1OptionalBoolean_01_4.html", null ],
     [ "PROTOBUF_INTERNAL_EXPORT_ortools_2futil_2foptional_5fboolean_2eproto", "optional__boolean_8pb_8h.html#a0c1b550c7b6ab63e49c25a8dd41f0286", null ],
     [ "operations_research::OptionalBoolean", "namespaceoperations__research.html#abdee17b84b82d56408681cc174dccfa2", [
       [ "operations_research::BOOL_UNSPECIFIED", "namespaceoperations__research.html#abdee17b84b82d56408681cc174dccfa2af7d7d0761dc33550c41bd92818949a73", null ],

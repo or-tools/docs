@@ -1,6 +1,7 @@
 var classGoogle_1_1OrTools_1_1LinearSolver_1_1Constraint =
 [
     [ "BasisStatus", "classGoogle_1_1OrTools_1_1LinearSolver_1_1Constraint.html#afe2c1949807524f1fafe47a196e61796", null ],
+    [ "Clear", "classGoogle_1_1OrTools_1_1LinearSolver_1_1Constraint.html#abc23624dc90c195ed57c401dbe6a7990", null ],
     [ "Dispose", "classGoogle_1_1OrTools_1_1LinearSolver_1_1Constraint.html#a2388363390901b3e766c5da4df7fb3a4", null ],
     [ "Dispose", "classGoogle_1_1OrTools_1_1LinearSolver_1_1Constraint.html#af2dec4aa8ce016080d54274502c6799f", null ],
     [ "DualValue", "classGoogle_1_1OrTools_1_1LinearSolver_1_1Constraint.html#a2b3449a546c6cb41197393ad4e8403cf", null ],

@@ -18,7 +18,8 @@ var searchData=
   ['highsoptionsproto_5fstringoptionsentry_5fdonotuse_15',['HighsOptionsProto_StringOptionsEntry_DoNotUse',['../classoperations__research_1_1math__opt_1_1HighsOptionsProto__StringOptionsEntry__DoNotUse.html',1,'operations_research::math_opt']]],
   ['highsoptionsproto_5fstringoptionsentry_5fdonotusedefaulttypeinternal_16',['HighsOptionsProto_StringOptionsEntry_DoNotUseDefaultTypeInternal',['../structoperations__research_1_1math__opt_1_1HighsOptionsProto__StringOptionsEntry__DoNotUseDefaultTypeInternal.html',1,'operations_research::math_opt']]],
   ['highsoptionsprotodefaulttypeinternal_17',['HighsOptionsProtoDefaultTypeInternal',['../structoperations__research_1_1math__opt_1_1HighsOptionsProtoDefaultTypeInternal.html',1,'operations_research::math_opt']]],
-  ['highssolver_18',['HighsSolver',['../classoperations__research_1_1math__opt_1_1HighsSolver.html',1,'operations_research::math_opt']]],
-  ['hittingsetoptimizer_19',['HittingSetOptimizer',['../classoperations__research_1_1sat_1_1HittingSetOptimizer.html',1,'operations_research::sat']]],
-  ['hungarianoptimizer_20',['HungarianOptimizer',['../classoperations__research_1_1HungarianOptimizer.html',1,'operations_research']]]
+  ['highssolveinfo_18',['HighsSolveInfo',['../structoperations__research_1_1HighsSolveInfo.html',1,'operations_research']]],
+  ['highssolver_19',['HighsSolver',['../classoperations__research_1_1math__opt_1_1HighsSolver.html',1,'operations_research::math_opt']]],
+  ['hittingsetoptimizer_20',['HittingSetOptimizer',['../classoperations__research_1_1sat_1_1HittingSetOptimizer.html',1,'operations_research::sat']]],
+  ['hungarianoptimizer_21',['HungarianOptimizer',['../classoperations__research_1_1HungarianOptimizer.html',1,'operations_research']]]
 ];

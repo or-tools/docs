@@ -1,6 +1,5 @@
 var dir_7cc48880791e3dd695dbfc2349101d28 =
 [
-    [ "gtest_main.cc", "gtest__main_8cc.html", "gtest__main_8cc" ],
     [ "iteration_stats.cc", "iteration__stats_8cc.html", "iteration__stats_8cc" ],
     [ "iteration_stats.h", "iteration__stats_8h.html", "iteration__stats_8h" ],
     [ "primal_dual_hybrid_gradient.cc", "primal__dual__hybrid__gradient_8cc.html", "primal__dual__hybrid__gradient_8cc" ],

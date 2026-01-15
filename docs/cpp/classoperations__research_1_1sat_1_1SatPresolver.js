@@ -15,7 +15,6 @@ var classoperations__research_1_1sat_1_1SatPresolver =
     [ "Presolve", "classoperations__research_1_1sat_1_1SatPresolver.html#adb7846ae7bbe4ca2e07a1dba94fe686e", null ],
     [ "PresolveWithBva", "classoperations__research_1_1sat_1_1SatPresolver.html#af7e0881274e8e8cec31c85429900b42a", null ],
     [ "ProcessClauseToSimplifyOthers", "classoperations__research_1_1sat_1_1SatPresolver.html#a8d8418b2601e61829de5e7b3f4df122b", null ],
-    [ "SetDratProofHandler", "classoperations__research_1_1sat_1_1SatPresolver.html#ad28295262780ce65f054d6872ef9c5d2", null ],
     [ "SetEquivalentLiteralMapping", "classoperations__research_1_1sat_1_1SatPresolver.html#a1f0beafbd80f03bd0ab3b3d54c14cfa9", null ],
     [ "SetNumVariables", "classoperations__research_1_1sat_1_1SatPresolver.html#a73d12d716cad99ce694fe4bd8dc3d7fa", null ],
     [ "SetParameters", "classoperations__research_1_1sat_1_1SatPresolver.html#a43bd69c18be92a955968c5e10cfd0f07", null ],

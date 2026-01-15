@@ -1,6 +1,6 @@
 var gscip_8pb_8h =
 [
-    [ "TableStruct_ortools_2fgscip_2fgscip_2eproto", "structTableStruct__ortools__2fgscip__2fgscip__2eproto.html", "structTableStruct__ortools__2fgscip__2fgscip__2eproto" ],
+    [ "TableStruct_ortools_2fmath_5fopt_2fsolvers_2fgscip_2fgscip_2eproto", "structTableStruct__ortools__2fmath__5fopt__2fsolvers__2fgscip__2fgscip__2eproto.html", "structTableStruct__ortools__2fmath__5fopt__2fsolvers__2fgscip__2fgscip__2eproto" ],
     [ "operations_research::GScipSolvingStats", "classoperations__research_1_1GScipSolvingStats.html", "classoperations__research_1_1GScipSolvingStats" ],
     [ "operations_research::GScipParameters_StringParamsEntry_DoNotUse", "classoperations__research_1_1GScipParameters__StringParamsEntry__DoNotUse.html", "classoperations__research_1_1GScipParameters__StringParamsEntry__DoNotUse" ],
     [ "operations_research::GScipParameters_RealParamsEntry_DoNotUse", "classoperations__research_1_1GScipParameters__RealParamsEntry__DoNotUse.html", "classoperations__research_1_1GScipParameters__RealParamsEntry__DoNotUse" ],
@@ -10,10 +10,10 @@ var gscip_8pb_8h =
     [ "operations_research::GScipParameters_BoolParamsEntry_DoNotUse", "classoperations__research_1_1GScipParameters__BoolParamsEntry__DoNotUse.html", "classoperations__research_1_1GScipParameters__BoolParamsEntry__DoNotUse" ],
     [ "operations_research::GScipParameters", "classoperations__research_1_1GScipParameters.html", "classoperations__research_1_1GScipParameters" ],
     [ "operations_research::GScipOutput", "classoperations__research_1_1GScipOutput.html", "classoperations__research_1_1GScipOutput" ],
-    [ "google::protobuf::is_proto_enum<::operations_research::GScipParameters_Emphasis >", "structgoogle_1_1protobuf_1_1is__proto__enum_3_1_1operations__research_1_1GScipParameters__Emphasis_01_4.html", null ],
-    [ "google::protobuf::is_proto_enum<::operations_research::GScipParameters_MetaParamValue >", "structgoogle_1_1protobuf_1_1is__proto__enum_3_1_1operations__research_1_1GScipParameters__MetaParamValue_01_4.html", null ],
-    [ "google::protobuf::is_proto_enum<::operations_research::GScipOutput_Status >", "structgoogle_1_1protobuf_1_1is__proto__enum_3_1_1operations__research_1_1GScipOutput__Status_01_4.html", null ],
-    [ "PROTOBUF_INTERNAL_EXPORT_ortools_2fgscip_2fgscip_2eproto", "gscip_8pb_8h.html#a6e98db56b2acfc4cb103f9bf5b15e358", null ],
+    [ "google::protobuf::is_proto_enum&lt;::operations_research::GScipParameters_Emphasis &gt;", "structgoogle_1_1protobuf_1_1is__proto__enum_3_1_1operations__research_1_1GScipParameters__Emphasis_01_4.html", null ],
+    [ "google::protobuf::is_proto_enum&lt;::operations_research::GScipParameters_MetaParamValue &gt;", "structgoogle_1_1protobuf_1_1is__proto__enum_3_1_1operations__research_1_1GScipParameters__MetaParamValue_01_4.html", null ],
+    [ "google::protobuf::is_proto_enum&lt;::operations_research::GScipOutput_Status &gt;", "structgoogle_1_1protobuf_1_1is__proto__enum_3_1_1operations__research_1_1GScipOutput__Status_01_4.html", null ],
+    [ "PROTOBUF_INTERNAL_EXPORT_ortools_2fmath_5fopt_2fsolvers_2fgscip_2fgscip_2eproto", "gscip_8pb_8h.html#aaf4b91230fed6312d6d182aacb141387", null ],
     [ "operations_research::GScipOutput_Status", "namespaceoperations__research.html#a565a18eed81d44f7f595b51ab599c8fb", [
       [ "operations_research::GScipOutput_Status_UNKNOWN", "namespaceoperations__research.html#a565a18eed81d44f7f595b51ab599c8fba49d4f675bba6a62dded474b031d77edf", null ],
       [ "operations_research::GScipOutput_Status_USER_INTERRUPT", "namespaceoperations__research.html#a565a18eed81d44f7f595b51ab599c8fba9d4ab7fac7b88c376bb88e686903cd64", null ],
@@ -76,7 +76,7 @@ var gscip_8pb_8h =
     [ "operations_research::GScipParameters_MetaParamValue_Name", "namespaceoperations__research.html#a7f6689166750d2d408840e40f77d2d24", null ],
     [ "operations_research::GScipParameters_MetaParamValue_Name", "namespaceoperations__research.html#a9ba3a675334233ada59a90675b27887d", null ],
     [ "operations_research::GScipParameters_MetaParamValue_Parse", "namespaceoperations__research.html#adcf1d0fbdcfab44afff396b487265560", null ],
-    [ "descriptor_table_ortools_2fgscip_2fgscip_2eproto", "gscip_8pb_8h.html#a39dca7632c974f456bfeaca2e2d96253", null ],
+    [ "descriptor_table_ortools_2fmath_5fopt_2fsolvers_2fgscip_2fgscip_2eproto", "gscip_8pb_8h.html#a478498010e64bef99fd167bbb6b5731c", null ],
     [ "operations_research::GScipOutput_Status_Status_ARRAYSIZE", "namespaceoperations__research.html#a51dee745e7c1734dd0c26136b71042fd", null ],
     [ "operations_research::GScipOutput_Status_Status_MAX", "namespaceoperations__research.html#a5b1d7b3cb57f36391a053fbcd32272b0", null ],
     [ "operations_research::GScipOutput_Status_Status_MIN", "namespaceoperations__research.html#a39e9d933e5271fb27f43c34eeabb5594", null ],

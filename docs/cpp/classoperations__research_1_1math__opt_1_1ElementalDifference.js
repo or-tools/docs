@@ -1,7 +1,7 @@
 var classoperations__research_1_1math__opt_1_1ElementalDifference =
 [
-    [ "AttributeDifference", "structoperations__research_1_1math__opt_1_1ElementalDifference_1_1AttributeDifference.html", "structoperations__research_1_1math__opt_1_1ElementalDifference_1_1AttributeDifference" ],
     [ "ElementDifference", "structoperations__research_1_1math__opt_1_1ElementalDifference_1_1ElementDifference.html", "structoperations__research_1_1math__opt_1_1ElementalDifference_1_1ElementDifference" ],
+    [ "AttributeDifference", "structoperations__research_1_1math__opt_1_1ElementalDifference_1_1AttributeDifference.html", "structoperations__research_1_1math__opt_1_1ElementalDifference_1_1AttributeDifference" ],
     [ "ElementalDifference", "classoperations__research_1_1math__opt_1_1ElementalDifference.html#aa9386e2d30db3a8033755cd331683682", null ],
     [ "attr_difference", "classoperations__research_1_1math__opt_1_1ElementalDifference.html#a0596328f9c7271750081689b9b3cbca4", null ],
     [ "Create", "classoperations__research_1_1math__opt_1_1ElementalDifference.html#a4bfcb24039ae1bfd90567ee691b61d22", null ],

@@ -2,7 +2,7 @@ var classoperations__research_1_1sat_1_1RouteRelationsHelper =
 [
     [ "HeadMinusTailBounds", "structoperations__research_1_1sat_1_1RouteRelationsHelper_1_1HeadMinusTailBounds.html", "structoperations__research_1_1sat_1_1RouteRelationsHelper_1_1HeadMinusTailBounds" ],
     [ "RouteRelationsHelper", "classoperations__research_1_1sat_1_1RouteRelationsHelper.html#ae1f44591172617142a9e561ee137eb04", null ],
-    [ "Create", "classoperations__research_1_1sat_1_1RouteRelationsHelper.html#a6da401f6d3b2c455cc1a2f8d02b96548", null ],
+    [ "Create", "classoperations__research_1_1sat_1_1RouteRelationsHelper.html#a88c23158a2accac52708a1c75742e57c", null ],
     [ "GetArcOffsetLowerBound", "classoperations__research_1_1sat_1_1RouteRelationsHelper.html#a44dfece01790f26f2306aa981356b8e9", null ],
     [ "GetArcRelation", "classoperations__research_1_1sat_1_1RouteRelationsHelper.html#a38a158d4d4ebec0ebe6619a354ace417", null ],
     [ "GetNodeExpression", "classoperations__research_1_1sat_1_1RouteRelationsHelper.html#a47ad75deaf4a6397d590711dbaf794c9", null ],

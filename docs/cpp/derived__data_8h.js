@@ -1,8 +1,8 @@
 var derived__data_8h =
 [
     [ "operations_research::math_opt::AllAttrs", "structoperations__research_1_1math__opt_1_1AllAttrs.html", "structoperations__research_1_1math__opt_1_1AllAttrs" ],
-    [ "operations_research::math_opt::EnumeratedTupleCpp17Helper< ValueType >", "structoperations__research_1_1math__opt_1_1EnumeratedTupleCpp17Helper.html", "structoperations__research_1_1math__opt_1_1EnumeratedTupleCpp17Helper" ],
-    [ "operations_research::math_opt::AttrMap< ValueType >", "classoperations__research_1_1math__opt_1_1AttrMap.html", "classoperations__research_1_1math__opt_1_1AttrMap" ],
+    [ "operations_research::math_opt::EnumeratedTupleCpp17Helper&lt; ValueType &gt;", "structoperations__research_1_1math__opt_1_1EnumeratedTupleCpp17Helper.html", "structoperations__research_1_1math__opt_1_1EnumeratedTupleCpp17Helper" ],
+    [ "operations_research::math_opt::AttrMap&lt; ValueType &gt;", "classoperations__research_1_1math__opt_1_1AttrMap.html", "classoperations__research_1_1math__opt_1_1AttrMap" ],
     [ "operations_research::math_opt::AttrKeyFor", "namespaceoperations__research_1_1math__opt.html#a13f9e00c52a789cb1f6b6863eb89c8e2", null ],
     [ "operations_research::math_opt::AttrTypeDescriptorT", "namespaceoperations__research_1_1math__opt.html#ad759cb2dae2d82f078265c8d5d10a367", null ],
     [ "operations_research::math_opt::EnumeratedTuple", "namespaceoperations__research_1_1math__opt.html#aff20be2f6af32dee52e829ff95d1a70c", null ],

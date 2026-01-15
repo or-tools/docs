@@ -10,7 +10,7 @@ var pb__constraint_8h =
     [ "operations_research::sat::VariableWithSameReasonIdentifier", "classoperations__research_1_1sat_1_1VariableWithSameReasonIdentifier.html", "classoperations__research_1_1sat_1_1VariableWithSameReasonIdentifier" ],
     [ "operations_research::sat::AbslHashValue", "namespaceoperations__research_1_1sat.html#adf5729c9f2cd9c6c4897cd486978291a", null ],
     [ "operations_research::sat::ApplyLiteralMapping", "namespaceoperations__research_1_1sat.html#a2afc11a07067fde98c2b4aa8c03b0cc0", null ],
-    [ "operations_research::sat::BooleanLinearExpressionIsCanonical", "namespaceoperations__research_1_1sat.html#a937ae99fd6f6c445a8aad34f04222a1a", null ],
+    [ "operations_research::sat::BooleanLinearExpressionIsCanonical", "namespaceoperations__research_1_1sat.html#a6ef6b47fab8a0f412c7115fd8269fd1b", null ],
     [ "operations_research::sat::ComputeBooleanLinearExpressionCanonicalForm", "namespaceoperations__research_1_1sat.html#afe0ad26c40a4024f160695f2a504ff0a", null ],
     [ "operations_research::sat::ComputeCanonicalRhs", "namespaceoperations__research_1_1sat.html#aa6c84ab8a0590875d286e1d518b804c9", null ],
     [ "operations_research::sat::ComputeNegatedCanonicalRhs", "namespaceoperations__research_1_1sat.html#a530ca58b0a7104b907a8933f8704dce8", null ],

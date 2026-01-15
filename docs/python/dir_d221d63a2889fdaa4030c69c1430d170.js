@@ -5,7 +5,6 @@ var dir_d221d63a2889fdaa4030c69c1430d170 =
     [ "constraint_solver", "dir_c000b7e99f855aec1c092112341b4887.html", "dir_c000b7e99f855aec1c092112341b4887" ],
     [ "glop", "dir_9f897219721043f85afbab237c471c0e.html", "dir_9f897219721043f85afbab237c471c0e" ],
     [ "graph", "dir_95f0714ed13a6bc22415e864a0d1375a.html", "dir_95f0714ed13a6bc22415e864a0d1375a" ],
-    [ "gscip", "dir_bbb62c5d74969e83d9566d69886158e8.html", "dir_bbb62c5d74969e83d9566d69886158e8" ],
     [ "init", "dir_5b77eca379cf9baccf52da0fd8449675.html", "dir_5b77eca379cf9baccf52da0fd8449675" ],
     [ "linear_solver", "dir_8e5f35e9c5660cf1bad2c4365ddf4ca6.html", "dir_8e5f35e9c5660cf1bad2c4365ddf4ca6" ],
     [ "math_opt", "dir_5603c10b27299db4b8b39f6ed54e3c41.html", "dir_5603c10b27299db4b8b39f6ed54e3c41" ],

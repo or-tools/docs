@@ -8,6 +8,7 @@ var classoperations__research_1_1SparseBitset =
     [ "Clear", "classoperations__research_1_1SparseBitset.html#a2cb3d10a307f8e29c9491e5f26017f89", null ],
     [ "ClearAndResize", "classoperations__research_1_1SparseBitset.html#a19cd6aeb2085dfceb559d1c89616a9f7", null ],
     [ "const_view", "classoperations__research_1_1SparseBitset.html#a40b23568e9daf060263a95029f9ccb7d", null ],
+    [ "CopyFrom", "classoperations__research_1_1SparseBitset.html#a1d4c1e39e5ea65918b4825f79cf27881", null ],
     [ "NotifyAllClear", "classoperations__research_1_1SparseBitset.html#a6d0a90f8d83d1db9e97214b04c1a018d", null ],
     [ "NumberOfSetCallsWithDifferentArguments", "classoperations__research_1_1SparseBitset.html#a94c68b726a73ea921c58501916590999", null ],
     [ "operator=", "classoperations__research_1_1SparseBitset.html#a36783a96669e794d58c15cfd3615fccb", null ],

@@ -7,8 +7,8 @@ var classoperations__research_1_1math__opt_1_1SolverInterface =
     [ "SolverInterface", "classoperations__research_1_1math__opt_1_1SolverInterface.html#a4def5d17d29ae03fd574a1bebc67cfdf", null ],
     [ "SolverInterface", "classoperations__research_1_1math__opt_1_1SolverInterface.html#a25dd4a3815ffdaf3232f4fdaa9305f6c", null ],
     [ "~SolverInterface", "classoperations__research_1_1math__opt_1_1SolverInterface.html#a9053d6c748ba7ede61b018d2da202417", null ],
-    [ "ComputeInfeasibleSubsystem", "classoperations__research_1_1math__opt_1_1SolverInterface.html#af7cb6066cb07d63bc4a186bcd4cc802d", null ],
+    [ "ComputeInfeasibleSubsystem", "classoperations__research_1_1math__opt_1_1SolverInterface.html#a80b66fb375d9ec004a47804edf5114fa", null ],
     [ "operator=", "classoperations__research_1_1math__opt_1_1SolverInterface.html#ac57a8f1b841ac381356a7069cfb5336f", null ],
-    [ "Solve", "classoperations__research_1_1math__opt_1_1SolverInterface.html#a901a72259555138e63322b5bf6c3f097", null ],
+    [ "Solve", "classoperations__research_1_1math__opt_1_1SolverInterface.html#a768ee61389619411a34c1433d6b4168d", null ],
     [ "Update", "classoperations__research_1_1math__opt_1_1SolverInterface.html#a6de754c2e507136a902230670f574c85", null ]
 ];

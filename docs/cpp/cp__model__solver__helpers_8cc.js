@@ -14,6 +14,7 @@ var cp__model__solver__helpers_8cc =
     [ "operations_research::sat::QuickSolveWithHint", "namespaceoperations__research_1_1sat.html#ab37f2f037c1a414988b378b00ae80dcf", null ],
     [ "operations_research::sat::RegisterClausesExport", "namespaceoperations__research_1_1sat.html#a63074e2e2521d97be10a61595f59d165", null ],
     [ "operations_research::sat::RegisterClausesLevelZeroImport", "namespaceoperations__research_1_1sat.html#ae9354f9bc95baa7e65765e065b38fefc", null ],
+    [ "operations_research::sat::RegisterLinear2BoundsImport", "namespaceoperations__research_1_1sat.html#ae68627ab2073615193c0ac431d2d6d31", null ],
     [ "operations_research::sat::RegisterObjectiveBestBoundExport", "namespaceoperations__research_1_1sat.html#ae41d718cabb8c89ffce625c35e884080", null ],
     [ "operations_research::sat::RegisterObjectiveBoundsImport", "namespaceoperations__research_1_1sat.html#a4f656cdcbe318b6a953aff7907fe3d32", null ],
     [ "operations_research::sat::RegisterVariableBoundsLevelZeroExport", "namespaceoperations__research_1_1sat.html#aceadbdc1d18fb949cc787a53e656d65a", null ],

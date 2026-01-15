@@ -1,8 +1,8 @@
 var classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolver =
 [
-    [ "BasisStatus", "enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolver_1_1BasisStatus.html", "enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolver_1_1BasisStatus" ],
     [ "OptimizationProblemType", "enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolver_1_1OptimizationProblemType.html", "enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolver_1_1OptimizationProblemType" ],
     [ "ResultStatus", "enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolver_1_1ResultStatus.html", "enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolver_1_1ResultStatus" ],
+    [ "BasisStatus", "enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolver_1_1BasisStatus.html", "enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolver_1_1BasisStatus" ],
     [ "MPSolver", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolver.html#a6d6bb58d5db8f6b6c5b7e66229d2a815", null ],
     [ "MPSolver", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolver.html#a0be09afcd0a7a479c3e2a28f99d8cdd9", null ],
     [ "clear", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPSolver.html#a383f49027e47246b5c412dd93e685734", null ],

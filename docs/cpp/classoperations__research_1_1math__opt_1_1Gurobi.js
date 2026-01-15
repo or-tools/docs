@@ -1,7 +1,7 @@
 var classoperations__research_1_1math__opt_1_1Gurobi =
 [
-    [ "CallbackContext", "classoperations__research_1_1math__opt_1_1Gurobi_1_1CallbackContext.html", "classoperations__research_1_1math__opt_1_1Gurobi_1_1CallbackContext" ],
     [ "SparseMat", "structoperations__research_1_1math__opt_1_1Gurobi_1_1SparseMat.html", "structoperations__research_1_1math__opt_1_1Gurobi_1_1SparseMat" ],
+    [ "CallbackContext", "classoperations__research_1_1math__opt_1_1Gurobi_1_1CallbackContext.html", "classoperations__research_1_1math__opt_1_1Gurobi_1_1CallbackContext" ],
     [ "Callback", "classoperations__research_1_1math__opt_1_1Gurobi.html#a784df1b1eb39d9858bd5c3599371f52d", null ],
     [ "~Gurobi", "classoperations__research_1_1math__opt_1_1Gurobi.html#a69c40b292457539ad9757568119b5375", null ],
     [ "AddConstr", "classoperations__research_1_1math__opt_1_1Gurobi.html#a84a71d7a23bd22472504df7e28458b65", null ],
@@ -20,8 +20,8 @@ var classoperations__research_1_1math__opt_1_1Gurobi =
     [ "DelQConstrs", "classoperations__research_1_1math__opt_1_1Gurobi.html#ac66556bf26505dbceab85238583646b8", null ],
     [ "DelSos", "classoperations__research_1_1math__opt_1_1Gurobi.html#a43892acaf942661a5e2a89b3ffb2a151", null ],
     [ "DelVars", "classoperations__research_1_1math__opt_1_1Gurobi.html#afaf57418d2fb70cfc0e1ce7ba290babc", null ],
-    [ "empty", "classoperations__research_1_1math__opt_1_1Gurobi.html#a5a77a55a6131f863309c3937e255b59e", null ],
     [ "empty", "classoperations__research_1_1math__opt_1_1Gurobi.html#acd14c3dd8750e07e52d847521317ea17", null ],
+    [ "empty", "classoperations__research_1_1math__opt_1_1Gurobi.html#a5a77a55a6131f863309c3937e255b59e", null ],
     [ "GetCharAttrArray", "classoperations__research_1_1math__opt_1_1Gurobi.html#a892ccbaef35a1583e8e2123b0a205548", null ],
     [ "GetCharAttrArray", "classoperations__research_1_1math__opt_1_1Gurobi.html#a0bbaa4b2ddb5b900f695e16548f0e485", null ],
     [ "GetCharAttrElement", "classoperations__research_1_1math__opt_1_1Gurobi.html#a2ff6da1b0a9d0e7cd1a88b9d3a74c0b8", null ],
@@ -69,6 +69,6 @@ var classoperations__research_1_1math__opt_1_1Gurobi =
     [ "ToStatus", "classoperations__research_1_1math__opt_1_1Gurobi.html#a104329cb4035730540d07c5b2afce1ea", null ],
     [ "UpdateModel", "classoperations__research_1_1math__opt_1_1Gurobi.html#aaa11e03b5c9e308a2a8b604b127f5aa4", null ],
     [ "constraints", "classoperations__research_1_1math__opt_1_1Gurobi.html#a8d7e2b716506e79f94f9096db4f45ad1", null ],
-    [ "variables", "classoperations__research_1_1math__opt_1_1Gurobi.html#a507293fa0cd90b2418a9a5bfd9101b3b", null ],
-    [ "variables", "classoperations__research_1_1math__opt_1_1Gurobi.html#a84126da1bfc481317370997e9e1e8b88", null ]
+    [ "variables", "classoperations__research_1_1math__opt_1_1Gurobi.html#a84126da1bfc481317370997e9e1e8b88", null ],
+    [ "variables", "classoperations__research_1_1math__opt_1_1Gurobi.html#a507293fa0cd90b2418a9a5bfd9101b3b", null ]
 ];

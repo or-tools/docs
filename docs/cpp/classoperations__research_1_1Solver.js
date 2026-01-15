@@ -169,6 +169,7 @@ var classoperations__research_1_1Solver =
     [ "~Solver", "classoperations__research_1_1Solver.html#a663bdb75f27a96e424ad2a7a4ba397ec", null ],
     [ "Accept", "classoperations__research_1_1Solver.html#aa22e91816042c2de04b217e1eb23ae8b", null ],
     [ "accepted_neighbors", "classoperations__research_1_1Solver.html#a15d0fb0fa6633535a9b961ca5cac150a", null ],
+    [ "AcceptSolution", "classoperations__research_1_1Solver.html#aecaf92f58d67c3bef4be9249a8a47d95", null ],
     [ "ActiveSearch", "classoperations__research_1_1Solver.html#a08d8e0071d6929feae058f159a394662", null ],
     [ "AddBacktrackAction", "classoperations__research_1_1Solver.html#a67a3f35a5b19a1ebdf4217b483068ad7", null ],
     [ "AddCastConstraint", "classoperations__research_1_1Solver.html#affe35401cd9994f370bc7d7f6aedd0b0", null ],

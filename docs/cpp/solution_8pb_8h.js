@@ -9,8 +9,8 @@ var solution_8pb_8h =
     [ "operations_research::math_opt::DualRayProto", "classoperations__research_1_1math__opt_1_1DualRayProto.html", "classoperations__research_1_1math__opt_1_1DualRayProto" ],
     [ "operations_research::math_opt::BasisProto", "classoperations__research_1_1math__opt_1_1BasisProto.html", "classoperations__research_1_1math__opt_1_1BasisProto" ],
     [ "operations_research::math_opt::SolutionProto", "classoperations__research_1_1math__opt_1_1SolutionProto.html", "classoperations__research_1_1math__opt_1_1SolutionProto" ],
-    [ "google::protobuf::is_proto_enum<::operations_research::math_opt::SolutionStatusProto >", "structgoogle_1_1protobuf_1_1is__proto__enum_3_1_1operations__research_1_1math__opt_1_1SolutionStatusProto_01_4.html", null ],
-    [ "google::protobuf::is_proto_enum<::operations_research::math_opt::BasisStatusProto >", "structgoogle_1_1protobuf_1_1is__proto__enum_3_1_1operations__research_1_1math__opt_1_1BasisStatusProto_01_4.html", null ],
+    [ "google::protobuf::is_proto_enum&lt;::operations_research::math_opt::SolutionStatusProto &gt;", "structgoogle_1_1protobuf_1_1is__proto__enum_3_1_1operations__research_1_1math__opt_1_1SolutionStatusProto_01_4.html", null ],
+    [ "google::protobuf::is_proto_enum&lt;::operations_research::math_opt::BasisStatusProto &gt;", "structgoogle_1_1protobuf_1_1is__proto__enum_3_1_1operations__research_1_1math__opt_1_1BasisStatusProto_01_4.html", null ],
     [ "PROTOBUF_INTERNAL_EXPORT_ortools_2fmath_5fopt_2fsolution_2eproto", "solution_8pb_8h.html#a22d01ab6bc236607d01e3f6b98334915", null ],
     [ "operations_research::math_opt::BasisStatusProto", "namespaceoperations__research_1_1math__opt.html#aa7a1934ba06f6cdbb5f442f43cc13fff", [
       [ "operations_research::math_opt::BASIS_STATUS_UNSPECIFIED", "namespaceoperations__research_1_1math__opt.html#aa7a1934ba06f6cdbb5f442f43cc13fffa97698d576b3f9d7caf3433ca2ad8de01", null ],

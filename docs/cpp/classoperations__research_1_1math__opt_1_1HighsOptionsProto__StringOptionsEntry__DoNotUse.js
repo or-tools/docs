@@ -1,6 +1,6 @@
 var classoperations__research_1_1math__opt_1_1HighsOptionsProto__StringOptionsEntry__DoNotUse =
 [
-    [ "SuperType", "classoperations__research_1_1math__opt_1_1HighsOptionsProto__StringOptionsEntry__DoNotUse.html#a35e4051448f2f05a414500c50e435275", null ],
+    [ "SuperType", "classoperations__research_1_1math__opt_1_1HighsOptionsProto__StringOptionsEntry__DoNotUse.html#ab73bf47fc8a31865d74f1192cc478a99", null ],
     [ "HighsOptionsProto_StringOptionsEntry_DoNotUse", "classoperations__research_1_1math__opt_1_1HighsOptionsProto__StringOptionsEntry__DoNotUse.html#af4470a8bad8ebb27b03f3e9e0a47e9ef", null ],
     [ "HighsOptionsProto_StringOptionsEntry_DoNotUse", "classoperations__research_1_1math__opt_1_1HighsOptionsProto__StringOptionsEntry__DoNotUse.html#a4d7e812112274edc40a2e5f574686db5", null ],
     [ "HighsOptionsProto_StringOptionsEntry_DoNotUse", "classoperations__research_1_1math__opt_1_1HighsOptionsProto__StringOptionsEntry__DoNotUse.html#a3acce7210c2db2cf22220fba69791c5e", null ],

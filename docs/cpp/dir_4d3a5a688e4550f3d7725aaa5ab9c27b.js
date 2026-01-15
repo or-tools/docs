@@ -11,6 +11,8 @@ var dir_4d3a5a688e4550f3d7725aaa5ab9c27b =
     [ "glop_utils.h", "glop__utils_8h.html", "glop__utils_8h" ],
     [ "glpk_interface.cc", "glpk__interface_8cc.html", "glpk__interface_8cc" ],
     [ "gurobi_interface.cc", "gurobi__interface_8cc.html", "gurobi__interface_8cc" ],
+    [ "gurobi_util.cc", "gurobi__util_8cc.html", "gurobi__util_8cc" ],
+    [ "gurobi_util.h", "gurobi__util_8h.html", "gurobi__util_8h" ],
     [ "highs_interface.cc", "highs__interface_8cc.html", "highs__interface_8cc" ],
     [ "knapsack_interface.cc", "knapsack__interface_8cc.html", "knapsack__interface_8cc" ],
     [ "linear_expr.cc", "linear__expr_8cc.html", "linear__expr_8cc" ],

@@ -19,6 +19,7 @@ var dir_80dda7a75b0dfcf996988638a63eb03a =
     [ "n_choose_k.cc", "n__choose__k_8cc.html", "n__choose__k_8cc" ],
     [ "n_choose_k.h", "n__choose__k_8h.html", "n__choose__k_8h" ],
     [ "radix_sort.h", "radix__sort_8h.html", "radix__sort_8h" ],
+    [ "space_saving_most_frequent.h", "space__saving__most__frequent_8h.html", "space__saving__most__frequent_8h" ],
     [ "sparse_permutation.cc", "sparse__permutation_8cc.html", null ],
     [ "sparse_permutation.h", "sparse__permutation_8h.html", "sparse__permutation_8h" ]
 ];

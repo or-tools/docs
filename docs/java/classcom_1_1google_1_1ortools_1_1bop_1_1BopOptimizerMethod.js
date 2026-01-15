@@ -1,7 +1,7 @@
 var classcom_1_1google_1_1ortools_1_1bop_1_1BopOptimizerMethod =
 [
-    [ "Builder", "classcom_1_1google_1_1ortools_1_1bop_1_1BopOptimizerMethod_1_1Builder.html", "classcom_1_1google_1_1ortools_1_1bop_1_1BopOptimizerMethod_1_1Builder" ],
     [ "OptimizerType", "enumcom_1_1google_1_1ortools_1_1bop_1_1BopOptimizerMethod_1_1OptimizerType.html", "enumcom_1_1google_1_1ortools_1_1bop_1_1BopOptimizerMethod_1_1OptimizerType" ],
+    [ "Builder", "classcom_1_1google_1_1ortools_1_1bop_1_1BopOptimizerMethod_1_1Builder.html", "classcom_1_1google_1_1ortools_1_1bop_1_1BopOptimizerMethod_1_1Builder" ],
     [ "equals", "classcom_1_1google_1_1ortools_1_1bop_1_1BopOptimizerMethod.html#aef45b3e8dcc29c8f5c8e3d277d634c5b", null ],
     [ "getDefaultInstance", "classcom_1_1google_1_1ortools_1_1bop_1_1BopOptimizerMethod.html#a50199b58805908634dd6296df23a04b8", null ],
     [ "getDefaultInstanceForType", "classcom_1_1google_1_1ortools_1_1bop_1_1BopOptimizerMethod.html#a9b71ed9d55871e7d3b60f85cdc12c26b", null ],

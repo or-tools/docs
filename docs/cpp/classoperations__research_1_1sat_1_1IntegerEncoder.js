@@ -22,11 +22,14 @@ var classoperations__research_1_1sat_1_1IntegerEncoder =
     [ "GetTrueLiteral", "classoperations__research_1_1sat_1_1IntegerEncoder.html#a575c98a8e638de20b5a3a5861263c732", null ],
     [ "IsFixedOrHasAssociatedLiteral", "classoperations__research_1_1sat_1_1IntegerEncoder.html#a6225ad79b815b7c047a1ac7cae7f9d5f", null ],
     [ "LiteralOrNegationHasView", "classoperations__research_1_1sat_1_1IntegerEncoder.html#a9fcdafc23f9a3bd469e4f1fa175c0c81", null ],
+    [ "NumVariables", "classoperations__research_1_1sat_1_1IntegerEncoder.html#a9c6f46861e001e55518e16f7d7d2e42b", null ],
     [ "operator=", "classoperations__research_1_1sat_1_1IntegerEncoder.html#a06d11b1d74955e3a43f40b3413f9eb05", null ],
     [ "PartialDomainEncoding", "classoperations__research_1_1sat_1_1IntegerEncoder.html#a6d9c6e26e6872022a6eca84b4d551df5", null ],
     [ "PartialGreaterThanEncoding", "classoperations__research_1_1sat_1_1IntegerEncoder.html#ab231c14715e9a2fc56ca0d12a0f3df5e", null ],
     [ "ReserveSpaceForNumVariables", "classoperations__research_1_1sat_1_1IntegerEncoder.html#a7c648e8ec1bcd260e3d4ed64b293bb28", null ],
+    [ "SearchForLiteralAtOrAfter", "classoperations__research_1_1sat_1_1IntegerEncoder.html#a917b5b01f1471df739a2038c22fef935", null ],
     [ "SearchForLiteralAtOrBefore", "classoperations__research_1_1sat_1_1IntegerEncoder.html#a77db48dfcede211913ef7ca139a4b2b6", null ],
     [ "UpdateEncodingOnInitialDomainChange", "classoperations__research_1_1sat_1_1IntegerEncoder.html#ae52e2afab935dc8da3b29e9391614b85", null ],
+    [ "VariableDomainHasHoles", "classoperations__research_1_1sat_1_1IntegerEncoder.html#adb3f55e760876b61828a2f1e8d02d52c", null ],
     [ "VariableIsFullyEncoded", "classoperations__research_1_1sat_1_1IntegerEncoder.html#a59abe9efe4246f146066483c1955e602", null ]
 ];

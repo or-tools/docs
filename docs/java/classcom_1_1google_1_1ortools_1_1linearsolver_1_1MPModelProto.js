@@ -1,7 +1,7 @@
 var classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPModelProto =
 [
-    [ "Annotation", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPModelProto_1_1Annotation.html", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPModelProto_1_1Annotation" ],
     [ "AnnotationOrBuilder", "interfacecom_1_1google_1_1ortools_1_1linearsolver_1_1MPModelProto_1_1AnnotationOrBuilder.html", "interfacecom_1_1google_1_1ortools_1_1linearsolver_1_1MPModelProto_1_1AnnotationOrBuilder" ],
+    [ "Annotation", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPModelProto_1_1Annotation.html", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPModelProto_1_1Annotation" ],
     [ "Builder", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPModelProto_1_1Builder.html", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPModelProto_1_1Builder" ],
     [ "equals", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPModelProto.html#a12359e39aa4fd9f0d4e8ebccd68ec469", null ],
     [ "getAnnotation", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPModelProto.html#a5d72eca51ac381eb6976a7e6453c4f19", null ],

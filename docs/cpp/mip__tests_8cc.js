@@ -1,12 +1,8 @@
 var mip__tests_8cc =
 [
-    [ "operations_research::math_opt::ASSERT_THAT", "namespaceoperations__research_1_1math__opt.html#a6d1f4bfd4db8175fa39484d206b0548c", null ],
-    [ "operations_research::math_opt::ASSERT_THAT", "namespaceoperations__research_1_1math__opt.html#a348517db81974ffe3a2db9033858ca36", null ],
-    [ "operations_research::math_opt::IsOkAndHolds", "namespaceoperations__research_1_1math__opt.html#ae8bd3c01fc52a20835d9711f7760f6d2", null ],
-    [ "operations_research::math_opt::IsOkAndHolds", "namespaceoperations__research_1_1math__opt.html#a21e956f6359150274d6053320d2ce867", null ],
-    [ "operations_research::math_opt::Minimize", "namespaceoperations__research_1_1math__opt.html#a3d893a0e966152540799e728ada030c2", null ],
+    [ "operations_research::math_opt::IsOkAndHolds", "namespaceoperations__research_1_1math__opt.html#a61125dd575bd7ceebd363ed1f8dc3732", null ],
     [ "operations_research::math_opt::operator<<", "namespaceoperations__research_1_1math__opt.html#a5fc72eb0039df5b65318a39f0d994467", null ],
-    [ "operations_research::math_opt::SolveWithoutUpdate", "namespaceoperations__research_1_1math__opt.html#a23972a12b0adf4bd068b93ba6d3145b6", null ],
+    [ "operations_research::math_opt::SolveWithoutUpdate", "namespaceoperations__research_1_1math__opt.html#ae736835b467ac7351ccf55eda96de4b2", null ],
     [ "operations_research::math_opt::TEST_P", "namespaceoperations__research_1_1math__opt.html#a79d2693ab59b16e7c56c6e21e608cc25", null ],
     [ "operations_research::math_opt::TEST_P", "namespaceoperations__research_1_1math__opt.html#ae38acfb58ce50489b2ce61f6ac93062d", null ],
     [ "operations_research::math_opt::TEST_P", "namespaceoperations__research_1_1math__opt.html#a38ef364687fc110f7b75c17061423059", null ],

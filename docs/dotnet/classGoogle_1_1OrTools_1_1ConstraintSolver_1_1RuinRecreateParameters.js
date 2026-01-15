@@ -25,7 +25,7 @@ var classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RuinRecreateParameters =
     [ "HasRouteSelectionMinNeighbors", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RuinRecreateParameters.html#af07f5140c6ef647f9d728008e246c9b5", null ],
     [ "HasRouteSelectionNeighborsRatio", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RuinRecreateParameters.html#a434382e29402bc323383fb3bdf638623", null ],
     [ "Parser", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RuinRecreateParameters.html#aeb4514ab4b8667ef50d9e335fa33fe8b", null ],
-    [ "RecreateStrategy", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RuinRecreateParameters.html#a4aab8d9447695976760f2e0555c914c9", null ],
+    [ "RecreateStrategy", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RuinRecreateParameters.html#a60f7859131b250ec9835850827afba6e", null ],
     [ "RouteSelectionMaxNeighbors", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RuinRecreateParameters.html#a7c1b7b99944ea96a854a8f3bc9f57727", null ],
     [ "RouteSelectionMinNeighbors", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RuinRecreateParameters.html#a5eaaee70db446745ccad2d63b71b4fa3", null ],
     [ "RouteSelectionNeighborsRatio", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1RuinRecreateParameters.html#a7019bebf18b4987437e75aa9c0c25eb2", null ],

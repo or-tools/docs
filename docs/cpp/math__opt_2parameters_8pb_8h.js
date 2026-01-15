@@ -4,9 +4,9 @@ var math__opt_2parameters_8pb_8h =
     [ "operations_research::math_opt::StrictnessProto", "classoperations__research_1_1math__opt_1_1StrictnessProto.html", "classoperations__research_1_1math__opt_1_1StrictnessProto" ],
     [ "operations_research::math_opt::SolverInitializerProto", "classoperations__research_1_1math__opt_1_1SolverInitializerProto.html", "classoperations__research_1_1math__opt_1_1SolverInitializerProto" ],
     [ "operations_research::math_opt::SolveParametersProto", "classoperations__research_1_1math__opt_1_1SolveParametersProto.html", "classoperations__research_1_1math__opt_1_1SolveParametersProto" ],
-    [ "google::protobuf::is_proto_enum<::operations_research::math_opt::SolverTypeProto >", "structgoogle_1_1protobuf_1_1is__proto__enum_3_1_1operations__research_1_1math__opt_1_1SolverTypeProto_01_4.html", null ],
-    [ "google::protobuf::is_proto_enum<::operations_research::math_opt::LPAlgorithmProto >", "structgoogle_1_1protobuf_1_1is__proto__enum_3_1_1operations__research_1_1math__opt_1_1LPAlgorithmProto_01_4.html", null ],
-    [ "google::protobuf::is_proto_enum<::operations_research::math_opt::EmphasisProto >", "structgoogle_1_1protobuf_1_1is__proto__enum_3_1_1operations__research_1_1math__opt_1_1EmphasisProto_01_4.html", null ],
+    [ "google::protobuf::is_proto_enum&lt;::operations_research::math_opt::SolverTypeProto &gt;", "structgoogle_1_1protobuf_1_1is__proto__enum_3_1_1operations__research_1_1math__opt_1_1SolverTypeProto_01_4.html", null ],
+    [ "google::protobuf::is_proto_enum&lt;::operations_research::math_opt::LPAlgorithmProto &gt;", "structgoogle_1_1protobuf_1_1is__proto__enum_3_1_1operations__research_1_1math__opt_1_1LPAlgorithmProto_01_4.html", null ],
+    [ "google::protobuf::is_proto_enum&lt;::operations_research::math_opt::EmphasisProto &gt;", "structgoogle_1_1protobuf_1_1is__proto__enum_3_1_1operations__research_1_1math__opt_1_1EmphasisProto_01_4.html", null ],
     [ "PROTOBUF_INTERNAL_EXPORT_ortools_2fmath_5fopt_2fparameters_2eproto", "math__opt_2parameters_8pb_8h.html#a1e71512860c6ca504ba6f07afebf94d9", null ],
     [ "operations_research::math_opt::EmphasisProto", "namespaceoperations__research_1_1math__opt.html#a0c2f9d11fda7d073aad0271301ef63c7", [
       [ "operations_research::math_opt::EMPHASIS_UNSPECIFIED", "namespaceoperations__research_1_1math__opt.html#a0c2f9d11fda7d073aad0271301ef63c7ac3ff52ff9cc69d3754cb1cd48aba2530", null ],

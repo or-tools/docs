@@ -1,8 +1,8 @@
 var k__shortest__paths_8h =
 [
-    [ "operations_research::KShortestPaths< GraphType >", "structoperations__research_1_1KShortestPaths.html", "structoperations__research_1_1KShortestPaths" ],
-    [ "operations_research::internal::PathWithPriority< GraphType >", "classoperations__research_1_1internal_1_1PathWithPriority.html", "classoperations__research_1_1internal_1_1PathWithPriority" ],
-    [ "operations_research::internal::UnderlyingContainerAdapter< Container >", "classoperations__research_1_1internal_1_1UnderlyingContainerAdapter.html", "classoperations__research_1_1internal_1_1UnderlyingContainerAdapter" ],
+    [ "operations_research::KShortestPaths&lt; GraphType &gt;", "structoperations__research_1_1KShortestPaths.html", "structoperations__research_1_1KShortestPaths" ],
+    [ "operations_research::internal::PathWithPriority&lt; GraphType &gt;", "classoperations__research_1_1internal_1_1PathWithPriority.html", "classoperations__research_1_1internal_1_1PathWithPriority" ],
+    [ "operations_research::internal::UnderlyingContainerAdapter&lt; Container &gt;", "classoperations__research_1_1internal_1_1UnderlyingContainerAdapter.html", "classoperations__research_1_1internal_1_1UnderlyingContainerAdapter" ],
     [ "operations_research::internal::ComputePathLength", "namespaceoperations__research_1_1internal.html#ab41b16e0b8c7afb43c5a08689f25281b", null ],
     [ "operations_research::internal::ComputeShortestPath", "namespaceoperations__research_1_1internal.html#a93a41e2cca1368b57841e59c3d0727c6", null ],
     [ "operations_research::internal::FindArcIndex", "namespaceoperations__research_1_1internal.html#ab1942550b24debfcb0dcf5b69ba18a5f", null ],

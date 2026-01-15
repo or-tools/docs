@@ -9,5 +9,5 @@ var searchData=
   ['eob_5fact_5flast_5fmatch_6',['EOB_ACT_LAST_MATCH',['../parser_8yy_8cc.html#ad1a0b5ebcabffe388e9e9ebb2619c1fb',1,'parser.yy.cc']]],
   ['expect_5fcomparable_7',['EXPECT_COMPARABLE',['../fp__utils_8h.html#a417a0547a8cf6eff90b4430609e054b0',1,'fp_utils.h']]],
   ['expect_5fnotcomparable_8',['EXPECT_NOTCOMPARABLE',['../fp__utils_8h.html#a9ba22f5b9700b4d8930219ecd6cf5a1a',1,'fp_utils.h']]],
-  ['expect_5fok_9',['EXPECT_OK',['../status__matchers_8h.html#a7eb2dc501defcfa741e7c1f943cf9295',1,'status_matchers.h']]]
+  ['expect_5fok_9',['EXPECT_OK',['../gmock_8h.html#a7eb2dc501defcfa741e7c1f943cf9295',1,'gmock.h']]]
 ];

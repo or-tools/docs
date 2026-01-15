@@ -12,17 +12,17 @@ var classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IteratedLocalSearchParameters 
     [ "MergeFrom", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IteratedLocalSearchParameters.html#a73c70bc8e97e4a520a4165ff8b0cc66b", null ],
     [ "ToString", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IteratedLocalSearchParameters.html#af404d8056119a4b7869ef4fc8053eeb1", null ],
     [ "WriteTo", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IteratedLocalSearchParameters.html#aa2afbdfac5705618e06717097b2fb8bd", null ],
-    [ "AcceptanceStrategyFieldNumber", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IteratedLocalSearchParameters.html#ad9d12d61a31ac0acaaddd8a7be4599a2", null ],
+    [ "BestSolutionAcceptanceStrategyFieldNumber", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IteratedLocalSearchParameters.html#a619220f90918eafbf2a41a32adc2f6eb", null ],
     [ "ImprovePerturbedSolutionFieldNumber", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IteratedLocalSearchParameters.html#a7c57b874ce069191d9331ead580378ad", null ],
     [ "PerturbationStrategyFieldNumber", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IteratedLocalSearchParameters.html#a331c172fd425914843c89ed815126d05", null ],
+    [ "ReferenceSolutionAcceptanceStrategyFieldNumber", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IteratedLocalSearchParameters.html#a39ed1f9c336e26549019440596978869", null ],
     [ "RuinRecreateParametersFieldNumber", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IteratedLocalSearchParameters.html#a64d75551aa09087faf2b2058f0c5b000", null ],
-    [ "SimulatedAnnealingParametersFieldNumber", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IteratedLocalSearchParameters.html#aef367b6079dbb7dde6e84fcbe1ac85ef", null ],
-    [ "AcceptanceStrategy", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IteratedLocalSearchParameters.html#a13c805ff00e8abf1460c498ae1693ef4", null ],
+    [ "BestSolutionAcceptanceStrategy", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IteratedLocalSearchParameters.html#a197467eb930deac081b76d01339d0b1f", null ],
     [ "Descriptor", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IteratedLocalSearchParameters.html#a09d1cbdef17737261a42c07b4c20716d", null ],
     [ "HasImprovePerturbedSolution", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IteratedLocalSearchParameters.html#aab388d4e16fe1642a91d85ca86f183d4", null ],
     [ "ImprovePerturbedSolution", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IteratedLocalSearchParameters.html#a3462d29d776be05f32bb57cf0394d1fc", null ],
     [ "Parser", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IteratedLocalSearchParameters.html#a8d7fe536d0ec8f7c58f60cb36e5fbd0e", null ],
     [ "PerturbationStrategy", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IteratedLocalSearchParameters.html#a3840f71a36ead3cf3c8135a0d36a1bce", null ],
-    [ "RuinRecreateParameters", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IteratedLocalSearchParameters.html#a9db52edb8010bd1a26203b8d27b846e0", null ],
-    [ "SimulatedAnnealingParameters", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IteratedLocalSearchParameters.html#a4d544d6d07876bc2e1e36f745164495a", null ]
+    [ "ReferenceSolutionAcceptanceStrategy", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IteratedLocalSearchParameters.html#a5c403268ca4231ee12d9fe18fffd7188", null ],
+    [ "RuinRecreateParameters", "classGoogle_1_1OrTools_1_1ConstraintSolver_1_1IteratedLocalSearchParameters.html#a9db52edb8010bd1a26203b8d27b846e0", null ]
 ];

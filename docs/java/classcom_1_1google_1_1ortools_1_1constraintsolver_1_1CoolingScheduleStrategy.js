@@ -1,7 +1,7 @@
 var classcom_1_1google_1_1ortools_1_1constraintsolver_1_1CoolingScheduleStrategy =
 [
-    [ "Builder", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1CoolingScheduleStrategy_1_1Builder.html", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1CoolingScheduleStrategy_1_1Builder" ],
     [ "Value", "enumcom_1_1google_1_1ortools_1_1constraintsolver_1_1CoolingScheduleStrategy_1_1Value.html", "enumcom_1_1google_1_1ortools_1_1constraintsolver_1_1CoolingScheduleStrategy_1_1Value" ],
+    [ "Builder", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1CoolingScheduleStrategy_1_1Builder.html", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1CoolingScheduleStrategy_1_1Builder" ],
     [ "equals", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1CoolingScheduleStrategy.html#af3d4b0a8c54d7c828c6bcf27add78fa0", null ],
     [ "getDefaultInstance", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1CoolingScheduleStrategy.html#aed385c32c75ec3837478822d0ed1f5ac", null ],
     [ "getDefaultInstanceForType", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1CoolingScheduleStrategy.html#a66e904c2f8d212dc1f83949ba90eabea", null ],

@@ -30,5 +30,7 @@ var searchData=
   ['originalnumvariablesfieldnumber_27',['OriginalNumVariablesFieldNumber',['../classGoogle_1_1OrTools_1_1Sat_1_1LinearBooleanProblem.html#ae7dfd5e5f003c1a02fa029a60c8cf077',1,'Google::OrTools::Sat::LinearBooleanProblem']]],
   ['originalproblemstatsfieldnumber_28',['OriginalProblemStatsFieldNumber',['../classGoogle_1_1OrTools_1_1PDLP_1_1SolveLog.html#ae3ec09eb9d189a411fef9f420b678bef',1,'Google::OrTools::PDLP::SolveLog']]],
   ['oropt_29',['OROPT',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1Solver.html#af8e9e5bd7e7f7b2b12bfad102e677fe4',1,'Google::OrTools::ConstraintSolver::Solver']]],
-  ['outside_5fsearch_30',['OUTSIDE_SEARCH',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1Solver.html#a9b81668fd61c2ba05490704722900a48',1,'Google::OrTools::ConstraintSolver::Solver']]]
+  ['outputdratprooffieldnumber_30',['OutputDratProofFieldNumber',['../classGoogle_1_1OrTools_1_1Sat_1_1SatParameters.html#a3e1b0842b271dc6e2f5488d076ffce09',1,'Google::OrTools::Sat::SatParameters']]],
+  ['outputlratprooffieldnumber_31',['OutputLratProofFieldNumber',['../classGoogle_1_1OrTools_1_1Sat_1_1SatParameters.html#aa9e6110db7e427892d542d8d3035668b',1,'Google::OrTools::Sat::SatParameters']]],
+  ['outside_5fsearch_32',['OUTSIDE_SEARCH',['../classGoogle_1_1OrTools_1_1ConstraintSolver_1_1Solver.html#a9b81668fd61c2ba05490704722900a48',1,'Google::OrTools::ConstraintSolver::Solver']]]
 ];

@@ -1,7 +1,7 @@
 var classcom_1_1google_1_1ortools_1_1bop_1_1BopParameters =
 [
-    [ "Builder", "classcom_1_1google_1_1ortools_1_1bop_1_1BopParameters_1_1Builder.html", "classcom_1_1google_1_1ortools_1_1bop_1_1BopParameters_1_1Builder" ],
     [ "ThreadSynchronizationType", "enumcom_1_1google_1_1ortools_1_1bop_1_1BopParameters_1_1ThreadSynchronizationType.html", "enumcom_1_1google_1_1ortools_1_1bop_1_1BopParameters_1_1ThreadSynchronizationType" ],
+    [ "Builder", "classcom_1_1google_1_1ortools_1_1bop_1_1BopParameters_1_1Builder.html", "classcom_1_1google_1_1ortools_1_1bop_1_1BopParameters_1_1Builder" ],
     [ "equals", "classcom_1_1google_1_1ortools_1_1bop_1_1BopParameters.html#a517da4de6f535b1fb7d7ec3e8048af03", null ],
     [ "getComputeEstimatedImpact", "classcom_1_1google_1_1ortools_1_1bop_1_1BopParameters.html#a832271bc979399224277c67e86d9f05f", null ],
     [ "getDecomposedProblemMinTimeInSeconds", "classcom_1_1google_1_1ortools_1_1bop_1_1BopParameters.html#adbfcf6f0eaac6b225b1c18ffe8e4517c", null ],

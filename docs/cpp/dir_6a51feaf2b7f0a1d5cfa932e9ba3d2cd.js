@@ -30,6 +30,7 @@ var dir_6a51feaf2b7f0a1d5cfa932e9ba3d2cd =
     [ "pdlp_bridge.h", "pdlp__bridge_8h.html", "pdlp__bridge_8h" ],
     [ "pdlp_solver.cc", "pdlp__solver_8cc.html", "pdlp__solver_8cc" ],
     [ "pdlp_solver.h", "pdlp__solver_8h.html", "pdlp__solver_8h" ],
+    [ "xpress.proto", "xpress_8proto.html", null ],
     [ "xpress_solver.cc", "xpress__solver_8cc.html", "xpress__solver_8cc" ],
     [ "xpress_solver.h", "xpress__solver_8h.html", "xpress__solver_8h" ]
 ];

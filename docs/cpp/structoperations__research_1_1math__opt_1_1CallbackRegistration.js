@@ -1,6 +1,7 @@
 var structoperations__research_1_1math__opt_1_1CallbackRegistration =
 [
     [ "CheckModelStorage", "structoperations__research_1_1math__opt_1_1CallbackRegistration.html#a566b989ab7f028cfbda6a3f7ae924046", null ],
+    [ "FromProto", "structoperations__research_1_1math__opt_1_1CallbackRegistration.html#a1cfa73e06b8f05666fdbb23468415054", null ],
     [ "Proto", "structoperations__research_1_1math__opt_1_1CallbackRegistration.html#af1f794efe849578adb5bba4417e014b3", null ],
     [ "add_cuts", "structoperations__research_1_1math__opt_1_1CallbackRegistration.html#afea83dd11eb948eb0ab02fd78d31bb13", null ],
     [ "add_lazy_constraints", "structoperations__research_1_1math__opt_1_1CallbackRegistration.html#a43b10c70694c4e71ee4776eb8d84fd94", null ],

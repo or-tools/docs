@@ -1,8 +1,8 @@
 var lp__types_8h =
 [
-    [ "operations_research::glop::StrictITISpan< IntType, T >", "classoperations__research_1_1glop_1_1StrictITISpan.html", "classoperations__research_1_1glop_1_1StrictITISpan" ],
-    [ "operations_research::glop::StrictITIVector< IntType, T, Alloc >", "classoperations__research_1_1glop_1_1StrictITIVector.html", "classoperations__research_1_1glop_1_1StrictITIVector" ],
-    [ "operations_research::glop::VectorIterator< EntryType >", "classoperations__research_1_1glop_1_1VectorIterator.html", "classoperations__research_1_1glop_1_1VectorIterator" ],
+    [ "operations_research::glop::StrictITISpan&lt; IntType, T &gt;", "classoperations__research_1_1glop_1_1StrictITISpan.html", "classoperations__research_1_1glop_1_1StrictITISpan" ],
+    [ "operations_research::glop::StrictITIVector&lt; IntType, T, Alloc &gt;", "classoperations__research_1_1glop_1_1StrictITIVector.html", "classoperations__research_1_1glop_1_1StrictITIVector" ],
+    [ "operations_research::glop::VectorIterator&lt; EntryType &gt;", "classoperations__research_1_1glop_1_1VectorIterator.html", "classoperations__research_1_1glop_1_1VectorIterator" ],
     [ "operations_research::glop::ColIndexVector", "namespaceoperations__research_1_1glop.html#a295e4600b9b815bc4896861615a94766", null ],
     [ "operations_research::glop::ColMapping", "namespaceoperations__research_1_1glop.html#a314e1ea9ba4b7c999b4ab2dd4fd1f69c", null ],
     [ "operations_research::glop::ColToRowMapping", "namespaceoperations__research_1_1glop.html#a1d6c6ee1eb1934f3e42b96c0f3442b30", null ],

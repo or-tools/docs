@@ -8,8 +8,7 @@ var searchData=
   ['quadratic_5fconstraint_5fupper_5fbound_5',['QUADRATIC_CONSTRAINT_UPPER_BOUND',['../classortools_1_1math__opt_1_1elemental_1_1python_1_1enums_1_1DoubleAttr1.html#aee88fa73344ebaebcae8ade8962fb0a4',1,'ortools::math_opt::elemental::python::enums::DoubleAttr1']]],
   ['quadratic_5fdual_5fvalues_6',['quadratic_dual_values',['../classortools_1_1math__opt_1_1python_1_1solution_1_1DualSolution.html#a9cdd2cf9df5ba57c5fe3bb6f7a14b100',1,'ortools::math_opt::python::solution::DualSolution']]],
   ['quadratic_5fdual_5fvalues_5ffilter_7',['quadratic_dual_values_filter',['../classortools_1_1math__opt_1_1python_1_1model__parameters_1_1ModelSolveParameters.html#a64cd38fc689fb6bc030449ddc5eae1cf',1,'ortools::math_opt::python::model_parameters::ModelSolveParameters']]],
-  ['quadratic_5fobjective_5fcoefficients_8',['quadratic_objective_coefficients',['../classortools_1_1math__opt_1_1python_1_1hash__model__storage_1_1__UpdateTracker.html#a660999a944d1978c35828d0755119988',1,'ortools::math_opt::python::hash_model_storage::_UpdateTracker']]],
-  ['quadratic_5fterms_9',['quadratic_terms',['../classortools_1_1math__opt_1_1python_1_1variables_1_1__QuadraticProcessedElements.html#aa27d46cf00647b5530d91c3f0e414a92',1,'ortools::math_opt::python::variables::_QuadraticProcessedElements']]],
-  ['quadraticconstraintfilter_10',['QuadraticConstraintFilter',['../namespaceortools_1_1math__opt_1_1python_1_1sparse__containers.html#a2daa83fe147bf7405f87b64e495571a9',1,'ortools::math_opt::python::sparse_containers']]],
-  ['quadratictypes_11',['QuadraticTypes',['../namespaceortools_1_1math__opt_1_1python_1_1variables.html#abdae9b83a96581cfaf7f21626591f2bc',1,'ortools::math_opt::python::variables']]]
+  ['quadratic_5fterms_8',['quadratic_terms',['../classortools_1_1math__opt_1_1python_1_1variables_1_1__QuadraticProcessedElements.html#aa27d46cf00647b5530d91c3f0e414a92',1,'ortools::math_opt::python::variables::_QuadraticProcessedElements']]],
+  ['quadraticconstraintfilter_9',['QuadraticConstraintFilter',['../namespaceortools_1_1math__opt_1_1python_1_1sparse__containers.html#a2daa83fe147bf7405f87b64e495571a9',1,'ortools::math_opt::python::sparse_containers']]],
+  ['quadratictypes_10',['QuadraticTypes',['../namespaceortools_1_1math__opt_1_1python_1_1variables.html#abdae9b83a96581cfaf7f21626591f2bc',1,'ortools::math_opt::python::variables']]]
 ];

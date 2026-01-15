@@ -3,7 +3,7 @@ var routes__support__graph_8pb_8cc =
     [ "operations_research::sat::ArcLpValueDefaultTypeInternal", "structoperations__research_1_1sat_1_1ArcLpValueDefaultTypeInternal.html", "structoperations__research_1_1sat_1_1ArcLpValueDefaultTypeInternal" ],
     [ "operations_research::sat::RoutesSupportGraphProtoDefaultTypeInternal", "structoperations__research_1_1sat_1_1RoutesSupportGraphProtoDefaultTypeInternal.html", "structoperations__research_1_1sat_1_1RoutesSupportGraphProtoDefaultTypeInternal" ],
     [ "operations_research::sat::ArcLpValue::_Internal", "classoperations__research_1_1sat_1_1ArcLpValue_1_1__Internal.html", "classoperations__research_1_1sat_1_1ArcLpValue_1_1__Internal" ],
-    [ "operations_research::sat::RoutesSupportGraphProto::_Internal", "classoperations__research_1_1sat_1_1RoutesSupportGraphProto_1_1__Internal.html", null ],
+    [ "operations_research::sat::RoutesSupportGraphProto::_Internal", "classoperations__research_1_1sat_1_1RoutesSupportGraphProto_1_1__Internal.html", "classoperations__research_1_1sat_1_1RoutesSupportGraphProto_1_1__Internal" ],
     [ "ABSL_ATTRIBUTE_SECTION_VARIABLE", "routes__support__graph_8pb_8cc.html#a3df50e0c093b7b168e2e86a80f4b0aa2", null ],
     [ "operations_research::sat::_ArcLpValue_default_instance_", "namespaceoperations__research_1_1sat.html#a24adb16eaf2897aa8736fac85cf836bb", null ],
     [ "operations_research::sat::_RoutesSupportGraphProto_default_instance_", "namespaceoperations__research_1_1sat.html#ae42c06b35b39cff7f508c3e761850942", null ],

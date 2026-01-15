@@ -1,6 +1,7 @@
 var search__stats_8pb_8h =
 [
     [ "TableStruct_ortools_2fconstraint_5fsolver_2fsearch_5fstats_2eproto", "structTableStruct__ortools__2fconstraint__5fsolver__2fsearch__5fstats__2eproto.html", "structTableStruct__ortools__2fconstraint__5fsolver__2fsearch__5fstats__2eproto" ],
+    [ "operations_research::SubSolverStatistics", "classoperations__research_1_1SubSolverStatistics.html", "classoperations__research_1_1SubSolverStatistics" ],
     [ "operations_research::LocalSearchStatistics_LocalSearchOperatorStatistics", "classoperations__research_1_1LocalSearchStatistics__LocalSearchOperatorStatistics.html", "classoperations__research_1_1LocalSearchStatistics__LocalSearchOperatorStatistics" ],
     [ "operations_research::LocalSearchStatistics_LocalSearchFilterStatistics", "classoperations__research_1_1LocalSearchStatistics__LocalSearchFilterStatistics.html", "classoperations__research_1_1LocalSearchStatistics__LocalSearchFilterStatistics" ],
     [ "operations_research::LocalSearchStatistics_FirstSolutionStatistics", "classoperations__research_1_1LocalSearchStatistics__FirstSolutionStatistics.html", "classoperations__research_1_1LocalSearchStatistics__FirstSolutionStatistics" ],

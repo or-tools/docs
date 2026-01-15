@@ -1,7 +1,7 @@
 var classoperations__research_1_1BlossomGraph =
 [
-    [ "Edge", "structoperations__research_1_1BlossomGraph_1_1Edge.html", "structoperations__research_1_1BlossomGraph_1_1Edge" ],
     [ "Node", "structoperations__research_1_1BlossomGraph_1_1Node.html", "structoperations__research_1_1BlossomGraph_1_1Node" ],
+    [ "Edge", "structoperations__research_1_1BlossomGraph_1_1Edge.html", "structoperations__research_1_1BlossomGraph_1_1Edge" ],
     [ "BlossomGraph", "classoperations__research_1_1BlossomGraph.html#a8d41cc374203dfdbbfd514f00c2d6c2a", null ],
     [ "AddEdge", "classoperations__research_1_1BlossomGraph.html#a00f407f23e991a1becbc391f7d737fe6", null ],
     [ "Augment", "classoperations__research_1_1BlossomGraph.html#a1cc997de6330ea47db84ebfbc97c3855", null ],

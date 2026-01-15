@@ -1,7 +1,7 @@
 var classoperations__research_1_1math__opt_1_1BaseSolver =
 [
-    [ "ComputeInfeasibleSubsystemArgs", "structoperations__research_1_1math__opt_1_1BaseSolver_1_1ComputeInfeasibleSubsystemArgs.html", "structoperations__research_1_1math__opt_1_1BaseSolver_1_1ComputeInfeasibleSubsystemArgs" ],
     [ "SolveArgs", "structoperations__research_1_1math__opt_1_1BaseSolver_1_1SolveArgs.html", "structoperations__research_1_1math__opt_1_1BaseSolver_1_1SolveArgs" ],
+    [ "ComputeInfeasibleSubsystemArgs", "structoperations__research_1_1math__opt_1_1BaseSolver_1_1ComputeInfeasibleSubsystemArgs.html", "structoperations__research_1_1math__opt_1_1BaseSolver_1_1ComputeInfeasibleSubsystemArgs" ],
     [ "Callback", "classoperations__research_1_1math__opt_1_1BaseSolver.html#a96c1cc00526718fbec925feed46e9b4e", null ],
     [ "MessageCallback", "classoperations__research_1_1math__opt_1_1BaseSolver.html#acd55f169e786f76246d1b2db6434fa60", null ],
     [ "BaseSolver", "classoperations__research_1_1math__opt_1_1BaseSolver.html#a7728a6e308dda765ce3cac41a1de3286", null ],

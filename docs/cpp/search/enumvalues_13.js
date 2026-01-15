@@ -8,7 +8,9 @@ var searchData=
   ['undefined_5ftype_5',['UNDEFINED_TYPE',['../classoperations__research_1_1routing_1_1TspLibParser.html#a594be2cd183e9a489f2fcd0ab0782e5ba47b95722bdbe85675db14232d68a7862',1,'operations_research::routing::TspLibParser']]],
   ['unknown_6',['UNKNOWN',['../classoperations__research_1_1sat_1_1DratChecker.html#a0b1c77a2d9b42a612c9cbbb6a49c49a3ac23eb362d94850998d66868de9bb91a0',1,'operations_research::sat::DratChecker::UNKNOWN'],['../classoperations__research_1_1sat_1_1OrthogonalPackingResult.html#a7163e58c7b38554162acc73efe550ce8a696b031073e74bf2cb98e5ef201d4aa3',1,'operations_research::sat::OrthogonalPackingResult::UNKNOWN'],['../namespaceoperations__research_1_1sat.html#ac14a394f629f2cf1070b84bce2e427cea693e3d1636a488a456c173453c45cc14',1,'operations_research::sat::UNKNOWN']]],
   ['unknown_5fstatus_7',['UNKNOWN_STATUS',['../namespaceoperations__research_1_1mb.html#a2b7111e55f315cfb7bc2696f2f92a4b9aebd7dc6666d39d306603ae4d17622089',1,'operations_research::mb']]],
-  ['unspecified_8',['UNSPECIFIED',['../namespaceoperations__research.html#a744e7cc90d56b2c503520ee1f97fc1dbab4f91414920a046da6b20cd63a2796e6',1,'operations_research']]],
-  ['upper_5fand_5flower_5fbounded_9',['UPPER_AND_LOWER_BOUNDED',['../namespaceoperations__research_1_1glop.html#aa6d931570faed03245426d721087777ea62e32b9a6efb029208f576ee123b459f',1,'operations_research::glop']]],
-  ['upper_5fbounded_10',['UPPER_BOUNDED',['../namespaceoperations__research_1_1glop.html#aa6d931570faed03245426d721087777eae7243c883ff6508ee41b3b1339a7e8f1',1,'operations_research::glop']]]
+  ['unordered_8',['UNORDERED',['../classoperations__research_1_1gtl_1_1TopN.html#a9698f740f22690da5ce7cea4a0417af5a7e174c93e0a298a563ac5a50f3bc2e29',1,'operations_research::gtl::TopN']]],
+  ['unspecified_9',['UNSPECIFIED',['../namespaceoperations__research.html#a744e7cc90d56b2c503520ee1f97fc1dbab4f91414920a046da6b20cd63a2796e6',1,'operations_research']]],
+  ['updated_10',['UPDATED',['../classoperations__research_1_1sat_1_1BestBinaryRelationBounds.html#a440173824fec3c8bbc76bddfcbae2761ac5d66c61a88f1b214933a91fda1e13f5',1,'operations_research::sat::BestBinaryRelationBounds']]],
+  ['upper_5fand_5flower_5fbounded_11',['UPPER_AND_LOWER_BOUNDED',['../namespaceoperations__research_1_1glop.html#aa6d931570faed03245426d721087777ea62e32b9a6efb029208f576ee123b459f',1,'operations_research::glop']]],
+  ['upper_5fbounded_12',['UPPER_BOUNDED',['../namespaceoperations__research_1_1glop.html#aa6d931570faed03245426d721087777eae7243c883ff6508ee41b3b1339a7e8f1',1,'operations_research::glop']]]
 ];

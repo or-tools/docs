@@ -9,7 +9,7 @@ var course__scheduling_8pb_8h =
     [ "operations_research::ClassAssignment", "classoperations__research_1_1ClassAssignment.html", "classoperations__research_1_1ClassAssignment" ],
     [ "operations_research::CourseSchedulingResult", "classoperations__research_1_1CourseSchedulingResult.html", "classoperations__research_1_1CourseSchedulingResult" ],
     [ "operations_research::CourseSchedulingModel", "classoperations__research_1_1CourseSchedulingModel.html", "classoperations__research_1_1CourseSchedulingModel" ],
-    [ "google::protobuf::is_proto_enum<::operations_research::CourseSchedulingResultStatus >", "structgoogle_1_1protobuf_1_1is__proto__enum_3_1_1operations__research_1_1CourseSchedulingResultStatus_01_4.html", null ],
+    [ "google::protobuf::is_proto_enum&lt;::operations_research::CourseSchedulingResultStatus &gt;", "structgoogle_1_1protobuf_1_1is__proto__enum_3_1_1operations__research_1_1CourseSchedulingResultStatus_01_4.html", null ],
     [ "PROTOBUF_INTERNAL_EXPORT_ortools_2fscheduling_2fcourse_5fscheduling_2eproto", "course__scheduling_8pb_8h.html#a6138bdc0da16e32f4bfd376da93ffb9f", null ],
     [ "operations_research::CourseSchedulingResultStatus", "namespaceoperations__research.html#af875c5f94469b32490172da94bd8ce15", [
       [ "operations_research::COURSE_SCHEDULING_RESULT_STATUS_UNSPECIFIED", "namespaceoperations__research.html#af875c5f94469b32490172da94bd8ce15aed82f45e43c5ab32351cd7636dbd89a1", null ],

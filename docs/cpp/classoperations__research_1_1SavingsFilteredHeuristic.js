@@ -2,7 +2,6 @@ var classoperations__research_1_1SavingsFilteredHeuristic =
 [
     [ "Saving", "structoperations__research_1_1SavingsFilteredHeuristic_1_1Saving.html", "structoperations__research_1_1SavingsFilteredHeuristic_1_1Saving" ],
     [ "SavingsContainer", "classoperations__research_1_1SavingsFilteredHeuristic_1_1SavingsContainer.html", "classoperations__research_1_1SavingsFilteredHeuristic_1_1SavingsContainer" ],
-    [ "SavingsParameters", "structoperations__research_1_1SavingsFilteredHeuristic_1_1SavingsParameters.html", "structoperations__research_1_1SavingsFilteredHeuristic_1_1SavingsParameters" ],
     [ "SavingsFilteredHeuristic", "classoperations__research_1_1SavingsFilteredHeuristic.html#a4a540f428bcc19feb0117845b7968e72", null ],
     [ "~SavingsFilteredHeuristic", "classoperations__research_1_1SavingsFilteredHeuristic.html#a773260b29aa581327f7673afa7c00df8", null ],
     [ "BuildRoutesFromSavings", "classoperations__research_1_1SavingsFilteredHeuristic.html#a2a7f5526d313f48a6390996555518196", null ],

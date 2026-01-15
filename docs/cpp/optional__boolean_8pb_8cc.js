@@ -9,5 +9,5 @@ var optional__boolean_8pb_8cc =
     [ "file_level_enum_descriptors_ortools_2futil_2foptional_5fboolean_2eproto", "optional__boolean_8pb_8cc.html#ab02b5a881ab7cb7a0e10b40dcd084482", null ],
     [ "file_level_service_descriptors_ortools_2futil_2foptional_5fboolean_2eproto", "optional__boolean_8pb_8cc.html#a0fa8baddd28659b7660334d32a6b3c5c", null ],
     [ "operations_research::OptionalBoolean_internal_data_", "namespaceoperations__research.html#a8009766145daccbfff3f77af5c2955d1", null ],
-    [ "schemas", "optional__boolean_8pb_8cc.html#aadacf2ab6a7fd9340e6423eeb2d4137e", null ]
+    [ "schemas", "optional__boolean_8pb_8cc.html#a96ef505a6f9f6d99900989ce8cb550f0", null ]
 ];

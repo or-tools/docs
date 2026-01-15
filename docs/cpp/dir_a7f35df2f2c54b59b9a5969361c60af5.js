@@ -6,6 +6,8 @@ var dir_a7f35df2f2c54b59b9a5969361c60af5 =
     [ "demon_profiler.pb.h", "demon__profiler_8pb_8h.html", "demon__profiler_8pb_8h" ],
     [ "routing_enums.pb.cc", "routing__enums_8pb_8cc.html", "routing__enums_8pb_8cc" ],
     [ "routing_enums.pb.h", "routing__enums_8pb_8h.html", "routing__enums_8pb_8h" ],
+    [ "routing_heuristic_parameters.pb.cc", "routing__heuristic__parameters_8pb_8cc.html", "routing__heuristic__parameters_8pb_8cc" ],
+    [ "routing_heuristic_parameters.pb.h", "routing__heuristic__parameters_8pb_8h.html", "routing__heuristic__parameters_8pb_8h" ],
     [ "routing_ils.pb.cc", "routing__ils_8pb_8cc.html", "routing__ils_8pb_8cc" ],
     [ "routing_ils.pb.h", "routing__ils_8pb_8h.html", "routing__ils_8pb_8h" ],
     [ "routing_parameters.pb.cc", "routing__parameters_8pb_8cc.html", "routing__parameters_8pb_8cc" ],

@@ -1,9 +1,9 @@
 var classoperations__research_1_1SolveInterrupter =
 [
-    [ "Callback", "classoperations__research_1_1SolveInterrupter.html#a73b51bbdfb2e30ca305360491b842aca", null ],
+    [ "Callback", "classoperations__research_1_1SolveInterrupter.html#a361fa0d775088f4cc3b4ca4ca4e493cd", null ],
     [ "SolveInterrupter", "classoperations__research_1_1SolveInterrupter.html#a4425232c56a2cdc5953b8687337cb620", null ],
     [ "SolveInterrupter", "classoperations__research_1_1SolveInterrupter.html#ad948fbf3c71c128b4013af939d69bc6b", null ],
-    [ "AddInterruptionCallback", "classoperations__research_1_1SolveInterrupter.html#abfbd4d5716b77c46b6a806b69392cf97", null ],
+    [ "AddInterruptionCallback", "classoperations__research_1_1SolveInterrupter.html#a8759af0e50fe4e5756f96c5807d17508", null ],
     [ "DEFINE_STRONG_INT_TYPE", "classoperations__research_1_1SolveInterrupter.html#ac664c947bdf20a0bfdcaa176256e79c2", null ],
     [ "Interrupt", "classoperations__research_1_1SolveInterrupter.html#acd281d4bae468c0fa1a7d2f7116a3489", null ],
     [ "IsInterrupted", "classoperations__research_1_1SolveInterrupter.html#aa2ba0ab347f22369858c9bfbe4b8c218", null ],

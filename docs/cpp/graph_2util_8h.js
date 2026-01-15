@@ -1,7 +1,7 @@
 var graph_2util_8h =
 [
-    [ "util::UndirectedAdjacencyListsOfDirectedGraph< Graph >", "classutil_1_1UndirectedAdjacencyListsOfDirectedGraph.html", "classutil_1_1UndirectedAdjacencyListsOfDirectedGraph" ],
-    [ "util::UndirectedAdjacencyListsOfDirectedGraph< Graph >::AdjacencyListIterator", "classutil_1_1UndirectedAdjacencyListsOfDirectedGraph_1_1AdjacencyListIterator.html", "classutil_1_1UndirectedAdjacencyListsOfDirectedGraph_1_1AdjacencyListIterator" ],
+    [ "util::UndirectedAdjacencyListsOfDirectedGraph&lt; Graph &gt;", "classutil_1_1UndirectedAdjacencyListsOfDirectedGraph.html", "classutil_1_1UndirectedAdjacencyListsOfDirectedGraph" ],
+    [ "util::UndirectedAdjacencyListsOfDirectedGraph&lt; Graph &gt;::AdjacencyListIterator", "classutil_1_1UndirectedAdjacencyListsOfDirectedGraph_1_1AdjacencyListIterator.html", "classutil_1_1UndirectedAdjacencyListsOfDirectedGraph_1_1AdjacencyListIterator" ],
     [ "util::ComputeOnePossibleReverseArcMapping", "namespaceutil.html#ae469c559688b92f36bae2788c2e6063e", null ],
     [ "util::CopyGraph", "namespaceutil.html#a0ed748741b17dad9e6cc485728bb0043", null ],
     [ "util::GetSubgraphOfNodes", "namespaceutil.html#adbba6a42d616fc4fb5c9ab3afe649197", null ],

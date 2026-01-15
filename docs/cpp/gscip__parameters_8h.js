@@ -11,7 +11,7 @@ var gscip__parameters_8h =
     [ "operations_research::GScipOutputEnabledSet", "namespaceoperations__research.html#a77db114b073bbd1f6dd4425b4429b564", null ],
     [ "operations_research::GScipRandomSeed", "namespaceoperations__research.html#a80391d865ec87e564457b08a40386c04", null ],
     [ "operations_research::GScipRandomSeedSet", "namespaceoperations__research.html#a714c6bec51495a492b768556e2362a4f", null ],
-    [ "operations_research::GScipSetCatchCtrlC", "namespaceoperations__research.html#a3ebfb01502a56eeeff6c9ac78a2d04ad", null ],
+    [ "operations_research::GScipSetCatchCtrlC", "namespaceoperations__research.html#a6534294b3d84783d0faaf0fc614cfdf8", null ],
     [ "operations_research::GScipSetLogLevel", "namespaceoperations__research.html#ab551c794e168537852178740cc932314", null ],
     [ "operations_research::GScipSetMaxNumThreads", "namespaceoperations__research.html#abc401aaa76d984f3cdf83319baa6c2a9", null ],
     [ "operations_research::GScipSetOutputEnabled", "namespaceoperations__research.html#a1acffd761c5871bce1e4ebef516c9ee8", null ],

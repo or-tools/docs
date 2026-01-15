@@ -6,6 +6,7 @@ var dir_87c931e78eac8b8f5befc2a9b569117d =
     [ "CpModelService.pb.cs", "CpModelService_8pb_8cs.html", "CpModelService_8pb_8cs" ],
     [ "CpSatHelper.cs", "CpSatHelper_8cs.html", "CpSatHelper_8cs" ],
     [ "LogCallback.cs", "LogCallback_8cs.html", "LogCallback_8cs" ],
+    [ "Lrat.pb.cs", "Lrat_8pb_8cs.html", "Lrat_8pb_8cs" ],
     [ "operations_research_sat.cs", "operations__research__sat_8cs.html", "operations__research__sat_8cs" ],
     [ "operations_research_satPINVOKE.cs", "operations__research__satPINVOKE_8cs.html", "operations__research__satPINVOKE_8cs" ],
     [ "RoutesSupportGraph.pb.cs", "RoutesSupportGraph_8pb_8cs.html", "RoutesSupportGraph_8pb_8cs" ],

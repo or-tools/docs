@@ -4,7 +4,7 @@ var bop__parameters_8pb_8cc =
     [ "operations_research::bop::BopSolverOptimizerSetDefaultTypeInternal", "structoperations__research_1_1bop_1_1BopSolverOptimizerSetDefaultTypeInternal.html", "structoperations__research_1_1bop_1_1BopSolverOptimizerSetDefaultTypeInternal" ],
     [ "operations_research::bop::BopParametersDefaultTypeInternal", "structoperations__research_1_1bop_1_1BopParametersDefaultTypeInternal.html", "structoperations__research_1_1bop_1_1BopParametersDefaultTypeInternal" ],
     [ "operations_research::bop::BopOptimizerMethod::_Internal", "classoperations__research_1_1bop_1_1BopOptimizerMethod_1_1__Internal.html", "classoperations__research_1_1bop_1_1BopOptimizerMethod_1_1__Internal" ],
-    [ "operations_research::bop::BopSolverOptimizerSet::_Internal", "classoperations__research_1_1bop_1_1BopSolverOptimizerSet_1_1__Internal.html", null ],
+    [ "operations_research::bop::BopSolverOptimizerSet::_Internal", "classoperations__research_1_1bop_1_1BopSolverOptimizerSet_1_1__Internal.html", "classoperations__research_1_1bop_1_1BopSolverOptimizerSet_1_1__Internal" ],
     [ "operations_research::bop::BopParameters::_Internal", "classoperations__research_1_1bop_1_1BopParameters_1_1__Internal.html", "classoperations__research_1_1bop_1_1BopParameters_1_1__Internal" ],
     [ "ABSL_ATTRIBUTE_SECTION_VARIABLE", "bop__parameters_8pb_8cc.html#a0075342229915b51f8879ba75bc2b5f0", null ],
     [ "operations_research::bop::BopOptimizerMethod_OptimizerType_descriptor", "namespaceoperations__research_1_1bop.html#a4c6fb1f561d06c06a68c8e07a7d3f4a5", null ],

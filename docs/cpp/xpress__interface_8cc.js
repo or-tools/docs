@@ -12,7 +12,6 @@ var xpress__interface_8cc =
       [ "operations_research::CALLBACK_EXCEPTION", "namespaceoperations__research.html#a3034f6b39a820d2e6485af47015c9999ad4cfe034c6a9f8698560c121a4e3848f", null ]
     ] ],
     [ "operations_research::addhint", "namespaceoperations__research.html#a0bbd246f21b3b75f436af3e9823add5b", null ],
-    [ "operations_research::BuildXpressInterface", "namespaceoperations__research.html#a939b48207f60a6bf3fc3f37ab9ffd481", null ],
     [ "operations_research::getitcnt", "namespaceoperations__research.html#a8a24584aa26d79874a926e3e7d6e2e9c", null ],
     [ "operations_research::getMapDoubleControls", "namespaceoperations__research.html#ad9a8a394d620a6d83dd0ce3838a44873", null ],
     [ "operations_research::getMapInt64Controls", "namespaceoperations__research.html#afbe0e47a74857fe3f0dada379f7cc674", null ],

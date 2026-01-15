@@ -12,7 +12,7 @@ var solution_8pb_8cc =
     [ "operations_research::math_opt::PrimalRayProto::_Internal", "classoperations__research_1_1math__opt_1_1PrimalRayProto_1_1__Internal.html", "classoperations__research_1_1math__opt_1_1PrimalRayProto_1_1__Internal" ],
     [ "operations_research::math_opt::DualSolutionProto::_Internal", "classoperations__research_1_1math__opt_1_1DualSolutionProto_1_1__Internal.html", "classoperations__research_1_1math__opt_1_1DualSolutionProto_1_1__Internal" ],
     [ "operations_research::math_opt::DualRayProto::_Internal", "classoperations__research_1_1math__opt_1_1DualRayProto_1_1__Internal.html", "classoperations__research_1_1math__opt_1_1DualRayProto_1_1__Internal" ],
-    [ "operations_research::math_opt::SparseBasisStatusVector::_Internal", "classoperations__research_1_1math__opt_1_1SparseBasisStatusVector_1_1__Internal.html", null ],
+    [ "operations_research::math_opt::SparseBasisStatusVector::_Internal", "classoperations__research_1_1math__opt_1_1SparseBasisStatusVector_1_1__Internal.html", "classoperations__research_1_1math__opt_1_1SparseBasisStatusVector_1_1__Internal" ],
     [ "operations_research::math_opt::BasisProto::_Internal", "classoperations__research_1_1math__opt_1_1BasisProto_1_1__Internal.html", "classoperations__research_1_1math__opt_1_1BasisProto_1_1__Internal" ],
     [ "operations_research::math_opt::SolutionProto::_Internal", "classoperations__research_1_1math__opt_1_1SolutionProto_1_1__Internal.html", "classoperations__research_1_1math__opt_1_1SolutionProto_1_1__Internal" ],
     [ "ABSL_ATTRIBUTE_SECTION_VARIABLE", "solution_8pb_8cc.html#a8a4c427c0425f1521882ea40d3891613", null ],

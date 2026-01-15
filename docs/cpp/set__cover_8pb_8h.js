@@ -4,7 +4,7 @@ var set__cover_8pb_8h =
     [ "operations_research::SetCoverProto_Subset", "classoperations__research_1_1SetCoverProto__Subset.html", "classoperations__research_1_1SetCoverProto__Subset" ],
     [ "operations_research::SetCoverSolutionResponse", "classoperations__research_1_1SetCoverSolutionResponse.html", "classoperations__research_1_1SetCoverSolutionResponse" ],
     [ "operations_research::SetCoverProto", "classoperations__research_1_1SetCoverProto.html", "classoperations__research_1_1SetCoverProto" ],
-    [ "google::protobuf::is_proto_enum<::operations_research::SetCoverSolutionResponse_Status >", "structgoogle_1_1protobuf_1_1is__proto__enum_3_1_1operations__research_1_1SetCoverSolutionResponse__Status_01_4.html", null ],
+    [ "google::protobuf::is_proto_enum&lt;::operations_research::SetCoverSolutionResponse_Status &gt;", "structgoogle_1_1protobuf_1_1is__proto__enum_3_1_1operations__research_1_1SetCoverSolutionResponse__Status_01_4.html", null ],
     [ "PROTOBUF_INTERNAL_EXPORT_ortools_2fset_5fcover_2fset_5fcover_2eproto", "set__cover_8pb_8h.html#addb60e17417ab600eaf72d1e6d9bbcff", null ],
     [ "operations_research::SetCoverSolutionResponse_Status", "namespaceoperations__research.html#acad81b1fa9fbc90346bde02f73c2ca20", [
       [ "operations_research::SetCoverSolutionResponse_Status_UNDEFINED", "namespaceoperations__research.html#acad81b1fa9fbc90346bde02f73c2ca20a9b273286a3d0dad400526527e31b0c60", null ],

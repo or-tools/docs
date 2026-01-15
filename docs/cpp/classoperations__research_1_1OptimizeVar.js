@@ -11,5 +11,6 @@ var classoperations__research_1_1OptimizeVar =
     [ "DebugString", "classoperations__research_1_1OptimizeVar.html#ae2a7ca2a1d7ffb879e2d7794aa3875dc", null ],
     [ "Name", "classoperations__research_1_1OptimizeVar.html#af5c93503556310027bb2957d11156464", null ],
     [ "RefuteDecision", "classoperations__research_1_1OptimizeVar.html#aa704e0a05cf58312a13647caa0a739fe", null ],
+    [ "SetOnOptimalFoundcallback", "classoperations__research_1_1OptimizeVar.html#a034a595f68f43e2e6dbb493fdeeb8ae6", null ],
     [ "var", "classoperations__research_1_1OptimizeVar.html#ac2ccf053c42940aad282d18dce36d040", null ]
 ];

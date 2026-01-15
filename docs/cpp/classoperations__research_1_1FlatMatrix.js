@@ -1,7 +1,7 @@
 var classoperations__research_1_1FlatMatrix =
 [
-    [ "ConstRows", "structoperations__research_1_1FlatMatrix_1_1ConstRows.html", "structoperations__research_1_1FlatMatrix_1_1ConstRows" ],
     [ "ConstRowsIterator", "classoperations__research_1_1FlatMatrix_1_1ConstRowsIterator.html", "classoperations__research_1_1FlatMatrix_1_1ConstRowsIterator" ],
+    [ "ConstRows", "structoperations__research_1_1FlatMatrix_1_1ConstRows.html", "structoperations__research_1_1FlatMatrix_1_1ConstRows" ],
     [ "FlatMatrix", "classoperations__research_1_1FlatMatrix.html#a3d094cb3dd3351d4b41dc85a15782826", null ],
     [ "FlatMatrix", "classoperations__research_1_1FlatMatrix.html#a0014dc0cded8c243c8a128a49b49f73b", null ],
     [ "FlatMatrix", "classoperations__research_1_1FlatMatrix.html#a3fa878d17506a1d65bd256d2020bd8e6", null ],

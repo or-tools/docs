@@ -1,5 +1,6 @@
 var search__stats_8pb_8cc =
 [
+    [ "operations_research::SubSolverStatisticsDefaultTypeInternal", "structoperations__research_1_1SubSolverStatisticsDefaultTypeInternal.html", "structoperations__research_1_1SubSolverStatisticsDefaultTypeInternal" ],
     [ "operations_research::LocalSearchStatistics_LocalSearchOperatorStatisticsDefaultTypeInternal", "structoperations__research_1_1LocalSearchStatistics__LocalSearchOperatorStatisticsDefaultTypeInternal.html", "structoperations__research_1_1LocalSearchStatistics__LocalSearchOperatorStatisticsDefaultTypeInternal" ],
     [ "operations_research::LocalSearchStatistics_LocalSearchFilterStatisticsDefaultTypeInternal", "structoperations__research_1_1LocalSearchStatistics__LocalSearchFilterStatisticsDefaultTypeInternal.html", "structoperations__research_1_1LocalSearchStatistics__LocalSearchFilterStatisticsDefaultTypeInternal" ],
     [ "operations_research::LocalSearchStatistics_FirstSolutionStatisticsDefaultTypeInternal", "structoperations__research_1_1LocalSearchStatistics__FirstSolutionStatisticsDefaultTypeInternal.html", "structoperations__research_1_1LocalSearchStatistics__FirstSolutionStatisticsDefaultTypeInternal" ],
@@ -11,7 +12,8 @@ var search__stats_8pb_8cc =
     [ "operations_research::LocalSearchStatistics_LocalSearchFilterStatistics::_Internal", "classoperations__research_1_1LocalSearchStatistics__LocalSearchFilterStatistics_1_1__Internal.html", "classoperations__research_1_1LocalSearchStatistics__LocalSearchFilterStatistics_1_1__Internal" ],
     [ "operations_research::LocalSearchStatistics::_Internal", "classoperations__research_1_1LocalSearchStatistics_1_1__Internal.html", "classoperations__research_1_1LocalSearchStatistics_1_1__Internal" ],
     [ "operations_research::ConstraintSolverStatistics::_Internal", "classoperations__research_1_1ConstraintSolverStatistics_1_1__Internal.html", "classoperations__research_1_1ConstraintSolverStatistics_1_1__Internal" ],
-    [ "operations_research::SearchStatistics::_Internal", "classoperations__research_1_1SearchStatistics_1_1__Internal.html", null ],
+    [ "operations_research::SubSolverStatistics::_Internal", "classoperations__research_1_1SubSolverStatistics_1_1__Internal.html", "classoperations__research_1_1SubSolverStatistics_1_1__Internal" ],
+    [ "operations_research::SearchStatistics::_Internal", "classoperations__research_1_1SearchStatistics_1_1__Internal.html", "classoperations__research_1_1SearchStatistics_1_1__Internal" ],
     [ "ABSL_ATTRIBUTE_SECTION_VARIABLE", "search__stats_8pb_8cc.html#a1b7defbe0f9f970dda1a54aeb4170c73", null ],
     [ "operations_research::_ConstraintSolverStatistics_default_instance_", "namespaceoperations__research.html#acd8e6b93ad74f4ef531898875806dd48", null ],
     [ "operations_research::_LocalSearchStatistics_default_instance_", "namespaceoperations__research.html#aaeaa6c48e0f3ff680ec83dfd1cee7380", null ],
@@ -20,6 +22,7 @@ var search__stats_8pb_8cc =
     [ "operations_research::_LocalSearchStatistics_LocalSearchOperatorStatistics_default_instance_", "namespaceoperations__research.html#adce4e3edd26598e5b645b2adb1461174", null ],
     [ "operations_research::_SearchStatistics_default_instance_", "namespaceoperations__research.html#aa0c732684d3b21f6cafd85a5987b4d5d", null ],
     [ "_static_init2_", "search__stats_8pb_8cc.html#a26f6631ae35f89b61dd25e685175b218", null ],
+    [ "operations_research::_SubSolverStatistics_default_instance_", "namespaceoperations__research.html#a0ca48e36e4116ed1410e0d0e4783274c", null ],
     [ "operations_research::ConstraintSolverStatistics_class_data_", "namespaceoperations__research.html#ad18dc975740c40fc04117ca549097790", null ],
     [ "descriptor_table_ortools_2fconstraint_5fsolver_2fsearch_5fstats_2eproto", "search__stats_8pb_8cc.html#aec2ba8514b877ed3276de0f321f223ed", null ],
     [ "descriptor_table_ortools_2fconstraint_5fsolver_2fsearch_5fstats_2eproto_once", "search__stats_8pb_8cc.html#aabb8191acbfb49febe2e7af6eea5df37", null ],
@@ -30,5 +33,6 @@ var search__stats_8pb_8cc =
     [ "operations_research::LocalSearchStatistics_FirstSolutionStatistics_class_data_", "namespaceoperations__research.html#abd094e356e31c7bfeaed42b8ca6a7cc8", null ],
     [ "operations_research::LocalSearchStatistics_LocalSearchFilterStatistics_class_data_", "namespaceoperations__research.html#ac56b4a70a92881a86d82f58486e2dc82", null ],
     [ "operations_research::LocalSearchStatistics_LocalSearchOperatorStatistics_class_data_", "namespaceoperations__research.html#a7866505982b97ffa4f97d58323aa8c4c", null ],
-    [ "operations_research::SearchStatistics_class_data_", "namespaceoperations__research.html#a4858ac86fb2c61ecf770909aa989e91e", null ]
+    [ "operations_research::SearchStatistics_class_data_", "namespaceoperations__research.html#a4858ac86fb2c61ecf770909aa989e91e", null ],
+    [ "operations_research::SubSolverStatistics_class_data_", "namespaceoperations__research.html#a5c891492c2172d162c91f071c9aeb24f", null ]
 ];

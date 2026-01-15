@@ -1,7 +1,7 @@
 var searchData=
 [
   ['barrierstats_0',['BarrierStats',['../classoperations__research_1_1math__opt_1_1CallbackDataProto.html#ac435a9749cacabd0a0e3f45752e94374',1,'operations_research::math_opt::CallbackDataProto']]],
-  ['base_1',['Base',['../classoperations__research_1_1InMemoryCompactPathContainer.html#a4a6be3fe4a6e71c1d736bb39d4c70df3',1,'operations_research::InMemoryCompactPathContainer']]],
+  ['base_1',['Base',['../classoperations__research_1_1internal_1_1InMemoryCompactPathContainer.html#ad00c862ae5d50df86166b8c62be8120d',1,'operations_research::internal::InMemoryCompactPathContainer']]],
   ['baseint_2',['BaseInt',['../namespaceoperations__research.html#aa4b693a5c933e34232abe1e791a38b40',1,'operations_research']]],
   ['basesolverfactory_3',['BaseSolverFactory',['../namespaceoperations__research_1_1math__opt_1_1internal.html#a964a8458134aae0c291804dea21c94d6',1,'operations_research::math_opt::internal']]],
   ['benchmarkstablerow_4',['BenchmarksTableRow',['../namespaceoperations__research.html#a8589f65340e3dbdb3b4f6f69428afd89',1,'operations_research']]],

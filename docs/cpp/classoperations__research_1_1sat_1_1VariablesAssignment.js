@@ -4,6 +4,7 @@ var classoperations__research_1_1sat_1_1VariablesAssignment =
     [ "VariablesAssignment", "classoperations__research_1_1sat_1_1VariablesAssignment.html#aefebcf8eddf94ce3e285e566b70c4b1b", null ],
     [ "VariablesAssignment", "classoperations__research_1_1sat_1_1VariablesAssignment.html#aa35220c9399c942e1b9a0b78bd6d52cb", null ],
     [ "AssignFromTrueLiteral", "classoperations__research_1_1sat_1_1VariablesAssignment.html#a9d316fbc5dda2845e8787c238d0ba3f9", null ],
+    [ "GetBitsetView", "classoperations__research_1_1sat_1_1VariablesAssignment.html#a58f418dd01a9e81b9d99e225b9d0c84a", null ],
     [ "GetTrueLiteralForAssignedVariable", "classoperations__research_1_1sat_1_1VariablesAssignment.html#a64af33a676e45e81a241628ce3973221", null ],
     [ "LiteralIsAssigned", "classoperations__research_1_1sat_1_1VariablesAssignment.html#a170b9597fad37b954060d2e71be3fe0e", null ],
     [ "LiteralIsFalse", "classoperations__research_1_1sat_1_1VariablesAssignment.html#a665e84ebf64e13356430e662fa7d45bc", null ],

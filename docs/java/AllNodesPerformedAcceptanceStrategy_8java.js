@@ -1,0 +1,5 @@
+var AllNodesPerformedAcceptanceStrategy_8java =
+[
+    [ "com.google.ortools.constraintsolver.AllNodesPerformedAcceptanceStrategy", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1AllNodesPerformedAcceptanceStrategy.html", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1AllNodesPerformedAcceptanceStrategy" ],
+    [ "com.google.ortools.constraintsolver.AllNodesPerformedAcceptanceStrategy.Builder", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1AllNodesPerformedAcceptanceStrategy_1_1Builder.html", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1AllNodesPerformedAcceptanceStrategy_1_1Builder" ]
+];

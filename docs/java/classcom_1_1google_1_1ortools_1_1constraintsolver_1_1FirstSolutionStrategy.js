@@ -1,7 +1,7 @@
 var classcom_1_1google_1_1ortools_1_1constraintsolver_1_1FirstSolutionStrategy =
 [
-    [ "Builder", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1FirstSolutionStrategy_1_1Builder.html", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1FirstSolutionStrategy_1_1Builder" ],
     [ "Value", "enumcom_1_1google_1_1ortools_1_1constraintsolver_1_1FirstSolutionStrategy_1_1Value.html", "enumcom_1_1google_1_1ortools_1_1constraintsolver_1_1FirstSolutionStrategy_1_1Value" ],
+    [ "Builder", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1FirstSolutionStrategy_1_1Builder.html", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1FirstSolutionStrategy_1_1Builder" ],
     [ "equals", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1FirstSolutionStrategy.html#a10e09fd6a76d8cd57003892118204d6f", null ],
     [ "getDefaultInstance", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1FirstSolutionStrategy.html#a8e2357d87952141eef06922db7952389", null ],
     [ "getDefaultInstanceForType", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1FirstSolutionStrategy.html#a7a18f190a8a1d24bd57da6f7b6347a7b", null ],

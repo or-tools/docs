@@ -1,7 +1,6 @@
 var sat__solver_8h =
 [
     [ "operations_research::sat::SatSolver", "classoperations__research_1_1sat_1_1SatSolver.html", "classoperations__research_1_1sat_1_1SatSolver" ],
-    [ "operations_research::sat::SatSolver::Decision", "structoperations__research_1_1sat_1_1SatSolver_1_1Decision.html", "structoperations__research_1_1sat_1_1SatSolver_1_1Decision" ],
     [ "operations_research::sat::SatSolver::Counters", "structoperations__research_1_1sat_1_1SatSolver_1_1Counters.html", "structoperations__research_1_1sat_1_1SatSolver_1_1Counters" ],
     [ "operations_research::sat::AtMostOneConstraint", "namespaceoperations__research_1_1sat.html#aafb2c90348e89a1658dc828e9449d926", null ],
     [ "operations_research::sat::BooleanLinearConstraint", "namespaceoperations__research_1_1sat.html#ac341ac6090ff0bed8ad2231c94cd3bfc", null ],

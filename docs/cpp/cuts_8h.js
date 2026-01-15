@@ -6,6 +6,7 @@ var cuts_8h =
     [ "operations_research::sat::CutDataBuilder", "classoperations__research_1_1sat_1_1CutDataBuilder.html", "classoperations__research_1_1sat_1_1CutDataBuilder" ],
     [ "operations_research::sat::ImpliedBoundsProcessor", "classoperations__research_1_1sat_1_1ImpliedBoundsProcessor.html", "classoperations__research_1_1sat_1_1ImpliedBoundsProcessor" ],
     [ "operations_research::sat::ImpliedBoundsProcessor::BestImpliedBoundInfo", "structoperations__research_1_1sat_1_1ImpliedBoundsProcessor_1_1BestImpliedBoundInfo.html", "structoperations__research_1_1sat_1_1ImpliedBoundsProcessor_1_1BestImpliedBoundInfo" ],
+    [ "operations_research::sat::GUBHelper", "classoperations__research_1_1sat_1_1GUBHelper.html", "classoperations__research_1_1sat_1_1GUBHelper" ],
     [ "operations_research::sat::RoundingOptions", "structoperations__research_1_1sat_1_1RoundingOptions.html", "structoperations__research_1_1sat_1_1RoundingOptions" ],
     [ "operations_research::sat::IntegerRoundingCutHelper", "classoperations__research_1_1sat_1_1IntegerRoundingCutHelper.html", "classoperations__research_1_1sat_1_1IntegerRoundingCutHelper" ],
     [ "operations_research::sat::CoverCutHelper", "classoperations__research_1_1sat_1_1CoverCutHelper.html", "classoperations__research_1_1sat_1_1CoverCutHelper" ],

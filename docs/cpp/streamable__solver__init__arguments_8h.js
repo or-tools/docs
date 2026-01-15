@@ -7,5 +7,6 @@ var streamable__solver__init__arguments_8h =
     [ "operations_research::math_opt::StreamableGlpkInitArguments", "structoperations__research_1_1math__opt_1_1StreamableGlpkInitArguments.html", null ],
     [ "operations_research::math_opt::GurobiISVKey", "structoperations__research_1_1math__opt_1_1GurobiISVKey.html", "structoperations__research_1_1math__opt_1_1GurobiISVKey" ],
     [ "operations_research::math_opt::StreamableGurobiInitArguments", "structoperations__research_1_1math__opt_1_1StreamableGurobiInitArguments.html", "structoperations__research_1_1math__opt_1_1StreamableGurobiInitArguments" ],
+    [ "operations_research::math_opt::StreamableXpressInitArguments", "structoperations__research_1_1math__opt_1_1StreamableXpressInitArguments.html", "structoperations__research_1_1math__opt_1_1StreamableXpressInitArguments" ],
     [ "operations_research::math_opt::StreamableSolverInitArguments", "structoperations__research_1_1math__opt_1_1StreamableSolverInitArguments.html", "structoperations__research_1_1math__opt_1_1StreamableSolverInitArguments" ]
 ];

@@ -1,12 +1,12 @@
 var namespaceortools_1_1linear__solver_1_1pywraplp =
 [
     [ "_SwigNonDynamicMeta", "classortools_1_1linear__solver_1_1pywraplp_1_1__SwigNonDynamicMeta.html", null ],
-    [ "Constraint", "classortools_1_1linear__solver_1_1pywraplp_1_1Constraint.html", "classortools_1_1linear__solver_1_1pywraplp_1_1Constraint" ],
-    [ "ModelExportOptions", "classortools_1_1linear__solver_1_1pywraplp_1_1ModelExportOptions.html", "classortools_1_1linear__solver_1_1pywraplp_1_1ModelExportOptions" ],
-    [ "MPSolverParameters", "classortools_1_1linear__solver_1_1pywraplp_1_1MPSolverParameters.html", "classortools_1_1linear__solver_1_1pywraplp_1_1MPSolverParameters" ],
-    [ "Objective", "classortools_1_1linear__solver_1_1pywraplp_1_1Objective.html", "classortools_1_1linear__solver_1_1pywraplp_1_1Objective" ],
     [ "Solver", "classortools_1_1linear__solver_1_1pywraplp_1_1Solver.html", "classortools_1_1linear__solver_1_1pywraplp_1_1Solver" ],
+    [ "Objective", "classortools_1_1linear__solver_1_1pywraplp_1_1Objective.html", "classortools_1_1linear__solver_1_1pywraplp_1_1Objective" ],
     [ "Variable", "classortools_1_1linear__solver_1_1pywraplp_1_1Variable.html", "classortools_1_1linear__solver_1_1pywraplp_1_1Variable" ],
+    [ "Constraint", "classortools_1_1linear__solver_1_1pywraplp_1_1Constraint.html", "classortools_1_1linear__solver_1_1pywraplp_1_1Constraint" ],
+    [ "MPSolverParameters", "classortools_1_1linear__solver_1_1pywraplp_1_1MPSolverParameters.html", "classortools_1_1linear__solver_1_1pywraplp_1_1MPSolverParameters" ],
+    [ "ModelExportOptions", "classortools_1_1linear__solver_1_1pywraplp_1_1ModelExportOptions.html", "classortools_1_1linear__solver_1_1pywraplp_1_1ModelExportOptions" ],
     [ "__lshift__", "namespaceortools_1_1linear__solver_1_1pywraplp.html#a2742059795f1dd19e8b905df969e9a99", null ],
     [ "_swig_add_metaclass", "namespaceortools_1_1linear__solver_1_1pywraplp.html#abba15334ca1bcd77bee76b3d30c93845", null ],
     [ "_swig_repr", "namespaceortools_1_1linear__solver_1_1pywraplp.html#af3e1175ae21dda5f125aa07a921cc365", null ],

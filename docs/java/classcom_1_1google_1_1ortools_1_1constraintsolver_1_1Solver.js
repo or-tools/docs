@@ -7,6 +7,7 @@ var classcom_1_1google_1_1ortools_1_1constraintsolver_1_1Solver =
     [ "Solver", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1Solver.html#acceee1a220bf3b495318fb01923a12a8", null ],
     [ "accept", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1Solver.html#a75ee038ad38021d3e8f1ce154c880c0e", null ],
     [ "acceptedNeighbors", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1Solver.html#a941480d6d44da05fef9a6cb8f7be3597", null ],
+    [ "AcceptSolution", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1Solver.html#ae5dc6bdf99066d48fe291d605ae3bd3c", null ],
     [ "addCastConstraint", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1Solver.html#a39e5b8c94d29102e720803d84bdc615c", null ],
     [ "addConstraint", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1Solver.html#a03d756eb07dc94d5786f3b6413ca586f", null ],
     [ "addLocalSearchMonitor", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1Solver.html#a7a901aadc08c7a6603ade61847d54dd7", null ],

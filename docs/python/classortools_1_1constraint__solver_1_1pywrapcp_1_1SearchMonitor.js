@@ -18,7 +18,6 @@ var classortools_1_1constraint__solver_1_1pywrapcp_1_1SearchMonitor =
     [ "EndNextDecision", "classortools_1_1constraint__solver_1_1pywrapcp_1_1SearchMonitor.html#a6be5522ec62e0ea5a88f0127769c2244", null ],
     [ "EnterSearch", "classortools_1_1constraint__solver_1_1pywrapcp_1_1SearchMonitor.html#ab7cd4c2c3ea35908936ac64dab5dedc4", null ],
     [ "ExitSearch", "classortools_1_1constraint__solver_1_1pywrapcp_1_1SearchMonitor.html#a386d4baf5a6ac2a115e7d2a4472e24a2", null ],
-    [ "LocalOptimum", "classortools_1_1constraint__solver_1_1pywrapcp_1_1SearchMonitor.html#a0d4518410e4476ad6ca302da8701c76f", null ],
     [ "NoMoreSolutions", "classortools_1_1constraint__solver_1_1pywrapcp_1_1SearchMonitor.html#a5fcb8a9e08caf5ff1c29346f60cb258f", null ],
     [ "ProgressPercent", "classortools_1_1constraint__solver_1_1pywrapcp_1_1SearchMonitor.html#a68b418ba81a177e64e78197e8ce3a217", null ],
     [ "RefuteDecision", "classortools_1_1constraint__solver_1_1pywrapcp_1_1SearchMonitor.html#ae92742c4d1b03f2683e03bf184b2b81d", null ],

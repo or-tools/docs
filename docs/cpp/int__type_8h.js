@@ -1,7 +1,7 @@
 var int__type_8h =
 [
-    [ "gtl::IntType< IntTypeName, _ValueType >", "classgtl_1_1IntType.html", "classgtl_1_1IntType" ],
-    [ "gtl::IntType< IntTypeName, _ValueType >::Hasher", "structgtl_1_1IntType_1_1Hasher.html", "structgtl_1_1IntType_1_1Hasher" ],
+    [ "gtl::IntType&lt; IntTypeName, _ValueType &gt;", "classgtl_1_1IntType.html", "classgtl_1_1IntType" ],
+    [ "gtl::IntType&lt; IntTypeName, _ValueType &gt;::Hasher", "structgtl_1_1IntType_1_1Hasher.html", "structgtl_1_1IntType_1_1Hasher" ],
     [ "DEFINE_INT_TYPE", "int__type_8h.html#a38b1a87de73c7c9bc9ff2bd0aa06536a", null ],
     [ "INT_TYPE_ARITHMETIC_OP", "int__type_8h.html#a41fde73a26a824240b968f053879e04d", null ],
     [ "INT_TYPE_ASSIGNMENT_OP", "int__type_8h.html#a189df6ec06f9448154c7ef6e6045ba48", null ],

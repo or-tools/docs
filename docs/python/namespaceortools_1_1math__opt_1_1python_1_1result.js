@@ -1,13 +1,13 @@
 var namespaceortools_1_1math__opt_1_1python_1_1result =
 [
     [ "FeasibilityStatus", "classortools_1_1math__opt_1_1python_1_1result_1_1FeasibilityStatus.html", "classortools_1_1math__opt_1_1python_1_1result_1_1FeasibilityStatus" ],
-    [ "Limit", "classortools_1_1math__opt_1_1python_1_1result_1_1Limit.html", "classortools_1_1math__opt_1_1python_1_1result_1_1Limit" ],
-    [ "ObjectiveBounds", "classortools_1_1math__opt_1_1python_1_1result_1_1ObjectiveBounds.html", "classortools_1_1math__opt_1_1python_1_1result_1_1ObjectiveBounds" ],
     [ "ProblemStatus", "classortools_1_1math__opt_1_1python_1_1result_1_1ProblemStatus.html", "classortools_1_1math__opt_1_1python_1_1result_1_1ProblemStatus" ],
-    [ "SolveResult", "classortools_1_1math__opt_1_1python_1_1result_1_1SolveResult.html", "classortools_1_1math__opt_1_1python_1_1result_1_1SolveResult" ],
+    [ "ObjectiveBounds", "classortools_1_1math__opt_1_1python_1_1result_1_1ObjectiveBounds.html", "classortools_1_1math__opt_1_1python_1_1result_1_1ObjectiveBounds" ],
     [ "SolveStats", "classortools_1_1math__opt_1_1python_1_1result_1_1SolveStats.html", "classortools_1_1math__opt_1_1python_1_1result_1_1SolveStats" ],
-    [ "Termination", "classortools_1_1math__opt_1_1python_1_1result_1_1Termination.html", "classortools_1_1math__opt_1_1python_1_1result_1_1Termination" ],
     [ "TerminationReason", "classortools_1_1math__opt_1_1python_1_1result_1_1TerminationReason.html", "classortools_1_1math__opt_1_1python_1_1result_1_1TerminationReason" ],
+    [ "Limit", "classortools_1_1math__opt_1_1python_1_1result_1_1Limit.html", "classortools_1_1math__opt_1_1python_1_1result_1_1Limit" ],
+    [ "Termination", "classortools_1_1math__opt_1_1python_1_1result_1_1Termination.html", "classortools_1_1math__opt_1_1python_1_1result_1_1Termination" ],
+    [ "SolveResult", "classortools_1_1math__opt_1_1python_1_1result_1_1SolveResult.html", "classortools_1_1math__opt_1_1python_1_1result_1_1SolveResult" ],
     [ "_get_objective_bounds", "namespaceortools_1_1math__opt_1_1python_1_1result.html#a042783bcba6c9c92984d18eaad6997f5", null ],
     [ "_get_problem_status", "namespaceortools_1_1math__opt_1_1python_1_1result.html#a643127b98b3d8d3ddf57410e259ac988", null ],
     [ "_upgrade_termination", "namespaceortools_1_1math__opt_1_1python_1_1result.html#aadb7d5aa998512d84a074ee1662a252d", null ],

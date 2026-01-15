@@ -2,6 +2,7 @@ var classcom_1_1google_1_1ortools_1_1constraintsolver_1_1AssignmentElement =
 [
     [ "AssignmentElement", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1AssignmentElement.html#a128fbc021dacba7893e448261d104c85", null ],
     [ "AssignmentElement", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1AssignmentElement.html#a022bb83efac70f9fa75500954eda88d4", null ],
+    [ "AssignmentElement", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1AssignmentElement.html#a16ccdc5f2ce39dbc408c40fb250d7bed", null ],
     [ "activate", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1AssignmentElement.html#a685d0249fa89f555e3922faa1f0dad92", null ],
     [ "activated", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1AssignmentElement.html#abe21bb999f6a52989d812abc0513541e", null ],
     [ "deactivate", "classcom_1_1google_1_1ortools_1_1constraintsolver_1_1AssignmentElement.html#a253d698ebee57ce69631a2005654a357", null ],

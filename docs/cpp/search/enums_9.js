@@ -9,5 +9,7 @@ var searchData=
   ['mpmodelrequest_5fsolvertype_6',['MPModelRequest_SolverType',['../namespaceoperations__research.html#a15791cd7d877fd8cb7977bbfecd6ce4c',1,'operations_research']]],
   ['mpsolvercommonparameters_5flpalgorithmvalues_7',['MPSolverCommonParameters_LPAlgorithmValues',['../namespaceoperations__research.html#a46d924645e62163da6dafc13b827d7b1',1,'operations_research']]],
   ['mpsolverresponsestatus_8',['MPSolverResponseStatus',['../namespaceoperations__research.html#a8cc975b7db5017319901da0f63a114aa',1,'operations_research']]],
-  ['mpsosconstraint_5ftype_9',['MPSosConstraint_Type',['../namespaceoperations__research.html#ac4082c18fc997b28960d2a15a27af30b',1,'operations_research']]]
+  ['mpsosconstraint_5ftype_9',['MPSosConstraint_Type',['../namespaceoperations__research.html#ac4082c18fc997b28960d2a15a27af30b',1,'operations_research']]],
+  ['mpsreaderformat_10',['MPSReaderFormat',['../namespaceoperations__research.html#a1d394e735d26d94e6c361af5ff3d57b1',1,'operations_research']]],
+  ['mpssectionid_11',['MPSSectionId',['../namespaceoperations__research_1_1internal.html#a958b509135fc3e3145f7ebbac4559183',1,'operations_research::internal']]]
 ];

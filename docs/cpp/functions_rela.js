@@ -21,5 +21,6 @@ var functions_rela =
     [ "s", "functions_rela_s.html", null ],
     [ "t", "functions_rela_t.html", null ],
     [ "u", "functions_rela_u.html", null ],
+    [ "w", "functions_rela_w.html", null ],
     [ "x", "functions_rela_x.html", null ]
 ];

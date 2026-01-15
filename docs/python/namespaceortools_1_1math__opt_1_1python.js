@@ -12,7 +12,6 @@ var namespaceortools_1_1math__opt_1_1python =
       [ "fast_sum", "namespaceortools_1_1math__opt_1_1python_1_1expressions.html#a257fe1b87c41dadfd0a7bafbfbdd007b", null ]
     ] ],
     [ "from_model", "namespaceortools_1_1math__opt_1_1python_1_1from__model.html", "namespaceortools_1_1math__opt_1_1python_1_1from__model" ],
-    [ "hash_model_storage", "namespaceortools_1_1math__opt_1_1python_1_1hash__model__storage.html", "namespaceortools_1_1math__opt_1_1python_1_1hash__model__storage" ],
     [ "indicator_constraints", "namespaceortools_1_1math__opt_1_1python_1_1indicator__constraints.html", "namespaceortools_1_1math__opt_1_1python_1_1indicator__constraints" ],
     [ "init_arguments", "namespaceortools_1_1math__opt_1_1python_1_1init__arguments.html", "namespaceortools_1_1math__opt_1_1python_1_1init__arguments" ],
     [ "ipc", "namespaceortools_1_1math__opt_1_1python_1_1ipc.html", "namespaceortools_1_1math__opt_1_1python_1_1ipc" ],
@@ -27,7 +26,6 @@ var namespaceortools_1_1math__opt_1_1python =
     ] ],
     [ "model", "namespaceortools_1_1math__opt_1_1python_1_1model.html", "namespaceortools_1_1math__opt_1_1python_1_1model" ],
     [ "model_parameters", "namespaceortools_1_1math__opt_1_1python_1_1model__parameters.html", "namespaceortools_1_1math__opt_1_1python_1_1model__parameters" ],
-    [ "model_storage", "namespaceortools_1_1math__opt_1_1python_1_1model__storage.html", "namespaceortools_1_1math__opt_1_1python_1_1model__storage" ],
     [ "normalize", "namespaceortools_1_1math__opt_1_1python_1_1normalize.html", [
       [ "math_opt_normalize_proto", "namespaceortools_1_1math__opt_1_1python_1_1normalize.html#a114a4bbcf507443acf180775be3a14e0", null ]
     ] ],

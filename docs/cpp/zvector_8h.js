@@ -1,6 +1,6 @@
 var zvector_8h =
 [
-    [ "operations_research::ZVector< T >", "classoperations__research_1_1ZVector.html", "classoperations__research_1_1ZVector" ],
+    [ "operations_research::ZVector&lt; T &gt;", "classoperations__research_1_1ZVector.html", "classoperations__research_1_1ZVector" ],
     [ "operations_research::Int16ZVector", "namespaceoperations__research.html#ac911c81d3bd3e32e7527cfb9c72ac093", null ],
     [ "operations_research::Int32ZVector", "namespaceoperations__research.html#a3bf4ba7fc9a3eeba1791e5c15e31ed4f", null ],
     [ "operations_research::Int64ZVector", "namespaceoperations__research.html#ae5c5e6b796daec493777ce9872052d0b", null ],

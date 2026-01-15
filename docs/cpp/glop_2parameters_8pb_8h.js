@@ -2,11 +2,11 @@ var glop_2parameters_8pb_8h =
 [
     [ "TableStruct_ortools_2fglop_2fparameters_2eproto", "structTableStruct__ortools__2fglop__2fparameters__2eproto.html", "structTableStruct__ortools__2fglop__2fparameters__2eproto" ],
     [ "operations_research::glop::GlopParameters", "classoperations__research_1_1glop_1_1GlopParameters.html", "classoperations__research_1_1glop_1_1GlopParameters" ],
-    [ "google::protobuf::is_proto_enum<::operations_research::glop::GlopParameters_ScalingAlgorithm >", "structgoogle_1_1protobuf_1_1is__proto__enum_3_1_1operations__research_1_1glop_1_1GlopParameters__ScalingAlgorithm_01_4.html", null ],
-    [ "google::protobuf::is_proto_enum<::operations_research::glop::GlopParameters_SolverBehavior >", "structgoogle_1_1protobuf_1_1is__proto__enum_3_1_1operations__research_1_1glop_1_1GlopParameters__SolverBehavior_01_4.html", null ],
-    [ "google::protobuf::is_proto_enum<::operations_research::glop::GlopParameters_PricingRule >", "structgoogle_1_1protobuf_1_1is__proto__enum_3_1_1operations__research_1_1glop_1_1GlopParameters__PricingRule_01_4.html", null ],
-    [ "google::protobuf::is_proto_enum<::operations_research::glop::GlopParameters_InitialBasisHeuristic >", "structgoogle_1_1protobuf_1_1is__proto__enum_3_1_1operations__research_1_1glop_1_1GlopParameters__InitialBasisHeuristic_01_4.html", null ],
-    [ "google::protobuf::is_proto_enum<::operations_research::glop::GlopParameters_CostScalingAlgorithm >", "structgoogle_1_1protobuf_1_1is__proto__enum_3_1_1operations__research_1_1glop_1_1GlopParameters__CostScalingAlgorithm_01_4.html", null ],
+    [ "google::protobuf::is_proto_enum&lt;::operations_research::glop::GlopParameters_ScalingAlgorithm &gt;", "structgoogle_1_1protobuf_1_1is__proto__enum_3_1_1operations__research_1_1glop_1_1GlopParameters__ScalingAlgorithm_01_4.html", null ],
+    [ "google::protobuf::is_proto_enum&lt;::operations_research::glop::GlopParameters_SolverBehavior &gt;", "structgoogle_1_1protobuf_1_1is__proto__enum_3_1_1operations__research_1_1glop_1_1GlopParameters__SolverBehavior_01_4.html", null ],
+    [ "google::protobuf::is_proto_enum&lt;::operations_research::glop::GlopParameters_PricingRule &gt;", "structgoogle_1_1protobuf_1_1is__proto__enum_3_1_1operations__research_1_1glop_1_1GlopParameters__PricingRule_01_4.html", null ],
+    [ "google::protobuf::is_proto_enum&lt;::operations_research::glop::GlopParameters_InitialBasisHeuristic &gt;", "structgoogle_1_1protobuf_1_1is__proto__enum_3_1_1operations__research_1_1glop_1_1GlopParameters__InitialBasisHeuristic_01_4.html", null ],
+    [ "google::protobuf::is_proto_enum&lt;::operations_research::glop::GlopParameters_CostScalingAlgorithm &gt;", "structgoogle_1_1protobuf_1_1is__proto__enum_3_1_1operations__research_1_1glop_1_1GlopParameters__CostScalingAlgorithm_01_4.html", null ],
     [ "PROTOBUF_INTERNAL_EXPORT_ortools_2fglop_2fparameters_2eproto", "glop_2parameters_8pb_8h.html#a54571c33c379bfe3fa5ae95d397b0407", null ],
     [ "operations_research::glop::GlopParameters_CostScalingAlgorithm", "namespaceoperations__research_1_1glop.html#a07239feef5b1af7ec2e843272748edb9", [
       [ "operations_research::glop::GlopParameters_CostScalingAlgorithm_NO_COST_SCALING", "namespaceoperations__research_1_1glop.html#a07239feef5b1af7ec2e843272748edb9a2961b639938f229b656d10d027747a31", null ],

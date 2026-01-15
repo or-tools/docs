@@ -1,11 +1,11 @@
 var namespaceortools_1_1math__opt_1_1python_1_1parameters =
 [
-    [ "Emphasis", "classortools_1_1math__opt_1_1python_1_1parameters_1_1Emphasis.html", "classortools_1_1math__opt_1_1python_1_1parameters_1_1Emphasis" ],
-    [ "GlpkParameters", "classortools_1_1math__opt_1_1python_1_1parameters_1_1GlpkParameters.html", "classortools_1_1math__opt_1_1python_1_1parameters_1_1GlpkParameters" ],
-    [ "GurobiParameters", "classortools_1_1math__opt_1_1python_1_1parameters_1_1GurobiParameters.html", "classortools_1_1math__opt_1_1python_1_1parameters_1_1GurobiParameters" ],
-    [ "LPAlgorithm", "classortools_1_1math__opt_1_1python_1_1parameters_1_1LPAlgorithm.html", "classortools_1_1math__opt_1_1python_1_1parameters_1_1LPAlgorithm" ],
-    [ "SolveParameters", "classortools_1_1math__opt_1_1python_1_1parameters_1_1SolveParameters.html", "classortools_1_1math__opt_1_1python_1_1parameters_1_1SolveParameters" ],
     [ "SolverType", "classortools_1_1math__opt_1_1python_1_1parameters_1_1SolverType.html", "classortools_1_1math__opt_1_1python_1_1parameters_1_1SolverType" ],
+    [ "LPAlgorithm", "classortools_1_1math__opt_1_1python_1_1parameters_1_1LPAlgorithm.html", "classortools_1_1math__opt_1_1python_1_1parameters_1_1LPAlgorithm" ],
+    [ "Emphasis", "classortools_1_1math__opt_1_1python_1_1parameters_1_1Emphasis.html", "classortools_1_1math__opt_1_1python_1_1parameters_1_1Emphasis" ],
+    [ "GurobiParameters", "classortools_1_1math__opt_1_1python_1_1parameters_1_1GurobiParameters.html", "classortools_1_1math__opt_1_1python_1_1parameters_1_1GurobiParameters" ],
+    [ "GlpkParameters", "classortools_1_1math__opt_1_1python_1_1parameters_1_1GlpkParameters.html", "classortools_1_1math__opt_1_1python_1_1parameters_1_1GlpkParameters" ],
+    [ "SolveParameters", "classortools_1_1math__opt_1_1python_1_1parameters_1_1SolveParameters.html", "classortools_1_1math__opt_1_1python_1_1parameters_1_1SolveParameters" ],
     [ "emphasis_from_proto", "namespaceortools_1_1math__opt_1_1python_1_1parameters.html#a1ff5978c01fccf7905ac36cce474dfa5", null ],
     [ "emphasis_to_proto", "namespaceortools_1_1math__opt_1_1python_1_1parameters.html#af513da9f1603eeab3edf4de62c8f2ce2", null ],
     [ "lp_algorithm_from_proto", "namespaceortools_1_1math__opt_1_1python_1_1parameters.html#abf86559fe5909c6746f57a5b7ad05983", null ],

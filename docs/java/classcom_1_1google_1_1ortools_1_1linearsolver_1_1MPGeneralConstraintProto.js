@@ -1,7 +1,7 @@
 var classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPGeneralConstraintProto =
 [
-    [ "Builder", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPGeneralConstraintProto_1_1Builder.html", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPGeneralConstraintProto_1_1Builder" ],
     [ "GeneralConstraintCase", "enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPGeneralConstraintProto_1_1GeneralConstraintCase.html", "enumcom_1_1google_1_1ortools_1_1linearsolver_1_1MPGeneralConstraintProto_1_1GeneralConstraintCase" ],
+    [ "Builder", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPGeneralConstraintProto_1_1Builder.html", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPGeneralConstraintProto_1_1Builder" ],
     [ "equals", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPGeneralConstraintProto.html#aad222028ceeefb93b583af8215012716", null ],
     [ "getAbsConstraint", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPGeneralConstraintProto.html#ab4704ce6b50c01e132a761160c54f79c", null ],
     [ "getAbsConstraintOrBuilder", "classcom_1_1google_1_1ortools_1_1linearsolver_1_1MPGeneralConstraintProto.html#ad5763d5f4085e7ed014a9819ed9cb568", null ],

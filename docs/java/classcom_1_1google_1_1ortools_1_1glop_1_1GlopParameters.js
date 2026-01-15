@@ -1,11 +1,11 @@
 var classcom_1_1google_1_1ortools_1_1glop_1_1GlopParameters =
 [
-    [ "Builder", "classcom_1_1google_1_1ortools_1_1glop_1_1GlopParameters_1_1Builder.html", "classcom_1_1google_1_1ortools_1_1glop_1_1GlopParameters_1_1Builder" ],
-    [ "CostScalingAlgorithm", "enumcom_1_1google_1_1ortools_1_1glop_1_1GlopParameters_1_1CostScalingAlgorithm.html", "enumcom_1_1google_1_1ortools_1_1glop_1_1GlopParameters_1_1CostScalingAlgorithm" ],
-    [ "InitialBasisHeuristic", "enumcom_1_1google_1_1ortools_1_1glop_1_1GlopParameters_1_1InitialBasisHeuristic.html", "enumcom_1_1google_1_1ortools_1_1glop_1_1GlopParameters_1_1InitialBasisHeuristic" ],
-    [ "PricingRule", "enumcom_1_1google_1_1ortools_1_1glop_1_1GlopParameters_1_1PricingRule.html", "enumcom_1_1google_1_1ortools_1_1glop_1_1GlopParameters_1_1PricingRule" ],
     [ "ScalingAlgorithm", "enumcom_1_1google_1_1ortools_1_1glop_1_1GlopParameters_1_1ScalingAlgorithm.html", "enumcom_1_1google_1_1ortools_1_1glop_1_1GlopParameters_1_1ScalingAlgorithm" ],
     [ "SolverBehavior", "enumcom_1_1google_1_1ortools_1_1glop_1_1GlopParameters_1_1SolverBehavior.html", "enumcom_1_1google_1_1ortools_1_1glop_1_1GlopParameters_1_1SolverBehavior" ],
+    [ "PricingRule", "enumcom_1_1google_1_1ortools_1_1glop_1_1GlopParameters_1_1PricingRule.html", "enumcom_1_1google_1_1ortools_1_1glop_1_1GlopParameters_1_1PricingRule" ],
+    [ "InitialBasisHeuristic", "enumcom_1_1google_1_1ortools_1_1glop_1_1GlopParameters_1_1InitialBasisHeuristic.html", "enumcom_1_1google_1_1ortools_1_1glop_1_1GlopParameters_1_1InitialBasisHeuristic" ],
+    [ "CostScalingAlgorithm", "enumcom_1_1google_1_1ortools_1_1glop_1_1GlopParameters_1_1CostScalingAlgorithm.html", "enumcom_1_1google_1_1ortools_1_1glop_1_1GlopParameters_1_1CostScalingAlgorithm" ],
+    [ "Builder", "classcom_1_1google_1_1ortools_1_1glop_1_1GlopParameters_1_1Builder.html", "classcom_1_1google_1_1ortools_1_1glop_1_1GlopParameters_1_1Builder" ],
     [ "equals", "classcom_1_1google_1_1ortools_1_1glop_1_1GlopParameters.html#ac3d9f3f1fb20d08b18f00ac7b89dd27d", null ],
     [ "getAllowSimplexAlgorithmChange", "classcom_1_1google_1_1ortools_1_1glop_1_1GlopParameters.html#a3caf95556ae801d52cb0bf3368903c84", null ],
     [ "getBasisRefactorizationPeriod", "classcom_1_1google_1_1ortools_1_1glop_1_1GlopParameters.html#a2ab540a81a906b63d92fbdcc858c382e", null ],

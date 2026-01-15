@@ -1,5 +1,7 @@
 var classoperations__research_1_1sat_1_1FixedCapacityVector =
 [
+    [ "FixedCapacityVector", "classoperations__research_1_1sat_1_1FixedCapacityVector.html#adad38ad4cad10e29888c3da579b61966", null ],
+    [ "FixedCapacityVector", "classoperations__research_1_1sat_1_1FixedCapacityVector.html#a7696fca0cceb9648f794e09550f53f76", null ],
     [ "back", "classoperations__research_1_1sat_1_1FixedCapacityVector.html#a725e842a3e99ad37420c694fd69b5b2a", null ],
     [ "back", "classoperations__research_1_1sat_1_1FixedCapacityVector.html#adcd66de800cf5f716a64256315d7a857", null ],
     [ "begin", "classoperations__research_1_1sat_1_1FixedCapacityVector.html#a48368e7e74b9df8139ba65c41cbdc3f8", null ],

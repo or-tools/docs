@@ -1,10 +1,10 @@
 var namespaceortools_1_1math__opt_1_1python_1_1callback =
 [
+    [ "Event", "classortools_1_1math__opt_1_1python_1_1callback_1_1Event.html", "classortools_1_1math__opt_1_1python_1_1callback_1_1Event" ],
     [ "CallbackData", "classortools_1_1math__opt_1_1python_1_1callback_1_1CallbackData.html", "classortools_1_1math__opt_1_1python_1_1callback_1_1CallbackData" ],
     [ "CallbackRegistration", "classortools_1_1math__opt_1_1python_1_1callback_1_1CallbackRegistration.html", "classortools_1_1math__opt_1_1python_1_1callback_1_1CallbackRegistration" ],
-    [ "CallbackResult", "classortools_1_1math__opt_1_1python_1_1callback_1_1CallbackResult.html", "classortools_1_1math__opt_1_1python_1_1callback_1_1CallbackResult" ],
-    [ "Event", "classortools_1_1math__opt_1_1python_1_1callback_1_1Event.html", "classortools_1_1math__opt_1_1python_1_1callback_1_1Event" ],
     [ "GeneratedConstraint", "classortools_1_1math__opt_1_1python_1_1callback_1_1GeneratedConstraint.html", "classortools_1_1math__opt_1_1python_1_1callback_1_1GeneratedConstraint" ],
+    [ "CallbackResult", "classortools_1_1math__opt_1_1python_1_1callback_1_1CallbackResult.html", "classortools_1_1math__opt_1_1python_1_1callback_1_1CallbackResult" ],
     [ "parse_callback_data", "namespaceortools_1_1math__opt_1_1python_1_1callback.html#a8323d103e9a150b08aa816dd1293f8b2", null ],
     [ "BarrierStats", "namespaceortools_1_1math__opt_1_1python_1_1callback.html#a5d5ecb34f5f7ff20b8e3844c94471aec", null ],
     [ "MipStats", "namespaceortools_1_1math__opt_1_1python_1_1callback.html#a13f709313cab07498d09cd4e52de9bde", null ],

@@ -1,7 +1,7 @@
 var model__storage_8h =
 [
-    [ "operations_research::math_opt::ModelStorageCPtr", "namespaceoperations__research_1_1math__opt.html#a0d12f0e829e6df24b5dee811bf64b52c", null ],
-    [ "operations_research::math_opt::ModelStoragePtr", "namespaceoperations__research_1_1math__opt.html#a7101f9d6d914e33205f438fa53fbcc21", null ],
-    [ "operations_research::math_opt::NullableModelStorageCPtr", "namespaceoperations__research_1_1math__opt.html#ae880fe53751ae9a82482a805145ec8a5", null ],
-    [ "operations_research::math_opt::NullableModelStoragePtr", "namespaceoperations__research_1_1math__opt.html#ab89f7ef43df6672b9b9bdabf1a2d5fb9", null ]
+    [ "operations_research::math_opt::ModelStorageCPtr", "namespaceoperations__research_1_1math__opt.html#a070079e9dc9a253652df3892ab1322a2", null ],
+    [ "operations_research::math_opt::ModelStoragePtr", "namespaceoperations__research_1_1math__opt.html#a28974d7895968caa9d3e1ab425f289a0", null ],
+    [ "operations_research::math_opt::NullableModelStorageCPtr", "namespaceoperations__research_1_1math__opt.html#aae24819da1cf49bf312eaba6237b13d8", null ],
+    [ "operations_research::math_opt::NullableModelStoragePtr", "namespaceoperations__research_1_1math__opt.html#a3874a2fe40361045590dbc84dcfbd9e9", null ]
 ];

@@ -1,14 +1,14 @@
 var namespaceoperations__research_1_1packing_1_1vbp =
 [
-    [ "Item", "classoperations__research_1_1packing_1_1vbp_1_1Item.html", "classoperations__research_1_1packing_1_1vbp_1_1Item" ],
-    [ "ItemDefaultTypeInternal", "structoperations__research_1_1packing_1_1vbp_1_1ItemDefaultTypeInternal.html", "structoperations__research_1_1packing_1_1vbp_1_1ItemDefaultTypeInternal" ],
     [ "VbpParser", "classoperations__research_1_1packing_1_1vbp_1_1VbpParser.html", "classoperations__research_1_1packing_1_1vbp_1_1VbpParser" ],
-    [ "VectorBinPackingOneBinInSolution", "classoperations__research_1_1packing_1_1vbp_1_1VectorBinPackingOneBinInSolution.html", "classoperations__research_1_1packing_1_1vbp_1_1VectorBinPackingOneBinInSolution" ],
     [ "VectorBinPackingOneBinInSolutionDefaultTypeInternal", "structoperations__research_1_1packing_1_1vbp_1_1VectorBinPackingOneBinInSolutionDefaultTypeInternal.html", "structoperations__research_1_1packing_1_1vbp_1_1VectorBinPackingOneBinInSolutionDefaultTypeInternal" ],
-    [ "VectorBinPackingProblem", "classoperations__research_1_1packing_1_1vbp_1_1VectorBinPackingProblem.html", "classoperations__research_1_1packing_1_1vbp_1_1VectorBinPackingProblem" ],
-    [ "VectorBinPackingProblemDefaultTypeInternal", "structoperations__research_1_1packing_1_1vbp_1_1VectorBinPackingProblemDefaultTypeInternal.html", "structoperations__research_1_1packing_1_1vbp_1_1VectorBinPackingProblemDefaultTypeInternal" ],
-    [ "VectorBinPackingSolution", "classoperations__research_1_1packing_1_1vbp_1_1VectorBinPackingSolution.html", "classoperations__research_1_1packing_1_1vbp_1_1VectorBinPackingSolution" ],
+    [ "ItemDefaultTypeInternal", "structoperations__research_1_1packing_1_1vbp_1_1ItemDefaultTypeInternal.html", "structoperations__research_1_1packing_1_1vbp_1_1ItemDefaultTypeInternal" ],
     [ "VectorBinPackingSolutionDefaultTypeInternal", "structoperations__research_1_1packing_1_1vbp_1_1VectorBinPackingSolutionDefaultTypeInternal.html", "structoperations__research_1_1packing_1_1vbp_1_1VectorBinPackingSolutionDefaultTypeInternal" ],
+    [ "VectorBinPackingProblemDefaultTypeInternal", "structoperations__research_1_1packing_1_1vbp_1_1VectorBinPackingProblemDefaultTypeInternal.html", "structoperations__research_1_1packing_1_1vbp_1_1VectorBinPackingProblemDefaultTypeInternal" ],
+    [ "VectorBinPackingOneBinInSolution", "classoperations__research_1_1packing_1_1vbp_1_1VectorBinPackingOneBinInSolution.html", "classoperations__research_1_1packing_1_1vbp_1_1VectorBinPackingOneBinInSolution" ],
+    [ "Item", "classoperations__research_1_1packing_1_1vbp_1_1Item.html", "classoperations__research_1_1packing_1_1vbp_1_1Item" ],
+    [ "VectorBinPackingSolution", "classoperations__research_1_1packing_1_1vbp_1_1VectorBinPackingSolution.html", "classoperations__research_1_1packing_1_1vbp_1_1VectorBinPackingSolution" ],
+    [ "VectorBinPackingProblem", "classoperations__research_1_1packing_1_1vbp_1_1VectorBinPackingProblem.html", "classoperations__research_1_1packing_1_1vbp_1_1VectorBinPackingProblem" ],
     [ "VectorBinPackingSolveStatus", "namespaceoperations__research_1_1packing_1_1vbp.html#a9fe31b075b278337e595fd2e694f6247", [
       [ "VECTOR_BIN_PACKING_SOLVE_STATUS_UNSPECIFIED", "namespaceoperations__research_1_1packing_1_1vbp.html#a9fe31b075b278337e595fd2e694f6247ae5d065564701d39d4d5cb7a63b73965f", null ],
       [ "OPTIMAL", "namespaceoperations__research_1_1packing_1_1vbp.html#a9fe31b075b278337e595fd2e694f6247ad9dabea2ea6a945181f2c8ef971cabad", null ],
